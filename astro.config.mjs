@@ -37,11 +37,8 @@ export default defineConfig({
     sitemap({
       i18n: {
         defaultLocale: DEFAULT_LOCALE,
-        // Only declare the current locale for this domain
         locales: {
-          [DEFAULT_LOCALE]: DEFAULT_LOCALE === 'en' ? 'en-MY' :
-                           DEFAULT_LOCALE === 'zh' ? 'zh-Hans-MY' :
-                           DEFAULT_LOCALE === 'ms' ? 'ms-MY' : 'en-MY',
+          en: 'en-MY',
         },
       },
       filter: (page) => {
@@ -119,7 +116,6 @@ export default defineConfig({
     }),
   ],
   // No i18n routing needed - single language site
-  image: {
   image: {
     domains: ['www.ihousing.com.my'],
     remotePatterns: [
