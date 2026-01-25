@@ -58,7 +58,7 @@ export default defineConfig({
           item.lastmod = new Date();
         }
 
-        // Priority rules for iHousing SEO strategy
+        // Priority rules for English SEO
 
         // Homepage: 1.0 (highest priority)
         if (item.url.match(/\/?$/)) {
