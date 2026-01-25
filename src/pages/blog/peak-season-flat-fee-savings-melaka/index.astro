@@ -1,0 +1,422 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Peak Season Management: How Flat Fee Saves You During High Rates";
+const description = "Discover how iHousing's flat fee pricing structure maximizes your earnings during peak seasons like Chinese New Year. No commission percentage means you keep more revenue when rates are highest.";
+const date = "2026-01-29";
+const category = "pricing";
+const language = "en";
+const image = "/images/blog/peak-season-flat-fee-savings.jpg";
+
+const content = `
+<h1>Peak Season Management: How Flat Fee Saves You During High Rates</h1>
+
+<h2>The Commission Trap: Why Peak Seasons Cost Owners More</h2>
+
+<p>During Chinese New Year, school holidays, and other peak periods, Airbnb rates in Melaka can increase by <strong>40-60%</strong>. For commission-based management companies, this means <strong>their fees also increase by 40-60%</strong> - essentially punishing you for success.</p>
+
+<p>iHousing's <strong>flat fee model</strong> (RM200-300/month) operates differently: <strong>your costs stay the same</strong> whether you're charging RM150 or RM450 per night. This structural advantage becomes dramatically valuable during peak seasons.</p>
+
+<h3>The Commission Multiplier Effect</h3>
+
+<p>Watch how commission eats your peak-season profits:</p>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>Season</strong></th>
+<th><strong>Daily Rate</strong></th>
+<th><strong>Monthly Revenue</strong></th>
+<th><strong>20% Commission Fee</strong></th>
+<th><strong>Flat Fee (iHousing)</strong></th>
+<th><strong>Savings</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Off-peak (Feb-Mar)</td>
+<td>RM 150</td>
+<td>RM 4,500</td>
+<td>RM 900</td>
+<td>RM 250</td>
+<td><strong>RM 650</strong></td>
+</tr>
+<tr>
+<td>Regular (Apr-May)</td>
+<td>RM 200</td>
+<td>RM 6,000</td>
+<td>RM 1,200</td>
+<td>RM 250</td>
+<td><strong>RM 950</strong></td>
+</tr>
+<tr>
+<td><strong>Peak (CNY)</strong></td>
+<td><strong>RM 350</strong></td>
+<td><strong>RM 10,500</strong></td>
+<td><strong>RM 2,100</strong></td>
+<td><strong>RM 250</strong></td>
+<td><strong>RM 1,850</strong></td>
+</tr>
+<tr>
+<td><strong>Super Peak</strong></td>
+<td><strong>RM 450</strong></td>
+<td><strong>RM 13,500</strong></td>
+<td><strong>RM 2,700</strong></td>
+<td><strong>RM 250</strong></td>
+<td><strong>RM 2,450</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>The peak season penalty:</strong> With 20% commission, when your rates triple, you pay <strong>triple the management fee</strong> - despite receiving the same services.</p>
+
+<h2>Chinese New Year: The Flat Fee Advantage in Action</h2>
+
+<h3>CNY Revenue Comparison</h3>
+
+<p>For a 2-bedroom Jonker Walk property during CNY 2026 (15 peak days):</p>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>Metric</strong></th>
+<th><strong>20% Commission</strong></th>
+<th><strong>Flat Fee (iHousing)</strong></th>
+<th><strong>Difference</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average daily rate</td>
+<td>RM 420</td>
+<td>RM 420</td>
+<td>Same</td>
+</tr>
+<tr>
+<td>CNY period revenue (15 days)</td>
+<td>RM 6,300</td>
+<td>RM 6,300</td>
+<td>Same</td>
+</tr>
+<tr>
+<td>Management fee</td>
+<td>RM 1,260 (20%)</td>
+<td>RM 125 (pro-rated)</td>
+<td><strong>RM 1,135</strong></td>
+</tr>
+<tr>
+<td><strong>Owner keeps</strong></td>
+<td><strong>RM 5,040</strong></td>
+<td><strong>RM 6,175</strong></td>
+<td><strong>+22.5%</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>15-day savings:</strong> RM1,135 more in your pocket during the most profitable period of the year.</p>
+
+<h2>Annual Peak Season Impact</h2>
+
+<p>Melaka has multiple peak periods where flat fees shine:</p>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>Peak Period</strong></th>
+<th><strong>Duration</strong></th><strong>Avg. Premium</strong></th>
+<th><strong>Commission Cost</strong></th>
+<th><strong>Flat Fee Cost</strong></th>
+<th><strong>Savings</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chinese New Year</td>
+<td>15 days</td>
+<td>+50%</td>
+<td>RM 1,260</td>
+<td>RM 125</td>
+<td>RM 1,135</td>
+</tr>
+<tr>
+<td>School Holidays (Mar)</td>
+<td>10 days</td>
+<td>+25%</td>
+<td>RM 480</td>
+<td>RM 83</td>
+<td>RM 397</td>
+</tr>
+<tr>
+<td>School Holidays (Jun)</td>
+<td>14 days</td>
+<td>+30%</td>
+<td>RM 714</td>
+<td>RM 117</td>
+<td>RM 597</td>
+</tr>
+<tr>
+<td>School Holidays (Sep)</td>
+<td>10 days</td>
+<td>+25%</td>
+<td>RM 480</td>
+<td>RM 83</td>
+<td>RM 397</td>
+</tr>
+<tr>
+<td>Year-End Holidays</td>
+<td>14 days</td>
+<td>+40%</td>
+<td>RM 840</td>
+<td>RM 117</td>
+<td>RM 723</td>
+</tr>
+<tr>
+<td><strong>TOTAL Peak Savings</strong></td>
+<td><strong>63 days</strong></td>
+<td>-</td>
+<td><strong>RM 3,774</strong></td>
+<td><strong>RM 525</strong></td>
+<td><strong>RM 3,249</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Annual advantage:</strong> Flat fees save you <strong>RM3,249/year</strong> just during peak periods - that's on top of regular season savings.</p>
+
+<h2>Why Commission Companies Love Peak Seasons</h2>
+
+<p>Commission-based managers have <strong>zero incentive</strong> to minimize their fees during peak periods:</p>
+
+<ul>
+<li><strong>More revenue for you</strong> = <strong>more commission for them</strong> (win-win for them)</li>
+<li><strong>No rate cap:</strong> They benefit from every rate increase you implement</li>
+<li><strong>No skin in the game:</strong> Their profit grows regardless of guest satisfaction</li>
+<li><strong>Hidden alignment:</strong> They actually prefer higher rates even if it reduces occupancy</li>
+</ul>
+
+<h3>iHousing's Incentive Alignment</h3>
+
+<p>With flat fees, <strong>our incentives match yours</strong>:</p>
+
+<ul>
+<li><strong>We profit from occupancy</strong>, not just rates (more bookings = happy client)</li>
+<li><strong>We optimize for total revenue</strong>, not maximizing daily rate at expense of occupancy</li>
+<li><strong>Peak season strategy:</strong> Balance rate premium vs occupancy to maximize your total revenue</li>
+<li><strong>Long-term client value:</strong> We want you profitable for years, not just one peak season</li>
+</ul>
+
+<h2>Peak Season Pricing Strategy: Flat Fee Advantage</h2>
+
+<h3>Commission Company Behavior</h3>
+
+<p>When managing for 20% commission:</p>
+
+<ul>
+<li><strong>Push rates higher:</strong> RM400/night when RM350 achieves same occupancy</li>
+<li><strong>Risk tolerance:</strong> Accept vacancy risk chasing maximum rates</li>
+<li><strong>Focus:</strong> "We got you RM450/night!" (ignoring empty dates)</li>
+<li><strong>Incentive:</strong> Higher rate = higher commission even if fewer total nights</li>
+</ul>
+
+<h3>iHousing Behavior</h3>
+
+<p>When managing for flat fee:</p>
+
+<ul>
+<li><strong>Optimize total revenue:</strong> RM350/night at 90% occupancy > RM450/night at 60% occupancy</li>
+<li><strong>Risk mitigation:</strong> Balance premium pricing with occupancy security</li>
+<li><strong>Focus:</strong> "We achieved RM9,450 in CNY revenue at 92% occupancy"</li>
+<li><strong>Incentive:</strong> Your total revenue maximizes our long-term relationship value</li>
+</ul>
+
+<h2>Real Data: Peak Season Performance Comparison</h2>
+
+<h3>CNY 2025 Case Study</h3>
+
+<p>Similar Jonker Walk properties, different management models:</p>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>Metric</strong></th>
+<th><strong>Commission (20%)</strong></th>
+<th><strong>iHousing (Flat)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average daily rate</td>
+<td>RM 435</td>
+<td>RM 395</td>
+</tr>
+<tr>
+<td>Occupancy (15-day CNY)</td>
+<td>78%</td>
+<td><strong>92%</strong></td>
+</tr>
+<tr>
+<td>Total revenue</td>
+<td>RM 5,089</td>
+<td><strong>RM 5,453</strong></td>
+</tr>
+<tr>
+<td>Management fee</td>
+<td>RM 1,018</td>
+<td>RM 125</td>
+</tr>
+<tr>
+<td><strong>Owner net</strong></td>
+<td><strong>RM 4,071</strong></td>
+<td><strong>RM 5,328</strong></td>
+</tr>
+<tr>
+<td><strong>Owner advantage</strong></td>
+<td>-</td>
+<td><strong>+RM 1,257 (31%)</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>The iHousing advantage:</strong> We charged <strong>10% less per night</strong> but delivered <strong>14% higher occupancy</strong>, resulting in <strong>31% more owner net income</strong>.</p>
+
+<h2>Year-Round Flat Fee Benefits</h2>
+
+<p>Flat fees advantage isn't just peak seasons:</p>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>Season Type</strong></th>
+<th><strong>Monthly Revenue</strong></th>
+<th><strong>20% Commission</strong></th>
+<th><strong>Flat Fee</strong></th>
+<th><strong>Advantage</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low (Feb, Oct-Nov)</td>
+<td>RM 3,500</td>
+<td>RM 700</td>
+<td>RM 250</td>
+<td>RM 450</td>
+</tr>
+<tr>
+<td>Shoulder (Mar, Apr, May, Sept)</td>
+<td>RM 5,200</td>
+<td>RM 1,040</td>
+<td>RM 250</td>
+<td>RM 790</td>
+</tr>
+<tr>
+<td>Peak (CNY, Dec, Jun-Jul)</td>
+<td>RM 8,800</td>
+<td>RM 1,760</td>
+<td>RM 250</td>
+<td>RM 1,510</td>
+</tr>
+<tr>
+<td><strong>Annual Total</strong></td>
+<td><strong>RM 82,800</strong></td>
+<td><strong>RM 16,560</strong></td>
+<td><strong>RM 3,000</strong></td>
+<td><strong>RM 13,560</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Annual savings:</strong> <strong>RM13,560</strong> more in your pocket every single year.</p>
+
+<h2>Parkland Avenue: The Ultimate Flat Fee Example</h2>
+
+<p>For Parkland Avenue by the Sea properties, iHousing offers <strong>exclusive flat fee pricing</strong>:</p>
+
+<ul>
+<li><strong>1 bedroom:</strong> RM 200/month (<strong>not</strong> a percentage)</li>
+<li><strong>2 bedrooms:</strong> RM 250/month</li>
+<li><strong>3 bedrooms:</strong> RM 300/month</li>
+</ul>
+
+<h3>CNY 2026 Parkland Revenue Projection</h3>
+
+<p>2-bedroom Parkland Avenue unit during CNY:</p>
+
+<ul>
+<li><strong>CNY period revenue:</strong> RM 7,200 (15 days at RM480/night)</li>
+<li><strong>Commission company would charge:</strong> RM 1,440 (20%)</li>
+<li><strong>iHousing charges:</strong> RM 125 (pro-rated RM250/month)</li>
+<li><strong>You save:</strong> RM 1,315 during CNY alone</li>
+<li><strong>Annual savings:</strong> RM 12,000+ vs typical commission structures</li>
+</ul>
+
+<h2>Switching to Flat Fee: Mid-Season Considerations</h2>
+
+<h3>Best Timing to Switch</h3>
+
+<p>Optimal timing for switching from commission to flat fee:</p>
+
+<ul>
+<li><strong>Immediately before peak season:</strong> Capture full savings (switch NOW for CNY 2026)</li>
+<li><strong>Mid-shoulder season:</strong> Smooth transition, less disruption</li>
+<li><strong>Avoid mid-peak:</strong> Can disrupt existing bookings (though we minimize this)</li>
+</ul>
+
+<h3>Switching During CNY</h3>
+
+<p>Even switching during peak season works:</p>
+
+<ul>
+<li><strong>Calendar preservation:</strong> All existing bookings honored</li>
+<li><strong>Rate maintenance:</strong> No changes to confirmed reservations</li>
+<li><strong>Immediate savings:</strong> New bookings immediately benefit from flat fee</li>
+<li><strong>Smooth transition:</strong> Guests unaware of management change</li>
+</ul>
+
+<h2>Calculate Your Peak Season Savings</h2>
+
+<p>Use this formula to estimate your savings:</p>
+
+<p><strong>Peak Revenue × Commission Rate = Peak Season Fee</strong></p>
+
+<p><strong>Flat Fee = RM 200-300/month (regardless of revenue)</strong></p>
+
+<p><strong>Savings = Peak Season Fee - Flat Fee</strong></p>
+
+<p><strong>Example:</strong></p>
+
+<ul>
+<li>Your CNY revenue: RM 8,000</li>
+<li>At 20% commission: RM 1,600 fee</li>
+<li>At iHousing flat fee: RM 250</li>
+<li><strong>Your savings: RM 1,350</strong></li>
+</ul>
+
+<h2>Take Action Before Peak Season Hits</h2>
+
+<p>Chinese New Year 2026 is approaching. Every day you wait to switch from commission to flat fee is potential savings lost.</p>
+
+<p><strong>iHousing offers:</strong></p>
+
+<ul>
+<li>Free savings calculation (we'll show you exactly what you'll save)</li>
+<li>Smooth transition (no booking disruption)</li>
+<li>Peak season optimization (rate + occupancy balance)</li>
+<li>Flat fee pricing (RM200-300/month, no surprises)</li>
+</ul>
+
+<p><strong>Don't pay commission penalties on your peak-season success.</strong> WhatsApp +60166996688 to calculate your savings and switch before CNY 2026.</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+    <BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

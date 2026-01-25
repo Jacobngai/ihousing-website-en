@@ -1,0 +1,397 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Yuran Tetap Pengurusan Airbnb Melaka: Parkland Avenue RM200-300/Bulan";
+const description = "Yuran tetap RM200-300/bulan untuk pengurusan Airbnb Parkland Avenue by the Sea. Telus, tiada komisen, tiada kos tersembunyi. Harga istimewa untuk projek ini sahaja.";
+const image = "/images/blog/yuran-tetap-pengurusan-airbnb-melaka.jpg";
+const date = "2025-01-23";
+const category = "decision-stage";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Yuran Tetap Pengurusan Airbnb Melaka: Transparan, Tiada Komisen</h1>
+        <h2>20% Komisen vs Yuran Tetap: Model Mana Lebih Jimat?</h2>
+        <p>Dalam industri pengurusan Airbnb Malaysia, kebanyakan syarikat mengenakan caj <strong>komisen 20-30% dari pendapatan kotor</strong>. Ini bermakna jika kondo anda menjana RM10,000 setahun, <strong>RM2,000 hingga RM3,000</strong> pergi ke syarikat pengurusan.</p>
+        <p>Tetapi adakah ini adil? Adakah ini telus?</p>
+        <p>Di iHousing, kami menawarkan alternatif yang berbeza - <strong>yuran tetap bulanan</strong>. Untuk <strong>Parkland Avenue by the Sea</strong>, yuran kami adalah:</p>
+        <ul>
+        <li><strong>1 Bilik:</strong> RM200/bulan</li>
+        <li><strong>2 Bilik:</strong> RM250/bulan</li>
+        <li><strong>3 Bilik:</strong> RM300/bulan</li>
+        </ul>
+        <p>Ini adalah <strong>harga istimewa eksklusif untuk Parkland Avenue</strong>. Untuk kondo lain, sila WhatsApp kami untuk harga tersuai kerana setiap unit mempunyai faktor yang berbeza (saiz, lokasi, keadaan).</p>
+        <p>Mari kita lihat mengapa model yuran tetap lebih jimat dan telus untuk pemilik hartanah.</p>
+        <h2>Perbandingan Kos: 3 Tahun</h2>
+        <p>Mari kita kira kos sebenar untuk setiap model selama 3 tahun.</p>
+        <h3>Senario: Kondo 2-Bedroom dengan Pendapatan RM10,000/Tahun</h3>
+        <p>Pendapatan 3 tahun = RM30,000</p>
+        <h4>Model Komisen (20-30% Industri)</h4>
+        <table>
+          <thead>
+            <tr><th>Perbelanjaan</th><th>Tahun 1</th><th>Tahun 2</th><th>Tahun 3</th><th>Jumlah 3 Tahun</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pendapatan kotor</td><td>RM10,000</td><td>RM10,000</td><td>RM10,000</td><td>RM30,000</td></tr>
+            <tr><td>Komisen (20%)</td><td>-RM2,000</td><td>-RM2,000</td><td>-RM2,000</td><td>-RM6,000</td></tr>
+            <tr><td>Markup pembersihan (30%)</td><td>-RM600</td><td>-RM600</td><td>-RM600</td><td>-RM1,800</td></tr>
+            <tr><td>Markup penyelenggaraan (20%)</td><td>-RM400</td><td>-RM400</td><td>-RM400</td><td>-RM1,200</td></tr>
+            <tr><td>Platform fees (3%)</td><td>-RM300</td><td>-RM300</td><td>-RM300</td><td>-RM900</td></tr>
+            <tr><td>**Pendapatan Bersih**</td><td>**RM6,700**</td><td>**RM6,700**</td><td>**RM6,700**</td><td>**RM20,100**</td></tr>
+          </tbody>
+        </table>
+        <h4>Model Yuran Tetap (Parkland Avenue - RM250/bulan)</h4>
+        <table>
+          <thead>
+            <tr><th>Perbelanjaan</th><th>Tahun 1</th><th>Tahun 2</th><th>Tahun 3</th><th>Jumlah 3 Tahun</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pendapatan kotor</td><td>RM10,000</td><td>RM10,000</td><td>RM10,000</td><td>RM30,000</td></tr>
+            <tr><td>Yuran tetap (RM250 x 12)</td><td>-RM3,000</td><td>-RM3,000</td><td>-RM3,000</td><td>-RM9,000</td></tr>
+            <tr><td>Pembersihan (tiada markup)</td><td>RM0</td><td>RM0</td><td>RM0</td><td>RM0</td></tr>
+            <tr><td>Penyelenggaraan (kos asas)</td><td>-RM200</td><td>-RM200</td><td>-RM200</td><td>-RM600</td></tr>
+            <tr><td>Platform fees (3%)</td><td>-RM300</td><td>-RM300</td><td>-RM300</td><td>-RM900</td></tr>
+            <tr><td>**Pendapatan Bersih**</td><td>**RM6,500**</td><td>**RM6,500**</td><td>**RM6,500**</td><td>**RM19,500**</td></tr>
+          </tbody>
+        </table>
+        <h3>Rumusan Perbandingan</h3>
+        <table>
+          <thead>
+            <tr><th>Metrik</th><th>Model Komisen (20%)</th><th>Model Yuran Tetap (RM250/bulan)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Jumlah yuran (3 tahun)</td><td>RM6,000</td><td>RM9,000</td></tr>
+            <tr><td>Markup tambahan</td><td>RM3,000</td><td>RM0</td></tr>
+            <tr><td>Kos tersembunyi</td><td>Tinggi</td><td>Tiada</td></tr>
+            <tr><td>Pendapatan bersih (3 tahun)</td><td>RM20,100</td><td>RM19,500</td></tr>
+            <tr><td>**Perbezaan**</td><td>-</td><td>**-RM600 (lebih mahal sedikit)**</td></tr>
+          </tbody>
+        </table>
+        <p>Nota: Dengan pendapatan RM10,000/tahun, model yuran tetap adalah <strong>RM600 lebih mahal</strong> selama 3 tahun. Walau bagaimanapun, lihat senario di bawah apabila pendapatan meningkat...</p>
+        <h3>Apa Jika Pendapatan Lebih Tinggi?</h3>
+        <p>Jika kondo anda menjana RM15,000/tahun (okupansi yang lebih baik):</p>
+        <table>
+          <thead>
+            <tr><th>Metrik</th><th>Model Komisen (20%)</th><th>Model Yuran Tetap (RM250/bulan)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pendapatan kotor (3 tahun)</td><td>RM45,000</td><td>RM45,000</td></tr>
+            <tr><td>Yuran pengurusan (3 tahun)</td><td>-RM9,000</td><td>-RM9,000</td></tr>
+            <tr><td>Markup tambahan (3 tahun)</td><td>-RM4,500</td><td>RM0</td></tr>
+            <tr><td>**Pendapatan Bersih (3 tahun)**</td><td>**RM31,500**</td><td>**RM35,100**</td></tr>
+            <tr><td>**Anda Jimat**</td><td>-</td><td>**+RM3,600**</td></tr>
+          </tbody>
+        </table>
+        <p>Dengan pendapatan yang lebih tinggi, <strong>model yuran tetap menjadi lebih jimat</strong>!</p>
+        <h2>Kos Tersembunyi Model Komisen</h2>
+        <p>Banyak syarikat pengurusan yang mengenakan komisen tidak memberitahu anda tentang kos tersembunyi:</p>
+        <h3>1. Markup Pembersihan (30-50%)</h3>
+        <p>Sesetengah syarikat mengenakan caj markup pada pembersihan:</p>
+        <ul>
+        <li>Kos sebenar pembersihan: RM80</li>
+        <li>Caj kepada anda: RM110 - RM120</li>
+        <li>Markup: 30-50%</li>
+        </ul>
+        <p>Dalam setahun (20 pembersihan):</p>
+        <ul>
+        <li>Markup pembersihan: RM600 - RM800</li>
+        </ul>
+        <h3>2. Markup Penyelenggaraan (20%)</h3>
+        <p>Apabila ada pembaikan:</p>
+        <ul>
+        <li>Kos sebenar kontraktor: RM200</li>
+        <li>Caj kepada anda: RM240</li>
+        <li>Markup: 20%</li>
+        </ul>
+        <p>Dalam setahun (10 pembaikan kecil):</p>
+        <ul>
+        <li>Markup penyelenggaraan: RM400</li>
+        </ul>
+        <h3>3. Bekalan yang Ditandakan</h3>
+        <ul>
+        <li>Barang tandas asas: kos RM15, caj RM25</li>
+        <li>Sabun dan syampu: kos RM20, caj RM30</li>
+        <li>Linen basuh: kos RM30, caj RM50</li>
+        </ul>
+        <p>Dalam setahun:</p>
+        <ul>
+        <li>Markup bekalan: RM300 - RM500</li>
+        </ul>
+        <h3>4. Yuran Keemasan</h3>
+        <ul>
+        <li>Panggilan biasa: RM50</li>
+        <li>Panggilan keemasan (2 pagi): RM150</li>
+        </ul>
+        <h3>5. Yuran "Admin"</h3>
+        <ul>
+        <li>Yuran lewat pembayaran: RM50</li>
+        <li>Yuran dokumen: RM100</li>
+        <li>Yuran penamatan kontrak: RM500</li>
+        </ul>
+        <h3>Jumlah Kos Tersembunyi Tahunan</h3>
+        <p>Dengan model komisen, kos tersembunyi boleh mencapai <strong>RM1,500 - RM2,500 setahun</strong>!</p>
+        <h2>Kelebihan Yuran Tetap</h2>
+        <h3>1. Transparansi Penuh</h3>
+        <p>Dengan yuran tetap, anda tahu tepat apa yang anda bayar setiap bulan:</p>
+        <ul>
+        <li><strong>RM200 - RM300/bulan</strong> (bergantung bilik)</li>
+        <li>Tiada markup</li>
+        <li>Tiada kos tersembunyi</li>
+        <li>Tiada kejutan</li>
+        </ul>
+        <h3>2. Lebih Jimat untuk Pendapatan Tinggi</h3>
+        <p>Seperti yang ditunjukkan dalam kiraan di atas, apabila pendapatan meningkat:</p>
+        <ul>
+        <li>Pendapatan RM10,000/tahun: hampir sama</li>
+        <li>Pendapatan RM15,000/tahun: jimat RM3,600 dalam 3 tahun</li>
+        <li>Pendapatan RM20,000/tahun: jimat RM9,000 dalam 3 tahun</li>
+        </ul>
+        <h3>3. Ramalan Pendapatan Lebih Mudah</h3>
+        <p>Dengan yuran tetap:</p>
+        <ul>
+        <li>Kos pengurusan adalah tetap</li>
+        <li>Anda boleh meramalkan pendapatan bersih</li>
+        <li>Perancangan kewangan lebih mudah</li>
+        </ul>
+        <h3>4. Insentif untuk Syarikat</h3>
+        <p>Dengan yuran tetap, syarikat pengurusan termotivasi untuk:</p>
+        <ul>
+        <li>Meningkatkan okupansi (lebih banyak pendapatan untuk anda)</li>
+        <li>Mengurangkan kos kosong (lebih efisen)</li>
+        <li>Memberikan perkhidmatan terbaik (untuk mengekalkan anda)</li>
+        </ul>
+        <h3>5. Tiada Konflik Kepentingan</h3>
+        <p>Dengan model komisen, ada konflik:</p>
+        <ul>
+        <li>Syarikat mahu menaikkan kadar (untuk meningkatkan komisen)</li>
+        <li>Tetapi kadar terlalu tinggi = kurang tetamu</li>
+        </ul>
+        <p>Dengan yuran tetap:</p>
+        <ul>
+        <li>Syarikat mahu meningkatkan pendapatan anda</li>
+        <li>Kerana anda lebih cenderung kekal bersama mereka jika pendapatan tinggi</li>
+        </ul>
+        <h2>Apa yang Termasuk dalam Yuran Tetap (Parkland Avenue)</h2>
+        <p>Untuk yuran RM200-300/bulan di Parkland Avenue, anda mendapatkan:</p>
+        <h3>1. Komunikasi Tetamu 24/7</h3>
+        <ul>
+        <li>Respons dalam masa 30 minit atau kurang</li>
+        <li>Bantu dengan check-in/check-out</li>
+        <li>Selesaikan masalah dengan segera</li>
+        </ul>
+        <h3>2. Pembersihan Profesional</h3>
+        <ul>
+        <li>Pasukan pembersihan dalaman</li>
+        <li>Tiada markup kos pembersihan</li>
+        <li>Kualiti yang konsisten</li>
+        </ul>
+        <h3>3. Penyelenggaraan</h3>
+        <ul>
+        <li>Pemeriksaan berkala</li>
+        <li>Pembaikan kecil diuruskan</li>
+        <li>Keemasan 24/7</li>
+        <li>Kos kontraktor asas (tanpa markup)</li>
+        </ul>
+        <h3>4. Multi-Platform Listing</h3>
+        <ul>
+        <li>Airbnb, Booking.com, Agoda, VRBO, Expedia</li>
+        <li>60% lebih banyak tempahan</li>
+        <li>Semua diuruskan untuk anda</li>
+        </ul>
+        <h3>5. Pengoptimuman Harga Dinamik</h3>
+        <ul>
+        <li>Harga automatik mengikut permintaan</li>
+        <li>Peningkatan 15-20% dalam pendapatan</li>
+        </ul>
+        <h3>6. Fotografi Profesional</h3>
+        <ul>
+        <li>Gambar berkualiti tinggi</li>
+        <li>20% lebih banyak tempahan</li>
+        </ul>
+        <h3>7. Laporan Bulanan</h3>
+        <ul>
+        <li>Pendapatan terperinci</li>
+        <li>Okupansi</li>
+        <li>Rating tetamu</li>
+        <li>Cadangan penambahbaikan</li>
+        </ul>
+        <h2>Kenapa Hanya Parkland Avenue?</h2>
+        <p>Anda mungkin bertanya: Kenapa yuran tetap hanya untuk Parkland Avenue by the Sea?</p>
+        <h3>Sebab Strategik</h3>
+        <ol>
+        <li><strong>Kami adalah Pengurus Rasmi</strong></li>
+        </ol>
+        <ul>
+        <li>Dilantik sebagai pengurus Airbnb rasmi untuk Parkland Avenue</li>
+        <li>Hubungan eksklusif dengan pemaju</li>
+        <li>Pengetahuan mendalam tentang projek</li>
+        </ul>
+        <ol>
+        <li><strong>Volume Unit</strong></li>
+        </ol>
+        <ul>
+        <li>Menguruskan banyak unit dalam satu bangunan</li>
+        <li>Ekonomi skala - kos pengurusan lebih rendah</li>
+        <li>Jimat yang diluluskan kepada pemilik</li>
+        </ul>
+        <ol>
+        <li><strong>Standard Seragam</strong></li>
+        </ol>
+        <ul>
+        <li>Semua unit di Parkland Avenue mengikut standard yang sama</li>
+        <li>Pembersihan dan penyelenggaraan lebih efisen</li>
+        <li>Kos yang boleh diramal</li>
+        </ul>
+        <ol>
+        <li><strong>Pre-Launch Special</strong></li>
+        </ol>
+        <ul>
+        <li>Parkland Avenue dilancarkan Ogos 2025</li>
+        <li>Promosi yuran tetap untuk pra-pendaftaran awal</li>
+        <li>Harga istimewa untuk pendaftar awal</li>
+        </ul>
+        <h3>Untuk Kondo Lain</h3>
+        <p>Untuk kondo lain (Silverscape, The Shore, dll.), harga dibincangkan melalui WhatsApp kerana:</p>
+        <ul>
+        <li>Setiap kondo mempunyai saiz yang berbeza</li>
+        <li>Lokasi dan keadaan mempengaruhi kos</li>
+        <li>Keperluan pemilik berbeza</li>
+        <li>Adil untuk semua pemilik</li>
+        </ul>
+        <h2>Kiraan Pulangan Pelaburan (ROI)</h2>
+        <p>Mari kita kira ROI dengan model yuran tetap untuk Parkland Avenue.</p>
+        <h3>Senario: 2-Bedroom di Parkland Avenue</h3>
+        <strong>Pelaburan:</strong>
+        <ul>
+        <li>Harga belian: RM500,000</li>
+        <li>Down payment (10%): RM50,000</li>
+        <li>Perabot & lengkap: RM20,000</li>
+        <li><strong>Jumlah pelaburan awal:</strong> RM70,000</li>
+        </ul>
+        <strong>Pendapatan (tahunan):</strong>
+        <ul>
+        <li>Pendapatan kotor: RM10,000</li>
+        <li>Yuran pengurusan (RM250 x 12): RM3,000</li>
+        <li>Utiliti: RM1,800</li>
+        <li>Penyelenggaraan: RM1,200</li>
+        <li>Internet: RM1,200</li>
+        <li><strong>Pendapatan bersih:</strong> RM2,800</li>
+        </ul>
+        <strong>ROI:</strong>
+        <ul>
+        <li>Pendapatan bersih: RM2,800</li>
+        <li>Pelaburan awal: RM70,000</li>
+        <li><strong>ROI tahunan:</strong> 4%</li>
+        </ul>
+        <strong>Cashflow (dengan pinjaman):</strong>
+        <ul>
+        <li>Pinjaman: RM450,000</li>
+        <li>Bayaran bulanan: RM2,000 - RM2,300</li>
+        <li>Pendapatan bulanan bersih: RM233</li>
+        <li><strong>Cashflow bulanan:</strong> -RM1,767 hingga -RM1,533 (negatif)</li>
+        </ul>
+        <p>Nota: Ini adalah pelaburan untuk jangka panjang. Tujuannya adalah untuk:</p>
+        <ul>
+        <li>Membayar sebahagian pinjaman dari masa ke masa</li>
+        <li>Menunggu peningkatan nilai hartanah (3-5% setahun)</li>
+        <li>Potensi untuk guna sendiri (cuti keluarga)</li>
+        </ul>
+        <h2>Cara Membandingkan Syarikat Pengurusan</h2>
+        <p>Apabila membandingkan syarikat pengurusan, tanya soalan berikut:</p>
+        <h3>1. Apakah Model Yuran Anda?</h3>
+        <ul>
+        <li>Komisen (berapa %)?</li>
+        <li>Yuran tetap (berapa RM/bulan)?</li>
+        <li>Adakah yuran berbeza mengikut bilik?</li>
+        </ul>
+        <h3>2. Apakah yang Termasuk?</h3>
+        <ul>
+        <li>Komunikasi tetamu?</li>
+        <li>Pembersihan (ada markup)?</li>
+        <li>Penyelenggaraan (ada markup)?</li>
+        <li>Multi-platform listing?</li>
+        <li>Pengoptimuman harga?</li>
+        </ul>
+        <h3>3. Adakah Ada Kos Tersembunyi?</h3>
+        <ul>
+        <li>Markup pembersihan?</li>
+        <li>Markup penyelenggaraan?</li>
+        <li>Yuran keemasan?</li>
+        <li>Yuran admin?</li>
+        <li>Yuran penamatan?</li>
+        </ul>
+        <h3>4. Berapa Banyak Platform?</h3>
+        <ul>
+        <li>Hanya Airbnb?</li>
+        <li>Atau 5 platforms (Airbnb, Booking.com, Agoda, VRBO, Expedia)?</li>
+        </ul>
+        <h3>5. Berapa Pantas Respons?</h3>
+        <ul>
+        <li>30 minit?</li>
+        <li>1 jam?</li>
+        <li>24 jam?</li>
+        </ul>
+        <h3>6. Adakah Ada Laporan Bulanan?</h3>
+        <ul>
+        <li>Pendapatan terperinci?</li>
+        <li>Okupansi?</li>
+        <li>Rating tetamu?</li>
+        </ul>
+        <h3>7. Berapa Lamakah Kontrak?</h3>
+        <ul>
+        <li>6 bulan?</li>
+        <li>12 bulan?</li>
+        <li>Boleh dibatalkan?</li>
+        </ul>
+        <h2>Soalan Lazim (FAQ)</h2>
+        <h3>Q: Adakah yuran tetap lebih baik daripada komisen?</h3>
+        <p>A: Bergantung pada pendapatan kondo anda. Untuk pendapatan tinggi (RM15,000+/tahun), yuran tetap lebih jimat. Untuk pendapatan rendah, komisen mungkin lebih sesuai. Untuk Parkland Avenue, yuran tetap RM200-300/bulan adalah harga istimewa eksklusif.</p>
+        <h3>Q: Boleh saya tukar dari model komisen ke yuran tetap?</h3>
+        <p>A: Ya. Prosesnya mudah. Syarikat pengurusan akan uruskan pemindahan. Untuk Parkland Avenue, anda boleh mendaftar pra-pelancaran dengan yuran tetap istimewa.</p>
+        <h3>Q: Adakah yuran tetap akan berubah?</h3>
+        <p>A: Untuk Parkland Avenue, yuran tetap dijamin untuk tempoh minimum kontrak. Selepas itu, perbincangan semula boleh dilakukan.</p>
+        <h3>Q: Apakah yang berlaku jika pendapatan saya rendah?</h3>
+        <p>A: Dengan model yuran tetap, kos pengurusan adalah tetap. Jika pendapatan rendah, anda mungkin rugi sedikit berbanding model komisen. Walau bagaimanapun, syarikat pengurusan akan bekerja keras untuk meningkatkan pendapatan anda.</p>
+        <h3>Q: Adakah yuran tetap tersedia untuk kondo lain?</h3>
+        <p>A: Model yuran tetap adalah eksklusif untuk Parkland Avenue by the Sea. Untuk kondo lain, sila WhatsApp kami untuk harga tersuai yang adil dan sesuai dengan keperluan unit anda.</p>
+        <h2>Langkah Seterusnya: Dapatkan Harga Tersuai Anda</h2>
+        <h3>Untuk Parkland Avenue by the Sea</h3>
+        <p>Jika anda berminat untuk membeli unit di Parkland Avenue atau sudah mempunyai unit, daftar sekarang untuk mengunci yuran tetap istimewa:</p>
+        <ul>
+        <li><strong>1 Bilik:</strong> RM200/bulan</li>
+        <li><strong>2 Bilik:</strong> RM250/bulan</li>
+        <li><strong>3 Bilik:</strong> RM300/bulan</li>
+        </ul>
+        <p>Ini adalah harga pra-pelancaran istimewa. Jangan terlepas!</p>
+        <h3>Untuk Kondo Lain</h3>
+        <p>Untuk kondo lain (Silverscape, The Shore, dll.), WhatsApp kami untuk:</p>
+        <ul>
+        <li>Konsultasi percuma</li>
+        <li>Analisis pendapatan potensi</li>
+        <li>Harga tersuai untuk unit anda</li>
+        <li>Perbandingan dengan model lain</li>
+        </ul>
+        <hr class="my-8">
+        <h2>Daftar Pra-Pelancaran Parkland Avenue Sekarang</h2>
+        <p>Kunci yuran tetap istimewa sebelum pelancaran Ogos 2025. Harga eksklusif untuk pendaftar awal.</p>
+        <strong>[WhatsApp Kami untuk Daftar Pra-Pelancaran]</strong>
+        <p>Kami akan membantu anda:</p>
+        <ul>
+        <li>Pilih unit yang sesuai untuk Airbnb</li>
+        <li>Kira potensi pendapatan</li>
+        <li>Kunci yuran tetap RM200-300/bulan</li>
+        <li>Rancang pelaburan anda</li>
+        </ul>
+        <p>Untuk kondo lain, WhatsApp kami juga untuk harga tersuai dan konsultasi percuma.</p>
+        <p>Tunggu apa lagi? Yuran tetap yang telus menunggu. Hubungi kami hari ini.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

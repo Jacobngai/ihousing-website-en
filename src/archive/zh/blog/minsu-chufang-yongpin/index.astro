@@ -1,0 +1,313 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "民宿厨房用品完整清单：马六甲Airbnb厨房装备指南2025";
+const description = "马六甲Airbnb民宿厨房用品完整清单。从基础厨具到餐具、调料，打造客人满意的厨房。避免采购浪费，确保客人烹饪体验。";
+const image = "/images/blog/minsu-chufang-yongpin.jpg";
+const date = "2025-01-24";
+const category = "setup-guide";
+const language = "zh";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>民宿厨房用品完整清单：马六甲Airbnb厨房装备指南2025</h1>
+
+<h2>厨房是客人评价的重要因素</h2>
+
+<strong>超过70%的Airbnb客人期望能够做饭</strong>——无论是简单的煮面、煎蛋，还是家庭聚餐的丰盛料理。
+
+<p>厨房装备不足可能导致：</p>
+<ul>
+<li>❌ 客人差评："厨房什么都没有"</li></ul>
+
+<ul>
+<li>❌ 复购率降低</li></ul>
+
+<ul>
+<li>❌ 推荐意愿下降</li></ul>
+
+<strong>装备完善的厨房</strong>则能带来：
+<ul>
+<li>✅ 5星好评增加</li></ul>
+
+<ul>
+<li>✅ 长住客人更愿意预订</li></ul>
+
+<ul>
+<li>✅ 家庭客人优先选择</li></ul>
+
+<ul>
+<li>✅ 更高的入住率</li></ul>
+
+<h2>第一部分：基础厨具（必需品）</h2>
+
+<h3>烹饪锅具</h3>
+
+<strong>选择建议：</strong>
+<ul>
+<li><strong>优先选择不粘锅</strong>（容易清洁，减少客人抱怨）</li></ul>
+
+<ul>
+<li><strong>带盖子的锅</strong>（多功能）</li></ul>
+
+<ul>
+<li><strong>不锈钢或铸铁材质</strong>（耐用）</li></ul>
+
+<h3>烹饪工具</h3>
+
+<h2>第二部分：餐具配置</h2>
+
+<h3>按最大入住人数配置</h3>
+
+<strong>例如：两房单位，最大入住4人</strong>
+
+<strong>餐具投资建议：</strong>
+<ul>
+<li><strong>总预算：RM300-600</strong>（两房单位）</li></ul>
+
+<ul>
+<li>选择<strong>简约款式</strong>（百搭、不易过时）</li></ul>
+
+<ul>
+<li><strong>带边缘的盘子</strong>（防止洒出）</li></ul>
+
+<ul>
+<li><strong>防滑底座杯子</strong>（更安全）</li></ul>
+
+<h2>第三部分：小家电配置</h2>
+
+<h3>核心小家电</h3>
+
+<strong>小家电配置策略：</strong>
+<ul>
+<li><strong>前三项必需</strong>（电水壶、电饭煲、微波炉）</li></ul>
+
+<ul>
+<li><strong>咖啡机提升品质</strong>（国际客人期待）</li></ul>
+
+<ul>
+<li><strong>预算有限时先投资前三项</strong></li></ul>
+
+<h2>第四部分：储物与收纳</h2>
+
+<h3>厨房储物用品</h3>
+
+<h3>垃圾处理</h3>
+
+<h2>第五部分：调料与基础食材</h2>
+
+<h3>基础调料（每次入住补充）</h3>
+
+<strong>必需调料：</strong>
+
+<strong>可选调料（提升体验）：</strong>
+
+<h3>基础食材（欢迎礼包）</h3>
+
+<strong>注意：</strong> 根据入住天数调整补充量。长住客人需要更多。
+
+<h2>第六部分：清洁用品</h2>
+
+<h3>厨房清洁用品</h3>
+
+<h3>客人用清洁用品</h3>
+
+<strong>放在厨房方便客人使用：</strong>
+
+<h2>第七部分：厨房安全用品</h2>
+
+<h3>必需安全用品</h3>
+
+<h3>安全提示</h3>
+
+<strong>在厨房内张贴安全须知：</strong>
+<ul>
+<li>🔥 使用燃气时不要离开厨房</li></ul>
+
+<ul>
+<li>🧯 灭火器位置：[标注位置]</li></ul>
+
+<ul>
+<li>👶 儿童需成人陪同使用厨房</li></ul>
+
+<ul>
+<li>⚠️ 热锅小心烫伤</li></ul>
+
+<h2>第八部分：厨房装饰与氛围</h2>
+
+<h3>实用装饰</h3>
+
+<h3>灯光设计</h3>
+
+<h2>第九部分：按单位类型的厨房配置清单</h2>
+
+<h3>单房单位（1-2人）</h3>
+
+<strong>简化配置，满足基本需求：</strong>
+
+<h3>两房单位（3-4人）</h3>
+
+<strong>标准配置，满足家庭需求：</strong>
+
+<h3>三房单位（5-6人）</h3>
+
+<strong>完善配置，满足大家庭：</strong>
+
+<h2>第十部分：采购建议与供应商</h2>
+
+<h3>采购渠道</h3>
+
+<strong>IKEA：</strong>
+<ul>
+<li>优点：一站式采购，款式统一，价格透明</li></ul>
+
+<ul>
+<li>推荐：餐具、厨房收纳、小家电</li></ul>
+
+<ul>
+<li>预算：中档</li></ul>
+
+<strong>本地批发市场（马六甲）：</strong>
+<ul>
+<li>优点：价格更低，支持批量采购</li></ul>
+
+<ul>
+<li>推荐：锅具、调料、清洁用品</li></ul>
+
+<ul>
+<li>预算：经济型</li></ul>
+
+<strong>在线平台（Lazada、Shopee）：</strong>
+<ul>
+<li>优点：方便，款式多，价格比较</li></ul>
+
+<ul>
+<li>推荐：小家电、特殊用品</li></ul>
+
+<ul>
+<li>注意：运输时间、质量</li></ul>
+
+<h3>采购优先级</h3>
+
+<strong>阶段1：必需品（开业前必须购买）</strong>
+<ul>
+<li>炒锅、汤锅、平底锅</li></ul>
+
+<ul>
+<li>基本餐具（按最大入住人数）</li></ul>
+
+<ul>
+<li>电热水壶、电饭煲、微波炉</li></ul>
+
+<ul>
+<li>基础调料、清洁用品</li></ul>
+
+<strong>阶段2：提升体验（开业后逐步添加）</strong>
+<ul>
+<li>咖啡机、烤面包机</li></ul>
+
+<ul>
+<li>完整收纳用品</li></ul>
+
+<ul>
+<li>装饰品</li></ul>
+
+<strong>阶段3：锦上添花（根据反馈添加）</strong>
+<ul>
+<li>高级厨具</li></ul>
+
+<ul>
+<li>特殊小家电</li></ul>
+
+<ul>
+<li>豪华装饰</li></ul>
+
+<h2>第十一部分：常见错误与避免方法</h2>
+
+<h3>错误1：餐具数量不足</h3>
+
+<strong>问题：</strong> 只配置2套餐具，4人入住不够用
+<strong>解决：</strong> 按最大入住人数配置，每样1-2件/人
+
+<h3>错误2：锅具质量差</h3>
+
+<strong>问题：</strong> 廉价不粘锅2个月就掉涂层
+<strong>解决：</strong> 投资RM80+以上的中档锅具
+
+<h3>错误3：没有提供调料</h3>
+
+<strong>问题：</strong> 客人需要买盐、油等基础调料
+<strong>解决：</strong> 每次入住提供基础调料
+
+<h3>错误4：缺少电热水壶</h3>
+
+<strong>问题：</strong> 亚洲客人习惯喝热水，没有热水壶很麻烦
+<strong>解决：</strong> 电热水壶是必需品！
+
+<h3>错误5：厨房用品不适合中式烹饪</h3>
+
+<strong>问题：</strong> 只有西式厨具，亚洲客人无法做饭
+<strong>解决：</strong> 配置炒锅、筷子、汤勺等中式用品
+
+<h2>第十二部分：厨房布置实用技巧</h2>
+
+<h3>布局优化</h3>
+
+<strong>三角工作区：</strong>
+<p><code></p>
+<p>水槽（洗涤）→ 操作台（准备）→ 灶台（烹饪）</p>
+
+<ul>
+<li>保持三点之间距离合理</li></ul>
+
+<ul>
+<li>便利的动线设计</li></ul>
+
+<h3>收纳技巧</h3>
+
+<li><strong>开放式架子</strong> - 常用物品触手可及</li>
+<li><strong>抽屉分隔</strong> - 餐具、调料分类</li>
+<li><strong>挂钩利用</strong> - 挂厨具、抹布</li>
+<li><strong>磁力刀架</strong> - 节省台面空间</li>
+
+<h3>安全提示</h3>
+
+<li><strong>儿童防护</strong> - 锁上危险用品</li>
+<li><strong>燃气安全</strong> - 定期检查管道</li>
+<li><strong>电器安全</strong> - 远离水源</li>
+<li><strong>防滑处理</strong> - 水槽前放防滑垫</li>
+
+<h2>WhatsApp咨询</h2>
+
+<strong>获取您的定制厨房配置清单：</strong>
+
+<a href="https://wa.me/60166996688?text=您好，我想了解民宿厨房用品配置清单。我的公寓位于[填写区域]，[单房/两房/三房]，[已装修/未装修]。请提供完整的厨房配置清单和预算估算。" target="_blank" rel="noopener" style="display:inline-block;background-color:#25D366;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold;margin:10px 0;">WhatsApp厨房配置清单 →</a>
+
+<h2>相关阅读</h2>
+
+<ul>
+<li>[民宿必备完整清单](/zh/blog/minsu-bixiang-qingdan)</li></ul>
+
+<ul>
+<li>[布草毛巾配置指南](/zh/blog/bucao-maojin-peonx)</li></ul>
+
+<ul>
+<li>[洗漱用品配置](/zh/blog/xishu-yongpin-peonx)</li></ul>
+
+<ul>
+<li>[民宿安全要求](/zh/blog/minsu-anquan-yaoqiu)</li></ul>
+
+<strong>最后更新：</strong> 2025年1月24日
+<strong>阅读时间：</strong> 16分钟
+<strong>分类：</strong> 装修指南 · 厨房配置
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

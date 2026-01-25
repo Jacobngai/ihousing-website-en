@@ -1,0 +1,216 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "周末 vs 周中定价: 沿海物业收入优化";
+const description = "了解如何优化马来西亚马六甲沿海Airbnb物业的定价。Pantai Kundur和Tanjung Bidara海滨位置的周末溢价定价策略。";
+const date = "2026-01-15";
+const category = "decision-stage";
+const language = "zh";
+const image = "/images/blog/weekend-midweek-pricing-coastal-property.jpg";
+
+const content = `
+<h1>周末 vs 周中定价: 如何最大化沿海物业收入</h1>
+
+<h2>沿海物业定价挑战</h2>
+
+<p>在马六甲沿海地区（如Pantai Kundur或Tanjung Bidara）拥有海滨Airbnb，带来了独特的定价机会。与市中心物业每周需求一致不同，沿海物业在周末和工作日之间经历剧烈的需求波动。</p>
+
+<p>本指南准确展示如何构建您的周末与周中定价，以在保持一周内健康入住率的同时最大化收入。</p>
+
+<h2>了解沿海需求模式</h2>
+
+<h3>周末激增 (周五-周日)</h3>
+
+<p>沿海物业在周末需求增加3-5倍，原因是：</p>
+<ul>
+  <li><strong>新加坡周末游客:</strong> 周五晚上抵达，周日离开</li>
+  <li><strong>吉隆坡家庭:</strong> 周六-周日短途游</li>
+  <li><strong>本地游客:</strong> 一日游和周末度假</li>
+  <li><strong>活动住宿:</strong> 节日、婚礼、庆典</li>
+</ul>
+
+<p><strong>平均周末入住率:</strong> 管理良好的物业为70-85%</p>
+
+<h3>周中低迷 (周一-周四)</h3>
+
+<p>工作日需求显著下降，因为：</p>
+<ul>
+  <li>大多数客人在周一至周五工作</li>
+  <li>旅行距离（距主要城市2-4小时）阻碍短期住宿</li>
+  <li>沿海地区商务旅游有限</li>
+</ul>
+
+<p><strong>平均周中入住率:</strong> 无策略定价时为20-40%</p>
+
+<h2>最佳定价结构</h2>
+
+<h3>周末溢价策略</h3>
+
+<p>周末晚上收费40-80%更高。公式如下：</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>单位类型</th>
+      <th>基础价格 (工作日晚)</th>
+      <th>周末价格</th>
+      <th>周末溢价</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2卧室海滨别墅</td>
+      <td>RM250</td>
+      <td>RM400-450</td>
+      <td>+60-80%</td>
+    </tr>
+    <tr>
+      <td>3卧室海滨别墅</td>
+      <td>RM350</td>
+      <td>RM500-600</td>
+      <td>+43-71%</td>
+    </tr>
+    <tr>
+      <td>1卧室公寓</td>
+      <td>RM150</td>
+      <td>RM220-250</td>
+      <td>+47-67%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>周中折扣策略</h3>
+
+<p>将周中费率降低30-50%以吸引：</p>
+<ul>
+  <li><strong>远程工作者:</strong> 3-4天"海滨办公"住宿</li>
+  <li><strong>退休人员:</strong> 灵活的工作日旅行</li>
+  <li><strong>本地度假者:</strong> 寻找工作日住宿的当地居民</li>
+  <li><strong>大家庭:</strong> 多代旅行</li>
+</ul>
+
+<p><strong>定价示例:</strong></p>
+<ul>
+  <li>周末 (周五-周日): RM400/晚</li>
+  <li>周中 (周一-周四): RM200-250/晚</li>
+</ul>
+
+<h2>动态定价实施</h2>
+
+<h3>季节性调整</h3>
+
+<p>根据季节调整周末溢价：</p>
+
+<ul>
+  <li><strong>学校假期 (3月、6月、12月):</strong> 额外增加20-30%的周末费率</li>
+  <li><strong>公共假期:</strong> 将周末费率应用于整个长周末</li>
+  <li><strong>季风季节 (11月-1月):</strong> 因天气风险将周末溢价降至30-40%</li>
+  <li><strong>节日期间:</strong> 春节、开斋节 - 最高定价 (80-100%溢价)</li>
+</ul>
+
+<h3>住宿长度折扣</h3>
+
+<p>鼓励更长的周中住宿：</p>
+
+<ul>
+  <li><strong>2+个工作日晚:</strong> 15%折扣</li>
+  <li><strong>3+个工作日晚:</strong> 25%折扣</li>
+  <li><strong>4+晚 (任何日期):</strong> 整个住宿20%折扣</li>
+</ul>
+
+<p>此策略填补您的周一至周四空白，而不牺牲周末收入。</p>
+
+<h2>真实数字: 收入比较</h2>
+
+<h3>场景A: 统一定价 (无策略)</h3>
+
+<p>每天RM300/晚</p>
+<ul>
+  <li>周末入住率: 70% (每月6个周末晚)</li>
+  <li>周中入住率: 25% (每月8个工作日晚)</li>
+</ul>
+
+<p><strong>月收入:</strong> RM300 × (6×0.7 + 8×0.25) × 4 = RM7,560</p>
+
+<h3>场景B: 优化的周末/周中定价</h3>
+
+<ul>
+  <li>周末费率: RM450 (70%入住率)</li>
+  <li>周中费率: RM220 (50%入住率含折扣)</li>
+</ul>
+
+<p><strong>月收入:</strong> (RM450×6×0.7 + RM220×8×0.5) × 4 = RM11,080</p>
+
+<p><strong>结果:</strong> 优化定价收入增加+46%</p>
+
+<h2>iHousing如何实施此策略</h2>
+
+<h3>基于算法的动态定价</h3>
+
+<p>我们的系统自动：</p>
+<ul>
+  <li>根据需求每日调整费率</li>
+  <li>自动应用周末溢价</li>
+  <li>在低需求期激活周中折扣</li>
+  <li>响应竞争对手价格变化</li>
+  <li>结合季节因素</li>
+</ul>
+
+<h3>多平台价格同步</h3>
+
+<p>我们确保跨平台价格一致：</p>
+<ul>
+  <li>Airbnb (主要平台)</li>
+  <li>Booking.com</li>
+  <li>Agoda</li>
+  <li>VRBO</li>
+  <li>Expedia</li>
+</ul>
+
+<p>防止导致客人预订其他地方的价格差距。</p>
+
+<h2>准备好优化您的沿海物业定价了吗？</h2>
+
+<p>无论您在Pantai Kundur、Tanjung Bidara还是马六甲其他沿海地区拥有海滨物业，实施正确的定价策略可以将您的收入提高40-50%。</p>
+
+<p>在iHousing，我们：</p>
+<ul>
+  <li>使用动态定价算法</li>
+  <li>每日监控市场状况</li>
+  <li>根据需求调整费率</li>
+  <li>策略性填补周中空白</li>
+  <li>最大化周末收入</li>
+</ul>
+
+<h3>对于Parkland Avenue by the Sea:</h3>
+
+<p><strong>固定费用管理:</strong> RM200-300/月 (特殊预发布定价)</p>
+
+<p>包括跨所有5平台的动态定价优化。</p>
+
+<h3>对于其他沿海物业:</h3>
+
+<p><strong>WhatsApp我们获取定制定价:</strong></p>
+
+<ul>
+  <li>告诉我们您的位置 (Pantai Kundur, Tanjung Bidara等)</li>
+  <li>我们将分析您的特定市场</li>
+  <li>接收个性化定价策略</li>
+</ul>
+
+<h2>立即行动</h2>
+
+<p>停止用统一定价浪费金钱。让iHousing为您的沿海物业实施优化的周末/周中定价。</p>
+
+<p>立即WhatsApp我们讨论您物业的收入潜力。</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,76 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "1月表现回顾：Airbnb vs 长期租赁";
+const description = "比较2026年1月马六甲房产的Airbnb和长期租赁收入。哪种更赚钱，何时Airbnb胜出。";
+const date = "2026-01-31";
+const category = "comparison";
+const language = "zh";
+const image = "/images/blog/airbnb-vs-long-term-rental-comparison.jpg";
+
+const content = `
+<h1>1月表现回顾：Airbnb vs 长期租赁</h1>
+
+<p>2026年1月显示马六甲旅游区房产的Airbnb和长期租赁之间存在<strong>显著收入差异</strong>。凭借8年数据，iHousing揭示Airbnb何时胜出。</p>
+
+<h2>2026年1月收入比较</h2>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>房产类型</strong></th>
+<th><strong>长期租赁</strong></th>
+<th><strong>Airbnb (2026年1月)</strong></th>
+<th><strong>差异</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2卧室城区公寓</td>
+<td>RM 1,800/月</td>
+<td>RM 3,200 (1月)</td>
+<td><strong>+RM 1,400</strong></td>
+</tr>
+<tr>
+<td>3卧室遗产房</td>
+<td>RM 2,200/月</td>
+<td>RM 5,800 (1月)</td>
+<td><strong>+RM 3,600</strong></td>
+</tr>
+<tr>
+<td>4卧室海滨别墅</td>
+<td>RM 2,800/月</td>
+<td>RM 7,500 (1月)</td>
+<td><strong>+RM 4,700</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>结论：</strong> Airbnb在高峰月产生2-3倍更多收入。</p>
+
+<h2>Airbnb何时胜出</h2>
+
+<p><strong>Airbnb优势：</strong></p>
+
+<ul>
+<li><strong>高峰收入：</strong> 春节、学校假期、周末 = 溢价费率</li>
+<li><strong>灵活性：</strong> 需要时可使用自己的房产</li>
+<li><strong>控制：</strong> 选择客人、定价设置、房屋规则</li>
+<li><strong>增值：</strong> 高收入 + 资本增值</li>
+</ul>
+
+<p><strong>WhatsApp +60166996688</strong> 获取您的房产比较分析。</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+<BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

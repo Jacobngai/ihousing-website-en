@@ -1,0 +1,348 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'Airbnb Renovation Melaka | Data-Driven Design That Actually Increases Bookings';
+const description = 'We\'ve completed 100+ Airbnb renovations in Melaka. We know what guests actually book - not what you think looks good. Stop wasting money on design that doesn\'t add value.';
+const image = 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200';
+
+const contactFormLink = '/zh/contact-form/';
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-purple-900 via-violet-900 to-indigo-900 text-white py-20 lg:py-28">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-purple-300 font-semibold mb-4 text-lg">100+ Renovations. Real Data. Real Results.</p>
+        <h1 class="text-3xl lg:text-5xl font-bold leading-tight mb-6">
+          Your Design Taste Is Costing You Bookings
+        </h1>
+        <p class="text-xl lg:text-2xl text-purple-100 mb-8 max-w-3xl mx-auto">
+          We've renovated 100+ Airbnb properties in Melaka. Here's what we learned:
+          <br class="hidden sm:block">
+          What you think looks good ≠ What guests actually book.
+        </p>
+        <a href={contactFormLink} class="inline-block bg-yellow-500 hover:bg-yellow-400 text-purple-900 font-bold py-4 px-10 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg">
+          Get Our Data-Driven Renovation Guide
+        </a>
+      </div>
+    </section>
+
+    <!-- The Problem -->
+    <section class="py-16 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">
+          The Expensive Truth About "Tasteful" Renovations
+        </h2>
+
+        <div class="prose prose-lg max-w-none text-gray-700 mb-8">
+          <p class="text-xl mb-6 leading-relaxed">
+            You just bought your dream property. Naturally, you want to renovate it to <em>your</em> taste. Marble floors. Designer furniture. Bold accent walls.
+          </p>
+          <p class="text-lg mb-6">
+            <strong>Here's the problem:</strong> Your guests don't care about your taste. They care about comfort, functionality, and Instagram-worthy moments.
+          </p>
+          <p class="text-lg mb-6">
+            We've seen it hundreds of times. Owners spend RM50,000 on "beautiful" renovations that <em>don't move the needle</em> on bookings.
+          </p>
+          <p class="text-lg">
+            Meanwhile, a strategic RM15,000 renovation focused on guest experience can <strong>double occupancy rates</strong>.
+          </p>
+        </div>
+
+        <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+          <p class="text-red-800 font-semibold mb-2">Stop Before You Renovate</p>
+          <p class="text-gray-700">
+            Every RM10,000 you spend on the wrong things is RM10,000 you'll never earn back. Let us show you what actually adds value based on real booking data from 100+ properties.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Data Story -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-center">
+          We Have the Data. You Have an Opinion.
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          After 100+ renovations and managing 100+ properties, we know what guests actually book.
+        </p>
+
+        <!-- What Actually Adds Value -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-bold text-green-700 mb-6 flex items-center">
+            <span class="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center mr-3">✓</span>
+            What Actually Increases Bookings (Our Data Proves It)
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h4 class="font-bold text-gray-900 mb-2">Smart TV in Living Room</h4>
+              <p class="text-gray-600 text-sm">Guests expect it. Not having one = negative reviews.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h4 class="font-bold text-gray-900 mb-2">Work-Ready Desk Setup</h4>
+              <p class="text-gray-600 text-sm">Business travelers = higher nightly rates.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h4 class="font-bold text-gray-900 mb-2">Fast, Reliable WiFi</h4>
+              <p class="text-gray-600 text-sm">#1 complaint across all platforms if it fails.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h4 class="font-bold text-gray-900 mb-2">Quality Mattress & Bedding</h4>
+              <p class="text-gray-600 text-sm">Comfort = 5-star reviews = more bookings.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h4 class="font-bold text-gray-900 mb-2">Good Lighting & Mirrors</h4>
+              <p class="text-gray-600 text-sm">Makes spaces feel larger = better photos = more views.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h4 class="font-bold text-gray-900 mb-2">Blackout Curtains</h4>
+              <p class="text-gray-600 text-sm">Sleep quality = positive reviews = repeat bookings.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- What Doesn't Add Value -->
+        <div>
+          <h3 class="text-2xl font-bold text-red-700 mb-6 flex items-center">
+            <span class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center mr-3">✗</span>
+            What Owners Spend Money On That Doesn't Matter
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-300">
+              <h4 class="font-bold text-gray-900 mb-2">Premium Marble Flooring</h4>
+              <p class="text-gray-600 text-sm">Guests don't notice. Cold underfoot. High cost.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-300">
+              <h4 class="font-bold text-gray-900 mb-2">Designer Accent Walls</h4>
+              <p class="text-gray-600 text-sm">Personal taste ≠ more bookings. Can actually turn guests off.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-300">
+              <h4 class="font-bold text-gray-900 mb-2">Luxury Furniture Sets</h4>
+              <p class="text-gray-600 text-sm">Comfort matters more than brand. ROI is terrible.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-300">
+              <h4 class="font-bold text-gray-900 mb-2">Over-Artwork/Decor</h4>
+              <p class="text-gray-600 text-sm">Clutter. Personal. Makes spaces feel smaller.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The "Design for Yourself" Trap -->
+    <section class="py-16 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">
+          The #1 Mistake: Renovating for Yourself
+        </h2>
+
+        <div class="bg-gradient-to-br from-purple-50 to-violet-50 p-8 rounded-2xl border-2 border-purple-200 mb-8">
+          <p class="text-xl text-gray-800 mb-4 italic">
+            "I want my property to feel like home."
+          </p>
+          <p class="text-gray-700 mb-6">
+            We hear this all the time. Here's the problem: it's NOT your home. It's a business.
+          </p>
+          <p class="text-gray-700 mb-4">
+            Every RM1 you spend on something <em>you</em> like but guests don't care is:
+          </p>
+          <ul class="space-y-2 text-gray-700 mb-6">
+            <li>• RM1 you'll never earn back</li>
+            <li>• RM1 that could have gone to something that <em>does</em> increase bookings</li>
+          </ul>
+          <p class="text-gray-700">
+            We're not saying make it ugly. We're saying: <strong>design for your customer (the guest), not your ego.</strong>
+          </p>
+        </div>
+
+        <div class="bg-green-50 p-6 rounded-xl border-2 border-green-300">
+          <p class="text-green-900 font-bold mb-2">The Truth:</p>
+          <p class="text-gray-700">
+            The best-performing Airbnb units we manage aren't the "fanciest." They're the most <strong>guest-functional</strong>. Comfortable. Clean. Well-lit. Good WiFi. Great beds.
+          </p>
+          <p class="text-gray-700 mt-3">
+            Guests don't book your marble floors. They book a good night's sleep.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="py-16 bg-gray-900 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+          Why Listen to Us?
+        </h2>
+        <p class="text-xl text-gray-300 mb-12">
+          Because we're not guessing. We're sharing what actually works.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div>
+            <p class="text-5xl font-bold text-yellow-400 mb-2">100+</p>
+            <p class="text-gray-300">Renovations Completed</p>
+          </div>
+          <div>
+            <p class="text-5xl font-bold text-yellow-400 mb-2">100+</p>
+            <p class="text-gray-300">Properties Managed</p>
+          </div>
+          <div>
+            <p class="text-5xl font-bold text-yellow-400 mb-2">8</p>
+            <p class="text-gray-300">Years of Data</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-xl">
+          <p class="text-gray-300 mb-4">
+            "I was about to spend RM40,000 on 'luxury' renovations. After consulting iHousing, I spent RM18,000 on what guests actually care about. My occupancy rate went from 60% to 89% in the first month."
+          </p>
+          <p class="text-gray-500 text-sm">— Silverscape Residence Owner</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">
+          Our Data-Driven Renovation Approach
+        </h2>
+
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              1
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl flex-1">
+              <h3 class="font-bold text-gray-900 mb-2">We Analyze Your Property Type</h3>
+              <p class="text-gray-600">Different locations attract different guest types. Business travelers vs families vs tourists. We design accordingly.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              2
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl flex-1">
+              <h3 class="font-bold text-gray-900 mb-2">We Share What's Worked (And What Hasn't)</h3>
+              <p class="text-gray-600">Real data from 100+ properties. No opinions. Just what actually increases bookings and reviews.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              3
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl flex-1">
+              <h3 class="font-bold text-gray-900 mb-2">We Focus on ROI, Not Aesthetics</h3>
+              <p class="text-gray-600">Every decision is simple: Will this increase bookings or reviews? If yes, include. If no, skip it.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+              4
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl flex-1">
+              <h3 class="font-bold text-gray-900 mb-2">We Handle Everything</h3>
+              <p class="text-gray-600">Contractors, furnishing, setup. We project manage so you don't have to.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Direct Response CTA -->
+    <section class="py-20 bg-gradient-to-br from-yellow-500 to-amber-500">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+          Stop Guessing. Start Earning.
+        </h2>
+        <p class="text-xl text-gray-800 mb-8">
+          Every day you delay renovation is lost income. Every RM you spend on the wrong things is money gone forever.
+        </p>
+        <p class="text-lg text-gray-700 mb-6">
+          Get our free data-driven renovation guide. No obligation. Just valuable insights from 100+ properties.
+        </p>
+        <a href={contactFormLink} class="inline-block bg-purple-900 hover:bg-purple-800 text-white font-bold py-4 px-12 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg">
+          Contact Us for Free Guide
+        </a>
+        <p class="mt-4 text-sm text-gray-700">
+          We'll also share what renovations to avoid (so you don't waste money).
+        </p>
+      </div>
+    </section>
+
+    <!-- Quick FAQ -->
+    <section class="py-16 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+          Common Questions We Get
+        </h2>
+
+        <div class="space-y-4">
+          <details class="bg-gray-50 p-6 rounded-xl">
+            <summary class="font-bold text-gray-900 cursor-pointer">Do I need to renovate before listing on Airbnb?</summary>
+            <p class="mt-3 text-gray-600">Not necessarily. If your unit is clean, functional, and has basic furnishings, we can list it as-is. Then we can upgrade strategically based on guest feedback and your budget.</p>
+          </details>
+
+          <details class="bg-gray-50 p-6 rounded-xl">
+            <summary class="font-bold text-gray-900 cursor-pointer">How much should I budget for renovation?</summary>
+            <p class="mt-3 text-gray-600">It depends on your starting point. We've seen effective renovations range from RM5,000 (basic furnishing) to RM50,000 (complete overhaul). The key is spending on things that actually increase bookings, not on "impressive" features.</p>
+          </details>
+
+          <details class="bg-gray-50 p-6 rounded-xl">
+            <summary class="font-bold text-gray-900 cursor-pointer">Can't I just design it myself?</summary>
+            <p class="mt-3 text-gray-600">You can. But our data shows that owner-designed renovations typically underperform by 30-40% in booking rates compared to our data-driven approach. The question is: can you afford to lose 30-40% of your potential income?</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 bg-purple-900 text-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+          Your Property Is Sitting Empty Right Now.
+        </h2>
+        <p class="text-xl text-purple-200 mb-8">
+          Every day you wait is lost income. Every renovation mistake costs you money.
+          <br class="hidden sm:block">
+          Get our data-driven approach. Stop guessing. Start earning.
+        </p>
+        <a href={contactFormLink} class="inline-block bg-yellow-500 hover:bg-yellow-400 text-purple-900 font-bold py-4 px-12 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg">
+          Contact Us Now
+        </a>
+      </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Explore Our Services</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <a href="/en/services/full-management/" class="block p-6 border-2 border-gray-200 rounded-xl hover:border-purple-500 transition-all">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Full Management</h3>
+            <p class="text-gray-600">We handle everything after renovation</p>
+          </a>
+          <a href="/en/services/listing-setup/" class="block p-6 border-2 border-gray-200 rounded-xl hover:border-purple-500 transition-all">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Listing Setup</h3>
+            <p class="text-gray-600">Already furnished? We'll set up your listing</p>
+          </a>
+          <a href="/en/services/how-it-works/" class="block p-6 border-2 border-gray-200 rounded-xl hover:border-purple-500 transition-all">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How It Works</h3>
+            <p class="text-gray-600">Step-by-step process</p>
+          </a>
+          <a href="/en/services/pricing/" class="block p-6 border-2 border-gray-200 rounded-xl hover:border-purple-500 transition-all">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Pricing</h3>
+            <p class="text-gray-600">Transparent flat fee structure</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</Layout>

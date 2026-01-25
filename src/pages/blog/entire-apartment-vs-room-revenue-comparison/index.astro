@@ -1,0 +1,68 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Entire Apartment vs Room Rental: Revenue Comparison for Melaka Hosts";
+const description = "Financial comparison between renting entire apartment vs individual rooms in Melaka Airbnb. Includes occupancy rates, pricing strategies, and net income analysis.";
+const image = "/images/blog/entire-apartment-vs-room-revenue-comparison.jpg";
+const date = "2026-01-23";
+const category = "rental-types";
+const language = "en";
+
+const content = `
+<h1>Entire Apartment vs Room Rental: Revenue Comparison for Melaka Hosts</h1>
+
+<p>Should you rent your entire Melaka apartment or offer individual rooms? This decision impacts your monthly income by <strong>thousands of ringgit</strong>. Let's compare both models with real data from iHousing's managed properties.</p>
+
+<h2>Financial Comparison: 2-Bedroom Condo Example</h2>
+
+<h3>Scenario: RM400,000 Property in Melaka Raya</h3>
+
+<strong>Model A: Entire Apartment Rental</strong>
+
+<ul>
+<li><strong>Average nightly rate:</strong> RM300</li>
+<li><strong>Occupancy rate:</strong> 70%</li>
+<li><strong>Monthly nights booked:</strong> 21 nights</li>
+<li><strong>Monthly gross income:</strong> RM6,300</li>
+<li><strong>Operating costs:</strong> RM800 (cleaning, supplies, utilities)</li>
+<li><strong>Monthly net income:</strong> <strong>RM5,500</strong></li>
+</ul>
+
+<strong>Model B: 2 Private Rooms</strong>
+
+<ul>
+<li><strong>Room 1 rate:</strong> RM150/night</li>
+<li><strong>Room 2 rate:</strong> RM150/night</li>
+<li><strong>Combined rate:</strong> RM300/night (when both occupied)</li>
+<li><strong>Occupancy rate:</strong> 55% per room (booked independently)</li>
+<li><strong>Monthly nights booked:</strong> 16-17 nights each</li>
+<li><strong>Monthly gross income:</strong> RM4,800-5,100</li>
+<li><strong>Operating costs:</strong> RM600 (lower cleaning frequency)</li>
+<li><strong>Monthly net income:</strong> <strong>RM4,200-4,500</strong></li>
+</ul>
+
+<p><strong>Winner:</strong> Entire apartment earns <strong>RM1,000-1,300 more monthly</strong> in this scenario.</p>
+
+<h2>When Private Rooms Make Sense</h2>
+
+<h3>Specific Situations Favoring Room Rentals</h3>
+
+<p>Private rooms can outperform entire rentals when:</p>
+
+<ol>
+<li><strong>Property Size:</strong> 4+ bedrooms where entire rental rates become prohibitively expensive</li>
+<li><strong>Location:</strong> Near universities/hospitals with long-term room demand</li>
+<li><strong>Budget Market:</strong> Targeting price-sensitive travelers</li>
+<li><strong>Owner Occupancy:</strong> You live in property and rent spare rooms</li>
+</ol>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

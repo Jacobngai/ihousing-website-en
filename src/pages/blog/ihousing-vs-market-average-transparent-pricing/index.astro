@@ -1,0 +1,236 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "iHousing vs Market Average: Transparent Pricing Comparison";
+const description = "iHousing vs market average transparent pricing comparison. See how our flat fee model compares to commission-based managers in Melaka.";
+const date = "2026-02-08";
+const category = "comparison";
+const language = "en";
+const image = "/images/blog/ihousing-vs-market-average-transparent-pricing.jpg";
+
+const content = `
+<h1>iHousing vs Market Average: Transparent Pricing Comparison</h1>
+
+<h2>What Most Airbnb Management Companies in Melaka Charge (And Don't Tell You)</h2>
+
+<p>When comparing Airbnb management companies in Melaka, most owners focus on the advertised commission rate. But <strong>hidden fees and markups</strong> mean you're actually paying much more than the quoted percentage.</p>
+
+<p><strong>iHousing believes in complete transparency</strong>. We manage 100+ properties across Melaka with 8 years of experience, and we're happy to show you exactly how our pricing compares to market averages.</p>
+
+<h2>Market Average Management Pricing (What Others Don't Advertise)</h2>
+
+<h3>Advertised vs Real Costs</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Fee Type</th>
+      <th>Market Average</th>
+      <th>What They Tell You</th>
+      <th>What You Actually Pay</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Management Commission</strong></td>
+      <td>20-25%</td>
+      <td>"20% commission"</td>
+      <td>20-25% of revenue</td>
+    </tr>
+    <tr>
+      <td><strong>Cleaning Markup</strong></td>
+      <td>30-50%</td>
+      <td>"We handle cleaning"</td>
+      <td>RM120/stay (cost: RM80)</td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance Margin</strong></td>
+      <td>15-25%</td>
+      <td>"We coordinate repairs"</td>
+      <td>25% markup on all repairs</td>
+    </tr>
+    <tr>
+      <td><strong>Supplies Markup</strong></td>
+      <td>20-30%</td>
+      <td>"We restock essentials"</td>
+      <td>30% on toiletries, linens</td>
+    </tr>
+    <tr>
+      <td><strong>Platform Fees</strong></td>
+      <td>3-5%</td>
+      <td>"Platform fees apply"</td>
+      <td>Passed through to you</td>
+    </tr>
+    <tr>
+      <td><strong>Effective Total Cost</strong></td>
+      <td><strong>35-40%</strong></td>
+      <td>"20-25% commission"</td>
+      <td><strong>35-40% of revenue</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>iHousing Transparent Pricing (No Hidden Fees)</h2>
+
+<h3>Parkland Avenue by the Sea – Flat Fee Model</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Fee Type</th>
+      <th>iHousing Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1-Bedroom</strong></td>
+      <td><strong>RM200/month</strong> (flat)</td>
+    </tr>
+    <tr>
+      <td><strong>2-Bedroom</strong></td>
+      <td><strong>RM250/month</strong> (flat)</td>
+    </tr>
+    <tr>
+      <td><strong>3-Bedroom</strong></td>
+      <td><strong>RM300/month</strong> (flat)</td>
+    </tr>
+    <tr>
+      <td><strong>Cleaning</strong></td>
+      <td><strong>RM0 markup</strong> (in-house, cost only)</td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance</strong></td>
+      <td><strong>RM0 margin</strong> (you pay cost only)</td>
+    </tr>
+    <tr>
+      <td><strong>Supplies</strong></td>
+      <td><strong>RM0 markup</strong> (bulk pricing passed to you)</td>
+    </tr>
+    <tr>
+      <td><strong>Platform Fees</strong></td>
+      <td>3% (passed through, no markup)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Real Cost Comparison: RM10,000 Annual Revenue Property</h2>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Cost Category</th>
+      <th>Market Average</th>
+      <th>iHousing (Parkland)</th>
+      <th>Your Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Management Fee</strong></td>
+      <td>RM2,500 (25%)</td>
+      <td>RM3,000 (RM250/mo)</td>
+      <td>-RM500</td>
+    </tr>
+    <tr>
+      <td><strong>Cleaning Markup</strong></td>
+      <td>RM1,200 (40 stays × RM30)</td>
+      <td>RM0</td>
+      <td><strong>RM1,200</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance Margin</strong></td>
+      <td>RM600 (25% of RM2,400)</td>
+      <td>RM0</td>
+      <td><strong>RM600</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Supplies Markup</strong></td>
+      <td>RM300</td>
+      <td>RM0</td>
+      <td><strong>RM300</strong></td>
+    </tr>
+    <tr>
+      <td><strong>TOTAL ANNUAL COST</strong></td>
+      <td><strong>RM4,600</strong></td>
+      <td><strong>RM3,000</strong></td>
+      <td><strong>RM1,600 savings</strong></td>
+    </tr>
+    <tr>
+      <td><strong>NET TO YOU</strong></td>
+      <td>RM5,400 (46% of revenue)</td>
+      <td>RM7,000 (70% of revenue)</td>
+      <td><strong>+RM1,600/year</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Over 3 Years: The Difference Adds Up</h2>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>3-Year Cost</th>
+      <th>3-Year Net</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Market Average</strong></td>
+      <td>RM13,800</td>
+      <td>RM16,200</td>
+    </tr>
+    <tr>
+      <td><strong>iHousing Flat Fee</strong></td>
+      <td>RM9,000</td>
+      <td>RM21,000</td>
+    </tr>
+    <tr>
+      <td><strong>YOUR SAVINGS</strong></td>
+      <td><strong>RM4,800</strong></td>
+      <td><strong>+RM4,800</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Why Choose iHousing's Transparent Pricing?</h2>
+
+<h3>1. Predictable Costs</h3>
+<ul>
+  <li>Same fee every month – no surprises</li>
+  <li>Budget with confidence</li>
+  <li>No matter how much you earn, your cost stays the same</li>
+</ul>
+
+<h3>2. No Conflicts of Interest</h3>
+<ul>
+  <li>We don't profit from your expenses</li>
+  <li>Recommendations based on your best interest</li>
+  <li>Transparent reporting on all costs</li>
+</ul>
+
+<h3>3. Better ROI</h3>
+<ul>
+  <li>Keep 60-70% of revenue vs 40-50% with commission models</li>
+  <li>No markups eating your profits</li>
+  <li>More net income = better ROI on your property investment</li>
+</ul>
+
+<h2>For Non-Parkland Properties: Custom Transparent Quotes</h2>
+
+<p>For condos outside Parkland Avenue, we provide <strong>custom quotes based on your specific property</strong>:</p>
+
+<ul>
+  <li>Clear breakdown of all fees</li>
+  <li>No hidden markups or surprises</li>
+  <li>Flat fee options where available</li>
+  <li>Transparent comparison to commission models</li>
+</ul>
+
+<p><strong>Contact iHousing today</strong> for a transparent pricing comparison for your specific property. We'll show you exactly what you'd pay with us vs. competitors, with no obligations.</p>
+
+<p><a href="https://wa.me/60166996688">WhatsApp us for a custom pricing quote</a></p>
+`;
+---
+
+<BlogPost {title} {description} {image} {date} {category} {language} {content} />

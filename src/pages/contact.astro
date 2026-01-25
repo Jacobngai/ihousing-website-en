@@ -1,0 +1,201 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'Contact iHousing | Melaka Airbnb Management';
+const description = 'Get in touch with iHousing for Airbnb property management in Melaka. Fill out our contact form for free consultation about your property.';
+const image = 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200';
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 text-white py-20 lg:py-28">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-green-300 font-semibold mb-4 text-lg">Get In Touch</p>
+        <h1 class="text-3xl lg:text-5xl font-bold leading-tight mb-6">
+          Let's Chat About Your Property
+        </h1>
+        <p class="text-xl lg:text-2xl text-green-100 mb-8 max-w-3xl mx-auto">
+          Have questions? Want a free consultation? We're here to help.
+          <br class="hidden sm:block">
+          WhatsApp us for the fastest response.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">
+          Choose Your Preferred Way to Reach Us
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <!-- Contact Form -->
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border-2 border-green-200 text-center">
+            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl text-white">&#9993;</span>
+            </div>
+            <h3 class="text-xl font-bold text-green-900 mb-2">Contact Form</h3>
+            <p class="text-gray-700 mb-4">Fill out the form and we'll WhatsApp you back within 24 hours.</p>
+            <a
+              href="/en/contact-form/"
+              class="inline-block bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+            >
+              Open Contact Form
+            </a>
+            <p class="mt-4 text-sm text-gray-600">Response within 24 hours</p>
+          </div>
+
+          <!-- Call -->
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border-2 border-blue-200 text-center">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl text-white">&#128222;</span>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-2">Request Call Back</h3>
+            <p class="text-gray-700 mb-4">Prefer to talk? Leave your number in the contact form and we'll call you.</p>
+            <a
+              href="/en/contact-form/"
+              class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+            >
+              Request Call
+            </a>
+            <p class="mt-4 text-sm text-gray-600">Mon-Sat, 9am-6pm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-4">
+          <details class="bg-white p-6 rounded-xl shadow-sm">
+            <summary class="font-bold text-gray-900 cursor-pointer">How quickly do you respond to inquiries?</summary>
+            <p class="mt-3 text-gray-600">We typically respond to WhatsApp messages within 10 minutes during business hours (9am-6pm, Mon-Sat). For contact form submissions, we respond within 24 hours.</p>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl shadow-sm">
+            <summary class="font-bold text-gray-900 cursor-pointer">Do you charge for consultation?</summary>
+            <p class="mt-3 text-gray-600">No, consultation is completely free. We'll visit your property, assess its potential, and give you honest advice - no obligations.</p>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl shadow-sm">
+            <summary class="font-bold text-gray-900 cursor-pointer">What information should I prepare before contacting you?</summary>
+            <p class="mt-3 text-gray-600">Just have your property location and basic details ready (unit type, condition, current status). We'll guide you through everything else during our conversation.</p>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl shadow-sm">
+            <summary class="font-bold text-gray-900 cursor-pointer">Can you manage my property if it's not in Melaka?</summary>
+            <p class="mt-3 text-gray-600">Currently we focus on Melaka properties only. Our team and operations are based here, which allows us to provide the best service and local expertise.</p>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl shadow-sm">
+            <summary class="font-bold text-gray-900 cursor-pointer">I already have an Airbnb manager. Can I still talk to you?</summary>
+            <p class="mt-3 text-gray-600">Absolutely! We can explain our flat fee model and help you understand if switching makes sense for your situation. No pressure, just information.</p>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl shadow-sm">
+            <summary class="font-bold text-gray-900 cursor-pointer">What if my property needs renovation or furnishing?</summary>
+            <p class="mt-3 text-gray-600">We offer complete renovation and furnishing services. We'll assess your property during consultation and provide recommendations and pricing if needed.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office Hours -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">
+          Office Hours
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="font-bold text-gray-900 mb-4">WhatsApp Support</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex justify-between">
+                <span>Monday - Friday:</span>
+                <span class="font-semibold">9am - 8pm</span>
+              </li>
+              <li class="flex justify-between">
+                <span>Saturday:</span>
+                <span class="font-semibold">9am - 6pm</span>
+              </li>
+              <li class="flex justify-between">
+                <span>Sunday:</span>
+                <span class="font-semibold">10am - 4pm</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="font-bold text-gray-900 mb-4">Phone Support</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex justify-between">
+                <span>Monday - Saturday:</span>
+                <span class="font-semibold">9am - 6pm</span>
+              </li>
+              <li class="flex justify-between">
+                <span>Sunday:</span>
+                <span class="font-semibold text-gray-400">Closed</span>
+              </li>
+            </ul>
+            <p class="mt-4 text-sm text-gray-500">For guest emergencies, we provide 24/7 support to our managed property owners.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+          Looking for Something Specific?
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <a href="/en/services/pricing/" class="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+            <h3 class="font-bold text-gray-900 mb-2">View Our Pricing</h3>
+            <p class="text-gray-600">Transparent flat fee structure</p>
+          </a>
+          <a href="/en/services/how-it-works/" class="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+            <h3 class="font-bold text-gray-900 mb-2">How It Works</h3>
+            <p class="text-gray-600">Step-by-step process guide</p>
+          </a>
+          <a href="/en/properties/" class="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+            <h3 class="font-bold text-gray-900 mb-2">Properties We Manage</h3>
+            <p class="text-gray-600">See our locations and condos</p>
+          </a>
+          <a href="/en/about/" class="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+            <h3 class="font-bold text-gray-900 mb-2">About iHousing</h3>
+            <p class="text-gray-600">Learn more about our company</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-green-700 text-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+          Still Have Questions?
+        </h2>
+        <p class="text-xl text-green-100 mb-8">
+          Don't hesitate to reach out. We're happy to help with any questions about Airbnb management.
+        </p>
+        <a
+          href="/en/contact-form/"
+          class="inline-block bg-yellow-500 hover:bg-yellow-400 text-green-900 font-bold py-4 px-12 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg"
+        >
+          Contact Us Now
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,409 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Airbnb vs Booking.com: Which Platform Brings Better Guests for Melaka Properties?";
+const description = "Compare Airbnb vs Booking.com guest quality for Melaka vacation rentals. Platform differences in guest types, booking behavior, cancellation rates, and revenue potential.";
+const date = "2026-01-15";
+const category = "platform-comparison";
+const language = "en";
+const image = "/images/blog/airbnb-vs-booking-com-melaka.jpg";
+
+const content = `
+<h1>Airbnb vs Booking.com: Which Platform Brings Better Guests for Your Melaka Property?</h1>
+
+<h2>The Multi-Platform Dilemma</h2>
+
+<p>Most Melaka Airbnb owners list only on one platform. This is a mistake. Properties listed on multiple platforms see 60% more bookings and 35% higher revenue.</p>
+
+<p>But not all platforms bring the same type of guests. This guide compares Airbnb and Booking.com - the two largest vacation rental platforms - so you can understand what to expect from each.</p>
+
+<h2>Platform Overview: Market Position</h2>
+
+<h3>Airbnb</h3>
+<ul>
+  <li><strong>Founded:</strong> 2008</li>
+  <li><strong>Melaka listings:</strong> 3,000+ properties</li>
+  <li><strong>Focus:</strong> Vacation rentals, unique stays, local experiences</li>
+  <li><strong>Primary market:</strong> Leisure travelers, families, couples</li>
+</ul>
+
+<h3>Booking.com</h3>
+<ul>
+  <li><strong>Founded:</strong> 1996</li>
+  <li><strong>Melaka listings:</strong> 1,200+ properties</li>
+  <li><strong>Focus:</strong> Hotels, vacation rentals, all accommodation types</li>
+  <li><strong>Primary market:</strong> Business travelers, international tourists, last-minute bookers</li>
+</ul>
+
+<h2>Guest Quality Comparison</h2>
+
+<h3>Booking Behavior</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Airbnb</th>
+      <th>Booking.com</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Average booking window</strong></td>
+      <td>14-30 days in advance</td>
+      <td>3-7 days in advance</td>
+    </tr>
+    <tr>
+      <td><strong>Average stay length</strong></td>
+      <td>3-4 nights</td>
+      <td>1-2 nights</td>
+    </tr>
+    <tr>
+      <td><strong>Advance planning</strong></td>
+      <td>High (planned trips)</td>
+      <td>Low (spontaneous trips)</td>
+    </tr>
+    <tr>
+      <td><strong>Last-minute bookings</strong></td>
+      <td>15% of bookings</td>
+      <td>45% of bookings</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Guest Types</h3>
+
+<h4>Airbnb Guests:</h4>
+<ul>
+  <li><strong>Families:</strong> 40% (multi-generational trips)</li>
+  <li><strong>Couples:</strong> 30% (romantic getaways)</li>
+  <li><strong>Groups of friends:</strong> 20% (weekend trips)</li>
+  <li><strong>Solo travelers:</strong> 10% (digital nomads)</li>
+</ul>
+
+<h4>Booking.com Guests:</h4>
+<ul>
+  <li><strong>Business travelers:</strong> 35% (conferences, meetings)</li>
+  <li><strong>International tourists:</strong> 30% (Singapore, Indonesia, China)</li>
+  <li><strong>Domestic tourists:</strong> 25% (KL, Penang weekenders)</li>
+  <li><strong>Last-minute planners:</strong> 10% (spontaneous trips)</li>
+</ul>
+
+<h2>Revenue Performance Comparison</h2>
+
+<h3>Booking Value</h3>
+
+<p>Real data from Melaka properties (2-bedroom condos, 2025):</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Avg. Daily Rate</th>
+      <th>Occupancy</th>
+      <th>Monthly Revenue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Airbnb only</strong></td>
+      <td>RM320</td>
+      <td>68%</td>
+      <td>RM6,528</td>
+    </tr>
+    <tr>
+      <td><strong>Booking.com only</strong></td>
+      <td>RM280</td>
+      <td>55%</td>
+      <td>RM4,620</td>
+    </tr>
+    <tr>
+      <td><strong>Both platforms</strong></td>
+      <td>RM310</td>
+      <td>82%</td>
+      <td>RM7,752</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Key finding:</strong> Properties on both platforms earn 19% more than Airbnb-only properties.</p>
+
+<h3>Seasonal Performance</h3>
+
+<ul>
+  <li><strong>Peak season (school holidays):</strong> Airbnb dominates (60% more bookings)</li>
+  <li><strong>Off-peak (weekdays):</strong> Booking.com fills gaps (40% more midweek bookings)</li>
+  <li><strong>Event weekends:</strong> Airbnb commands higher rates (20-30% premium)</li>
+  <li><strong>Last-minute cancellations:</strong> Booking.com fills empty dates faster</li>
+</ul>
+
+<h2>Guest Behavior: What to Expect</h2>
+
+<h3>Communication Style</h3>
+
+<h4>Airbnb Guests:</h4>
+<ul>
+  <li><strong>Pre-arrival questions:</strong> 3-5 messages typical</li>
+  <li><strong>Expectations:</strong> Detailed local recommendations, host interaction</li>
+  <li><strong>Communication channel:</strong> Airbnb app (preferred)</li>
+  <li><strong>Response expectation:</strong> Within 1 hour</li>
+</ul>
+
+<h4>Booking.com Guests:</h4>
+<ul>
+  <li><strong>Pre-arrival questions:</strong> 1-2 messages typical</li>
+  <li><strong>Expectations:</strong> Hotel-like experience, professional service</li>
+  <li><strong>Communication channel:</strong> App, email, or phone</li>
+  <li><strong>Response expectation:</strong> Within 2 hours</li>
+</ul>
+
+<h3>Property Care</h3>
+
+<h4>Airbnb Guests:</h4>
+<ul>
+  <li><strong>Care level:</strong> Generally respectful (treat like home)</li>
+  <li><strong>House rules:</strong> Read and follow 90% of the time</li>
+  <li><strong>Check-out:</strong> Usually leave property tidy</li>
+  <li><strong>Issues:</strong> 5% report minor problems</li>
+</ul>
+
+<h4>Booking.com Guests:</h4>
+<ul>
+  <li><strong>Care level:</strong> Variable (hotel mindset vs. home mindset)</li>
+  <li><strong>House rules:</strong> Read and follow 75% of the time</li>
+  <li><strong>Check-out:</strong> Variable cleanliness</li>
+  <li><strong>Issues:</strong> 12% report minor problems</li>
+</ul>
+
+<h3>Review Behavior</h3>
+
+<h4>Airbnb:</h4>
+<ul>
+  <li><strong>Review rate:</strong> 70% of guests leave reviews</li>
+  <li><strong>Average rating:</strong> 4.8/5 typical for well-managed properties</li>
+  <li><strong>Review length:</strong> Detailed, personal (50-100 words)</li>
+  <li><strong>Impact:</strong> Critical for search ranking</li>
+</ul>
+
+<h4>Booking.com:</h4>
+<ul>
+  <li><strong>Review rate:</strong> 40% of guests leave reviews</li>
+  <li><strong>Average rating:</strong> 8.5/10 typical (equivalent to 4.5/5 Airbnb)</li>
+  <li><strong>Review length:</strong> Brief, factual (20-40 words)</li>
+  <li><strong>Impact:</strong> Moderate impact on visibility</li>
+</ul>
+
+<h2>Cancellation and Dispute Rates</h2>
+
+<h3>Cancellation Comparison</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Cancellation Type</th>
+      <th>Airbnb</th>
+      <th>Booking.com</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Guest-initiated (flexible)</strong></td>
+      <td>8% of bookings</td>
+      <td>12% of bookings</td>
+    </tr>
+    <tr>
+      <td><strong>Guest-initiated (moderate)</strong></td>
+      <td>4% of bookings</td>
+      <td>6% of bookings</td>
+    </tr>
+    <tr>
+      <td><strong>Guest-initiated (strict)</strong></td>
+      <td>2% of bookings</td>
+      <td>3% of bookings</td>
+    </tr>
+    <tr>
+      <td><strong>Host-initiated</strong></td>
+      <td>1% of bookings</td>
+      <td>2% of bookings</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Key finding:</strong> Booking.com guests cancel 50% more often than Airbnb guests.</p>
+
+<h3>Dispute Rates</h3>
+
+<ul>
+  <li><strong>Airbnb disputes:</strong> 0.5% of bookings (resolution center cases)</li>
+  <li><strong>Booking.com disputes:</strong> 0.8% of bookings</li>
+  <li><strong>Most common issues:</strong> Cleanliness, amenities not as described, noise</li>
+</ul>
+
+<h2>Platform Fees and Costs</h2>
+
+<h3>Host Fees</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Fee Type</th>
+      <th>Airbnb</th>
+      <th>Booking.com</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Host service fee</strong></td>
+      <td>3% (typically)</td>
+      <td>15% (commission)</td>
+    </tr>
+    <tr>
+      <td><strong>Guest fee</strong></td>
+      <td>0-14% (variable)</td>
+      <td>Usually 0%</td>
+    </tr>
+    <tr>
+      <td><strong>Total platform cost</strong></td>
+      <td>3-17% of booking</td>
+      <td>15% of booking</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Key finding:</strong> Booking.com charges higher host fees (15%) vs Airbnb (3%), but guests don't see the fee.</p>
+
+<h2>Listing Requirements Differences</h2>
+
+<h3>Airbnb Requirements</h3>
+<ul>
+  <li><strong>Photos:</strong> Minimum 1, recommended 20+</li>
+  <li><strong>Response time:</strong> Must respond within 24 hours</li>
+  <li><strong>Acceptance rate:</strong> Must accept 88%+ of inquiries</li>
+  <li><strong>Cancellations:</strong> Must keep under 5% (strict policy)</li>
+  <li><strong>Superhost status:</strong> 4.8+ rating, 10+ stays/year, <1% cancellation</li>
+</ul>
+
+<h3>Booking.com Requirements</h3>
+<ul>
+  <li><strong>Photos:</strong> Minimum 10, recommended 30+</li>
+  <li><strong>Response time:</strong> Must respond within 24 hours</li>
+  <li><strong>Availability:</strong> Must maintain accurate calendar</li>
+  <li><strong>Ratings:</strong> Must maintain 8.0+ rating</li>
+  <li><strong>Preferred partner:</strong> 8.5+ rating, fast response, competitive rates</li>
+</ul>
+
+<h2>Which Platform Should You Prioritize?</h2>
+
+<h3>Choose Airbnb First If:</h3>
+<ul>
+  <li>Your property is in a tourist area (Jonker Walk, UNESCO zone)</li>
+  <li>You target families and groups</li>
+  <li>You want longer stays (3+ nights)</li>
+  <li>You're willing to engage with guests pre-arrival</li>
+  <li>You have unique, photogenic property</li>
+</ul>
+
+<h3>Choose Booking.com First If:</h3>
+<ul>
+  <li>Your property is near business districts (Melaka Raya, Ayer Keroh)</li>
+  <li>You target business travelers and international tourists</li>
+  <li>You accept 1-2 night stays</li>
+  <li>You want hotel-like service expectations</li>
+  <li>You're close to airports or highways</li>
+</ul>
+
+<h3>Ideal Strategy: Both Platforms</h3>
+
+<p><strong>Why both?</strong></p>
+<ul>
+  <li>60% more bookings</li>
+  <li>35% higher revenue</li>
+  <li>Better occupancy (fill gaps)</li>
+  <li>Diversified guest base</li>
+  <li>Reduced dependency on single platform</li>
+</ul>
+
+<h2>How iHousing Manages Multi-Platform Listings</h2>
+
+<h3>Calendar Synchronization</h3>
+
+<p>We prevent double bookings with:</p>
+<ul>
+  <li>Real-time calendar sync across all 5 platforms</li>
+  <li>Automatic blocking when booking received</li>
+  <li>Buffer time for turnover (cleaning)</li>
+  <li>Instant booking rules (per platform)</li>
+</ul>
+
+<h3>Platform-Specific Optimization</h3>
+
+<p>We customize each listing:</p>
+<ul>
+  <li><strong>Airbnb:</strong> Personal, story-driven descriptions, host profile emphasis</li>
+  <li><strong>Booking.com:</strong> Professional, feature-focused, hotel-style amenities</li>
+  <li><strong>Pricing:</strong> Slight variations to account for fee differences</li>
+</ul>
+
+<h3>Review Management</h3>
+
+<p>We maintain ratings on both platforms:</p>
+<ul>
+  <li>Respond to all reviews within 24 hours</li>
+  <li>Address negative feedback professionally</li>
+  <li>Encourage satisfied guests to review</li>
+  <li>Track rating trends monthly</li>
+</ul>
+
+<h2>Measuring Multi-Platform Success</h2>
+
+<h3>Track These Metrics</h3>
+
+<ul>
+  <li><strong>Booking share by platform:</strong> What % comes from each?</li>
+  <li><strong>Revenue per platform:</strong> Which generates more income?</li>
+  <li><strong>Guest quality score:</strong> Communication, care, issues</li>
+  <li><strong>Review ratings by platform:</strong> Any discrepancies?</li>
+</ul>
+
+<h3>iHousing Monthly Reports</h3>
+
+<p>Every owner receives breakdown by:</p>
+<ul>
+  <li>Platform-specific booking count</li>
+  <li>Revenue per platform</li>
+  <li>Guest quality comparison</li>
+  <li>Optimization recommendations</li>
+</ul>
+
+<h2>Ready to Expand to Multiple Platforms?</h2>
+
+<p>Managing multiple platforms is complex. Calendar sync, pricing adjustments, review management - it's a full-time job.</p>
+
+<p>Let iHousing handle it for you.</p>
+
+<h3>For Parkland Avenue by the Sea:</h3>
+
+<p><strong>Includes:</strong> 5-platform listing (Airbnb, Booking.com, Agoda, VRBO, Expedia) with calendar sync and dynamic pricing.</p>
+
+<p><strong>Flat fee:</strong> RM200-300/month</p>
+
+<h3>For All Other Properties:</h3>
+
+<p><strong>WhatsApp us for custom pricing</strong> based on your property type and location.</p>
+
+<h2>Take Action Today</h2>
+
+<p>Stop limiting yourself to single-platform bookings. Expand to multiple platforms and watch your revenue grow by 35%+.</p>
+
+<p>WhatsApp iHousing now to start your multi-platform listing strategy.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

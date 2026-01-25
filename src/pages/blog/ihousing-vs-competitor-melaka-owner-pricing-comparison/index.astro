@@ -1,0 +1,497 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "iHousing vs Competitor: Melaka Owner Pricing Comparison";
+const description = "Compare Airbnb management pricing in Melaka. iHousing transparent pricing vs competitor commission models. See what 100+ owners pay. WhatsApp for custom quote.";
+const date = "2026-01-04";
+const category = "comparison";
+const language = "en";
+const image = "/images/blog/ihousing-vs-competitor-pricing-comparison.jpg";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>iHousing vs Competitor: Melaka Owner Pricing Comparison</h1>
+
+<h2>What Most Melaka Airbnb Management Companies Charge</h2>
+
+<p>You're researching Airbnb management in Melaka. You want transparency.</p>
+
+<p>Here's what most competitors charge:</p>
+
+<p><strong>Commission Model (Standard):</strong></p>
+<ul>
+  <li>20-30% of your revenue</li>
+  <li>Cleaning markup: 30-50%</li>
+  <li>Maintenance margin: 15-25%</li>
+  <li>Supply markup: 15-20%</li>
+  <li>Emergency call fees: RM50-100</li>
+</ul>
+
+<p><strong>Real cost to you: 25-35% of revenue</strong></p>
+
+<p>Here's what iHousing charges:</p>
+
+<p><strong>For Parkland Avenue by the Sea:</strong></p>
+<ul>
+  <li>1 Room: RM200/month flat fee</li>
+  <li>2 Rooms: RM250/month flat fee</li>
+  <li>3 Rooms: RM300/month flat fee</li>
+</ul>
+
+<p><strong>For all other condos:</strong></p>
+<ul>
+  <li>Custom pricing (WhatsApp us)</li>
+  <li>No hidden markups</li>
+  <li>Transparent costs</li>
+</ul>
+
+<p>This comparison breaks down exactly what you'll pay with iHousing vs competitors, based on actual Melaka owner experiences.</p>
+
+<h2>The Typical Competitor Pricing Structure</h2>
+
+<h3>Commission Fee: 20-30%</h3>
+
+<p><strong>How it works:</strong></p>
+<ul>
+  <li>Your Airbnb earns: RM10,000/year</li>
+  <li>Competitor takes: RM2,000-3,000/year (20-30%)</li>
+  <li>You receive: RM7,000-8,000/year (before other fees)</li>
+</ul>
+
+<p><strong>The problem:</strong></p>
+<ul>
+  <li>Variable cost (you pay more when you earn more)</li>
+  <li>Penalizes success (higher revenue = higher fee)</li>
+  <li>Unpredictable (fluctuates monthly)</li>
+</ul>
+
+<h3>Cleaning Markup: 30-50%</h3>
+
+<p><strong>How it works:</strong></p>
+<ul>
+  <li>Actual cleaning cost: RM80/stay</li>
+  <li>Competitor charges you: RM110-120/stay</li>
+  <li>Markup: RM30-40/stay</li>
+</ul>
+
+<p><strong>Annual impact (40 stays/year):</strong></p>
+<ul>
+  <li>Markup to you: RM1,200-1,600/year</li>
+  <li>3-year cost: <strong>RM3,600-4,800</strong></li>
+</ul>
+
+<h3>Maintenance Margin: 15-25%</h3>
+
+<p><strong>How it works:</strong></p>
+<ul>
+  <li>Plumber bill: RM300</li>
+  <li>Competitor charges you: RM350-375</li>
+  <li>Their margin: RM50-75</li>
+</ul>
+
+<p><strong>Annual impact:</strong></p>
+<ul>
+  <li>Average maintenance: RM800/year</li>
+  <li>Margin to you: RM120-200/year</li>
+  <li>3-year cost: <strong>RM360-600</strong></li>
+</ul>
+
+<h3>Hidden Fees Competitors Don't Mention</h3>
+
+<p><strong>Emergency call fees:</strong></p>
+<ul>
+  <li>Guest calls at 10 PM with issue</li>
+  <li>Competitor charges: RM50-100/call</li>
+  <li>Happens 5-10 times/year</li>
+  <li><strong>Annual cost: RM250-1,000</strong></li>
+</ul>
+
+<p><strong>"Platform management" fees:</strong></p>
+<ul>
+  <li>Listing on multiple platforms</li>
+  <li>Some charge extra: RM50-100/month</li>
+  <li><strong>Annual cost: RM600-1,200</strong></li>
+</ul>
+
+<p><strong>Photography fees:</strong></p>
+<ul>
+  <li>Professional photos needed</li>
+  <li>Some charge: RM500-1,000 one-time</li>
+  <li>Or include in contract but mark up elsewhere</li>
+</ul>
+
+<h2>iHousing Pricing Structure</h2>
+
+<h3>Parkland Avenue by the Sea: Flat Fee</h3>
+
+<p><strong>Exclusive flat fee pricing (only for Parkland):</strong></p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Unit Type</th>
+      <th>Monthly Fee</th>
+      <th>Annual Fee</th>
+      <th>What's Included</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 Room</td>
+      <td>RM200</td>
+      <td>RM2,400</td>
+      <td>Everything listed below</td>
+    </tr>
+    <tr>
+      <td>2 Rooms</td>
+      <td>RM250</td>
+      <td>RM3,000</td>
+      <td>Everything listed below</td>
+    </tr>
+    <tr>
+      <td>3 Rooms</td>
+      <td>RM300</td>
+      <td>RM3,600</td>
+      <td>Everything listed below</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>What's included in Parkland flat fee:</strong></p>
+<ul>
+  <li><strong>responsive guest communication</strong> - Response within 30 minutes, multi-language (EN, MS, ZH)</li>
+  <li><strong>Professional Cleaning</strong> - In-house team, after every checkout, no markup</li>
+  <li><strong>Maintenance Coordination</strong> - We handle, you pay cost only</li>
+  <li><strong>5-Platform Listing</strong> - Airbnb, Booking.com, Agoda, VRBO, Expedia with sync</li>
+  <li><strong>Dynamic Pricing</strong> - Algorithm-based optimization</li>
+  <li><strong>Professional Photography</strong> - High-resolution photos included</li>
+  <li><strong>Monthly Reporting</strong> - Transparent income statements</li>
+  <li><strong>Zero Hidden Fees</strong> - No emergency charges, no markups</li>
+</ul>
+
+<h3>All Other Condos: Custom Pricing</h3>
+
+<p><strong>Why custom pricing?</strong></p>
+
+<p>Every condo is different:</p>
+<ul>
+  <li>Location affects revenue potential</li>
+  <li>Size affects cleaning time</li>
+  <li>Condition affects maintenance needs</li>
+  <li>Amenities affect guest expectations</li>
+</ul>
+
+<p><strong>How we determine your pricing:</strong></p>
+
+<ol>
+  <li><strong>Property assessment:</strong> We inspect your condo, understand unique factors</li>
+  <li><strong>Revenue projection:</strong> We estimate your Airbnb earning potential</li>
+  <li><strong>Service scope:</strong> We discuss what you need (full management vs partial)</li>
+  <li><strong>Transparent quote:</strong> We provide clear pricing, no surprises</li>
+</ol>
+
+<p><strong>WhatsApp us for custom pricing:</strong></p>
+<ul>
+  <li>Tell us your condo details</li>
+  <li>We'll analyze your situation</li>
+  <li>Receive personalized quote</li>
+  <li>No obligation, no pressure</li>
+</ul>
+
+<h2>Real Owner Comparison: 3-Year Cost</h2>
+
+<h3>Scenario: 2-Bedroom Condo, RM10,000 Annual Revenue</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Competitor (20% + Markups)</th>
+      <th>iHousing (Custom Pricing Example)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Gross Revenue (3 years)</strong></td>
+      <td>RM30,000</td>
+      <td>RM30,000</td>
+    </tr>
+    <tr>
+      <td><strong>Management Fee</strong></td>
+      <td>-RM6,000 (20%)</td>
+      <td>-RM8,100 (RM270/mo estimate)</td>
+    </tr>
+    <tr>
+      <td><strong>Cleaning Markup</strong></td>
+      <td>-RM4,200 (30% markup)</td>
+      <td>RM0 (in-house, no markup)</td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance Margin</strong></td>
+      <td>-RM500 (20% margin)</td>
+      <td>RM0 (you pay cost only)</td>
+    </tr>
+    <tr>
+      <td><strong>Supplies Markup</strong></td>
+      <td>-RM450 (20% markup)</td>
+      <td>RM0 (bulk pricing, no markup)</td>
+    </tr>
+    <tr>
+      <td><strong>Emergency Fees</strong></td>
+      <td>-RM1,500 (avg RM50/mo)</td>
+      <td>RM0 (included in fee)</td>
+    </tr>
+    <tr>
+      <td><strong>Platform Fees</strong></td>
+      <td>-RM1,500</td>
+      <td>-RM1,500</td>
+    </tr>
+    <tr>
+      <td><strong>TOTAL DEDUCTIONS</strong></td>
+      <td><strong>RM14,150</strong></td>
+      <td><strong>RM9,600</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Net to Owner (3 years)</strong></td>
+      <td><strong>RM15,850</strong></td>
+      <td><strong>RM20,400</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Difference</strong></td>
+      <td colspan="2">+<strong>RM4,550 MORE with iHousing</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>For Parkland Avenue (Flat Fee Example):</strong></p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Competitor (20% + Markups)</th>
+      <th>iHousing (Parkland Flat Fee)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Gross Revenue (3 years)</strong></td>
+      <td>RM30,000</td>
+      <td>RM30,000</td>
+    </tr>
+    <tr>
+      <td><strong>Management Fee</strong></td>
+      <td>-RM6,000 (20%)</td>
+      <td>-RM9,000 (RM250/mo)</td>
+    </tr>
+    <tr>
+      <td><strong>Cleaning Markup</strong></td>
+      <td>-RM4,200 (30% markup)</td>
+      <td>RM0</td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance Margin</strong></td>
+      <td>-RM500 (20% margin)</td>
+      <td>RM0</td>
+    </tr>
+    <tr>
+      <td><strong>Supplies Markup</strong></td>
+      <td>-RM450 (20% markup)</td>
+      <td>RM0</td>
+    </tr>
+    <tr>
+      <td><strong>Emergency Fees</strong></td>
+      <td>-RM1,500 (avg RM50/mo)</td>
+      <td>RM0</td>
+    </tr>
+    <tr>
+      <td><strong>Platform Fees</strong></td>
+      <td>-RM1,500</td>
+      <td>-RM1,500</td>
+    </tr>
+    <tr>
+      <td><strong>TOTAL DEDUCTIONS</strong></td>
+      <td><strong>RM14,150</strong></td>
+      <td><strong>RM10,500</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Net to Owner (3 years)</strong></td>
+      <td><strong>RM15,850</strong></td>
+      <td><strong>RM19,500</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Difference</strong></td>
+      <td colspan="2">+<strong>RM3,650 MORE with iHousing</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>What 100+ Melaka Owners Say</h2>
+
+<h3>Common Complaints About Competitors</h3>
+
+<p><strong>1. "I didn't know about the cleaning markup"</strong></p>
+<ul>
+  <li>Owner discovers markup in monthly statement</li>
+  <li>Thought cleaning cost was "actual cost"</li>
+  <li>Fees add up to RM1,000+ annually</li>
+</ul>
+
+<p><strong>2. "Emergency charges kept appearing"</strong></p>
+<ul>
+  <li>Guest calls at 10 PM, charged RM80</li>
+  <li>Guest locks out, charged RM50</li>
+  <li>Owner has no control, bill arrives monthly</li>
+</ul>
+
+<p><strong>3. "Maintenance margin felt excessive"</strong></p>
+<ul>
+  <li>RM300 plumber bill, charged RM360</li>
+  <li>RM200 AC repair, charged RM240</li>
+  <li>Owner finds out later, feels nickel-and-dimed</li>
+</ul>
+
+<p><strong>4. "Commission kept increasing"</strong></p>
+<ul>
+  <li>Property performs well, revenue goes up</li>
+  <li>Competitor fee goes up (20% of higher amount)</li>
+  <li>Owner pays more for same service</li>
+</ul>
+
+<h3>Why Owners Switch to iHousing</h3>
+
+<p><strong>1. "I know exactly what I'll pay each month"</strong></p>
+<ul>
+  <li>Parkland: RM200-300 fixed (no surprises)</li>
+  <li>Other condos: Agreed pricing, no markups</li>
+  <li>Predictable expense = better planning</li>
+</ul>
+
+<p><strong>2. "No more surprise charges"</strong></p>
+<ul>
+  <li>Cleaning: In-house team, no markup</li>
+  <li>Maintenance: You pay contractor directly</li>
+  <li>Emergencies: Included in fee (responsive support)</li>
+</ul>
+
+<p><strong>3. "Transparent reporting"</strong></p>
+<ul>
+  <li>Monthly statements show every transaction</li>
+  <li>No hidden categories</li>
+  <li>Easy to understand</li>
+</ul>
+
+<p><strong>4. "More bookings, more platforms"</strong></p>
+<ul>
+  <li>5-platform listing vs competitor's 1-2</li>
+  <li>60% more bookings</li>
+  <li>Better occupancy (60%+ vs 40-50% market average)</li>
+</ul>
+
+<h2>iHousing Advantages Beyond Pricing</h2>
+
+<h3>8 Years Experience in Melaka</h3>
+<ul>
+  <li>We know the market</li>
+  <li>We understand seasonality</li>
+  <li>We have proven strategies</li>
+  <li>100+ properties managed</li>
+</ul>
+
+<h3>5-Platform Strategy</h3>
+<ul>
+  <li>Airbnb, Booking.com, Agoda, VRBO, Expedia</li>
+  <li>Competitors often use 1-2 platforms</li>
+  <li>Result: 60% more bookings</li>
+</ul>
+
+<h3>In-House Cleaning Team</h3>
+<ul>
+  <li>We employ our own cleaners</li>
+  <li>No middleman, no markup</li>
+  <li>Consistent quality control</li>
+  <li>Faster turnover</li>
+</ul>
+
+<h3>60%+ Average Occupancy</h3>
+<ul>
+  <li>Melaka market average: 19-22%</li>
+  <li>Our average: 60%+</li>
+  <li>Because: Professional photos, dynamic pricing, quick response during business hours</li>
+</ul>
+
+<h2>Is iHousing Right for You?</h2>
+
+<h3>Choose iHousing If:</h3>
+<ul>
+  <li>You want transparent pricing (no hidden fees)</li>
+  <li>You own Parkland Avenue (flat fee pricing)</li>
+  <li>You want multi-platform listing (5 platforms)</li>
+  <li>You value in-house cleaning (no markup)</li>
+  <li>You want 60%+ occupancy (proven track record)</li>
+</ul>
+
+<h3>Consider Competitors If:</h3>
+<ul>
+  <li>You prefer commission model (pay percentage)</li>
+  <li>You want minimum management involvement</li>
+  <li>You're okay with markups for convenience</li>
+</ul>
+
+<h2>Get Your Custom Pricing</h2>
+
+<h3>For Parkland Avenue by the Sea:</h3>
+
+<p><strong>Pre-register now to lock in:</strong></p>
+<ul>
+  <li>1 Room: RM200/month flat fee</li>
+  <li>2 Rooms: RM250/month flat fee</li>
+  <li>3 Rooms: RM300/month flat fee</li>
+</ul>
+
+<p><strong>Official launch:</strong> August 2025</p>
+
+<p><strong>Pre-registration benefits:</strong></p>
+<ul>
+  <li>Lock in pricing before launch</li>
+  <li>Priority unit selection</li>
+  <li>Free initial consultation</li>
+</ul>
+
+<h3>For All Other Condos:</h3>
+
+<p><strong>WhatsApp us for custom pricing:</strong></p>
+
+<ol>
+  <li>Tell us your condo details (location, size, condition)</li>
+  <li>We'll assess your Airbnb potential</li>
+  <li>Receive transparent pricing quote</li>
+  <li>Compare to your current situation</li>
+</ol>
+
+<p><strong>No obligation</strong></p>
+<p><strong>No pressure</strong></p>
+<p><strong>Just clarity</strong></p>
+
+<h2>Take Action Today</h2>
+
+<p>Stop overpaying hidden markups. Get transparent pricing.</p>
+
+<p>Whether you're in Parkland Avenue (flat fee) or another condo (custom pricing), iHousing offers a better deal than commission-based competitors.</p>
+
+<p><strong>WhatsApp us now:</strong></p>
+
+<p>Get your custom pricing quote. See exactly what you'll pay. Compare to what you're currently paying.</p>
+
+<p>Switch to transparent management. Keep more of your hard-earned income.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

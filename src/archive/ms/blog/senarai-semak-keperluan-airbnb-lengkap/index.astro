@@ -1,0 +1,425 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Senarai Semak Keperluan Airbnb: Apa Perlu Disediakan 2025";
+const description = "Senarai semak lengkap apa yang perlu disediakan untuk Airbnb di Melaka. Termasuk keperluan wajib, item pilihan, dan anggaran kos untuk setiap kategori.";
+const image = "/images/blog/senarai-semak-keperluan-airbnb-lengkap.jpg";
+const date = "2025-01-23";
+const category = "setup";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Senarai Semak Keperluan Airbnb: Apa Perlu Disediakan 2025</h1>
+        <p>Menyediakan hartanah untuk Airbnb bukan sekadar meletakkan katil dan meja. Untuk mendapat rating 5 bintang dan ulasan positif dari tetamu, anda perlu menyediakan lebih daripada asas.</p>
+        <p>Panduan ini adalah senarai semak lengkap untuk memastikan hartanah Airbnb anda sedia untuk menerima tetamu.</p>
+        <h2>Kategori 1: Keperluan Wajib (TANPA NEGO)</h2>
+        <p>Item-item ini WAJIB ada. Tanpanya, senarai anda mungkin ditandakan sebagai tidak lengkap oleh tetamu.</p>
+        <h3>Bilik Tidur</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Katil**</td><td>Saiz sesuai (queen/king untuk utama)</td><td>RM800-3,000</td></tr>
+            <tr><td>**Tilam**</td><td>Selesa, bukan yang termurah</td><td>RM500-2,500</td></tr>
+            <tr><td>**Lentil**</td><td>2 set (1 guna, 1 simpanan)</td><td>RM200-600</td></tr>
+            <tr><td>**Bantal**</td><td>2-4 set (extra untuk tetamu)</td><td>RM100-300</td></tr>
+            <tr><td>**Selimut**</td><td>2 set (untuk cuaca sejuk)</td><td>RM150-400</td></tr>
+            <tr><td>**Almari pakaian**</td><td>Ruang untuk gantung & lipat</td><td>RM600-2,000</td></tr>
+            <tr><td>**Meja malam**</td><td>1-2 unit dengan laci</td><td>RM150-400 x 2</td></tr>
+            <tr><td>**Lampu malam**</td><td>Boleh dimatikan dari katil</td><td>RM80-200 x 2</td></tr>
+            <tr><td>**Langsir/gelap**</td><td>Gelap untuk tidur selesa</td><td>RM200-600</td></tr>
+            <tr><td>**Pemanas air**</td><td>Jika bilik air luar</td><td>RM200-400</td></tr>
+            <tr><td>**Penyaman udara**</td><td>Minimum 1.0HP</td><td>RM1,200-2,000</td></tr>
+            <tr><td>**Lampu utama**</td><td>Pencahayaan cukup terang</td><td>RM100-300</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah Minimum:</strong> RM3,860-12,300
+        <h3>Bilik Air</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Handuk**</td><td>4-6 helai (2 set untuk ganti)</td><td>RM200-500</td></tr>
+            <tr><td>**Sabun**</td><td>Saiz perjalanan, botol isi semula</td><td>RM50-100 (stok)</td></tr>
+            <tr><td>**Syampu**</td><td>Saiz perjalanan</td><td>RM40-80 (stok)</td></tr>
+            <tr><td>**Kondisioner**</td><td>Pilihan tetapi dihargai</td><td>RM30-60 (stok)</td></tr>
+            <tr><td>**Tisu tandas**</td><td>2-3 gulung stok</td><td>RM10-20 (stok)</td></tr>
+            <tr><td>**Jebok dulang**</td><td>Satu set</td><td>RM50-150</td></tr>
+            <tr><td>**Pengering rambut**</td><td>Minimum 1200W</td><td>RM60-150</td></tr>
+            <tr><td>**Cermin**</td><td>Cermin wajib</td><td>RM100-300</td></tr>
+            <tr><td>**Rak**</td><td>Untuk barang tetamu</td><td>RM50-150</td></tr>
+            <tr><td>**Pouch selipar**</td><td>Selipar getah untuk tetamu</td><td>RM30-60 (set)</td></tr>
+            <tr><td>**Sampah tudung**</td><td>Tutup sampah</td><td>RM20-40</td></tr>
+            <tr><td>**Pembersih lantai**</td><td>Untuk kebersihan</td><td>RM30-80</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah Minimum:</strong> RM670-1,590
+        <h3>Dapur</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Peti sejuk**</td><td>Minimum 200 liter</td><td>RM800-2,500</td></tr>
+            <tr><td>**Microwave**</td><td>Asas sudah memadai</td><td>RM200-600</td></tr>
+            <tr><td>**Cerek elektrik**</td><td>Untuk buat air panas</td><td>RM60-150</td></tr>
+            <tr><td>**Periuk nasi**</td><td>Jika ramai tetamu Asia</td><td>RM80-200</td></tr>
+            <tr><td>**Periuk**</td><td>1-2 unit saiz berbeza</td><td>RM80-200</td></tr>
+            <tr><td>**Kuali**</td><td>1 unit</td><td>RM50-150</td></tr>
+            <tr><td>**Pisau**</td><td>Set 3-6</td><td>RM50-150</td></tr>
+            <tr><td>**Papan memotong**</td><td>1-2 unit</td><td>RM20-50</td></tr>
+            <tr><td>**Peralatan makan**</td><td>4-6 set (pinggan, sudu, garpu)</td><td>RM150-400</td></tr>
+            <tr><td>**Cawan & gelas**</td><td>6-8 set</td><td>RM80-200</td></tr>
+            <tr><td>**Senduk**</td><td>2-3 unit</td><td>RM20-50</td></tr>
+            <tr><td>**Sudip**</td><td>1-2 unit</td><td>RM10-30</td></tr>
+            <tr><td>**Meja makan**</td><td>Dengan kerusi</td><td>RM400-1,500</td></tr>
+            <tr><td>**Rak dapur**</td><td>Untuk simpan barang</td><td>RM100-300</td></tr>
+            <tr><td>**Pembuka tin**</td><td>Alat asas</td><td>RM10-20</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah Minimum:</strong> RM2,080-6,350
+        <h3>Ruang Tamu</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Sofa**</td><td>Selesa untuk 2-4 orang</td><td>RM600-3,000</td></tr>
+            <tr><td>**Meja kopi**</td><td>Ruang untuk meletak barang</td><td>RM150-500</td></tr>
+            <tr><td>**TV**</td><td>Minimum 32 inci</td><td>RM800-3,000</td></tr>
+            <tr><td>**Kabinet TV**</td><td>Untuk letak TV & deco</td><td>RM300-1,200</td></tr>
+            <tr><td>**Penyaman udara**</td><td>Jika ruang tamu besar</td><td>RM1,500-2,500</td></tr>
+            <tr><td>**Lampu utama**</td><td>Pencahayaan utama</td><td>RM100-300</td></tr>
+            <tr><td>**Lampu hiasan**</td><td>Untuk suasana</td><td>RM80-200</td></tr>
+            <tr><td>**Karpet**</td><td>Pilihan tetapi selesa</td><td>RM300-800</td></tr>
+            <tr><td>**Rak kasut**</td><td>Untuk tetamu letak kasut</td><td>RM100-300</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah Minimum:</strong> RM3,930-11,800
+        <h3>Keselamatan & Akses</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Pintar berkunci**</td><td>Untuk daftar masuk sendiri</td><td>RM500-1,500</td></tr>
+            <tr><td>**Pemadam api**</td><td>Wajib untuk keselamatan</td><td>RM40-80</td></tr>
+            <tr><td>**First aid kit**</td><td>Wajib untuk kecemasan</td><td>RM30-60</td></tr>
+            <tr><td>**Kotak ubat asas**</td><td>Plaster, antiseptik, dll</td><td>RM50-100</td></tr>
+            <tr><td>**Lampu kecemasan**</td><td>Power failure</td><td>RM30-60</td></tr>
+            <tr><td>**Pengesan asap**</td><td>Wajib untuk keselamatan</td><td>RM60-150</td></tr>
+            <tr><td>**Pengesan karbon monoksida**</td><td>Jika ada dapur gas</td><td>RM80-150</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah Minimum:</strong> RM790-2,100
+        <h3>Kemudahan Teknologi</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**WiFi**</td><td>Minimum 30Mbps</td><td>RM100-200/bulan</td></tr>
+            <tr><td>**Kata laluan WiFi**</td><td>Ditulis dengan jelas</td><td>RM0</td></tr>
+            <tr><td>**Kabel kuasa**</td><td>Untuk charging tetamu</td><td>RM30-80</td></tr>
+            <tr><td>**Papan kuasa**</td><td>2-3 unit</td><td>RM20-60</td></tr>
+            <tr><td>**Charger**</td><td>Pilihan tetapi dihargai</td><td>RM20-50</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah Minimum:</strong> RM170-390
+        <h2>Kategori 2: Item yang Meningkatkan Rating (PENTING)</h2>
+        <p>Item ini bukan wajib, tetapi tetamu sangat menghargai. Ini akan membezakan senarai anda dari pesaing.</p>
+        <h3>Kit Keperluan Tetamu</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Minuman selamat datang**</td><td>2-4 botol air</td><td>RM5-10</td></tr>
+            <tr><td>**Teh/kopi**</td><td>2-4 sachet</td><td>RM5-10</td></tr>
+            <tr><td>**Gula/creamer**</td><td>Kecil saja</td><td>RM3-5</td></tr>
+            <tr><td>**Biskut/snack**</td><td>Kecil sebagai sambutan</td><td>RM5-15</td></tr>
+            <tr><td>**Buah**</td><td>2-3 buah</td><td>RM5-10</td></tr>
+            <tr><td>**Manual rumah**</td><td>Arahan penggunaan</td><td>RM0 (print)</td></tr>
+            <tr><td>**Peta Melaka**</td><td>Untuk tetamu pelancong</td><td>RM0 (print)</td></tr>
+            <tr><td>**Senarai restoran**</td><td>Cadangan berdekatan</td><td>RM0 (print)</td></tr>
+            <tr><td>**Senarai tarikan**</td><td>Tempat menarik berdekatan</td><td>RM0 (print)</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah:</strong> RM23-60
+        <h3>Keperluan Tambahan Bilik Tidur</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Sarung bantal tambahan**</td><td>2-4 unit</td><td>RM40-100</td></tr>
+            <tr><td>**Selimut tambahan**</td><td>1-2 unit</td><td>RM80-200</td></tr>
+            <tr><td>**Hanger**</td><td>6-10 unit</td><td>RM30-60</td></tr>
+            <tr><td>**Iron & board**</td><td>Untuk tetamu setrika</td><td>RM100-200</td></tr>
+            <tr><td>**Safe box**</td><td>Untuk barang berharga</td><td>RM200-500</td></tr>
+            <tr><td>**Full length mirror**</td><td>Cermin panjang</td><td>RM80-200</td></tr>
+            <tr><td>**Bedside lamp**</td><td>Lampu baca</td><td>RM50-150</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah:</strong> RM580-1,410
+        <h3>Kemudahan Tambahan Dapur</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Blender**</td><td>Untuk buat jus</td><td>RM100-300</td></tr>
+            <tr><td>**Toaster**</td><td>Untuk sarapan</td><td>RM80-200</td></tr>
+            <tr><td>**Rak wine**</td><td>Jika ada ruang</td><td>RM80-200</td></tr>
+            <tr><td>**Ketuhar gelombang mikro**</td><td>Jika tiada microwave</td><td>RM200-400</td></tr>
+            <tr><td>**Dapur masak**</td><td>Jika ada ruang</td><td>RM300-800</td></tr>
+            <tr><td>**Hood**</td><td>Untuk masak</td><td>RM200-500</td></tr>
+            <tr><td>**Botol minuman**</td><td>2-3 botol kaca</td><td>RM30-60</td></tr>
+            <tr><td>**Tupperware**</td><td>Untuk simpan makanan</td><td>RM50-100</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah:</strong> RM1,040-2,560
+        <h3>Hiasan & Suasana</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Seni dinding**</td><td>2-4 keping</td><td>RM100-400</td></tr>
+            <tr><td>**Pokok hiasan**</td><td>1-2 unit</td><td>RM30-100</td></tr>
+            <tr><td>**Vas bunga**</td><td>1-2 unit</td><td>RM30-80</td></tr>
+            <tr><td>**Candle**</td><td>Untuk aroma</td><td>RM50-150</td></tr>
+            <tr><td>**Karpet**</td><td>Untuk keselesaan</td><td>RM200-600</td></tr>
+            <tr><td>**Bantal lantai**</td><td>Untuk suasana santai</td><td>RM50-150</td></tr>
+            <tr><td>**Lampu hias**</td><td>Untuk mood</td><td>RM80-200</td></tr>
+            <tr><td>**Photo frame**</td><td>Gambar keluarga/deco</td><td>RM50-150</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah:</strong> RM590-1,830
+        <h2>Kategori 3: Item Pilihan (NICE TO HAVE)</h2>
+        <p>Item ini untuk keselesaan tambahan, terutama untuk senarai premium.</p>
+        <h3>Hiburan</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Netflix**</td><td>Langganan bulanan</td><td>RM35-55/bulan</td></tr>
+            <tr><td>**Speaker Bluetooth**</td><td>Untuk muzik</td><td>RM100-300</td></tr>
+            <tr><td>**DVD player**</td><td>Jika ada koleksi DVD</td><td>RM100-200</td></tr>
+            <tr><td>**Buku**</td><td>3-5 buku bacaan</td><td>RM30-60</td></tr>
+            <tr><td>**Games**</td><td>Board games, kad</td><td>RM50-150</td></tr>
+          </tbody>
+        </table>
+        <h3>Keselesaan Tambahan</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Yoga mat**</td><td>1-2 unit</td><td>RM30-60</td></tr>
+            <tr><td>**Umbrella**</td><td>2-3 unit untuk hujan</td><td>RM30-60</td></tr>
+            <tr><td>**Power bank**</td><td>Untuk guna tetamu</td><td>RM50-100</td></tr>
+            <tr><td>**Travel adapter**</td><td>Untuk tetamu asing</td><td>RM20-40</td></tr>
+            <tr><td>**Sewing kit**</td><td>Untuk kecemasan</td><td>RM10-20</td></tr>
+          </tbody>
+        </table>
+        <h2>Kategori 4: Keperluan Khusus Melaka</h2>
+        <p>Oleh kerana hartanah anda di Melaka, ada beberapa item khusus yang sangat berguna:</p>
+        <h3>Pelancong</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Peta Melaka**</td><td>Peta pelancong</td><td>RM0 (print)</td></tr>
+            <tr><td>**Guide book**</td><td>Buku panduan Melaka</td><td>RM0 (print)</td></tr>
+            <tr><td>**Umbrella**</td><td>Kerap hujan di Melaka</td><td>RM30-60</td></tr>
+            <tr><td>**Mosquito repellent**</td><td>Untuk keselesaan</td><td>RM15-30</td></tr>
+            <tr><td>**Fan portabel**</td><td>Jika tidak ada AC</td><td>RM50-100</td></tr>
+          </tbody>
+        </table>
+        <h3>Keluarga</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Keterangan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Katil bayi**</td><td>Jika sering ada keluarga</td><td>RM200-500</td></tr>
+            <tr><td>**High chair**</td><td>Kerusi makan bayi</td><td>RM100-300</td></tr>
+            <tr><td>**Mainan**</td><td>Beberapa mainan</td><td>RM30-80</td></tr>
+            <tr><td>**Buku kanak-kanak**</td><td>3-5 buku</td><td>RM20-50</td></tr>
+            <tr><td>**Baby gate**</td><td>Untuk keselamatan</td><td>RM80-150</td></tr>
+          </tbody>
+        </table>
+        <h2>Senarai Semak Persediaan Sebelum Daftar Masuk</h2>
+        <h3>1 Minggu Sebelum</h3>
+        <ul>
+        <li>[ ] Pesan barang habis guna (sabun, syampu, tisu)</li>
+        <li>[ ] Semak semua peralatan berfungsi</li>
+        <li>[ ] Uji pintar berkunci</li>
+        <li>[ ] Semak WiFi berfungsi</li>
+        <li>[ ] Bersihkan unit sepenuhnya</li>
+        </ul>
+        <h3>1 Hari Sebelum</h3>
+        <ul>
+        <li>[ ] Ganti lentik & handuk</li>
+        <li>[ ] Isi semula barang habis guna</li>
+        <li>[ ] Letak minuman selamat datang</li>
+        <li>[ ] Pastikan suhu bilik selesa</li>
+        <li>[ ] Uji semua lampu & AC</li>
+        </ul>
+        <h3>Hari Daftar Masuk</h3>
+        <ul>
+        <li>[ ] Semak kebersihan bilik air</li>
+        <li>[ ] Pastikan tiada barang peribadi tertinggal</li>
+        <li>[ ] Hantar mesej selamat datang</li>
+        <li>[ ] Sediakan kata laluan WiFi</li>
+        <li>[ ] Pastikan manual rumah ada</li>
+        </ul>
+        <h2>Kos Setup Mengikut Tahap</h2>
+        <h3>Tahap Asas (RM8,000-12,000)</h3>
+        <p>Cukup untuk memulakan, tetapi jangkakan rating 3.5-4 bintang.</p>
+        <p>Termasuk:</p>
+        <ul>
+        <li>Semua keperluan wajib</li>
+        <li>Beberapa item tambahan asas</li>
+        </ul>
+        <h3>Tahap Standard (RM15,000-25,000)</h3>
+        <p>Untuk rating 4-4.5 bintang.</p>
+        <p>Termasuk:</p>
+        <ul>
+        <li>Semua keperluan wajib</li>
+        <li>Kebanyakan item tambahan</li>
+        <li>Hiasan sederhana</li>
+        </ul>
+        <h3>Tahap Premium (RM30,000-50,000)</h3>
+        <p>Untuk rating 4.5-5 bintang dan harga sewa premium.</p>
+        <p>Termasuk:</p>
+        <ul>
+        <li>Semua keperluan wajib & tambahan</li>
+        <li>Hiasan berkualiti</li>
+        <li>Kemudahan premium</li>
+        <li>Perabot designer</li>
+        </ul>
+        <h2>Tips Jimat Wang</h2>
+        <h3>Tip 1: Guna Barang Terpakai untuk Item Tertentu</h3>
+        <p>Boleh beli terpakai:</p>
+        <ul>
+        <li>Kerusi, meja</li>
+        <li>Perabot dapur</li>
+        <li>Hiasan dinding</li>
+        <li>Rak</li>
+        </ul>
+        <p>JANGAN beli terpakai:</p>
+        <ul>
+        <li>Tilam (alasan kesihatan)</li>
+        <li>Lentik/handuk</li>
+        <li>Peralatan elektrik</li>
+        </ul>
+        <h3>Tip 2: Mulakan dengan Asas</h3>
+        <p>Beli item wajib dulu:</p>
+        <ul>
+        <li>Katil + tilam: RM2,000</li>
+        <li>Sofa: RM800</li>
+        <li>Dapur asas: RM1,500</li>
+        <li>TV: RM1,000</li>
+        <li>Pintar berkunci: RM600</li>
+        </ul>
+        <p>Jumlah permulaan: RM5,900</p>
+        <h3>Tip 3: Beli Set Berbanding Berasingan</h3>
+        <p>Contoh jimat:</p>
+        <ul>
+        <li>Set meja makan (meja + 4 kerusi) = RM800 vs RM1,000 (beli berasingan)</li>
+        <li>Set bilik tidur (katil + 2 almari) = RM3,000 vs RM3,800</li>
+        </ul>
+        <h3>Tip 4: Prioritaskan "Touch Points"</h3>
+        <p>Item yang banyak disentuh tetamu:</p>
+        <ul>
+        <li>Lentik & handuk berkualiti</li>
+        <li>Sofa selesa</li>
+        <li>Peralatan dapur stainless steel</li>
+        <li>Tombol pintu metal</li>
+        </ul>
+        <h2>Senarai Semak Pembersihan untuk Tetamu</h2>
+        <h3>Harian/Sela Tetamu</h3>
+        <ul>
+        <li>[ ] Tukar lentik</li>
+        <li>[ ] Ganti handuk</li>
+        <li>[ ] Bersihkan bilik air</li>
+        <li>[ ] Sapu/lantai</li>
+        <li>[ ] Kosongkan sampah</li>
+        <li>[ ] Isi semula barang habis guna</li>
+        </ul>
+        <h3>Mingguan</h3>
+        <ul>
+        <li>[ ] Cuci tingkap</li>
+        <li>[ ] Bersihkan dalaman peti sejuk</li>
+        <li>[ ] Semak & ganti filtara AC</li>
+        <li>[ ] Cuci langsir (jika perlu)</li>
+        </ul>
+        <h3>Bulanan</h3>
+        <ul>
+        <li>[ ] Semak semua peralatan elektrik</li>
+        <li>[ ] Uji pintar berkunci</li>
+        <li>[ ] Semak kebocoran</li>
+        <li>[ ] Servis penyaman udara</li>
+        <li>[ ] Semak semua lampu</li>
+        </ul>
+        <h2>Dapatkan Bantuan dari iHousing</h2>
+        <p>Kami boleh membantu anda dengan:</p>
+        <ol>
+        <li>Senarai semak khusus untuk unit anda</li>
+        <li>Pembekal diskaun untuk barang keperluan</li>
+        <li>Pengurusan persediaan sepenuhnya</li>
+        <li>Stok barang habis guna</li>
+        </ol>
+        <h3>Untuk Parkland Avenue by the Sea</h3>
+        <p>Paket setup lengkap:</p>
+        <ul>
+        <li>Dari RM15,000 untuk unit studio</li>
+        <li>Dari RM25,000 untuk unit 2-bilik</li>
+        <li>Termasuk semua keperluan wajib & tambahan</li>
+        </ul>
+        <h3>Untuk Kondominium Lain</h3>
+        <p>WhatsApp kami untuk:</p>
+        <ul>
+        <li>Senarai semak khusus unit anda</li>
+        <li>Anggaran kos mengikut bajet</li>
+        <li>Cadangan pembekal</li>
+        </ul>
+        <hr class="my-8">
+        <h2>Ringkasan: Jumlah Kos Mengikut Kategori</h2>
+        <table>
+          <thead>
+            <tr><th>Kategori</th><th>Kos Minimum</th><th>Kos Sederhana</th><th>Kos Premium</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Keperluan Wajib</td><td>RM10,550</td><td>RM15,000</td><td>RM25,000</td></tr>
+            <tr><td>Item Meningkatkan Rating</td><td>RM2,200</td><td>RM4,500</td><td>RM8,000</td></tr>
+            <tr><td>Item Pilihan</td><td>RM500</td><td>RM2,000</td><td>RM5,000</td></tr>
+            <tr><td>Khusus Melaka</td><td>RM100</td><td>RM300</td><td>RM800</td></tr>
+            <tr><td>**JUMLAH**</td><td>**RM13,350**</td><td>**RM21,800**</td><td>**RM38,800**</td></tr>
+          </tbody>
+        </table>
+        <hr class="my-8">
+        <strong>Artikel Berkaitan:</strong>
+        <ul>
+        <li>[Membeli Perabot untuk Airbnb](/ms/blog/membeli-perabot-untuk-airbnb-panduan-lengkap)</li>
+        <li>[Bajet Pengubahsuaian Airbnb](/ms/blog/bajet-pengubahsuaian-airbnb)</li>
+        <li>[Mula Airbnb di Melaka: Panduan Pemula](/ms/blog/mula-airbnb-di-melaka-panduan-pemula)</li>
+        </ul>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

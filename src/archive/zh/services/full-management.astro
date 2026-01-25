@@ -1,0 +1,240 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'Full Airbnb Management Service Melaka | iHousing';
+const description = 'Complete Airbnb property management in Melaka. We handle guests, cleaning, maintenance, and everything else. 100+ properties managed. WhatsApp us for custom pricing.';
+const image = 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200';
+
+const contactFormLink = '/zh/contact-form/';
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 text-white py-20 lg:py-28">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-green-300 font-semibold mb-4 text-lg">Complete Hands-Off Service</p>
+        <h1 class="text-3xl lg:text-5xl font-bold leading-tight mb-6">
+          Full Airbnb Management
+        </h1>
+        <p class="text-xl lg:text-2xl text-green-100 mb-8 max-w-3xl mx-auto">
+          We handle everything. Guest communication, cleaning, maintenance, pricing. You just receive income.
+          <br class="hidden sm:block">
+          <span class="text-yellow-400 font-bold">Contact us for custom pricing</span>.
+        </p>
+        <a href={contactFormLink} class="inline-block bg-yellow-500 hover:bg-yellow-400 text-green-900 font-bold py-4 px-10 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg">
+          Get Started Now
+        </a>
+      </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">
+          We Handle Everything
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Guest Communication -->
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl border-2 border-green-200">
+            <div class="w-14 h-14 bg-green-600 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl text-white">&#128172;</span>
+            </div>
+            <h3 class="text-xl font-bold text-green-900 mb-2">Guest Communication</h3>
+            <p class="text-gray-700">
+              24/7 response to inquiries, check-in coordination, guest support during stay, checkout handling.
+            </p>
+          </div>
+
+          <!-- Cleaning -->
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border-2 border-blue-200">
+            <div class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl text-white">&#128719;</span>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-2">Professional Cleaning</h3>
+            <p class="text-gray-700">
+              In-house cleaning team. After every guest stay. Fresh linens, spotless bathrooms, ready for next booking.
+            </p>
+          </div>
+
+          <!-- Maintenance -->
+          <div class="bg-gradient-to-br from-purple-50 to-violet-50 p-6 rounded-xl border-2 border-purple-200">
+            <div class="w-14 h-14 bg-purple-600 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl text-white">&#128726;</span>
+            </div>
+            <h3 class="text-xl font-bold text-purple-900 mb-2">Maintenance & Repairs</h3>
+            <p class="text-gray-700">
+              Immediate response to issues. Trusted contractors. Preventive maintenance. We handle it all.
+            </p>
+          </div>
+
+          <!-- Pricing -->
+          <div class="bg-gradient-to-br from-yellow-50 to-amber-50 p-6 rounded-xl border-2 border-yellow-200">
+            <div class="w-14 h-14 bg-yellow-600 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl text-white">&#128178;</span>
+            </div>
+            <h3 class="text-xl font-bold text-yellow-900 mb-2">Dynamic Pricing</h3>
+            <p class="text-gray-700">
+              AI-powered pricing adjusts daily. Maximize occupancy and revenue. Seasonal optimization.
+            </p>
+          </div>
+
+          <!-- 5 Platforms -->
+          <div class="bg-gradient-to-br from-pink-50 to-rose-50 p-6 rounded-xl border-2 border-pink-200">
+            <div class="w-14 h-14 bg-pink-600 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl text-white">5</span>
+            </div>
+            <h3 class="text-xl font-bold text-pink-900 mb-2">5 Platform Listing</h3>
+            <p class="text-gray-700">
+              Airbnb, Booking.com, Agoda, Expedia, Agoda Homes. 60% more booking opportunities.
+            </p>
+          </div>
+
+          <!-- Photos -->
+          <div class="bg-gradient-to-br from-gray-50 to-slate-100 p-6 rounded-xl border-2 border-gray-200">
+            <div class="w-14 h-14 bg-gray-700 rounded-full flex items-center justify-center mb-4">
+              <span class="text-2xl text-white">&#128248;</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Professional Photos</h3>
+            <p class="text-gray-700">
+              High-quality listing photography. Optimized descriptions. Stand out from competition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">
+          How It Works
+        </h2>
+
+        <div class="space-y-6">
+          <div class="flex items-start gap-6">
+            <div class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
+              1
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Free Consultation</h3>
+              <p class="text-gray-600">Tell us about your property. We'll estimate your potential income and recommend the best approach.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-6">
+            <div class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
+              2
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Property Setup</h3>
+              <p class="text-gray-600">We photograph, furnish (if needed), and create optimized listings on 5 platforms.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-6">
+            <div class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
+              3
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Start Earning</h3>
+              <p class="text-gray-600">We handle guests, cleaning, maintenance. You receive monthly income reports and payments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-center">
+          What's Included
+        </h2>
+        <p class="text-center text-gray-600 mb-10 text-lg">
+          Complete hands-off service. No hidden charges.
+        </p>
+
+        <div class="bg-gray-100 p-6 rounded-xl text-center">
+          <p class="text-gray-700 mb-4"><strong>What's included:</strong> Guest communication, cleaning, maintenance, 5-platform listing, dynamic pricing, monthly reports</p>
+          <p class="text-sm text-gray-500">Contact us for detailed pricing. Cleaning supplies and utilities paid by guest. Major repairs quoted separately.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="py-16 bg-gray-900 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-10 text-center">
+          See What You Save
+        </h2>
+
+        <div class="bg-white text-gray-900 rounded-2xl p-8 shadow-2xl">
+          <p class="text-center text-gray-600 mb-6">Example: 2-bedroom unit earning RM4,000/month</p>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-red-50 p-6 rounded-xl border-2 border-red-200">
+              <h3 class="text-xl font-bold text-red-700 mb-4">Traditional Manager (20%)</h3>
+              <p class="text-3xl font-bold text-red-600 mb-2">RM800/month</p>
+              <p class="text-gray-600">RM9,600/year in fees</p>
+            </div>
+
+            <div class="bg-green-50 p-6 rounded-xl border-2 border-green-300">
+              <h3 class="text-xl font-bold text-green-700 mb-4">iHousing (Custom Pricing)</h3>
+              <p class="text-3xl font-bold text-green-600 mb-2">Custom Fee</p>
+              <p class="text-gray-600">Contact us for details</p>
+            </div>
+          </div>
+
+          <div class="mt-8 text-center bg-yellow-100 p-6 rounded-xl border-2 border-yellow-400">
+            <p class="text-lg text-gray-700">Save thousands every year</p>
+            <p class="text-gray-600">Contact us to calculate your exact savings</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-green-700 text-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+          Ready to Go Hands-Off?
+        </h2>
+        <p class="text-xl text-green-100 mb-8">
+          Let's have a quick chat about your property. No obligations, just friendly advice.
+        </p>
+        <a href={contactFormLink} class="inline-block bg-yellow-500 hover:bg-yellow-400 text-green-900 font-bold py-4 px-12 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg">
+          Contact Us Now
+        </a>
+      </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Explore Our Services</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <a href="/en/services/listing-setup/" class="block p-6 border-2 border-gray-200 rounded-xl hover:border-green-500 transition-all">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Listing Setup Only</h3>
+            <p class="text-gray-600">One-time setup for DIY hosts</p>
+          </a>
+          <a href="/en/services/renovation/" class="block p-6 border-2 border-gray-200 rounded-xl hover:border-green-500 transition-all">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Renovation & Furnishing</h3>
+            <p class="text-gray-600">Convert empty unit to Airbnb-ready</p>
+          </a>
+          <a href="/en/services/how-it-works/" class="block p-6 border-2 border-gray-200 rounded-xl hover:border-green-500 transition-all">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">How It Works</h3>
+            <p class="text-gray-600">Step-by-step process explanation</p>
+          </a>
+          <a href="/en/services/pricing/" class="block p-6 border-2 border-gray-200 rounded-xl hover:border-green-500 transition-all">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Pricing</h3>
+            <p class="text-gray-600">Transparent pricing breakdown</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</Layout>

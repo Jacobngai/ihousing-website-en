@@ -1,0 +1,400 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "马六甲哪个公寓适合做民宿？2025年10大最佳投资公寓排名";
+const description = "马六甲哪个公寓适合做民宿？iHousing根据8年管理经验，为您推荐10个最佳民宿投资公寓。对比位置、租金、入住率和管理层政策。";
+const image = "/images/blog/nage-gongyu-shihe-minsu.jpg";
+const date = "2025-01-23";
+const category = "solution-aware";
+const language = "zh";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>马六甲哪个公寓适合做民宿？2025年10大最佳投资公寓排名</h1>
+        <p>想在马六甲投资民宿公寓，但不知道选哪个？本文根据iHousing 8年管理经验和真实数据，为您推荐10个最适合做Airbnb的公寓。我们已管理100+物业，了解每个公寓的优缺点。</p>
+        <h2>一、选择民宿公寓的关键标准</h2>
+        <h3>1.1 最重要的5个因素</h3>
+        <table>
+          <thead>
+            <tr><th>评估标准</th><th>权重</th><th>说明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**位置与景点距离**</td><td>30%</td><td>靠近旅游景点 = 更高入住率</td></tr>
+            <tr><td>**管理层政策**</td><td>25%</td><td>允许短租是必须条件</td></tr>
+            <tr><td>**停车位**</td><td>15%</td><td>游客自驾需求高</td></tr>
+            <tr><td>**安全与设施**</td><td>15%</td><td>门禁、泳池、健身房</td></tr>
+            <tr><td>**房价与租金比**</td><td>15%</td><td>投资回报率计算</td></tr>
+          </tbody>
+        </table>
+        <h3>1.2 避免选择这些公寓</h3>
+        <strong>不适合做民宿的特征：</strong>
+        <ul>
+        <li>✗ 管理层明确禁止短租</li>
+        <li>✗ 停车位不足（游客会差评）</li>
+        <li>✗ 远离旅游景点（超过15分钟车程）</li>
+        <li>✗ 设施老旧（客人要求越来越高）</li>
+        <li>✗ 治安不佳（安全是客人第一考量）</li>
+        </ul>
+        <h2>二、10大最佳民宿公寓排名</h2>
+        <h3>第1名：Parkland Avenue by the Sea ⭐ 推荐指数：10/10</h3>
+        <strong>基本信息：</strong>
+        <ul>
+        <li><strong>位置：</strong> 爱极乐（Ayer Keroh）</li>
+        <li><strong>类型：</strong> 海景公寓（2025年8月开业）</li>
+        <li><strong>价格：</strong> RM 300-500K（预售）</li>
+        <li><strong>房间数：</strong> 1-3房</li>
+        </ul>
+        <strong>民宿优势：</strong>
+        <ul>
+        <li>✓ <strong>iHousing官方管理方</strong> - 全程无忧</li>
+        <li>✓ <strong>海景景观</strong> - 游客愿意付更高价格</li>
+        <li>✓ <strong>新建筑</strong> - 现代化设施</li>
+        <li>✓ <strong>免费WiFi</strong> - 高速网络</li>
+        <li>✓ <strong>固定管理费</strong> - RM 200-300/月（独家）</li>
+        </ul>
+        <strong>预计收入：</strong> RM 6,000-8,000/月
+        <strong>入住率预期：</strong> 60-70%（开业后第一年）
+        <hr class="my-8">
+        <h3>第2名：Silverscape Residence ⭐ 推荐指数：9.5/10</h3>
+        <strong>基本信息：</strong>
+        <ul>
+        <li><strong>位置：</strong> 峇峇娘惹博物馆对面</li>
+        <li><strong>类型：</strong> 高档服务公寓</li>
+        <li><strong>价格：</strong> RM 250-400K（二手）</li>
+        <li><strong>房间数：</strong> 2-3房</li>
+        </ul>
+        <strong>民宿优势：</strong>
+        <ul>
+        <li>✓ <strong>最佳位置</strong> - 步行到鸡场街</li>
+        <li>✓ <strong>已有Airbnb文化</strong> - 管理层熟悉短租</li>
+        <li>✓ <strong>游客认可度高</strong> - Airbnb评分高</li>
+        <li>✓ <strong>设施完善</strong> - 泳池、健身房、桑拿</li>
+        <li>✓ <strong>安全性高</strong> - 24小时保安</li>
+        </ul>
+        <strong>实际数据（iHousing管理的物业）：</strong>
+        <ul>
+        <li>平均月收入：RM 5,000-6,500</li>
+        <li>平均入住率：55-65%</li>
+        <li>客人评价：4.8/5</li>
+        </ul>
+        <hr class="my-8">
+        <h3>第3名：The Shore Residence ⭐ 推荐指数：9/10</h3>
+        <strong>基本信息：</strong>
+        <ul>
+        <li><strong>位置：</strong> 马六甲河畔</li>
+        <li><strong>类型：</strong> 豪华海景公寓</li>
+        <li><strong>价格：</strong> RM 350-600K（二手）</li>
+        <li><strong>房间数：</strong> 2-4房</li>
+        </ul>
+        <strong>民宿优势：</strong>
+        <ul>
+        <li>✓ <strong>无敌海景</strong> - 可以定更高价格</li>
+        <li>✓ <strong>地理位置极佳</strong> - 靠近红屋广场</li>
+        <li>✓ <strong>豪华设施</strong> - 无边泳池、Sky Garden</li>
+        <li>✓ <strong>高端市场</strong> - 吸引新加坡、高预算游客</li>
+        </ul>
+        <strong>适合人群：</strong> 高预算投资者
+        <strong>预计收入：</strong> RM 7,000-9,000/月
+        <hr class="my-8">
+        <h3>第4名：Hatten City ⭐ 推荐指数：8.5/10</h3>
+        <strong>基本信息：</strong>
+        <ul>
+        <li><strong>位置：</strong> 市中心（Dataran Pahlawan）</li>
+        <li><strong>类型：</strong> 综合发展项目</li>
+        <li><strong>价格：</strong> RM 280-450K</li>
+        <li><strong>房间数：</strong> 1-3房</li>
+        </ul>
+        <strong>民宿优势：</strong>
+        <ul>
+        <li>✓ <strong>购物天堂</strong> - 连接Hatten Square商场</li>
+        <li>✓ <strong>交通方便</strong> - 公车站、 Grab易叫</li>
+        <li>✓ <strong>部分楼栋允许短租</strong> - 需确认具体楼栋</li>
+        <li>✓ <strong>游客密集区</strong> - 步行到所有景点</li>
+        </ul>
+        <strong>注意事项：</strong> 需要确认管理条规
+        <hr class="my-8">
+        <h3>第5名：The Legacy Residence ⭐ 推荐指数：8/10</h3>
+        <strong>基本信息：</strong>
+        <ul>
+        <li><strong>位置：</strong> Jalan Ong Kim Wee</li>
+        <li><strong>类型：</strong> 中高档公寓</li>
+        <li><strong>价格：</strong> RM 220-350K</li>
+        <li><strong>房间数：</strong> 2-3房</li>
+        </ul>
+        <strong>民宿优势：</strong>
+        <ul>
+        <li>✓ <strong>靠近古城</strong> - 5分钟车程到鸡场街</li>
+        <li>✓ <strong>价格相对合理</strong> - 投资门槛较低</li>
+        <li>✓ <strong>允许短租</strong> - 管理层友好</li>
+        <li>✓ <strong>停车方便</strong> - 每单位至少1个车位</li>
+        </ul>
+        <hr class="my-8">
+        <h3>第6名：The Sail ⭐ 推荐指数：7.5/10</h3>
+        <strong>基本信息：</strong>
+        <ul>
+        <li><strong>位置：</strong> Melaka Raya</li>
+        <li><strong>类型：</strong> 高层公寓</li>
+        <li><strong>价格：</strong> RM 200-300K</li>
+        <li><strong>房间数：</strong> 1-3房</li>
+        </ul>
+        <strong>民宿优势：</strong>
+        <ul>
+        <li>✓ <strong>Melaka Raya中心</strong> - 靠近夜市、美食</li>
+        <li>✓ <strong>价格实惠</strong> - 回本更快</li>
+        <li>✓ <strong>停车位充足</strong></li>
+        <li>✓ <strong>本地游客多</strong> - 周末客源稳定</li>
+        </ul>
+        <hr class="my-8">
+        <h3>第7名：Casa Lombok ⭐ 推荐指数：7.5/10</h3>
+        <strong>基本信息：</strong>
+        <ul>
+        <li><strong>位置：</strong> Batu Berendam</li>
+        <li><strong>类型：</strong> 度假风格公寓</li>
+        <li><strong>价格：</strong> RM 250-380K</li>
+        <li><strong>房间数：</strong> 2-3房</li>
+        </ul>
+        <strong>民宿优势：</strong>
+        <ul>
+        <li>✓ <strong>靠近机场</strong> - 适合商务旅客</li>
+        <li>✓ <strong>度假村风格</strong> - 游客喜欢</li>
+        <li>✓ <strong>环境安静</strong> - 好评率高</li>
+        <li>✓ <strong>设施完善</strong> - 泳池、烧烤区</li>
+        </ul>
+        <hr class="my-8">
+        <h3>第8名：1 Residence @ Malacca ⭐ 推荐指数：7/10</h3>
+        <strong>基本信息：</strong>
+        <ul>
+        <li><strong>位置：</strong> Jalan Tun Ali</li>
+        <li><strong>类型：</strong> 现代公寓</li>
+        <li><strong>价格：</strong> RM 230-350K</li>
+        <li><strong>房间数：</strong> 1-3房</li>
+        </ul>
+        <strong>民宿优势：</strong>
+        <ul>
+        <li>✓ <strong>靠近高速路口</strong> - 方便自驾游客</li>
+        <li>✓ <strong>设施现代化</strong></li>
+        <li>✓ <strong>价格合理</strong></li>
+        <li>✓ <strong>停车方便</strong></li>
+        </ul>
+        <hr class="my-8">
+        <h3>第9名：Novo 8 Residence ⭐ 推荐指数：7/10</h3>
+        <strong>基本信息：</strong>
+        <ul>
+        <li><strong>位置：</strong> Bachang</li>
+        <li><strong>类型：</strong> 中档公寓</li>
+        <li><strong>价格：</strong> RM 180-280K</li>
+        <li><strong>房间数：</strong> 2-3房</li>
+        </ul>
+        <strong>民宿优势：</strong>
+        <ul>
+        <li>✓ <strong>价格最低</strong> - 投资门槛最低</li>
+        <li>✓ <strong>靠近市区</strong> - 10分钟到鸡场街</li>
+        <li>✓ <strong>本地市场</strong> - 周末客源稳定</li>
+        <li>✓ <strong>停车位充足</strong></li>
+        </ul>
+        <strong>注意：</strong> 需要确认管理条规
+        <hr class="my-8">
+        <h3>第10名：Imperio Residence ⭐ 推荐指数：6.5/10</h3>
+        <strong>基本信息：</strong>
+        <ul>
+        <li><strong>位置：</strong> Jalan PM4</li>
+        <li><strong>类型：</strong> 精品公寓</li>
+        <li><strong>价格：</strong> RM 240-360K</li>
+        <li><strong>房间数：</strong> 1-3房</li>
+        </ul>
+        <strong>民宿优势：</strong>
+        <ul>
+        <li>✓ <strong>安静区域</strong> - 适合家庭客</li>
+        <li>✓ <strong>停车方便</strong></li>
+        <li>✓ <strong>价格合理</strong></li>
+        </ul>
+        <strong>注意：</strong> 离景点较远，需要评估交通
+        <hr class="my-8">
+        <h2>三、不同预算的最佳选择</h2>
+        <h3>预算 < RM 250,000</h3>
+        <strong>推荐：</strong> Novo 8 Residence, The Sail
+        <strong>优势：</strong>
+        <ul>
+        <li>投资门槛低</li>
+        <li>回本快（2-3年）</li>
+        <li>适合第一次投资者</li>
+        </ul>
+        <strong>预期回报：</strong> RM 3,000-4,500/月
+        <hr class="my-8">
+        <h3>预算 RM 250,000 - RM 400,000</h3>
+        <strong>推荐：</strong> Silverscape Residence, Hatten City, The Legacy Residence
+        <strong>优势：</strong>
+        <ul>
+        <li>最佳位置</li>
+        <li>稳定客源</li>
+        <li>高入住率</li>
+        </ul>
+        <strong>预期回报：</strong> RM 4,500-6,500/月
+        <hr class="my-8">
+        <h3>预算 > RM 400,000</h3>
+        <strong>推荐：</strong> The Shore Residence, Parkland Avenue by the Sea
+        <strong>优势：</strong>
+        <ul>
+        <li>高端市场</li>
+        <li>更高定价能力</li>
+        <li>海景景观</li>
+        <li>资产增值潜力</li>
+        </ul>
+        <strong>预期回报：</strong> RM 6,000-9,000/月
+        <hr class="my-8">
+        <h2>四、位置分析：马六甲三大热门区域</h2>
+        <h3>4.1 古城区（Jonker Walk区域）</h3>
+        <strong>包括：</strong> Silverscape, The Shore, Hatten City
+        <strong>优势：</strong>
+        <ul>
+        <li>步行到所有景点</li>
+        <li>游客首选区域</li>
+        <li>高定价能力</li>
+        <li>入住率稳定</li>
+        </ul>
+        <strong>适合：</strong> 预算较高的投资者
+        <hr class="my-8">
+        <h3>4.2 Melaka Raya区域</h3>
+        <strong>包括：</strong> The Sail, Novo 8
+        <strong>优势：</strong>
+        <ul>
+        <li>本地游客多</li>
+        <li>价格实惠</li>
+        <li>靠近夜市、美食</li>
+        <li>周末需求稳定</li>
+        </ul>
+        <strong>适合：</strong> 预算有限的投资者
+        <hr class="my-8">
+        <h3>4.3 Ayer Keroh区域</h3>
+        <strong>包括：</strong> Parkland Avenue, Casa Lombok
+        <strong>优势：</strong>
+        <ul>
+        <li>新发展项目</li>
+        <li>设施现代化</li>
+        <li>靠近机场、高速</li>
+        <li>价格增长潜力</li>
+        </ul>
+        <strong>适合：</strong> 长期投资者
+        <hr class="my-8">
+        <h2>五、投资回报率对比</h2>
+        <table>
+          <thead>
+            <tr><th>公寓名称</th><th>房价</th><th>家具投资</th><th>月收入</th><th>年收入</th><th>回本时间</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Parkland</td><td>RM 400K</td><td>RM 25K</td><td>RM 7,000</td><td>RM 84K</td><td>约5年</td></tr>
+            <tr><td>Silverscape</td><td>RM 300K</td><td>RM 30K</td><td>RM 5,500</td><td>RM 66K</td><td>约5年</td></tr>
+            <tr><td>The Shore</td><td>RM 500K</td><td>RM 40K</td><td>RM 8,000</td><td>RM 96K</td><td>约5.5年</td></tr>
+            <tr><td>Hatten City</td><td>RM 350K</td><td>RM 25K</td><td>RM 5,000</td><td>RM 60K</td><td>约6年</td></tr>
+            <tr><td>Novo 8</td><td>RM 220K</td><td>RM 20K</td><td>RM 3,500</td><td>RM 42K</td><td>约5.5年</td></tr>
+          </tbody>
+        </table>
+        <em>注：回本时间包括房价和家具投资</em>
+        <hr class="my-8">
+        <h2>六、如何确认公寓允许做民宿？</h2>
+        <h3>检查清单</h3>
+        <strong>步骤1：查看Strata Title文件</strong>
+        <ul>
+        <li>寻找"短期租住"或"商业用途"相关条款</li>
+        <li>注意最短租期限制</li>
+        </ul>
+        <strong>步骤2：询问物业管理公司</strong>
+        <ul>
+        <li>直接电话询问</li>
+        <li>获得书面确认</li>
+        </ul>
+        <strong>步骤3：实地调查</strong>
+        <ul>
+        <li>在Airbnb搜索该公寓</li>
+        <li>看有多少Listing在运营</li>
+        <li>与其他业主交流</li>
+        </ul>
+        <strong>步骤4：咨询专业人士</strong>
+        <ul>
+        <li>iHousing提供免费评估</li>
+        <li>我们了解所有公寓的政策</li>
+        </ul>
+        <hr class="my-8">
+        <h2>七、常见问题解答</h2>
+        <h3>Q1: 哪个公寓的回报率最高？</h3>
+        <strong>答：</strong> Novo 8和The Sail回报率最高（约18-20%），但房价增值潜力较低。Silverscape和Parkland回报率稳定（15-18%），且有增值潜力。
+        <h3>Q2: 应该买新房还是二手房？</h3>
+        <strong>答：</strong> 各有优劣：
+        <table>
+          <thead>
+            <tr><th>类型</th><th>优势</th><th>劣势</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**新房**</td><td>设施新、设计现代</td><td>价格高、位置可能一般</td></tr>
+            <tr><td>**二手房**</td><td>位置好、价格低</td><td>可能需要翻新</td></tr>
+          </tbody>
+        </table>
+        <h3>Q3: 投资哪个房型最好？</h3>
+        <strong>答：</strong>
+        <ul>
+        <li><strong>1房：</strong> 适合单身、情侣（RM 120-180/晚）</li>
+        <li><strong>2房：</strong> 最佳选择，适合家庭（RM 180-250/晚）</li>
+        <li><strong>3房：</strong> 大团体、高收入（RM 250-350/晚）</li>
+        </ul>
+        <strong>推荐：</strong> 2房公寓（平衡投资和收入）
+        <h3>Q4: 如何获得 financing 贷款？</h3>
+        <strong>答：</strong>
+        <ul>
+        <li>银行允许民宿投资贷款</li>
+        <li>需要证明收入能力</li>
+        <li>iHousing可以提供收入预估信</li>
+        </ul>
+        <h3>Q5: 购买前需要注意什么？</h3>
+        <strong>答：</strong>
+        <ul>
+        <li>✓ 确认允许短租</li>
+        <li>✓ 检查停车位数量</li>
+        <li>✓ 检查公寓设施状态</li>
+        <li>✓ 询问管理费金额</li>
+        <li>✓ 了解邻居组成</li>
+        </ul>
+        <hr class="my-8">
+        <h2>八、iHousing如何帮助您</h2>
+        <h3>我们的服务</h3>
+        <ul>
+        <li>✓ 免费公寓评估</li>
+        <li>✓ 投资回报率计算</li>
+        <li>✓ 购房咨询</li>
+        <li>✓ 民宿设置服务</li>
+        <li>✓ 全权托管管理</li>
+        <li>✓ 5平台运营</li>
+        </ul>
+        <h3>Parkland Avenue特别优惠</h3>
+        <strong>iHousing是Parkland Avenue官方管理方</strong>
+        <ul>
+        <li>专属固定管理费：RM 200-300/月</li>
+        <li>预开业优先注册</li>
+        <li>设计套餐优惠</li>
+        </ul>
+        <hr class="my-8">
+        <h2>九、下一步行动</h2>
+        <h3>免费咨询</h3>
+        <strong>输入您的电话号码，我们会WhatsApp您！</strong>
+        <p>我们提供：</p>
+        <ul>
+        <li>免费公寓评估</li>
+        <li>投资回报率报告</li>
+        <li>购房建议</li>
+        <li>全程中文服务</li>
+        <li>8年马六甲市场经验</li>
+        <li>100+成功案例</li>
+        </ul>
+        <hr class="my-8">
+        <em>文章最后更新：2025年1月23日</em>
+        <em>数据来源：iHousing管理数据、PropertyGuru、Airbnb市场数据</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

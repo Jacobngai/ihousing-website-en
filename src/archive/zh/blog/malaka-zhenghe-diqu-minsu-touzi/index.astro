@@ -1,0 +1,471 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "马六甲郑和地区民宿投资指南：古城优势与回报分析2025";
+const description = "马六甲郑和地区（古城区）民宿投资分析：了解UNESCO世界遗产优势、游客数据、投资回报。iHousing提供古城区域投资咨询服务。";
+const image = "/images/blog/malaka-zhenghe-diqu-minsu-touzi.jpg";
+const date = "2025-01-23";
+const category = "location";
+const language = "zh";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>马六甲郑和地区民宿投资指南：古城优势与回报分析2025</h1>
+        <p>郑和地区（古城区）是马六甲民宿投资的黄金地段。UNESCO世界遗产地位带来稳定客源，鸡场街夜市吸引周末游客。本文详细分析古城区域投资优势、房价数据、回报预期。</p>
+        <h2>一、郑和地区（古城区）概览</h2>
+        <h3>1.1 地理范围</h3>
+        <strong>古城区包括：</strong>
+        <ul>
+        <li><strong>鸡场街（Jonker Walk）</strong> - 核心区域</li>
+        <li><strong>红屋广场（Dutch Square）</strong> - 游客必去</li>
+        <li><strong>峇峇娘惹博物馆</strong> - 文化景点</li>
+        <li><strong>圣保罗山</strong> - 历史遗迹</li>
+        <li><strong>马六甲河畔</strong> - 休闲区域</li>
+        </ul>
+        <strong>投资热点公寓：</strong>
+        <ul>
+        <li>Silverscape Residence（峇峇对面）</li>
+        <li>The Shore Residence（河畔海景）</li>
+        <li>Hatten City（市中心）</li>
+        <li>The Legacy Residence（Jalan Ong Kim Wee）</li>
+        </ul>
+        <h3>1.2 UNESCO世界遗产优势</h3>
+        <strong>UNESCO地位带来的好处：</strong>
+        <table>
+          <thead>
+            <tr><th>优势</th><th>说明</th><th>影响</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**国际知名度**</td><td>世界遗产名录</td><td>吸引国际游客</td></tr>
+            <tr><td>**保护政策**</td><td>限制过度开发</td><td>保持旅游吸引力</td></tr>
+            <tr><td>**文化体验**</td><td>独特历史氛围</td><td>游客停留时间更长</td></tr>
+            <tr><td>**政府支持**</td><td>旅游业优先</td><td>基础设施完善</td></tr>
+            <tr><td>**增值潜力**</td><td>稀缺地段</td><td>房价持续上涨</td></tr>
+          </tbody>
+        </table>
+        <strong>实际数据：</strong>
+        <ul>
+        <li>2008年列入UNESCO世界遗产</li>
+        <li>游客量每年增长8-12%</li>
+        <li>古城区房价年增值5-8%</li>
+        </ul>
+        <h3>1.3 游客来源分析</h3>
+        <strong>游客构成（2024-2025数据）：</strong>
+        <table>
+          <thead>
+            <tr><th>游客类型</th><th>占比</th><th>停留时间</th><th>消费能力</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**新加坡游客**</td><td>30%</td><td>2-3天</td><td>高（RM 200-300/晚）</td></tr>
+            <tr><td>**吉隆坡周末客**</td><td>35%</td><td>2天1晚</td><td>中高（RM 150-250/晚）</td></tr>
+            <tr><td>**中国游客**</td><td>15%</td><td>1-2天</td><td>中高（RM 180-280/晚）</td></tr>
+            <tr><td>**印尼游客**</td><td>10%</td><td>2-3天</td><td>中（RM 120-200/晚）</td></tr>
+            <tr><td>**欧美游客**</td><td>8%</td><td>3-5天</td><td>高（RM 250-350/晚）</td></tr>
+            <tr><td>**其他**</td><td>2%</td><td>不定</td><td>不定</td></tr>
+          </tbody>
+        </table>
+        <strong>游客峰值期：</strong>
+        <ul>
+        <li>学校假期（3月、6月、9月、12月）</li>
+        <li>公共假期（农历新年、开斋节、圣诞节）</li>
+        <li>周末（全年稳定）</li>
+        </ul>
+        <h2>二、古城区域投资优势</h2>
+        <h3>2.1 区位优势分析</h3>
+        <strong>优势1：步行可达所有景点</strong>
+        <p>从古城核心区的公寓出发：</p>
+        <ul>
+        <li>✓ 鸡场街：2-5分钟步行</li>
+        <li>✓ 红屋广场：5-10分钟步行</li>
+        <li>✓ 峇峇娘惹博物馆：5分钟步行</li>
+        <li>✓ 圣方济各教堂：10分钟步行</li>
+        <li>✓ 马六甲河游船：10-15分钟步行</li>
+        </ul>
+        <strong>客人评价关键词：</strong>
+        <ul>
+        <li>"位置极佳"</li>
+        <li>"步行到所有景点"</li>
+        <li>"方便"</li>
+        <li>"不用开车"</li>
+        </ul>
+        <hr class="my-8">
+        <strong>优势2：美食天堂</strong>
+        <strong>鸡场街夜市（周五-周日）：</strong>
+        <ul>
+        <li>100+美食摊位</li>
+        <li>本地特色小吃</li>
+        <li>文化表演</li>
+        <li>游客必体验</li>
+        </ul>
+        <strong>周边美食：</strong>
+        <ul>
+        <li>海南鸡饭</li>
+        <li>娘惹菜</li>
+        <li>福建面</li>
+        <li>叻沙</li>
+        <li>各种传统小吃</li>
+        </ul>
+        <strong>游客说：</strong> "下楼就是美食，太方便了！"
+        <hr class="my-8">
+        <strong>优势3：文化体验丰富</strong>
+        <strong>文化景点：</strong>
+        <ul>
+        <li>峇峇娘惹博物馆</li>
+        <li>马六甲 Sultanate Palace Museum</li>
+        <li>马六甲伊斯兰博物馆</li>
+        <li>马六甲遗产博物馆</li>
+        </ul>
+        <strong>节日活动：</strong>
+        <ul>
+        <li>农历新年庆典</li>
+        <li>中元节（农历七月）</li>
+        <li>马六甲嘉年华</li>
+        <li>文化艺术节</li>
+        </ul>
+        <strong>这些活动吸引：</strong>
+        <ul>
+        <li>文化爱好者</li>
+        <li>摄影爱好者</li>
+        <li>家庭游客</li>
+        <li>教育旅行团</li>
+        </ul>
+        <hr class="my-8">
+        <h3>2.2 交通便利性</h3>
+        <strong>自驾游客：</strong>
+        <ul>
+        <li>✓ 公寓通常有停车位</li>
+        <li>✓ 靠近高速路口（Ayer Keroh）</li>
+        <li>✓ 方便探索周边景点</li>
+        </ul>
+        <strong>公共交通：</strong>
+        <ul>
+        <li>✓ 公车站在主要景点附近</li>
+        <li>✓ Grab随叫随到</li>
+        <li>✓ 游客可以不用车</li>
+        </ul>
+        <strong>机场距离：</strong>
+        <ul>
+        <li>马六甲 Batu Berendam 机场：20分钟</li>
+        <li>吉隆坡国际机场：1.5-2小时</li>
+        <li>新加坡樟宜机场：2.5-3小时</li>
+        </ul>
+        <hr class="my-8">
+        <h3>2.3 竞争环境分析</h3>
+        <strong>古城区民宿数量：</strong>
+        <ul>
+        <li>Airbnb活跃Listing：约200-300个</li>
+        <li>平均入住率：55-65%</li>
+        <li>周末入住率：70-85%</li>
+        </ul>
+        <strong>竞争激烈但需求旺盛：</strong>
+        <ul>
+        <li>✓ 地段优势不可替代</li>
+        <li>✓ 游客首选古城区</li>
+        <li>✓ 好房源持续满房</li>
+        <li>✓ 定价能力较强</li>
+        </ul>
+        <strong>如何脱颖而出：</strong>
+        <ul>
+        <li>专业照片</li>
+        <li>优秀评价</li>
+        <li>快速响应</li>
+        <li>舒适配置</li>
+        <li>iHousing专业管理</li>
+        </ul>
+        <h2>三、房价与投资数据</h2>
+        <h3>3.1 古城区公寓价格（2025）</h3>
+        <strong>Silverscape Residence（峇峇对面）：</strong>
+        <table>
+          <thead>
+            <tr><th>房型</th><th>价格范围</th><th>每平方尺</th><th>租金回报</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1房</td><td>RM 200,000-280,000</td><td>RM 500-700</td><td>4-5%</td></tr>
+            <tr><td>2房</td><td>RM 280,000-400,000</td><td>RM 500-750</td><td>5-6%</td></tr>
+            <tr><td>3房</td><td>RM 380,000-550,000</td><td>RM 500-700</td><td>5-6%</td></tr>
+          </tbody>
+        </table>
+        <strong>The Shore Residence（河畔海景）：</strong>
+        <table>
+          <thead>
+            <tr><th>房型</th><th>价格范围</th><th>每平方尺</th><th>租金回报</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>2房</td><td>RM 400,000-600,000</td><td>RM 600-900</td><td>4.5-5.5%</td></tr>
+            <tr><td>3房</td><td>RM 550,000-800,000</td><td>RM 600-850</td><td>5-6%</td></tr>
+            <tr><td>4房</td><td>RM 700,000-1,000,000</td><td>RM 600-900</td><td>5-6.5%</td></tr>
+          </tbody>
+        </table>
+        <strong>Hatten City（市中心）：</strong>
+        <table>
+          <thead>
+            <tr><th>房型</th><th>价格范围</th><th>每平方尺</th><th>租金回报</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1房</td><td>RM 180,000-250,000</td><td>RM 450-600</td><td>4-5%</td></tr>
+            <tr><td>2房</td><td>RM 280,000-420,000</td><td>RM 450-650</td><td>5-6%</td></tr>
+            <tr><td>3房</td><td>RM 380,000-550,000</td><td>RM 450-650</td><td>5-6%</td></tr>
+          </tbody>
+        </table>
+        <h3>3.2 民宿收入预估</h3>
+        <strong>基础定价（古城区）：</strong>
+        <table>
+          <thead>
+            <tr><th>房型</th><th>平日</th><th>周末</th><th>假期</th><th>年节</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1房</td><td>RM 120-150</td><td>RM 180-220</td><td>RM 220-280</td><td>RM 280-350</td></tr>
+            <tr><td>2房</td><td>RM 150-200</td><td>RM 200-280</td><td>RM 280-350</td><td>RM 350-450</td></tr>
+            <tr><td>3房</td><td>RM 200-280</td><td>RM 280-380</td><td>RM 350-450</td><td>RM 450-550</td></tr>
+          </tbody>
+        </table>
+        <strong>月收入预估（假设55%入住率）：</strong>
+        <table>
+          <thead>
+            <tr><th>房型</th><th>月收入</th><th>年收入</th><th>家具投资</th><th>回本时间</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1房</td><td>RM 3,500-4,500</td><td>RM 42K-54K</td><td>RM 15K-25K</td><td>2-3年</td></tr>
+            <tr><td>2房</td><td>RM 4,500-6,500</td><td>RM 54K-78K</td><td>RM 25K-40K</td><td>2-3年</td></tr>
+            <tr><td>3房</td><td>RM 6,000-8,500</td><td>RM 72K-102K</td><td>RM 35K-60K</td><td>2.5-3.5年</td></tr>
+          </tbody>
+        </table>
+        <em>注：回本时间指家具投资回本，不包括房价</em>
+        <h3>3.3 投资回报率对比</h3>
+        <strong>古城区 vs 其他区域：</strong>
+        <table>
+          <thead>
+            <tr><th>区域</th><th>平均房价</th><th>民宿月收入</th><th>回报率</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**古城核心区**</td><td>RM 400,000</td><td>RM 6,000-8,000</td><td>18-24%</td></tr>
+            <tr><td>**Melaka Raya**</td><td>RM 250,000</td><td>RM 3,500-5,000</td><td>17-20%</td></tr>
+            <tr><td>**Ayer Keroh**</td><td>RM 350,000</td><td>RM 4,500-6,500</td><td>15-19%</td></tr>
+            <tr><td>**Bachang**</td><td>RM 220,000</td><td>RM 3,000-4,500</td><td>16-20%</td></tr>
+          </tbody>
+        </table>
+        <strong>结论：</strong> 古城区回报率最高，但投资门槛也最高
+        <h2>四、最佳投资公寓推荐</h2>
+        <h3>推荐1：Silverscape Residence ⭐⭐⭐⭐⭐</h3>
+        <strong>投资评分：</strong> 9.5/10
+        <strong>优势：</strong>
+        <ul>
+        <li>✓ 位置绝佳（峇峇对面）</li>
+        <li>✓ 步行到鸡场街2分钟</li>
+        <li>✓ 游客认可度高</li>
+        <li>✓ Airbnb评分高</li>
+        <li>✓ 设施完善</li>
+        </ul>
+        <strong>投资数据：</strong>
+        <ul>
+        <li>2房价格：RM 300-380K</li>
+        <li>民宿月收入：RM 5,500-7,000</li>
+        <li>回报率：20-25%</li>
+        <li>增值潜力：每年5-8%</li>
+        </ul>
+        <strong>适合：</strong> 高预算投资者，追求稳定回报
+        <hr class="my-8">
+        <h3>推荐2：The Shore Residence ⭐⭐⭐⭐⭐</h3>
+        <strong>投资评分：</strong> 9/10
+        <strong>优势：</strong>
+        <ul>
+        <li>✓ 海景景观</li>
+        <li>✓ 靠近红屋广场</li>
+        <li>✓ 豪华设施</li>
+        <li>✓ 高端市场</li>
+        <li>✓ 增值潜力大</li>
+        </ul>
+        <strong>投资数据：</strong>
+        <ul>
+        <li>2房价格：RM 450-600K</li>
+        <li>民宿月收入：RM 6,500-8,500</li>
+        <li>回报率：18-22%</li>
+        <li>增值潜力：每年6-10%</li>
+        </ul>
+        <strong>适合：</strong> 高端投资者，瞄准高端市场
+        <hr class="my-8">
+        <h3>推荐3：Hatten City ⭐⭐⭐⭐</h3>
+        <strong>投资评分：</strong> 8.5/10
+        <strong>优势：</strong>
+        <ul>
+        <li>✓ 市中心位置</li>
+        <li>✓ 连接购物中心</li>
+        <li>✓ 交通便利</li>
+        <li>✓ 价格相对合理</li>
+        <li>✓ 部分楼栋允许短租</li>
+        </ul>
+        <strong>投资数据：</strong>
+        <ul>
+        <li>2房价格：RM 320-400K</li>
+        <li>民宿月收入：RM 5,000-6,500</li>
+        <li>回报率：18-22%</li>
+        <li>增值潜力：每年4-7%</li>
+        </ul>
+        <strong>注意：</strong> 需要确认具体楼栋允许短租
+        <hr class="my-8">
+        <h2>五、古城区投资风险</h2>
+        <h3>5.1 风险识别</h3>
+        <strong>风险1：房价较高</strong>
+        <ul>
+        <li>门槛高，需要更多资金</li>
+        <li>解决：选择小户型或与其他区域组合投资</li>
+        </ul>
+        <strong>风险2：竞争激烈</strong>
+        <ul>
+        <li>Listing数量多</li>
+        <li>解决：专业管理、优化Listing、提升服务质量</li>
+        </ul>
+        <strong>风险3：噪音问题</strong>
+        <ul>
+        <li>靠近夜市、酒吧</li>
+        <li>解决：选择高层或远离噪音源</li>
+        </ul>
+        <strong>风险4：停车位紧张</strong>
+        <ul>
+        <li>游客自驾多</li>
+        <li>解决：确保公寓有足够停车位</li>
+        </ul>
+        <strong>风险5：老建筑维护</strong>
+        <ul>
+        <li>部分公寓设施老化</li>
+        <li>解决：选择新建或维护良好的公寓</li>
+        </ul>
+        <h3>5.2 风险缓解</h3>
+        <strong>iHousing如何帮助：</strong>
+        <ul>
+        <li>✓ 专业的市场评估</li>
+        <li>✓ 风险识别和建议</li>
+        <li>✓ 房产选择指导</li>
+        <li>✓ 专业管理降低运营风险</li>
+        <li>✓ 定期市场更新</li>
+        </ul>
+        <h2>六、2025年市场趋势</h2>
+        <h3>6.1 正在发生的变化</h3>
+        <strong>趋势1：高端化</strong>
+        <ul>
+        <li>游客对品质要求提高</li>
+        <li>愿意为更好体验付更高价格</li>
+        <li>豪华公寓需求增长</li>
+        </ul>
+        <strong>趋势2：长期停留</strong>
+        <ul>
+        <li>"数字游民"增加</li>
+        <li>1个月以上预订增多</li>
+        <li>需要工作区和高速WiFi</li>
+        </ul>
+        <strong>趋势3：本地体验</strong>
+        <ul>
+        <li>游客寻求真实本地体验</li>
+        <li>文化旅游受欢迎</li>
+        <li>本地美食是吸引力</li>
+        </ul>
+        <strong>趋势4：环保意识</strong>
+        <ul>
+        <li>可持续旅游趋势</li>
+        <li>减少一次性用品</li>
+        <li>节能环保措施</li>
+        </ul>
+        <h3>6.2 投资建议</h3>
+        <strong>2025年策略：</strong>
+        <table>
+          <thead>
+            <tr><th>策略</th><th>说明</th><th>预期效果</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**高端定位**</td><td>投资豪华公寓</td><td>更高定价能力</td></tr>
+            <tr><td>**差异竞争**</td><td>独特主题和设计</td><td>吸引特定客群</td></tr>
+            <tr><td>**多平台运营**</td><td>5平台同时管理</td><td>60%更多订单</td></tr>
+            <tr><td>**动态定价**</td><td>根据需求调整价格</td><td>15-25%收入提升</td></tr>
+            <tr><td>**品质投资**</td><td>舒适家具和设施</td><td>更好评价、更高入住率</td></tr>
+          </tbody>
+        </table>
+        <h2>七、成功案例</h2>
+        <h3>案例：张女士，Silverscape 2房</h3>
+        <strong>投资情况：</strong>
+        <ul>
+        <li>购买价格：RM 350,000（2022年）</li>
+        <li>家具投资：RM 30,000</li>
+        <li>总投资：RM 380,000</li>
+        </ul>
+        <strong>运营数据（iHousing管理）：</strong>
+        <ul>
+        <li>第1年月收入：RM 4,500-5,500</li>
+        <li>第2年月收入：RM 5,800-6,800</li>
+        <li>第3年月收入：RM 6,200-7,500</li>
+        <li>平均入住率：62%</li>
+        </ul>
+        <strong>财务回报：</strong>
+        <ul>
+        <li>年收入：约RM 78,000</li>
+        <li>净收入（扣除费用）：约RM 65,000</li>
+        <li>回报率：17%</li>
+        <li>房价增值：15%（3年）</li>
+        </ul>
+        <strong>张女士说：</strong>"选择古城核心区是正确的决定，位置优势无法替代，入住率一直很高。"
+        <h2>八、iHousing古城区服务</h2>
+        <h3>8.1 我们的古城区优势</h3>
+        <strong>本地经验：</strong>
+        <ul>
+        <li>✓ 8年古城区运营经验</li>
+        <li>✓ 管理50+古城区物业</li>
+        <li>✓ 了解所有公寓政策</li>
+        <li>✓ 与本地供应商关系良好</li>
+        </ul>
+        <strong>专业服务：</strong>
+        <ul>
+        <li>✓ 古城区房产评估</li>
+        <li>✓ 投资回报计算</li>
+        <li>✓ 购房咨询</li>
+        <li>✓ 民宿设置</li>
+        <li>✓ 全权托管</li>
+        </ul>
+        <h3>8.2 古城区特别优惠</h3>
+        <strong>古城区管理套餐：</strong>
+        <ul>
+        <li>5平台管理</li>
+        <li>专业摄影</li>
+        <li>清洁服务</li>
+        <li>维修协调</li>
+        <li>动态定价</li>
+        <li>月度报告</li>
+        </ul>
+        <strong>Parkland Avenue对比：</strong>
+        <ul>
+        <li>古城公寓：按收入比例收费</li>
+        <li>Parkland：固定费用（RM 200-300/月）</li>
+        </ul>
+        <hr class="my-8">
+        <h2>九、立即行动</h2>
+        <h3>免费古城区投资咨询</h3>
+        <strong>输入您的电话号码，我们会WhatsApp您！</strong>
+        <p>我们提供：</p>
+        <ul>
+        <li>免费房产评估</li>
+        <li>古城区投资报告</li>
+        <li>回报率计算</li>
+        <li>公寓推荐</li>
+        <li>全程中文服务</li>
+        <li>8年古城区经验</li>
+        <li>50+成功案例</li>
+        </ul>
+        <strong>古城区投资黄金时间：</strong>
+        <ul>
+        <li>需求持续增长</li>
+        <li>房价稳步上升</li>
+        <li>早期投资者优势明显</li>
+        </ul>
+        <strong>让您的马六甲古城区投资开始赚钱！</strong>
+        <hr class="my-8">
+        <em>文章最后更新：2025年1月23日</em>
+        <em>数据来源：马六甲旅游局、UNESCO、PropertyGuru、iHousing运营数据</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

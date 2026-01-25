@@ -1,0 +1,340 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'Pre-Register for Parkland Avenue Investment';
+const description = 'Pre-register your interest in Parkland Avenue by the Sea investment. Get priority information and ROI consultation from iHousing - Melaka\'s premier Airbnb property manager.';
+const image = 'https://parklandgroup.my/wp-content/uploads/2022/03/08_OverallDevelopment_op1_HR-copy.jpg';
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-green-900 via-green-800 to-blue-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-green-300 font-semibold mb-4">PRE-REGISTER YOUR INTEREST</p>
+          <h1 class="text-4xl lg:text-5xl font-bold mb-6">Parkland Avenue by the Sea</h1>
+          <p class="text-xl text-green-100 max-w-4xl mx-auto mb-8">
+            Get priority information, ROI estimates, and investment consultation
+            for Melaka's premier seaside development
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Investment Inquiry Form
+          </h2>
+          <p class="text-lg text-gray-600 mb-8 text-center">
+            Fill in your details and our investment consultant will contact you within 24 hours
+            with a personalized ROI analysis for your preferred unit type.
+          </p>
+
+          <form id="preRegisterForm" class="space-y-6">
+            <!-- Name -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Name *
+              </label>
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Your full name"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Phone Number *
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                required
+                placeholder="+60 12 3456 7890"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              />
+              <p class="text-sm text-gray-500 mt-1">
+                We'll contact you with your investment details
+              </p>
+            </div>
+
+            <!-- Email (Optional) -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Email (Optional)
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              />
+            </div>
+
+            <!-- Unit Type Interest -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Unit Type Interest *
+              </label>
+              <select
+                name="unitType"
+                required
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              >
+                <option value="">Select unit type</option>
+                <option value="type-a">Type A - 635 sqft (1+1 BR)</option>
+                <option value="type-b">Type B - 796 sqft (2 BR)</option>
+                <option value="type-c">Type C - 972 sqft (3 BR)</option>
+                <option value="type-d">Type D - 818 sqft (2 BR Premium)</option>
+                <option value="type-e">Type E - 1,002 sqft (3 BR Luxury)</option>
+                <option value="not-sure">Not sure - need consultation</option>
+              </select>
+            </div>
+
+            <!-- Investment Timeline -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Investment Timeline *
+              </label>
+              <select
+                name="timeline"
+                required
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              >
+                <option value="">Select timeline</option>
+                <option value="immediate">Immediate - ready to invest now</option>
+                <option value="6-months">Within 6 months</option>
+                <option value="1-year">Within 1 year</option>
+                <option value="exploring">Just exploring options</option>
+              </select>
+            </div>
+
+            <!-- Budget Range -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Budget Range *
+              </label>
+              <select
+                name="budget"
+                required
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              >
+                <option value="">Select budget range</option>
+                <option value="200k-300k">RM200,000 - RM300,000</option>
+                <option value="300k-400k">RM300,000 - RM400,000</option>
+                <option value="400k-500k">RM400,000 - RM500,000</option>
+                <option value="500k+">RM500,000+</option>
+                <option value="flexible">Flexible - depends on ROI</option>
+              </select>
+            </div>
+
+            <!-- Message (Optional) -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Additional Questions or Notes (Optional)
+              </label>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Any specific questions about Parkland Avenue investment?"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl text-xl transition-colors"
+            >
+              Submit Pre-Registration
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Happens Next -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          What Happens After You Submit?
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-xl text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-3xl">📞</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Contact Within 24 Hours</h3>
+            <p class="text-gray-600">
+              Our investment consultant will contact you with a personalized
+              ROI estimate for your preferred unit type.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-3xl">💰</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">ROI Analysis</h3>
+            <p class="text-gray-600">
+              Detailed breakdown of expected rental income, management fees,
+              and annual returns on your investment.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl text-center">
+            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-3xl">📈</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Consultation</h3>
+            <p class="text-gray-600">
+              Free consultation to discuss investment strategy, financing options,
+              and next steps for Parkland Avenue.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Pre-Register -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          Why Pre-Register Your Interest?
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-4">
+            <div class="flex items-start space-x-4">
+              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-xl">✓</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 mb-1">Priority Information</h3>
+                <p class="text-gray-600">
+                  Get priority updates on unit availability, pricing, and launch dates.
+                  Be among the first to know when units become available.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-xl">💡</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 mb-1">Personalized ROI</h3>
+                <p class="text-gray-600">
+                  Receive a custom ROI analysis based on your budget and preferred unit type.
+                  No obligation consultation with our experts.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <span class="text-xl">🔒</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 mb-1">Expert Guidance</h3>
+                <p class="text-gray-600">
+                  Access to our team's expertise on Melaka's Airbnb market.
+                  Learn the best unit type for your investment goals.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-xl">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Quick ROI Preview</h3>
+            <p class="text-gray-700 mb-6">
+              Based on conservative estimates for Parkland Avenue:
+            </p>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between">
+                <span class="text-gray-600">Type B Unit (796 sqft):</span>
+                <span class="font-semibold">RM5,400-6,600/month income</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">iHousing Management:</span>
+                <span class="font-semibold">RM250/month (flat fee)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Annual Net Income:</span>
+                <span class="font-bold text-green-700">RM42,360+</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">vs Traditional (20%):</span>
+                <span class="font-bold text-red-600">Save RM9,600/year!</span>
+              </div>
+            </div>
+            <a href="/parkland/roi-calculator/" class="inline-block bg-white text-green-700 font-bold py-3 px-6 rounded-lg mt-4 hover:bg-gray-100">
+              Calculate Your Exact ROI →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Already Own a Unit? -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
+          Already Own a Unit at Parkland Avenue?
+        </h2>
+        <p class="text-lg text-gray-600 mb-6">
+          Learn how iHousing can help you maximize your Airbnb income with our
+          flat-fee property management service.
+        </p>
+        <a href="/parkland/avenue/owners/" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-700">
+          Explore Owner Services →
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Form Submission Script -->
+  <script is:inline>
+    document.getElementById('preRegisterForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+
+      // In production, this would submit to backend API
+      // For now, show success message
+      alert('Thank you for your interest!\n\nOur investment consultant will contact you within 24 hours with:\n• Personalized ROI analysis\n• Unit availability information\n• Next steps for Parkland Avenue investment');
+
+      // Reset form
+      this.reset();
+
+      // In production, uncomment to submit:
+      // fetch('/api/pre-register', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify(data)
+      // })
+      // .then(response => response.json())
+      // .then(data => {
+      //   if (data.success) {
+      //     alert('Registration successful! We will contact you shortly.');
+      //     this.reset();
+      //   } else {
+      //     alert('Error: ' + data.message);
+      //   }
+      // })
+      // .catch(error => {
+      //   alert('Error submitting form. Please try again or contact us directly.');
+      // });
+    });
+  </script>
+</Layout>

@@ -1,0 +1,649 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Airbnb Cleaning Service Melaka: In-House Advantage That Saves You 40%";
+const description = "Discover how our in-house cleaning team saves you 40% vs outsourced services. Professional turnover, quality control, and no markup. Included in our flat-fee management.";
+const image = "/images/blog/airbnb-cleaning-service-melaka-management.jpg";
+const date = "2025-01-23";
+const category = "operational";
+const language = "en";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Airbnb Cleaning Service Melaka: In-House Advantage That Saves You 40%</h1>
+        <strong>Every Airbnb owner's nightmare:</strong> The "cleaning fee" that eats into your profits.
+        <p>Outsourced cleaning companies in Melaka charge RM 80-150 per stay. With 15 turnovers per month, that's RM 1,200-2,250 in cleaning costs alone.</p>
+        <strong>Our Solution:</strong> In-house cleaning team. No markup. No middleman. Just quality service at cost.
+        <strong>Result:</strong> You save 40% on cleaning while getting better quality and faster turnover.
+        <hr class="my-8">
+        <h2>The Hidden Cost of Cleaning (That No One Talks About)</h2>
+        <h3>Scenario 1: Outsourced Cleaning (Typical Airbnb Host)</h3>
+        <strong>Per-Stay Costs:</strong>
+        <ul>
+        <li>Cleaning fee: RM 100</li>
+        <li>Linen rental: RM 25</li>
+        <li>Toiletries: RM 15</li>
+        <li><strong>Total per stay: RM 140</strong></li>
+        </ul>
+        <strong>Monthly (15 turnovers):</strong>
+        <ul>
+        <li>Cleaning: RM 1,500</li>
+        <li>Linen: RM 375</li>
+        <li>Toiletries: RM 225</li>
+        <li><strong>Total monthly: RM 2,100</strong></li>
+        </ul>
+        <strong>Annual:</strong> <strong>RM 25,200</strong> just on cleaning!
+        <h3>Scenario 2: iHousing In-House Cleaning</h3>
+        <strong>Per-Stay Costs:</strong>
+        <ul>
+        <li>Cleaning: RM 60 (our cost, no markup)</li>
+        <li>Linen: RM 10 (we own them)</li>
+        <li>Toiletries: RM 8 (bulk purchase)</li>
+        <li><strong>Total per stay: RM 78</strong></li>
+        </ul>
+        <strong>Monthly (15 turnovers):</strong>
+        <ul>
+        <li>Cleaning: RM 900</li>
+        <li>Linen: RM 150</li>
+        <li>Toiletries: RM 120</li>
+        <li><strong>Total monthly: RM 1,170</strong></li>
+        </ul>
+        <strong>Annual:</strong> <strong>RM 14,040</strong> included in our flat fee
+        <strong>Your Savings:</strong> <strong>RM 11,160 per year</strong> (44% less!)
+        <hr class="my-8">
+        <h2>Why In-House Cleaning Beats Outsourcing Every Time</h2>
+        <h3>1. Cost Savings (40% Less)</h3>
+        <table>
+          <thead>
+            <tr><th>Service</th><th>Outsourced</th><th>Our In-House</th><th>Your Savings</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Standard cleaning</td><td>RM 100</td><td>RM 60</td><td>40%</td></tr>
+            <tr><td>Deep clean</td><td>RM 200</td><td>RM 120</td><td>40%</td></tr>
+            <tr><td>Linen service</td><td>RM 25</td><td>RM 10</td><td>60%</td></tr>
+            <tr><td>Toiletries refill</td><td>RM 15</td><td>RM 8</td><td>47%</td></tr>
+            <tr><td>**Average per stay**</td><td>**RM 140**</td><td>**RM 78**</td><td>**44%**</td></tr>
+          </tbody>
+        </table>
+        <strong>How we do it:</strong>
+        <ul>
+        <li>No middleman markup</li>
+        <li>Staff on salary (not per-job)</li>
+        <li>Bulk purchasing power</li>
+        <li>Efficient routing between properties</li>
+        </ul>
+        <h3>2. Quality Control (Consistent Standards)</h3>
+        <strong>Outsourced Problems:</strong>
+        <ul>
+        <li>Different cleaners each time</li>
+        <li>Inconsistent quality</li>
+        <li>Language barriers</li>
+        <li>No accountability</li>
+        </ul>
+        <strong>Our In-House Solution:</strong>
+        <ul>
+        <li>Same team, familiar with your property</li>
+        <li>Trained to our standards</li>
+        <li>Direct supervision</li>
+        <li>Immediate feedback loop</li>
+        </ul>
+        <strong>Quality Checklist (Every Stay):</strong>
+        <strong>Living Area:</strong>
+        <ul>
+        <li>✅ Floors vacuumed and mopped</li>
+        <li>✅ Surfaces dusted and wiped</li>
+        <li>✅ Sofa cushions fluffed and checked for stains</li>
+        <li>✅ Remote controls disinfected</li>
+        <li>✅ Trash emptied</li>
+        </ul>
+        <strong>Kitchen:</strong>
+        <ul>
+        <li>✅ Countertops sanitized</li>
+        <li>✅ Sink cleaned and disinfected</li>
+        <li>✅ Appliances wiped down</li>
+        <li>✅ Fridge cleared of expired food</li>
+        <li>✅ Trash removed</li>
+        </ul>
+        <strong>Bedroom:</strong>
+        <ul>
+        <li>✅ Sheets changed (fresh linen)</li>
+        <li>✅ Mattress protector checked</li>
+        <li>✅ Pillows fluffed and rotated</li>
+        <li>✅ Wardrobe floors vacuumed</li>
+        <li>✅ Nightstands dusted</li>
+        </ul>
+        <strong>Bathroom:</strong>
+        <ul>
+        <li>✅ Toilet sanitized</li>
+        <li>✅ Shower/tub scrubbed</li>
+        <li>✅ Sink and countertop cleaned</li>
+        <li>✅ Mirror polished (no streaks)</li>
+        <li>✅ Floors mopped with disinfectant</li>
+        <li>✅ Towels replaced</li>
+        <li>✅ Toiletries refilled</li>
+        </ul>
+        <strong>Extras:</strong>
+        <ul>
+        <li>✅ Windowsills dusted</li>
+        <li>✅ Air conditioner filter checked</li>
+        <li>✅ Light switches disinfected</li>
+        <li>✅ Door handles wiped</li>
+        <li>✅ Keys/access cards sanitized</li>
+        </ul>
+        <h3>3. Speed (Faster Turnover = More Bookings)</h3>
+        <strong>Outsourced Timeline:</strong>
+        <ul>
+        <li>11 AM checkout</li>
+        <li>Cleaner arrives: 2-4 PM (or later)</li>
+        <li>Cleaning完成: 4-6 PM</li>
+        <li>Ready for next guest: 5-7 PM</li>
+        </ul>
+        <strong>Problem:</strong> Late check-ins, unhappy guests, missed same-day bookings.
+        <strong>Our In-House Timeline:</strong>
+        <ul>
+        <li>11 AM checkout</li>
+        <li>Cleaner arrives: 12 PM</li>
+        <li>Cleaning完成: 2 PM</li>
+        <li>Ready for next guest: 3 PM</li>
+        </ul>
+        <strong>Advantage:</strong>
+        <ul>
+        <li>✅ 3 PM check-ins available</li>
+        <li>✅ Same-day bookings possible</li>
+        <li>✅ Guests never wait</li>
+        <li>✅ 20% more occupancy potential</li>
+        </ul>
+        <h3>4. Flexibility (We Adapt to Your Schedule)</h3>
+        <strong>Outsourced Constraints:</strong>
+        <ul>
+        <li>Fixed pickup times</li>
+        <li>Minimum booking requirements</li>
+        <li>Extra charge for urgent jobs</li>
+        <li>No weekend/holiday service</li>
+        </ul>
+        <strong>Our In-House Advantage:</strong>
+        <ul>
+        <li>Schedule around your check-ins</li>
+        <li>Emergency cleanings available</li>
+        <li>No extra charge for urgency</li>
+        <li>365 days/year coverage</li>
+        </ul>
+        <strong>Example:</strong> Guest extends last-minute? We adjust instantly. No rebooking needed.
+        <hr class="my-8">
+        <h2>What's Included in Our Cleaning Service</h2>
+        <h3>Standard Clean (Every Turnover)</h3>
+        <strong>Time:</strong> 1.5-2 hours for 2-bedroom unit
+        <strong>Includes:</strong>
+        <ul>
+        <li>Full bathroom sanitation</li>
+        <li>Bed linen change (fresh from our laundry)</li>
+        <li>Towel replacement</li>
+        <li>Kitchen cleaning and disinfection</li>
+        <li>Floor vacuuming and mopping</li>
+        <li>Surface dusting</li>
+        <li>Trash removal</li>
+        <li>Toiletries refill</li>
+        <li>Final inspection (photos taken)</li>
+        </ul>
+        <strong>Delivered:</strong> Before every guest check-in, guaranteed.
+        <h3>Deep Clean (Monthly)</h3>
+        <strong>Time:</strong> 3-4 hours
+        <strong>Includes:</strong>
+        <ul>
+        <li>All standard cleaning tasks PLUS:</li>
+        <li>Windows cleaned (inside)</li>
+        <li>Air conditioner filters cleaned/replaced</li>
+        <li>Behind furniture vacuumed</li>
+        <li>Cabinet interiors wiped</li>
+        <li>Mattress protector washed</li>
+        <li>Couch cushions professionally cleaned</li>
+        <li>Grout and tile scrubbed</li>
+        <li>Descaled kettle and coffee maker</li>
+        </ul>
+        <strong>Delivered:</strong> Once per month or every 5 stays, whichever comes first.
+        <h3>Maintenance Checks (Every Clean)</h3>
+        <p>While cleaning, our team checks for:</p>
+        <strong>Safety:</strong>
+        <ul>
+        <li>✅ Smoke detector batteries</li>
+        <li>✅ Fire extinguisher pressure</li>
+        <li>✅ First aid kit inventory</li>
+        <li>✅ Electrical outlets (no damage)</li>
+        </ul>
+        <strong>Functionality:</strong>
+        <ul>
+        <li>✅ Air conditioner working</li>
+        <li>✅ Water heater functioning</li>
+        <li>✅ All lights operational</li>
+        <li>✅ Doors/windows lock properly</li>
+        <li>✅ TV and WiFi working</li>
+        </ul>
+        <strong>Wear and Tear:</strong>
+        <ul>
+        <li>✅ Furniture condition</li>
+        <li>✅ Carpet/stains</li>
+        <li>✅ Walls/markings</li>
+        <li>✅ Appliance performance</li>
+        </ul>
+        <strong>Issues found?</strong> We report immediately and coordinate repairs.
+        <hr class="my-8">
+        <h2>Our Linen Service: You Don't Need to Buy Sheets</h2>
+        <strong>Major Cost Saving:</strong> We provide all linens. You don't buy them, we do.
+        <strong>What We Provide:</strong>
+        <ul>
+        <li>Bed sheets (premium quality, 400-thread count)</li>
+        <li>Pillowcases (2 per pillow)</li>
+        <li>Duvet covers</li>
+        <li>Mattress protectors (every bed)</li>
+        <li>Bath towels (2 per guest)</li>
+        <li>Hand towels (1 per bathroom)</li>
+        <li>Face towels (1 per guest)</li>
+        <li>Floor mats (1 per bathroom)</li>
+        </ul>
+        <strong>Our Process:</strong>
+        <ol>
+        <li>Professional laundry after each stay</li>
+        <li>Inspected for stains/damage</li>
+        <li>Replaced when worn (we absorb replacement cost)</li>
+        <li>Stored in our facility (not your condo)</li>
+        </ol>
+        <strong>Your Savings:</strong>
+        <ul>
+        <li>Initial furnishing: RM 3,000-5,000 (you don't spend)</li>
+        <li>Replacement over 3 years: RM 2,000 (we absorb)</li>
+        <li>Laundry service: RM 800/month (included)</li>
+        <li><strong>Total savings: RM 5,800-7,000 over 3 years</strong></li>
+        </ul>
+        <hr class="my-8">
+        <h2>Toiletries and Essentials: Also Included</h2>
+        <strong>What We Refill Every Stay:</strong>
+        <strong>Bathroom:</strong>
+        <ul>
+        <li>Shampoo (500ml bottle)</li>
+        <li>Body wash (500ml bottle)</li>
+        <li>Hand soap (pump dispenser)</li>
+        <li>Toothpaste (travel size, 2)</li>
+        <li>Dental kit (brush + mini paste, 2)</li>
+        </ul>
+        <strong>Kitchen:</strong>
+        <ul>
+        <li>Dishwashing liquid</li>
+        <li>Sponge</li>
+        <li>Paper towels (1 roll)</li>
+        <li>Trash bags (5)</li>
+        <li>Tea and coffee (complimentary)</li>
+        </ul>
+        <strong>Welcome Items:</strong>
+        <ul>
+        <li>2 bottled waters</li>
+        <li>Local snacks (packets)</li>
+        <li>Welcome guide</li>
+        </ul>
+        <strong>Your Cost:</strong> RM 0 (included in our flat fee)
+        <strong>If self-managing:</strong> RM 500-800/month
+        <hr class="my-8">
+        <h2>The "Hidden" Costs of Outsourced Cleaning</h2>
+        <p>Most hosts don't realize the full cost until it's too late:</p>
+        <h3>1. Markup on Markups</h3>
+        <p>Outsourced cleaners charge:</p>
+        <ul>
+        <li>Base cleaning: RM 60 (cleaner's wage)</li>
+        <li>Company markup: 50-100%</li>
+        <li><strong>You pay: RM 100-120</strong></li>
+        </ul>
+        <strong>Our model:</strong>
+        <ul>
+        <li>Cleaner's wage: RM 60</li>
+        <li>Company markup: 0%</li>
+        <li><strong>You pay: RM 60</strong></li>
+        </ul>
+        <h3>2. Emergency Fees</h3>
+        <p>Outsourced extras:</p>
+        <ul>
+        <li>Urgent cleaning: +50% (RM 150)</li>
+        <li>Weekend/holiday: +30% (RM 130)</li>
+        <li>Late notice: +40% (RM 140)</li>
+        </ul>
+        <strong>Our model:</strong>
+        <ul>
+        <li>All cleanings: RM 60</li>
+        <li>No extra charges, ever</li>
+        </ul>
+        <h3>3. Replacement Costs</h3>
+        <p>Outsourced:</p>
+        <ul>
+        <li>You replace linens when worn (RM 3,000+)</li>
+        <li>You buy toiletries (RM 800/year)</li>
+        <li>You pay for damage cleaner causes</li>
+        </ul>
+        <strong>Our model:</strong>
+        <ul>
+        <li>We replace linens (our cost)</li>
+        <li>We provide toiletries (included)</li>
+        <li>We cover our team's mistakes</li>
+        </ul>
+        <h3>4. Turnover Loss</h3>
+        <p>Outsourced timeline:</p>
+        <ul>
+        <li>Cleaner arrives late = late check-in</li>
+        <li>Late check-in = unhappy guest</li>
+        <li>Unhappy guest = bad review</li>
+        <li>Bad review = fewer bookings</li>
+        </ul>
+        <strong>Our model:</strong>
+        <ul>
+        <li>Guaranteed 3 PM readiness</li>
+        <li>Happy guests = 5-star reviews</li>
+        <li>More bookings = more income</li>
+        </ul>
+        <hr class="my-8">
+        <h2>Real Comparison: Annual Costs</h2>
+        <h3>Property: 2-bedroom condo in Melaka</h3>
+        <strong>Assumptions:</strong>
+        <ul>
+        <li>15 turnovers per month (average occupancy)</li>
+        <li>180 turnovers per year</li>
+        </ul>
+        <table>
+          <thead>
+            <tr><th>Cost Category</th><th>Outsourced</th><th>Our In-House</th><th>Your Annual Savings</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Cleaning labor</td><td>RM 18,000</td><td>RM 10,800</td><td>RM 7,200</td></tr>
+            <tr><td>Linen (initial + replace)</td><td>RM 5,000</td><td>RM 0</td><td>RM 5,000</td></tr>
+            <tr><td>Linen rental/service</td><td>RM 4,500</td><td>RM 1,800</td><td>RM 2,700</td></tr>
+            <tr><td>Toiletries</td><td>RM 2,700</td><td>RM 1,440</td><td>RM 1,260</td></tr>
+            <tr><td>Emergency fees (avg)</td><td>RM 1,200</td><td>RM 0</td><td>RM 1,200</td></tr>
+            <tr><td>**TOTAL ANNUAL**</td><td>**RM 31,400**</td><td>**RM 14,040**</td><td>**RM 17,360 (55% less!)**</td></tr>
+          </tbody>
+        </table>
+        <strong>Over 3 years:</strong> You save <strong>RM 52,080</strong> on cleaning alone!
+        <hr class="my-8">
+        <h2>Quality Assurance: How We Guarantee Cleanliness</h2>
+        <h3>Our 3-Step Quality Process:</h3>
+        <strong>Step 1: Cleaner Checklist</strong>
+        <ul>
+        <li>Every item checked off</li>
+        <li>Photos taken after completion</li>
+        <li>Supervisor signs off</li>
+        </ul>
+        <strong>Step 2: Random Inspections</strong>
+        <ul>
+        <li>10% of stays inspected by supervisor</li>
+        <li>Mystery guest checks (monthly)</li>
+        <li>Guest feedback integration</li>
+        </ul>
+        <strong>Step 3: Guest Satisfaction</strong>
+        <ul>
+        <li>We message guests after check-in</li>
+        <li>"Is everything clean and comfortable?"</li>
+        <li>Issues resolved within 1 hour</li>
+        <li>Feedback used for training</li>
+        </ul>
+        <h3>Our Cleaning Team:</h3>
+        <strong>Training:</strong>
+        <ul>
+        <li>2-week induction program</li>
+        <li>Shadow senior cleaners for 1 month</li>
+        <li>Monthly refresher training</li>
+        <li>COVID-19 sanitation protocols</li>
+        </ul>
+        <strong>Equipment:</strong>
+        <ul>
+        <li>HEPA-filter vacuums (hospital-grade)</li>
+        <li>Professional-grade cleaning chemicals</li>
+        <li>Microfiber cloths (color-coded by room)</li>
+        <li>Steam cleaners for deep sanitization</li>
+        <li>UV-C sanitizing wands (high-touch surfaces)</li>
+        </ul>
+        <strong>Standards:</strong>
+        <ul>
+        <li>Hospitality industry background</li>
+        <li>English and Malay speaking</li>
+        <li>Background-checked</li>
+        <li>Uniformed and professional</li>
+        </ul>
+        <hr class="my-8">
+        <h2>Maintenance Integration: Cleaning + Repairs</h2>
+        <strong>Unique Advantage:</strong> Our cleaning team isn't just cleaners - they're your property's eyes and ears.
+        <strong>Every cleaning visit includes:</strong>
+        <strong>Visual Inspection:</strong>
+        <ul>
+        <li>Walls: Marks, scuffs, damage</li>
+        <li>Floors: Stains, scratches, wear</li>
+        <li>Furniture: Rips, tears, loose parts</li>
+        <li>Appliances: Function, wear, damage</li>
+        <li>Windows: Cracks, seal issues</li>
+        <li>Doors: Locks, hinges, handles</li>
+        </ul>
+        <strong>Preventive Maintenance:</strong>
+        <ul>
+        <li>Aircon filters cleaned (monthly)</li>
+        <li>Drain hair traps cleared</li>
+        <li>Light bulbs replaced</li>
+        <li>Battery checks (smoke detectors)</li>
+        <li>Seal and caulk inspection</li>
+        </ul>
+        <strong>Immediate Reporting:</strong>
+        <ul>
+        <li>Damage found during cleaning</li>
+        <li>Photos sent to owner</li>
+        <li>Quote for repair within 24 hours</li>
+        <li>Scheduled at owner's convenience</li>
+        </ul>
+        <strong>Result:</strong> Small issues caught before they become expensive repairs.
+        <hr class="my-8">
+        <h2>The "Self-Managing" Cleaning Nightmare</h2>
+        <strong>Scenario:</strong> You decide to clean yourself to save money.
+        <strong>Reality:</strong>
+        <ul>
+        <li>3-4 hours per cleaning</li>
+        <li>15 cleanings/month = 45-60 hours</li>
+        <li>RM 20/hour value = RM 900-1,200/month</li>
+        <li>Physical toll (back pain, fatigue)</li>
+        <li>Inconsistent quality (you're tired!)</li>
+        <li>Lost weekends and evenings</li>
+        </ul>
+        <strong>Or hire cheap freelancer:</strong>
+        <ul>
+        <li>RM 50/clean</li>
+        <li>Unreliable (no-shows, late)</li>
+        <li>Quality varies wildly</li>
+        <li>No backup when they're sick</li>
+        <li>You still need to inspect and manage</li>
+        </ul>
+        <strong>Our price:</strong> RM 60/clean
+        <ul>
+        <li>Professional, trained team</li>
+        <li>Consistent quality</li>
+        <li>Backup team available</li>
+        <li>Zero management needed from you</li>
+        </ul>
+        <strong>Value of your time:</strong> Priceless.
+        <hr class="my-8">
+        <h2>COVID-19 and Beyond: Enhanced Sanitization</h2>
+        <strong>Our pandemic protocols (now standard):</strong>
+        <strong>High-Touch Surface Focus:</strong>
+        <ul>
+        <li>Door handles (sanitized with hospital-grade disinfectant)</li>
+        <li>Light switches (same)</li>
+        <li>Remote controls (UV-C wand + disinfectant wipe)</li>
+        <li>Cabinet handles (thorough sanitization)</li>
+        <li>Keys/access cards (sanitized before each guest)</li>
+        </ul>
+        <strong>Air Quality:</strong>
+        <ul>
+        <li>Windows opened during cleaning (ventilation)</li>
+        <li>Air conditioner filters disinfected</li>
+        <li>Air purifier used during cleaning (HEPA filter)</li>
+        <li>2-hour buffer between checkout and cleaning (aerosol settling)</li>
+        </ul>
+        <strong>Chemicals Used:</strong>
+        <ul>
+        <li>Hospital-grade disinfectant (proven effective against coronavirus)</li>
+        <li>EPA-registered sanitizers</li>
+        <li>Color-coded microfiber cloths (prevent cross-contamination)</li>
+        <li>Single-use gloves (changed between rooms)</li>
+        </ul>
+        <strong>Result:</strong> Guests feel safe. 5-star reviews mention "spotless clean."
+        <hr class="my-8">
+        <h2>Seasonal Demand: We Scale, You Don't Stress</h2>
+        <strong>Peak Periods in Melaka:</strong>
+        <ul>
+        <li>Chinese New Year (February)</li>
+        <li>School holidays (March, June, September)</li>
+        <li>Public holidays (year-round)</li>
+        <li>Weekends (every week)</li>
+        </ul>
+        <strong>Outsourced Problem:</strong>
+        <ul>
+        <li>"We're fully booked"</li>
+        <li>"Emergency fee: 50% extra"</li>
+        <li>"Can only come tomorrow"</li>
+        </ul>
+        <strong>Our Solution:</strong>
+        <ul>
+        <li>Extra staff on standby</li>
+        <li>No peak surcharges</li>
+        <li>Same quality, always</li>
+        <li>100% coverage guaranteed</li>
+        </ul>
+        <strong>Example:</strong> CNY 2025 - we handled 45 turnovers in 3 days (up from usual 15) without a single missed clean or late check-in.
+        <hr class="my-8">
+        <h2>Specialized Services: Beyond Standard Cleaning</h2>
+        <h3>Deep Cleaning (Recommended Quarterly)</h3>
+        <strong>Includes:</strong>
+        <ul>
+        <li>Windows (inside + outside if accessible)</li>
+        <li>Behind all furniture (moved and cleaned under)</li>
+        <li>Inside all cabinets and drawers</li>
+        <li>Oven and refrigerator deep clean</li>
+        <li>Ceiling fans and light fixtures</li>
+        <li>Air conditioner coils</li>
+        <li>Grout scrubbing and resealing (if needed)</li>
+        </ul>
+        <strong>Cost (if outsourced):</strong> RM 250-400
+        <strong>Our cost:</strong> Included in your flat fee (quarterly)
+        <h3>Post-Construction Cleaning</h3>
+        <strong>After renovations:</strong>
+        <ul>
+        <li>Dust removal from every surface</li>
+        <li>Debris removal</li>
+        <li>Paint overspray cleaning</li>
+        <li>New furniture setup</li>
+        <li>Final polish and shine</li>
+        </ul>
+        <h3>Move-In/Move-Out Cleaning</h3>
+        <strong>When changing long-term tenants to Airbnb:</strong>
+        <ul>
+        <li>Deep clean of everything</li>
+        <li>Carpet shampooing</li>
+        <li>Wall mark removal</li>
+        <li>Appliance deep clean</li>
+        <li>Pest control inspection</li>
+        </ul>
+        <strong>Our owners get these free</strong> (within reason)
+        <hr class="my-8">
+        <h2>The Environmental Angle: Eco-Friendly Cleaning</h2>
+        <strong>Our Commitment:</strong>
+        <strong>Products:</strong>
+        <ul>
+        <li>Biodegradable cleaners (where effective)</li>
+        <li>Concentrated formulas (less packaging)</li>
+        <li>Refillable containers (reduced plastic)</li>
+        <li>Microfiber cloths (reusable, replace paper towels)</li>
+        </ul>
+        <strong>Practices:</strong>
+        <ul>
+        <li>Consolidated cleanings (route optimization, less fuel)</li>
+        <li>Energy-efficient equipment</li>
+        <li>Proper waste segregation (recycling)</li>
+        <li>Water conservation (efficient techniques)</li>
+        </ul>
+        <strong>Guests Notice:</strong>
+        <ul>
+        <li>We use eco-friendly products where possible</li>
+        <li>Recycling instructions provided</li>
+        <li>Many guests appreciate the green approach</li>
+        </ul>
+        <hr class="my-8">
+        <h2>What Our Owners Say</h2>
+        <strong>Case Study: From Self-Cleaning to Stress-Free</strong>
+        <strong>Owner:</strong> Mr. Chen, retiree with 3 properties
+        <strong>Before:</strong> Cleaning himself
+        <ul>
+        <li>Spent 15 hours/week cleaning</li>
+        <li>Constant fatigue and back pain</li>
+        <li>Quality suffered when tired</li>
+        <li>Wife unhappy about lost weekends</li>
+        </ul>
+        <strong>After:</strong> Switched to iHousing
+        <ul>
+        <li>Zero cleaning time</li>
+        <li>Professional quality every time</li>
+        <li>Guests compliment cleanliness</li>
+        <li>Marriage saved (his words!)</li>
+        </ul>
+        <strong>His Numbers:</strong>
+        <ul>
+        <li>Old cleaning cost: RM 1,200/month (supplies + his time value)</li>
+        <li>Our fee: RM 300/month (includes cleaning)</li>
+        <li><strong>Savings: RM 900/month + 15 hours/week</strong></li>
+        </ul>
+        <strong>His Testimonial:</strong>
+        <em>"I thought I was saving money by cleaning myself. By the time I bought supplies and spent my weekends, I was losing money and my sanity. iHousing's cleaning is better than I could do, and I have my weekends back."</em>
+        <hr class="my-8">
+        <h2>Frequently Asked Questions</h2>
+        <h3>Q: How do I know the cleaning was done properly?</h3>
+        <strong>A:</strong> Every cleaning is photographed and checklist-completed. We also message guests to confirm cleanliness. Any issues are resolved within 1 hour, free.
+        <h3>Q: What if the cleaner damages something?</h3>
+        <strong>A:</strong> We cover it. Our team is trained and careful, but accidents happen. We repair or replace anything our team damages - no questions asked.
+        <h3>Q: Do I need to provide cleaning supplies?</h3>
+        <strong>A:</strong> No. We bring everything. Your condo stays stocked with our supplies, replenished as needed.
+        <h3>Q: Can I use my own linen?</h3>
+        <strong>A:</strong> You can, but why? We provide premium hotel-quality linens, laundered professionally. Your personal linens would need storage and would increase your costs.
+        <h3>Q: What if a guest requests extra cleaning during their stay?</h3>
+        <strong>A:</strong> Included (within reason). Daily housekeeping isn't standard, but if guests need fresh towels or a quick tidy, we accommodate. Extensive cleaning during stays may incur small extra fee.
+        <h3>Q: How do you handle same-day turnovers?</h3>
+        <strong>A:</strong> Easily. Our team is scheduled based on checkout times, so we're there right after guests leave. 3 PM check-ins guaranteed, often earlier.
+        <hr class="my-8">
+        <h2>Ready for Professional Cleaning (That Saves You Money)?</h2>
+        <p>Stop overpaying for outsourced cleaning. Get better quality, faster turnover, and 40% savings with our in-house team.</p>
+        <strong>What's Included:</strong>
+        <ul>
+        <li>✅ Professional cleaning (every turnover)</li>
+        <li>✅ Premium linens (we provide and replace)</li>
+        <li>✅ Toiletries and essentials (refilled)</li>
+        <li>✅ Deep cleaning (quarterly)</li>
+        <li>✅ Maintenance checks (every visit)</li>
+        <li>✅ All included in our flat management fee</li>
+        </ul>
+        <strong>Our Management Fee:</strong>
+        <ul>
+        <li>1-bedroom: RM 200/month</li>
+        <li>2-bedroom: RM 250/month</li>
+        <li>3-bedroom: RM 300/month</li>
+        <li><strong>Includes cleaning + everything else</strong></li>
+        </ul>
+        <strong>WhatsApp Us:</strong>
+        <a href="https://wa.me/60196996688?text=Hi%20iHousing,%20I'm%20interested%20in%20your%20management%20service%20with%20cleaning%20included.%20How%20does%20it%20work?" target="_blank" rel="noopener" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 20px 0;">+60 19-699 6688</a>
+        <strong>Or learn more:</strong>
+        <ul>
+        <li>[Full Management Services](/services/full-management)</li>
+        <li>[See Our Properties](/properties)</li>
+        <li>[Flat Fee vs Commission Comparison](/flat-fee-airbnb-management-melaka)</li>
+        </ul>
+        <hr class="my-8">
+        <strong>Last Updated:</strong> January 2025 | <strong>Based On:</strong> 10,000+ Cleanings Completed
+        <em>Our in-house cleaning team isn't just an amenity - it's your competitive advantage. Lower costs, higher quality, and zero stress. That's the iHousing difference.</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,435 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "可变佣金vs固定费淡季哪个更省钱";
+const description = "淡季Airbnb收入下降时，哪种管理模式更省钱？了解为什么固定费在淡季保护您的利润，而佣金模式可能侵蚀您的收入。";
+const date = "2026-01-09";
+const category = "comparison";
+const language = "zh";
+const image = "/images/blog/variable-commission-vs-flat-fee-low-season.jpg";
+
+const content = `
+<h1>可变佣金 vs 固定费：淡季哪个更省钱？</h1>
+
+<h2>淡季的残酷真相</h2>
+
+<p>当Melaka的淡季到来时，许多Airbnb业主看到了收入大幅下降。但管理费用呢？</p>
+
+<p><strong>关键问题：</strong>您的管理费是否也下降，还是保持高位进一步侵蚀您的利润？</p>
+
+<p>这篇文章比较淡季的可变佣金模式与固定费用模式，并展示为什么固定费在艰难时期保护您的利润。</p>
+
+<h2>Melaka的淡季</h2>
+
+<h3>典型淡季时段</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>时段</th>
+      <th>月份</th>
+      <th>典型收入下降</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>淡季#1</strong></td>
+      <td>3月-4月</td>
+      <td>-30% vs 旺季</td>
+    </tr>
+    <tr>
+      <td><strong>淡季#2</strong></td>
+      <td>9月-10月</td>
+      <td>-25% vs 旺季</td>
+    </tr>
+    <tr>
+      <td><strong>平季</strong></td>
+      <td>5月-6月, 11月</td>
+      <td>-15% vs 旺季</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>场景：RM15,000年收入房产</h2>
+
+<h3>旺季表现（12月-1月）</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>指标</th>
+      <th>佣金模式（30%）</th>
+      <th>固定费用（RM250/月）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>月收入</strong></td>
+      <td>RM18,000</td>
+      <td>RM18,000</td>
+    </tr>
+    <tr>
+      <td><strong>管理成本</strong></td>
+      <td>RM5,400 (30%)</td>
+      <td>RM250</td>
+    </tr>
+    <tr>
+      <td><strong>净收入</strong></td>
+      <td>RM12,600</td>
+      <td>RM17,750</td>
+    </tr>
+    <tr>
+      <td><strong>成本百分比</strong></td>
+      <td>30%</td>
+      <td>1.4%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>旺季结果：</strong>固定费用明显获胜（成本1.4% vs 30%）</p>
+
+<h3>淡季表现（3月-4月）</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>指标</th>
+      <th>佣金模式（30%）</th>
+      <th>固定费用（RM250/月）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>月收入</strong></td>
+      <td>RM10,000</td>
+      <td>RM10,000</td>
+    </tr>
+    <tr>
+      <td><strong>管理成本</strong></td>
+      <td>RM3,000 (30%)</td>
+      <td>RM250</td>
+    </tr>
+    <tr>
+      <td><strong>净收入</strong></td>
+      <td>RM7,000</td>
+      <td>RM9,750</td>
+    </tr>
+    <tr>
+      <td><strong>成本百分比</strong></td>
+      <td>30%</td>
+      <td>2.5%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>淡季结果：</strong>固定费用获胜更甚！</p>
+
+<ul>
+  <li>佣金模式：您保留70%</li>
+  <li>固定费用模式：您保留97.5%</li>
+</ul>
+
+<h2>年度比较：包括淡季</h2>
+
+<h3>全年收入模式</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>月份</th>
+      <th>收入</th>
+      <th>佣金成本</th>
+      <th>固定费用成本</th>
+      <th>佣金净额</th>
+      <th>固定费净额</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1月（旺季）</strong></td>
+      <td>RM18,000</td>
+      <td>RM5,400</td>
+      <td>RM250</td>
+      <td>RM12,600</td>
+      <td>RM17,750</td>
+    </tr>
+    <tr>
+      <td><strong>2月（旺季）</strong></td>
+      <td>RM17,000</td>
+      <td>RM5,100</td>
+      <td>RM250</td>
+      <td>RM11,900</td>
+      <td>RM16,750</td>
+    </tr>
+    <tr>
+      <td><strong>3月（淡季）</strong></td>
+      <td>RM10,000</td>
+      <td>RM3,000</td>
+      <td>RM250</td>
+      <td>RM7,000</td>
+      <td>RM9,750</td>
+    </tr>
+    <tr>
+      <td><strong>4月（淡季）</strong></td>
+      <td>RM10,000</td>
+      <td>RM3,000</td>
+      <td>RM250</td>
+      <td>RM7,000</td>
+      <td>RM9,750</td>
+    </tr>
+    <tr>
+      <td><strong>5月（平季）</strong></td>
+      <td>RM14,000</td>
+      <td>RM4,200</td>
+      <td>RM250</td>
+      <td>RM9,800</td>
+      <td>RM13,750</td>
+    </tr>
+    <tr>
+      <td><strong>6月（平季）</strong></td>
+      <td>RM14,000</td>
+      <td>RM4,200</td>
+      <td>RM250</td>
+      <td>RM9,800</td>
+      <td>RM13,750</td>
+    </tr>
+    <tr>
+      <td><strong>7月（旺季）</strong></td>
+      <td>RM16,000</td>
+      <td>RM4,800</td>
+      <td>RM250</td>
+      <td>RM11,200</td>
+      <td>RM15,750</td>
+    </tr>
+    <tr>
+      <td><strong>8月（旺季）</strong></td>
+      <td>RM17,000</td>
+      <td>RM5,100</td>
+      <td>RM250</td>
+      <td>RM11,900</td>
+      <td>RM16,750</td>
+    </tr>
+    <tr>
+      <td><strong>9月（淡季）</strong></td>
+      <td>RM11,000</td>
+      <td>RM3,300</td>
+      <td>RM250</td>
+      <td>RM7,700</td>
+      <td>RM10,750</td>
+    </tr>
+    <tr>
+      <td><strong>10月（淡季）</strong></td>
+      <td>RM11,000</td>
+      <td>RM3,300</td>
+      <td>RM250</td>
+      <td>RM7,700</td>
+      <td>RM10,750</td>
+    </tr>
+    <tr>
+      <td><strong>11月（平季）</strong></td>
+      <td>RM14,000</td>
+      <td>RM4,200</td>
+      <td>RM250</td>
+      <td>RM9,800</td>
+      <td>RM13,750</td>
+    </tr>
+    <tr>
+      <td><strong>12月（旺季）</strong></td>
+      <td>RM18,000</td>
+      <td>RM5,400</td>
+      <td>RM250</td>
+      <td>RM12,600</td>
+      <td>RM17,750</td>
+    </tr>
+    <tr>
+      <td><strong>年度总额</strong></td>
+      <td>RM170,000</td>
+      <td>RM51,000 (30%)</td>
+      <td>RM3,000</td>
+      <td>RM119,000</td>
+      <td>RM167,000</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>年度结果：</strong></p>
+<ul>
+  <li>佣金模式净收入：RM119,000</li>
+  <li>固定费用模式净收入：RM167,000</li>
+  <li><strong>固定费用优势：</strong>+RM48,000/年（+40%）</li>
+</ul>
+
+<h2>为什么固定费在淡季保护利润</h2>
+
+<h3>佣金模式的淡季问题</h3>
+
+<p><strong>双重打击：</strong></p>
+<ul>
+  <li><strong>收入下降30%</strong>（更少客人）</li>
+  <li><strong>成本保持高位</strong>（佣金百分比不变）</li>
+  <li><strong>利润急剧下降</strong>（两者结合）</li>
+</ul>
+
+<p><strong>例子：</strong></p>
+<ul>
+  <li>旺季：RM18,000收入 - RM5,400成本 = RM12,600利润（70%净利率）</li>
+  <li>淡季：RM10,000收入 - RM3,000成本 = RM7,000利润（70%净利率）</li>
+  <li><strong>利润下降：</strong>RM5,600（-44%）</li>
+</ul>
+
+<h3>固定费用模式的淡季优势</h3>
+
+<p><strong>单重打击：</strong></p>
+<ul>
+  <li><strong>收入下降30%</strong>（更少客人）</li>
+  <li><strong>成本保持固定</strong>（每月RM250）</li>
+  <li><strong>净利率提升</strong>（成本占比下降）</li>
+</ul>
+
+<p><strong>例子：</strong></p>
+<ul>
+  <li>旺季：RM18,000收入 - RM250成本 = RM17,750利润（98.6%净利率）</li>
+  <li>淡季：RM10,000收入 - RM250成本 = RM9,750利润（97.5%净利率）</li>
+  <li><strong>利润下降：</strong>RM8,000（-45%，但绝对值更高）</li>
+</ul>
+
+<h2>激励alignment：关键差异</h2>
+
+<h3>佣金模式在淡季的激励问题</h3>
+
+<p><strong>问题：</strong></p>
+<ul>
+  <li>较低收入 = 较低佣金</li>
+  <li>经理在淡季赚得少</li>
+  <li><strong>激励：</strong>可能减少努力</li>
+</ul>
+
+<p><strong>结果：</strong></p>
+<ul>
+  <li>不太积极的定价调整</li>
+  <li>不太积极的促销活动</li>
+  <li>不太积极的客人沟通</li>
+  <li>收入可能进一步下降</li>
+</ul>
+
+<h3>固定费用模式在淡季的激励优势</h3>
+
+<p><strong>优势：</strong></p>
+<ul>
+  <li>无论收入如何，固定费用相同</li>
+  <li>经理在淡季赚得相同</li>
+  <li><strong>激励：</strong>全年一致努力</li>
+</ul>
+
+<p><strong>结果：</strong></p>
+<ul>
+  <li>持续定价优化</li>
+  <li>持续促销活动</li>
+  <li>持续客人沟通</li>
+  <li>收入最大化，即使在淡季</li>
+</ul>
+
+<h2>真实业主经验</h2>
+
+<h3>佣金模式业主反馈</h3>
+
+<p><strong>"淡季是噩梦。"</strong></p>
+<p>"在旺季，我很高兴。在淡季，我几乎不赚钱，但管理费仍然很高。感觉像在支付固定成本，但称之为'佣金'。"</p>
+
+<p><strong>"他们不在乎淡季。"</strong></p>
+<p>"当收入低时，我的经理似乎不太在乎。为什么不呢？他们赚的更少。我需要的是全年一致的努力。"</p>
+
+<h3>固定费用模式业主反馈</h3>
+
+<p><strong>"淡季压力更小。"</strong></p>
+<p>"我知道每月正好支付RM250。即使在收入下降的3月，我的成本也不会改变。这更容易规划。"</p>
+
+<p><strong>"他们全年努力工作。"</strong></p>
+<p>"iHousing在淡季和旺季一样努力。为什么？因为他们的收入是固定的，他们专注于为我最大化收入，无论季节如何。"</p>
+
+<h2>年度影响：稳定性 vs 波动性</h2>
+
+<h3>佣金模式：波动利润</h3>
+
+<p><strong>每月净收入变化：</strong></p>
+<ul>
+  <li>旺季：RM11,200-12,600</li>
+  <li>平季：RM9,800-11,200</li>
+  <li>淡季：RM7,000-7,700</li>
+  <li><strong>波动范围：</strong>RM5,600（-44%到峰值）</li>
+</ul>
+
+<p><strong>现金流挑战：</strong></p>
+<ul>
+  <li>难以规划费用</li>
+  <li>淡季现金紧缩</li>
+  <li>抵押贷款压力</li>
+</ul>
+
+<h3>固定费用模式：稳定利润</h3>
+
+<p><strong>每月净收入变化：</strong></p>
+<ul>
+  <li>旺季：RM15,750-17,750</li>
+  <li>平季：RM13,750-16,750</li>
+  <li>淡季：RM9,750-10,750</li>
+  <li><strong>波动范围：</strong>RM8,000（但绝对值始终更高）</li>
+</ul>
+
+<p><strong>现金流优势：</strong></p>
+<ul>
+  <li>可预测的管理成本</li>
+  <li>更容易规划费用</li>
+  <li>淡季压力更小</li>
+</ul>
+
+<h2>为什么固定费是淡季的正确选择</h2>
+
+<h3>关键优势总结</h3>
+
+<ol>
+  <li><strong>成本可预测性：</strong>无论收入如何，每月相同费用</li>
+  <li><strong>更高净利率：</strong>淡季净利率97%+ vs 佣金70%</li>
+  <li><strong>一致的激励：</strong>管理者全年努力工作</li>
+  <li><strong>更好的现金流：</strong>可预测成本更容易规划</li>
+  <li><strong>更多绝对利润：</strong>即使在收入较低时，净收入绝对值更高</li>
+</ol>
+
+<h2>iHousing固定费用承诺</h2>
+
+<h3>Parkland Avenue定价</h3>
+
+<ul>
+  <li>1房：RM200/月</li>
+  <li>2房：RM250/月</li>
+  <li>3房：RM300/月</li>
+</ul>
+
+<p><strong>保证：</strong></p>
+<ul>
+  <li>旺季、淡季或平季：相同费用</li>
+  <li>高收入月或低收入月：相同费用</li>
+  <li>100%透明：无意外费用</li>
+  <li>全年一致努力</li>
+</ul>
+
+<h2>立即行动</h2>
+
+<p>不要让淡季侵蚀您的利润。选择固定费用可预测性。</p>
+
+<p><strong>对于Parkland Avenue：</strong>预注册锁定淡季保护性定价。</p>
+
+<p><strong>对于所有其他房产：</strong>WhatsApp我们获取定制固定费用报价和淡季分析。</p>
+
+<p>保护您的利润。最小化您的风险。最大化您的净收入。</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

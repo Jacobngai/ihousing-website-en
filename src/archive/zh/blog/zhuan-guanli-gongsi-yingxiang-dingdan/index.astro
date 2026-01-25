@@ -1,0 +1,567 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "转民宿管理公司会影响订单吗？马六甲Airbnb更换托管流程详解";
+const description = "转民宿管理公司会影响订单吗？了解如何平滑转换Airbnb管理公司，避免订单损失。iHousing提供无缝转换服务，确保业务不中断。";
+const image = "/images/blog/zhuan-guanli-gongsi-yingxiang-dingdan.jpg";
+const date = "2025-01-23";
+const category = "decision";
+const language = "zh";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>转民宿管理公司会影响订单吗？马六甲Airbnb更换托管流程详解</h1>
+        <p>您对当前的管理公司不满意，但担心转换会影响订单？这是业主最担心的问题。本文详解如何无缝转换Airbnb管理公司，确保零订单损失。iHousing已帮助50+业主成功转换，有丰富经验。</p>
+        <h2>一、转换会影响订单吗？</h2>
+        <h3>1.1 直接回答：不会（如果正确操作）</h3>
+        <strong>正确的转换流程：</strong>
+        <ul>
+        <li>✓ 100%保持现有Listing</li>
+        <li>✓ 所有未来预订保留</li>
+        <li>✓ 评价评分不受影响</li>
+        <li>✓ 平台算法排名不变</li>
+        <li>✓ 客人体验无缝衔接</li>
+        </ul>
+        <strong>iHousing保证：</strong>
+        <ul>
+        <li>零停业时间</li>
+        <li>零订单取消</li>
+        <li>零差评增加</li>
+        <li>零收入损失</li>
+        </ul>
+        <h3>1.2 实际转换案例</h3>
+        <strong>案例1：陈太太，Silverscape Residence</strong>
+        <strong>转换前情况：</strong>
+        <ul>
+        <li>原管理公司：响应慢、入住率低</li>
+        <li>月收入：RM 3,500</li>
+        <li>投诉：客人等待回复、清洁问题</li>
+        </ul>
+        <strong>转换过程：</strong>
+        <ul>
+        <li>周一：签约iHousing</li>
+        <li>周三：完成平台转移</li>
+        <li>周四：iHousing正式接管</li>
+        <li>未来订单：全部保留，无取消</li>
+        </ul>
+        <strong>转换后3个月：</strong>
+        <ul>
+        <li>月收入：RM 5,800（+65%）</li>
+        <li>评价：从4.2提升到4.7</li>
+        <li>投诉：零</li>
+        </ul>
+        <strong>陈太太说：</strong>"原本很担心转换会影响订单，但iHousing处理得非常专业，整个过程很顺利。"
+        <hr class="my-8">
+        <strong>案例2：李先生，The Shore Residence</strong>
+        <strong>转换前情况：</strong>
+        <ul>
+        <li>自己管理：每周15-20小时</li>
+        <li>月收入：RM 4,200</li>
+        <li>问题：太累、无法休息</li>
+        </ul>
+        <strong>转换过程：</strong>
+        <ul>
+        <li>选择iHousing：5平台管理</li>
+        <li>转换时间：1周</li>
+        <li>订单影响：零</li>
+        </ul>
+        <strong>转换后3个月：</strong>
+        <ul>
+        <li>月收入：RM 6,500（+55%）</li>
+        <li>时间投入：0小时（完全托管）</li>
+        <li>生活质量：大幅提升</li>
+        </ul>
+        <hr class="my-8">
+        <h2>二、为什么业主想要转换？</h2>
+        <h3>2.1 常见问题（您是否遇到？）</h3>
+        <strong>问题1：管理费太高</strong>
+        <ul>
+        <li>行业标准：20-30%佣金</li>
+        <li>您的情况：超过25%？</li>
+        <li>iHousing：固定费用模式（特定项目）</li>
+        </ul>
+        <strong>问题2：入住率太低</strong>
+        <ul>
+        <li>行业平均：50-60%</li>
+        <li>您的情况：低于40%？</li>
+        <li>iHousing：目标60%+</li>
+        </ul>
+        <strong>问题3：响应速度慢</strong>
+        <ul>
+        <li>客人等待超过1小时？</li>
+        <li>预订询问未回复？</li>
+        <li>深夜无人值班？</li>
+        </ul>
+        <strong>问题4：清洁质量差</strong>
+        <ul>
+        <li>客人投诉清洁问题？</li>
+        <li>床品有污渍？</li>
+        <li>缺少必需品？</li>
+        </ul>
+        <strong>问题5：缺乏透明度</strong>
+        <ul>
+        <li>不知道真实收入？</li>
+        <li>不知道客人评价？</li>
+        <li>不知道平台规则？</li>
+        </ul>
+        <h3>2.2 转换的5大好处</h3>
+        <strong>好处1：降低成本</strong>
+        <ul>
+        <li>从20-30%佣金 → 固定费用</li>
+        <li>节省RM 3,000-6,000/年</li>
+        </ul>
+        <strong>好处2：提高收入</strong>
+        <ul>
+        <li>5平台管理 vs 1平台</li>
+        <li>60%更多预订</li>
+        <li>优化定价策略</li>
+        </ul>
+        <strong>好处3：节省时间</strong>
+        <ul>
+        <li>每周节省15-20小时</li>
+        <li>真正的被动收入</li>
+        <li>可以专注于其他事情</li>
+        </ul>
+        <strong>好处4：提升质量</strong>
+        <ul>
+        <li>自有清洁团队</li>
+        <li>专业摄影</li>
+        <li>快速响应</li>
+        </ul>
+        <strong>好处5：透明管理</strong>
+        <ul>
+        <li>月度收入报告</li>
+        <li>实时业绩追踪</li>
+        <li>开放沟通</li>
+        </ul>
+        <h2>三、iHousing转换流程（5步完成）</h2>
+        <h3>第1步：免费评估（1-2天）</h3>
+        <strong>我们评估：</strong>
+        <ul>
+        <li>您的当前Listing状态</li>
+        <li>收入历史数据</li>
+        <li>评价分析</li>
+        <li>存在的问题</li>
+        <li>改进机会</li>
+        </ul>
+        <strong>我们提供：</strong>
+        <ul>
+        <li>详细评估报告</li>
+        <li>收入提升预估</li>
+        <li>定制改进方案</li>
+        <li>透明报价</li>
+        </ul>
+        <strong>您需要：</strong>
+        <ul>
+        <li>提供当前Listing链接</li>
+        <li>分享收入数据（可选）</li>
+        <li>说明当前问题</li>
+        </ul>
+        <hr class="my-8">
+        <h3>第2步：签约确认（1天）</h3>
+        <strong>服务协议包括：</strong>
+        <ul>
+        <li>服务范围详细说明</li>
+        <li>管理费用结构</li>
+        <li>服务标准承诺</li>
+        <li>终止条款（灵活）</li>
+        <li>双方权利和义务</li>
+        </ul>
+        <strong>我们承诺：</strong>
+        <ul>
+        <li>无长期合约（按月）</li>
+        <li>无隐藏费用</li>
+        <li>随时可终止（提前30天通知）</li>
+        <li>业绩保证（特定条件）</li>
+        </ul>
+        <hr class="my-8">
+        <h3>第3步：平台转移准备（3-5天）</h3>
+        <strong>准备工作：</strong>
+        <strong>A. 信息收集</strong>
+        <code>\`</code>
+        <p>□ Airbnb账号访问权限</p>
+        <p>□ Booking.com账号</p>
+        <p>□ 其他平台账号</p>
+        <p>□ 现有预订日历</p>
+        <p>□ 客人沟通记录</p>
+        <p>□ 清洁供应商信息</p>
+        <p>□ 钥匙/门锁密码</p>
+        <code>\`</code>
+        <strong>B. Listing优化</strong>
+        <ul>
+        <li>优化标题和描述</li>
+        <li>更新专业照片（如果需要）</li>
+        <li>调整定价策略</li>
+        <li>改进设施清单</li>
+        <li>完善House Rules</li>
+        </ul>
+        <strong>C. 系统设置</strong>
+        <ul>
+        <li>设置我们的管理权限</li>
+        <li>配置自动消息</li>
+        <li>设置动态定价</li>
+        <li>连接日历同步</li>
+        </ul>
+        <hr class="my-8">
+        <h3>第4步：正式接管（1天）</h3>
+        <strong>接管日工作：</strong>
+        <table>
+          <thead>
+            <tr><th>时间</th><th>工作内容</th><th>负责人</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**上午**</td><td>获取钥匙/门锁密码</td><td>iHousing</td></tr>
+            <tr><td>**上午**</td><td>检查物业状况</td><td>iHousing团队</td></tr>
+            <tr><td>**上午**</td><td>整理清洁用品</td><td>iHousing</td></tr>
+            <tr><td>**下午**</td><td>设置平台权限</td><td>iHousing</td></tr>
+            <tr><td>**下午**</td><td>更新Listing信息</td><td>iHousing</td></tr>
+            <tr><td>**下午**</td><td>查看未来预订</td><td>iHousing</td></tr>
+            <tr><td>**下午**</td><td>通知未来客人（可选）</td><td>iHousing</td></tr>
+            <tr><td>**完成**</td><td>正式接管完成</td><td>双方确认</td></tr>
+          </tbody>
+        </table>
+        <strong>保持业务连续性：</strong>
+        <ul>
+        <li>所有现有预订保留</li>
+        <li>客人不受影响</li>
+        <li>Listing在线状态不变</li>
+        <li>评价历史保留</li>
+        </ul>
+        <hr class="my-8">
+        <h3>第5步：优化提升（持续）</h3>
+        <strong>第一个月：</strong>
+        <ul>
+        <li>优化定价策略</li>
+        <li>改进Listing</li>
+        <li>专业摄影（如需要）</li>
+        <li>收集客人反馈</li>
+        <li>调整运营流程</li>
+        </ul>
+        <strong>第二个月：</strong>
+        <ul>
+        <li>分析业绩数据</li>
+        <li>进一步优化定价</li>
+        <li>提升入住率</li>
+        <li>改进客人体验</li>
+        </ul>
+        <strong>第三个月：</strong>
+        <ul>
+        <li>评估改进效果</li>
+        <li>展示收入提升</li>
+        <li>收集业主反馈</li>
+        <li>长期策略规划</li>
+        </ul>
+        <hr class="my-8">
+        <h2>四、订单不会损失的5个保障</h2>
+        <h3>保障1：平台权限平稳转移</h3>
+        <strong>如何实现：</strong>
+        <ul>
+        <li>添加iHousing为Co-host（共同主持人）</li>
+        <li>所有权保持在您手中</li>
+        <li>我们只有管理权限</li>
+        <li>随时可以撤销</li>
+        </ul>
+        <strong>好处：</strong>
+        <ul>
+        <li>Listing状态不变</li>
+        <li>历史评价保留</li>
+        <li>搜索排名不受影响</li>
+        <li>您保持控制权</li>
+        </ul>
+        <hr class="my-8">
+        <h3>保障2：现有预订全部保留</h3>
+        <strong>我们如何处理：</strong>
+        <ul>
+        <li>导入所有未来预订到我们的系统</li>
+        <li>确认每个预订的详细信息</li>
+        <li>联系客人（如果需要）确认详情</li>
+        <li>确保客人无缝体验</li>
+        </ul>
+        <strong>客人不会察觉：</strong>
+        <ul>
+        <li>入住流程不变</li>
+        <li>服务质量提升或保持</li>
+        <li>沟通更加及时</li>
+        <li>体验更加流畅</li>
+        </ul>
+        <hr class="my-8">
+        <h3>保障3：Listing持续优化</h3>
+        <strong>我们做的优化：</strong>
+        <ul>
+        <li>更新标题（更吸引人）</li>
+        <li>优化描述（更详细、更专业）</li>
+        <li>改进照片（专业摄影）</li>
+        <li>调整定价（动态定价）</li>
+        <li>完善设施清单</li>
+        <li>更新House Rules</li>
+        </ul>
+        <strong>结果：</strong>
+        <ul>
+        <li>更多浏览量</li>
+        <li>更高转化率</li>
+        <li>更好评价</li>
+        <li>更高入住率</li>
+        </ul>
+        <hr class="my-8">
+        <h3>保障4：快速响应保证</h3>
+        <strong>iHousing响应时间：</strong>
+        <ul>
+        <li>预订询问：&lt;1小时（白天）</li>
+        <li>客人问题：&lt;30分钟</li>
+        <li>紧急情况：即时处理</li>
+        <li>深夜值班：有</li>
+        </ul>
+        <strong>对比行业平均：</strong>
+        <ul>
+        <li>一般管理：2-4小时</li>
+        <li>iHousing：1小时内</li>
+        <li>更快响应 = 更多订单</li>
+        </ul>
+        <hr class="my-8">
+        <h3>保障5：5平台管理</h3>
+        <strong>我们管理的平台：</strong>
+        <ol>
+        <li>Airbnb（最大市场）</li>
+        <li>Booking.com（国际游客）</li>
+        <li>Agoda（亚洲市场）</li>
+        <li>Expedia（欧美市场）</li>
+        <li>VRBO（家庭度假）</li>
+        </ol>
+        <strong>日历同步：</strong>
+        <ul>
+        <li>所有平台日历实时同步</li>
+        <li>避免重复预订</li>
+        <li>最大化曝光率</li>
+        <li>60%更多订单</li>
+        </ul>
+        <hr class="my-8">
+        <h2>五、常见问题解答</h2>
+        <h3>Q1: 转换需要多长时间？</h3>
+        <strong>答：</strong> 标准流程1-2周：
+        <ul>
+        <li>快速转换：5-7天（简单情况）</li>
+        <li>标准转换：1-2周（大多数情况）</li>
+        <li>复杂转换：2-3周（特殊情况如多套物业）</li>
+        </ul>
+        <strong>不会影响：</strong>
+        <ul>
+        <li>现有订单</li>
+        <li>Listing状态</li>
+        <li>业务运营</li>
+        </ul>
+        <hr class="my-8">
+        <h3>Q2: 转换期间可以继续接单吗？</h3>
+        <strong>答：</strong> 完全可以！
+        <ul>
+        <li>Listing始终保持在线</li>
+        <li>预订正常进行</li>
+        <li>转换期间业务不受影响</li>
+        <li>我们在后台完成所有工作</li>
+        </ul>
+        <hr class="my-8">
+        <h3>Q3: 我的现有预订怎么办？</h3>
+        <strong>答：</strong> 全部保留！
+        <ul>
+        <li>我们导入所有未来预订</li>
+        <li>确认每个预订的细节</li>
+        <li>客人不会察觉任何变化</li>
+        <li>服务质量保持或提升</li>
+        </ul>
+        <hr class="my-8">
+        <h3>Q4: 如果转换后不满意怎么办？</h3>
+        <strong>答：</strong> iHousing灵活政策：
+        <ul>
+        <li>无长期合约</li>
+        <li>按月服务</li>
+        <li>提前30天通知即可终止</li>
+        <li>无惩罚性费用</li>
+        </ul>
+        <strong>我们相信：</strong>
+        <ul>
+        <li>用服务质量留住客户</li>
+        <li>不需要长期绑定</li>
+        <li>您随时有选择权</li>
+        </ul>
+        <hr class="my-8">
+        <h3>Q5: 转换需要我做什么？</h3>
+        <strong>答：</strong> 非常简单：
+        <ol>
+        <li><strong>联系我们</strong> - 免费咨询</li>
+        <li><strong>签署协议</strong> - 5分钟完成</li>
+        <li><strong>提供信息</strong> - Listing链接和钥匙</li>
+        <li><strong>我们接管</strong> - 您什么都不用做</li>
+        </ol>
+        <strong>您需要做的：</strong>
+        <ul>
+        <li>签署服务协议</li>
+        <li>提供Listing访问权限</li>
+        <li>移交钥匙/门锁密码</li>
+        <li>接收月度报告</li>
+        </ul>
+        <strong>我们做的：</strong>
+        <ul>
+        <li>所有其他事情</li>
+        </ul>
+        <hr class="my-8">
+        <h3>Q6: 转换会影响我的评价吗？</h3>
+        <strong>答：</strong> 不会！
+        <ul>
+        <li>评价历史保留</li>
+        <li>Listing状态不变</li>
+        <li>我们会提升服务质量</li>
+        <li>未来评价会更好</li>
+        </ul>
+        <strong>实际上：</strong>
+        <ul>
+        <li>更好的服务 = 更好的评价</li>
+        <li>更快的响应 = 更高的评分</li>
+        <li>专业清洁 = 更满意的客人</li>
+        </ul>
+        <hr class="my-8">
+        <h2>六、转换后的变化</h2>
+        <h3>6.1 您会立即看到的改善</h3>
+        <strong>改善1：更快的响应</strong>
+        <ul>
+        <li>客人询问 &lt;1小时回复</li>
+        <li>问题快速解决</li>
+        <li>夜间值班支持</li>
+        </ul>
+        <strong>改善2：更好的清洁</strong>
+        <ul>
+        <li>自有清洁团队</li>
+        <li>清洁标准清单</li>
+        <li>质量检查保证</li>
+        </ul>
+        <strong>改善3：更多曝光</strong>
+        <ul>
+        <li>5平台管理</li>
+        <li>Listing优化</li>
+        <li>专业摄影</li>
+        </ul>
+        <strong>改善4：更高收入</strong>
+        <ul>
+        <li>优化定价</li>
+        <li>更高入住率</li>
+        <li>更多预订</li>
+        </ul>
+        <strong>改善5：透明报告</strong>
+        <ul>
+        <li>月度收入报告</li>
+        <li>预订明细</li>
+        <li>评价汇总</li>
+        <li>改进建议</li>
+        </ul>
+        <h3>6.2 收入提升案例</h3>
+        <strong>典型提升数据（基于50+转换案例）：</strong>
+        <table>
+          <thead>
+            <tr><th>指标</th><th>转换前</th><th>转换后3个月</th><th>提升</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**入住率**</td><td>45%</td><td>62%</td><td>+17%</td></tr>
+            <tr><td>**月收入**</td><td>RM 3,800</td><td>RM 5,600</td><td>+47%</td></tr>
+            <tr><td>**评价评分**</td><td>4.3</td><td>4.7</td><td>+0.4</td></tr>
+            <tr><td>**响应时间**</td><td>3小时</td><td>45分钟</td><td>-75%</td></tr>
+          </tbody>
+        </table>
+        <em>数据来源：iHousing 2024-2025年转换案例统计</em>
+        <hr class="my-8">
+        <h2>七、为什么选择iHousing？</h2>
+        <h3>7.1 我们的优势</h3>
+        <strong>优势1：8年本地经验</strong>
+        <ul>
+        <li>专注于马六甲市场</li>
+        <li>了解当地旅游趋势</li>
+        <li>熟悉所有主要公寓</li>
+        </ul>
+        <strong>优势2：100+成功案例</strong>
+        <ul>
+        <li>丰富的运营经验</li>
+        <li>各种问题解决方案</li>
+        <li>业绩可验证</li>
+        </ul>
+        <strong>优势3：自有团队</strong>
+        <ul>
+        <li>清洁团队（非外包）</li>
+        <li>专业摄影师</li>
+        <li>维修人员</li>
+        <li>客服团队</li>
+        </ul>
+        <strong>优势4：5平台管理</strong>
+        <ul>
+        <li>最大化曝光</li>
+        <li>日历同步</li>
+        <li>60%更多订单</li>
+        </ul>
+        <strong>优势5：透明费用</strong>
+        <ul>
+        <li>无隐藏费用</li>
+        <li>详细的月度报告</li>
+        <li>清晰的服务范围</li>
+        </ul>
+        <strong>优势6：灵活合约</strong>
+        <ul>
+        <li>无长期绑定</li>
+        <li>按月服务</li>
+        <li>随时可终止</li>
+        </ul>
+        <h3>7.2 我们的承诺</h3>
+        <strong>我们承诺：</strong>
+        <ul>
+        <li>✓ 零停业时间</li>
+        <li>✓ 零订单取消</li>
+        <li>✓ 零收入损失</li>
+        <li>✓ 服务提升</li>
+        <li>✓ 收入增长</li>
+        </ul>
+        <strong>如果不满意：</strong>
+        <ul>
+        <li>提前30天通知即可终止</li>
+        <li>无惩罚性费用</li>
+        <li>Listing完整归还</li>
+        </ul>
+        <hr class="my-8">
+        <h2>八、立即行动</h2>
+        <h3>免费转换评估</h3>
+        <strong>输入您的电话号码，我们会WhatsApp您！</strong>
+        <p>我们提供：</p>
+        <ul>
+        <li>免费Listing评估</li>
+        <li>收入提升预估</li>
+        <li>详细转换计划</li>
+        <li>透明报价</li>
+        <li>转换流程说明</li>
+        <li>全程中文服务</li>
+        <li>8年转换经验</li>
+        <li>50+成功案例</li>
+        </ul>
+        <strong>转换流程简单，5步完成：</strong>
+        <ol>
+        <li>联系我们</li>
+        <li>免费评估</li>
+        <li>签署协议</li>
+        <li>我们接管</li>
+        <li>享受收益</li>
+        </ol>
+        <strong>零风险转换：</strong>
+        <ul>
+        <li>无长期合约</li>
+        <li>可随时终止</li>
+        <li>Listing保持您的控制权</li>
+        <li>业务不受影响</li>
+        </ul>
+        <strong>让您的马六甲民宿开始赚取更多收入！</strong>
+        <hr class="my-8">
+        <em>文章最后更新：2025年1月23日</em>
+        <em>数据来源：iHousing转换案例统计、客户反馈</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

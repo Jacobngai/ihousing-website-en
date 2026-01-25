@@ -1,0 +1,68 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "CNY Singapore Exodus: Targeting Weekenders During Holiday";
+const description = "Capture Singaporean weekenders fleeing crowded CNY celebrations for Melaka coastal getaways. Targeting strategies, pricing for SG exodus, and family reunion appeal.";
+const date = "2026-01-30";
+const category = "location-based";
+const language = "en";
+const image = "/images/blog/cny-singapore-exodus.jpg";
+
+const content = `
+<h1>CNY Singapore Exodus: Targeting Weekenders During Holiday</h1>
+
+<p>Chinese New Year 2026 brings <strong>40% more Singaporean visitors</strong> to Melaka as families seek alternatives to crowded home celebrations. With the Ringgit at favorable exchange rates, Melaka becomes the <strong>perfect weekend escape</strong>.</p>
+
+<h2>Why Singaporeans Choose Melaka for CNY</h2>
+<ul>
+<li>4-hour drive vs expensive flights to other destinations</li>
+<li>Heritage atmosphere without home celebration crowds</li>
+<li>Friendly Singaporean community in Melaka</li>
+<li>Value-for-money compared to SG hotels</li>
+</ul>
+
+<h3>Target Guest Profile</h3>
+<p><strong>Primary segment:</strong> Multi-generational families (3 generations, 6-8 people)</p>
+<ul>
+<li>Seeking: 3-4 night stays (Jan 29 - Feb 1)</li>
+<li>Budget: RM800-1,200/night for 3BR units</li>
+<li>Priorities: Space, heritage experience, family activities</li>
+</ul>
+
+<p><strong>Singapore penetration strategy:</strong> Market on SG Facebook groups, highlight Ringgit advantage, emphasize "no home hosting duties" appeal.</p>
+
+<h2>2026 CNY Singaporean Guest Projections</h2>
+<ul>
+<li><strong>Expected SG visitors:</strong> +35% vs CNY 2025</li>
+<li><strong>Average spend:</strong> RM 2,400/trip (accommodation + food + activities)</li>
+<li><strong>Length of stay:</strong> 3.8 nights average</li>
+</ul>
+
+<p><strong>Property requirement:</strong> 3+ bedrooms, kitchen facilities, near heritage sites.</p>
+
+<h2>Marketing to Singaporean Weekenders</h2>
+
+<p><strong>Listing optimization:</strong></p>
+<ul>
+<li>Mention "4-hour drive from Singapore" in title</li>
+<li>Showcase Ringgit savings (40% cheaper than SG hotels)</li>
+<li>Highlight "no cleaning/cooking duties" vs staying home</li>
+<li>Emphasize "authentic heritage experience" for children</li>
+</ul>
+
+<p><strong>WhatsApp +60166996688</strong> for Singaporean guest targeting strategy.</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+    <BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

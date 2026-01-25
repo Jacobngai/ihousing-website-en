@@ -1,0 +1,634 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Pengurusan Airbnb Heng Hut Resort Melaka: Perkhidmatan Profesional untuk Pemilik";
+const description = "Perkhidmatan pengurusan Airbnb profesional untuk Heng Hut Resort Melaka. Yuran tetap berpatutan, pengurusan lengkap dari pembersihan hingga check-out tetamu.";
+const image = "/images/blog/pengurusan-airbnb-heng-hut-resort-melaka.jpg";
+const date = "2025-01-24";
+const category = "setup-operational";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Pengurusan Airbnb Heng Hut Resort Melaka: Perkhidmatan Profesional untuk Pemilik</h1>
+
+<p>Heng Hut Resort di Melaka menawarkan konsep penginapan unik yang menarik minat pelancong domestik dan antarabangsa. Namun, menguruskan hartanah jenis ini secara sendiri boleh menjadi cabaran besar. Artikel ini meneroka bagaimana perkhidmatan pengurusan profesional boleh membantu pemilik Heng Hut Resort memaksimumkan pendapatan mereka.</p>
+
+<h2>Apa itu Heng Hut Resort Melaka?</h2>
+
+<p>Heng Hut Resort merupakan pembangunan hartanah unik di Melaka yang menggabungkan konsep percutian resort dengan kemudahan kediaman. Ciri-ciri utama termasuk:</p>
+
+<ul>
+<li><strong>Konsep Resort</strong>: Reka bentuk inspired oleh resort dengan landskap cantik</li></ul>
+
+<ul>
+<li><strong>Kolam Renang</strong>: Kemudahan kolam renang untuk tetamu</li></ul>
+
+<ul>
+<li><strong>Kawasan Hijau</strong>: Taman dan kawasan riadah yang luas</li></ul>
+
+<ul>
+<li><strong>Keselamatan 24 Jam</strong>: Sistem keselamatan profesional</li></ul>
+
+<ul>
+<li><strong>Lokasi Strategik</strong>: Berhampiran tarikan pelancong utama Melaka</li></ul>
+
+<h3>Keunikan Heng Hut untuk Airbnb</h3>
+
+<p>Tetamu Airbnb mencari Heng Hut Resort kerana:</p>
+
+<ul>
+<li>Pengalaman menginap seperti resort tetapi dengan harga lebih berpatutan</li></ul>
+
+<ul>
+<li>Ruang yang lebih luas berbanding hotel biasa</li></ul>
+
+<ul>
+<li>Kemudahan dapur untuk memasak</li></ul>
+
+<ul>
+<li>Ruang tamu keluarga yang selesa</li></ul>
+
+<ul>
+<li>Suasana tenang dan damai</li></ul>
+
+<h2>Cabaran Menguruskan Heng Hut Resort Sendiri</h2>
+
+<p>Ramai pemilik hartanah bermula dengan mengurus sendiri unit Airbnb mereka. Namun, untuk resort property seperti Heng Hut, terdapat cabaran khusus:</p>
+
+<h3>Cabaran 1: Pembersihan yang Lebih Komprehensif</h3>
+
+<p>Berbanding unit studio, resort memerlukan pembersihan lebih teliti:</p>
+
+<ul>
+<li><strong>Ruang lebih luas</strong> = masa pembersihan lebih lama</li></ul>
+
+<ul>
+<li><strong>Kemudahan resort</strong> (kolam renang, taman) memerlukan penyelenggaraan</li></ul>
+
+<ul>
+<li><strong>Kekerapan tinggi</strong> - tetamu resort expect tingkat kebersihan tinggi</li></ul>
+
+<ul>
+<li><strong>Kemudahan dapur</strong> perlu dibersihkan dengan sangat teliti</li></ul>
+
+<strong>Masalahnya:</strong>
+<ul>
+<li>Mencari pembersih yang konsisten quality</li></ul>
+
+<ul>
+<li>Kos pembersihan yang tinggi</li></ul>
+
+<ul>
+<li>Masa terbuang menyelia sendiri</li></ul>
+
+<h3>Cabaran 2: Penyelenggaraan Kemudahan</h3>
+
+<p>Heng Hut Resort mempunyai kemudahan yang perlu dikekalkan:</p>
+
+<ul>
+<li>Kolam renang perlu diservis berkala</li></ul>
+
+<ul>
+<li>Taman dan landskap perlu dijaga</li></ul>
+
+<ul>
+<li>Peralatan outdoor (BBQ pit, gazebo) perlu penyelenggaraan</li></ul>
+
+<ul>
+<li>Sistem keselamatan perlu diperiksa</li></ul>
+
+<strong>Masalahnya:</strong>
+<ul>
+<li>Penyelenggaraan resort lebih kompleks</li></ul>
+
+<ul>
+<li>Kos yang tidak dijangka</li></ul>
+
+<ul>
+<li>Mencari kontraktor yang boleh dipercayai</li></ul>
+
+<h3>Cabaran 3: Tetamu dengan Jangkaan Lebih Tinggi</h3>
+
+<p>Tetamu resort mempunyai jangkaan yang lebih tinggi:</p>
+
+<ul>
+<li>Expect pengalaman "resort" lengkap</li></ul>
+
+<ul>
+<li>Perkhidmatan yang lebih peribadi</li></ul>
+
+<ul>
+<li>Respons pantas kepada permintaan</li></ul>
+
+<ul>
+<li>Kemudahan berfungsi sempurna</li></ul>
+
+<strong>Masalahnya:</strong>
+<ul>
+<li>Tekanan untuk memenuhi jangkaan tinggi</li></ul>
+
+<ul>
+<li>Masa terhad untuk menyediakan semua</li></ul>
+
+<ul>
+<li>Risiko ulasan negatif jika tidak memenuhi standard</li></ul>
+
+<h3>Cabaran 4: Urusan Logistik</h3>
+
+<p>Menguruskan resort property melibatkan lebih banyak logistik:</p>
+
+<ul>
+<li>Check-in dan check-out tetamu</li></ul>
+
+<ul>
+<li>Handover kunci dan arahan</li></ul>
+
+<ul>
+<li>Koordinasi pembersihan antara tempahan</li></ul>
+
+<ul>
+<li>Penyelesaian masalah segera</li></ul>
+
+<strong>Masalahnya:</strong>
+<ul>
+<li>Menerima panggilan tetamu pada bila-bila masa</li></ul>
+
+<ul>
+<li>Perlu berada di lokasi untuk check-in/out</li></ul>
+
+<ul>
+<li>Konflik masa antara kerja dan urusan Airbnb</li></ul>
+
+<h2>Perkhidmatan Pengurusan iHousing untuk Heng Hut Resort</h2>
+
+<p>Di iHousing, kami memahami cabaran unik menguruskan resort property seperti Heng Hut. Perkhidmatan kami direka khusus untuk memenuhi keperluan ini:</p>
+
+<h3>Pakej Pengurusan Resort</h3>
+
+<strong>Untuk Heng Hut Resort dan kondominium lain, WhatsApp kami untuk harga tersuai</strong>
+
+<p>Yuran pengurusan kami merangkumi:</p>
+
+<p>#### 1. Pengurusan Penyenaraian Lengkap</p>
+
+<ul>
+<li>Penyenaraian profesional di Airbnb</li></ul>
+
+<ul>
+<li>Foto resort berkualiti tinggi</li></ul>
+
+<ul>
+<li>Penerangan menarik yang highlight kemudahan unik</li></ul>
+
+<ul>
+<li>Optimasi untuk pencarian Airbnb</li></ul>
+
+<ul>
+<li>Kemaskini kalendar dan harga secara dinamik</li></ul>
+
+<p>#### 2. Komunikasi Tetamu 24/7</p>
+
+<ul>
+<li>Respon pantas kepada pertanyaan (dalam 1 jam)</li></ul>
+
+<ul>
+<li>Jawapan soalan lazim</li></ul>
+
+<ul>
+<li>Saringan tetamu untuk elakkan masalah</li></ul>
+
+<ul>
+<li>Komunikasi sebelum, semasa, dan selepas penginapan</li></ul>
+
+<p>#### 3. Urusan Check-In/Check-Out</p>
+
+<ul>
+<li>Sistem check-in sendiri yang mudah (smart lock)</li></ul>
+
+<ul>
+<li>Welcome message dengan arahan jelas</li></ul>
+
+<ul>
+<li>Orientation singkat mengenai kemudahan resort</li></ul>
+
+<ul>
+<li>Check-out inspection dan feedback</li></ul>
+
+<p>#### 4. Koordinasi Pembersihan Profesional</p>
+
+<ul>
+<li>Pasukan pembersihan profesional</li></ul>
+
+<ul>
+<li>Standard kebersihan resort yang tinggi</li></ul>
+
+<ul>
+<li>Pembersihan menyeluruh setiap kali</li></ul>
+
+<ul>
+<li>Quality check selepas pembersihan</li></ul>
+
+<ul>
+<li>Penyelenggaraan linen dan tuala</li></ul>
+
+<p>#### 5. Penyelenggaraan Preventive</p>
+
+<ul>
+<li>Pemeriksaan berkala kemudahan resort</li></ul>
+
+<ul>
+<li>Penyelenggaraan kolam renang (jika perlu)</li></ul>
+
+<ul>
+<li>Penjagaan taman dan landskap</li></ul>
+
+<ul>
+<li>Perbaikan kecil sebelum menjadi besar</li></ul>
+
+<ul>
+<li>Hubungan dengan kontraktor kepercayaan</li></ul>
+
+<p>#### 6. Laporan dan Transparansi</p>
+
+<ul>
+<li>Laporan bulanan prestasi unit</li></ul>
+
+<ul>
+<li>Kemas kini okupansi dan pendapatan</li></ul>
+
+<ul>
+<li>Tracking kos operasi</li></ul>
+
+<ul>
+<li>Akses kepada data Airbnb anda</li></ul>
+
+<ul>
+<li>Cadangan penambahbaikan</li></ul>
+
+<h3>Kelebihan Memilih iHousing</h3>
+
+<p>#### Pakar Resort Property</p>
+
+<p>Kami memahami perbezaan antara menguruskan apartment dan resort:</p>
+
+<ul>
+<li>Pendekatan khusus untuk resort property</li></ul>
+
+<ul>
+<li>Protocol pembersihan yang sesuai</li></ul>
+
+<ul>
+<li>Pengurusan jangkaan tetamu resort</li></ul>
+
+<ul>
+<li>Pengalaman dengan pelbagai jenis resort di Melaka</li></ul>
+
+<p>#### Pasukan Sokongan Sepenuh Masa</p>
+
+<p>Anda tidak perlu sendirian:</p>
+
+<ul>
+<li>Manager bertugas 24/7</li></ul>
+
+<ul>
+<li>Pasukan pembersihan dedicated</li></ul>
+
+<ul>
+<li>Kontraktor penyelenggaraan standby</li></ul>
+
+<ul>
+<li>Admin untuk urusan kertas kerja</li></ul>
+
+<p>#### Teknologi untuk Efficiency</p>
+
+<p>Kami menggunakan teknologi untuk memudahkan urusan:</p>
+
+<ul>
+<li>Sistem booking automatik</li></ul>
+
+<ul>
+<li>Smart lock untuk keyless entry</li></ul>
+
+<ul>
+<li>Aplikasi untuk komunikasi</li></ul>
+
+<ul>
+<li>Platform untuk tracking pendapatan</li></ul>
+
+<p>#### Fokus pada Pendapatan Anda</p>
+
+<p>Kejayaan kami = kejayaan anda:</p>
+
+<ul>
+<li>Harga dinamik untuk maksimakan revenue</li></ul>
+
+<ul>
+<li>Strategi untuk tingkatkan okupansi</li></ul>
+
+<ul>
+<li>Promosi musim cuti</li></ul>
+
+<ul>
+<li>Penambahbaikan berterusan</li></ul>
+
+<h2>Pecahan Pendapatan: Contoh Sebenar</h2>
+
+<p>Mari kita lihat contoh anggaran untuk unit di Heng Hut Resort:</p>
+
+<h3>Anggaran Pendapatan Bulanan</h3>
+
+<strong>Unit 2-Bedroom di Heng Hut Resort:</strong>
+
+<ul>
+<li>Purata harga semalam: RM180-220</li></ul>
+
+<ul>
+<li>Purata okupansi: 65-75%</li></ul>
+
+<ul>
+<li>20 malam sebulan (purata)</li></ul>
+
+<ul>
+<li>Pendapatan kasar: <strong>RM3,600-4,400 sebulan</strong></li></ul>
+
+<h3>Anggaran Kos Operasi</h3>
+
+<ul>
+<li>Yuran pengurusan: WhatsApp kami (harga tersuai)</li></ul>
+
+<ul>
+<li>Komisi tempahan: 15% (RM540-660)</li></ul>
+
+<ul>
+<li>Pembersihan 20x: RM80-100 setiap kali = RM1,600-2,000</li></ul>
+
+<ul>
+<li>Linen dan barang guna habis: RM300-400</li></ul>
+
+<ul>
+<li>Penyelenggaraan resort: RM200-300</li></ul>
+
+<ul>
+<li>Utiliti dan internet: RM250</li></ul>
+
+<ul>
+<li>Jumlah kos: <strong>RM2,890-3,610</strong></li></ul>
+
+<h3>Pendapatan Bersih</h3>
+
+<ul>
+<li><strong>RM710-790 sebulan</strong></li></ul>
+
+<ul>
+<li><strong>RM8,520-9,480 setahun</strong></li></ul>
+
+<em>Nota: Anggaran ini bergantung kepada saiz unit, lokasi dalam resort, dan tahap okupansi</em>
+
+<h2>Proses Bermula dengan iHousing</h2>
+
+<h3>Langkah 1: Konsultasi Percuma</h3>
+
+<p>Hubungi kami untuk sesi konsultasi percuma:</p>
+<ul>
+<li>Perbincangan mengenai unit anda</li></ul>
+
+<ul>
+<li>Anggaran potensi pendapatan</li></ul>
+
+<ul>
+<li>Penjelasan lengkap perkhidmatan</li></ul>
+
+<ul>
+<li>Cadangan harga tersuai untuk Heng Hut</li></ul>
+
+<h3>Langkah 2: Penilaian Unit</h3>
+
+<p>Kami akan menilai unit anda:</p>
+<ul>
+<li>Lawatan ke resort</li></ul>
+
+<ul>
+<li>Foto profesional</li></ul>
+
+<ul>
+<li>Senarai penambahbaikan yang disyorkan</li></ul>
+
+<ul>
+<li>Anggaran kos persediaan</li></ul>
+
+<h3>Langkah 3: Persediaan</h3>
+
+<p>Bantu anda sediakan unit:</p>
+<ul>
+<li>Senarai perabot yang disyorkan</li></ul>
+
+<ul>
+<li>Barang keperluan dapur dan tandas</li></ul>
+
+<ul>
+<li>Kemudahan keselamatan</li></ul>
+
+<ul>
+<li>Papan tanda dan arahan</li></ul>
+
+<h3>Langkah 4: Pelancaran</h3>
+
+<p>Setiap semua sedia:</p>
+<ul>
+<li>Penyenaraian di Airbnb</li></ul>
+
+<ul>
+<li>Promosi awal</li></ul>
+
+<ul>
+<li>Kumpul ulasan pertama</li></ul>
+
+<ul>
+<li>Monitor dan optimumkan prestasi</li></ul>
+
+<h2>Tip untuk Unit Heng Hut Resort</h2>
+
+<h3>1. Highlight Keunikan Resort</h3>
+
+<p>Tetamu pilih Heng Hut kerana pengalaman resort:</p>
+
+<ul>
+<li>Foto cantik kemudahan resort (kolam renang, taman)</li></ul>
+
+<ul>
+<li>Penerangan jelas mengenai akses kemudahan</li></ul>
+
+<ul>
+<li>Highlight pemandangan atau lokasi strategik dalam resort</li></ul>
+
+<ul>
+<li>Ceritakan pengalaman menginap yang unik</li></ul>
+
+<h3>2. Sediakan Kemudahan Resort Lengkap</h3>
+
+<p>Tetamu expect resort experience:</p>
+
+<ul>
+<li>Kolam renang (jika ada di unit)</li></ul>
+
+<ul>
+<li>BBQ area</li></ul>
+
+<ul>
+<li>Ruang tamu outdoor</li></ul>
+
+<ul>
+<li>Kemudahan kanak-kanak (jika sesuai)</li></ul>
+
+<ul>
+<li>Peralatan riadah (basikal, permainan)</li></ul>
+
+<h3>3. Standard Kebersihan Tinggi</h3>
+
+<p>Resort = kebersihan premium:</p>
+
+<ul>
+<li>Pembersihan menyeluruh setiap kali</li></ul>
+
+<ul>
+<li>Linen berkualiti hotel</li></ul>
+
+<ul>
+<li>Tuala cukup untuk semua tetamu</li></ul>
+
+<ul>
+<li>Dapur bersih dan lengkap</li></ul>
+
+<ul>
+<li>Tandas steril dan wangi</li></ul>
+
+<h3>4. Perkhidmatan Peribadi</h3>
+
+<p>Buat tetamu rasa istimewa:</p>
+
+<ul>
+<li>Welcome pack (air mineral, snek)</li></ul>
+
+<ul>
+<li>Note alu-aluan peribadi</li></ul>
+
+<ul>
+<li>Tips tentang tempat makan dan tarikan berdekatan</li></ul>
+
+<ul>
+<li>Respons pantas kepada pertanyaan</li></ul>
+
+<h2>Soalan Lazim</h2>
+
+<h3>Adakah Heng Hut Resort sesuai untuk Airbnb?</h3>
+
+<p>Ya, sangat sesuai! Konsep resort adalah unik dan menarik untuk tetamu Airbnb.</p>
+
+<h3>Berapa yuran pengurusan untuk Heng Hut?</h3>
+
+<p>WhatsApp kami untuk harga tersuai. Yuran bergantung kepada saiz unit, tahap perkhidmatan, dan kemudahan resort.</p>
+
+<h3>Perlu upgraded apa pada unit saya?</h3>
+
+<p>Kami akan berikan senarai semak lengkap. Fokus pada perabot selesa, dapur lengkap, dan linen berkualiti.</p>
+
+<h3>Berapa lama untuk mula nampak hasil?</h3>
+
+<p>Biasanya 2-3 bulan untuk membina okupansi dan ulasan. Resort property mungkin sedikit lebih lama untuk establish reputasi.</p>
+
+<h3>Bagaimana dengan persaingan dalam resort?</h3>
+
+<p>Heng Hut mempunyai ciri unik. Pengurusan profesional membezakan unit anda melalui perkhidmatan dan ulasan positif.</p>
+
+<h2>Mengapa Pilih iHousing untuk Heng Hut Resort?</h2>
+
+<h3>Pengalaman Resort Property</h3>
+
+<p>Kami pakar dalam resort property:</p>
+<ul>
+<li>Bekerja dengan pelbagai resort di Melaka</li></ul>
+
+<ul>
+<li>Memahami cabaran unik resort</li></ul>
+
+<ul>
+<li>Protocol khusus untuk pengurusan resort</li></ul>
+
+<h3>Komitmen Kepada Kualiti</h3>
+
+<p>Kami tidak berkompromi pada kualiti:</p>
+<ul>
+<li>Pembersihan profesional</li></ul>
+
+<ul>
+<li>Standard resort yang tinggi</li></ul>
+
+<ul>
+<li>Penyelenggaraan berkala</li></ul>
+
+<h3>Transparansi Penuh</h3>
+
+<p>Tiada kos tersembunyi:</p>
+<ul>
+<li>Semua yuran dijelaskan di awal</li></ul>
+
+<ul>
+<li>Laporan bulanan lengkap</li></ul>
+
+<ul>
+<li>Asep penuh kepada data</li></ul>
+
+<h3>Fokus Pendapatan Anda</h3>
+
+<p>Kejayaan kami = kejayaan anda:</p>
+<ul>
+<li>Strategi untuk maksimakan revenue</li></ul>
+
+<ul>
+<li>Optimasi berterusan</li></ul>
+
+<ul>
+<li>Komitmen jangka panjang</li></ul>
+
+<h2>Tindakan Seterusnya</h2>
+
+<h3>Dapatkan Konsultasi Percuma</h3>
+
+<p>Hubungi iHousing hari ini:</p>
+<ul>
+<li>Konsultasi percuma mengenai unit Heng Hut Resort anda</li></ul>
+
+<ul>
+<li>Anggaran potensi pendapatan</li></ul>
+
+<ul>
+<li>Penjelasan lengkap perkhidmatan kami</li></ul>
+
+<ul>
+<li>Harga tersuai untuk keperluan anda</li></ul>
+
+<h3>Mulakan Hari Ini</h3>
+
+<p>Jangan biarkan unit Heng Hut Resort anda kosong atau tidak digunakan sepenuhnya.</p>
+
+<p>Dengan perkhidmatan pengurusan profesional, anda boleh menikmati pendapatan pasif tanpa pengecutan urusan harian.</p>
+
+<h2>Bersedia untuk Mula?</h2>
+
+<p>Hubungi iHousing hari ini untuk konsultasi percuma mengenai pengurusan Heng Hut Resort anda.</p>
+
+<p>[WhatsApp Kami untuk Harga Tersuai](https://wa.me/60123456789)</p>
+
+<p>Artikel ini disediakan oleh iHousing - Pakar Pengurusan Hartanah Airbnb Melaka. Kami membantu pemilik resort property memaksimumkan pendapatan melalui pengurusan profesional yang telus dan berpatutan.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

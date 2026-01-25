@@ -1,0 +1,149 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Airbnb Guest Book Template Malaysia: Complete Welcome Guide for Hosts";
+const description = "Create a professional Airbnb guest book for your Malaysia property. Free downloadable template with WiFi details, house rules, local recommendations, and emergency contacts. Or let iHousing handle everything.";
+const image = "/images/blog/airbnb-guest-book-template-malaysia.jpg";
+const date = "2025-01-24";
+const category = "operational";
+const language = "en";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Airbnb Guest Book Template Malaysia: Complete Welcome Guide for Hosts</h1>
+
+<p>A professional guest book can mean the difference between a 4-star and 5-star review.</p>
+
+<p>Think about it: Your guests arrive tired, possibly lost, carrying luggage. They don't want to message you with basic questions. They want answers NOW.</p>
+
+<p>A well-designed guest book provides those answers instantly. It reduces your messages by 70%, prevents problems, and creates a polished, professional impression.</p>
+
+<h2>Why Every Malaysia Airbnb Needs a Guest Book</h2>
+
+<h3>The Problems It Solves</h3>
+
+<p><strong>Problem 1: Constant Messaging</strong></p>
+<ul>
+<li>"What's the WiFi password?"</li>
+<li>"How does the AC work?"</li>
+<li>"Where's the nearest 7-Eleven?"</li>
+</ul>
+
+<p><strong>Solution:</strong> Guest book answers all these questions instantly.</p>
+
+<h2>Essential Guest Book Sections</h2>
+
+<h3>Section 1: Welcome Message</h3>
+
+<p>Keep it warm but professional.</p>
+
+<pre><code>Welcome to [Property Name]!
+
+Thank you for choosing to stay with us in beautiful Melaka! We're thrilled to host you and want to ensure you have a comfortable, memorable stay.
+
+This guest book contains everything you need for a smooth stay - from WiFi details to local recommendations. If you have any questions that aren't covered here, please don't hesitate to reach out.
+
+Your Hosts:
+iHousing Melaka
+WhatsApp: +60 19-699 6688 (for emergencies only)
+</code></pre>
+
+<h3>Section 2: Essential Property Details</h3>
+
+<p>This is the most important section.</p>
+
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WiFi</strong></td>
+<td>Network: [Name] / Password: [Password]</td>
+</tr>
+<tr>
+<td><strong>Check-Out</strong></td>
+<td>11:00 AM</td>
+</tr>
+<tr>
+<td><strong>Emergency</strong></td>
+<td>+60 19-699 6688</td>
+</tr>
+<tr>
+<td><strong>Parking</strong></td>
+<td>[Number] lots, [location]</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Section 3: House Rules</h3>
+
+<p>Be clear, firm but polite.</p>
+
+<ul>
+<li><strong>Quiet Hours:</strong> 10:00 PM - 7:00 AM</li>
+<li><strong>Smoking:</strong> NO smoking inside. RM 500 penalty</li>
+<li><strong>Guests:</strong> Maximum [X] guests only</li>
+</ul>
+
+<h3>Section 4: Local Recommendations</h3>
+
+<p>Guests LOVE local insider tips.</p>
+
+<p><strong>Must-Visit Heritage Sites (Walking Distance):</strong></p>
+<ul>
+<li><strong>Jonker Street:</strong> 5 min walk - Night market on Fridays/Saturdays</li>
+<li><strong>A Famosa Fortress:</strong> 3 min walk - Historical landmark</li>
+<li><strong>Melaka River Cruise:</strong> 5 min walk - Scenic river tour</li>
+</ul>
+
+<p><strong>Best Local Food (Within 1km):</strong></p>
+<ul>
+<li><strong>Nancy's Kitchen:</strong> Jonker Street - Nyonya cuisine</li>
+<li><strong>Baba Charlie:</strong> Traditional kuih</li>
+<li><strong>Capital Satay:</strong> Satay celup</li>
+</ul>
+
+<h2>The "No-Stress" Alternative: Let iHousing Handle It</h2>
+
+<h3>What We Provide for Owners</h3>
+
+<p><strong>Professional Guest Books:</strong></p>
+<ul>
+<li>Custom-designed for your property</li>
+<li>Branded with your property name</li>
+<li>All sections covered</li>
+<li>Printed + laminated</li>
+<li>Updated as needed</li>
+</ul>
+
+<p><strong>Content Includes:</strong></p>
+<ul>
+<li>Welcome message</li>
+<li>House rules</li>
+<li>WiFi details</li>
+<li>Appliance instructions</li>
+<li>Check-out process</li>
+<li>Local recommendations</li>
+<li>Emergency contacts</li>
+</ul>
+
+<div class="my-8">
+  <a href="https://wa.me/60196996688?text=Hi%20iHousing,%20I%20need%20a%20professional%20guest%20book%20for%20my%20Airbnb%20property." target="_blank" rel="noopener" class="inline-block bg-green-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-700 transition">
+    WhatsApp Us: +60 19-699 6688
+  </a>
+</div>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

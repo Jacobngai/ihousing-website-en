@@ -1,0 +1,414 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Airbnb Income Tax Malaysia: What Hosts Need to Know";
+const description = "Complete guide to Airbnb income tax in Malaysia. Learn how to declare rental income, claim deductions, and maximize your returns legally.";
+const date = "2026-01-16";
+const category = "educational";
+const language = "en";
+const image = "/images/blog/airbnb-tax-malaysia.jpg";
+
+const content = `
+<h1>Airbnb Income Tax Malaysia: What Hosts Need to Know</h1>
+
+<h2>Is Your Airbnb Income Taxable in Malaysia?</h2>
+
+<p>Yes. Airbnb income is considered rental income and must be declared to LHDN (Lembaga Hasil Dalam Negeri). However, many hosts are confused about what's taxable, what's deductible, and how to report income correctly.</p>
+
+<p>At iHousing, we've managed 100+ properties across 8 years. We've helped hundreds of owners understand their tax obligations while maximizing legitimate deductions. Here's what every Malaysian Airbnb host needs to know.</p>
+
+<h2>Understanding Your Tax Obligations</h2>
+
+<p>First, determine your tax status:</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Host Type</th>
+      <th>Tax Treatment</th>
+      <th>Filing Requirement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Occasional host</strong><br/>(1-2 properties, <RM50k/year)</td>
+      <td>Rental income added to other income</td>
+      <td>Form BE (individual)</td>
+    </tr>
+    <tr>
+      <td><strong>Active host</strong><br/>(2-5 properties, RM50k-150k/year)</td>
+      <td>Business income classification</td>
+      <td>Form B (individual with business)</td>
+    </tr>
+    <tr>
+      <td><strong>Professional host</strong><br/>(5+ properties, >RM150k/year)</td>
+      <td>Business income + possible SST registration</td>
+      <td>Form B + possibly register as sole proprietor/business</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Key point:</strong> Even if you don't receive a tax form, you MUST declare all Airbnb income. LHDN cross-references with bank deposits and platform data.</p>
+
+<h2>What Income Must Be Declared?</h2>
+
+<h3>Gross Rental Income</h3>
+
+<p>You must declare the FULL amount received from guests, including:</p>
+
+<ul>
+  <li><strong>Base rental rates</strong> - All nightly/weekly rates charged</li>
+  <li><strong>Cleaning fees</strong> - Even if paid to cleaners separately</li>
+  <li><strong>Extra guest fees</strong> - Additional person charges</li>
+  <li><strong>Late check-out fees</strong> - Any extra charges collected</li>
+  <li><strong>Security deposits kept</strong> - If you retain any portion</li>
+</ul>
+
+<h3>What About Platform Fees?</h3>
+
+<p>Airbnb service fees (typically 3% for hosts) are NOT deductible from your gross income. You declare the full amount received, then claim expenses separately.</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Guest Pays</th>
+      <th>You Receive</th>
+      <th>Declare</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RM300/night listing</td>
+      <td>RM300 + Airbnb fee</td>
+      <td>RM291 (after 3% host fee)</td>
+      <td>RM291</td>
+    </tr>
+    <tr>
+      <td>RM300/night + RM50 cleaning</td>
+      <td>RM350 + fees</td>
+      <td>RM339.50</td>
+      <td>RM339.50</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Allowable Deductions (What You Can Claim)</h2>
+
+<p>LHDN allows deductions for expenses "wholly and exclusively" incurred in producing rental income. Here's what most hosts can claim:</p>
+
+<h3>Operating Expenses (Fully Deductible)</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Expense</th>
+      <th>Deduction Type</th>
+      <th>Documentation Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Rates & assessment</strong><br/>(Quit rent, assessment tax)</td>
+      <td>100% deductible</td>
+      <td>Official receipts</td>
+    </tr>
+    <tr>
+      <td><strong>Insurance</strong><br/>(Property, fire, liability)</td>
+      <td>100% deductible</td>
+      <td>Insurance policy & receipts</td>
+    </tr>
+    <tr>
+      <td><strong>Repairs & maintenance</strong><br/>(NOT improvements)</td>
+      <td>100% deductible</td>
+      <td>Invoices & receipts</td>
+    </tr>
+    <tr>
+      <td><strong>Cleaning & laundry</strong></td>
+      <td>100% deductible</td>
+      <td>Cleaning service invoices or supply receipts</td>
+    </tr>
+    <tr>
+      <td><strong>Utilities</strong><br/>(Electricity, water, internet)</td>
+      <td>100% deductible</td>
+      <td>Monthly bills</td>
+    </tr>
+    <tr>
+      <td><strong>Airbnb management fees</strong><br/>(Like iHousing's RM200-300/month)</td>
+      <td>100% deductible</td>
+      <td>Management agreement & invoices</td>
+    </tr>
+    <tr>
+      <td><strong>Advertising & marketing</strong></td>
+      <td>100% deductible</td>
+      <td>Platform fees, ad receipts</td>
+    </tr>
+    <tr>
+      <td><strong>Consumables</strong><br/>(Toiletries, basics)</td>
+      <td>100% deductible</td>
+      <td>Purchase receipts</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Capital Allowances (Depreciation)</h3>
+
+<p>For furniture, equipment, and renovations, claim capital allowances instead of full expense:</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Asset</th>
+      <th>Annual Allowance</th>
+      <th>Example (RM10k asset)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Furniture & fittings</strong></td>
+      <td>10% per year</td>
+      <td>RM1,000/year deduction</td>
+    </tr>
+    <tr>
+      <td><strong>Air-conditioners</strong></td>
+      <td>20% per year</td>
+      <td>RM2,000/year deduction</td>
+    </tr>
+    <tr>
+      <td><strong>Computers & electronics</strong></td>
+      <td>40% per year</td>
+      <td>RM4,000/year deduction</td>
+    </tr>
+    <tr>
+      <td><strong>Motor vehicles</strong></td>
+      <td>20% per year (max RM3k/year)</td>
+      <td>RM3,000/year max</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>What You CANNOT Deduct</h2>
+
+<p>Common mistakes hosts make:</p>
+
+<ul>
+  <li><strong>Personal expenses:</strong> Even if you occasionally use the property, you can't claim personal-use portions</li>
+  <li><strong>Capital improvements:</strong> Renovations that ADD value (new roof, extension) aren't immediately deductible—these go into capital allowances</li>
+  <li><strong>Fines & penalties:</strong> Late payment penalties, traffic fines (even if business-related)</li>
+  <li><strong>Personal travel:</strong> Even if you're "checking" on the property, flights/transport aren't deductible</li>
+  <li><strong>Home office:</strong> Unless your Airbnb operations are run from a dedicated business space (not applicable for most)</li>
+</ul>
+
+<h2>Tax Calculation Example</h2>
+
+<p>Here's how a typical Melaka condo's Airbnb income gets taxed:</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2"><strong>Gross Rental Income</strong></td>
+    </tr>
+    <tr>
+      <td>Total Airbnb revenue (20 nights × RM250)</td>
+      <td>RM5,000</td>
+    </tr>
+    <tr>
+      <td><strong>Less: Allowable Deductions</strong></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Assessment tax & quit rent</td>
+      <td>(RM150)</td>
+    </tr>
+    <tr>
+      <td>Insurance</td>
+      <td>(RM80)</td>
+    </tr>
+    <tr>
+      <td>Utilities (electricity, water, WiFi)</td>
+      <td>(RM350)</td>
+    </tr>
+    <tr>
+      <td>Repairs & maintenance</td>
+      <td>(RM200)</td>
+    </tr>
+    <tr>
+      <td>Cleaning & laundry</td>
+      <td>(RM300)</td>
+    </tr>
+    <tr>
+      <td>iHousing management fee</td>
+      <td>(RM250)</td>
+    </tr>
+    <tr>
+      <td>Consumables replacement</td>
+      <td>(RM150)</td>
+    </tr>
+    <tr>
+      <td><strong>Net Statutory Income</strong></td>
+      <td><strong>RM3,520</strong></td>
+    </tr>
+    <tr>
+      <td>Tax rate (assuming RM50k-100k bracket)</td>
+      <td>13%</td>
+    </tr>
+    <tr>
+      <td><strong>Tax payable</strong></td>
+      <td><strong>RM458</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Key insight:</strong> Proper deductions can reduce your taxable income by 30-40%. Keep all receipts!</p>
+
+<h2>Record-Keeping Requirements</h2>
+
+<p>LHDN requires you keep records for at least 7 years. Maintain:</p>
+
+<h3>Essential Documents</h3>
+
+<ol>
+  <li><strong>Monthly income statements:</strong> Download from Airbnb host dashboard</li>
+  <li><strong>Expense receipts:</strong> All business-related purchases (organized by category)</li>
+  <li><strong>Bank statements:</strong> Showing all Airbnb deposits and business expenses</li>
+  <li><strong>Management agreements:</strong> Your contract with iHousing or other managers</li>
+  <li><strong>Utility bills:</strong> Proportionate to rental period (if not full-time Airbnb)</li>
+  <li><strong>Property tax receipts:</strong> Quit rent and assessment tax payments</li>
+  <li><strong>Insurance policies:</strong> Property coverage documents</li>
+</ol>
+
+<h3>Pro Tips for Organization</h3>
+
+<ul>
+  <li><strong>Separate bank account:</strong> Dedicated account for all Airbnb transactions</li>
+  <li><strong>Cloud storage:</strong> Scan all receipts and store in Google Drive/Dropbox with folders by year</li>
+  <li><strong>Spreadsheet tracking:</strong> Monthly log of income and expenses (iHousing provides this for our clients)</li>
+  <li><strong>Accountant software:</strong> QuickBooks or Xero for automated tracking</li>
+</ul>
+
+<h2>RPGT (Real Property Gains Tax) Considerations</h2>
+
+<p>When you SELL an Airbnb property, RPGT applies:</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Holding Period</th>
+      <th>Individual (Citizen/PR)</th>
+      <th>Individual (Non-Citizen)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Within 3 years</td>
+      <td>30%</td>
+      <td>30%</td>
+    </tr>
+    <tr>
+      <td>4th year</td>
+      <td>20%</td>
+      <td>30%</td>
+    </tr>
+    <tr>
+      <td>5th year</td>
+      <td>15%</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td>6th year onwards</td>
+      <td>0%</td>
+      <td>5%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Important:</strong> RPGT is on the NET gain (selling price minus purchase price, renovation costs, legal fees, etc.)</p>
+
+<h2>Special Scenarios</h2>
+
+<h3>Part-Time vs Full-Time Rentals</h3>
+
+<p>If you rent your property part-time (sometimes live there, sometimes Airbnb), you can only claim deductions for the rental portion:</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Usage Pattern</th>
+      <th>Deduction Allowed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rented 15 nights/year (personal use rest)</td>
+      <td>15/365 of expenses = 4.1%</td>
+    </tr>
+    <tr>
+      <td>Rented 150 nights/year</td>
+      <td>150/365 of expenses = 41%</td>
+    </tr>
+    <tr>
+      <td>Rented 300 nights/year (full-time)</td>
+      <td>100% of expenses</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Multiple Properties</h3>
+
+<p>Each property's income and expenses are calculated separately. You can't use losses from one property to offset gains from another EXCEPT if you're registered as a business.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+
+<ol>
+  <li><strong>Not declaring all income:</strong> LHDN cross-checks with bank deposits. Penalties for under-declaration are severe (up to 300% of tax underpaid).</li>
+  <li><strong>Claiming personal expenses:</strong> Mixing personal and business expenses triggers audits.</li>
+  <li><strong>No receipts:</strong> Claims without proper documentation are disallowed.</li>
+  <li><strong>Wrong category:</strong> Classifying capital improvements as repairs (improvements must be depreciated).</li>
+  <li><strong>Late filing:</strong> Late payment penalties accrue monthly.</li>
+</ol>
+
+<h2>How iHousing Helps With Tax Compliance</h2>
+
+<p>We're not tax advisors, but iHousing makes tax season easier:</p>
+
+<ul>
+  <li><strong>Monthly income reports:</strong> Clear breakdown of all rental income</li>
+  <li><strong>Expense documentation:</strong> Invoices for management fees, cleaning, maintenance</li>
+  <li><strong>Capital allowance tracking:</strong> Records of furniture/equipment purchases</li>
+  <li><strong>Platform consistency:</strong> Professional bookkeeping across all 5 platforms (Airbnb, Booking.com, Agoda, VRBO, Expedia)</li>
+</ul>
+
+<p>Our flat RM200-300/month management fee is 100% deductible—no surprise commission calculations.</p>
+
+<h2>When to Consult a Tax Professional</h2>
+
+<p>We recommend seeing a tax professional if:</p>
+
+<ul>
+  <li>Your annual Airbnb income exceeds RM50,000</li>
+  <li>You have multiple properties</li>
+  <li>You're unsure about capital allowances vs repairs</li>
+  <li>You're planning to sell an Airbnb property</li>
+  <li>You've received a tax inquiry letter</li>
+</ul>
+
+<h2>Take Action: Stay Compliant, Maximize Returns</h2>
+
+<p>Airbnb hosting is a legitimate business in Malaysia. Declare your income, claim your deductions, and sleep easy at night knowing you're 100% compliant.</p>
+
+<p>iHousing-managed properties receive comprehensive monthly statements perfect for tax filing. We organize everything so your accountant (or you) can file in minutes, not hours.</p>
+
+<p><strong>For Parkland Avenue by the Sea:</strong> Pre-register now to lock in RM200-300/month flat fee pricing. All our fees are fully documented for tax purposes.</p>
+
+<p><strong>For your existing property:</strong> WhatsApp us at <strong>+60166996688</strong> to learn how iHousing can help maximize your Airbnb income while staying fully tax-compliant.</p>
+
+<p>Don't let tax confusion hold you back from Airbnb investment. We'll connect you with our recommended tax professionals who specialize in short-term rental properties.</p>
+`;
+---
+<BlogPost title={title} description={description} image={image} date={date} category={category} language={language} content={content} />

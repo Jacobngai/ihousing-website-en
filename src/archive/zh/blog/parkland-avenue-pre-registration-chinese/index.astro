@@ -1,0 +1,81 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Parkland Avenue推出：2025年8月预注册优惠";
+const description = "预注册Parkland Avenue海滨并锁定独家固定费定价（RM200-300/月）。2025年8月推出优惠、早鸟优势和保证管理条款。";
+const date = "2026-01-29";
+const category = "pricing";
+const language = "zh";
+const image = "/images/blog/parkland-pre-reg-chinese.jpg";
+
+const content = `
+<h1>Parkland Avenue海滨：预注册优惠</h1>
+
+<h2>早期投资者的独家固定费定价</h2>
+
+<p><strong>Parkland Avenue海滨</strong>代表了马六甲Airbnb投资者的突破性机会。作为这个优质沿海开发项目（2025年8月推出）的<strong>官方任命Airbnb经理</strong>，iHousing提供<strong>独家预注册优惠</strong>，包括上市后无法获得的<strong>锁定固定费定价</strong>。</p>
+
+<h3>预注册独家优惠</h3>
+
+<p><strong>1. 锁定固定费定价</strong></p>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>单元类型</strong></th>
+<th><strong>预注册价格</strong></th>
+<th><strong>推出后价格</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1卧室</td>
+<td><strong>RM 200/月</strong></td>
+<td>RM 250-300/月</td>
+</tr>
+<tr>
+<td>2卧室</td>
+<td><strong>RM 250/月</strong></td>
+<td>RM 300-350/月</td>
+</tr>
+<tr>
+<td>3卧室</td>
+<td><strong>RM 300/月</strong></td>
+<td>RM 350-400/月</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>终身保证：</strong> 预注册定价锁定<strong>5年</strong>。</p>
+
+<p><strong>3. 优先单元选择</strong></p>
+
+<p>预注册者获得<strong>单元库存优先访问权</strong>：</p>
+<ul>
+<li>楼层选择：更高楼层更好景观优先</li>
+<li>朝向：选择海景 vs 池景单元</li>
+<li>角单元：更多隐私，自然光更好</li>
+</ul>
+
+<p><strong>WhatsApp +60166996688</strong>（备注"PARKLAND PRE-REG"）以：</p>
+<ul>
+<li>确保您的预注册</li>
+<li>获得锁定定价证书</li>
+<li>获取优先选择窗口</li>
+<li>下载ROI预测报告</li>
+</ul>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+    <BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

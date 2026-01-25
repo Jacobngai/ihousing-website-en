@@ -1,0 +1,439 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "民宿装修预算全解析：2025年隐藏成本与盈亏平衡点计算";
+const description = "2025年马来西亚民宿装修预算指南。了解硬装、软装、智能设备成本，避免隐藏成本陷阱，计算准确盈亏平衡点。附RM150,000-300,000投资方案。";
+const image = "/images/blog/minsu-zhuangxiu-yusuan-yincang-chengben.jpg";
+const date = "2025-01-24";
+const category = "财务规划";
+const language = "zh";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>民宿装修预算全解析：2025年隐藏成本与盈亏平衡点计算</h1>
+        <p>投资民宿，<strong>装修预算规划</strong>是成败的关键。预算不足，装修质量差，无法吸引客人；预算过高，回本周期拉长，影响投资回报。</p>
+        <p>本文将为您详细解析2025年马来西亚民宿装修的<strong>真实成本</strong>，揭露常见的<strong>隐藏成本陷阱</strong>，并教您如何准确计算<strong>盈亏平衡点</strong>。</p>
+        <h2>第一部分：2025年民宿装修基础预算</h2>
+        <h3>按公寓类型分类</h3>
+        <h4>小型公寓（400-600 sqft | 37-56 m²）</h4>
+        <strong>适合</strong>：1房公寓，目标2-3人住客
+        <table>
+          <thead>
+            <tr><th>项目</th><th>预算范围</th><th>说明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**硬装**</td><td>RM15,000 - RM25,000</td><td>地板、墙面、卫浴、厨房</td></tr>
+            <tr><td>**软装**</td><td>RM12,000 - RM20,000</td><td>家具、窗帘、装饰</td></tr>
+            <tr><td>**电器**</td><td>RM8,000 - RM15,000</td><td>空调、冰箱、电视、洗衣机</td></tr>
+            <tr><td>**智能设备**</td><td>RM2,000 - RM4,000</td><td>智能门锁、WiFi、智能电视</td></tr>
+            <tr><td>**厨具餐具**</td><td>RM1,500 - RM3,000</td><td>锅具、餐具、小家电</td></tr>
+            <tr><td>**布草**</td><td>RM1,000 - RM2,000</td><td>床品、毛巾（4套）</td></tr>
+            <tr><td>**总预算**</td><td>**RM39,500 - RM69,000**</td></tr>
+          </tbody>
+        </table>
+        <h4>中型公寓（700-900 sqft | 65-84 m²）</h4>
+        <strong>适合</strong>：2房公寓，目标4-5人住客
+        <table>
+          <thead>
+            <tr><th>项目</th><th>预算范围</th><th>说明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**硬装**</td><td>RM25,000 - RM45,000</td><td>地板、墙面、2个卫浴、开放式厨房</td></tr>
+            <tr><td>**软装**</td><td>RM20,000 - RM35,000</td><td>家具、窗帘、装饰画</td></tr>
+            <tr><td>**电器**</td><td>RM15,000 - RM25,000</td><td>2-3台空调、冰箱、电视、洗衣机</td></tr>
+            <tr><td>**智能设备**</td><td>RM3,000 - RM5,000</td><td>智能门锁、WiFi智能控制</td></tr>
+            <tr><td>**厨具餐具**</td><td>RM2,500 - RM4,000</td><td>完整厨房用品</td></tr>
+            <tr><td>**布草**</td><td>RM2,000 - RM3,500</td><td>床品、毛巾（6-8套）</td></tr>
+            <tr><td>**总预算**</td><td>**RM67,500 - RM117,500**</td></tr>
+          </tbody>
+        </table>
+        <h4>大型公寓（1000+ sqft | 93+ m²）</h4>
+        <strong>适合</strong>：3房或豪华公寓，目标6-8人住客
+        <table>
+          <thead>
+            <tr><th>项目</th><th>预算范围</th><th>说明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**硬装**</td><td>RM45,000 - RM80,000</td><td>高档地板、2-3个卫浴、豪华厨房</td></tr>
+            <tr><td>**软装**</td><td>RM35,000 - RM60,000</td><td>设计师家具、定制窗帘</td></tr>
+            <tr><td>**电器**</td><td>RM25,000 - RM45,000</td><td>多台空调、大冰箱、电视、烘干机</td></tr>
+            <tr><td>**智能设备**</td><td>RM5,000 - RM10,000</td><td>全屋智能家居系统</td></tr>
+            <tr><td>**厨具餐具**</td><td>RM4,000 - RM7,000</td><td>专业级厨具</td></tr>
+            <tr><td>**布草**</td><td>RM3,500 - RM6,000</td><td>高档床品、毛巾（10套）</td></tr>
+            <tr><td>**总预算**</td><td>**RM117,500 - RM208,000**</td></tr>
+          </tbody>
+        </table>
+        <h2>第二部分：隐藏成本揭秘</h2>
+        <h3>隐藏成本 #1：公寓管理层审批费用</h3>
+        <strong>常见问题</strong>：
+        <ul>
+        <li>装修押金：RM1,000 - RM5,000（可退还）</li>
+        <li>管理层审批费：RM200 - RM500</li>
+        <li>装修保险：RM500 - RM1,500</li>
+        <li>装修期间管理费：按月收取</li>
+        </ul>
+        <strong>预算预留</strong>：<strong>RM2,000 - RM8,000</strong>
+        <h3>隐藏成本 #2：电增容与线路改造</h3>
+        <strong>问题</strong>：老公寓可能需要升级电力系统
+        <table>
+          <thead>
+            <tr><th>项目</th><th>成本</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>电增容申请</td><td>RM500 - RM2,000</td></tr>
+            <tr><td>线路改造</td><td>RM2,000 - RM8,000</td></tr>
+            <tr><td>配电箱更换</td><td>RM1,000 - RM3,000</td></tr>
+            <tr><td>**总成本**</td><td>**RM3,500 - RM13,000**</td></tr>
+          </tbody>
+        </table>
+        <h3>隐藏成本 #3：防水工程（重点！）</h3>
+        <strong>忽视后果</strong>：漏水到楼下，赔偿RM10,000-50,000
+        <table>
+          <thead>
+            <tr><th>区域</th><th>防水成本</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>卫浴1（标准）</td><td>RM1,500 - RM3,000</td></tr>
+            <tr><td>卫浴2（标准）</td><td>RM1,500 - RM3,000</td></tr>
+            <tr><td>厨房（开放式）</td><td>RM800 - RM1,500</td></tr>
+            <tr><td>露台（如有）</td><td>RM2,000 - RM5,000</td></tr>
+            <tr><td>**总成本**</td><td>**RM4,800 - RM12,500**</td></tr>
+          </tbody>
+        </table>
+        <strong>建议</strong>：这是<strong>不能省钱</strong>的项目！
+        <h3>隐藏成本 #4：空调安装与管道工程</h3>
+        <strong>包含项目</strong>：
+        <ul>
+        <li>空调安装费（每台）：RM300 - RM800</li>
+        <li>冷凝水管改造：RM500 - RM2,000</li>
+        <li>空调插座安装：RM200 - RM500/个</li>
+        <li>空调支架（如需）：RM150 - RM400/个</li>
+        </ul>
+        <strong>中型公寓示例</strong>（3台空调）：
+        <ul>
+        <li>安装费：RM900 - RM2,400</li>
+        <li>管道改造：RM500 - RM2,000</li>
+        <li>插座安装：RM600 - RM1,500</li>
+        <li><strong>总成本：RM2,000 - RM5,900</strong></li>
+        </ul>
+        <h3>隐藏成本 #5：窗帘与遮光设施</h3>
+        <strong>重要性</strong>：客人睡眠质量直接影响评分
+        <table>
+          <thead>
+            <tr><th>项目</th><th>预算</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>客厅窗帘（落地）</td><td>RM800 - RM2,000</td></tr>
+            <tr><td>卧室遮光窗帘（每间）</td><td>RM600 - RM1,500</td></tr>
+            <tr><td>遮光卷帘（厨房/卫浴）</td><td>RM200 - RM500/个</td></tr>
+            <tr><td>**中型公寓成本**</td><td>**RM3,200 - RM8,000**</td></tr>
+          </tbody>
+        </table>
+        <strong>建议</strong>：选择<strong>100%遮光</strong>窗帘，这是客人高频好评点。
+        <h3>隐藏成本 #6：网络与智能系统</h3>
+        <strong>2025年客人期望</strong>：
+        <ul>
+        <li>高速WiFi（最低100Mbps）</li>
+        <li>智能电视（Netflix/YouTube）</li>
+        <li>智能门锁（自助入住）</li>
+        </ul>
+        <table>
+          <thead>
+            <tr><th>项目</th><th>成本</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>高速WiFi安装 + 1年套餐</td><td>RM800 - RM1,500</td></tr>
+            <tr><td>智能门锁（含安装）</td><td>RM800 - RM2,000</td></tr>
+            <tr><td>智能电视（43-50寸）</td><td>RM1,200 - RM2,500</td></tr>
+            <tr><td>**总成本**</td><td>**RM2,800 - RM6,000**</td></tr>
+          </tbody>
+        </table>
+        <h3>隐藏成本 #7：初始清洁与开荒</h3>
+        <strong>不能省</strong>：正式营业前的专业清洁
+        <table>
+          <thead>
+            <tr><th>项目</th><th>成本</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>深度清洁（全屋）</td><td>RM500 - RM1,200</td></tr>
+            <tr><td>窗户清洁（高空）</td><td>RM300 - RM800</td></tr>
+            <tr><td>空调清洗（每台）</td><td>RM100 - RM200</td></tr>
+            <tr><td>**总成本**</td><td>**RM1,000 - RM2,500**</td></tr>
+          </tbody>
+        </table>
+        <h3>隐藏成本 #8：备用金（应急资金）</h3>
+        <strong>建议预留</strong>：总装修预算的<strong>10-15%</strong>
+        <strong>用于</strong>：
+        <ul>
+        <li>装修期间发现的问题</li>
+        <li>材料价格上涨</li>
+        <li>意外损坏</li>
+        </ul>
+        <strong>示例</strong>：RM100,000装修预算，预留RM10,000-15,000备用金。
+        <h2>第三部分：真实案例：中型公寓装修预算</h2>
+        <h3>案例：850 sqft 2房公寓，马六甲海景项目</h3>
+        <strong>目标客群</strong>：家庭游客、情侣
+        <h4>装修项目明细</h4>
+        <table>
+          <thead>
+            <tr><th>项目</th><th>预算</th><th>实际花费</th><th>备注</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**硬装**</td></tr>
+            <tr><td>地板（全屋）</td><td>RM12,000</td><td>RM13,500</td><td>升级为防水地板</td></tr>
+            <tr><td>墙面（乳胶漆）</td><td>RM4,000</td><td>RM4,200</td><td>-</td></tr>
+            <tr><td>卫浴翻新（2间）</td><td>RM8,000</td><td>RM9,500</td><td>增加防水工程</td></tr>
+            <tr><td>厨房（橱柜+台面）</td><td>RM6,000</td><td>RM7,200</td><td>-</td></tr>
+            <tr><td>**硬装小计**</td><td>**RM30,000**</td><td>**RM34,400**</td><td>超支14.7%</td></tr>
+            <tr></tr>
+            <tr><td>**软装**</td></tr>
+            <tr><td>客厅家具</td><td>RM8,000</td><td>RM8,500</td><td>-</td></tr>
+            <tr><td>主卧家具</td><td>RM5,000</td><td>RM5,200</td><td>-</td></tr>
+            <tr><td>次卧家具</td><td>RM4,000</td><td>RM4,500</td><td>-</td></tr>
+            <tr><td>窗帘（全屋）</td><td>RM3,000</td><td>RM3,800</td><td>升级为遮光帘</td></tr>
+            <tr><td>装饰品</td><td>RM2,000</td><td>RM2,500</td><td>-</td></tr>
+            <tr><td>**软装小计**</td><td>**RM22,000**</td><td>**RM24,500**</td><td>超支11.4%</td></tr>
+            <tr></tr>
+            <tr><td>**电器**</td></tr>
+            <tr><td>空调（3台+安装）</td><td>RM6,000</td><td>RM7,800</td><td>含管道改造</td></tr>
+            <tr><td>冰箱</td><td>RM1,800</td><td>RM2,100</td><td>-</td></tr>
+            <tr><td>电视（50寸智能）</td><td>RM1,500</td><td>RM1,800</td><td>-</td></tr>
+            <tr><td>洗衣机</td><td>RM1,000</td><td>RM1,200</td><td>-</td></tr>
+            <tr><td>热水器</td><td>RM600</td><td>RM750</td><td>-</td></tr>
+            <tr><td>微波炉</td><td>RM400</td><td>RM450</td><td>-</td></tr>
+            <tr><td>电饭煲</td><td>RM200</td><td>RM250</td><td>-</td></tr>
+            <tr><td>水壶</td><td>RM100</td><td>RM120</td><td>-</td></tr>
+            <tr><td>**电器小计**</td><td>**RM11,600**</td><td>**RM14,470**</td><td>超支24.7%</td></tr>
+            <tr></tr>
+            <tr><td>**智能设备**</td></tr>
+            <tr><td>智能门锁</td><td>RM1,200</td><td>RM1,500</td><td>-</td></tr>
+            <tr><td>高速WiFi（1年）</td><td>RM1,000</td><td>RM1,200</td><td>-</td></tr>
+            <tr><td>**智能设备小计**</td><td>**RM2,200**</td><td>**RM2,700**</td><td>超支22.7%</td></tr>
+            <tr></tr>
+            <tr><td>**其他**</td></tr>
+            <tr><td>厨具餐具</td><td>RM2,500</td><td>RM3,200</td><td>-</td></tr>
+            <tr><td>布草（6套）</td><td>RM2,500</td><td>RM2,800</td><td>-</td></tr>
+            <tr><td>初始清洁</td><td>RM1,000</td><td>RM1,200</td><td>-</td></tr>
+            <tr><td>**其他小计**</td><td>**RM6,000**</td><td>**RM7,200**</td><td>超支20%</td></tr>
+            <tr></tr>
+            <tr><td>**隐藏成本**</td></tr>
+            <tr><td>管理层审批+押金</td><td>RM0</td><td>RM3,500</td><td>未预算</td></tr>
+            <tr><td>电增容</td><td>RM0</td><td>RM5,000</td><td>未预算</td></tr>
+            <tr><td>**隐藏成本小计**</td><td>**RM0**</td><td>**RM8,500**</td><td>完全遗漏</td></tr>
+            <tr></tr>
+            <tr><td>**总装修预算**</td><td>**RM71,800**</td><td>**RM91,770**</td><td>**超支27.8%**</td></tr>
+          </tbody>
+        </table>
+        <strong>教训</strong>：初始预算低估了27.8%！主要原因：
+        <ol>
+        <li>未计算隐藏成本（RM8,500）</li>
+        <li>电器超支（管道改造）</li>
+        <li>装修升级（防水地板）</li>
+        </ol>
+        <h2>第四部分：盈亏平衡点计算</h2>
+        <h3>什么是盈亏平衡点？</h3>
+        <strong>盈亏平衡点</strong>（Break-Even Point）= 装修成本 ÷ 月净利润
+        <p>即：需要多少个月才能收回装修成本。</p>
+        <h3>公式解析</h3>
+        <strong>月净利润</strong> = 月租金收入 - 月度运营成本
+        <strong>月度运营成本包括</strong>：
+        <ul>
+        <li>管理费（如Parkland 30%）</li>
+        <li>物业管理费</li>
+        <li>水电费（客人使用）</li>
+        <li>维修保养费</li>
+        <li>平台费（Airbnb 3%、Booking 15%）</li>
+        </ul>
+        <h3>盈亏平衡点计算案例</h3>
+        <strong>假设条件</strong>：
+        <ul>
+        <li>装修成本：RM90,000</li>
+        <li>公寓类型：中型2房（马六甲海景）</li>
+        <li>月租金收入：RM3,500（周末短租）</li>
+        <li>管理模式：Parkland固定费用70%</li>
+        </ul>
+        <h4>计算过程</h4>
+        <table>
+          <thead>
+            <tr><th>项目</th><th>计算方式</th><th>金额</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**月租金收入**</td><td>-</td><td>RM3,500</td></tr>
+            <tr><td>**业主分享收入（70%）**</td><td>RM3,500 × 70%</td><td>RM2,450</td></tr>
+            <tr><td>**物业管理费**</td><td>约RM150/月</td><td>-RM150</td></tr>
+            <tr><td>**维修保养**</td><td>平均RM50/月</td><td>-RM50</td></tr>
+            <tr><td>**月净利润**</td><td>RM2,450 - RM200</td><td>**RM2,300**</td></tr>
+            <tr></tr>
+            <tr><td>**盈亏平衡点**</td><td>RM90,000 ÷ RM2,300</td><td>**39个月**</td></tr>
+            <tr><td>**（约3.3年）**</td></tr>
+          </tbody>
+        </table>
+        <strong>注意</strong>：这仅是<strong>装修成本</strong>的盈亏平衡点，不包括：
+        <ul>
+        <li>房产首付</li>
+        <li>律师费</li>
+        <li>税费</li>
+        <li>贷款利息</li>
+        </ul>
+        <h3>不同ROI策略的盈亏平衡点</h3>
+        <h4>策略A：豪华装修（高租金）</h4>
+        <ul>
+        <li>装修成本：RM150,000</li>
+        <li>月收入：RM5,000</li>
+        <li>月净利润：RM3,300</li>
+        <li>盈亏平衡点：<strong>45个月（3.8年）</strong></li>
+        </ul>
+        <h4>策略B：标准装修（中等租金）</h4>
+        <ul>
+        <li>装修成本：RM90,000</li>
+        <li>月收入：RM3,500</li>
+        <li>月净利润：RM2,300</li>
+        <li>盈亏平衡点：<strong>39个月（3.3年）</strong> ✅ 推荐</li>
+        </ul>
+        <h4>策略C：经济装修（低租金）</h4>
+        <ul>
+        <li>装修成本：RM50,000</li>
+        <li>月收入：RM2,500</li>
+        <li>月净利润：RM1,500</li>
+        <li>盈亏平衡点：<strong>33个月（2.8年）</strong></li>
+        </ul>
+        <strong>结论</strong>：<strong>策略B（标准装修）</strong> 是最佳平衡点：
+        <ul>
+        <li>盈亏平衡点适中（3.3年）</li>
+        <li>客人满意度高</li>
+        <li>评分稳定4.7+</li>
+        <li>房产增值潜力大</li>
+        </ul>
+        <strong>策略A</strong>豪华装修虽然租金高，但投资回报周期长，风险高。
+        <strong>策略C</strong>经济装修虽然回本快，但：
+        <ul>
+        <li>难以吸引优质客户</li>
+        <li>评分低，影响长期预订</li>
+        <li>装修质量差，维修频繁</li>
+        </ul>
+        <h2>第五部分：2025年装修成本控制策略</h2>
+        <h3>策略1：70/30原则</h3>
+        <strong>70%硬装 + 30%软装</strong>
+        <ul>
+        <li><strong>硬装（70%）</strong>：地板、墙面、卫浴、厨房（耐用、质量优先）</li>
+        <li><strong>软装（30%）</strong>：家具、窗帘、装饰（可后续升级）</li>
+        </ul>
+        <strong>为什么</strong>：硬装难以更改，必须一次到位；软装可以逐步升级。
+        <h3>策略2：投资高回报项目</h3>
+        <strong>每RM1投入的回报率</strong>：
+        <table>
+          <thead>
+            <tr><th>项目</th><th>成本</th><th>对评分影响</th><th>回报率</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**智能门锁**</td><td>RM1,500</td><td>⭐⭐⭐⭐⭐</td><td>极高</td></tr>
+            <tr><td>**遮光窗帘**</td><td>RM3,000</td><td>⭐⭐⭐⭐⭐</td><td>极高</td></tr>
+            <tr><td>**高速WiFi**</td><td>RM1,000</td><td>⭐⭐⭐⭐⭐</td><td>极高</td></tr>
+            <tr><td>**优质床垫**</td><td>RM2,000</td><td>⭐⭐⭐⭐⭐</td><td>极高</td></tr>
+            <tr><td>**防水工程**</td><td>RM5,000</td><td>⭐⭐⭐⭐</td><td>高（避免损失）</td></tr>
+            <tr><td>**智能电视**</td><td>RM2,000</td><td>⭐⭐⭐⭐</td><td>高</td></tr>
+            <tr><td>**设计装饰**</td><td>RM3,000</td><td>⭐⭐⭐</td><td>中</td></tr>
+          </tbody>
+        </table>
+        <strong>优先投入</strong>：前4项（智能门锁、遮光窗帘、WiFi、床垫）
+        <h3>策略3：避免过度装修</h3>
+        <strong>常见过度装修</strong>：
+        <ul>
+        <li>❌ 豪华水晶吊灯（客人不关心）</li>
+        <li>❌ 昂贵艺术装饰（易损坏）</li>
+        <li>❌ 过度复杂的背景墙（维护困难）</li>
+        <li>❌ 进口大理石（成本高，回报低）</li>
+        </ul>
+        <strong>建议</strong>：保持简洁、现代、实用风格。
+        <h3>策略4：季节性采购</h3>
+        <strong>节省10-30%</strong>：
+        <ul>
+        <li><strong>促销季</strong>：11.11、12.12、中秋、农历新年</li>
+        <li><strong>商场清仓</strong>：IKEA、 Courts、 SenQ</li>
+        <li><strong>在线平台</strong>：Lazada、Shopee（电器、小件）</li>
+        </ul>
+        <strong>时间规划</strong>：提前3个月开始采购，避开旺季。
+        <h2>第六部分：装修预算检查清单</h2>
+        <h3>规划阶段</h3>
+        <ul>
+        <li>[ ] 确定装修档次（经济/标准/豪华）</li>
+        <li>[ ] 确定目标客群（家庭/情侣/商务）</li>
+        <li>[ ] 测量公寓尺寸</li>
+        <li>[ ] 收集装修灵感（Pinterest、Instagram）</li>
+        <li>[ ] 确定预算上限</li>
+        </ul>
+        <h3>预算编制</h3>
+        <ul>
+        <li>[ ] 硬装预算（地板、墙面、卫浴、厨房）</li>
+        <li>[ ] 软装预算（家具、窗帘、装饰）</li>
+        <li>[ ] 电器预算（空调、冰箱、电视等）</li>
+        <li>[ ] 智能设备预算（门锁、WiFi）</li>
+        <li>[ ] 隐藏成本预算（管理层、电增容、防水）</li>
+        <li>[ ] 备用金（10-15%）</li>
+        </ul>
+        <h3>施工前</h3>
+        <ul>
+        <li>[ ] 获得管理层装修批准</li>
+        <li>[ ] 缴纳装修押金</li>
+        <li>[ ] 聘请合格承包商</li>
+        <li>[ ] 签订详细合同（包含工期、材料明细）</li>
+        </ul>
+        <h3>施工中</h3>
+        <ul>
+        <li>[ ] 定期现场检查</li>
+        <li>[ ] 确认材料质量</li>
+        <li>[ ] 监控进度</li>
+        <li>[ ] 控制变更单（避免超支）</li>
+        </ul>
+        <h3>完工后</h3>
+        <ul>
+        <li>[ ] 全面检查质量</li>
+        <li>[ ] 测试所有电器</li>
+        <li>[ ] 验收防水工程</li>
+        <li>[ ] 初始深度清洁</li>
+        <li>[ ] 拍照记录（用于平台Listing）</li>
+        </ul>
+        <h2>需要专业装修咨询？</h2>
+        <p>Parkland提供一站式民宿装修服务：</p>
+        <ul>
+        <li>✅ <strong>免费装修评估</strong>：根据您的公寓和预算，制定最佳方案</li>
+        <li>✅ <strong>承包商推荐</strong>：合作优质承包商，享受团体折扣</li>
+        <li>✅ <strong>质量监督</strong>：全程跟进，确保质量</li>
+        <li>✅ <strong>预算控制</strong>：透明报价，避免超支</li>
+        </ul>
+        <hr class="my-8">
+        <h2>马上开始您的装修规划</h2>
+        <strong>输入您的电话号码，我们会WhatsApp您</strong>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; text-align: center; margin: 30px 0;">
+        <h3 style="color: white; margin-bottom: 15px;">免费装修预算咨询</h3>
+        <p style="color: white; font-size: 16px; margin-bottom: 20px;">
+        <p>专业团队为您制定装修方案<br></p>
+        <p>避免隐藏成本陷阱，准确计算盈亏平衡点</p>
+        </p>
+        <a href="https://wa.me/60123456789?text=我想咨询民宿装修预算" style="background: white; color: #667eea; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block;">
+        <p>输入您的电话号码，我们会WhatsApp您</p>
+        </a>
+        </div>
+        <hr class="my-8">
+        <h2>常见问题</h2>
+        <h3>Q: 民宿装修最低预算是多少？</h3>
+        <p>A: 小型公寓（400-600 sqft）最低约RM40,000，中型公寓（700-900 sqft）约RM70,000。建议预留10-15%备用金。</p>
+        <h3>Q: 如何避免装修超支？</h3>
+        <p>A: 1) 详细预算规划；2) 选择固定价格合同；3) 控制变更单；4) 预留10-15%备用金；5) 避免施工中升级材料。</p>
+        <h3>Q: 盈亏平衡点多久比较合理？</h3>
+        <p>A: 3-4年（36-48个月）是合理范围。低于3年可能装修质量不足，高于4年投资回报率偏低。</p>
+        <h3>Q: Parkland提供装修服务吗？</h3>
+        <p>A: 是的，Parkland提供从设计、施工到软装的一站式服务，享受团体折扣，质量有保证。</p>
+        <hr class="my-8">
+        <strong>相关关键词</strong>：民宿装修、装修预算、成本控制、盈亏平衡、民宿投资、短租装修、Airbnb装修、Parkland装修服务
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

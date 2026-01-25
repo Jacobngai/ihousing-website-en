@@ -1,0 +1,299 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "民宿必备清单：马六甲Airbnb开业完整物品清单2025";
+const description = "马六甲Airbnb民宿开业必备物品完整清单。从家具家电到厨房用品、安全设备，一应俱全。避免遗漏关键物品，确保客人满意体验。";
+const image = "/images/blog/minsu-bixiang-qingdan.jpg";
+const date = "2025-01-24";
+const category = "setup-guide";
+const language = "zh";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>民宿必备清单：马六甲Airbnb开业完整物品清单2025</h1>
+
+<h2>准备将房产改造成Airbnb民宿？</h2>
+
+<p>从空房到ready-to-host的民宿，需要的物品远比您想象的要多。<strong>遗漏关键物品可能导致客人差评</strong>，而过度采购又会浪费预算。</p>
+
+<p>这份清单基于iHousing管理<strong>100+马六甲民宿</strong>的实战经验，确保您的投资：</p>
+<ul>
+<li>✅ 不遗漏任何必需品</li></ul>
+
+<ul>
+<li>✅ 不浪费预算购买不必要物品</li></ul>
+
+<ul>
+<li>✅ 符合Airbnb标准</li></ul>
+
+<ul>
+<li>✅ 超出客人预期</li></ul>
+
+<h2>第一部分：大型家具家电</h2>
+
+<h3>睡眠区域（根据房间数配置）</h3>
+
+<strong>每间卧室必需：</strong>
+
+<strong>床品尺寸参考：</strong>
+<ul>
+<li>单房单位：Super Single (6ft) 或 Queen (6ft)</li></ul>
+
+<ul>
+<li>两房单位：1间Queen + 1间Super Single</li></ul>
+
+<ul>
+<li>三房单位：1间King + 2间Queen 或 3间Queen</li></ul>
+
+<strong>床垫投资建议：</strong>
+
+<h3>客厅区域</h3>
+
+<h3>厨房区域</h3>
+
+<h3>空调与电器</h3>
+
+<h2>第二部分：床上用品与布草</h2>
+
+<h3>床上用品（每床）</h3>
+
+<strong>必需品：</strong>
+
+<strong>毛巾（按最大入住人数）：</strong>
+
+<strong>布草投资建议：</strong>
+<ul>
+<li><strong>至少准备2.5套</strong>（1套使用，1套备用，0.5套洗涤中）</li></ul>
+
+<ul>
+<li>选择<strong>浅色系</strong>（白色、米色、浅灰）</li></ul>
+
+<ul>
+<li><strong>纯棉或棉涤混纺</strong>（耐用易打理）</li></ul>
+
+<ul>
+<li>预算：<strong>RM1,500-3,000</strong>（两房单位）</li></ul>
+
+<h2>第三部分：厨房用品</h2>
+
+<h3>烹饪工具</h3>
+
+<h3>餐具</h3>
+
+<strong>按最大入住人数配置：</strong>
+
+<h3>其他厨房用品</h3>
+
+<h2>第四部分：浴室用品</h2>
+
+<h3>洗漱用品（客人提供）</h3>
+
+<strong>每次入住补充：</strong>
+
+<h3>浴室设施</h3>
+
+<strong>卫生纸储备：</strong>
+<ul>
+<li>每次入住提供2卷</li></ul>
+
+<ul>
+<li>储备10-20卷（大包装更经济）</li></ul>
+
+<h2>第五部分：清洁用品</h2>
+
+<h3>专业清洁用品</h3>
+
+<h3>客人用清洁用品</h3>
+
+<h2>第六部分：安全设备</h2>
+
+<h3>必需安全用品（Airbnb要求）</h3>
+
+<h3>智能安全设备</h3>
+
+<h3>儿童安全（家庭友好单位）</h3>
+
+<h2>第七部分：智能设备与科技</h2>
+
+<h3>入门与入住</h3>
+
+<h3>娱乐设备</h3>
+
+<h3>办公与便利设备</h3>
+
+<h2>第八部分：装饰与氛围</h2>
+
+<h3>墙面装饰</h3>
+
+<h3>软装饰</h3>
+
+<h3>灯光设计</h3>
+
+<h2>第九部分：储物与收纳</h2>
+
+<h3>衣柜收纳</h3>
+
+<h3>厨房收纳</h3>
+
+<h3>浴室收纳</h3>
+
+<h2>第十部分：应急与备用物品</h2>
+
+<h3>应急工具箱</h3>
+
+<h3>备用布草</h3>
+
+<h2>完整物品清单总预算</h2>
+
+<h3>按单位类型预算估算</h3>
+
+<p>#### 单房单位（400-600 sqft）</p>
+
+<p>#### 两房单位（700-900 sqft）</p>
+
+<p>#### 三房单位（1,000+ sqft）</p>
+
+<h2>采购优先级：分阶段投资</h2>
+
+<h3>阶段1：必需品（不能开业没有的）</h3>
+
+<strong>优先级最高，预算占比60%：</strong>
+<ul>
+<li>床、床垫、床品</li></ul>
+
+<ul>
+<li>空调、热水器</li></ul>
+
+<ul>
+<li>沙发、餐桌椅</li></ul>
+
+<ul>
+<li>智能门锁</li></ul>
+
+<ul>
+<li>基础布草</li></ul>
+
+<ul>
+<li>基础清洁用品</li></ul>
+
+<ul>
+<li>安全设备（烟雾报警器、灭火器）</li></ul>
+
+<h3>阶段2：提升体验（提高好评率）</h3>
+
+<strong>优先级中等，预算占比30%：</strong>
+<ul>
+<li>Smart TV</li></ul>
+
+<ul>
+<li>装饰品与挂画</li></ul>
+
+<ul>
+<li>高级床上用品</li></ul>
+
+<ul>
+<li>儿童安全设备</li></ul>
+
+<ul>
+<li>氛围灯光</li></ul>
+
+<h3>阶段3：锦上添花（可以后期添加）</h3>
+
+<strong>优先级低，预算占比10%：</strong>
+<ul>
+<li>高级音响系统</li></ul>
+
+<ul>
+<li>咖啡机</li></ul>
+
+<ul>
+<li>早餐服务设备</li></ul>
+
+<ul>
+<li>专业级厨房设备</li></ul>
+
+<h2>常见错误与避免方法</h2>
+
+<h3>错误1：布草数量不足</h3>
+
+<strong>问题：</strong> 只准备1套床品，导致无法快速周转
+<strong>解决：</strong> 至少准备2.5套（1用1备0.5洗）
+
+<h3>错误2：忽视安全设备</h3>
+
+<strong>问题：</strong> 未安装烟雾报警器，违反Airbnb规定
+<strong>解决：</strong> 每层楼至少1个烟雾报警器
+
+<h3>错误3：厨房用品过于简单</h3>
+
+<strong>问题：</strong> 只有基本餐具，客人无法做饭
+<strong>解决：</strong> 至少提供炒锅、汤锅、基本调料
+
+<h3>错误4：网络速度慢</h3>
+
+<strong>问题：</strong> 廉价WiFi路由器，多设备卡顿
+<strong>解决：</strong> 投资RM200+高速路由器
+
+<h3>错误5：照明不足</h3>
+
+<strong>问题：</strong> 只用主灯，氛围冷清
+<strong>解决：</strong> 增加台灯、落地灯，营造温馨感
+
+<h2>立即行动：一站式民宿装备</h2>
+
+<h3>iHousing全包服务</h3>
+
+<strong>我们提供：</strong>
+<li>✅ <strong>采购清单定制</strong> - 根据您的单位类型</li>
+<li>✅ <strong>供应商推荐</strong> - 批发价渠道</li>
+<li>✅ <strong>质量把控</strong> - 确保耐用与性价比</li>
+<li>✅ <strong>安装协调</strong> - 一站式服务</li>
+<li>✅ <strong>预算优化</strong> - 避免浪费，投资回报最大化</li>
+
+<strong>您无需：</strong>
+<ul>
+<li>自己研究每样物品</li></ul>
+
+<ul>
+<li>跑多个供应商</li></ul>
+
+<ul>
+<li>担心遗漏必需品</li></ul>
+
+<ul>
+<li>超出预算</li></ul>
+
+<h2>WhatsApp咨询</h2>
+
+<strong>获取您的定制采购清单：</strong>
+
+<a href="https://wa.me/60166996688?text=您好，我想了解Airbnb民宿开业物品清单。我的公寓位于[填写区域]，[单房/两房/三房]，[已装修/未装修]。请提供完整的采购清单和预算估算。" target="_blank" rel="noopener" style="display:inline-block;background-color:#25D366;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold;margin:10px 0;">WhatsApp获取采购清单 →</a>
+
+<h2>相关阅读</h2>
+
+<ul>
+<li>[民宿装修预算指南](/zh/blog/minsu-zhuangxiu-yusuan)</li></ul>
+
+<ul>
+<li>[民宿清洁服务标准](/zh/blog/minsu-qingjie-fuwu)</li></ul>
+
+<ul>
+<li>[民宿安全要求2025](/zh/blog/minsu-anquan-yaoqiu)</li></ul>
+
+<ul>
+<li>[智能门锁选购指南](/zh/blog/zhineng-mensuo-tuijian)</li></ul>
+
+<strong>最后更新：</strong> 2025年1月24日
+<strong>阅读时间：</strong> 20分钟
+<strong>分类：</strong> 装修指南 · 开业准备
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,132 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "商业vs住宅分区：Airbnb法律要求";
+const description = "了解马六甲Airbnb的分区法律。商业与住宅分区要求、分层地契规则，以及iHousing如何确保您的Airbnb投资合法合规。";
+const image = "/images/blog/commercial-vs-residential-zoning-legal-chinese.jpg";
+const date = "2026-01-16";
+const category = "legal-compliance";
+const language = "zh";
+
+const content = `
+<h1>商业vs住宅分区：马六甲Airbnb法律要求</h1>
+<strong>您的房产是否合法允许Airbnb？您必须知道的分区规则</strong>
+<p>在投资任何马六甲房产用于Airbnb之前，<strong>验证分区状态</strong>。</p>
+<p>分区决定短期租赁（STR）是否合法允许。搞错这一点，您将面临：</p>
+<ul>
+<li>MBMB（马六甲历史城市议会）罚款</li>
+<li>分层管理委员会执法</li>
+<li>强制关闭您的Airbnb业务</li>
+<li>与邻居的法律纠纷</li>
+</ul>
+<hr class="my-8">
+<h2>马六甲分区类别：快速参考</h2>
+<table>
+  <thead>
+    <tr><th>分区类型</th><th>允许Airbnb？</th><th>限制</th><th>常见公寓</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**商业（C）**</td><td>是 - 允许STR</td><td>需要商业执照</td><td>店铺、混合开发</td></tr>
+    <tr><td>**住宅（R）**</td><td>有条件</td><td>业主居住规则适用</td><td>标准公寓、排屋</td></tr>
+    <tr><td>**混合用途（CR）**</td><td>是 - 允许STR</td><td>独立商业入口</td><td>Heng Hut Resort, Shore</td></tr>
+    <tr><td>**遗产（H）**</td><td>受限</td><td>UNESCO保护规则</td><td>鸡场街店铺</td></tr>
+    <tr><td>**度假（RS）**</td><td>是 - 鼓励STR</td><td>旅游分区优势</td><td>马六甲拉也度假村</td></tr>
+  </tbody>
+</table>
+<h3>关键洞察：</h3>
+<p><strong>并非所有住宅公寓都允许Airbnb</strong>。即使分层地契允许STR，当地分区也可能限制它。</p>
+<hr class="my-8">
+<h2>住宅分区：业主居住规则</h2>
+<h3>MBMB的要求</h3>
+<p>对于<strong>纯住宅分区</strong>（无商业成分）：</p>
+<table>
+  <thead>
+    <tr><th>场景</th><th>法律状态</th><th>要求</th><th>风险级别</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**业主居住现场+出租房间**</td><td>合法（Homestay）</td><td>需要MBMB注册</td><td>低风险</td></tr>
+    <tr><td>**业主居住附近+出租整套单元**</td><td>灰色地带</td><td>一些执法案例</td><td>中等风险</td></tr>
+    <tr><td>**业主不在+出租整套单元**</td><td>受限</td><td>可能违反住宅用途</td><td>高风险</td></tr>
+  </tbody>
+</table>
+<hr class="my-8">
+<h2>商业分区：Airbnb的清晰路径</h2>
+<h3>具有商业成分的房产</h3>
+<table>
+  <thead>
+    <tr><th>房产类型</th><th>分区状态</th><th>Airbnb合法性</th><th>示例</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**服务式公寓**</td><td>商业</td><td>合法（需执照）</td><td>Heng Hut Resort</td></tr>
+    <tr><td>**混合用途塔楼**</td><td>混合CR</td><td>合法（商业楼层）</td><td>The Shore Residence</td></tr>
+    <tr><td>**度假村式公寓**</td><td>度假村（RS）</td><td>合法（旅游区）</td><td>马六甲拉也度假村公寓</td></tr>
+  </tbody>
+</table>
+<hr class="my-8">
+<h2>分层地契：建筑级许可</h2>
+<h3>即使分区允许，建筑可能不允许</h3>
+<p><strong>分层管理委员会</strong>可以限制Airbnb，无论分区如何：</p>
+<table>
+  <thead>
+    <tr><th>分层规则</th><th>法律依据</th><th>对Airbnb的影响</th><th>解决方案</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**不允许STR**</td><td>房屋章程细则</td><td>禁止Airbnb</td><td>避免这些建筑</td></tr>
+    <tr><td>**最少租期3个月**</td><td>住宅使用保护</td><td>阻止Airbnb</td><td>对STR不可行</td></tr>
+    <tr><td>**需要管理层批准**</td><td>筛选流程</td><td>视情况而定</td><td>购买前申请</td></tr>
+  </tbody>
+</table>
+<hr class="my-8">
+<h2>建筑特定分区状态</h2>
+<h3>热门马六甲公寓：分区分类</h3>
+<table>
+  <thead>
+    <tr><th>公寓</th><th>分区</th><th>允许STR？</th><th>需要执照</th><th>备注</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**Heng Hut Resort**</td><td>度假村（RS）</td><td>是 - 鼓励</td><td>MOTAC</td><td>专为STR设计</td></tr>
+    <tr><td>**The Shore Residence**</td><td>混合CR</td><td>是（商业楼层）</td><td>MOTAC</td><td>混合用途塔楼</td></tr>
+    <tr><td>**Silverscape Residence**</td><td>住宅（R）</td><td>有条件</td><td>业主居住则无</td><td>分层规则各异</td></tr>
+    <tr><td>**Novana Residence**</td><td>住宅（R）</td><td>有条件</td><td>业主居住则无</td><td>建筑管理宽松</td></tr>
+  </tbody>
+</table>
+<hr class="my-8">
+<h2>iHousing如何确保合法合规</h2>
+<h3>我们的购买前验证流程</h3>
+<p><strong>我们绝不让客户在未验证分区的情况下购买。</strong></p>
+<table>
+  <thead>
+    <tr><th>检查</th><th>我们如何验证</th><th>我们确认什么</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**分区分类**</td><td>MBMB土地搜索</td><td>官方分区状态</td></tr>
+    <tr><td>**分层规则**</td><td>建筑管理查询</td><th>STR许可状态</th></tr>
+    <tr><td>**活跃执法**</td><td>当前业主访谈</td><td>实际合规情况</td></tr>
+    <tr><td>**执照要求**</td><td>MOTAC预先咨询</td><td>合法运营所需</td></tr>
+  </tbody>
+</table>
+<h3>我们8年的记录：</h3>
+<ul>
+<li><strong>管理100+处房产</strong> - 零分区违规</li>
+<li><strong>所有客户已获执照</strong>（如需要）</li>
+<li><strong>零执法行动</strong>针对我们管理的房产</li>
+<li><strong>100%分层合规</strong>率</li>
+</ul>
+<hr class="my-8">
+<h2>准备好合法投资了吗？</h2>
+<p><strong>不要让分区违规危及您的投资。</strong></p>
+<p>我们在您购买之前验证分区、分层规则和执照要求。</p>
+<a href="https://wa.me/60166996688?text=Hi%20iHousing,%20我正在考虑购买房产做Airbnb。能否帮助验证分区和法律要求？" target="_blank" rel="noopener" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 20px 0;">+60 19-699 6688</a>
+<hr class="my-8">
+<strong>最后更新：</strong> 2026年1月 | <strong>数据来源：</strong> MBMB分区法规、MOTAC执照指南
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

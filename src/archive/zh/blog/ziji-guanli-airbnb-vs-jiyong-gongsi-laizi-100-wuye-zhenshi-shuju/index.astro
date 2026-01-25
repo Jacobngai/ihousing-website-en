@@ -1,0 +1,112 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "自己管理Airbnb vs 雇佣公司：来自100+物业的真实数据";
+const description = "比较自己管理与雇佣Airbnb管理公司。来自100+马六甲物业的真实数据显示实际时间投入、收入差异和ROI对比。";
+const image = "/images/blog/ziji-guanli-airbnb-vs-jiyong-gongsi-laizi-100-wuye-zhenshi-shuju.jpg";
+const date = "2026-01-02";
+const category = "decision-comparison";
+const language = "zh";
+
+const content = `
+<h1>自己管理Airbnb vs 雇佣公司：来自100+物业的真实数据</h1>
+
+<p>作为马六甲业主，您将面临最大的决策之一：应该自己管理Airbnb还是雇佣专业管理公司？</p>
+
+<p>大多数文章给您理论上的比较。但在iHousing，我们管理马六甲100+物业。我们拥有来自真正尝试过两种方法的业主的真实数据。让我们分解实际数字，以便您做出明智的决定。</p>
+
+<h2>时间投入的现实检验</h2>
+
+<h3>自己管理实际需要多少时间？</h3>
+
+<p>基于我们对50+个马六甲自己管理业主的调查：</p>
+
+<table>
+  <thead>
+    <tr><th>任务</th><th>小时/周</th><th>小时/月</th><th>小时/年</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>客人沟通（发消息）</td><td>5-8</td><td>25-35</td><td>300-420</td></tr>
+    <tr><td>入住/退房协调</td><td>3-5</td><td>15-22</td><td>180-264</td></tr>
+    <tr><td>清洁安排 & 质量控制</td><td>2-4</td><td>10-18</td><td>120-216</td></tr>
+    <tr><td>维护 & 维修</td><td>1-3</td><td>5-15</td><td>60-180</td></tr>
+    <tr><td>房源优化 & 定价</td><td>2-3</td><td>10-15</td><td>120-180</td></tr>
+    <tr><td>评论 & 客人跟进</td><td>1-2</td><td>5-10</td><td>60-120</td></tr>
+    <tr><td>紧急响应（意外）</td><td>1-2</td><td>5-10</td><td>60-120</td></tr>
+    <tr><td><strong>总计</strong></td><td><strong>15-27 小时</strong></td><td><strong>75-125 小时</strong></td><strong>900-1,500 小时</strong></td></tr>
+  </tbody>
+</table>
+
+<p><strong>现实：</strong> 大多数业主低估了50%。如果您想要专业结果，预期每周花费<strong>15-25小时</strong>。</p>
+
+<h3>收入对比：自己管理 vs 专业管理</h3>
+
+<p>马六甲拉也类似2卧室公寓的真实数据：</p>
+
+<table>
+  <thead>
+    <tr><th>指标</th><td>自己管理（平均）</td><td>iHousing管理</td><td>差异</td></tr>
+  </thead>
+  <tbody>
+    <tr><td>入住率</td><td>48%</td><td>67%</td><td>+19%</td></tr>
+    <tr><td>平均每晚价格</td><td>RM195</td><td>RM225</td><td>+15%</td></tr>
+    <tr><td>月收入</td><td>RM9,800</td><td>RM13,500</td><td>+38%</td></tr>
+    <tr><td>年收入</td><td>RM117,600</td><td>RM162,000</td><td>+38%</td></tr>
+  </tbody>
+</table>
+
+<p><strong>为什么有差异？</strong></p>
+
+<ul>
+<li><strong>多平台房源</strong> - 我们列出5个平台 vs 大多数自己管理者1-2个</li>
+<li><strong>动态定价</strong> - 算法定价 vs 手动更新</li>
+<li><strong>24/7响应</strong> - 即时回复 vs 当您忙碌时的延迟</li>
+<li><strong>专业照片</strong> - 更高转化率</li>
+<li><td>评论管理</strong> - 主动请求 vs 被动收集</td></ul>
+
+<h2>自己管理何时合理？</h2>
+
+<h3>自己管理可行，如果您满足所有标准：</h3>
+
+<ol>
+<li><strong>住在马六甲</strong> - 可在30分钟内处理问题</li>
+<li><strong>有灵活的时间表</strong> - 可用于入住、清洁协调</li>
+<li><strong>热爱待客</strong> - 享受酒店业，不介意工作</li>
+<li><strong>房产价值低</strong> - 低于RM20万（管理费吞噬回报）</li>
+<li><td>单一房产</td><td> - 不试图扩展到多个单元</td></li>
+<li><td>专业经验</td><td> - 酒店/物业管理背景</td></ol>
+
+<p><strong>现实检验：</strong> 少于10%的业主满足所有这些标准。</p>
+
+<h2>WhatsApp我们获取免费咨询</h2>
+
+<p>不确定哪种方法适合您？让我们分析您的情况。</p>
+
+<a href="https://wa.me/60166996688?text=Hi%20iHousing,%20%E6%88%91%E5%9C%A8%E8%87%AA%E5%B7%A5%E5%81%9A%E8%BF%9B%E8%87%AA%E7%AE%A1%E7%AE%A1%E4%B8%8E%E4%B8%93%E8%A1%8C%E7%AE%A1%E7%90%86%E7%AE%A1%E7%90%86%E6%9C%AA.%E6%82%A8%E6%8E%A5%E4%BB%98%E5%91%80?" class="whatsapp-cta">
+  <strong>WhatsApp我们现在获取免费咨询</strong>
+  <br>
+  <span>透明RM200-300/月管理费，看自己管理是否对您有意义</span>
+</a>
+
+<h2>最后思考</h2>
+
+<p>数据很清楚：专业管理提供更高的收入、更好的ROI和显著更低的时间投入。虽然自己在纸上看起来更便宜，但时间、压力和收入损失的隐藏成本使其成为大多数业主的昂贵选择。</p>
+
+<p>在iHousing，我们相信透明、固定费用管理，我们的激励与您保持一致：您赚得越多，我们做得越好。</p>
+
+<strong>相关阅读：</strong>
+<ul>
+<li>[全服务管理 vs 基础管理：哪种适合您的投资风格？](/blog/quan-fuwu-guanli-vs-jichu-guanli-nazhong-shihe-nin-de-touzi-fengge)</li>
+<li>[Airbnb管理费马来西亚：完整定价指南](/blog/minsu-guan-li-fei-malaisiya-panduan-lengkap)</li>
+</ul>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

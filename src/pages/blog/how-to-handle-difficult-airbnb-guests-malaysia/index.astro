@@ -1,0 +1,563 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "How to Handle Difficult Airbnb Guests Malaysia: Stress-Free Solutions for Owners";
+const description = "Dealing with problematic guests? Learn how to prevent, manage, and recover from difficult guest situations. Or let iHousing handle everything - we handle guests responsive so you don't have to.";
+const image = "/images/blog/how-to-handle-difficult-airbnb-guests-malaysia.jpg";
+const date = "2025-01-23";
+const category = "operational";
+const language = "en";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>How to Handle Difficult Airbnb Guests Malaysia: Stress-Free Solutions for Owners</h1>
+        <strong>The Reality of Hosting: 95% of guests are wonderful. 5% will test your patience.</strong>
+        <p>Dealing with difficult guests is every host's nightmare. Late-night complaints, unreasonable demands, rule violations, property damage - it can turn your "passive income" dream into a stressful job.</p>
+        <strong>Good news:</strong> We handle all guest interactions for our owners. You never have to deal with difficult guests personally.
+        <p>But if you're self-managing (or considering it), this guide covers everything you need to know.</p>
+        <hr class="my-8">
+        <h2>The 5 Types of Difficult Guests (And How to Handle Them)</h2>
+        <p>Based on managing 100+ properties and 10,000+ guest stays:</p>
+        <h3>Type 1: The "Rule Bender"</h3>
+        <strong>Behavior:</strong>
+        <ul>
+        <li>Books for 2, shows up with 6</li>
+        <li>"Just forgot" about no-smoking policy</li>
+        <li>Requests late checkout at 11 PM</li>
+        </ul>
+        <strong>Prevention:</strong>
+        <ul>
+        <li>Clear house rules in listing</li>
+        <li>Message rules before arrival</li>
+        <li>Security deposit for larger groups</li>
+        </ul>
+        <strong>Response:</strong>
+        <code>\`</code>markdown
+        <p>"Hi [Name], thanks for choosing to stay with us!</p>
+        <p>Our listing is designed for 2 guests maximum as per our condominium rules. Additional guests aren't permitted due to building regulations.</p>
+        <p>We hope you understand and can adjust your plans accordingly. Let us know if you need help finding alternative accommodation for your extra guests."</p>
+        <code>\`</code>
+        <h3>Type 2: The "Late Night Complainer"</h3>
+        <strong>Behavior:</strong>
+        <ul>
+        <li>Messages at 2 AM about minor issues</li>
+        <li>Expects instant responses</li>
+        <li>Threatens bad review for small problems</li>
+        </ul>
+        <strong>Prevention:</strong>
+        <ul>
+        <li>Set clear response time expectations</li>
+        <li>Provide emergency contact only</li>
+        <li>Automate responses for common issues</li>
+        </ul>
+        <strong>Response:</strong>
+        <code>\`</code>markdown
+        <p>"Hi [Name], received your message. For non-emergency issues, we respond within 12 hours (as stated in our listing).</p>
+        <p>For true emergencies (lockout, no water, safety issues), please call our responsive hotline: [Phone Number].</p>
+        <p>Our team will address [their issue] first thing in the morning."</p>
+        <code>\`</code>
+        <h3>Type 3: The "Party Animal"</h3>
+        <strong>Behavior:</strong>
+        <ul>
+        <li>Loud music, gatherings</li>
+        <li>Ignores quiet hours</li>
+        <li>Neighbors complain</li>
+        </ul>
+        <strong>Prevention:</strong>
+        <ul>
+        <li>Strict house rules about parties</li>
+        <li>Guest screening (reviews, government ID)</li>
+        <li>Security deposit</li>
+        </ul>
+        <strong>Response:</strong>
+        <code>\`</code>markdown
+        <p>"Hi [Name], we've received complaints from neighbors about noise. Our house rules state no parties and quiet hours from 10 PM-7 AM.</p>
+        <p>Please reduce noise immediately or we'll need to ask you to leave. Continued violations will result in early checkout without refund."</p>
+        <code>\`</code>
+        <h3>Type 4: The "Clean Freak"</h3>
+        <strong>Behavior:</strong>
+        <ul>
+        <li>Complains about dust, minor cleanliness issues</li>
+        <li>Demands refunds for perceived problems</li>
+        <li>Leaves 3-star reviews over small matters</li>
+        </ul>
+        <strong>Prevention:</strong>
+        <ul>
+        <li>Professional cleaning after every stay</li>
+        <li>Detailed photos of clean property</li>
+        <li>Realistic photos (not over-edited)</li>
+        </ul>
+        <strong>Response:</strong>
+        <code>\`</code>markdown
+        <p>"Hi [Name], sorry to hear you're not satisfied. Our property is professionally cleaned before every stay with a checklist covering [list items].</p>
+        <p>Could you share photos of the specific issues? We'll address them immediately. We strive for 5-star cleanliness and want to make this right."</p>
+        <code>\`</code>
+        <h3>Type 5: The "Damager"</h3>
+        <strong>Behavior:</strong>
+        <ul>
+        <li>Breaks items, stains furniture</li>
+        <li>Damages beyond normal wear</li>
+        <li>Denies responsibility</li>
+        </ul>
+        <strong>Prevention:</strong>
+        <ul>
+        <li>Security deposit (via Airbnb)</li>
+        <li>Clear inventory checklist</li>
+        <li>Photos before/after each stay</li>
+        </ul>
+        <strong>Response:</strong>
+        <code>\`</code>markdown
+        <p>"Hi [Name], our cleaning team noted [damaged item] during checkout. This is beyond normal wear and tear.</p>
+        <p>Per our house rules, guests are responsible for damages. We'll need to [resolution: deduct from deposit / invoice for repair].</p>
+        <p>Please let us know if you'd like to discuss this further."</p>
+        <code>\`</code>
+        <hr class="my-8">
+        <h2>Guest Screening: Prevent Problems Before Arrival</h2>
+        <p>The best way to handle difficult guests? Don't let them book.</p>
+        <h3>What We Screen For:</h3>
+        <strong>Red Flags:</strong>
+        <ul>
+        <li>✗ No previous reviews (for established accounts)</li>
+        <li>✗ Negative reviews from other hosts</li>
+        <li>✗ Incomplete profile (no photo, bio)</li>
+        <li>✗ Local bookings (potential party risk)</li>
+        <li>✗ Last-minute bookings (higher risk)</li>
+        <li>✗ "I'll pay outside Airbnb" requests (scam)</li>
+        </ul>
+        <strong>Green Flags:</strong>
+        <ul>
+        <li>✓ Verified government ID</li>
+        <li>✓ Positive reviews from hosts</li>
+        <li>✓ Complete profile with photo</li>
+        <li>✓ Specific reason for visit (tourism, business)</li>
+        <li>✓ Advance booking (shows planning)</li>
+        </ul>
+        <h3>Our Screening Process:</h3>
+        <ol>
+        <li><strong>Inquiry Response</strong></li>
+        </ol>
+        <ul>
+        <li>Ask travel purpose</li>
+        <li>Confirm guest count</li>
+        <li>Verify understanding of house rules</li>
+        </ul>
+        <ol>
+        <li><strong>Review Profile</strong></li>
+        </ol>
+        <ul>
+        <li>Check reviews (if any)</li>
+        <li>Verify ID uploaded</li>
+        <li>Look for completeness</li>
+        </ul>
+        <ol>
+        <li><strong>Pre-Arrival Message</strong></li>
+        </ol>
+        <ul>
+        <li>Send house rules again</li>
+        <li>Confirm check-in time</li>
+        <li>Provide emergency contact</li>
+        </ul>
+        <strong>Result:</strong> We've reduced problem guests by 80% through screening.
+        <hr class="my-8">
+        <h2>House Rules That Work (Template)</h2>
+        <p>Clear, upfront rules prevent 90% of issues. Here's our template:</p>
+        <hr class="my-8">
+        <h3>House Rules - [Property Name]</h3>
+        <strong>Check-In/Check-Out:</strong>
+        <ul>
+        <li>Check-in: 3:00 PM - 9:00 PM</li>
+        <li>Check-out: 11:00 AM</li>
+        <li>Early/late check-in may be available upon request</li>
+        </ul>
+        <strong>Guest Count:</strong>
+        <ul>
+        <li>Maximum [X] guests</li>
+        <li>Day visitors not permitted</li>
+        <li>Only registered guests allowed</li>
+        </ul>
+        <strong>Quiet Hours:</strong>
+        <ul>
+        <li>10:00 PM - 7:00 AM</li>
+        <li>Please respect neighbors</li>
+        <li>No parties or events</li>
+        </ul>
+        <strong>Smoking:</strong>
+        <ul>
+        <li>No smoking inside the property</li>
+        <li>Smoking permitted in designated areas only</li>
+        <li>RM 500 penalty for violations</li>
+        </ul>
+        <strong>Pets:</strong>
+        <ul>
+        <li>[Yes/No] - Pets [allowed/not allowed]</li>
+        <li>If allowed: Pet fee RM [X]/stay</li>
+        </ul>
+        <strong>Parking:</strong>
+        <ul>
+        <li>[X] parking space(s) provided</li>
+        <li>Unauthorized vehicles will be towed</li>
+        </ul>
+        <strong>Amenities Use:</strong>
+        <ul>
+        <li>Pool/Gym access: [Yes/No + hours]</li>
+        <li>Air-con: Please turn off when not in room</li>
+        <li>WiFi: For guest use only (no illegal downloads)</li>
+        </ul>
+        <strong>Damages:</strong>
+        <ul>
+        <li>Guest responsible for damages beyond normal wear</li>
+        <li>Security deposit may be used for repairs</li>
+        <li>Please report any issues immediately</li>
+        </ul>
+        <strong>Waste:</strong>
+        <ul>
+        <li>Please separate recyclables</li>
+        <li>Trash chute located on [floor]</li>
+        <li>Do not leave trash outside door</li>
+        </ul>
+        <strong>Visitors:</strong>
+        <ul>
+        <li>No unregistered visitors</li>
+        <li>[Alternative: Day visitors allowed with prior approval]</li>
+        </ul>
+        <strong>Compliance Failure:</strong>
+        <ul>
+        <li>Violations may result in early checkout without refund</li>
+        <li>Continued issues = immediate termination of stay</li>
+        </ul>
+        <hr class="my-8">
+        <h3>Emergency Contact:</h3>
+        <strong>iHousing responsive Hotline:</strong> +60 19-699 6688
+        <strong>For Emergencies Only:</strong> Lockouts, no water/power, safety issues
+        <strong>Non-Emergency:</strong> We respond within 12 hours
+        <hr class="my-8">
+        <strong>By booking this property, you agree to these house rules. Thank you for being a great guest!</strong>
+        <hr class="my-8">
+        <h2>Handling Specific Difficult Situations</h2>
+        <h3>Situation 1: Guest Demands Refund Mid-Stay</h3>
+        <strong>Guest says:</strong> "This isn't as described, I want 50% refund."
+        <strong>Don't:</strong>
+        <ul>
+        <li>✗ Argue aggressively</li>
+        <li>✗ Offer refund immediately</li>
+        <li>✗ Get emotional</li>
+        </ul>
+        <strong>Do:</strong>
+        <ol>
+        <li>Ask for specific issues (in writing)</li>
+        <li>Offer to fix what's wrong</li>
+        <li>Document everything (photos, messages)</li>
+        <li>Offer partial refund ONLY if you're at fault</li>
+        <li>If listing is accurate, politely decline</li>
+        </ol>
+        <strong>Script:</strong>
+        <code>\`</code>markdown
+        <p>"Hi [Name], sorry you're not enjoying your stay. We want to make this right.</p>
+        <p>Could you please specify which aspects don't match the listing? We provide [list what's included]. If something is genuinely not as described, we'll fix it or refund accordingly.</p>
+        <p>If the issue is a preference rather than a listing inaccuracy, we can't offer a refund. We're happy to help with any reasonable requests within our control."</p>
+        <code>\`</code>
+        <h3>Situation 2: Guest Damages Property and Denies</h3>
+        <strong>Don't:</strong>
+        <ul>
+        <li>✗ Accuse aggressively</li>
+        <li>✗ Enter property without notice</li>
+        <li>✗ Withhold security deposit without documentation</li>
+        </ul>
+        <strong>Do:</strong>
+        <ol>
+        <li>Take detailed photos with timestamps</li>
+        <li>Gather before/after comparison photos</li>
+        <li>Get repair quotes from 2-3 vendors</li>
+        <li>Send formal request via Airbnb resolution center</li>
+        <li>Use security deposit as specified</li>
+        </ol>
+        <strong>Script:</strong>
+        <code>\`</code>markdown
+        <p>"Hi [Name], during checkout inspection, our team noted:</p>
+        <p>[list damages with photos]</p>
+        <p>These are beyond normal wear and tear. Per our house rules, guests are responsible for damages.</p>
+        <p>Repair quotes: [attach quotes from vendors]</p>
+        <p>Total: RM [amount]</p>
+        <p>This will be deducted from your security deposit. Please confirm within 48 hours or we'll proceed with Airbnb's resolution process."</p>
+        <code>\`</code>
+        <h3>Situation 3: Neighbor Complaints About Noise</h3>
+        <strong>Don't:</strong>
+        <ul>
+        <li>✗ Ignore complaints</li>
+        <li>✗ Blame guest immediately</li>
+        <li>✗ Get into confrontation</li>
+        </ul>
+        <strong>Do:</strong>
+        <ol>
+        <li>Document neighbor complaints (time, details)</li>
+        <li>Contact guest immediately</li>
+        <li>Issue one warning</li>
+        <li>If continues, ask them to leave</li>
+        <li>Offer partial refund for early departure</li>
+        </ol>
+        <strong>Script:</strong>
+        <code>\`</code>markdown
+        <p>"Hi [Name], we've received complaints from neighbors about noise. Our house rules specify quiet hours from 10 PM-7 AM.</p>
+        <p>This is your first and only warning. Please reduce noise immediately. Continued complaints will result in early checkout without refund.</p>
+        <p>We want you to enjoy your stay, but also need to respect our neighbors."</p>
+        <code>\`</code>
+        <h3>Situation 4: Guest Refuses to Leave</h3>
+        <strong>Rare, but serious.</strong>
+        <strong>Don't:</strong>
+        <ul>
+        <li>✗ Enter property forcibly</li>
+        <li>✗ Remove belongings yourself</li>
+        <li>✗ Get physical</li>
+        </ul>
+        <strong>Do:</strong>
+        <ol>
+        <li>Message guest (for documentation)</li>
+        <li>Contact Airbnb immediately</li>
+        <li>If safety concern, call police</li>
+        <li>Start Airbnb resolution process</li>
+        <li>Consider legal action for damages</li>
+        </ol>
+        <strong>Script:</strong>
+        <code>\`</code>markdown
+        <p>"Hi [Name], your check-out time was 11:00 AM today. It's now [time]. You're overstaying, which violates our agreement and Airbnb policy.</p>
+        <p>Please vacate immediately. If you don't leave by [time + 1 hour], we'll involve Airbnb support and local authorities.</p>
+        <p>All refunds will be forfeited due to this violation."</p>
+        <code>\`</code>
+        <hr class="my-8">
+        <h2>The "No-Stress" Alternative: Let iHousing Handle It</h2>
+        <strong>Reality Check:</strong> Handling difficult guests takes time, energy, and emotional bandwidth. Many self-managing hosts burn out after 6-12 months.
+        <h3>What We Handle for Owners:</h3>
+        <strong>responsive guest communication:</strong>
+        <ul>
+        <li>✅ We respond to all messages</li>
+        <li>✅ Handle complaints professionally</li>
+        <li>✅ Enforce house rules</li>
+        <li>✅ Coordinate early check-outs if needed</li>
+        <li>✅ Never involve you unless absolutely necessary</li>
+        </ul>
+        <strong>Guest Screening:</strong>
+        <ul>
+        <li>✅ Review every booking request</li>
+        <li>✅ Verify ID and reviews</li>
+        <li>✅ Decline red-flag guests</li>
+        <li>✅ You only see approved guests</li>
+        </ul>
+        <strong>Problem Resolution:</strong>
+        <ul>
+        <li>✅ Handle damages claims</li>
+        <li>✅ Coordinate repairs</li>
+        <li>✅ Manage security deposits</li>
+        <li>✅ Airbnb resolution process</li>
+        </ul>
+        <strong>Your Role:</strong>
+        <ul>
+        <li>📱 Receive monthly reports</li>
+        <li>💰 Get paid (net income)</li>
+        <li>🏖️ Use property when vacant</li>
+        <li>😴 Sleep stress-free</li>
+        </ul>
+        <hr class="my-8">
+        <h2>Real Case: From Host Burnout to Passive Income</h2>
+        <strong>Owner:</strong> Mr. Tan, Singapore-based investor
+        <strong>Property:</strong> 2-bedroom in Melaka
+        <strong>Before Self-Managing:</strong> Dealing with guests himself
+        <ul>
+        <li>2 AM messages: "Can't find key"</li>
+        <li>Noise complaints: 3 times/month</li>
+        <li>Damages: RM 2,000 in 6 months</li>
+        <li>Stress: High, considered selling</li>
+        </ul>
+        <strong>After Switching to iHousing:</strong>
+        <ul>
+        <li>We handle all guest issues</li>
+        <li>responsive emergency hotline</li>
+        <li>Professional cleaning + inspection</li>
+        <li>Damages: RM 0 (we prevent + screen)</li>
+        <li>Income: Same, stress: Zero</li>
+        </ul>
+        <strong>His Words:</strong>
+        <em>"I was ready to quit Airbnb. The guests were driving me crazy. Now iHousing handles everything. I get my monthly payout and never hear from guests unless it's good news."</em>
+        <hr class="my-8">
+        <h2>Protecting Your Property (Prevention is Key)</h2>
+        <h3>Physical Protections:</h3>
+        <ol>
+        <li><strong>Smart Locks</strong></li>
+        </ol>
+        <ul>
+        <li>Change codes between guests</li>
+        <li>Track entry/exit times</li>
+        <li>No physical keys to lose</li>
+        </ul>
+        <ol>
+        <li><strong>Security Cameras (Exterior Only)</strong></li>
+        </ol>
+        <ul>
+        <li>Monitor entrances (legal requirement: disclose in listing)</li>
+        <li>Deter bad behavior</li>
+        <li>Evidence for disputes</li>
+        </ul>
+        <ol>
+        <li><strong>Inventory Checklist</strong></li>
+        </ol>
+        <ul>
+        <li>Document everything before first stay</li>
+        <li>Photos of valuable items</li>
+        <li>Replacement costs calculated</li>
+        </ul>
+        <ol>
+        <li><strong>Damage-Resistant Furnishings</strong></li>
+        </ol>
+        <ul>
+        <li>Stain-resistant fabrics</li>
+        <li>Durable materials</li>
+        <li>Easy-to-clean surfaces</li>
+        </ul>
+        <h3>Financial Protections:</h3>
+        <ol>
+        <li><strong>Airbnb Host Guarantee</strong></li>
+        </ol>
+        <ul>
+        <li>Up to \$1M USD coverage</li>
+        <li>Requires proper documentation</li>
+        <li>Doesn't cover normal wear</li>
+        </ul>
+        <ol>
+        <li><strong>Security Deposits</strong></li>
+        </ol>
+        <ul>
+        <li>RM 200-500 via Airbnb</li>
+        <li>Released 48 hours after checkout</li>
+        <li>Use for damages beyond wear</li>
+        </ul>
+        <ol>
+        <li><strong>Host Insurance</strong></li>
+        </ol>
+        <ul>
+        <li>Additional coverage beyond Airbnb</li>
+        <li>Local insurance options available</li>
+        <li>Protects against major damages</li>
+        </ul>
+        <hr class="my-8">
+        <h2>Managing Reviews: Turning Negative Into Positive</h2>
+        <h3>If You Get a Bad Review:</h3>
+        <strong>Don't:</strong>
+        <ul>
+        <li>✗ Argue publicly</li>
+        <li>✗ Get defensive</li>
+        <li>✗ Attack the guest personally</li>
+        </ul>
+        <strong>Do:</strong>
+        <ol>
+        <li>Wait 24 hours (cool down)</li>
+        <li>Respond professionally</li>
+        <li>Acknowledge valid criticism</li>
+        <li>Correct inaccuracies politely</li>
+        <li>Mention steps taken to improve</li>
+        </ol>
+        <strong>Response Template:</strong>
+        <code>\`</code>markdown
+        <p>"Hi [Name], thanks for staying with us and for your feedback.</p>
+        <p>We're sorry [valid issue they mentioned]. We've [steps taken to fix: retrained cleaning team / fixed appliance / updated listing].</p>
+        <p>Regarding [inaccurate claim], our listing states [clarification]. We apologize for any confusion.</p>
+        <p>We hope you'll give us another chance in the future."</p>
+        <code>\`</code>
+        <h3>Prevention = Better Reviews:</h3>
+        <ul>
+        <li>Set realistic expectations</li>
+        <li>Over-communicate before arrival</li>
+        <li>Respond quickly to issues</li>
+        <li>Provide welcome guide with local tips</li>
+        <li>Small touches (welcome snacks, local guide)</li>
+        </ul>
+        <hr class="my-8">
+        <h2>When to Call the Police</h2>
+        <p>Rare, but necessary situations:</p>
+        <ol>
+        <li><strong>Guest refuses to leave after checkout</strong></li>
+        <li><strong>Violent or threatening behavior</strong></li>
+        <li><strong>Illegal activity (drugs, prostitution)</strong></li>
+        <li><strong>Property damage in progress</strong></li>
+        </ol>
+        <strong>Procedure:</strong>
+        <ol>
+        <li>Don't confront alone</li>
+        <li>Call police (+60 12-234 5678 for Melaka)</li>
+        <li>Document everything (photos, messages)</li>
+        <li>Contact Airbnb immediately after</li>
+        <li>File insurance claim if needed</li>
+        </ol>
+        <hr class="my-8">
+        <h2>Emotional Aspects: Don't Take It Personally</h2>
+        <strong>Important Reality:</strong>
+        <ul>
+        <li>Difficult guests are about THEM, not you</li>
+        <li>Some people are just unhappy/complainers</li>
+        <li>You can't please everyone</li>
+        <li>5% problems is actually quite good</li>
+        </ul>
+        <strong>Coping Strategies:</strong>
+        <ul>
+        <li>Focus on the 95% great guests</li>
+        <li>Automate responses to reduce emotional involvement</li>
+        <li>Set boundaries (response times, personal info)</li>
+        <li>Take breaks (block dates when you need rest)</li>
+        <li>Remember: this is business, not personal</li>
+        </ul>
+        <strong>Or hire us</strong> and let us take the stress.
+        <hr class="my-8">
+        <h2>Financial Impact of Difficult Guests</h2>
+        <h3>The Costs of Self-Managing Problems:</h3>
+        <table>
+          <thead>
+            <tr><th>Issue</th><th>Frequency</th><th>Average Cost</th><th>Annual Impact</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Minor damages</td><td>5% of stays</td><td>RM 100</td><td>RM 500+</td></tr>
+            <tr><td>Major damages</td><td>1% of stays</td><td>RM 1,000</td><td>RM 1,000+</td></tr>
+            <tr><td>Time handling issues</td><td>3-5 hours/month</td><td>RM 50/hour value</td><td>RM 1,800-3,000</td></tr>
+            <tr><td>Stress value</td><td>Priceless</td><td>N/A</td><td>N/A</td></tr>
+            <tr><td>**Total Annual Cost**</td><td>**RM 3,300-4,500+**</td></tr>
+          </tbody>
+        </table>
+        <h3>Our Management Fee (RM 250-300/month):</h3>
+        <ul>
+        <li>Covers all guest issues</li>
+        <li>Professional handling</li>
+        <li>Zero stress for you</li>
+        <li>responsive support</li>
+        </ul>
+        <strong>ROI:</strong> You break even just on time saved, plus avoid damages and stress.
+        <hr class="my-8">
+        <h2>Ready for Stress-Free Airbnb Ownership?</h2>
+        <p>Stop dealing with difficult guests. Let us handle everything while you enjoy passive income.</p>
+        <strong>What We Offer:</strong>
+        <ul>
+        <li>✅ responsive guest communication</li>
+        <li>✅ Professional problem resolution</li>
+        <li>✅ Guest screening (we say "no" to problem guests)</li>
+        <li>✅ Damage prevention + handling</li>
+        <li>✅ Review management</li>
+        <li>✅ You just receive monthly payouts</li>
+        </ul>
+        <strong>WhatsApp Us:</strong>
+        <a href="https://wa.me/60196996688?text=Hi%20iHousing,%20I'm%20tired%20of%20dealing%20with%20difficult%20guests.%20Can%20you%20take%20over%20management?" target="_blank" rel="noopener" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 20px 0;">+60 19-699 6688</a>
+        <strong>Or learn more:</strong>
+        <ul>
+        <li>[Full Management Services](/services/full-management)</li>
+        <li>[Self-Manage vs Hire Company](/self-manage-airbnb-vs-hire-company-malaysia)</li>
+        <li>[Our Properties](/properties)</li>
+        </ul>
+        <hr class="my-8">
+        <strong>Last Updated:</strong> January 2025 | <strong>Based On:</strong> 10,000+ Guest Stays Managed
+        <em>Dealing with difficult guests doesn't have to be part of your Airbnb experience. Let iHousing handle the challenges while you enjoy the income.</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

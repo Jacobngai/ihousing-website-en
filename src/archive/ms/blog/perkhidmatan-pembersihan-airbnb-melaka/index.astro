@@ -1,0 +1,545 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Perkhidmatan Pembersihan Airbnb Melaka: Yang Perlu Dicari";
+const description = "Panduan lengkap mencari perkhidmatan pembersihan profesional untuk Airbnb di Melaka. Ketahui kos, kriteria penting, dan pasukan pembersihan dalaman vs外包.";
+const image = "/images/blog/perkhidmatan-pembersihan-airbnb-melaka.jpg";
+const date = "2025-01-24";
+const category = "operational";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Perkhidmatan Pembersihan Airbnb Melaka: Yang Perlu Dicari</h1>
+
+<h2>Mengapa Pembersihan Profesional Sangat Penting?</h2>
+
+<p>Dalam perniagaan Airbnb, <strong>pembersihan adalah nadi kejayaan</strong>. Statistik menunjukkan bahawa 85% tetamu akan memberi rating 1 bintang jika unit tidak bersih, walaupun fasiliti lain sempurna.</p>
+
+<p>Di Melaka, dengan lebih 19 juta pelancong setahun, persaingan adalah sengit. Untuk mengekalkan rating Superhost dan mendapat tempahan berulang, pembersihan yang konsisten adalah mandatori.</p>
+
+<p>Panduan ini akan membantu anda memilih perkhidmatan pembersihan yang tepat untuk hartanah Airbnb anda.</p>
+
+<h2>Pasukan Pembersihan Dalaman vs Outsourcing</h2>
+
+<h3>Pasukan Dalaman (Pembersihan Dalaman)</h3>
+
+<strong>Kelebihan:</strong>
+<ul>
+<li>Kualiti yang konsisten dan boleh diramal</li></ul>
+
+<ul>
+<li>Kos lebih rendah (tanpa markup)</li></ul>
+
+<ul>
+<li>Respons lebih pantas untuk kecemasan</li></ul>
+
+<ul>
+<li>Konflik kepentingan (fokus pada kualiti, bukan keuntungan)</li></ul>
+
+<strong>Kekurangan:</strong>
+<ul>
+<li>Perlu diurus oleh pengurus hartanah</li></ul>
+
+<ul>
+<li>Kos latihan dan peralatan</li></ul>
+
+<h3>Perkhidmatan Outsourcing (Pihak Ketiga)</h3>
+
+<strong>Kelebihan:</strong>
+<ul>
+<li>Tiada kos tetap</li></ul>
+
+<ul>
+<li>Fleksibel mengikut keperluan</li></ul>
+
+<strong>Kekurangan:</strong>
+<ul>
+<li><strong>Markup 30-50%</strong> ke atas kos sebenar</li></ul>
+
+<ul>
+<li>Kualiti tidak konsisten (pekerja berbeza setiap kali)</li></ul>
+
+<ul>
+<li>Respons lambat untuk kecemasan</li></ul>
+
+<ul>
+<li>Konflik kepentingan (markups untuk keuntungan)</li></ul>
+
+<p>Di iHousing, kami menggunakan <strong>pasukan pembersihan dalaman</strong> untuk menjamin kualiti dan kos yang telus.</p>
+
+<h2>Standard Pembersihan Airbnb: Apa Yang Perlu Ditawarkan</h2>
+
+<h3>Senarai Semak Pembersihan Antara Tetamu (30-60 minit)</h3>
+
+<p>#### Ruang Tamu</p>
+<ul>
+<li>[x] Sapu dan mop lantai</li></ul>
+
+<ul>
+<li>[x] Lap semua permukaan (meja, kerusi, sofa)</li></ul>
+
+<ul>
+<li>[x] Kosongkan tong sampah</li></ul>
+
+<ul>
+<li>[x] Urut semua kusyen dan bantal</li></ul>
+
+<ul>
+<li>[x] Lap skrin TV dan kawalan</li></ul>
+
+<ul>
+<li>[x] Periksa di bawah sofa untuk sampah</li></ul>
+
+<p>#### Bilik Tidur</p>
+<ul>
+<li>[x] Tukar linen katil (cadar, sarung bantal, quilt cover)</li></ul>
+
+<ul>
+<li>[x] Sapu dan mop lantai</li></ul>
+
+<ul>
+<li>[x] Lap almari dan laci dalaman</li></ul>
+
+<ul>
+<li>[x] Urut semula bantal dan quilt</li></ul>
+
+<ul>
+<li>[x] Lap permukaan meja malam</li></ul>
+
+<ul>
+<li>[x] Periksa di bawah katil</li></ul>
+
+<p>#### Bilik Air</p>
+<ul>
+<li>[x] Sembur dan lap tandas (dalam dan luar)</li></ul>
+
+<ul>
+<li>[x] Bersihkan sinki dan paip</li></ul>
+
+<ul>
+<li>[x] Sembur dan lap cermin</li></ul>
+
+<ul>
+<li>[x] Gosok jubin lantai</li></ul>
+
+<ul>
+<li>[x] Ganti tisu tandas</li></ul>
+
+<ul>
+<li>[x] Ganti sabun dan syampu (jika habis)</li></ul>
+
+<ul>
+<li>[x] Kosongkan tong sampah</li></ul>
+
+<p>#### Dapur</p>
+<ul>
+<li>[x] Basuh semua pinggan mangkuk dan periuk</li></ul>
+
+<ul>
+<li>[x] Lap semua permukaan dapur</li></ul>
+
+<ul>
+<li>[x] Bersihkan peti sejuk dalaman (buang makanan tinggal)</li></ul>
+
+<ul>
+<li>[x] Kosongkan tong sampah</li></ul>
+
+<ul>
+<li>[x] Lap microwave dan ketuhar</li></ul>
+
+<ul>
+<li>[x] Sapu dan mop lantai</li></ul>
+
+<h3>Pembersihan Mendalam (Deep Cleaning - Setiap 10-15 tempahan)</h3>
+
+<p>Selain pembersihan rutin, unit memerlukan pembersihan mendalam secara berkala:</p>
+
+<ul>
+<li>[x] Cuci tingkap dan langsir</li></ul>
+
+<ul>
+<li>[x] Cusi perabot upholsteri (sofa, kerusi)</li></ul>
+
+<ul>
+<li>[x] Cusi karpet</li></ul>
+
+<ul>
+<li>[x] Bersihkan di sebalik peralatan besar (peti sejuk, katil)</li></ul>
+
+<ul>
+<li>[x] Cuci panel dinding</li></ul>
+
+<ul>
+<li>[x] Bersihkan keluar saluran udara penyaman udara</li></ul>
+
+<ul>
+<li>[x] Cuci grout jubin bilik air</li></ul>
+
+<ul>
+<li>[x] Periksa dan bersihkan longkang</li></ul>
+
+<h2>Kos Pembersihan di Melaka: Panduan Harga</h2>
+
+<h3>Pasaran Pembersihan Airbnb Melaka</h3>
+
+<h3>Markup Yang Perlu Dielakkan</h3>
+
+<p>Banyak syarikat pengurusan mengenakan <strong>markup 30-50%</strong> ke atas kos pembersihan:</p>
+
+<p>Dalam setahun (dengan 40 pembersihan):</p>
+<ul>
+<li><strong>Jumlah markup:</strong> RM800 - RM2,000</li></ul>
+
+<p>Di iHousing, <strong>tiada markup</strong> - anda bayar kos pembersihan sebenar sahaja.</p>
+
+<h2>Kriteria Memilih Perkhidmatan Pembersihan</h2>
+
+<h3>1. Pengalaman Khusus Airbnb</h3>
+
+<p>Pembersihan hotel dan Airbnb adalah berbeza:</p>
+<ul>
+<li>Hotel: Pembersihan intensif setiap hari</li></ul>
+
+<ul>
+<li>Airbnb: Pembersihan pantas antara tetamu + deep cleaning berkala</li></ul>
+
+<p>Pastikan perkhidmatan yang anda pilih memahami:</p>
+<ul>
+<li>Kawalan masa (check-out 11am, check-in 3pm)</li></ul>
+
+<ul>
+<li>Standard tetamu Airbnb (lebih kritikal)</li></ul>
+
+<ul>
+<li>Bekalan yang perlu diisi</li></ul>
+
+<h3>2. Pasukan Tetap vs Kontraktor</h3>
+
+<strong>Pasukan Tetap (Lebih Baik):</strong>
+<ul>
+<li>Pekerja yang sama setiap kali</li></ul>
+
+<ul>
+<li>Mengenali unit anda dengan baik</li></ul>
+
+<ul>
+<li>Boleh dipercayai untuk kecemasan</li></ul>
+
+<strong>Kontrakter (Kurang Baik):</strong>
+<ul>
+<li>Pekerja berbeza setiap kali</li></ul>
+
+<ul>
+<li>Tidak mengenali unit</li></ul>
+
+<ul>
+<li>Kualiti tidak konsisten</li></ul>
+
+<h3>3. Kos Tetap vs Per Lawatan</h3>
+
+<strong>Kos Tetap (Lebih Baik):</strong>
+<ul>
+<li>Anda tahu tepat kos setiap pembersihan</li></ul>
+
+<ul>
+<li>Lebih mudah untuk meramalkan perbelanjaan</li></ul>
+
+<strong>Kos Per Lawatan (Kurang Baik):</strong>
+<ul>
+<li>Kos berubah mengikut masa yang diambil</li></ul>
+
+<ul>
+<li>Lebih sukar untuk meramalkan</li></ul>
+
+<h3>4. Sistem Kawalan Kualiti</h3>
+
+<p>Tanya soalan berikut:</p>
+<ul>
+<li>Adakah ada senarai semak pembersihan?</li></ul>
+
+<ul>
+<li>Adakah ada gambar "sebelum dan selepas"?</li></ul>
+
+<ul>
+<li>Adakah ada pemeriksaan kualiti secara rawak?</li></ul>
+
+<ul>
+<li>Adakah ada sistem rating untuk pembersih?</li></ul>
+
+<h3>5. Ketersediaan Kecemasan</h3>
+
+<ul>
+<li>Bolehkah anda panggil untuk pembersihan kecemasan?</li></ul>
+
+<ul>
+<li>Berapa pantas respons? (30 minit? 2 jam?)</li></ul>
+
+<ul>
+<li>Adakah ada caj tambahan untuk kecemasan?</li></ul>
+
+<h2>Bekalan Pembersihan: Siapa Yang Membekalkan?</h2>
+
+<h3>Pilihan 1: Pemilik Bekal Semua</h3>
+
+<strong>Kelebihan:</strong>
+<ul>
+<li>Kawalan penuh atas kualiti</li></ul>
+
+<ul>
+<li>Kos lebih rendah</li></ul>
+
+<strong>Kekurangan:</strong>
+<ul>
+<li>Perlu mengurus inventori</li></ul>
+
+<ul>
+<li>Masa untuk membeli</li></ul>
+
+<h3>Pilihan 2: Syarikat Pembersihan Bekal</h3>
+
+<strong>Kelebihan:</strong>
+<ul>
+<li>Tiada kerusi inventori</li></ul>
+
+<strong>Kekurangan:</strong>
+<ul>
+<li><strong>Markup 30-50%</strong> ke atas harga runcit</li></ul>
+
+<ul>
+<li>Tidak tahu jenama yang digunakan</li></ul>
+
+<p>Contoh markup:</p>
+<ul>
+<li>Barang tandas: kos RM15, caj RM25</li></ul>
+
+<ul>
+<li>Sabun & syampu: kos RM20, caj RM30</li></ul>
+
+<ul>
+<li>Linen basuh: kos RM30, caj RM50</li></ul>
+
+<strong>Jumlah tahunan:</strong> RM300 - RM500 tambahan
+
+<p>Di iHousing, bekalan disediakan <strong>kos asas tanpa markup</strong>.</p>
+
+<h2>Carta Alir Pembersihan Antara Tetamu</h2>
+
+<h3>Tertib Pembersihan (Untuk Kecekapan Maksimum)</h3>
+
+<p><code></p>
+<li>Buang sampah dan basuh pinggan (5 minit)</li>
+<p>   ↓</p>
+<li>Tukar linen katil (10 minit)</li>
+<p>   ↓</p>
+<li>Sembur semua permukaan dengan pembersih (5 minit)</li>
+<p>   ↓</p>
+<li>Biarkan pembersih bertindak (10 minit)</li>
+<p>   ↓</p>
+<li>Lap semua permukaan sementara menunggu (15 minit)</li>
+<p>   ↓</p>
+<li>Sapu dan mop semua lantai (10 minit)</li>
+<p>   ↓</p>
+<li>Periksa akhir (5 minit)</li>
+
+
+<strong>Total masa:</strong> 50-60 minit untuk 2-bedroom unit
+
+<h2>Membina Hubungan dengan Pasukan Pembersihan</h2>
+
+<h3>Komunikasi Yang Jelas</h3>
+
+<p>Buat manual pembersihan untuk unit anda:</p>
+<ul>
+<li>Peta lantai dengan label</li></ul>
+
+<ul>
+<li>Foto "sebelum dan selepas" yang diingini</li></ul>
+
+<ul>
+<li>Senarai semak khusus untuk unit anda</li></ul>
+
+<ul>
+<li>Kawasan sensitif (perabot mahal, kawasan yang sukar dicapai)</li></ul>
+
+<h3>Pemeriksaan Berkala</h3>
+
+<p>Lakukan pemeriksaan kualiti secara rawak:</p>
+<ul>
+<li>1 bulan sekali (secara kebetulan)</li></ul>
+
+<ul>
+<li>Beri rating pembersihan (1-5 bintang)</li></ul>
+
+<ul>
+<li>Kongsi maklum balas dengan pasukan</li></ul>
+
+<h3>Ganjaran untuk Kualiti</h3>
+
+<p>Bonus kecil untuk pembersihan sempurna:</p>
+<ul>
+<li>Rating 5 bintang berturut-turut: RM10 bonus</li></ul>
+
+<ul>
+<li>0 aduan tetamu dalam sebulan: RM50 bonus</li></ul>
+
+<p>Ini termotivasi pasukan untuk mengekalkan kualiti.</p>
+
+<h2>Isu Biasa & Penyelesaian</h2>
+
+<h3>Isu 1: Bau Hanyir / Lembab</h3>
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Buka semua tingkap selepas check-out</li></ul>
+
+<ul>
+<li>Guna penyerap bau (baking soda, arang aktif)</li></ul>
+
+<ul>
+<li>Cuci langsir dan kerusi upholsteri secara berkala</li></ul>
+
+<h3>Isu 2: Rambut di Lantai</h3>
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Guna vacuum dengan HEPA filter</li></ul>
+
+<ul>
+<li>Mop selepas vacuum (bukan sebelum)</li></ul>
+
+<ul>
+<li>Elakkan sapu (penasaran rambut)</li></ul>
+
+<h3>Isu 3: Bilik Air Berkapur</h3>
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Sembur pembersih dan biarkan 5 minit</li></ul>
+
+<ul>
+<li>Guna sikat jubin untuk grout</li></ul>
+
+<ul>
+<li>Bilas dengan air panas</li></ul>
+
+<h3>Isu 4: Linen Berkedut</h3>
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Guna mesin basuh dengan fungsi steam</li></ul>
+
+<ul>
+<li>Lipat linen sejuk sebelum menyimpan</li></ul>
+
+<ul>
+<li>Simpan di tempat kering</li></ul>
+
+<h2>Kalkulator Kos Pembersihan Tahunan</h2>
+
+<h3>Contoh: Unit 2-Bedroom dengan 40 Malam/Tahun</h3>
+
+<h3>Dengan Markup Outsourcing (30-50%)</h3>
+
+<strong>Jimat dengan pasukan dalaman:</strong> RM1,359 - RM2,265/tahun
+
+<h2>Soalan Lazim (FAQ)</h2>
+
+<h3>Q: Berapa kerap perlu deep cleaning?</h3>
+
+<p>A: Setiap 10-15 tempahan, atau sekurang-kurangnya 3 bulan sekali. Untuk unit dengan penggunaan intensif, setiap 20 tempahan.</p>
+
+<h3>Q: Bolehkah saya minta tetamu untuk membersihkan?</h3>
+
+<p>A: Tidak. Walaupun anda boleh meminta tetamu untuk "basuh pinggan dan buang sampah", jangan jangka mereka melakukan pembersihan sebenar. Tetamu membayar untuk penginapan, bukan untuk bekerja.</p>
+
+<h3>Q: Adakah perlu menyewa profesional untuk deep cleaning?</h3>
+
+<p>A: Ya. Pembersihan mendalam memerlukan peralatan khusus (steam cleaner, vacuum industri) dan masa yang lebih lama. Lebih baik upah profesional untuk hasil terbaik.</p>
+
+<h3>Q: Berapa masa antara check-out dan check-in?</h3>
+
+<p>A: Minimum 4 jam adalah ideal. Check-out 11am, check-in 3pm. Ini memberi masa cukup untuk pembersihan yang menyeluruh.</p>
+
+<h3>Q: Apakah yang perlu dilakukan jika tetamu meninggalkan unit sangat kotor?</h3>
+
+<p>A: Ambil gambar sebagai bukti, hubungi tetamu untuk meminta bayaran tambahan (jika serius), dan upah pembersihan profesional yang lebih lengkap.</p>
+
+<h2>Pilihan Perkhidmatan Pembersihan di Melaka</h2>
+
+<h3>Pilihan 1: Urus Sendiri</h3>
+
+<strong>Untuk:</strong>
+<ul>
+<li>Pemilik yang ada masa</li></ul>
+
+<ul>
+<li>Unit berhampiran dengan kediaman pemilik</li></ul>
+
+<ul>
+<li>Kos minimum diutamakan</li></ul>
+
+<strong>Kos:</strong> RM50 - RM130/lawatan (harga pasaran)
+
+<h3>Pilihan 2: Upah Syarikat Pengurusan dengan Pasukan Dalaman</h3>
+
+<strong>Untuk:</strong>
+<ul>
+<li>Pemilik yang tiada masa</li></ul>
+
+<ul>
+<li>Ingin kualiti yang konsisten</li></ul>
+
+<ul>
+<li>Ingin kos yang telus (tanpa markup)</li></ul>
+
+<strong>Kos:</strong> Bergantung pada model (komisen atau yuran tetap)
+
+<p>Di iHousing, untuk Parkland Avenue by the Sea, yuran tetap RM200-300/bulan sudah termasuk pembersihan dalaman tanpa markup.</p>
+
+<h3>Pilihan 3: Perkhidmatan Outsourcing</h3>
+
+<strong>Untuk:</strong>
+<ul>
+<li>Unit dengan penggunaan rendah</li></ul>
+
+<ul>
+<li>Fleksibiliti diperlukan</li></ul>
+
+<strong>Kos:</strong> RM60 - RM180/lawatan (dengan markup)
+
+<h2>Dapatkan Konsultasi Percuma Untuk Unit Anda</h2>
+
+<p>Adakah anda keliru memilih perkhidmatan pembersihan untuk Airbnb anda?</p>
+
+<p>WhatsApp kami untuk:</p>
+<ul>
+<li>Analisis keperluan pembersihan unit anda</li></ul>
+
+<ul>
+<li>Anggaran kos pembersihan tahunan</li></ul>
+
+<ul>
+<li>Cadangan pasukan pembersihan yang sesuai</li></ul>
+
+<ul>
+<li>Perbandingan kos (urus sendiri vs upah profesional)</li></ul>
+
+<strong>[WhatsApp Kami untuk Konsultasi Pembersihan Percuma]</strong>
+
+<p>Kami akan membantu anda memilih penyelesaian pembersihan yang sesuai dengan bajet dan keperluan unit anda.</p>
+
+<p>Ingat: Pembersihan yang baik = Rating tinggi = Pendapatan lebih tinggi. Jangan compromise pada kualiti.</p>
+
+<p>Tunggu apa lagi? Hubungi kami hari ini untuk memulakan.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

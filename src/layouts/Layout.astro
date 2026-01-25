@@ -1,0 +1,233 @@
+---
+/**
+ * Layout - Main Layout Component for iHousing
+ * English-only layout with SEO support
+ */
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const { title, description, image } = Astro.props;
+const siteUrl = 'https://www.ihousing.net';
+const ogImage = image || `${siteUrl}/images/og-default.jpg`;
+
+// Link helpers (no language prefix for root URLs)
+const l = (link: string) => link;
+const contactFormLink = '/contact-form/';
+const homeLink = '/';
+const blogLink = '/blog/';
+const aboutLink = '/about/';
+const contactLink = '/contact/';
+const servicesLink = '/services/';
+const propertiesLink = '/properties/';
+const parklandLink = '/parkland/avenue-by-the-sea/';
+
+// Navigation labels (English)
+const t = { home: 'Home', services: 'Services', properties: 'Properties', blog: 'Blog', about: 'About', contact: 'Contact', contactUs: 'Contact Us', sendMsg: 'Send Us a Message', viewProp: 'View Property Details' };
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+
+  <body class="antialiased font-sans bg-white text-gray-900">
+    <!-- Header -->
+    <header class="bg-green-900 text-white py-4 sticky top-0 z-50 shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <a href={homeLink} class="text-2xl font-bold">iHousing</a>
+        <nav class="hidden lg:flex items-center space-x-6">
+          <a href={homeLink} class="hover:text-green-300 font-medium">{t.home}</a>
+
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center hover:text-green-300 focus:outline-none font-medium">
+              {t.services}
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-72 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="py-3">
+                <a href={l('/services/full-management/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700">Full Management</a>
+                <a href={l('/services/renovation/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700">Renovation & Furnishing</a>
+                <a href={l('/services/how-it-works/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700">How It Works</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Properties We Manage Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center hover:text-green-300 focus:outline-none font-medium">
+              {t.properties}
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-96 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="py-3 max-h-[400px] overflow-y-auto">
+                <a href={parklandLink} class="flex items-center px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700">
+                  <span class="mr-2">⭐</span> Parkland Avenue by the Sea
+                </a>
+                <hr class="my-2 border-gray-200">
+                <p class="px-4 py-1 text-xs text-gray-500 font-semibold">ALL MANAGED CONDOS</p>
+                <a href={l('/switch-to-us/silverscape-residence/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700 text-sm">Silverscape Residence</a>
+                <a href={l('/switch-to-us/the-shore-residence/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700 text-sm">The Shore Residence</a>
+                <a href={l('/switch-to-us/imperio-residence/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700 text-sm">Imperio Residence</a>
+                <a href={l('/switch-to-us/ong-kim-wee-residence/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700 text-sm">Ong Kim Wee Residence</a>
+                <a href={l('/switch-to-us/novo-8-residence/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700 text-sm">Novo 8 Residence</a>
+                <a href={l('/switch-to-us/century-mahkota/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700 text-sm">Century Mahkota</a>
+                <a href={l('/switch-to-us/wave-residence/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700 text-sm">Wave Residence</a>
+                <a href={l('/switch-to-us/quartz-residence/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700 text-sm">Quartz Residence</a>
+                <a href={l('/switch-to-us/atlantis-residence/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700 text-sm">Atlantis Residence</a>
+                <a href={l('/switch-to-us/parkland-residence/')} class="block px-4 py-2 text-gray-800 hover:bg-green-50 hover:text-green-700 text-sm">Parkland Residence</a>
+                <hr class="my-2 border-gray-200">
+                <a href={propertiesLink} class="block px-4 py-2 text-green-700 hover:bg-green-50 font-semibold text-sm">{t.viewProp} →</a>
+              </div>
+            </div>
+          </div>
+
+          <a href={blogLink} class="hover:text-green-300 font-medium">{t.blog}</a>
+          <a href={aboutLink} class="hover:text-green-300 font-medium">{t.about}</a>
+          <a href={contactLink} class="hover:text-green-300 font-medium">{t.contact}</a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <a href={contactFormLink} class="hidden md:block bg-green-500 hover:bg-green-400 text-white px-5 py-2.5 rounded-lg font-semibold transition-colors">
+          {t.contactUs}
+        </a>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden px-4 pt-4 pb-4 bg-green-900 border-t border-green-800">
+        <a href={homeLink} class="block py-2 hover:text-green-300 font-medium">{t.home}</a>
+        <div class="py-2">
+          <p class="text-green-300 font-semibold mb-2">{t.services}:</p>
+          <div class="pl-4 space-y-1 text-sm">
+            <a href={l('/services/full-management/')} class="block py-1 hover:text-green-300">Full Management</a>
+            <a href={l('/services/renovation/')} class="block py-1 hover:text-green-300">Renovation</a>
+            <a href={l('/services/how-it-works/')} class="block py-1 hover:text-green-300">How It Works</a>
+          </div>
+        </div>
+        <div class="py-2">
+          <p class="text-green-300 font-semibold mb-2">{t.properties}:</p>
+          <div class="pl-4 space-y-1 text-sm">
+            <a href={parklandLink} class="block py-1 hover:text-green-300">⭐ Parkland Avenue by the Sea</a>
+            <a href={l('/switch-to-us/silverscape-residence/')} class="block py-1 hover:text-green-300">Silverscape Residence</a>
+            <a href={l('/switch-to-us/the-shore-residence/')} class="block py-1 hover:text-green-300">The Shore Residence</a>
+            <a href={l('/switch-to-us/imperio-residence/')} class="block py-1 hover:text-green-300">Imperio Residence</a>
+            <a href={l('/switch-to-us/ong-kim-wee-residence/')} class="block py-1 hover:text-green-300">Ong Kim Wee Residence</a>
+            <a href={l('/switch-to-us/novo-8-residence/')} class="block py-1 hover:text-green-300">Novo 8 Residence</a>
+            <a href={l('/switch-to-us/century-mahkota/')} class="block py-1 hover:text-green-300">Century Mahkota</a>
+            <a href={l('/switch-to-us/wave-residence/')} class="block py-1 hover:text-green-300">Wave Residence</a>
+            <a href={l('/switch-to-us/quartz-residence/')} class="block py-1 hover:text-green-300">Quartz Residence</a>
+            <a href={l('/switch-to-us/atlantis-residence/')} class="block py-1 hover:text-green-300">Atlantis Residence</a>
+            <a href={l('/switch-to-us/parkland-residence/')} class="block py-1 hover:text-green-300">Parkland Residence</a>
+            <a href={propertiesLink} class="block py-1 hover:text-green-300 font-semibold">{t.viewProp} →</a>
+          </div>
+        </div>
+        <a href={blogLink} class="block py-2 hover:text-green-300 font-medium">{t.blog}</a>
+        <a href={aboutLink} class="block py-2 hover:text-green-300 font-medium">{t.about}</a>
+        <a href={contactLink} class="block py-2 hover:text-green-300 font-medium">{t.contact}</a>
+        <a href={contactFormLink} class="block mt-4 bg-green-500 hover:bg-green-400 text-white px-4 py-2.5 rounded-lg font-semibold text-center">
+          {t.contactUs}
+        </a>
+      </div>
+    </header>
+
+    <script is:inline>
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    </script>
+
+    <!-- Main Content -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">iHousing</h3>
+            <p class="text-gray-400">Professional Airbnb property management in Melaka. Flat RM200-300/month fee.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">{t.services}</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href={l('/services/full-management/')} class="hover:text-white">Full Management</a></li>
+              <li><a href={l('/services/renovation/')} class="hover:text-white">Renovation</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">{t.properties}</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href={parklandLink} class="hover:text-white">Parkland Avenue</a></li>
+              <li><a href={propertiesLink} class="hover:text-white">All Properties</a></li>
+              <li><a href={blogLink} class="hover:text-white">{t.blog}</a></li>
+              <li><a href={aboutLink} class="hover:text-white">{t.about}</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">{t.contactUs}</h4>
+            <p class="text-gray-400 mb-2">Get a free consultation for your property</p>
+            <a href={contactFormLink} class="inline-block bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-lg transition-colors">
+              {t.sendMsg}
+            </a>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+          <p>&copy; {new Date().getFullYear()} iHousing. All rights reserved.</p>
+          <p class="mt-2 text-sm">
+            <a href={l('/privacy/')} class="hover:text-white">Privacy Policy</a> | <a href={l('/terms/')} class="hover:text-white">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

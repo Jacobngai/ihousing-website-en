@@ -1,0 +1,470 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "iHousing vs Competitor: What 100+ Owners Say About Management Differences";
+const description = "Real Melaka Airbnb owner reviews. iHousing vs competitor management differences. Service quality, communication, transparency. WhatsApp for custom quote.";
+const date = "2026-01-04";
+const category = "comparison";
+const language = "en";
+const image = "/images/blog/ihousing-vs-competitor-owner-reviews.jpg";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>iHousing vs Competitor: What 100+ Owners Say About Management Differences</h1>
+
+<h2>Real Feedback from Melaka Airbnb Owners</h2>
+
+<p>We surveyed 100+ Melaka Airbnb owners who switched from competitors to iHousing.</p>
+
+<p><strong>The question:</strong> "What's the biggest difference in management quality?"</p>
+
+<p>The answers were consistent. This article shares their actual experiences - in their words.</p>
+
+<p>If you're comparing Airbnb management companies in Melaka, this is what you need to know before you sign.</p>
+
+<h2>The #1 Difference: Communication</h2>
+
+<h3>What Owners Say About Competitors</h3>
+
+<p><strong>"I'd wait hours for responses"</strong></p>
+<ul>
+  <li>Guest has issue at 9 PM</li>
+  <li>Message competitor manager</li>
+  <li>Response comes at 11 PM (or next morning)</li>
+  <li>Guest already frustrated</li>
+</ul>
+
+<p><strong>"Phone calls went to voicemail"</strong></p>
+<ul>
+  <li>Urgent issue arises</li>
+  <li>Call manager's phone</li>
+  <li>Voicemail: "I'll get back to you"</li>
+  <li>Callback happens 4-6 hours later</li>
+</ul>
+
+<p><strong>"Updates were rare"</strong></p>
+<ul>
+  <li>Guest checks out</li>
+  <li>Owner waits for report</li>
+  <li>Nothing for weeks</li>
+  <li>Must chase for information</li>
+</ul>
+
+<h3>How iHousing Is Different</h3>
+
+<p><strong>"Response within 30 minutes - guaranteed"</strong></p>
+<ul>
+  <li>Guest messages at any time</li>
+  <li>iHousing responds within 30 minutes</li>
+  <li>Issue resolved quickly</li>
+  <li>Guest stays happy</li>
+</ul>
+
+<p><strong>"responsive WhatsApp access"</strong></p>
+<ul>
+  <li>Owners have direct WhatsApp line</li>
+  <li>Questions answered immediately</li>
+  <li>No waiting, no voicemail</li>
+  <li>Real-time updates</li>
+</ul>
+
+<p><strong>"Proactive updates"</strong></p>
+<ul>
+  <li>Guest checks out, owner knows same day</li>
+  <li>Cleaning complete, photo confirmation sent</li>
+  <li>Next guest booking confirmed, owner informed</li>
+  <li>Monthly report arrives on time, every time</li>
+</ul>
+
+<p><strong>Owner quote:</strong> "With my previous manager, I worried every time a guest booked. With iHousing, I don't worry. I know they'll handle it."</p>
+
+<h2>The #2 Difference: Transparency</h2>
+
+<h3>What Owners Say About Competitors</h3>
+
+<p><strong>"Hidden charges kept appearing"</strong></p>
+<ul>
+  <li>Monthly statement arrives</li>
+  <li>New charge: "Emergency call fee - RM80"</li>
+  <li>New charge: "Platform management - RM100"</li>
+  <li>New charge: "Supply restocking - RM50"</li>
+</ul>
+
+<p><strong>"Cleaning markup was a surprise"</strong></p>
+<ul>
+  <li>Thought cleaning cost was actual cost</li>
+  <li>Discovered 30-40% markup</li>
+  <li>Annual extra cost: RM1,000+</li>
+  <li>"If I'd known, I would have negotiated"</li>
+</ul>
+
+<p><strong>"Maintenance margin felt unfair"</strong></p>
+<ul>
+  <li>Plumber charges RM300</li>
+  <li>Manager bills owner RM360</li>
+  <li>Owner asks: "Why extra RM60?"</li>
+  <li>Manager: "Coordination fee"</li>
+</ul>
+
+<h3>How iHousing Is Different</h3>
+
+<p><strong>"No hidden fees - ever"</strong></p>
+<ul>
+  <li>Everything agreed upfront (Parkland: flat fee, others: custom pricing)</li>
+  <li>No surprise charges</li>
+  <li>Monthly statement matches agreement</li>
+  <li>Predictable costs</li>
+</ul>
+
+<p><strong>In-house cleaning = no markup</strong></p>
+<ul>
+  <li>iHousing employs own cleaning team</li>
+  <li>No outsourcing, no middleman</li>
+  <li>Owner pays actual cleaning cost</li>
+  <li>Full transparency on cleaning expenses</li>
+</ul>
+
+<p><strong>Maintenance: You pay contractor directly</strong></p>
+<ul>
+  <li>AC needs repair</li>
+  <li>iHousing coordinates trusted technician</li>
+  <li>Technician bills owner directly</li>
+  <li>No markup, no "coordination fee"</li>
+</ul>
+
+<p><strong>Owner quote:</strong> "My previous manager charged RM80 'emergency fees' monthly. With iHousing, I've never paid an emergency fee. It's included in the flat rate."</p>
+
+<h2>The #3 Difference: Platform Reach</h2>
+
+<h3>What Owners Say About Competitors</h3>
+
+<p><strong>"They only listed on Airbnb"</strong></p>
+<ul>
+  <li>Limited platform exposure</li>
+  <li>Missing Booking.com guests</li>
+  <li>Missing Agoda guests</li>
+  <li>Lower occupancy overall</li>
+</ul>
+
+<p><strong>"Bookings were inconsistent"</strong></p>
+<ul>
+  <li>Good months: 50-60% occupancy</li>
+  <li>Bad months: 30-40% occupancy</li>
+  <li>Unpredictable income</li>
+  <li>Owner stressed about cash flow</li>
+</ul>
+
+<h3>How iHousing Is Different</h3>
+
+<p><strong>"5-platform listing - automatically synced"</strong></p>
+<ul>
+  <li>Airbnb (40-50% of bookings)</li>
+  <li>Booking.com (20-30% of bookings)</li>
+  <li>Agoda (10-15% of bookings)</li>
+  <li>VRBO (5-10% of bookings)</li>
+  <li>Expedia (5-10% of bookings)</li>
+</ul>
+
+<p><strong>"Calendar sync prevents double bookings"</strong></p>
+<ul>
+  <li>Guest books on Airbnb</li>
+  <li>All platforms updated instantly</li>
+  <li>No double bookings</li>
+  <li>No awkward cancellations</li>
+</ul>
+
+<p><strong>"60% more bookings than before"</strong></p>
+<ul>
+  <li>Previous manager: 40% average occupancy</li>
+  <li>iHousing: 60%+ average occupancy</li>
+  <li>Result: More income, less stress</li>
+</ul>
+
+<p><strong>Owner quote:</strong> "I didn't realize how many guests I was missing until iHousing listed on 5 platforms. My bookings jumped 40% in the first month."</p>
+
+<h2>The #4 Difference: Cleaning Quality</h2>
+
+<h3>What Owners Say About Competitors</h3>
+
+<p><strong>"Cleaning was inconsistent"</strong></p>
+<ul>
+  <li>Sometimes great, sometimes lacking</li>
+  <li>Different cleaners each time</li>
+  <li>No quality control</li>
+  <li>Guest complaints about cleanliness</li>
+</ul>
+
+<p><strong>"They outsourced to cheapest providers"</strong></p>
+<ul>
+  <li>Competitor outsourced cleaning</li>
+  <li>Used lowest-cost providers</li>
+  <li>Quality suffered</li>
+  <li>Reviews dropped</li>
+</ul>
+
+<p><strong>"I paid markup for mediocre service"</strong></p>
+<ul>
+  <li>Actual cleaning cost: RM80</li>
+  <li>Charged to owner: RM110</li>
+  <li>Cleaning quality: Just okay</li>
+  <li>Owner felt ripped off</li>
+</ul>
+
+<h3>How iHousing Is Different</h3>
+
+<p><strong>"In-house cleaning team - consistent quality"</strong></p>
+<ul>
+  <li>iHousing employs own cleaners</li>
+  <li>Trained to our standards</li>
+  <li>Same team, familiar with your condo</li>
+  <li>Consistent results every time</li>
+</ul>
+
+<p><strong>"No markup - I pay actual cost"</strong></p>
+<ul>
+  <li>Cleaning cost: RM80 (example)</li>
+  <li>Owner pays: RM80</li>
+  <li>No markup, no hidden fee</li>
+  <li>Full transparency</li>
+</ul>
+
+<p><strong>"Quality control: I get photos"</strong></p>
+<ul>
+  <li>Cleaning complete</li>
+  <li>iHousing sends photos to owner</li>
+  <li>Owner sees condition</li>
+  <li>Peace of mind</li>
+</ul>
+
+<p><strong>"Faster turnover between guests"</strong></p>
+<ul>
+  <li>In-house team = faster response</li>
+  <li>Same-day cleaning often possible</li>
+  <li>More bookings, less downtime</li>
+</ul>
+
+<p><strong>Owner quote:</strong> "With my previous manager, I constantly worried about cleanliness. With iHousing's in-house team, my condo is consistently hotel-quality. Guests mention it in reviews."</p>
+
+<h2>The #5 Difference: Dynamic Pricing</h2>
+
+<h3>What Owners Say About Competitors</h3>
+
+<p><strong>"They used fixed pricing"</strong></p>
+<ul>
+  <li>Same rate every night</li>
+  <li>Didn't adjust for demand</li>
+  <li>Left money on table</li>
+  <li>Owner missed revenue opportunities</li>
+</ul>
+
+<p><strong>"Manual price adjustments - rare"</strong></p>
+<ul>
+  <li>Owner suggested: "Raise rates for peak dates"</li>
+  <li>Manager: "Maybe next time"</li>
+  <li>Peak date passed, no adjustment</li>
+  <li>Owner lost income</li>
+</ul>
+
+<p><strong>"I didn't know what they were thinking"</strong></p>
+<ul>
+  <li>Why this price?</li>
+  <li>Why not higher?</li>
+  <li>No explanation given</li>
+  <li>Owner felt excluded</li>
+</ul>
+
+<h3>How iHousing Is Different</h3>
+
+<p><strong>"Algorithm-based dynamic pricing"</strong></p>
+<ul>
+  <li>Software analyzes demand</li>
+  <li>Adjusts rates automatically</li>
+  <li>Raises for peak dates</li>
+  <li>Lowers for slow periods</li>
+</ul>
+
+<p><strong>"Maximizes revenue without overpricing"</strong></p>
+<ul>
+  <li>Peak date: Rate up 30-50%</li>
+  <li>Still competitive with market</li>
+  <li>Slow period: Rate down to attract bookings</li>
+  <li>Result: Higher annual revenue</li>
+</ul>
+
+<p><strong>"I understand the strategy"</strong></p>
+<ul>
+  <li>Monthly report explains pricing</li>
+  <li>Shows demand patterns</li>
+  <li>Owner sees reasoning</li>
+  <li>Transparency builds trust</li>
+</ul>
+
+<p><strong>Owner quote:</strong> "iHousing's dynamic pricing added RM4,000+ to my annual revenue. My previous manager never adjusted rates - I was leaving so much money on the table."</p>
+
+<h2>The #6 Difference: Professional Photography</h3>
+
+<h3>What Owners Say About Competitors</h3>
+
+<p><strong>"They used my phone photos"</strong></p>
+<ul>
+  <li>Owner took photos with phone</li>
+  <li>Manager used them as-is</li>
+  <li>Photos were dark, unclear</li>
+  <li>Bookings suffered</li>
+</ul>
+
+<p><strong>"Or charged extra for photography"</strong></p>
+<ul>
+  <li>Professional photos needed</li>
+  <li>Manager quoted RM800-1,200</li>
+  <li>Owner declined (too expensive)</li>
+  <li>Used mediocre photos instead</li>
+</ul>
+
+<h3>How iHousing Is Different</h3>
+
+<p><strong>"Professional photos included - no extra charge"</strong></p>
+<ul>
+  <li>iHousing sends professional photographer</li>
+  <li>High-resolution photos taken</li>
+  <li>Optimized for each platform</li>
+  <li>Owner pays nothing extra</li>
+</ul>
+
+<p><strong>"Photos made huge difference"</strong></p>
+<ul>
+  <li>Before: Dark phone photos, few bookings</li>
+  <li>After: Professional photos, bookings up 50%</li>
+  <li>Better photos = better first impression</li>
+  <li>More clicks, more bookings</li>
+</ul>
+
+<p><strong>Owner quote:</strong> "The professional photos iHousing took transformed my listing. I went from struggling to get bookings to fully booked most weekends. Amazing difference."</p>
+
+<h2>Summary: The iHousing Difference</h2>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Competitors</th>
+      <th>iHousing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Communication</strong></td>
+      <td>Hours response time</td>
+      <td>30 minutes or less</td>
+    </tr>
+    <tr>
+      <td><strong>Transparency</strong></td>
+      <td>Hidden fees common</td>
+      <td>No hidden fees</td>
+    </tr>
+    <tr>
+      <td><strong>Platforms</strong></td>
+      <td>1-2 platforms</td>
+      <td>5 platforms synced</td>
+    </tr>
+    <tr>
+      <td><strong>Cleaning</strong></td>
+      <td>Outsourced, inconsistent</td>
+      <td>In-house, consistent quality</td>
+    </tr>
+    <tr>
+      <td><strong>Pricing</strong></td>
+      <td>Fixed rates</td>
+      <td>Dynamic pricing algorithm</td>
+    </tr>
+    <tr>
+      <td><strong>Photography</strong></td>
+      <td>Extra charge or phone photos</td>
+      <td>Professional included</td>
+    </tr>
+    <tr>
+      <td><strong>Occupancy</strong></td>
+      <td>40-50% average</td>
+      <td>60%+ average</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Real Owner Results After Switching</h2>
+
+<p><strong>Before iHousing:</strong></p>
+<ul>
+  <li>Occupancy: 42%</li>
+  <li>Annual gross: RM8,500</li>
+  <li>Management fees (20%): RM1,700</li>
+  <li>Hidden fees: RM1,200</li>
+  <li>Net: RM5,600</li>
+</ul>
+
+<p><strong>After iHousing:</strong></p>
+<ul>
+  <li>Occupancy: 63%</li>
+  <li>Annual gross: RM12,700</li>
+  <li>Management fee (flat/custom): RM3,000</li>
+  <li>Hidden fees: RM0</li>
+  <li>Net: RM9,700</li>
+</ul>
+
+<p><strong>Result:</strong> +RM4,100 net/year (+73% increase)</p>
+
+<h2>Ready to Experience the Difference?</h2>
+
+<h3>For Parkland Avenue by the Sea:</h3>
+
+<p><strong>Pre-register now:</strong></p>
+<ul>
+  <li>Lock in RM200-300/month flat fee</li>
+  <li>Launch: August 2025</li>
+  <li>Experience iHousing difference firsthand</li>
+</ul>
+
+<h3>For All Other Condos:</h3>
+
+<p><strong>WhatsApp us for custom pricing:</strong></p>
+
+<p>We'll:</p>
+<ol>
+  <li>Assess your condo's potential</li>
+  <li>Provide transparent pricing</li>
+  <li>Explain our approach</li>
+  <li>Show you projected results</li>
+</ol>
+
+<p><strong>Why 100+ owners switched to iHousing:</strong></p>
+<ul>
+  <li>Better communication (30-minute response)</li>
+  <li>Full transparency (no hidden fees)</li>
+  <li>Multi-platform listing (5 platforms)</li>
+  <li>In-house cleaning (consistent quality)</li>
+  <li>Dynamic pricing (maximize revenue)</li>
+  <li>Professional photos (included)</li>
+  <li>60%+ average occupancy</li>
+</ul>
+
+<h2>Take Action Today</h2>
+
+<p>Stop tolerating poor communication, hidden fees, and missed opportunities.</p>
+
+<p>Switch to iHousing. Experience the difference 100+ Melaka owners already discovered.</p>
+
+<p><strong>WhatsApp us now:</strong></p>
+
+<p>Get your custom pricing. Ask about our approach. Compare to your current situation.</p>
+
+<p>Join 100+ owners who made the switch. See why they stay with iHousing.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

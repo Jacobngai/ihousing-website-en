@@ -1,0 +1,721 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Airbnb Amenities Checklist 2025 Malaysia: Complete Guide for Hosts";
+const description = "What amenities do guests expect in 2025? Complete checklist for Airbnb Malaysia including kitchen essentials, safety requirements, and smart home features. WhatsApp for setup assistance.";
+const image = "/images/blog/airbnb-amenities-checklist-2025-malaysia.jpg";
+const date = "2025-01-24";
+const category = "setup-guide";
+const language = "en";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Airbnb Amenities Checklist 2025 Malaysia: Complete Guide for Hosts</h1>
+
+<h2>What Amenities Do Guests Really Expect in 2025?</h2>
+
+<p>You're setting up your condo for Airbnb. You want to provide everything guests need for a 5-star experience. But what's essential? What's nice-to-have? What are guests actually looking for in 2025?</p>
+
+<p>This guide provides a complete amenities checklist based on:</p>
+<ul>
+<li>100+ properties we manage in Melaka</li></ul>
+
+<ul>
+<li>10,000+ guest reviews analyzed</li></ul>
+
+<ul>
+<li>2025 guest expectations (post-pandemic standards)</li></ul>
+
+<ul>
+<li>Malaysian market specifics (climate, culture, regulations)</li></ul>
+
+<strong>By the end, you'll know exactly what to provide to maximize bookings and reviews.</strong>
+
+<h2>2025 Guest Expectations: What Changed?</h2>
+
+<h3>Post-Pandemic Standards</h3>
+
+<p>Guests in 2025 have higher expectations than ever:</p>
+
+<strong>Hygiene is non-negotiable:</strong>
+<ul>
+<li>Contactless check-in preferred</li></ul>
+
+<ul>
+<li>Hand sanitizer in every room</li></ul>
+
+<ul>
+<li>Antibacterial cleaning products used</li></ul>
+
+<ul>
+<li>High-touch surfaces sanitized</li></ul>
+
+<ul>
+<li>Extra cleaning supplies visible</li></ul>
+
+<strong>Work-from-anywhere is normal:</strong>
+<ul>
+<li>High-speed WiFi is essential (not nice-to-have)</li></ul>
+
+<ul>
+<li>Dedicated workspace (table + comfortable chair)</li></ul>
+
+<ul>
+<li>Multiple power outlets</li></ul>
+
+<ul>
+<li>Good lighting for video calls</li></ul>
+
+<strong>Long-term stays are increasing:</strong>
+<ul>
+<li>Extended stays (7+ days) are 40% more common than 2019</li></ul>
+
+<ul>
+<li>Guests need laundry facilities</li></ul>
+
+<ul>
+<li>Kitchen essentials for cooking</li></ul>
+
+<ul>
+<li>Extra storage space</li></ul>
+
+<strong>Smart home features expected:</strong>
+<ul>
+<li>Smart TV with streaming</li></ul>
+
+<ul>
+<li>Keyless entry (digital locks)</li></ul>
+
+<ul>
+<li>USB charging ports</li></ul>
+
+<ul>
+<li>Air conditioning with remote control</li></ul>
+
+<h3>Malaysian Context</h3>
+
+<strong>Climate considerations:</strong>
+<ul>
+<li>Hot and humid year-round (air conditioning essential)</li></ul>
+
+<ul>
+<li>Heavy rainfall (umbrellas provided)</li></ul>
+
+<ul>
+<li>Occasional haze (air purifier appreciated)</li></ul>
+
+<strong>Cultural expectations:</strong>
+<ul>
+<li>Muslim-friendly amenities (prayer mat, Quran available on request)</li></ul>
+
+<ul>
+<li>Local coffee/tea setup</li></ul>
+
+<ul>
+<li>Local snacks welcome</li></ul>
+
+<ul>
+<li>Slippers for indoor use</li></ul>
+
+<strong>Regulatory requirements:</strong>
+<ul>
+<li>Fire extinguisher mandatory</li></ul>
+
+<ul>
+<li>First aid kit required</li></ul>
+
+<ul>
+<li>Smoke detectors recommended</li></ul>
+
+<ul>
+<li>Emergency contact info displayed</li></ul>
+
+<h2>The Essential Checklist: Must-Haves (Non-Negotiable)</h2>
+
+<p>These are amenities guests expect in EVERY listing. Missing these will result in poor reviews and lower bookings.</p>
+
+<h3>1. Sleeping Essentials</h3>
+
+<strong>Bedroom Must-Haves:</strong>
+
+<strong>Budget Allocation:</strong> RM3,000-5,000 per bedroom
+
+<h3>2. Bathroom Essentials</h3>
+
+<strong>Must-Have Items:</strong>
+
+<strong>Budget Allocation:</strong> RM800-1,200 per bathroom
+
+<h3>3. Kitchen Essentials (Even for Studios)</h3>
+
+<strong>2025 Reality:</strong> Guests expect to cook, even in small units.
+
+<strong>Basic Setup:</strong>
+
+<strong>Optional Upgrades:</strong>
+<ul>
+<li>Toaster (RM80-120)</li></ul>
+
+<ul>
+<li>Blender (RM100-200)</li></ul>
+
+<ul>
+<li>Coffee maker (RM150-300)</li></ul>
+
+<ul>
+<li>Full cookware set (RM300-500)</li></ul>
+
+<strong>Budget Allocation:</strong> RM1,500-2,500 for basic setup
+
+<h3>4. Living Room Essentials</h3>
+
+<strong>Must-Haves:</strong>
+
+<strong>Work-From-Home Setup (2025 Essential):</strong>
+<ul>
+<li>Proper dining table or desk (not coffee table)</li></ul>
+
+<ul>
+<li>Comfortable chair with back support</li></ul>
+
+<ul>
+<li>Multiple power outlets (2-4)</li></ul>
+
+<ul>
+<li>Good lighting (desk lamp or natural light)</li></ul>
+
+<ul>
+<li>WiFi extender if needed</li></ul>
+
+<strong>Budget Allocation:</strong> RM3,000-6,000 for living room setup
+
+<h3>5. Connectivity & Technology</h3>
+
+<strong>2025 Non-Negotiables:</strong>
+
+<strong>WiFi is CRITICAL:</strong>
+<ul>
+<li>Test speed regularly (speedtest.net)</li></ul>
+
+<ul>
+<li>Provide network name and password clearly</li></ul>
+
+<ul>
+<li>Consider guest-only network (security)</li></ul>
+
+<ul>
+<li>Extender recommended for >600 sqft units</li></ul>
+
+<h3>6. Safety & Security</h3>
+
+<strong>Legal Requirements + Guest Peace of Mind:</strong>
+
+<strong>Emergency Contact List (Display):</strong>
+<ul>
+<li>Host/Manager: Available during business hours number</li></ul>
+
+<ul>
+<li>Emergency services: 999</li></ul>
+
+<ul>
+<li>Building management: Display prominently</li></ul>
+
+<ul>
+<li>Nearest hospital: Name + distance</li></ul>
+
+<h3>7. Cleaning & Maintenance</h3>
+
+<strong>Visible Supplies (Guest Confidence):</strong>
+
+<strong>Stock Location:</strong>
+<ul>
+<li>Cleaning supplies under kitchen sink</li></ul>
+
+<ul>
+<li>Laundry supplies near washing machine</li></ul>
+
+<ul>
+<li>Extra toilet paper visible (not hidden)</li></ul>
+
+<ul>
+<li>Trash bags in every room</li></ul>
+
+<h2>The Nice-to-Have Checklist: Differentiators</h2>
+
+<p>These amenities aren't essential, but they'll set you apart from competitors and justify higher nightly rates.</p>
+
+<h3>1. Premium Bedding</h3>
+
+<strong>Upgrade from basic:</strong>
+<ul>
+<li>Memory foam topper (RM200-400)</li></ul>
+
+<ul>
+<li>Premium pillows (RM100-150 each)</li></ul>
+
+<ul>
+<li>Egyptian cotton sheets (RM200-300 per set)</li></ul>
+
+<ul>
+<li>Duvet with cover (RM150-250)</li></ul>
+
+<ul>
+<li>Mattress protector (RM80-150)</li></ul>
+
+<strong>Impact:</strong> Guests notice and mention in reviews
+
+<h3>2. Kitchen Upgrades</h3>
+
+<strong>Beyond basics:</strong>
+<ul>
+<li>Coffee maker (Nespresso/Keurig): RM200-400</li></ul>
+
+<ul>
+<li>Toaster: RM80-120</li></ul>
+
+<ul>
+<li>Blender: RM100-200</li></ul>
+
+<ul>
+<li>Full cookware set: RM300-500</li></ul>
+
+<ul>
+<li>Microwave grill/convection: RM300-500</li></ul>
+
+<ul>
+<li>Rice cooker with fuzzy logic: RM200-300</li></ul>
+
+<ul>
+<li>Water dispenser: RM200-400</li></ul>
+
+<strong>Impact:</strong> 20-30% higher satisfaction for kitchen-use guests
+
+<h3>3. Bathroom Upgrades</h3>
+
+<strong>Luxury touches:</strong>
+<ul>
+<li>Rain shower head: RM150-250</li></ul>
+
+<ul>
+<li>Heated towel rack: RM200-400</li></ul>
+
+<ul>
+<li>Premium toiletries (not mini bottles): RM50-100/stay</li></ul>
+
+<ul>
+<li>Bathrobes: RM80-150 each</li></ul>
+
+<ul>
+<li>Makeup mirror: RM50-100</li></ul>
+
+<ul>
+<li>Toothbrush holders (disposable): RM5-10 each</li></ul>
+
+<strong>Impact:</strong> Mentioned in 20%+ of positive reviews
+
+<h3>4. Entertainment Upgrades</h3>
+
+<strong>Beyond basic TV:</strong>
+<ul>
+<li>Streaming subscriptions: RM50-100/month</li></ul>
+
+<ul>
+<li>Soundbar: RM200-500</li></ul>
+
+<ul>
+<li>Board games/card games: RM50-100</li></ul>
+
+<ul>
+<li>Books (local interest): RM50-100 total</li></ul>
+
+<ul>
+<li>Bluetooth speaker: RM100-200</li></ul>
+
+<ul>
+<li>Gaming console (PS4/Nintendo): RM800-1,500</li></ul>
+
+<strong>Impact:</strong> Families and longer-stay guests appreciate
+
+<h3>5. Convenience Items</h3>
+
+<strong>Small touches, big impact:</strong>
+<ul>
+<li>Universal travel adapter: RM20-40</li></ul>
+
+<ul>
+<li>Iron & ironing board: RM80-150</li></ul>
+
+<ul>
+<li>Clothes drying rack: RM50-80</li></ul>
+
+<ul>
+<li>Umbrellas (2-3): RM30-60</li></ul>
+
+<ul>
+<li>Slippers (2 pairs): RM20-40</li></ul>
+
+<ul>
+<li>Reusable shopping bags: RM10-20</li></ul>
+
+<ul>
+<li>Tupperware/food containers: RM30-50</li></ul>
+
+<strong>Impact:</strong> High appreciation, low cost
+
+<h2>The Luxury Checklist: Premium Touches</h2>
+
+<p>For premium properties targeting higher nightly rates (RM250+).</p>
+
+<h3>1. Smart Home Features</h3>
+
+<h3>2. Premium Appliances</h3>
+
+<h3>3. Wellness Features</h3>
+
+<h2>Malaysian-Specific Amenities</h2>
+
+<h3>Muslim-Friendly Additions</h3>
+
+<strong>What to Provide:</strong>
+
+<strong>Impact:</strong> 60%+ of Malaysian guests are Muslim. This is significant.
+
+<h3>Local Touches</h3>
+
+<strong>Small gestures, local appreciation:</strong>
+
+<h2>Budget Breakdown: Furnishing a 2-Bedroom Condo</h2>
+
+<h3>Essential Amenities Only</h3>
+
+<h3>Including Nice-to-Haves</h3>
+
+<p>Add RM3,000-8,000 for upgraded amenities.</p>
+
+<h3>Including Luxury Features</h3>
+
+<p>Add RM8,000-20,000 for premium amenities.</p>
+
+<strong>Total Range:</strong>
+<ul>
+<li>Basic essential setup: RM13,000-25,000</li></ul>
+
+<ul>
+<li>Comfortable setup: RM18,000-35,000</li></ul>
+
+<ul>
+<li>Premium setup: RM25,000-50,000</li></ul>
+
+<h2>Setup Priority: What to Buy First</h2>
+
+<h3>Phase 1: Pre-Listing Essentials (Must-Have)</h3>
+
+<strong>Before you list your property:</strong>
+
+<li><strong>Bedding</strong> (mattress, pillows, linens)</li>
+<li><strong>Bathroom</strong> (towels, toilet paper, soap)</li>
+<li><strong>Kitchen basics</strong> (fridge, microwave, kettle, utensils)</li>
+<li><strong>WiFi</strong> (high-speed, working)</li>
+<li><strong>Air conditioning</strong> (all bedrooms + living)</li>
+<li><strong>Safety items</strong> (fire extinguisher, first aid)</li>
+<li><strong>Cleaning supplies</strong> (visible for guest confidence)</li>
+
+<strong>Budget:</strong> RM10,000-18,000
+
+<h3>Phase 2: Post-Booking Upgrades (Nice-to-Haves)</h3>
+
+<strong>After first 5-10 bookings:</strong>
+
+<li>Upgrade bedding (memory foam topper, better pillows)</li>
+<li>Add kitchen upgrades (coffee maker, toaster)</li>
+<li>Add convenience items (iron, umbrella, slippers)</li>
+<li>Upgrade bathroom (better toiletries, extra towels)</li>
+
+<strong>Budget:</strong> RM2,000-5,000
+
+<h3>Phase 3: Premium Features (For Higher Rates)</h3>
+
+<strong>After established reviews (4.5+ stars):</strong>
+
+<li>Smart home features (digital lock, smart lights)</li>
+<li>Premium appliances (washing machine, dryer)</li>
+<li>Entertainment upgrades (soundbar, subscriptions)</li>
+<li>Wellness features (yoga mat, air purifier)</li>
+
+<strong>Budget:</strong> RM3,000-10,000
+
+<h2>Amenity Display & Organization</h2>
+
+<h3>How to Present Amenities</h3>
+
+<strong>Bedroom:</strong>
+<ul>
+<li>Extra pillows in closet (visible)</li></ul>
+
+<ul>
+<li>Extra blankets clearly accessible</li></ul>
+
+<ul>
+<li>Blackout curtains properly installed</li></ul>
+
+<ul>
+<li>Bedside lamps with visible USB ports</li></ul>
+
+<ul>
+<li>Power strip near bed (for charging)</li></ul>
+
+<strong>Bathroom:</strong>
+<ul>
+<li>Towels neatly folded, visible</li></ul>
+
+<ul>
+<li>Toilet paper backup visible (not hidden)</li></ul>
+
+<ul>
+<li>Toiletries labeled and accessible</li></ul>
+
+<ul>
+<li>First aid kit visible</li></ul>
+
+<ul>
+<li>Hair dryer accessible (not stored away)</li></ul>
+
+<strong>Kitchen:</strong>
+<ul>
+<li>Utensils organized in drawers</li></ul>
+
+<ul>
+<li>Cookware visible or easily accessible</li></ul>
+
+<ul>
+<li>Appliances plugged in and working</li></ul>
+
+<ul>
+<li>Dish soap and sponge at sink</li></ul>
+
+<ul>
+<li>Trash can visible and accessible</li></ul>
+
+<strong>Living Room:</strong>
+<ul>
+<li>Remote control accessible (with batteries)</li></ul>
+
+<ul>
+<li>WiFi password clearly displayed</li></ul>
+
+<ul>
+<li>Power strips accessible</li></ul>
+
+<ul>
+<li>Cleaning supplies visible but organized</li></ul>
+
+<h3>Welcome Book Essentials</h3>
+
+<strong>What to include:</strong>
+
+<li><strong>WiFi Information</strong></li>
+<p>   - Network name</p>
+<p>   - Password</p>
+<p>   - How to restart router</p>
+
+<li><strong>Appliance Instructions</strong></li>
+<p>   - Air conditioning remote</p>
+<p>   - Water heater</p>
+<p>   - Washing machine (if provided)</p>
+<p>   - TV/Streaming setup</p>
+
+<li><strong>House Rules</strong></li>
+<p>   - Check-out time</p>
+<p>   - Smoking policy</p>
+<p>   - Quiet hours</p>
+<p>   - Guest count</p>
+
+<li><strong>Local Information</strong></li>
+<p>   - Nearby restaurants</p>
+<p>   - Convenience stores</p>
+<p>   - Attractions</p>
+<p>   - Transportation</p>
+
+<li><strong>Emergency Contacts</strong></li>
+<p>   - Host/Manager (Available during business hours)</p>
+<p>   - Building management</p>
+<p>   - Emergency services</p>
+<p>   - Nearest hospital</p>
+
+<strong>Format:</strong>
+<ul>
+<li>Printed binder (preferred by older guests)</li></ul>
+
+<ul>
+<li>Digital PDF (sent via message)</li></ul>
+
+<ul>
+<li>Both options ideal</li></ul>
+
+<h2>Avoid These Amenity Mistakes</h2>
+
+<h3>Common Errors</h3>
+
+<strong>1. Providing Cheap Bedding</strong>
+<ul>
+<li>Mistake: Low-quality mattress, thin pillows</li></ul>
+
+<ul>
+<li>Result: Poor sleep = bad review</li></ul>
+
+<ul>
+<li>Fix: Spend RM1,500-2,500 on quality mattress per bedroom</li></ul>
+
+<strong>2. Insufficient WiFi</strong>
+<ul>
+<li>Mistake: Basic 30 Mbps package</li></ul>
+
+<ul>
+<li>Result: Slow streaming, poor video calls</li></ul>
+
+<ul>
+<li>Fix: Minimum 100 Mbps, test regularly</li></ul>
+
+<strong>3. Missing Kitchen Essentials</strong>
+<ul>
+<li>Mistake: Fridge + microwave only</li></ul>
+
+<ul>
+<li>Result: Can't cook simple meals</li></ul>
+
+<ul>
+<li>Fix: Add rice cooker, kettle, basic cookware</li></ul>
+
+<strong>4. Hiding Cleaning Supplies</strong>
+<ul>
+<li>Mistake: All supplies stored away</li></ul>
+
+<ul>
+<li>Result: Guests question cleanliness</li></ul>
+
+<ul>
+<li>Fix: Keep sanitizer, disinfectant visible</li></ul>
+
+<strong>5. No Backup Supplies</strong>
+<ul>
+<li>Mistake: Exactly 1 roll of toilet paper</li></ul>
+
+<ul>
+<li>Result: Guests run out, poor experience</li></ul>
+
+<ul>
+<li>Fix: Always provide 2-3 backups</li></ul>
+
+<strong>6. Poor Lighting</strong>
+<ul>
+<li>Mistake: Single ceiling light</li></ul>
+
+<ul>
+<li>Result: Dark, uninviting space</li></ul>
+
+<ul>
+<li>Fix: Multiple light sources (lamps, ambient)</li></ul>
+
+<strong>7. Inadequate Power Outlets</strong>
+<ul>
+<li>Mistake: 1-2 outlets per room</li></ul>
+
+<ul>
+<li>Result: Can't charge multiple devices</li></ul>
+
+<ul>
+<li>Fix: Power strips with 4-6 outlets</li></ul>
+
+<h2>Get Professional Setup Assistance</h2>
+
+<h3>Free Amenities Consultation</h3>
+
+<p>We offer property owners:</p>
+<ul>
+<li><strong>Amenities checklist</strong> customized to your unit</li></ul>
+
+<ul>
+<li><strong>Budget optimization</strong> (where to spend, where to save)</li></ul>
+
+<ul>
+<li><strong>Supplier recommendations</strong> (quality + value)</li></ul>
+
+<ul>
+<li><strong>Setup coordination</strong> (we handle everything)</li></ul>
+
+<strong>What we provide:</strong>
+<li>Room-by-room amenity plan</li>
+<li>Shopping list with quantities</li>
+<li>Budget breakdown (essential vs. nice-to-have)</li>
+<li>Supplier contacts (Melaka-based)</li>
+<li>Setup timeline (what to do first)</li>
+
+<h3>Full Setup Service</h3>
+
+<strong>Don't have time? We handle everything:</strong>
+
+<ul>
+<li>Design consultation</li></ul>
+
+<ul>
+<li>Shopping and procurement</li></ul>
+
+<ul>
+<li>Contractor coordination</li></ul>
+
+<ul>
+<li>Setup and installation</li></ul>
+
+<ul>
+<li>Quality inspection</li></ul>
+
+<ul>
+<li>Photography for listings</li></ul>
+
+<strong>Result:</strong> Airbnb-ready property in 2-4 weeks
+
+<strong>Take Action Today:</strong>
+
+<strong>Enter your phone number and we'll WhatsApp you with a customized amenities checklist for your property.</strong>
+
+<p>Whether you're starting from scratch or upgrading an existing Airbnb, we'll help you provide the 5-star experience guests expect in 2025.</p>
+
+<h2>About iHousing</h2>
+
+<p>We're Melaka's leading Airbnb property management company:</p>
+
+<ul>
+<li><strong>8 years experience</strong> setting up properties</li></ul>
+
+<ul>
+<li><strong>100+ properties</strong> under management</li></ul>
+
+<ul>
+<li><strong>60%+ average occupancy</strong> (vs. market 19-22%)</li></ul>
+
+<ul>
+<li><strong>4.8+ average rating</strong> across platforms</li></ul>
+
+<ul>
+<li><strong>Full setup services</strong> available</li></ul>
+
+<ul>
+<li><strong>Trusted supplier network</strong></li></ul>
+
+<ul>
+<li><strong>Transparent pricing</strong></li></ul>
+
+<p>We know exactly what amenities guests expect and how to provide them cost-effectively.</p>
+
+<em>Setting up your Airbnb? Let's talk. We'll provide a customized amenities checklist, help you prioritize your budget, and ensure your property is guest-ready from day one. WhatsApp us for a free consultation.</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

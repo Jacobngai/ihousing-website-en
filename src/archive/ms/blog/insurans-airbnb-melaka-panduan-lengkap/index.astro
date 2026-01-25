@@ -1,0 +1,494 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Insurans Airbnb Melaka: Perlindungan yang Perlu Anda Tahu";
+const description = "Panduan lengkap insurans untuk pengurus Airbnb di Melaka. Ketahui jenis insurans yang diperlukan, perlindungan Airbnb Host Guarantee, dan cara membuat tuntutan.";
+const image = "/images/blog/insurans-airbnb-melaka-panduan-lengkap.jpg";
+const date = "2025-01-24";
+const category = "kewangan";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Insurans Airbnb Melaka: Perlindungan yang Perlu Anda Tahu</h1>
+
+<h2>Mitos Paling Besar: "Airbnb Sudah Melindungi Saya"</h2>
+
+<p>Banyak pemilik Airbnb baru percaya bahawa mereka dilindungi sepenuhnya oleh Airbnb. <strong>Ini adalah mitos yang berbahaya.</strong></p>
+
+<strong>Hakikatnya:</strong>
+<ul>
+<li><strong>Airbnb Host Guarantee</strong> bukan insurans tradisional</li></ul>
+
+<ul>
+<li>Ia hanya melindungi kerosakan harta benda, BUKAN semua risiko</li></ul>
+
+<ul>
+<li>Banyak pengecualian yang perlu diketahui</li></ul>
+
+<ul>
+<li>Proses tuntutan adalah rumit dan mengambil masa</li></ul>
+
+<p>Tanpa insurans yang betul, satu insiden boleh memusnahkan pelaburan bertahun-tahun.</p>
+
+<p>Artikel ini akan menerangkan dengan terperinci jenis perlindungan yang anda perlukan untuk Airbnb anda di Melaka.</p>
+
+<h2>Airbnb Host Guarantee: Apa yang Sebenarnya Dilindungi</h2>
+
+<h3>Apa yang Dilindungi</h3>
+
+<p>Airbnb Host Guarantee melindungi:</p>
+<ul>
+<li>Kerosakan harta benda oleh tetamu (sehingga USD 1,000,000)</li></ul>
+
+<ul>
+<li>Kehilangan barang berharga (jadual, TV, dll.)</li></ul>
+
+<ul>
+<li>Kerosakan yang disengajakan</li></ul>
+
+<h3>Apa yang TIDAK Dilindungi (Pengecualian Penting)</h3>
+
+<p>Airbnb Host Guarantee <strong>TIDAK</strong> melindungi:</p>
+
+<strong>Kesimpulan:</strong> Airbnb Host Guarantee hanya melindungi kerosakan yang disengajakan oleh tetamu Airbnb yang disahkan. Ia BUKAN pengganti insurans rumah tradisional.
+
+<h2>Jenis Insurans yang Diperlukan untuk Airbnb</h2>
+
+<h3>1. Insurans Rumah/Strata (Wajib)</h3>
+
+<p>Ini adalah insurans asas yang diperlukan untuk semua hartanah.</p>
+
+<strong>Perlindungan:</strong>
+<ul>
+<li>Kerosakan struktur bangunan</li></ul>
+
+<ul>
+<li>Kebakaran, banjir, ribut</li></ul>
+
+<ul>
+<li>Kehilangan harta benda peribadi</li></ul>
+
+<strong>Isu Penting:</strong> Banyak polisi insurans rumah tradisional <strong>mengecualikan</strong> sewa jangka pendek.
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Beritahu syarikat insurans tentang aktiviti Airbnb</li></ul>
+
+<ul>
+<li>Dapatkan tambahan "short-term rental endorsement"</li></ul>
+
+<ul>
+<li>Atau tukar kepada polisi khusus untuk sewa jangka pendek</li></ul>
+
+<strong>Kos:</strong> RM800 - RM1,500/tahun (bergantung nilai hartanah)
+
+<h3>2. Insurans Liabiliti Umum (Penting)</h3>
+
+<p>Melindungi anda jika tetamu cedera di premis anda dan memfailkan saman.</p>
+
+<strong>Perlindungan:</strong>
+<ul>
+<li>Kecederaan tetamu (slip & fall, terjatuh, dll.)</li></ul>
+
+<ul>
+<li>Saman undang-undang oleh tetamu</li></ul>
+
+<ul>
+<li>Kos guaman</li></ul>
+
+<strong>Had Perlindungan:</strong> RM1,000,000 - RM5,000,000
+
+<strong>Kos:</strong> RM500 - RM1,200/tahun
+
+<strong>Contoh Senario:</strong>
+<p>Tetamu tergelincir di lantai bilik air yang basah dan patah tulang. Dia memfailkan saman RM500,000. Tanpa insurans liabiliti, anda perlu membayar dari poket. Dengan insurans, syarikat insurans akan membayar.</p>
+
+<h3>3. Insurans Kebakaran (Wajib untuk Kondo)</h3>
+
+<p>Diperlukan untuk semua unit pangsapuri/kondominium.</p>
+
+<strong>Perlindungan:</strong>
+<ul>
+<li>Kerosakan akibat kebakaran</li></ul>
+
+<ul>
+<li>Kehilangan harta benda</li></ul>
+
+<strong>Kos:</strong> RM300 - RM800/tahun
+
+<strong>Nota:</strong> Ini biasanya diperlukan oleh bank jika anda mempunyai pinjaman hartanah.
+
+<h3>4. Insurans Kandungan (Pilihan)</h3>
+
+<p>Melindungi perabot dan peralatan di unit Airbnb.</p>
+
+<strong>Perlindungan:</strong>
+<ul>
+<li>Kerosakan/pencurian perabot</li></ul>
+
+<ul>
+<li>Kerosakan peralatan (TV, peti sejuk, dll.)</li></ul>
+
+<strong>Had Perlindungan:</strong> RM20,000 - RM50,000
+
+<strong>Kos:</strong> RM200 - RM500/tahun
+
+<strong>Adakah Perlu?</strong>
+<ul>
+<li>Jika perabot anda bernilai RM30,000+, ya</li></ul>
+
+<ul>
+<li>Jika perabot asas (RM10,000), mungkin tidak perlu</li></ul>
+
+<h3>5. Insurans Gangguan Perniagaan (Pilihan)</h3>
+
+<p>Melindungi kehilangan pendapatan jika unit tidak boleh digunakan.</p>
+
+<strong>Perlindungan:</strong>
+<ul>
+<li>Pendapatan hilang semasa pembaikan</li></ul>
+
+<ul>
+<li>Tempoh perlindungan: 6-12 bulan</li></ul>
+
+<strong>Kos:</strong> RM300 - RM600/tahun
+
+<strong>Contoh Senario:</strong>
+<p>Paip pecah dan membanjiri unit. Unit memerlukan 2 bulan untuk pembaikan. Semasa 2 bulan, anda kehilangan RM3,000 pendapatan Airbnb. Insurans ini akan menggantikan pendapatan hilang.</p>
+
+<h3>6. Insurans Kemalangan Peribadi untuk Tetamu (Pilihan)</h3>
+
+<p>Melindungi tetamu dari kemalangan di premis.</p>
+
+<strong>Perlindungan:</strong>
+<ul>
+<li>Kematian atau kecederaan tetamu</li></ul>
+
+<ul>
+<li>Biasanya termasuk dalam polisi liabiliti</li></ul>
+
+<strong>Kos:</strong> Termasuk dalam insurans liabiliti
+
+<h2>Kos Insurans Tahunan: Contoh Anggaran</h2>
+
+<h3>Unit 2-Bedroom di Melaka (Bernilai RM400,000)</h3>
+
+<h3>Perlindungan Tambahan (Pilihan)</h3>
+
+<strong>Jumlah Kos Insurans:</strong> RM2,850 - RM3,250/tahun
+
+<strong>Peratusan dari Pendapatan:</strong> Jika pendapatan Airbnb RM10,000/tahun, insurans adalah 28-32% dari pendapatan. Ini adalah kos perniagaan yang munasabah.
+
+<h2>Cara Memilih Insurans yang Tepat</h2>
+
+<h3>Faktor 1: Jenis Hartanah</h3>
+
+<h3>Faktor 2: Nilai Hartanah & Kandungan</h3>
+
+<ul>
+<li><strong>Hartanah RM200,000-300,000:</strong> Perlindungan minimum RM400,000</li></ul>
+
+<ul>
+<li><strong>Hartanah RM400,000-500,000:</strong> Perlindungan RM600,000-800,000</li></ul>
+
+<ul>
+<li><strong>Kandungan RM20,000+:</strong> Insurans kandungan disyorkan</li></ul>
+
+<h3>Faktor 3: Lokasi & Risiko</h3>
+
+<h3>Faktor 4: Pendapatan Airbnb</h3>
+
+<ul>
+<li><strong>Pendapatan <RM5,000/tahun:</strong> Perlindungan minimum</li></ul>
+
+<ul>
+<li><strong>Pendapatan RM5,000-15,000/tahun:</strong> Perlindungan sederhana</li></ul>
+
+<ul>
+<li><strong>Pendapatan >RM15,000/tahun:</strong> Perlindungan komprehensif (termasuk gangguan perniagaan)</li></ul>
+
+<h2>Proses Membuat Tuntutan Insurans</h2>
+
+<h3>Langkah 1: Dokumentasi</h3>
+
+<p>Segera selepas insiden:</p>
+<ul>
+<li>[x] Ambil gambar kerosakan</li></ul>
+
+<ul>
+<li>[x] Ambil video jika perlu</li></ul>
+
+<ul>
+<li>[x] Dapatkan laporan polis (jika pencurian/vandalisme)</li></ul>
+
+<ul>
+<li>[x] Dapatkan quotation pembaikan</li></ul>
+
+<ul>
+<li>[x] Simpan semua resit</li></ul>
+
+<h3>Langkah 2: Beritahu Syarikat Insurans</h3>
+
+<p>Hubungi syarikat insurans dalam:</p>
+<ul>
+<li><strong>24 jam</strong> untuk kebakaran/banjir</li></ul>
+
+<ul>
+<li><strong>48 jam</strong> untuk kerosakan harta benda</li></ul>
+
+<ul>
+<li><strong>7 hari</strong> untuk tuntutan liabiliti</li></ul>
+
+<h3>Langkah 3: Isi Borang Tuntutan</h3>
+
+<p>Sediakan:</p>
+<ul>
+<li>Butiran insiden (apa, bila, bagaimana)</li></ul>
+
+<ul>
+<li>Gambar/bukti kerosakan</li></ul>
+
+<ul>
+<li>Laporan polis (jika berkaitan)</li></ul>
+
+<ul>
+<li>Quotation pembaikan</li></ul>
+
+<ul>
+<li>Butiran hubungan</li></ul>
+
+<h3>Langkah 4: Tunggu Penilaian</h3>
+
+<p>Syarikat insurans akan:</p>
+<ul>
+<li>Hantar penilai untuk melihat kerosakan</li></ul>
+
+<ul>
+<li>Mengesahkan jumlah tuntutan</li></ul>
+
+<ul>
+<li>Meluluskan atau menolak tuntutan</li></ul>
+
+<strong>Tempoh:</strong> 14-30 hari untuk keputusan
+
+<h3>Langkah 5: Terima Bayaran</h3>
+
+<p>Jika diluluskan:</p>
+<ul>
+<li>Bayaran akan diterima dalam 7-14 hari</li></ul>
+
+<ul>
+<li>Jumlah mungkin dikurangkan oleh excess (deduktibel)</li></ul>
+
+<h2>Airbnb Host Guarantee: Proses Tuntutan</h2>
+
+<h3>Langkah 1: Hubungi Tetamu</h3>
+
+<p>Mula dengan komunikasi dengan tetamu:</p>
+<ul>
+<li>Beritahu tentang kerosakan</li></ul>
+
+<ul>
+<li>Minta penjelasan/pembayaran</li></ul>
+
+<ul>
+<li>Simpan semua mesej sebagai bukti</li></ul>
+
+<h3>Langkah 2: Dokumentasi</h3>
+
+<p>Ambil:</p>
+<ul>
+<li>Gambar kerosakan sebelum dan selepas</li></ul>
+
+<ul>
+<li>Gambar bukti (resit pembelian asal barang yang rosak)</li></ul>
+
+<ul>
+<li>Mesej dengan tetamu</li></ul>
+
+<h3>Langkah 3: Fail Tuntutan di Airbnb</h3>
+
+<p>Pergi ke:</p>
+<ul>
+<li>Airbnb > Resolutions > File a Claim</li></ul>
+
+<p>Isi:</p>
+<ul>
+<li>Butiran tetamu</li></ul>
+
+<ul>
+<li>Keterangan kerosakan</li></ul>
+
+<ul>
+<li>Muat naik gambar/bukti</li></ul>
+
+<ul>
+<li>Anggaran kos penggantian</li></ul>
+
+<h3>Langkah 4: Airbnb Menyiasat</h3>
+
+<p>Airbnb akan:</p>
+<ul>
+<li>Menghubungi tetamu untuk versi mereka</li></ul>
+
+<ul>
+<li>Menentukan sama ada tuntutan sah</li></ul>
+
+<ul>
+<li>Membuat keputusan</li></ul>
+
+<strong>Tempoh:</strong> 7-14 hari
+
+<h3>Langkah 5: Terima Bayaran</h3>
+
+<p>Jika diluluskan:</p>
+<ul>
+<li>Airbnb akan membayar kepada pemilik</li></ul>
+
+<ul>
+<li>Airbnb akan membebankan tetamu</li></ul>
+
+<strong>Pengecualian Umum:</strong>
+<ul>
+<li>Kerosakan aus biasa</li></ul>
+
+<ul>
+<li>Kerosakan yang tidak dilaporkan dalam 48 jam</li></ul>
+
+<ul>
+<li>Kerosakan yang tidak didokumentasikan dengan gambar</li></ul>
+
+<h2>Mitigasi Risiko: Selain Insurans</h2>
+
+<h3>1. House Rules yang Jelas</h3>
+
+<p>Tetapkan peraturan untuk mengurangkan risiko:</p>
+<ul>
+<li>"Tiada parti/majlis"</li></ul>
+
+<ul>
+<li>"Tiawa merokok dalam premis"</li></ul>
+
+<ul>
+<li>"Maksimum [X] tetamu"</li></ul>
+
+<ul>
+<li>"Dilarang membawa haiwan peliharaan"</li></ul>
+
+<h3>2. Saringan Tetamu</h3>
+
+<ul>
+<li>Semak rating tetamu sebelum menerima</li></ul>
+
+<ul>
+<li>Elakkan "Instant Book" untuk tetamu baru</li></ul>
+
+<ul>
+<li>Minta pengenalan (jika dibenarkan oleh Airbnb)</li></ul>
+
+<h3>3. Pembaikan & Penyelenggaraan Berkala</h3>
+
+<ul>
+<li>Periksa sistem elektrik setiap 6 bulan</li></ul>
+
+<ul>
+<li>Servis penyaman udara setiap 3 bulan</li></ul>
+
+<ul>
+<li>Periksa kebocoran paip setiap bulan</li></ul>
+
+<h3>4. Deposit Keselamatan</h3>
+
+<p>Walaupun Airbnb menawarkan perlindungan, pertimbangkan:</p>
+<ul>
+<li>Deposit RM200-500 melalui Airbnb</li></ul>
+
+<ul>
+<li>Atau deposit tunai (jika urus sendiri)</li></ul>
+
+<h3>5. Pemasalan Keselamatan</h3>
+
+<ul>
+<li>Pintar berkunci pintu (log masuk/keluar)</li></ul>
+
+<ul>
+<li>Kamera luaran (jika dibenarkan oleh undang-undang)</li></ul>
+
+<ul>
+<li>Pengesan asap</li></ul>
+
+<ul>
+<li>Pengesan karbon monoksida</li></ul>
+
+<h2>Kalkulator Kos Risiko vs Insurans</h2>
+
+<h3>Senario: Tanpa Insurans Liabiliti</h3>
+
+<strong>Kesimpulan:</strong> Untuk RM1,650/tahun, anda dilindungi dari kerugian RM235,000. Ini adalah pelaburan yang bijak.
+
+<h2>Soalan Lazim (FAQ)</h2>
+
+<h3>Q: Adakah perlu memberitahu syarikat insurans tentang Airbnb?</h3>
+
+<p>A: Ya. Jika tidak, polisi anda mungkin tidak sah. Beritahu mereka dan dapatkan tambahan "short-term rental endorsement".</p>
+
+<h3>Q: Adakah Airbnb Host Guarantee percuma?</h3>
+
+<p>A: Ya, ia percuma untuk hos. Walau bagaimanapun, ia bukan pengganti insurans tradisional.</p>
+
+<h3>Q: Berapa kos insurans liabiliti?</h3>
+
+<p>A: RM500 - RM1,200/tahun untuk perlindungan RM1-5 juta.</p>
+
+<h3>Q: Adakah insurans rumah tradisional melindungi Airbnb?</h3>
+
+<p>A: Biasanya tidak. Kebanyakan polisi mengecualikan sewa jangka pendek. Anda perlu memberitahu syarikat insurans dan mendapat tambahan.</p>
+
+<h3>Q: Berapa lama masa untuk membuat tuntutan?</h3>
+
+<p>A: 24-48 jam untuk kebakaran/banjir, 7 hari untuk tuntutan lain. Lebih cepat lebih baik.</p>
+
+<h2>Dapatkan Konsultasi Insurans Percuma</h2>
+
+<p>Insurans adalah rumit. Setiap hartanah mempunyai keperluan yang berbeza.</p>
+
+<p>WhatsApp kami untuk:</p>
+<ul>
+<li>Analisis risiko hartanah anda</li></ul>
+
+<ul>
+<li>Cadangan jenis insurans yang diperlukan</li></ul>
+
+<ul>
+<li>Perbandingan harga dari pelbagai syarikat</li></ul>
+
+<ul>
+<li>Bantuan dengan proses tuntutan</li></ul>
+
+<strong>[WhatsApp Kami untuk Konsultasi Insurans Percuma]</strong>
+
+<p>Kami akan membantu anda memilih perlindungan yang betul untuk Airbnb anda.</p>
+
+<p>Jangan biarkan satu insiden memusnahkan pelaburan anda. Lindungi hartanah anda hari ini.</p>
+
+<strong>Artikel Berkaitan:</strong>
+<ul>
+<li>[Kos Tersembunyi Pengurusan Airbnb](/ms/blog/kos-tersembunyi-pengurusan-airbnb-melaka)</li></ul>
+
+<ul>
+<li>[Kalkulator Margin Keuntungan Airbnb](/ms/blog/kalkulator-margin-untung-airbnb-melaka)</li></ul>
+
+<ul>
+<li>[Cara Mengurus Tetamu Susah](/ms/blog/cara-hadir-tetamu-susah-airbnb-melaka)</li></ul>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

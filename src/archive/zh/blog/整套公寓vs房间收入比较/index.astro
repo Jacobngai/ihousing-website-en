@@ -1,0 +1,46 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "整套公寓vs房间收入比较";
+const description = "马六甲房东的整套公寓与房间租赁财务比较。包括入住率、定价策略和净收入分析。";
+const image = "/images/blog/整套公寓vs房间收入比较.jpg";
+const date = "2026-01-23";
+const category = "rental-types";
+const language = "zh";
+
+const content = `
+<h1>整套公寓vs房间租赁：马六甲房东收入比较</h1>
+
+<p>您应该出租整套马六甲公寓还是提供个别房间？这个决定会影响您的月收入<strong>数千林吉特</strong>。让我们通过iHousing管理物业的真实数据比较两种模式。</p>
+
+<h2>财务比较：2卧室公寓示例</h2>
+
+<p><strong>模型A：整套公寓租赁</strong></p>
+<ul>
+<li><strong>平均每晚价格：</strong> RM300</li>
+<li><strong>入住率：</strong> 70%</li>
+<li><strong>月总收入：</strong> RM6,300</li>
+<li><strong>运营成本：</strong> RM800</li>
+<li><strong>月净收入：</strong> <strong>RM5,500</strong></li>
+</ul>
+
+<p><strong>模型B：2间私人房间</strong></p>
+<ul>
+<li><strong>综合价格：</strong> RM300/晚（当两个都占用时）</li>
+<li><strong>入住率：</strong> 每个房间55%</li>
+<li><strong>月总收入：</strong> RM4,800-5,100</li>
+<li><strong>月净收入：</strong> <strong>RM4,200-4,500</strong></li>
+</ul>
+
+<p><strong>胜者：</strong> 在此场景中，整套公寓每月多赚<strong>RM1,000-1,300</strong>。</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

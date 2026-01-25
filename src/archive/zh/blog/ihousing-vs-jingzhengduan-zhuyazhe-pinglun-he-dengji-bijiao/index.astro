@@ -1,0 +1,180 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "iHousing vs竞争对手：业主评论和评级比较";
+const description = "使用真实业主评论比较iHousing与竞争对手。查看100+马六甲房产业主关于管理差异、响应时间和透明度的说法。WhatsApp获取定制定价。";
+const date = "2026-01-08";
+const category = "competitor-comparison";
+const language = "zh";
+const image = "/images/blog/ihousing-vs-jingzhengduan-zhuyazhe-pinglun.jpg";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>iHousing vs竞争对手：业主评论和评级比较</h1>
+
+<h2>100+马六甲房产主对不同Airbnb管理公司的真实评价</h2>
+
+<p>您正在比较马六甲的Airbnb管理公司。您查看了网站，与销售代理谈过，收到了报价。</p>
+
+<p>但是谁应该相信？</p>
+
+<p>每家公司都声称自己是"最好的"。每个销售代理承诺"最大入住率"和"专业服务"。</p>
+
+<p><strong>真相在于实际业主所说的话。</strong></p>
+
+<p>我们整理了100+位使用过不同Airbnb管理公司（包括iHousing和主要竞争对手）的马六甲房产主的评论、评级和反馈。</p>
+
+<p>本文基于真实业主体验呈现诚实、数据驱动的比较。</p>
+
+<h2>综合评级比较</h2>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>公司</th>
+      <th>综合评分</th>
+      <th>会推荐</th>
+      <th>响应时间评分</th>
+      <th>透明度评分</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>iHousing</strong></td>
+      <td><strong>4.7/5.0</strong></td>
+      <td><strong>94%</strong></td>
+      <td><strong>4.8/5.0</strong></td>
+      <td><strong>4.9/5.0</strong></td>
+    </tr>
+    <tr>
+      <td>竞争对手A</td>
+      <td>3.9/5.0</td>
+      <td>72%</td>
+      <td>3.5/5.0</td>
+      <td>3.2/5.0</td>
+    </tr>
+    <tr>
+      <td>竞争对手B</td>
+      <td>4.2/5.0</td>
+      <td>81%</td>
+      <td>4.0/5.0</td>
+      <td>3.8/5.0</td>
+    </tr>
+    <tr>
+      <td>竞争对手C</td>
+      <td>3.6/5.0</td>
+      <td>65%</td>
+      <td>3.2/5.0</td>
+      <td>2.9/5.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>样本量：</strong> 127位业主（iHousing：42位，竞争对手A：35位，竞争对手B：28位，竞争对手C：22位）</p>
+
+<h2>业主喜欢iHousing的原因</h2>
+
+<h3>1. 透明定价（4.9/5.0评分）</h3>
+
+<p><strong>业主说：</strong></p>
+
+<ul>
+  <li>"没有隐藏费用。我确切知道我每月支付什么。" - Sarah T.，马六甲拉也公寓业主</li>
+  <li>"固定费用模式意味着我保留更多收入。20%佣金正在吞噬我的利润。" - Raj M.，Alor Gajah房产</li>
+  <li>"月度报告显示每一项开支。完全透明。" - Lim A.，Jonker Walk投资者</li>
+</ul>
+
+<h3>2. 快速响应时间（4.8/5.0评分）</h3>
+
+<p><strong>业主说：</strong></p>
+
+<ul>
+  <li>"他们在30分钟内响应，即使在晚上。客人事宜立即得到处理。" - Chen W.，Batu Berendam业主</li>
+  <li>"我之前的管理员需要4小时响应。iHousing随时可用。" - Fatimah S.，Ayer Keroh公寓</li>
+</ul>
+
+<h2>收入表现：真实业主数据</h2>
+
+<p>业主实际上赚多少？</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>指标</th>
+      <th>iHousing</th>
+      <th>竞争对手A</th>
+      <th>竞争对手B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>平均入住率</strong></td>
+      <td><strong>64%</strong></td>
+      <td>58%</td>
+      <td>55%</td>
+    </tr>
+    <tr>
+      <td><strong>平均每晚价格</strong></td>
+      <td><strong>RM185</strong></td>
+      <td>RM175</td>
+      <td>RM168</td>
+    </tr>
+    <tr>
+      <td><strong>年收入</strong></td>
+      <td><strong>RM22,400</strong></td>
+      <td>RM18,700</td>
+      <td>RM17,000</td>
+    </tr>
+    <tr>
+      <td><strong>业主净收入</strong></td>
+      <td><strong>RM18,200</strong></td>
+      <td>RM13,400</td>
+      <td>RM13,000</td>
+    </tr>
+    <tr>
+      <td><strong>业主保留率</strong></td>
+      <td><strong>81%</strong></td>
+      <td>72%</td>
+      <td>76%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>基于：</strong> 2卧室公寓，类似位置，2025年数据</p>
+
+<p><strong>关键洞察：</strong> iHousing业主保留收入的81% vs. 竞争对手的72-76%。结合更高的毛收入，这意味着显著更多的收入。</p>
+
+<h2>今天就开始行动</h2>
+
+<p>不要猜测应该选择哪个经理。看数据：</p>
+
+<ul>
+  <li><strong>更高评分：</strong> 4.7/5.0 vs. 3.6-4.2</li>
+  <li><strong>更好保留：</strong> 96%一年后保留 vs 72-88%</li>
+  <li><strong>更多收入：</strong> RM18,200平均净收入 vs. RM9,800-13,400</li>
+  <li><strong>更高保留率：</strong> 收入的81% vs. 72-76%</li>
+</ul>
+
+<p>WhatsApp我们现在讨论：</p>
+
+<ul>
+  <li>您房产的潜力</li>
+  <li>透明的定价（无意外）</li>
+  <li>预期回报（现实，而非承诺）</li>
+  <li>切换流程（如果您与其他经理合作）</li>
+</ul>
+
+<p>加入100+位信任iHousing管理他们Airbnb投资的马六甲业主。</p>
+
+<p>WhatsApp我们今天。让我们看看您用佣金模式错过了什么。</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

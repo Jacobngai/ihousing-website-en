@@ -1,0 +1,478 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'Parkland Avenue ROI Calculator - Airbnb Investment Returns';
+const description = 'Calculate your potential ROI for Parkland Avenue investment with Airbnb management by iHousing. Free calculator with personalized results.';
+const image = 'https://parklandgroup.my/wp-content/uploads/2022/03/08_OverallDevelopment_op1_HR-copy.jpg';
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-green-900 via-green-800 to-blue-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-green-300 font-semibold mb-4">ROI CALCULATOR</p>
+          <h1 class="text-4xl lg:text-5xl font-bold mb-6">Parkland Avenue Investment Calculator</h1>
+          <p class="text-xl text-green-100 max-w-4xl mx-auto">
+            Calculate your potential returns on Parkland Avenue investment with professional Airbnb management
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-8 rounded-2xl shadow-xl">
+          <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+            Enter Your Investment Details
+          </h2>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <!-- Unit Type -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Unit Type *
+              </label>
+              <select id="unitType" class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                <option value="">Select unit type</option>
+                <option value="type-a">Type A (635 sqft, 1+1 BR)</option>
+                <option value="type-b">Type B (796 sqft, 2 BR)</option>
+                <option value="type-c">Type C (972 sqft, 3 BR)</option>
+                <option value="type-d">Type D (818 sqft, 2 BR)</option>
+                <option value="type-e">Type E (1,002 sqft, 3 BR)</option>
+              </select>
+            </div>
+
+            <!-- Purchase Price -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Purchase Price (RM) *
+              </label>
+              <input
+                type="number"
+                id="purchasePrice"
+                placeholder="e.g., 400,000"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              />
+            </div>
+
+            <!-- Down Payment % -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Down Payment (%)
+              </label>
+              <input
+                type="number"
+                id="downPaymentPercent"
+                value="10"
+                min="1"
+                max="100"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              />
+            </div>
+
+            <!-- Loan Interest Rate -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Loan Interest Rate (%)
+              </label>
+              <input
+                type="number"
+                id="interestRate"
+                value="4.5"
+                step="0.1"
+                min="0"
+                max="20"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              />
+            </div>
+
+            <!-- Loan Tenure -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Loan Tenure (Years)
+              </label>
+              <input
+                type="number"
+                id="loanTenure"
+                value="35"
+                min="1"
+                max="35"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              />
+            </div>
+
+            <!-- Occupancy Rate -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Expected Occupancy Rate (%)
+              </label>
+              <input
+                type="number"
+                id="occupancyRate"
+                value="70"
+                min="10"
+                max="100"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              />
+            </div>
+          </div>
+
+          <div class="text-center mt-8">
+            <button
+              id="calculateBtn"
+              class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-12 rounded-xl text-xl transition-colors"
+            >
+              Calculate My ROI
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section (Hidden by default) -->
+    <section id="resultsSection" class="py-16 bg-white hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          Your Investment Results
+        </h2>
+
+        <!-- Summary Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div class="bg-green-50 p-6 rounded-xl border-l-4 border-green-500 text-center">
+            <p class="text-sm text-gray-600">Annual Net Income</p>
+            <p id="annualNetIncome" class="text-3xl font-bold text-green-600">RM0</p>
+          </div>
+
+          <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500 text-center">
+            <p class="text-sm text-gray-600">ROI Percentage</p>
+            <p id="roiPercentage" class="text-3xl font-bold text-blue-600">0%</p>
+          </div>
+
+          <div class="bg-purple-50 p-6 rounded-xl border-l-4 border-purple-500 text-center">
+            <p class="text-sm text-gray-600">Break-Even Point</p>
+            <p id="breakEvenYears" class="text-3xl font-bold text-purple-600">0 years</p>
+          </div>
+
+          <div class="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500 text-center">
+            <p class="text-sm text-gray-600">Down Payment</p>
+            <p id="downPaymentAmount" class="text-3xl font-bold text-yellow-600">RM0</p>
+          </div>
+        </div>
+
+        <!-- Detailed Breakdown -->
+        <div class="bg-gray-50 p-8 rounded-xl mt-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Detailed Breakdown</h3>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Income Side -->
+            <div class="space-y-4">
+              <h4 class="text-xl font-bold text-green-900 mb-4">Monthly Income</h4>
+              <div class="bg-white p-4 rounded-lg">
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-600">Monthly Airbnb Income:</span>
+                  <span id="monthlyAirbnbIncome" class="font-semibold text-gray-900">RM0</span>
+                </div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-600">Monthly Mortgage Payment:</span>
+                  <span id="monthlyMortgage" class="font-semibold text-red-600">-RM0</span>
+                </div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-600">iHousing Management Fee:</span>
+                  <span id="managementFee" class="font-semibold text-orange-600">-RM0</span>
+                </div>
+                <div class="pt-3 border-t-2 border-green-300 mt-2">
+                  <div class="flex justify-between">
+                    <span class="font-bold text-gray-900">Monthly Net Income:</span>
+                    <span id="monthlyNetIncome" class="font-bold text-green-600">RM0</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Expenses Side -->
+              <div class="space-y-4">
+                <h4 class="text-xl font-bold text-blue-900 mb-4">Financing Details</h4>
+                <div class="bg-white p-4 rounded-lg space-y-2">
+                  <div class="flex justify-between">
+                    <span class="text-gray-600">Purchase Price:</span>
+                    <span id="purchasePriceDisplay" class="font-semibold">RM0</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-600">Down Payment (<span id="downPaymentPercentDisplay">10</span>%):</span>
+                    <span id="downPaymentAmountDisplay" class="font-semibold">RM0</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-600">Loan Amount:</span>
+                    <span id="loanAmountDisplay" class="font-semibold">RM0</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-600">Loan Amount:</span>
+                    <span id="loanAmountDisplay" class="font-semibold">RM0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Occupancy Info -->
+        <div class="bg-blue-50 p-6 rounded-xl mt-6">
+          <p class="text-gray-700">
+            <strong>Note:</strong> Calculations based on <span id="occupancyRateDisplay">70</span>% occupancy rate.
+            With 75% occupancy, your annual income would be higher. Actual results may vary based on market conditions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Example Scenario -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          Example Scenario
+        </h2>
+
+        <div class="bg-white p-8 rounded-xl">
+          <div class="mb-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Type B Unit Investment Example</h3>
+            <p class="text-gray-600">
+              Unit Type B (796 sqft, 2 BR) • Purchase: RM500,000 • Down Payment: 10% (RM50,000)
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-green-50 p-6 rounded-xl text-center">
+              <p class="text-sm text-gray-600">Monthly Airbnb Income (70%)</p>
+              <p class="text-2xl font-bold text-green-600">RM5,400</p>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-xl text-center">
+              <p class="text-sm text-gray-600">iHousing Fee</p>
+              <p class="text-2xl font-bold text-blue-600">RM250/month</p>
+            </div>
+
+            <div class="bg-yellow-50 p-6 rounded-xl text-center">
+              <p class="text-sm text-gray-600">Monthly Net Income</p>
+              <p class="text-2xl font-bold text-yellow-600">RM3,050</p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-4 gap-6 mt-6">
+            <div class="bg-white p-4 rounded-lg border-2 border-green-300 text-center">
+              <p class="text-xs text-gray-500">Annual Net Income</p>
+              <p class="text-xl font-bold text-green-600">RM36,600</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg border-2 border-blue-300 text-center">
+              <p class="text-xs text-gray-500">Down Payment</p>
+              <p class="text-xl font-bold text-blue-600">RM50,000</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg border-2 border-purple-300 text-center">
+              <p class="text-xs text-gray-500">Annual ROI</p>
+              <p class="text-xl font-bold text-purple-600">73.2%</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-lg border-2 border-yellow-300 text-center">
+              <p class="text-xs text-gray-500">Break-Even</p>
+              <p class="text-xl font-bold text-yellow-600">~1.4 years</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- iHousing Fee Comparison -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          iHousing Flat Fee vs Traditional Management
+        </h2>
+
+        <div class="bg-gradient-to-r from-red-50 to-green-50 p-8 rounded-xl">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="text-center">
+              <h3 class="text-2xl font-bold text-red-700 mb-4">Traditional Manager (20% Commission)</h3>
+              <div class="space-y-2">
+                <div class="flex justify-between">
+                  <span>RM4,000/month rental:</span>
+                  <span class="text-red-600 font-semibold">RM800/month fee</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>RM5,000/month rental:</span>
+                  <span class="text-red-600 font-semibold">RM1,000/month fee</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>RM6,000/month rental:</span>
+                  <span class="text-red-600 font-semibold">RM1,200/month fee</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <h3 class="text-2xl font-bold text-green-700 mb-4">iHousing (Flat Fee)</h3>
+              <div class="space-y-2">
+                <div class="flex justify-between">
+                  <span>RM4,000/month rental:</span>
+                  <span class="text-green-600 font-bold text-xl">RM250/month fee</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>RM5,000/month rental:</span>
+                  <span class="text-green-600 font-bold text-xl">RM300/month fee</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>RM6,000/month rental:</span>
+                  <span class="text-green-600 font-bold text-xl">RM300/month fee</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 p-4 bg-white rounded-lg text-center">
+            <p class="text-lg text-gray-700">
+              <span class="text-red-600 line-through">Traditional Annual Fee:</span> RM9,600 - RM14,400<br/>
+              <span class="text-green-700 font-bold">iHousing Annual Fee:</span> RM3,000 - RM3,600<br/>
+              <span class="text-xl font-bold text-green-900">ANNUAL SAVINGS: RM5,400 - RM10,800!</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-gradient-to-r from-yellow-400 to-yellow-600">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          Ready to Invest in Parkland Avenue?
+        </h2>
+        <p class="text-xl text-gray-700 mb-8">
+          Pre-register for priority information and investment consultation
+        </p>
+        <a href="/parkland/pre-register/" class="inline-block bg-gray-900 text-white font-bold py-4 px-8 rounded-lg text-xl hover:bg-gray-800">
+          Pre-Register Now
+        </a>
+      </div>
+    </section>
+
+    <!-- JavaScript for Calculator -->
+    <script is:inline>
+      // Unit type data with nightly rates and bedrooms
+      const unitTypes = {
+        'type-a': { name: 'Type A (635 sqft)', sqft: 635, bedrooms: 1, bath: 1, minRate: 150, maxRate: 180, managementFee: 200 },
+        'type-b': { name: 'Type B (796 sqft)', sqft: 796, bedrooms: 2, bath: 2, minRate: 180, maxRate: 220, managementFee: 250 },
+        'type-c': { name: 'Type C (972 sqft)', sqft: 972, bedrooms: 3, bath: 2, minRate: 220, maxRate: 280, managementFee: 300 },
+        'type-d': { name: 'Type D (818 sqft)', sqft: 818, bedrooms: 2, bath: 2, minRate: 200, maxRate: 250, managementFee: 250 },
+        'type-e': { name: 'Type E (1,002 sqft)', sqft: 1002, bedrooms: 3, bath: 2, minRate: 250, maxRate: 300, managementFee: 300 }
+      };
+
+      const calculateBtn = document.getElementById('calculateBtn');
+      const resultsSection = document.getElementById('resultsSection');
+
+      // Display elements
+      const annualNetIncome = document.getElementById('annualNetIncome');
+      const roiPercentage = document.getElementById('roiPercentage');
+      const breakEvenYears = document.getElementById('breakEvenYears');
+      const downPaymentAmount = document.getElementById('downPaymentAmount');
+      const monthlyAirbnbIncome = document.getElementById('monthlyAirbnbIncome');
+      const monthlyMortgage = document.getElementById('monthlyMortgage');
+      const managementFee = document.getElementById('managementFee');
+      const monthlyNetIncome = document.getElementById('monthlyNetIncome');
+      const purchasePriceDisplay = document.getElementById('purchasePriceDisplay');
+      const downPaymentPercentDisplay = document.getElementById('downPaymentPercentDisplay');
+      const downPaymentAmountDisplay = document.getElementById('downPaymentAmountDisplay');
+      const loanAmountDisplay = document.getElementById('loanAmountDisplay');
+      const occupancyRateDisplay = document.getElementById('occupancyRateDisplay');
+
+      function formatCurrency(amount) {
+        return 'RM' + amount.toLocaleString('en-MY');
+      }
+
+      function calculateROI() {
+        // Get input values
+        const unitType = document.getElementById('unitType').value;
+        const purchasePrice = parseFloat(document.getElementById('purchasePrice').value);
+        const downPaymentPercent = parseFloat(document.getElementById('downPaymentPercent').value);
+        const interestRate = parseFloat(document.getElementById('interestRate').value) / 100;
+        const loanTenure = parseInt(document.getElementById('loanTenure').value);
+        const occupancyRate = parseFloat(document.getElementById('occupancyRate').value) / 100;
+
+        // Validation
+        if (!unitType || !purchasePrice || isNaN(purchasePrice) || purchasePrice <= 0) {
+          alert('Please select a unit type and enter a valid purchase price.');
+          return;
+        }
+
+        const unit = unitTypes[unitType];
+
+        // Calculate down payment and loan amount
+        const downPayment = purchasePrice * (downPaymentPercent / 100);
+        const loanAmount = purchasePrice - downPayment;
+
+        // Calculate monthly mortgage payment
+        const monthlyInterestRate = interestRate / 12;
+        const numberOfPayments = loanTenure * 12;
+        let monthlyMortgagePayment = 0;
+
+        if (loanAmount > 0 && numberOfPayments > 0) {
+          monthlyMortgagePayment = loanAmount * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, numberOfPayments)) /
+            (Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1);
+        }
+
+        // Calculate Airbnb monthly income (average of min and max rates)
+        const averageNightlyRate = (unit.minRate + unit.maxRate) / 2;
+        const daysInMonth = 30;
+        const monthlyAirbnbIncomeCalc = averageNightlyRate * daysInMonth * occupancyRate;
+
+        // Calculate monthly net income
+        const monthlyNetIncomeCalc = monthlyAirbnbIncomeCalc - monthlyMortgagePayment - unit.managementFee;
+
+        // Calculate annual net income
+        const annualNetIncomeCalc = monthlyNetIncomeCalc * 12;
+
+        // Calculate ROI percentage
+        const roiPercentCalc = (annualNetIncomeCalc / downPayment) * 100;
+
+        // Calculate break-even point (years)
+        let breakEvenYearsCalc = Infinity;
+        if (annualNetIncomeCalc > 0) {
+          breakEvenYearsCalc = purchasePrice / annualNetIncomeCalc;
+        }
+
+        // Update display
+        purchasePriceDisplay.textContent = formatCurrency(purchasePrice);
+        downPaymentPercentDisplay.textContent = downPaymentPercent + '%';
+        downPaymentAmountDisplay.textContent = formatCurrency(downPayment);
+        downPaymentAmount.textContent = formatCurrency(downPayment);
+        loanAmountDisplay.textContent = formatCurrency(loanAmount);
+        occupancyRateDisplay.textContent = (occupancyRate * 100) + '%';
+
+        monthlyAirbnbIncome.textContent = formatCurrency(Math.round(monthlyAirbnbIncomeCalc));
+        monthlyMortgage.textContent = '-' + formatCurrency(Math.round(monthlyMortgagePayment));
+        managementFee.textContent = '-' + formatCurrency(unit.managementFee);
+        monthlyNetIncome.textContent = formatCurrency(Math.round(monthlyNetIncomeCalc));
+
+        annualNetIncome.textContent = formatCurrency(Math.round(annualNetIncomeCalc));
+        roiPercentage.textContent = roiPercentCalc.toFixed(1) + '%';
+        breakEvenYears.textContent = breakEvenYearsCalc &lt; 100 ? '~' + breakEvenYearsCalc.toFixed(1) + ' years' : '100+ years';
+
+        // Show results section
+        resultsSection.classList.remove('hidden');
+        resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      calculateBtn.addEventListener('click', calculateROI);
+
+      // Auto-calculate when inputs change
+      const inputs = ['unitType', 'purchasePrice', 'downPaymentPercent', 'interestRate', 'loanTenure', 'occupancyRate'];
+      inputs.forEach(id => {
+        const input = document.getElementById(id);
+        if (input) {
+          input.addEventListener('change', calculateROI);
+          input.addEventListener('input', calculateROI);
+        }
+      });
+    </script>
+  </main>
+</Layout>

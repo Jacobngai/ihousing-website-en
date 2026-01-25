@@ -1,0 +1,501 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "为民宿买家具：马来西亚Airbnb家具采购完整指南2025";
+const description = "为民宿买家具的完整指南 - 预算规划、品牌推荐、采购渠道、必备清单、避免浪费。iHousing已管理100+物业，分享8年家具采购经验。";
+const image = "/images/blog/weimin-su-mai-jiaju-malaisiya.jpg";
+const date = "2025-01-23";
+const category = "setup";
+const language = "zh";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>为民宿买家具：马来西亚Airbnb家具采购完整指南2025</h1>
+        <p>准备为马六甲民宿采购家具，但不确定预算多少、买什么、去哪里买？本文提供从预算规划到具体采购的完整指南，帮助您节省成本、避免浪费、打造舒适空间。</p>
+        <h2>家具预算规划</h2>
+        <h3>3个预算档次</h3>
+        <p>根据投资目标和目标客群，您可以选择不同档次的家具配置：</p>
+        <strong>档次1：经济型（RM 10,000-15,000）</strong>
+        <table>
+          <thead>
+            <tr><th>房间</th><th>家具项目</th><th>预算</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**客厅**</td><td>二手沙发、基础电视架、便宜窗帘</td><td>RM 2,000-3,000</td></tr>
+            <tr><td>**卧室**</td><td>本地床垫、简单衣柜、床头柜</td><td>RM 3,000-4,000</td></tr>
+            <tr><td>**厨房**</td><td>基本锅具、餐具、二手冰箱</td><td>RM 1,500-2,000</td></tr>
+            <tr><td>**浴室**</td><td>基本淋浴用品、毛巾</td><td>RM 800-1,200</td></tr>
+            <tr><td>**电器**</td><td>二手家电、基础空调</td><td>RM 3,000-4,000</td></tr>
+            <tr><td>**其他**</td><td>装饰、灯具、小件</td><td>RM 1,000-2,000</td></tr>
+          </tbody>
+        </table>
+        <strong>适合：</strong> 预算有限的投资者、测试市场
+        <strong>档次2：标准型（RM 20,000-30,000）⭐推荐</strong>
+        <table>
+          <thead>
+            <tr><th>房间</th><th>家具项目</th><th>预算</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**客厅**</td><td>IKEA沙发、电视柜、质量窗帘</td><td>RM 3,500-5,000</td></tr>
+            <tr><td>**卧室**</td><td>品牌床垫、定制衣柜、床头柜</td><td>RM 5,000-7,000</td></tr>
+            <tr><td>**厨房**</td><td>全套厨具、品牌冰箱、微波炉</td><td>RM 2,500-3,500</td></tr>
+            <tr><td>**浴室**</td><td>优质毛巾、洗漱用品套装</td><td>RM 1,200-1,800</td></tr>
+            <tr><td>**电器**</td><td>新家电、智能电视、空调</td><td>RM 5,000-7,000</td></tr>
+            <tr><td>**其他**</td><td>装饰品、智能门锁、WiFi</td><td>RM 2,500-3,500</td></tr>
+          </tbody>
+        </table>
+        <strong>适合：</strong> 大多数投资者、追求性价比
+        <strong>档次3：豪华型（RM 50,000-80,000）</strong>
+        <table>
+          <thead>
+            <tr><th>房间</th><th>家具项目</th><th>预算</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**客厅**</td><td>设计师家具、高端影音系统</td><td>RM 8,000-12,000</td></tr>
+            <tr><td>**卧室**</td><td>五星酒店床垫、定制家具</td><td>RM 12,000-18,000</td></tr>
+            <tr><td>**厨房**</td><td>高端厨具、双门冰箱、洗碗机</td><td>RM 5,000-8,000</td></tr>
+            <tr><td>**浴室**</td><td>高级床品、品牌洗护用品</td><td>RM 2,500-4,000</td></tr>
+            <tr><td>**电器**</td><td>高端家电、智能家居系统</td><td>RM 12,000-18,000</td></tr>
+            <tr><td>**其他**</td><td>艺术品、设计师装饰</td><td>RM 8,000-12,000</td></tr>
+          </tbody>
+        </table>
+        <strong>适合：</strong> 高端物业、海景房、目标高端客群
+        <h3>预算分配建议</h3>
+        <strong>iHousing经验：把钱花在刀刃上</strong>
+        <table>
+          <thead>
+            <tr><th>项目</th><th>占总预算</th><th>说明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**床垫**</td><td>15-20%</td><td>客人满意度第一要素</td></tr>
+            <tr><td>**家电**</td><td>25-30%</td><td>必须可靠耐用</td></tr>
+            <tr><td>**沙发**</td><td>10-15%</td><td>视觉焦点 + 舒适度</td></tr>
+            <tr><td>**窗帘**</td><td>8-10%</td><td>遮光 + 美观</td></tr>
+            <tr><td>**厨房用品**</td><td>8-10%</td><td>完整配置提升体验</td></tr>
+            <tr><td>**床品**</td><td>5-8%</td><td>必须高质量</td></tr>
+            <tr><td>**装饰**</td><td>5-8%</td><td>打造氛围</td></tr>
+            <tr><td>**其他**</td><td>10-15%</td><td>灵活预留</td></tr>
+          </tbody>
+        </table>
+        <strong>优先顺序：</strong> 床垫 > 家电 > 沙发 > 窗帘 > 其他
+        <h2>采购渠道对比</h2>
+        <h3>1. IKEA（推荐新手）</h3>
+        <strong>优势：</strong>
+        <ul>
+        <li>✓ 价格透明、可预算</li>
+        <li>✓ 设计现代、拍照好看</li>
+        <li>✓ 全套配置、省时间</li>
+        <li>✓ 质量稳定、可靠</li>
+        <li>✓ 全国配送、安装服务</li>
+        </ul>
+        <strong>热门项目：</strong>
+        <table>
+          <thead>
+            <tr><th>产品</th><th>价格</th><th>推荐指数</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**MALM床架**</td><td>RM 399-599</td><td>⭐⭐⭐⭐⭐</td></tr>
+            <tr><td>**HASVAG床垫**</td><td>RM 699-1,299</td><td>⭐⭐⭐⭐⭐</td></tr>
+            <tr><td>**KIVIK沙发**</td><td>RM 1,299-1,799</td><td>⭐⭐⭐⭐</td></tr>
+            <tr><td>**HEMNES衣柜**</td><td>RM 799-1,499</td><td>⭐⭐⭐⭐⭐</td></tr>
+            <tr><td>**STOCKHOLM窗帘**</td><td>RM 99-199/对</td><td>⭐⭐⭐⭐</td></tr>
+          </tbody>
+        </table>
+        <strong>配送安装：</strong>
+        <ul>
+        <li>西马：RM 99-199（根据距离）</li>
+        <li>安装费：物品价格的10%</li>
+        <li>总计：约RM 20,000-30,000（标准型）</li>
+        </ul>
+        <strong>IKEA马来西亚门店：</strong>
+        <ul>
+        <li>马来西亚有4家：Damansara、Cheras、Mutia Rini、Alor Setar</li>
+        <li>离马六甲最近：Mutia Rini（柔佛州，约1.5小时车程）</li>
+        </ul>
+        <h3>2. 本地家具店（马六甲）</h3>
+        <strong>优势：</strong>
+        <ul>
+        <li>✓ 可以看到实物</li>
+        <li>✓ 支持本地商家</li>
+        <li>✓ 可能议价</li>
+        <li>✓ 快速配送</li>
+        </ul>
+        <strong>推荐店铺：</strong>
+        <table>
+          <thead>
+            <tr><th>店名</th><th>类型</th><th>适合购买</th><th>地址</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Bingo Market**</td><td>平价家具</td><td>沙发、床垫、衣柜</td><td>Jalan Tun Majdi</td></tr>
+            <tr><td>**Solid Wood**</td><td>实木家具</td><td>床架、餐桌、衣柜</td><td>Jalan Melaka Raya</td></tr>
+            <tr><td>**Teck Guan**</td><td>家电</td><td>冰箱、洗衣机、电视</td><td>Bachang</td></tr>
+            <tr><td>**Courts Mammoth**</td><td>连锁店</td><td>家具 + 家电一站式</td><td>Ayer Keroh</td></tr>
+            <tr><td>**Sen Q**</td><td>电器</td><td>电视、空调、小家电</td><td>Mahkota Parade</td></tr>
+          </tbody>
+        </table>
+        <strong>议价技巧：</strong>
+        <ul>
+        <li>现金付款折扣：5-10%</li>
+        <li>一次购买多件：10-15%折扣</li>
+        <li>要求免费配送：可能成功</li>
+        </ul>
+        <h3>3. 在线平台（预算友好）</h3>
+        <strong>平台对比：</strong>
+        <table>
+          <thead>
+            <tr><th>平台</th><th>优势</th><th>缺点</th><th>适合购买</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Lazada**</td><td>促销多、选择多</td><td>无法看实物</td><td>小家电、装饰品</td></tr>
+            <tr><td>**Shopee**</td><td>价格便宜、免运费</td><td>质量参差不齐</td><td>厨具、床品、小件</td></tr>
+            <tr><td>**Facebook Marketplace**</td><td>二手便宜、可议价</td><td>需要自提</td><td>二手家具、家电</td></tr>
+            <tr><td>**Carousell**</td><td>二手市场、可议价</td><td>需要自提</td><td>二手家具</td></tr>
+          </tbody>
+        </table>
+        <strong>二手家具建议：</strong>
+        <strong>值得买二手：</strong>
+        <ul>
+        <li>✓ 沙发（可清洁）</li>
+        <li>✓ 餐桌、椅子（耐用）</li>
+        <li>✓ 书架、储物柜</li>
+        <li>✓ 装饰品、画框</li>
+        </ul>
+        <strong>不要买二手：</strong>
+        <ul>
+        <li>✗ 床垫（卫生问题）</li>
+        <li>✗ 床品、毛巾</li>
+        <li>✗ 厨具、餐具</li>
+        </ul>
+        <h3>4. 批发市场（投资3套以上）</h3>
+        <strong>适合：</strong> 投资者有多个物业
+        <strong>批发渠道：</strong>
+        <table>
+          <thead>
+            <tr><th>渠道</th><th>最低订购</th><th>折扣</th><th>产品</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**家具批发商**</td><td>10件以上</td><td>20-30%</td><td>床、沙发、衣柜</td></tr>
+            <tr><td>**床品批发**</td><td>20套以上</td><td>40-50%</td><td>床单、被套、枕套</td></tr>
+            <tr><td>**厨具批发**</td><td>5套以上</td><td>25-35%</td><td>锅、餐具、刀具</td></tr>
+          </tbody>
+        </table>
+        <strong>iHousing批发渠道：</strong> 我们可以帮业主联系批发商，节省20-40%！
+        <h2>各房间家具清单</h2>
+        <h3>卧室（最重要）</h3>
+        <strong>必备家具：</strong>
+        <table>
+          <thead>
+            <tr><th>物品</th><th>预算</th><th>推荐标准</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**床垫**</td><td>RM 800-2,000</td><td>至少8寸厚度，中硬度</td></tr>
+            <tr><td>**床架**</td><td>RM 400-1,200</td><td>简约设计、易于清洁</td></tr>
+            <tr><td>**床头柜 × 2**</td><td>RM 150-400</td><td>有抽屉、带充电插座</td></tr>
+            <tr><td>**衣柜**</td><td>RM 600-1,500</td><td>至少1.2米宽，有挂杆</td></tr>
+            <tr><td>**台灯 × 2**</td><td>RM 80-200</td><td>暖光、可调亮度</td></tr>
+            <tr><td>**全身镜**</td><td>RM 100-300</td><td>附在衣柜门或独立</td></tr>
+            <tr><td>**窗帘**</td><td>RM 200-500</td><td>遮光面料、到地面</td></tr>
+          </tbody>
+        </table>
+        <strong>床品配置（至少3套）：</strong>
+        <table>
+          <thead>
+            <tr><th>物品</th><th>数量</th><th>材质推荐</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**床单**</td><td>3套</td><td>棉或混纺（易清洗）</td></tr>
+            <tr><td>**被套**</td><td>3套</td><td>同上</td></tr>
+            <tr><td>**枕套**</td><td>6个</td><td>同上</td></tr>
+            <tr><td>**枕头**</td><td>4个</td><td>中等硬度</td></tr>
+            <tr><td>**被子**</td><td>2条</td><td>夏天款 + 冬天款</td></tr>
+            <tr><td>**床垫护罩**</td><td>2个</td><td>防水、防过敏</td></tr>
+          </tbody>
+        </table>
+        <strong>iHousing建议：</strong> 床垫预算不要省！客人投诉90%与睡眠质量相关。
+        <h3>客厅</h3>
+        <strong>必备家具：</strong>
+        <table>
+          <thead>
+            <tr><th>物品</th><th>预算</th><th>推荐标准</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**沙发**</td><td>RM 800-2,500</td><td>3座 + 可展开沙发床</td></tr>
+            <tr><td>**茶几**</td><td>RM 150-400</td><td>易于清洁表面</td></tr>
+            <tr><td>**电视柜**</td><td>RM 150-400</td><td>有储物空间</td></tr>
+            <tr><td>**电视**</td><td>RM 1,000-2,500</td><td>至少43寸，智能电视</td></tr>
+            <tr><td>**窗帘**</td><td>RM 250-600</td><td>遮光 + 装饰</td></tr>
+            <tr><td>**地毯**</td><td>RM 100-300</td><td>可机洗</td></tr>
+            <tr><td>**落地灯**</td><td>RM 80-200</td><td>营造氛围</td></tr>
+            <tr><td>**餐桌 + 椅子**</td><td>RM 300-800</td><td>2-4人座</td></tr>
+          </tbody>
+        </table>
+        <strong>额外加分项：</strong>
+        <ul>
+        <li>✓ 咖啡机（Nespresso：RM 300-800）</li>
+        <li>✓ 书架 + 书籍（RM 200-500）</li>
+        <li>✓ 绿植（RM 50-150）</li>
+        </ul>
+        <h3>厨房</h3>
+        <strong>必备用品：</strong>
+        <table>
+          <thead>
+            <tr><th>类别</th><th>物品</th><th>预算</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**大件**</td><td>冰箱（200L+）</td><td>RM 1,000-2,000</td></tr>
+            <tr><td>微波炉</td><td>RM 200-500</td></tr>
+            <tr><td>电水壶</td><td>RM 50-150</td></tr>
+            <tr><td>电饭煲</td><td>RM 80-200</td></tr>
+            <tr><td>**锅具**</td><td>炒锅</td><td>RM 60-150</td></tr>
+            <tr><td>汤锅</td><td>RM 50-120</td></tr>
+            <tr><td>平底锅</td><td>RM 40-100</td></tr>
+            <tr><td>**餐具**</td><td>盘子 × 6</td><td>RM 60-120</td></tr>
+            <tr><td>碗 × 6</td><td>RM 40-80</td></tr>
+            <tr><td>筷子/勺子 × 6</td><td>RM 30-60</td></tr>
+            <tr><td>刀叉勺 × 6</td><td>RM 50-100</td></tr>
+            <tr><td>**工具**</td><td>菜刀 + 砧板</td><td>RM 50-100</td></tr>
+            <tr><td>开罐器</td><td>RM 15-40</td></tr>
+            <tr><td>剪刀</td><td>RM 10-30</td></tr>
+          </tbody>
+        </table>
+        <strong>额外加分项：</strong>
+        <ul>
+        <li>✓ 烤面包机（RM 60-150）</li>
+        <li>✓ 榨汁机（RM 100-300）</li>
+        <li>✓ 咖啡机（RM 150-500）</li>
+        </ul>
+        <h3>浴室</h3>
+        <strong>必备用品：</strong>
+        <table>
+          <thead>
+            <tr><th>物品</th><th>预算</th><th>说明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**毛巾**</td><td>RM 200-400</td><td>每人2条（面巾 + 浴巾）</td></tr>
+            <tr><td>**地垫**</td><td>RM 30-80</td><td>防滑、吸水</td></tr>
+            <tr><td>**洗漱用品架**</td><td>RM 50-150</td><td>墙挂式节省空间</td></tr>
+            <tr><td>**马桶刷**</td><td>RM 15-40</td><td>必备</td></tr>
+            <tr><td>**垃圾桶**</td><td>RM 20-50</td><td>脚踏式更好</td></tr>
+            <tr><td>**吹风机**</td><td>RM 80-250</td><td>基础款即可</td></tr>
+            <tr><td>**镜柜**</td><td>RM 150-400</td><td>有储物空间</td></tr>
+          </tbody>
+        </table>
+        <strong>洗漱用品（提供装瓶）：</strong>
+        <table>
+          <thead>
+            <tr><th>物品</th><th>品牌</th><th>预算/月</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>洗发水</td><td>Dove、Pantene</td><td>RM 30-50</td></tr>
+            <tr><td>沐浴露</td><td>同上</td><td>RM 30-50</td></tr>
+            <tr><td>洗手液</td><td>Dettol</td><td>RM 10-20</td></tr>
+            <tr><td>牙具套装</td><td>旅行装</td><td>RM 5-10/套</td></tr>
+          </tbody>
+        </table>
+        <h2>避免常见错误</h2>
+        <h3>错误1：床垫太便宜</h3>
+        <strong>问题：</strong> RM 300-500的床垫
+        <strong>后果：</strong>
+        <ul>
+        <li>客人睡眠质量差</li>
+        <li>差评增加</li>
+        <li>1-2年就要更换</li>
+        </ul>
+        <strong>正确做法：</strong> 至少RM 800-1,500的床垫
+        <h3>错误2：买太多装饰品</h3>
+        <strong>问题：</strong> 过度装饰
+        <strong>后果：</strong>
+        <ul>
+        <li>难以清洁</li>
+        <li>容易损坏</li>
+        <li>增加成本</li>
+        </ul>
+        <strong>正确做法：</strong> 少而精，5-8件重点装饰
+        <h3>错误3：忽视窗帘</h3>
+        <strong>问题：</strong> 窗帘太薄或不完整
+        <strong>后果：</strong>
+        <ul>
+        <li>客人被阳光吵醒</li>
+        <li>隐私问题</li>
+        <li>差评</li>
+        </ul>
+        <strong>正确做法：</strong> 遮光窗帘，必须覆盖整个窗户
+        <h3>错误4：厨房用品不完整</h3>
+        <strong>问题：</strong> 只提供基本厨具
+        <strong>后果：</strong>
+        <ul>
+        <li>客人无法做饭</li>
+        <li>体验差</li>
+        <li>影响预订（长期客人需要厨房）</li>
+        </ul>
+        <strong>正确做法：</strong> 提供完整的烹饪、用餐工具
+        <h3>错误5：床品数量不够</h3>
+        <strong>问题：</strong> 只有1-2套床品
+        <strong>后果：</strong>
+        <ul>
+        <li>紧急情况无法换洗</li>
+        <li>客人遇到脏床品</li>
+        <li>清洁阿姨压力</li>
+        </ul>
+        <strong>正确做法：</strong> 至少3套床品
+        <h2>智能家具推荐</h2>
+        <h3>提升体验的智能设备</h3>
+        <table>
+          <thead>
+            <tr><th>设备</th><th>价格</th><th>优势</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**智能门锁**</td><td>RM 500-1,500</td><td>无钥匙进入、客人自助check-in</td></tr>
+            <tr><td>**智能灯泡**</td><td>RM 50-150/个</td><td>可调亮度、颜色</td></tr>
+            <tr><td>**智能插座**</td><td>RM 30-80/个</td><td>远程控制、节能</td></tr>
+            <tr><td>**WiFi摄像头**</td><td>RM 100-300</td><td>安全监控（告知客人）</td></tr>
+          </tbody>
+        </table>
+        <strong>iHousing建议：</strong> 智能门锁最值得投资，节省钥匙交接成本！
+        <h2>预算优化策略</h2>
+        <h3>策略1：分阶段采购</h3>
+        <strong>阶段1（必备）：RM 15,000-20,000</strong>
+        <ul>
+        <li>床垫、床架、沙发</li>
+        <li>基本家电</li>
+        <li>厨房用品</li>
+        <li>3套床品</li>
+        </ul>
+        <strong>阶段2（提升）：RM 5,000-10,000</strong>
+        <ul>
+        <li>装饰品</li>
+        <li>更好的窗帘</li>
+        <li>智能设备</li>
+        <li>额外床品</li>
+        </ul>
+        <h3>策略2：混搭采购</h3>
+        <strong>IKEA + 本地 + 二手：</strong>
+        <table>
+          <thead>
+            <tr><th>类别</th><th>渠道</th><th>节省</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>床垫</td><td>本地品牌</td><td>vs IKEA省30%</td></tr>
+            <tr><td>沙发</td><td>二手或促销</td><td>40-50%</td></tr>
+            <tr><td>餐桌</td><td>二手</td><td>50-60%</td></tr>
+            <tr><td>床品</td><td>批发</td><td>40%</td></tr>
+            <tr><td>装饰</td><td>Shopee</td><td>60%</td></tr>
+          </tbody>
+        </table>
+        <strong>总节省：</strong> 30-40% vs 全新 + 品牌采购
+        <h3>策略3：iHousing业主折扣</h3>
+        <strong>我们提供的优惠：</strong>
+        <table>
+          <thead>
+            <tr><th>服务</th><th>折扣</th><th>说明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>家具采购</td><td>10-20%</td><td>批发渠道</td></tr>
+            <tr><td>床品批发</td><td>40-50%</td><td>最低3套</td></tr>
+            <tr><td>家电采购</td><td>5-10%</td><td>合作商家</td></tr>
+            <tr><td>配送安装</td><td>15-20%</td><td>批量安排</td></tr>
+          </tbody>
+        </table>
+        <strong>总节省：</strong> 20-30% vs 自行采购
+        <h2>采购时间表</h2>
+        <h3>理想时间规划</h3>
+        <strong>从签约到开业：8-12周</strong>
+        <table>
+          <thead>
+            <tr><th>周次</th><th>任务</th><th>说明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Week 1-2**</td><td>规划 + 预算</td><td>确定风格、档次</td></tr>
+            <tr><td>**Week 3-4**</td><td>采购大件</td><td>床垫、家电（配送慢）</td></tr>
+            <tr><td>**Week 5-6**</td><td>采购家具</td><td>沙发、衣柜、窗帘</td></tr>
+            <tr><td>**Week 7-8**</td><td>采购小件</td><td>厨具、床品、装饰</td></tr>
+            <tr><td>**Week 9-10**</td><td>安装 + 清洁</td><td>家具安装、深度清洁</td></tr>
+            <tr><td>**Week 11-12**</td><td>摄影 + 上线</td><td>专业照片、平台注册</td></tr>
+          </tbody>
+        </table>
+        <strong>紧急情况：</strong> 可以压缩到4-6周（需要额外费用）
+        <h2>常见问题解答</h2>
+        <h3>Q1: 可以用我自己的家具吗？</h3>
+        <strong>答：</strong> 可以！但我们会评估是否适合民宿。自用家具可能不够耐用。
+        <h3>Q2: 家具损坏怎么办？</h3>
+        <strong>答：</strong> Airbnb有Host Guarantee保险（最高RM 1,000,000）。我们也有客人筛选机制。
+        <h3>Q3: 多久更换家具？</h3>
+        <strong>答：</strong>
+        <ul>
+        <li>床垫：5-7年</li>
+        <li>沙发：5-8年</li>
+        <li>家电：8-10年</li>
+        <li>床品：2-3年</li>
+        </ul>
+        <h3>Q4: 可以买二手家电吗？</h3>
+        <strong>答：</strong> 可以，但建议只买1-2年的，有保修最好。
+        <h3>Q5: 窗帘必须定制吗？</h3>
+        <strong>答：</strong> 不一定。IKEA窗帘有多个尺寸，可能适合标准窗户。
+        <h2>iHousing家具采购服务</h2>
+        <h3>我们提供的帮助</h3>
+        <strong>全包服务：</strong>
+        <ul>
+        <li>✓ 风格建议</li>
+        <li>✓ 预算规划</li>
+        <li>✓ 采购清单</li>
+        <li>✓ 批发渠道（业主折扣）</li>
+        <li>✓ 质量把关</li>
+        <li>✓ 配送协调</li>
+        <li>✓ 安装监督</li>
+        </ul>
+        <strong>收费方式：</strong>
+        <ul>
+        <li>方案1：咨询费RM 500（自行采购）</li>
+        <li>方案2：全包服务（采购费的10%）</li>
+        <li><strong>业主专享：前3个月免费咨询！</strong></li>
+        </ul>
+        <h3>成功案例</h3>
+        <strong>案例：王女士，The Shore Residence 3房</strong>
+        <strong>原计划：</strong>
+        <ul>
+        <li>预算：RM 50,000</li>
+        <li>自己采购：5个商家，耗时3个月</li>
+        </ul>
+        <strong>iHousing方案：</strong>
+        <ul>
+        <li>实际花费：RM 38,000（节省24%）</li>
+        <li>时间：6周</li>
+        <li>批发渠道折扣：20%</li>
+        </ul>
+        <strong>王女士说：</strong> "iHousing帮我节省了RM 12,000，而且效果更好！"
+        <h2>立即咨询</h2>
+        <strong>输入您的电话号码，我们会WhatsApp您！</strong>
+        <p>我们提供：</p>
+        <ul>
+        <li>✓ 免费家具采购咨询</li>
+        <li>✓ 预算规划</li>
+        <li>✓ 采购清单</li>
+        <li>✓ 批发渠道介绍</li>
+        <li>✓ 业主折扣优惠</li>
+        </ul>
+        <strong>让我们帮您打造完美的民宿空间！</strong>
+        <hr class="my-8">
+        <h2>总结</h2>
+        <strong>为民宿买家具的5个关键：</strong>
+        <ol>
+        <li><strong>预算规划</strong> - 标准型RM 20,000-30,000最合适</li>
+        <li><strong>床垫优先</strong> - 客人满意度的第一要素</li>
+        <li><strong>混搭采购</strong> - IKEA + 本地 + 批发</li>
+        <li><strong>避免浪费</strong> - 不要过度装饰</li>
+        <li><strong>专业帮助</strong> - iHousing节省20-30%</li>
+        </ol>
+        <strong>正确的家具采购 = 更好的客人体验 + 更高的收入 + 更快的回本！</strong>
+        <hr class="my-8">
+        <em>文章最后更新：2025年1月23日</em>
+        <em>数据来源：iHousing内部数据、IKEA马来西亚、市场调研</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,94 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "1月最佳表现者：动态定价海滨屋收入RM16,000";
+const description = "案例研究：Pantai Kundur海滨房如何通过动态定价、新加坡定向和周末战士定位在2026年1月实现RM16,200收入。";
+const date = "2026-01-31";
+const category = "social-proof";
+const language = "zh";
+const image = "/images/blog/january-top-performer-beach-house.jpg";
+
+const content = `
+<h1>1月最佳表现者：动态定价海滨屋收入RM16,000</h1>
+
+<p><strong>房产：</strong> Pantai Kundur 3卧室海滨房<br>
+<strong>价值：</strong> RM 550,000<br>
+<strong>1月收入：</strong> <strong>RM 16,200</strong><br>
+<strong>入住率：</strong> 78%（24晚被预订）<br>
+<strong>ADR：</strong> RM 675</p>
+
+<h2>致胜策略分解</h2>
+
+<h3>1. 遗产故事定位</h3>
+
+<p><strong>房源叙事：</strong></p>
+<ul>
+<li>"传统马来渔村体验"</li>
+<li>强调当地文化、新鲜海鲜、村庄魅力</li>
+<li>与通用海滨公寓差异化</li>
+<li>针对文化游客（40%预订）</li>
+</ul>
+
+<h3>2. 新加坡市场主导</h3>
+
+<p><strong>结果：</strong> 45%预订来自新加坡</p>
+
+<ul>
+<li><strong>汇率信息：</strong> "马币4年低点让您的预算更充裕"</li>
+<li><strong>车程强调：</strong> "4小时车程 vs 昂贵航班"</li>
+<li><strong>套餐：</strong> 5晚以上预订享受15%折扣</li>
+</ul>
+
+<h3>3. 动态定价实施</h3>
+
+<p><strong>按日期优化价格：</strong></p>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>时期</strong></th>
+<th><strong>每晚费率</strong></th>
+<th><strong>入住率</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1月1-3日（新年）</td>
+<td>RM 850</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>1月4-9日（工作日）</td>
+<td>RM 450</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>1月10-12日（周末）</td>
+<td>RM 750</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>1月27-31日（春节高峰）</td>
+<td>RM 1,200</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>2月收入预测：</strong> RM 14,500-16,000（保持势头）。</p>
+
+<p><strong>WhatsApp +60166996688</strong> 为您的房产复制此策略。</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+<BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

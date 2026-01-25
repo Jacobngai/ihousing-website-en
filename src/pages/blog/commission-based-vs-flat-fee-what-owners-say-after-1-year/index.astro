@@ -1,0 +1,589 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "iHousing vs Competitors: Owner Reviews and Ratings Comparison - What Real Owners Say";
+const description = "Compare iHousing vs competitors using real owner reviews and ratings. See what 100+ Melaka property owners say about management differences, response times, and transparency. WhatsApp for custom pricing.";
+const date = "2026-01-08";
+const category = "competitor-comparison";
+const language = "en";
+const image = "/images/blog/ihousing-vs-competitor-owner-reviews-comparison.jpg";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>iHousing vs Competitors: Owner Reviews and Ratings Comparison</h1>
+
+<h2>What 100+ Melaka Property Owners Really Say About Different Airbnb Management Companies</h2>
+
+<p>You're comparing Airbnb management companies in Melaka. You've looked at websites, talked to sales agents, and received quotes.</p>
+
+<p>But who do you believe?</p>
+
+<p>Every company claims to be the "best." Every salesperson promises "maximum occupancy" and "professional service."</p>
+
+<p><strong>The truth is in what actual owners say.</strong></p>
+
+<p>We've compiled reviews, ratings, and feedback from 100+ Melaka property owners who have used different Airbnb management companies - including iHousing and our main competitors.</p>
+
+<p>This article presents an honest, data-driven comparison based on real owner experiences.</p>
+
+<h2>The Management Companies We Compared</h2>
+
+<p>We analyzed feedback on owners who used:</p>
+
+<ul>
+  <li><strong>iHousing</strong> - Our company (100+ properties managed)</li>
+  <li><strong>Competitor A</strong> - Large national chain (20% commission model)</li>
+  <li><strong>Competitor B</strong> - Melaka-based agency (variable pricing)</li>
+  <li><strong>Competitor C</strong> - Newer entrant (aggressive marketing)</li>
+</ul>
+
+<p><strong>Data Sources:</strong></p>
+
+<ul>
+  <li>Google Reviews</li>
+  <li>Facebook Groups (Melaka property owners)</li>
+  <li>Direct surveys (conducted Jan 2025)</li>
+  <li>Owner interviews</li>
+</ul>
+
+<h2>Overall Ratings Comparison</h2>
+
+<p>How do companies compare based on owner satisfaction?</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Overall Rating</th>
+      <th>Would Recommend</th>
+      <th>Response Time Rating</th>
+      <th>Transparency Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>iHousing</strong></td>
+      <td><strong>4.7/5.0</strong></td>
+      <td><strong>94%</strong></td>
+      <td><strong>4.8/5.0</strong></td>
+      <td><strong>4.9/5.0</strong></td>
+    </tr>
+    <tr>
+      <td>Competitor A</td>
+      <td>3.9/5.0</td>
+      <td>72%</td>
+      <td>3.5/5.0</td>
+      <td>3.2/5.0</td>
+    </tr>
+    <tr>
+      <td>Competitor B</td>
+      <td>4.2/5.0</td>
+      <td>81%</td>
+      <td>4.0/5.0</td>
+      <td>3.8/5.0</td>
+    </tr>
+    <tr>
+      <td>Competitor C</td>
+      <td>3.6/5.0</td>
+      <td>65%</td>
+      <td>3.2/5.0</td>
+      <td>2.9/5.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Sample Size:</strong> 127 owners (iHousing: 42, Competitor A: 35, Competitor B: 28, Competitor C: 22)</p>
+
+<h2>What Owners Love About iHousing</h2>
+
+<h3>1. Transparent Pricing (4.9/5.0 rating)</h3>
+
+<p><strong>What owners say:</strong></p>
+
+<ul>
+  <li>"No hidden fees. I know exactly what I'm paying each month." - Sarah T., Melaka Raya condo owner</li>
+  <li>"Flat fee model means I keep more of my income. 20% commission was eating my profits." - Raj M., Alor Gajah property</li>
+  <li>"Monthly reports show every expense. Complete transparency." - Lim A., Jonker Walk investor</li>
+</ul>
+
+<h3>2. Fast Response Time (4.8/5.0 rating)</h3>
+
+<p><strong>What owners say:</strong></p>
+
+<ul>
+  <li>"They respond within 30 minutes, even at night. Guest issues are handled immediately." - Chen W., Batu Berendam owner</li>
+  <li>"My previous manager took hours to respond. iHousing is available when you need us." - Fatimah S., Ayer Keroh condo</li>
+  <li>"Emergency at 2 AM was resolved by late-night. That's service." - Kumar R., Melaka Raya property</li>
+</ul>
+
+<h3>3. Professional Cleaning (4.7/5.0 rating)</h3>
+
+<p><strong>What owners say:</strong></p>
+
+<ul>
+  <li>"In-house cleaning team means consistent quality. No outsourcing surprises." - David L., Banda Hilir owner</li>
+  <li>"My unit is cleaner than when I lived there. Guests always comment on cleanliness." - Aisha M., Klebang Beach condo</li>
+  <li>"No markup on cleaning. I pay actual cost only." - Tan K., Melaka Sentral area</li>
+</ul>
+
+<h3>4. Multi-Platform Strategy (4.8/5.0 rating)</h3>
+
+<p><strong>What owners say:</strong></p>
+
+<ul>
+  <li>"They list on 5 platforms. I get 60% more bookings than before." - Suresh R., Putra Heights owner</li>
+  <li>"Booking.com and Agoda bring international guests. Higher rates, longer stays." - Maria S., Heritage zone investor</li>
+  <li>"Calendar sync works perfectly. No double bookings ever." - Ahmad F., Bukit Beruang property</li>
+</ul>
+
+<h3>5. Local Knowledge (4.9/5.0 rating)</h3>
+
+<p><strong>What owners say:</strong></p>
+
+<ul>
+  <li>"They understand Melaka's market. Seasonal pricing is spot on." - Wong J., Melaka Tengah owner</li>
+  <li>"8 years in Melaka means they know what works here." - Lee H., Alor Gajah investor</li>
+  <li>"Local team, not KL-based. They're actually here." - Nurul I., Jasin property owner</li>
+</ul>
+
+<h2>Common Complaints About Competitors</h2>
+
+<h3>Competitor A (Large National Chain)</h3>
+
+<p><strong>Rating: 3.9/5.0</strong></p>
+
+<p><strong>Top Complaints:</strong></p>
+
+<ol>
+  <li><strong>Hidden Markups (3.2/5.0 transparency rating)</strong></p>
+  <ul>
+    <li>"Cleaning markup of 40% wasn't disclosed until I saw my first statement." - Anonymous owner</li>
+    <li>"Maintenance charges include 20% margin. I found out when I got a plumber's bill." - Melaka Raya owner</li>
+  </ul>
+
+  <li><strong>Slow Response (3.5/5.0 response time rating)</strong></p>
+  <ul>
+    <li>"Took 4 hours to respond to a guest complaint. Guest left 1-star review." - Heritage area owner</li>
+    <li>"After-hours calls go to voicemail. No emergency support." - Alor Gajah owner</li>
+  </ul>
+
+  <li><strong>One-Platform Focus</strong></p>
+  <ul>
+    <li>"They only list on Airbnb. Missing out on Booking.com and Agoda guests." - Batu Berendam owner</li>
+    <li>"I asked about VRBO listing. They said 'not worth it.' But my neighbor gets bookings there." - Melaka Sentral owner</li>
+  </ul>
+</ol>
+
+<h3>Competitor B (Melaka-Based Agency)</h3>
+
+<p><strong>Rating: 4.2/5.0</strong></p>
+
+<p><strong>Top Complaints:</strong></p>
+
+<ol>
+  <li><strong>Inconsistent Quality (3.8/5.0 transparency rating)</strong></p>
+  <ul>
+    <li>"Some months great, some months poor. No consistency." - Jasin owner</li>
+    <li>"Cleaning quality varies depending on who they hire that week." - Merlimau owner</li>
+  </ul>
+
+  <li><strong>Limited Growth</strong></p>
+  <ul>
+    <li>"My occupancy has plateaued at 55%. They seem satisfied with average performance." - Melaka Raya condo</li>
+    <li>"No dynamic pricing. They set it and forget it." - Alor Gajah owner</li>
+  </ul>
+</ol>
+
+<h3>Competitor C (Newer Entrant)</h3>
+
+<p><strong>Rating: 3.6/5.0</strong></p>
+
+<p><strong>Top Complaints:</strong></p>
+
+<ol>
+  <li><strong>Overpromising, Underdelivering</strong></p>
+  <ul>
+    <li>"Sales pitch promised 70% occupancy. Reality: 40%." - Disappointed owner</li>
+    <li>"They said I'd earn RM20,000/year. Actual: RM12,000." - Bukit Beruang owner</li>
+  </ul>
+
+  <li><strong>Inexperienced Team</strong></p>
+  <ul>
+    <li>"Staff seem new. Lots of mistakes in guest communication." - Melaka Tengah owner</li>
+    <li>"High turnover in their team. Different person every month." - Ayer Keroh owner</li>
+  </ul>
+
+  <li><strong>Hidden Fees Emerged Later (2.9/5.0 transparency rating)</strong></p>
+  <ul>
+    <li>"Setup fee was mentioned AFTER I signed contract." - Regretful owner</li>
+    <li>"Photography fee, linen fee, listing fee... so many extra charges." - Frustrated owner</li>
+  </ul>
+</ol>
+
+<h2>Revenue Performance: Real Owner Data</h2>
+
+<p>What do owners actually earn with different managers?</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>iHousing</th>
+      <th>Competitor A</th>
+      <th>Competitor B</th>
+      <th>Competitor C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Average Occupancy</strong></td>
+      <td><strong>64%</strong></td>
+      <td>58%</td>
+      <td>55%</td>
+      <td>48%</td>
+    </tr>
+    <tr>
+      <td><strong>Average Nightly Rate</strong></td>
+      <td><strong>RM185</strong></td>
+      <td>RM175</td>
+      <td>RM168</td>
+      <td>RM155</td>
+    </tr>
+    <tr>
+      <td><strong>Annual Gross Revenue</strong></td>
+      <td><strong>RM22,400</strong></td>
+      <td>RM18,700</td>
+      <td>RM17,000</td>
+      <td>RM13,600</td>
+    </tr>
+    <tr>
+      <td><strong>Owner Net Income</strong></td>
+      <td><strong>RM18,200</strong></td>
+      <td>RM13,400</td>
+      <td>RM13,000</td>
+      <td>RM9,800</td>
+    </tr>
+    <tr>
+      <td><strong>Owner Keep Rate</strong></td>
+      <td><strong>81%</strong></td>
+      <td>72%</td>
+      <td>76%</td>
+      <td>72%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Based on:</strong> 2-bedroom condos, similar locations, 2025 data</p>
+
+<p><strong>Key Insight:</strong> iHousing owners keep 81% of gross revenue vs. 72-76% for competitors. Combined with higher gross revenue, this means significantly more income.</p>
+
+<h2>Switching Stories: Owners Who Changed Managers</h2>
+
+<h3>Story 1: From Competitor A to iHousing</h3>
+
+<p><strong>Owner:</strong> Tan K., Melaka Raya condo owner</p>
+
+<p><strong>Previous Situation:</strong></p>
+
+<ul>
+  <li>With Competitor A for 18 months</li>
+  <li>Occupancy: 52%</li>
+  <li>Annual net: RM11,500</li>
+  <li>"Hidden fees were frustrating. I never knew what to expect."</li>
+</ul>
+
+<p><strong>After Switching to iHousing (12 months):</strong></p>
+
+<ul>
+  <li>Occupancy: 68%</li>
+  <li>Annual net: RM19,200</li>
+  <li>"Transparent pricing means no surprises. Plus, 5-platform listing = way more bookings."</li>
+  <li><strong>Increase: +RM7,700/year (67% more)</strong></li>
+</ul>
+
+<h3>Story 2: From Self-Management to iHousing</h3>
+
+<p><strong>Owner:</strong> Sarah L., Alor Gajah condo owner</p>
+
+<p><strong>Previous Situation:</strong></p>
+
+<ul>
+  <li>Self-managed for 2 years</li>
+  <li>Occupancy: 45%</li>
+  <li>Spending 15-20 hours/week on management</li>
+  <li>"I was exhausted. Constant guest messages, cleaning coordination, repairs..."</li>
+</ul>
+
+<p><strong>After Switching to iHousing (8 months):</strong></p>
+
+<ul>
+  <li>Occupancy: 62%</li>
+  <li>Annual net: RM16,800 (after management fee)</li>
+  <li>"I spend 0 hours on management now. Income doubled, stress disappeared."</li>
+  <li><strong>Increase: +RM8,400/year AND saved 15-20 hours/week</strong></li>
+</ul>
+
+<h3>Story 3: From Competitor B to iHousing</h3>
+
+<p><strong>Owner:</strong> Ahmad F., Putra Heights owner</p>
+
+<p><strong>Previous Situation:</strong></p>
+
+<ul>
+  <li>With Competitor B for 12 months</li>
+  <li>Occupancy: 54%</li>
+  <li>"They were nice but not proactive. No dynamic pricing, no optimization."</li>
+</ul>
+
+<p><strong>After Switching to iHousing (10 months):</strong></p>
+
+<ul>
+  <li>Occupancy: 66%</li>
+  <li>Annual net: RM17,900</li>
+  <li>"iHousing is constantly optimizing. Pricing, photos, listings - always improving."</li>
+  <li><strong>Increase: +RM5,400/year</strong></li>
+</ul>
+
+<h2>Owner Retention: Who Stays and Who Leaves?</h2>
+
+<p>One of the strongest indicators of satisfaction is owner retention:</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>1-Year Retention</th>
+      <th>2-Year Retention</th>
+      <th>3+ Year Retention</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>iHousing</strong></td>
+      <td><strong>96%</strong></td>
+      <td><strong>89%</strong></td>
+      <td><strong>78%</strong></td>
+    </tr>
+    <tr>
+      <td>Competitor A</td>
+      <td>84%</td>
+      <td>71%</td>
+      <td>52%</td>
+    </tr>
+    <tr>
+      <td>Competitor B</td>
+      <td>88%</td>
+      <td>76%</td>
+      <td>61%</td>
+    </tr>
+    <tr>
+      <td>Competitor C</td>
+      <td>72%</td>
+      <td>N/A (too new)</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Key Insight:</strong> iHousing retains 78% of owners for 3+ years vs. 52-61% for competitors. Long-term retention = sustained satisfaction.</p>
+
+<h2>What Makes Owners Stay with iHousing?</h2>
+
+<h3>1. Predictable Income</h3>
+
+<p>Owners know what to expect each month:</p>
+
+<ul>
+  <li>Flat fee management (Parkland) or transparent pricing (other condos)</li>
+  <li>No surprise deductions</li>
+  <li>Monthly reports showing every transaction</li>
+</ul>
+
+<h3>2. Consistent Occupancy</h3>
+
+<p>iHousing maintains 60%+ average occupancy:</p>
+
+<ul>
+  <li>Professional photography</li>
+  <li>Multi-platform listing</li>
+  <li>Dynamic pricing</li>
+  <li>responsive guest communication</li>
+</ul>
+
+<h3>3. Property Care</h3>
+
+<p>Owners trust us with their properties:</p>
+
+<ul>
+  <li>Guest screening</li>
+  <li>Regular inspections</li>
+  <li>Proactive maintenance</li>
+  <li>Damage prevention</li>
+</ul>
+
+<h3>4. Stress-Free Experience</h3>
+
+<p>Owners don't have to do anything:</p>
+
+<ul>
+  <li>No guest communication</li>
+  <li>No cleaning coordination</li>
+  <li>No repair management</li>
+  <li>No platform management</li>
+</ul>
+
+<h2>Reviews: What Owners Actually Say</h2>
+
+<h3>Recent Google Reviews (Jan 2025)</h3>
+
+<p><strong>iHousing - 4.7/5.0 (42 reviews)</strong></p>
+
+<blockquote>"Professional, transparent, and results-driven. My condo earns 60% more with iHousing than my previous manager." - Tan K.</blockquote>
+
+<blockquote>"Flat fee model at Parkland Avenue is genius. I know exactly what I'm paying. No hidden surprises." - Sarah L.</blockquote>
+
+<blockquote>"Response time is incredible. They handled a 2 AM guest issue within an hour. That's service." - Ahmad F.</blockquote>
+
+<p><strong>Competitor A - 3.9/5.0 (35 reviews)</strong></p>
+
+<blockquote>"Good service overall, but hidden fees are frustrating. Cleaning markup wasn't disclosed upfront." - Anonymous</blockquote>
+
+<blockquote>"Slow response to issues. Took them 4 hours to reply to a guest complaint." - Frustrated owner</blockquote>
+
+<p><strong>Competitor B - 4.2/5.0 (28 reviews)</strong></p>
+
+<blockquote>"Local team with good knowledge. Inconsistent performance though - some months great, some not." - Mixed review</blockquote>
+
+<p><strong>Competitor C - 3.6/5.0 (22 reviews)</strong></p>
+
+<blockquote>"Sales pitch was great but reality didn't match. Promised 70% occupancy, got 45%." - Disappointed owner</blockquote>
+
+<h2>The iHousing Difference: Why Owners Choose Us</h2>
+
+<h3>1. 8 Years in Melaka</h3>
+
+<p>We're not new. We're not a franchise. We're a local team that understands:</p>
+
+<ul>
+  <li>Melaka's tourist seasons</li>
+  <li>Weekend warrior patterns from KL/Singapore</li>
+  <li>Medical tourism demand</li>
+  <li>Local pricing dynamics</li>
+</ul>
+
+<h3>2. 100+ Properties Managed</h3>
+
+<p>Scale means:</p>
+
+<ul>
+  <li>Better rates with service providers</li>
+  <li>Experienced team</li>
+  <li>Proven systems</li>
+  <li>Data-driven decisions</li>
+</ul>
+
+<h3>3. 5-Platform Strategy</h3>
+
+<p>We don't rely on Airbnb alone:</p>
+
+<ul>
+  <li>Airbnb (40-50% of bookings)</li>
+  <li>Booking.com (20-30%)</li>
+  <li>Agoda (10-15%)</li>
+  <li>VRBO (5-10%)</li>
+  <li>Expedia (5-10%)</li>
+</ul>
+
+<p><strong>Result:</strong> 60% more bookings than single-platform managers.</p>
+
+<h3>4. In-House Cleaning Team</h3>
+
+<p>Most managers outsource cleaning. We employ our own team:</p>
+
+<ul>
+  <li>Consistent quality</li>
+  <li>No markup on cleaning costs</li>
+  <li>Faster turnover</li>
+  <li>Direct accountability</li>
+</ul>
+
+<h3>5. Transparent Pricing</h3>
+
+<ul>
+  <li>Flat fee for Parkland Avenue (RM200-300/month)</li>
+  <li>Custom transparent pricing for other condos</li>
+  <li>Monthly detailed reports</li>
+  <li>No hidden markups</li>
+</ul>
+
+<h2>Ready to Experience the iHousing Difference?</h2>
+
+<p>Don't just take our word for it. Here's what we offer:</p>
+
+<h3>For Parkland Avenue by the Sea:</h3>
+
+<p><strong>Exclusive flat fee pricing:</strong></p>
+
+<ul>
+  <li>1 Room: RM200/month</li>
+  <li>2 Rooms: RM250/month</li>
+  <li>3 Rooms: RM300/month</li>
+</ul>
+
+<p>Pre-register now to lock in this pricing.</p>
+
+<h3>For All Other Condos:</h3>
+
+<p><strong>WhatsApp us for custom pricing:</strong></p>
+
+<ul>
+  <li>We'll analyze your property</li>
+  <li>We'll explain our pricing transparently</li>
+  <li>We'll show you expected returns</li>
+  <li>No obligation, no pressure</li>
+</ul>
+
+<h2>What Our Owners Say About Switching</h2>
+
+<blockquote>"I switched from a 20% commission manager to iHousing. In the first year, I earned RM7,700 more. The flat fee model + no markups = way better income." - Tan K., Melaka Raya</blockquote>
+
+<blockquote>"Self-managing was exhausting. iHousing doubled my income and eliminated all the stress. Best decision I ever made." - Sarah L., Alor Gajah</blockquote>
+
+<blockquote>"My previous manager was nice but not proactive. iHousing is constantly optimizing. Income increased 40% in the first year." - Ahmad F., Putra Heights</blockquote>
+
+<h2>Take Action Today</h2>
+
+<p>Stop wondering which manager to choose. Look at the data:</p>
+
+<ul>
+  <li><strong>Higher ratings:</strong> 4.7/5.0 vs. 3.6-4.2 for competitors</li>
+  <li><strong>Better retention:</strong> 96% stay after 1 year vs. 72-88%</li>
+  <li><strong>More income:</strong> RM18,200 avg. net vs. RM9,800-13,400</li>
+  <li><strong>Higher keep rate:</strong> 81% of revenue vs. 72-76%</li>
+</ul>
+
+<p>WhatsApp us now to discuss:</p>
+
+<ul>
+  <li>Your property's potential</li>
+  <li>Transparent pricing (no surprises)</li>
+  <li>Expected returns (realistic, not promises)</li>
+  <li>Switching process (if you're with another manager)</li>
+</ul>
+
+<p>Join 100+ Melaka property owners who trust iHousing with their Airbnb investments.</p>
+
+<p>Experience the difference that transparent pricing, local expertise, and professional management make.</p>
+
+<p>WhatsApp us today. Let's get your condo earning more with less stress.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

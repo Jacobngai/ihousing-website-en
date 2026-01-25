@@ -1,0 +1,299 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'Properties We Manage | iHousing Melaka Airbnb Management';
+const description = 'View all condominiums and residences managed by iHousing in Melaka. Switch to our custom pricing Airbnb management from your current manager.';
+const image = 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200';
+
+const properties = [
+  {
+    name: 'Parkland Avenue by the Sea',
+    slug: 'parkland/avenue-by-the-sea/',
+    type: 'Featured',
+    description: 'Official Airbnb Manager for Parkland Group',
+    highlight: true
+  },
+  {
+    name: 'Silverscape Residence',
+    slug: 'switch-to-us/silverscape-residence/',
+    type: 'Condominium',
+    description: 'Prime location near Melaka Raya'
+  },
+  {
+    name: 'The Shore Residence',
+    slug: 'switch-to-us/the-shore-residence/',
+    type: 'Condominium',
+    description: 'Waterfront living with city views'
+  },
+  {
+    name: 'Imperio Residence',
+    slug: 'switch-to-us/imperio-residence/',
+    type: 'Condominium',
+    description: 'Modern amenities in heart of Melaka'
+  },
+  {
+    name: 'Ong Kim Wee Residence',
+    slug: 'switch-to-us/ong-kim-wee-residence/',
+    type: 'Condominium',
+    description: 'Strategic location near attractions'
+  },
+  {
+    name: 'Novo 8 Residence',
+    slug: 'switch-to-us/novo-8-residence/',
+    type: 'Condominium',
+    description: 'Luxury living with resort facilities'
+  },
+  {
+    name: 'Century Mahkota',
+    slug: 'switch-to-us/century-mahkota/',
+    type: 'Condominium',
+    description: 'Historic area with modern comfort'
+  },
+  {
+    name: 'Wave Residence',
+    slug: 'switch-to-us/wave-residence/',
+    type: 'Condominium',
+    description: 'Beachfront lifestyle living'
+  },
+  {
+    name: 'Quartz Residence',
+    slug: 'switch-to-us/quartz-residence/',
+    type: 'Condominium',
+    description: 'Affordable luxury in Melaka'
+  },
+  {
+    name: 'Atlantis Residence',
+    slug: 'switch-to-us/atlantis-residence/',
+    type: 'Condominium',
+    description: 'Premium facilities and location'
+  },
+  {
+    name: 'Parkland Residence',
+    slug: 'switch-to-us/parkland-residence/',
+    type: 'Condominium',
+    description: 'Quality living by Parkland Group'
+  }
+];
+
+const whatsappNumber = '60196996688';
+const whatsappMessage = encodeURIComponent('Hi, I\'m interested in your Airbnb management services. My property is at:');
+const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 text-white py-20 lg:py-28">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-green-300 font-semibold mb-4 text-lg">100+ Properties Across Melaka</p>
+        <h1 class="text-3xl lg:text-5xl font-bold leading-tight mb-6">
+          Properties We Manage
+        </h1>
+        <p class="text-xl lg:text-2xl text-green-100 mb-8 max-w-3xl mx-auto">
+          We manage Airbnb properties at Melaka's most popular condominiums.
+          <br class="hidden sm:block">
+          See if your property is on our list.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Property -->
+    <section class="py-16 bg-yellow-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-yellow-500 text-2xl">⭐</span>
+          <p class="text-yellow-700 font-bold">FEATURED PROJECT</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div class="md:flex">
+            <div class="md:w-1/2 bg-gradient-to-br from-yellow-400 to-yellow-500 p-8 flex items-center justify-center">
+              <div class="text-center">
+                <p class="text-yellow-900 font-bold text-lg mb-2">Parkland Group</p>
+                <h2 class="text-3xl font-bold text-yellow-900 mb-2">Parkland Avenue</h2>
+                <p class="text-yellow-800">by the Sea</p>
+                <p class="text-yellow-900 mt-4 font-semibold">Official Airbnb Manager</p>
+              </div>
+            </div>
+            <div class="md:w-1/2 p-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Beachfront Investment Opportunity</h3>
+              <p class="text-gray-600 mb-4">
+                We're the developer-selected Airbnb management partner for Parkland Avenue by the Sea. If you bought a unit here, you're in the right place.
+              </p>
+              <ul class="space-y-2 mb-6 text-gray-700">
+                <li class="flex items-start">
+                  <span class="text-green-600 mr-2">✓</span>
+                  <span>Developer-selected management partner</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-600 mr-2">✓</span>
+                  <span>Exclusive pre-launch pricing</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-green-600 mr-2">✓</span>
+                  <span>Full ROI analysis available</span>
+                </li>
+              </ul>
+              <a
+                href="/en/parkland/avenue-by-the-sea/"
+                class="inline-block bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+              >
+                Learn More →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- All Properties Grid -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-center">
+          All Managed Properties
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Click on your property to learn about switching to iHousing.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {properties.map((property) => (
+            <a
+              href={`/en/${property.slug}`}
+              class={`block p-6 rounded-xl border-2 transition-all ${
+                property.highlight
+                  ? 'border-yellow-400 bg-yellow-50 hover:bg-yellow-100 hover:border-yellow-500'
+                  : 'border-gray-200 bg-gray-50 hover:bg-green-50 hover:border-green-500'
+              }`}
+            >
+              {property.highlight && (
+                <div class="flex items-center gap-1 mb-3">
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-xs font-bold text-yellow-700">FEATURED</span>
+                </div>
+              )}
+              <h3 class={`text-xl font-bold mb-2 ${
+                property.highlight ? 'text-yellow-900' : 'text-gray-900'
+              }`}>
+                {property.name}
+              </h3>
+              <p class={`text-sm mb-3 ${
+                property.highlight ? 'text-yellow-700' : 'text-gray-500'
+              }`}>
+                {property.type}
+              </p>
+              <p class="text-gray-600 mb-4">
+                {property.description}
+              </p>
+              <span class={`text-sm font-semibold ${
+                property.highlight ? 'text-yellow-700' : 'text-green-600'
+              }`}>
+                Learn More →
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Switch to Us CTA -->
+    <section class="py-16 bg-gray-900 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+          Already Have an Airbnb Manager?
+        </h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Switch to iHousing and save on management fees. We make the transition seamless - no booking interruptions.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-10">
+          <div class="bg-gray-800 p-6 rounded-xl">
+            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-xl text-white font-bold">1</span>
+            </div>
+            <h3 class="font-bold mb-2">WhatsApp Us</h3>
+            <p class="text-gray-400 text-sm">Tell us about your property</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl">
+            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-xl text-white font-bold">2</span>
+            </div>
+            <h3 class="font-bold mb-2">We Handle Transfer</h3>
+            <p class="text-gray-400 text-sm">Platform migration, calendar sync</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-xl">
+            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-xl text-white font-bold">3</span>
+            </div>
+            <h3 class="font-bold mb-2">Start Saving</h3>
+            <p class="text-gray-400 text-sm">Pay less, earn more</p>
+          </div>
+        </div>
+
+        <a
+          href={whatsappLink}
+          class="inline-block bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-4 px-10 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg"
+        >
+          Switch to iHousing Now
+        </a>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">
+          Why Property Owners Choose Us
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-green-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-green-900 mb-3">Custom Pricing</h3>
+            <p class="text-gray-700">
+              Flat fee pricing that saves you money compared to 20% commission managers. WhatsApp us for details.
+            </p>
+          </div>
+
+          <div class="bg-blue-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-blue-900 mb-3">5 Platform Listing</h3>
+            <p class="text-gray-700">
+              Airbnb, Booking.com, Agoda, Expedia, Agoda Homes. 60% more booking opportunities.
+            </p>
+          </div>
+
+          <div class="bg-purple-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-purple-900 mb-3">In-House Team</h3>
+            <p class="text-gray-700">
+              Our own cleaning and maintenance team. Quality control, no outsourcing markups.
+            </p>
+          </div>
+
+          <div class="bg-yellow-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-yellow-900 mb-3">8 Years Experience</h3>
+            <p class="text-gray-700">
+              Managing Melaka properties since 2017. We know this market inside out.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-green-700 text-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+          Don't See Your Property Listed?
+        </h2>
+        <p class="text-xl text-green-100 mb-8">
+          We're always expanding to new locations. WhatsApp us to discuss your property.
+        </p>
+        <a
+          href={whatsappLink}
+          class="inline-block bg-yellow-500 hover:bg-yellow-400 text-green-900 font-bold py-4 px-12 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg"
+        >
+          WhatsApp Us Now
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

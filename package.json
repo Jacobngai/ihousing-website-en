@@ -1,0 +1,47 @@
+{
+  "name": "ihousing-website",
+  "version": "1.0.0",
+  "description": "iHousing - Property Management & Airbnb Hosting Platform",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build && node scripts/generate-production-sitemap.cjs",
+    "build:sitemaps": "node scripts/generate-production-sitemap.cjs",
+    "build:all": "astro build && node scripts/generate-production-sitemap.cjs",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check-sitemap": "playwright test sitemap-check.spec.ts --reporter=json --output=sitemap-check-results.json",
+    "check-sitemap:local": "SITE_URL=http://localhost:4321 playwright test sitemap-check.spec.ts",
+    "check-sitemap:staging": "SITE_URL=https://staging-ihousing.vercel.app playwright test sitemap-check.spec.ts",
+    "check-sitemap:prod": "SITE_URL=https://en.ihousing-temp.vercel.app playwright test sitemap-check.spec.ts",
+    "generate-blog-registry": "node scripts/generate-blog-registry.cjs",
+    "check-blog": "playwright test tests/blog-check.spec.ts",
+    "check-blog:prod": "cross-env BASE_URL=https://www.ihousing.net playwright test tests/blog-check.spec.ts",
+    "check-blog:staging": "cross-env BASE_URL=https://ihousing-website-pd3t23iym-ngsanzen-gmailcoms-projects.vercel.app playwright test tests/blog-check.spec.ts"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.6.0",
+    "@astrojs/tailwind": "^6.0.2",
+    "@astrojs/vercel": "^9.0.0",
+    "astro": "^5.15.3",
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "cross-env": "^10.1.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-astro": "^0.12.0"
+  },
+  "keywords": [
+    "ihousing",
+    "airbnb",
+    "property-management",
+    "melaka",
+    "malaysia",
+    "homestay",
+    "hosting"
+  ],
+  "author": "iHousing",
+  "license": "MIT"
+}

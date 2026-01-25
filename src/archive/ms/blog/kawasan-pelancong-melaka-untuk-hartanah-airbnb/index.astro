@@ -1,0 +1,116 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Kawasan Pelancong Melaka untuk Hartanah Airbnb: Panduan Lengkap";
+const description = "Kawasan pelancong terbaik di Melaka untuk pelaburan hartanah Airbnb. Dari Bandar Hilir hingga Pantai Klebang, ketahui lokasi dengan potensi pendapatan tertinggi.";
+const image = "/images/blog/kawasan-pelancong-melaka.jpg";
+const date = "2025-01-23";
+const category = "lokasi";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h2>Kawasan Pelancong Melaka untuk Hartanah Airbnb: Panduan Lengkap</h2>
+
+        <p>Melaka adalah salah satu destinasi pelancongan paling popular di Malaysia dengan lebih 19 juta pelancong setahun. Untuk pelabur hartanah Airbnb, memilih kawasan yang betul adalah keputusan paling kritikal yang akan menentukan kejayaan pelaburan anda.</p>
+
+        <h3>Perbandingan Komprehensif Semua Kawasan</h3>
+
+        <h4>Pendapatan Projek Tahunan</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Kawasan</th>
+              <th>Minimum</th>
+              <th>Purata</th>
+              <th>Maksimum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bandar Hilir</td>
+              <td>RM9,000</td>
+              <td>RM14,000</td>
+              <td>RM25,000</td>
+            </tr>
+            <tr>
+              <td>Melaka Raya</td>
+              <td>RM6,000</td>
+              <td>RM9,000</td>
+              <td>RM12,000</td>
+            </tr>
+            <tr>
+              <td>Pantai Klebang</td>
+              <td>RM5,000</td>
+              <td>RM7,500</td>
+              <td>RM10,000</td>
+            </tr>
+            <tr>
+              <td>Bukit Cina</td>
+              <td>RM7,000</td>
+              <td>RM11,000</td>
+              <td>RM15,000</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>Kadar Penginapan</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Kawasan</th>
+              <th>Rendah</th>
+              <th>Purata</th>
+              <th>Tinggi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bandar Hilir</td>
+              <td>50%</td>
+              <td>62%</td>
+              <td>70%</td>
+            </tr>
+            <tr>
+              <td>Melaka Raya</td>
+              <td>40%</td>
+              <td>50%</td>
+              <td>60%</td>
+            </tr>
+            <tr>
+              <td>Pantai Klebang</td>
+              <td>35%</td>
+              <td>45%</td>
+              <td>55%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="bg-yellow-50 border-l-4 border-yellow-600 p-6 my-8">
+          <h3 class="text-yellow-900 font-bold mb-2">Dapatkan Bantuan dari iHousing</h3>
+          <p class="text-yellow-800">Kami di iHousing pakar dalam semua kawasan pelancong Melaka:</p>
+          <ul class="list-disc list-inside text-yellow-800 ml-4">
+            <li>Bandar Hilir: 50+ unit diuruskan</li>
+            <li>Melaka Raya: 30+ unit diuruskan</li>
+            <li>Pantai Klebang: 15+ unit diuruskan</li>
+          </ul>
+
+          <p class="text-yellow-800 mt-4"><strong>Untuk Parkland Avenue by the Sea:</strong></p>
+          <ul class="list-disc list-inside text-yellow-800 ml-4">
+            <li>Yuran tetap: RM200-300/bulan</li>
+            <li>Termasuk perkhidmatan penuh</li>
+          </ul>
+
+          <p class="text-yellow-800 mt-4">WhatsApp: +60 19-699 6688</p>
+        </div>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,432 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Membeli Perabot untuk Airbnb: Panduan Lengkap Jimat & Berkualiti";
+const description = "Panduan lengkap membeli perabot untuk Airbnb di Melaka. Ketahui belanjawan RM10,000-60,000, di mana untuk membeli, dan item yang paling penting untuk tetamu anda.";
+const image = "/images/blog/membeli-perabot-untuk-airbnb-panduan-lengkap.jpg";
+const date = "2025-01-23";
+const category = "setup";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Membeli Perabot untuk Airbnb: Panduan Lengkap Jimat & Jimat</h1>
+        <p>Salah satu keputusan paling penting ketika memulakan Airbnb ialah memilih perabot yang tepat. Perabot yang salah bukan sahaja membazirkan wang, tetapi juga boleh menjejaskan pengalaman tetamu dan rating senarai anda.</p>
+        <p>Panduan ini akan membantu anda membuat keputusan bijak dengan bajet yang sesuai.</p>
+        <h2>Bajet Furnishing: Pilih Tahap Anda</h2>
+        <h3>Tahap Asas (RM10,000 - RM15,000)</h3>
+        <p>Cocok untuk: Pemula, unit studio/1-bilik</p>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Katil + tilam</td><td>RM1,500 - RM2,000</td></tr>
+            <tr><td>Sofa</td><td>RM600 - RM900</td></tr>
+            <tr><td>Meja makan + kerusi</td><td>RM400 - RM600</td></tr>
+            <tr><td>Perkakas dapur asas</td><td>RM1,500 - RM2,000</td></tr>
+            <tr><td>TV</td><td>RM800 - RM1,200</td></tr>
+            <tr><td>Lentik + handuk</td><td>RM500 - RM800</td></tr>
+            <tr><td>Pintar berkunci</td><td>RM500 - RM800</td></tr>
+            <tr><td>Dekorasi asas</td><td>RM800 - RM1,200</td></tr>
+            <tr><td>Lain-lain</td><td>RM3,900 - RM5,700</td></tr>
+            <tr><td>**JUMLAH**</td><td>**RM10,000 - RM15,000**</td></tr>
+          </tbody>
+        </table>
+        <h3>Tahap Sederhana (RM20,000 - RM35,000)</h3>
+        <p>Cocok untuk: Kondominium 2-bilik tidur, standard selesa</p>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Katil berkualiti (2 unit)</td><td>RM3,000 - RM4,500</td></tr>
+            <tr><td>Sofa selesa</td><td>RM1,500 - RM2,500</td></tr>
+            <tr><td>Meja makan lengkap</td><td>RM1,000 - RM1,800</td></tr>
+            <tr><td>Perkakas dapur lengkap</td><td>RM3,000 - RM5,000</td></tr>
+            <tr><td>TV pintar (40-50 inci)</td><td>RM1,500 - RM2,500</td></tr>
+            <tr><td>Lentik premium</td><td>RM1,000 - RM1,500</td></tr>
+            <tr><td>Pintar berkunci premium</td><td>RM800 - RM1,500</td></tr>
+            <tr><td>Dekorasi stylish</td><td>RM2,500 - RM4,000</td></tr>
+            <tr><td>Perabot dapur</td><td>RM1,500 - RM2,500</td></tr>
+            <tr><td>Lain-lain</td><td>RM5,700 - RM12,200</td></tr>
+            <tr><td>**JUMLAH**</td><td>**RM20,000 - RM35,000**</td></tr>
+          </tbody>
+        </table>
+        <h3>Tahap Premium (RM50,000 - RM80,000)</h3>
+        <p>Cocok untuk: Unit mewah, lokasi premium, harga sewa tinggi</p>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Katil king + queen premium</td><td>RM6,000 - RM10,000</td></tr>
+            <tr><td>Sofa designer</td><td>RM4,000 - RM7,000</td></tr>
+            <tr><td>Meja makan mewah</td><td>RM3,000 - RM5,000</td></tr>
+            <tr><td>Perkakas premium (Miele/Bosch)</td><td>RM8,000 - RM15,000</td></tr>
+            <tr><td>TV 55-65 inci 4K</td><td>RM3,000 - RM5,000</td></tr>
+            <tr><td>Lentik luxury thread count</td><td>RM2,000 - RM3,500</td></tr>
+            <tr><td>Sistem pintar lengkap</td><td>RM2,000 - RM4,000</td></tr>
+            <tr><td>Dekorasi seni/bunga</td><td>RM5,000 - RM10,000</td></tr>
+            <tr><td>Perkhidmatan reka bentuk</td><td>RM5,000 - RM15,000</td></tr>
+            <tr><td>Lain-lain</td><td>RM12,000 - RM15,500</td></tr>
+            <tr><td>**JUMLAH**</td><td>**RM50,000 - RM80,000**</td></tr>
+          </tbody>
+        </table>
+        <h2>Item Paling Penting untuk Airbnb</h2>
+        <p>Jika bajet terhad, prioritaskan item ini:</p>
+        <h3>1. Tilam yang Selesa (PENTING!)</h3>
+        <p>Tetamu menghargai tilam yang selesa melebihi semua lain.</p>
+        <strong>Cadangan:</strong>
+        <ul>
+        <li>Tahap asas: RM500-800 (Single Coil)</li>
+        <li>Tahap sederhana: RM800-1,500 (Pocket Spring)</li>
+        <li>Tahap premium: RM1,500-3,000 (Latex/Hybrid)</li>
+        </ul>
+        <strong>Tips:</strong> Jangan terlalu jimat. Tilam buruk = ulasan negatif.
+        <h3>2. Sofa yang Praktikal</h3>
+        <p>Pilih sofa:</p>
+        <ul>
+        <li>Warna neutral (kelabu, krim, beige)</li>
+        <li>Fabric mudah dibersihkan (microsuede)</li>
+        <li>Saiz sesuai dengan ruang</li>
+        <li>Elakkan kulit (susahmaintenance)</li>
+        </ul>
+        <strong>Harga:</strong> RM600-3,000 bergantung kualiti
+        <h3>3. Penyaman Udara</h3>
+        <ul>
+        <li>Bilik tidur: 1.0HP (150 sq ft), 1.5HP (200 sq ft)</li>
+        <li>Ruang tamu: 1.5HP - 2.0HP</li>
+        </ul>
+        <strong>Jenama dipercayai:</strong> Daikin, Mitsubishi, Panasonic
+        <h3>4. Penyaman Udara</h3>
+        <ul>
+        <li>Bilik tidur: 1.0HP (150 sq ft), 1.5HP (200 sq ft)</li>
+        <li>Ruang tamu: 1.5HP - 2.0HP</li>
+        </ul>
+        <strong>Jenama dipercayai:</strong> Daikin, Mitsubishi, Panasonic
+        <h3>5. Pintar Berkunci Pintu</h3>
+        <p>Memudahkan daftar masuk sendiri tanpa kehadiran hos.</p>
+        <strong>Pilihan:</strong>
+        <ul>
+        <li>Asas: RM500-800 (PIN code)</li>
+        <li>Sederhana: RM800-1,200 (WiFi + fingerprint)</li>
+        <li>Premium: RM1,200-2,000 (Integrasi sistem rumah)</li>
+        </ul>
+        <h3>6. Lentik & Handuk Berkualiti</h3>
+        <p>Tetamu menghargai kebersihan dan keselesaan.</p>
+        <strong>Minimum:</strong>
+        <ul>
+        <li>2 set lentik (1 set di tempat cuci, 1 set simpanan)</li>
+        <li>4-6 handuk mandi</li>
+        <li>2-3 handuk muka</li>
+        </ul>
+        <strong>Tips:</strong> Guna warna putih - nampak bersih dan profesional.
+        <h2>Di Mana untuk Membeli Perabot?</h2>
+        <h3>Pilihan 1: IKEA (Tebrau/Putra Heights/Cheras)</h3>
+        <strong>Kelebihan:</strong>
+        <ul>
+        <li>Harga telus</li>
+        <li>Reka bentuk moden</li>
+        <li>Pakej lengkap tersedia</li>
+        </ul>
+        <strong>Contoh kos:</strong>
+        <ul>
+        <li>Paket lengkap studio: RM8,000-12,000</li>
+        <li>Paket lengkap 2-bilik: RM15,000-25,000</li>
+        </ul>
+        <strong>Jarak dari Melaka:</strong> 1.5 - 2 jam perjalanan
+        <h3>Pilihan 2: Kedai Perabot Tempatan Melaka</h3>
+        <strong>Kawasan:</strong>
+        <ul>
+        <li>Bachang (kawasan perabot)</li>
+        <li>Jalan Tun Abdul Razak</li>
+        <li>Melaka Mall (kedai perabot di dalam)</li>
+        </ul>
+        <strong>Kelebihan:</strong>
+        <ul>
+        <li>Penghantaran lebih murah</li>
+        <li>Sokongan tempatan</li>
+        <li>Boleh runding harga</li>
+        </ul>
+        <h3>Pilihan 3: Online (Lazada/Shopee)</h3>
+        <strong>Item sesuai:</strong>
+        <ul>
+        <li>Perkakas kecil</li>
+        <li>Peralatan dapur</li>
+        <li>Dekorasi</li>
+        <li>Lentik dan handuk</li>
+        </ul>
+        <strong>Berhati-hati:</strong> Guna hanya untuk item kecil - jangan beli katil atau sofa atas talian tanpa lihat fizikal.
+        <h3>Pilihan 4: Barang Terpakai</h3>
+        <strong>Sumber:</strong>
+        <ul>
+        <li>Facebook Marketplace</li>
+        <li>Carousell</li>
+        <li>Kedai barang terpakai</li>
+        </ul>
+        <strong>Item sesuai untuk beli terpakai:</strong>
+        <ul>
+        <li>Kerusi, meja</li>
+        <li>Perkakas dapur</li>
+        <li>Hiasan dinding</li>
+        <li>Perabot luar (jika ada)</li>
+        </ul>
+        <strong>Item JANGAN beli terpakai:</strong>
+        <ul>
+        <li>Tilam (alasan kesihatan)</li>
+        <li>Sofa (mungkin ada habuk/kutu)</li>
+        <li>Peralatan elektrik</li>
+        </ul>
+        <h2>Tips Jimat Wang Tanpa Mengorbankan Kualiti</h2>
+        <h3>Tip 1: Guna Neutral Colors</h3>
+        <p>Warna neutral (putih, kelabu, beige) nampak:</p>
+        <ul>
+        <li>Lebih mahal</li>
+        <li>Lebih bersih</li>
+        <li>Sesuai dengan semua tetamu</li>
+        <li>Mudah diganti tema</li>
+        </ul>
+        <h3>Tip 2: Beli Set Pintar</h3>
+        <p>Contoh:</p>
+        <ul>
+        <li>Set katil + 2 almari = lebih murah dari beli berasingan</li>
+        <li>Set meja makan + 4 kerusi = jimat RM200-400</li>
+        </ul>
+        <h3>Tip 3: Fokus pada "Touch Points"</h3>
+        <p>Item yang banyak disentuh tetamu:</p>
+        <ul>
+        <li>Tombol pintu (guna yang metal, bukan plastik)</li>
+        <li>Fabrik sofa (ruabable, bukan murah)</li>
+        <li>Peralatan makan ( stainless steel, bukan plastik)</li>
+        <li>Handuk (100% kapas, bukan polyester)</li>
+        </ul>
+        <h3>Tip 4: Invest pada Foto</h3>
+        <p>Perabot yang baik + fotograf yang baik = rating tinggi</p>
+        <p>Jimat RM5,000 pada perabot = boleh kehilangan RM20,000 pendapatan setahun akibat rating rendah.</p>
+        <h3>Tip 5: Mulakan dengan Asas</h3>
+        <p>Tak perlu beli semua sekali:</p>
+        <ul>
+        <li>Bulan 1: Katil, sofa, dapur asas (RM10,000)</li>
+        <li>Bulan 2-3: Hiasan, perabot tambahan (RM3,000-5,000)</li>
+        <li>Selepas 6 bulan: Upgrade item popular (RM2,000-4,000)</li>
+        </ul>
+        <h2>Senarai Semak Bilik demi Bilik</h2>
+        <h3>Bilik Tidur</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Wajib/Pilihan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Katil</td><td>Wajib</td><td>RM800-3,000</td></tr>
+            <tr><td>Tilam</td><td>Wajib</td><td>RM500-2,500</td></tr>
+            <tr><td>Almari</td><td>Wajib</td><td>RM600-2,000</td></tr>
+            <tr><td>Meja malam</td><td>Wajib</td><td>RM150-400 x 2</td></tr>
+            <tr><td>Lampu</td><td>Wajib</td><td>RM80-200 x 2</td></tr>
+          </tbody>
+        </table>
+        <ul>
+        <li>Langsir | Wajib | RM200-600</li>
+        </ul>
+        <p>| Karpet | Pilihan | RM200-500 |</p>
+        <p>| Dekorasi dinding | Pilihan | RM100-300 |</p>
+        <strong>Jumlah:</strong> RM3,260-11,100
+        <h3>Ruang Tamu</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Wajib/Pilihan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Sofa</td><td>Wajib</td><td>RM600-3,000</td></tr>
+            <tr><td>Meja kopi</td><td>Wajib</td><td>RM150-500</td></tr>
+            <tr><td>TV cabinet</td><td>Wajib</td><td>RM300-1,200</td></tr>
+            <tr><td>TV</td><td>Wajib</td><td>RM800-3,000</td></tr>
+            <tr><td>Penyaman udara</td><td>Wajib</td><td>RM1,200-2,500</td></tr>
+            <tr><td>Lampu lantai</td><td>Pilihan</td><td>RM100-300</td></tr>
+            <tr><td>Karpet</td><td>Pilihan</td><td>RM300-800</td></tr>
+            <tr><td>Dekorasi</td><td>Pilihan</td><td>RM200-600</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah:</strong> RM3,650-11,900
+        <h3>Dapur</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Wajib/Pilihan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Peti sejuk</td><td>Wajib</td><td>RM800-2,500</td></tr>
+            <tr><td>Microwave</td><td>Wajib</td><td>RM200-600</td></tr>
+            <tr><td>Cerek elektrik</td><td>Wajib</td><td>RM60-150</td></tr>
+          </tbody>
+        </table>
+        <ul>
+        <li>Periuk nasi | Wajib | RM80-200 |</li>
+        </ul>
+        <p>| Periuk + kuali | Wajib | RM150-400 |</p>
+        <p>| Peralatan makan | Wajib | RM200-500 |</p>
+        <p>| Meja makan + kerusi | Wajib | RM400-1,500 |</p>
+        <p>| Blender | Pilihan | RM100-300 |</p>
+        <ul>
+        <li>Pembakar roti | Pilihan | RM80-200 |</li>
+        </ul>
+        <strong>Jumlah:</strong> RM2,070-6,350
+        <h3>Bilik Air</h3>
+        <ul>
+        <li>Shower head baik | Wajib | RM80-200 |</li>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Wajib/Pilihan</th><th>Anggaran Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Handuk (4-6)</td><td>Wajib</td><td>RM200-500</td></tr>
+            <tr><td>Jebok dulang</td><td>Wajib</td><td>RM50-150</td></tr>
+            <tr><td>Sabun & syampu</td><td>Wajib</td><td>RM50-100 (stok)</td></tr>
+            <tr><td>Pengering rambut</td><td>Wajib</td><td>RM60-150</td></tr>
+            <tr><td>Tisu tandas</td><td>Wajib</td><td>RM30-60 (stok)</td></tr>
+            <tr><td>Cermin</td><td>Wajib</td><td>RM100-300</td></tr>
+            <tr><td>Rak</td><td>Pilihan</td><td>RM50-150</td></tr>
+            <tr><td>Liner</td><td>Pilihan</td><td>RM50-100</td></tr>
+          </tbody>
+        </table>
+        </ul>
+        <strong>Jumlah:</strong> RM680-1,610
+        <h2>Perabot yang Perlu Dielakkan</h2>
+        <h3>JANGAN Beli:</h3>
+        <ol>
+        <li><strong>Sofa kulit putih</strong> - Nampak kotor dengan cepat</li>
+        <li><strong>Karpet putih</strong> - Susah dicuci</li>
+        <li><strong>Perabot dengan banyak celah</strong> - Mengumpul habuk</li>
+        <li><strong>Katil yang terlalu lembut</strong> - Tetamu mengeluh sakit belakang</li>
+        <li><strong>Peralatan dapur yang terlalu kompleks</strong> - Tetamu tak faham guna</li>
+        <li><strong>Dekorasi berlebihan</strong> - Nampak berantakan, sukar dibersihkan</li>
+        </ol>
+        <h3>BOLEH Beli:</h3>
+        <ol>
+        <li><strong>Perabot multifungsi</strong> - Sofa katil, meja lipat</li>
+        <li><strong>Fabric gelap</strong> - Kurang nampak kotor</li>
+        <li><strong>Perabot mudah alih</strong> - Mudah ubahsuai</li>
+        <li><strong>Perabot ringkas</strong> - Lebih senang dibersihkan</li>
+        </ol>
+        <h2>Kos Penghantaran & Pemasangan</h2>
+        <p>Jangan lupa masukkan kos ini dalam bajet:</p>
+        <table>
+          <thead>
+            <tr><th>Perkhidmatan</th><th>Kos Anggaran</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Penghantaran (Melaka)</td><td>RM100-300</td></tr>
+            <tr><td>Pemasangan perabot</td><td>RM200-500</td></tr>
+            <tr><td>Pembuangan sampah</td><td>RM50-150</td></tr>
+            <tr><td>Kos pengangkutan</td><td>RM50-100</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah tambahan:</strong> RM400-1,050
+        <h2>Guna Perabot untuk Meningkatkan Rating</h2>
+        <h3>Strategi Fotografi</h3>
+        <p>Perabot yang baik nampak hebat dalam foto:</p>
+        <ul>
+        <li>Pilih warna yang serasi dengan dinding</li>
+        <li>Susun perabot untuk ruang yang nampak luas</li>
+        <li>Guna hiasan untuk menambah warna</li>
+        </ul>
+        <h3>Strategi Keselesaan Tetamu</h3>
+        <p>Item yang mendapat ulasan positif:</p>
+        <ul>
+        <li>Tilam selesa (pujian paling kerap)</li>
+        <li>Shower yang baik</li>
+        <li>Penyaman udara berfungsi</li>
+        <li>Sofa selesa untuk bersantai</li>
+        <li>Dapur yang lengkap</li>
+        </ul>
+        <h2>Cara Bermula dengan Bajet Terhad</h2>
+        <h3>Strategi 1: Fokus pada Bilik Tidur</h3>
+        <p>Peruntukan 50% bajet untuk bilik tidur:</p>
+        <ul>
+        <li>Tilam berkualiti: RM1,500</li>
+        <li>Katil: RM800</li>
+        <li>Almari: RM600</li>
+        <li>Langsir: RM300</li>
+        <li>Lampu: RM200</li>
+        </ul>
+        <strong>Jumlah:</strong> RM3,400
+        <h3>Strategi 2: Mulakan dengan Asas Dapur</h3>
+        <p>Peruntukan 20% bajet untuk dapur:</p>
+        <ul>
+        <li>Peti sejuk: RM1,000</li>
+        <li>Microwave: RM200</li>
+        <li>Cerek: RM60</li>
+        <li>Periuk: RM150</li>
+        <li>Peralatan makan: RM200</li>
+        </ul>
+        <strong>Jumlah:</strong> RM1,610
+        <h3>Strategi 3: Ruang Tamu Sederhana</h3>
+        <p>Peruntukan 20% bajet untuk ruang tamu:</p>
+        <ul>
+        <li>Sofa: RM800</li>
+        <li>Meja kopi: RM200</li>
+        <li>TV: RM1,000</li>
+        </ul>
+        <strong>Jumlah:</strong> RM2,000
+        <h3>Strategi 4: Baki untuk Bilik Air & Lain-lain</h3>
+        <p>Peruntukan 10% untuk:</p>
+        <ul>
+        <li>Handuk: RM300</li>
+        <li>Pintar berkunci: RM500</li>
+        <li>Barang habis guna: RM200</li>
+        <li>Dekorasi: RM200</li>
+        </ul>
+        <strong>Jumlah:</strong> RM1,200
+        <strong>Jumlah keseluruhan:</strong> RM8,210 (permulaan asas)
+        <h2>Dapatkan Bantuan Furnishing dari iHousing</h2>
+        <p>Kami boleh membantu anda dengan:</p>
+        <ol>
+        <li>Konsultasi reka bentuk percuma</li>
+        <li>Cadangan pembekal perabot</li>
+        <li>Pengurusan pembelian dan pemasangan</li>
+        <li>Reka bentuk dalaman profesional</li>
+        </ol>
+        <h3>Untuk Parkland Avenue by the Sea</h3>
+        <p>Paket furnishing eksklusif untuk pemilik:</p>
+        <ul>
+        <li>Pakej asas dari RM15,000</li>
+        <li>Pakej premium dari RM40,000</li>
+        <li>Reka bentuk oleh profesional dalaman</li>
+        </ul>
+        <h3>Untuk Kondominium Lain</h3>
+        <p>WhatsApp kami untuk konsultasi percaya mengenai:</p>
+        <ul>
+        <li>Anggaran bajet untuk unit anda</li>
+        <li>Item yang paling penting untuk prioriti</li>
+        <li>Cadangan pembekal di Melaka</li>
+        </ul>
+        <hr class="my-8">
+        <h2>Ringkasan: Bajet Mengikut Saiz Unit</h2>
+        <table>
+          <thead>
+            <tr><th>Saiz Unit</th><th>Bajet Minimum</th><th>Bajet Sederhana</th><th>Bajet Premium</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Studio (500 sq ft)</td><td>RM8,000-12,000</td><td>RM15,000-22,000</td><td>RM35,000-50,000</td></tr>
+            <tr><td>1-Bilik (700 sq ft)</td><td>RM10,000-15,000</td><td>RM20,000-30,000</td><td>RM45,000-65,000</td></tr>
+            <tr><td>2-Bilik (1,000 sq ft)</td><td>RM12,000-18,000</td><td>RM25,000-40,000</td><td>RM55,000-80,000</td></tr>
+            <tr><td>3-Bilik (1,200 sq ft+)</td><td>RM15,000-22,000</td><td>RM30,000-50,000</td><td>RM65,000-100,000</td></tr>
+          </tbody>
+        </table>
+        <hr class="my-8">
+        <strong>Artikel Berkaitan:</strong>
+        <ul>
+        <li>[Senarai Semak Keperluan Airbnb](/ms/blog/senarai-semak-keperluan-airbnb)</li>
+        <li>[Bajet Pengubahsuaian Airbnb](/ms/blog/bajet-pengubahsuaian-airbnb)</li>
+        <li>[Mula Airbnb di Melaka: Panduan Pemula](/ms/blog/mula-airbnb-di-melaka-panduan-pemula)</li>
+        </ul>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

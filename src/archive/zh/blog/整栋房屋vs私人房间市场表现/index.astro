@@ -1,0 +1,27 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "整栋房屋vs私人房间市场表现";
+const description = "比较马六甲Airbnb市场中的整栋房屋租赁与私人房间租赁。了解收入差异、客人偏好和运营要求。";
+const image = "/images/blog/整栋房屋vs私人房间市场表现.jpg";
+const date = "2026-01-23";
+const category = "rental-types";
+const language = "zh";
+
+const content = `
+<h1>整栋房屋vs私人房间：马六甲市场中哪个表现更好？</h1>
+
+<p>马六甲Airbnb业主面临的最常见决定之一是出租整栋房产还是仅出租个别房间。在管理了100+物业的两种模式后，iHousing对<strong>哪种表现更好有明确的数据</strong>。</p>
+
+<p>答案并不简单——这取决于您的物业类型、位置、目标市场和个人偏好。本综合分析分解了财务和运营差异，帮助您做出正确选择。</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

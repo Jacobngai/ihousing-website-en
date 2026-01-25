@@ -1,0 +1,364 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "iHousing vs 竞争对手：马六甲业主价格比较";
+const description = "比较马六甲Airbnb管理价格。iHousing透明定价 vs 竞争对手佣金模式。查看100+业主支付的费用。WhatsApp 获取定制报价。";
+const date = "2026-01-04";
+const category = "comparison";
+const language = "zh";
+const image = "/images/blog/ihousing-vs-competitor-pricing-comparison.jpg";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>iHousing vs 竞争对手：马六甲业主价格比较</h1>
+
+<h2>大多数马六甲Airbnb管理公司收费</h2>
+
+<p>您正在比较马六甲的Airbnb管理公司。您想要透明度。</p>
+
+<p>以下是大多数竞争对手的收费：</p>
+
+<p><strong>佣金模式（标准）：</strong></p>
+<ul>
+  <li>您收入的20-30%</li>
+  <li>清洁加价：30-50%</li>
+  <li>维护利润：15-25%</li>
+  <li>用品加价：15-20%</li>
+  <li>紧急通话费：RM50-100</li>
+</ul>
+
+<p><strong>您的实际成本：收入的25-35%</strong></p>
+
+<p>以下是iHousing的收费：</p>
+
+<p><strong>对于Parkland Avenue by the Sea：</strong></p>
+<ul>
+  <li>1房：RM200/月固定费</li>
+  <li>2房：RM250/月固定费</li>
+  <li>3房：RM300/月固定费</li>
+</ul>
+
+<p><strong>对于所有其他公寓：</strong></p>
+<ul>
+  <li>定制定价（WhatsApp我们）</li>
+  <li>无隐藏加价</li>
+  <li>成本透明</li>
+</ul>
+
+<p>本比较详细说明根据马六甲业主的真实体验，您支付iHousing vs 竞争对手的确切费用。</p>
+
+<h2>典型竞争对手定价结构</h2>
+
+<h3>佣金费：20-30%</h3>
+
+<p><strong>运作方式：</strong></p>
+<ul>
+  <li>您的Airbnb收入：RM10,000/年</li>
+  <li>竞争对手收取：RM2,000-3,000/年（20-30%）</li>
+  <li>您获得：RM7,000-8,000/年（其他费用前）</li>
+</ul>
+
+<p><strong>问题：</strong></p>
+<ul>
+  <li>可变成本（您赚更多时付更多）</li>
+  <li>惩罚成功（更高收入=更高费用）</li>
+  <li>不可预测（每月变化）</li>
+</ul>
+
+<h3>清洁加价：30-50%</h3>
+
+<p><strong>运作方式：</strong></p>
+<ul>
+  <li>实际清洁成本：RM80/住宿</li>
+  <li>竞争对手向您收费：RM110-120/住宿</li>
+  <li>加价：RM30-40/住宿</li>
+</ul>
+
+<p><strong>年度影响（40次住宿/年）：</strong></p>
+<ul>
+  <li>向您的加价：RM1,200-1,600/年</li>
+  <li>3年成本：<strong>RM3,600-4,800</strong></li>
+</ul>
+
+<h3>维护利润：15-25%</h3>
+
+<p><strong>运作方式：</strong></p>
+<ul>
+  <li>水管工账单：RM300</li>
+  <li>竞争对手向您收费：RM350-375</li>
+  <li>他们的利润：RM50-75</li>
+</ul>
+
+<p><strong>年度影响：</strong></p>
+<ul>
+  <li>平均维护：RM800/年</li>
+  <li>向您的利润：RM120-200/年</li>
+  <li>3年成本：<strong>RM360-600</strong></li>
+</ul>
+
+<h3>竞争对手未提及的隐藏费用</h3>
+
+<p><strong>紧急通话费：</strong></p>
+<ul>
+  <li>客人在晚上10点致电</li>
+  <li>竞争对手收费：RM50-100/通话</li>
+  <li>每年发生5-10次</li>
+  <li><strong>年度成本：RM250-1,000</strong></li>
+</ul>
+
+<h2>iHousing定价结构</h2>
+
+<h3>Parkland Avenue by the Sea：固定费</h3>
+
+<p><strong>独家固定费定价（仅限Parkland）：</strong></p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>房型</th>
+      <th>月费</th>
+      <th>年费</th>
+      <th>包含内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1房</td>
+      <td>RM200</td>
+      <td>RM2,400</td>
+      <td>以下所有</td>
+    </tr>
+    <tr>
+      <td>2房</td>
+      <td>RM250</td>
+      <td>RM3,000</td>
+      <td>以下所有</td>
+    </tr>
+    <tr>
+      <td>3房</td>
+      <td>RM300</td>
+      <td>RM3,600</td>
+      <td>以下所有</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Parkland固定费包含内容：</strong></p>
+<ul>
+  <li><strong>24/7客人沟通</strong> - 30分钟内响应，多语言（英、马、中）</li>
+  <li><strong>专业清洁</strong> - 内部团队，每次退房后，无加价</li>
+  <li><strong>维护协调</strong> - 我们处理，您仅付成本</li>
+  <li><strong>5平台列表</strong> - Airbnb, Booking.com, Agoda, VRBO, Expedia同步</li>
+  <li><strong>动态定价</strong> - 基于算法优化</li>
+  <li><strong>专业摄影</strong> - 高分辨率照片包含</li>
+  <li><strong>月度报告</strong> - 透明收入声明</li>
+  <li><strong>零隐藏费用</strong> - 无紧急费、无加价</li>
+</ul>
+
+<h3>所有其他公寓：定制定价</h3>
+
+<p><strong>为什么定制定价？</strong></p>
+
+<p>每个公寓不同：</p>
+<ul>
+  <li>位置影响收入潜力</li>
+  <li>大小影响清洁时间</li>
+  <li>状况影响维护需求</li>
+  <li>设施影响客人期望</li>
+</ul>
+
+<h2>真实业主比较：3年成本</h2>
+
+<h3>场景：2卧室公寓，RM10,000年收入</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>指标</th>
+      <th>竞争对手（20% + 加价）</th>
+      <th>iHousing（定制定价示例）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>毛收入（3年）</strong></td>
+      <td>RM30,000</td>
+      <td>RM30,000</td>
+    </tr>
+    <tr>
+      <td><strong>管理费</strong></td>
+      <td>-RM6,000 (20%)</td>
+      <td>-RM8,100 (RM270/月估计)</td>
+    </tr>
+    <tr>
+      <td><strong>清洁加价</strong></td>
+      <td>-RM4,200 (30%加价)</td>
+      <td>RM0（内部，无加价）</td>
+    </tr>
+    <tr>
+      <td><strong>维护利润</strong></td>
+      <td>-RM500 (20%利润)</td>
+      <td>RM0（您仅付成本）</td>
+    </tr>
+    <tr>
+      <td><strong>用品加价</strong></td>
+      <td>-RM450 (20%加价)</td>
+      <td>RM0（批发价，无加价）</td>
+    </tr>
+    <tr>
+      <td><strong>紧急费</strong></td>
+      <td>-RM1,500（平均RM50/月）</td>
+      <td>RM0（包含在费中）</td>
+    </tr>
+    <tr>
+      <td><strong>平台费</strong></td>
+      <td>-RM1,500</td>
+      <td>-RM1,500</td>
+    </tr>
+    <tr>
+      <td><strong>总扣除</strong></td>
+      <td><strong>RM14,150</strong></td>
+      <td><strong>RM9,600</strong></td>
+    </tr>
+    <tr>
+      <td><strong>业主净得（3年）</strong></td>
+      <td><strong>RM15,850</strong></td>
+      <td><strong>RM20,400</strong></td>
+    </tr>
+    <tr>
+      <td><strong>差异</strong></td>
+      <td colspan="2">+<strong>使用iHousing多RM4,550</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>100+马六甲业主所说的</h2>
+
+<h3>关于竞争对手的常见投诉</h3>
+
+<p><strong>1. "我不知道清洁加价"</strong></p>
+<ul>
+  <li>业主在月度声明中发现加价</li>
+  <li>以为清洁成本是"实际成本"</li>
+  <li>费用每年增加RM1,000+</li>
+</ul>
+
+<p><strong>2. "紧急费用不断出现"</strong></p>
+<ul>
+  <li>客人在晚上10点打电话，收费RM80</li>
+  <li>客人锁门，收费RM50</li>
+  <li>业主无法控制，账单每月到达</li>
+</ul>
+
+<p><strong>3. "维护利润感觉不公平"</strong></p>
+<ul>
+  <li>水管工账单RM300，收费RM360</li>
+  <li>空调维修RM200，收费RM240</li>
+  <li>业主后来发现，感觉被收取小费用</li>
+</ul>
+
+<h3>为什么业主转向iHousing</h3>
+
+<p><strong>1. "我确切知道每月付什么"</strong></p>
+<ul>
+  <li>Parkland：RM200-300固定（无意外）</li>
+  <li>其他公寓：约定定价，无加价</li>
+  <li>可预测成本 = 更好规划</li>
+</ul>
+
+<p><strong>2. "没有更多意外费用"</strong></p>
+<ul>
+  <li>清洁：内部团队，无加价</li>
+  <li>维护：您直接向承包商付款</li>
+  <li>紧急：包含在费用中（24/7支持）</li>
+</ul>
+
+<p><strong>3. "透明报告"</strong></p>
+<ul>
+  <li>月度声明显示每笔交易</li>
+  <li>无隐藏类别</li>
+  <li>易于理解</li>
+</ul>
+
+<p><strong>4. "更多预订，更多平台"</strong></p>
+<ul>
+  <li>5平台列表 vs 竞争对手的1-2个</li>
+  <li>60%更多预订</li>
+  <li>更好入住率（60%+ vs 40-50%市场平均）</li>
+</ul>
+
+<h2>iHousing适合您吗？</h2>
+
+<h3>选择iHousing如果：</h3>
+<ul>
+  <li>您想要透明定价（无隐藏费用）</li>
+  <li>您拥有Parkland Avenue（固定费定价）</li>
+  <li>您想要多平台列表（5平台）</li>
+  <li>您重视内部清洁（无加价）</li>
+  <li>您想要60%+入住率（经过验证的记录）</li>
+</ul>
+
+<h3>考虑竞争对手如果：</h3>
+<ul>
+  <li>您更喜欢佣金模式（付百分比）</li>
+  <li>您想要最少管理参与</li>
+  <li>您可以接受便利的加价</li>
+</ul>
+
+<h2>获取您的定制定价</h2>
+
+<h3>对于Parkland Avenue by the Sea：</h3>
+
+<p><strong>立即预注册锁定：</strong></p>
+<ul>
+  <li>1房：RM200/月固定费</li>
+  <li>2房：RM250/月固定费</li>
+  <li>3房：RM300/月固定费</li>
+</ul>
+
+<p><strong>正式发布：</strong> 2025年8月</p>
+
+<p><strong>预注册优势：</strong></p>
+<ul>
+  <li>发布前锁定定价</li>
+  <li>优先选择单位</li>
+  <li>免费初步咨询</li>
+</ul>
+
+<h3>对于所有其他公寓：</h3>
+
+<p><strong>WhatsApp我们获取定制定价：</strong></p>
+
+<ol>
+  <li>告诉我们您的公寓详情（位置、大小、状况）</li>
+  <li>我们将评估您的Airbnb潜力</li>
+  <li>收到透明定价报价</li>
+  <li>与您当前情况比较</li>
+</ol>
+
+<p><strong>无义务</strong></p>
+<p><strong>无压力</strong></p>
+<p><strong>仅清晰度</strong></p>
+
+<h2>今天采取行动</h2>
+
+<p>停止支付隐藏加价。获取透明定价。</p>
+
+<p>无论您在Parkland Avenue（固定费）或其他公寓（定制定价），iHousing提供比基于佣金的竞争对手更好的交易。</p>
+
+<p><strong>WhatsApp我们现在：</strong></p>
+
+<p>获取您的定制定价报价。查看您将确切支付的金额。与您当前支付的比较。</p>
+
+<p>转向透明管理。保留更多您辛苦赚来的收入。</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,547 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Melaka Airport Proximity: How Flight Accessibility Boosts Your Bookings";
+const description = "Melaka Airport (Batu Berendam) proximity advantage for Airbnb. Flight accessibility drives bookings from Singapore, KL, international guests. WhatsApp for custom pricing.";
+const date = "2026-01-04";
+const category = "location-guide";
+const language = "en";
+const image = "/images/blog/melaka-airport-proximity-airbnb.jpg";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Melaka Airport Proximity: How Flight Accessibility Boosts Your Bookings</h1>
+
+<h2>Why Airport Proximity Matters for Airbnb Bookings</h2>
+
+<p>Most Melaka Airbnb owners overlook a critical advantage: <strong>proximity to Melaka International Airport (Batu Berendam)</strong>.</p>
+
+<p>Smart owners position their condos as <strong>"airport-friendly"</strong> and capture a steady stream of guests who prioritize convenience.</p>
+
+<p><strong>Who are these guests?</strong></p>
+<ul>
+  <li>Singaporean investors flying in for property viewing</li>
+  <li>International tourists arriving directly to Melaka</li>
+  <li>Business travelers with tight schedules</li>
+  <li>Families with kids who want quick transfers</li>
+</ul>
+
+<p>This guide shows you how to leverage Melaka Airport proximity to boost your Airbnb bookings, charge premium rates, and capture guests competitors miss.</p>
+
+<h2>Melaka Airport: What You Need to Know</h2>
+
+<h3>Current Flight Connectivity</h3>
+
+<p><strong>Melaka International Airport (MKZ)</strong> serves:</p>
+
+<p><strong>Domestic routes:</strong></p>
+<ul>
+  <li>Kuala Lumpur (Subang) - Multiple daily flights</li>
+  <li>Penang - Direct connectivity</li>
+  <li>Kota Kinabalu - East Malaysia connection</li>
+</ul>
+
+<p><strong>International routes:</strong></p>
+<ul>
+  <li>Singapore (Changi) - 45-minute flight</li>
+  <li>Jakarta - Direct service</li>
+  <li>Pekanbaru - Indonesian market</li>
+</ul>
+
+<p><strong>Key insight:</strong> Singapore-Melaka flights are popular because:</p>
+<ul>
+  <li>Drone to KL: 4+ hours</li>
+  <li>Bus to KL: 5+ hours</li>
+  <li>Flight: 45 minutes</li>
+</ul>
+
+<p>Result: <strong>Time-conscious travelers choose flights</strong>. Your airport-proximity Airbnb becomes their first choice.</p>
+
+<h3>Airport Location in Melaka</h3>
+
+<p><strong>Melaka Airport (Batu Berendam) location:</strong></p>
+<ul>
+  <li>10 km northeast of Melaka city center</li>
+  <li>15 minutes drive to Melaka Raya</li>
+  <li>20 minutes drive to Jonker Walk</li>
+  <li>25 minutes drive to Alor Gajah</li>
+</ul>
+
+<p><strong>Ideal Airbnb locations for airport guests:</strong></p>
+<ul>
+  <li><strong>Melaka Raya:</strong> 15 minutes, close to business hubs</li>
+  <li><strong>Batu Berendam:</strong> 5-10 minutes, closest option</li>
+  <li><strong>Ayer Keroh:</strong> 10 minutes, highway access</li>
+</ul>
+
+<h2>Target Markets for Airport-Proximity Airbnbs</h2>
+
+<h3>1. Singaporean Property Investors</h3>
+
+<p><strong>Why they fly:</strong></p>
+<ul>
+  <li>Weekend property viewing trips</li>
+  <li>Site visits for renovations</li>
+  <li>Meeting with property managers</li>
+  <li>Checking on investments</li>
+</ul>
+
+<p><strong>What they want:</strong></p>
+<ul>
+  <li>Quick airport transfer (under 20 minutes)</li>
+  <li>Reliable WiFi for virtual meetings</li>
+  <li>Parking (if driving from airport)</li>
+  <li>Professional environment</li>
+</ul>
+
+<p><strong>Booking pattern:</strong></p>
+<ul>
+  <li>Friday arrival, Sunday departure</li>
+  <li>2-3 nights stay</li>
+  <li>Rate-insensitive (expense account)</li>
+</ul>
+
+<h3>2. International Tourists (Direct Arrivals)</h3>
+
+<p><strong>Why they fly to Melaka directly:</strong></p>
+<ul>
+  <li>Avoid KLIA connection</li>
+  <li>Start Malaysia trip in heritage city</li>
+  <li>Melaka as standalone destination</li>
+</ul>
+
+<p><strong>What they want:</strong></p>
+<ul>
+  <li>Easy airport pickup (Grab available)</li>
+  <li>Smooth check-in process</li>
+  <li>Local area information</li>
+  <li>Storage for luggage</li>
+</ul>
+
+<p><strong>Booking pattern:</strong></p>
+<ul>
+  <li>3-5 nights average stay</li>
+  <li>Year-round demand</li>
+  <li>Multi-generational families</li>
+</ul>
+
+<h3>3. Business Travelers</h3>
+
+<p><strong>Why they value airport proximity:</strong></p>
+<ul>
+  <li>Tight schedules, no time for long transfers</li>
+  <li>Connecting flights to other cities</li>
+  <li>Client visits then fly out</li>
+</ul>
+
+<p><strong>What they want:</strong></p>
+<ul>
+  <li>Reliable airport transfer time</li>
+  <li>Early checkout options</li>
+  <li>Workspace for last-minute prep</li>
+  <li>Quiet environment</li>
+</ul>
+
+<p><strong>Booking pattern:</strong></p>
+<ul>
+  <li>1-3 nights</li>
+  <li>Weekday-heavy</li>
+  <li>Higher rates accepted</li>
+</ul>
+
+<h3>4. Medical Tourists (Flying for Treatment)</h3>
+
+<p><strong>Why they come:</strong></p>
+<ul>
+  <li>Specialist appointments at Melaka hospitals</li>
+  <li>Medical procedures</li>
+  <li>Follow-up treatments</li>
+</ul>
+
+<p><strong>What they want:</strong></p>
+<ul>
+  <li>Peaceful recovery environment</li>
+  <li>Kitchen facilities (dietary needs)</li>
+  <li>Extended stay options</li>
+  <li>Proximity to hospitals too</li>
+</ul>
+
+<p><strong>Booking pattern:</strong></p>
+<ul>
+  <li>5-14 nights (extended stays)</li>
+  <li>Weekly rates preferred</li>
+  <li>Repeat bookings likely</li>
+</ul>
+
+<h2>Optimizing Your Listing for Airport Guests</h2>
+
+<h3>Title Keywords That Attract Flight Arrivals</h3>
+
+<p><strong>Include these phrases:</strong></p>
+<ul>
+  <li>"Airport 15 minutes"</li>
+  <li>"Flight-Friendly"</li>
+  <li>"Quick Airport Transfer"</li>
+  <li>"Batu Berendam"</li>
+  <li>"MKZ Airport"</li>
+</ul>
+
+<p><strong>Example titles:</strong></p>
+<ul>
+  <li>"Airport 15min | Modern 2BR | Parking | Fast WiFi | Early Check-In"</li>
+  <li>"Flight-Friendly Condo | MKZ 10min | Grab-Friendly | Self Check-In"</li>
+  <li>"Batu Berendam 2BR | Airport 5min | Peaceful | Full Kitchen"</li>
+</ul>
+
+<h3>Description Framework</h3>
+
+<p><strong>Opening hook:</strong></p>
+<p>"Perfect for guests flying into Melaka. Quick 10-15 minute transfer from MKZ Airport. No long drives, no hassle."</p>
+
+<p><strong>Body structure:</strong></p>
+<ol>
+  <li><strong>Airport Access:</strong> 10-15 minutes from MKZ, Grab readily available, clear directions provided</li>
+  <li><strong>Smooth Arrival:</strong> Self check-in available, early check-in when possible, luggage storage</li>
+  <li><strong>Comfort After Flight:</strong> Comfortable beds, hot shower, Netflix for relaxation</li>
+  <li><strong>Kitchen Facilities:</strong> Full kitchen, cook after late arrival, grocery nearby</li>
+  <li><strong>Parking:</strong> If you rent a car at airport, parking available</li>
+</ol>
+
+<p><strong>Transportation information:</strong></p>
+<ul>
+  <li>Grab from airport: RM15-25</li>
+  <li>Regular taxi: RM20-30</li>
+  <li>Car rental: Available at airport</li>
+  <li>Driving time: 10-15 minutes (depending on traffic)</li>
+</ul>
+
+<h3>Photos That Appeal to Flight Guests</h3>
+
+<p><strong>Key shots:</strong></p>
+
+<p><strong>1. Living Room (Hero Image)</strong></p>
+<ul>
+  <li>Spacious, welcoming</li>
+  <li>"Relax after your flight" vibe</li>
+  <li>Clean, organized space</li>
+</ul>
+
+<p><strong>2. Bedroom</strong></p>
+<ul>
+  <li>Comfortable bed emphasized</li>
+  <li>"Sleep well after travel"</li>
+  <li>Blackout curtains shown</li>
+</ul>
+
+<p><strong>3. Bathroom</strong></p>
+<ul>
+  <li>Hot shower emphasized</li>
+  <li>Fresh towels visible</li>
+  <li>Toiletries provided</li>
+</ul>
+
+<p><strong>4. Kitchen</strong></p>
+<ul>
+  <li>Full kitchen shown</li>
+  <li>"Cook after late arrival"</li>
+  <li>Modern appliances</li>
+</ul>
+
+<p><strong>5. Building Exterior/Parking</strong></p>
+<ul>
+  <li>Secure parking shown</li>
+  <li>Building entrance clear</li>
+  <li>Accessibility for luggage</li>
+</ul>
+
+<h2>Pricing Strategy for Airport-Proximity Condos</h2>
+
+<h3>Premium for Convenience</h3>
+
+<p><strong>Charge 15-25% above similar non-airport condos:</strong></p>
+
+<p><strong>Example:</strong></p>
+<ul>
+  <li>Similar condo (no airport positioning): RM150/night</li>
+  <li>Your condo (airport-friendly): RM175-190/night</li>
+</ul>
+
+<p><strong>Why guests pay more:</strong></p>
+<ul>
+  <li>Save time on transfer</li>
+  <li>Less fatigue after travel</li>
+  <li>Peace of mind (won't get lost)</li>
+  <li>Can rest immediately</li>
+</ul>
+
+<h3>Early Check-In / Late Check-Out Value</h3>
+
+<p><strong>Offer when possible:</strong></p>
+<ul>
+  <li>Early check-in (1-2 PM): +RM20-30</li>
+  <li>Late check-out (12-1 PM): +RM20-30</li>
+</ul>
+
+<p><strong>Flight guests need this:</strong></p>
+<ul>
+  <li>Early arrivals: Red-eye flights</li>
+  <li>Late departures: Evening flights</li>
+  <li>You're solving their problem</li>
+</ul>
+
+<h3>Airport Pickup Service (Optional Upsell)</h3>
+
+<p><strong>If you want to go extra mile:</strong></p>
+
+<p><strong>Offer:</strong></p>
+<ul>
+  <li>Airport pickup: RM50 (vs Grab RM15-25)</li>
+  <li>But add value: Wait for guest, help with luggage, local tips</li>
+  <li>Or partner with reliable driver</li>
+</ul>
+
+<p><strong>Better approach:</strong> Provide excellent directions and Grab recommendations. Let guests choose.</p>
+
+<h2>Host Practices for Flight Guests</h2>
+
+<h3>Arrival Communication</h3>
+
+<p><strong>Send detailed directions:</strong></p>
+
+<p>Template:</p>
+<p>"Welcome to Melaka! Here's how to get from MKZ Airport to our condo:</p>
+
+<p>1. Grab (Recommended): Open Grab app, enter address, driver arrives in 3-5 minutes. Cost: RM15-25. Time: 10-15 minutes.</p>
+
+<p>2. Taxi: Available at airport exit. Cost: RM20-30. Time: 10-15 minutes.</p>
+
+<p>3. Car Rental: Available at airport. Parking at condo: Bay B2 (covered).</p>
+
+<p>Our address: [Full address with Google Maps link]</p>
+
+<p>Self check-in: Instructions attached. Need help? WhatsApp us anytime."</p>
+
+<h3>Flight Status Monitoring</h3>
+
+<p><strong>If guest shares flight details:</strong></p>
+
+<ul>
+  <li>Track flight (delay notifications)</li>
+  <li>Adjust check-in if needed</li>
+  <li>Have backup plan for very late arrivals</li>
+</ul>
+
+<p><strong>Guests appreciate:</strong></p>
+<ul>
+  <li>"I see your flight is delayed 2 hours. No problem, we'll be here whenever you arrive."</li>
+  <li>Late check-in accommodated without stress</li>
+</ul>
+
+<h3>Luggage Storage</h3>
+
+<p><strong>Early arrivals / late departures:</strong></p>
+
+<ul>
+  <li>Store luggage if room not ready</li>
+  <li>Allow guests to freshen up</li>
+  <li>Provide luggage rack or storage area</li>
+</ul>
+
+<p><strong>Why it matters:</strong></p>
+<ul>
+  <li>Flight guests often arrive early</li>
+  <li>Depart late to catch evening flights</li>
+  <li>Solving luggage stress = positive review</li>
+</ul>
+
+<h3>Essential Supplies After Arrival</h3>
+
+<p><strong>Stock basics:</strong></p>
+
+<ul>
+  <li>Drinking water (guests thirsty after flight)</li>
+  <li>Coffee/tea (energy boost)</li>
+  <li>Snacks (light meal if restaurants closed)</li>
+  <li>Phone charger (forgot essentials)</li>
+</ul>
+
+<p><strong>Impact:</strong></p>
+<ul>
+  <li>Guests arrive tired, possibly hungry</li>
+  <li>Basic supplies = immediate relief</li>
+  <li>5-star review material</li>
+</ul>
+
+<h2>Occupancy and Revenue Expectations</h2>
+
+<h3>Typical Performance: Airport-Proximity Airbnb</h3>
+
+<p><strong>Occupancy:</strong></p>
+<ul>
+  <li>Weekdays: 55-65% (business travelers, investors)</li>
+  <li>Weekends: 60-70% (Singaporean investors, tourists)</li>
+  <li><strong>Annual average: 58-68%</strong></li>
+</ul>
+
+<p><strong>Average Daily Rate (ADR):</strong></p>
+<ul>
+  <li>Weekday: RM170-210/night</li>
+  <li>Weekend: RM160-200/night</li>
+  <li><strong>Annual average: RM165-205/night</strong></li>
+</ul>
+
+<p><strong>Annual revenue projection (2BR condo, airport-positioned):</strong></p>
+<ul>
+  <li>63% occupancy × RM185 avg rate × 365 nights = <strong>RM42,650 gross/year</strong></li>
+  <li>After management fees and expenses: <strong>RM31,000-35,000 net/year</strong></li>
+</ul>
+
+<p><strong>Compare to non-airport-positioned similar condo:</strong></p>
+<ul>
+  <li>Similar occupancy: 60-65%</li>
+  <li>Lower rate: RM150-170/night</li>
+  <li>Annual gross: ~RM35,000</li>
+  <li><strong>Airport premium = +RM7,000+ gross/year</strong></li>
+</ul>
+
+<h2>iHousing Advantage for Airport-Proximity Condos</h2>
+
+<h3>Flight Guest Optimization</h3>
+
+<p>We position your listing for airport arrivals:</p>
+<ul>
+  <li>Optimize title with airport keywords</li>
+  <li>Highlight transfer time in description</li>
+  <li>Include Grab/taxi information</li>
+  <li>Show distance to MKZ prominently</li>
+</ul>
+
+<p><strong>Result:</strong> Attract flight guests who filter for "airport" or "MKZ."</p>
+
+<h3>Multi-Platform Airport Guest Reach</h3>
+
+<p>We list on platforms where international and Singaporean guests search:</p>
+<ul>
+  <li><strong>Agoda:</strong> Popular with Indonesian, Singaporean travelers</li>
+  <li><strong>Booking.com:</strong> International guest preference</li>
+  <li><strong>Airbnb:</strong> Singaporean investors use this</li>
+  <li><strong>Expedia:</strong> Flight + accommodation packages</li>
+  <li><strong>VRBO:</strong> Extended stay medical tourists</li>
+</ul>
+
+<p><strong>Result:</strong> Capture flight guests from multiple markets, not just Airbnb.</p>
+
+<h3>Dynamic Pricing for Flight Schedules</h3>
+
+<p>Our algorithm adjusts for:</p>
+<ul>
+  <li>Flight arrival peaks (Friday evening, Saturday morning)</li>
+  <li>Flight departure peaks (Sunday evening)</li>
+  <li>Major event dates (Melaka tourism peaks)</li>
+  <li>Singapore holiday periods (school holidays)</li>
+</ul>
+
+<p><strong>Result:</strong> Maximize rates during high-demand flight periods.</p>
+
+<h3>Guest Communication for Flight Arrivals</h3>
+
+<p>Our responsive team handles:</p>
+<ul>
+  <li>Late-night airport arrivals</li>
+  <li>Flight delay recoordination</li>
+  <li>Early check-in requests</li>
+  <li>Transportation questions</li>
+</ul>
+
+<p><strong>Result:</strong> Smooth arrival experience, positive reviews, repeat bookings.</p>
+
+<h2>Is Your Condo Right for Airport Positioning?</h2>
+
+<h3>Ideal Locations</h3>
+
+<p><strong>Best for airport guests:</strong></p>
+<ul>
+  <li>Batu Berendam (5-10 minutes)</li>
+  <li>Melaka Raya (15 minutes)</li>
+  <li>Ayer Keroh (10 minutes)</li>
+</ul>
+
+<p><strong>Why these work:</strong></p>
+<ul>
+  <li>Short, predictable transfer time</li>
+  <li>Grab readily available</li>
+  <li>Easy to find (not confusing navigation)</li>
+</ul>
+
+<h3>Less Ideal Locations</h3>
+
+<p><strong>Further from airport:</strong></p>
+<ul>
+  <li>Jonker Walk (20-25 minutes) - Still viable, but emphasize heritage attractions</li>
+  <li>Alor Gajah (25-30 minutes) - Better to position for resort attractions</li>
+  <li>Pantai Kundur (30+ minutes) - Focus on beach positioning instead</li>
+</ul>
+
+<p><strong>Can still attract airport guests but:</strong></p>
+<ul>
+  <li>Don't overemphasize airport proximity</li>
+  <li>Focus on other unique selling points</li>
+  <li>Transfer time becomes less relevant</li>
+</ul>
+
+<h2>Get Started with Airport-Proximity Strategy</h2>
+
+<h3>For Parkland Avenue by the Sea Owners:</h3>
+
+<p><strong>Pre-register now:</strong></p>
+<ul>
+  <li>Lock in RM200-300/month flat fee management</li>
+  <li>Launch: August 2025</li>
+  <li>We'll position your unit for airport guests (among other segments)</li>
+</ul>
+
+<h3>For Airport-Proximity Condos:</h3>
+
+<p><strong>WhatsApp us for custom pricing:</strong></p>
+
+<p>We'll analyze:</p>
+<ol>
+  <li>Your condo's exact airport transfer time</li>
+  <li>Optimal positioning strategy</li>
+  <li>Target markets (Singaporean, international, business)</li>
+  <li>Pricing recommendations</li>
+  <li>Revenue projection</li>
+</ol>
+
+<p><strong>Why choose iHousing:</strong></p>
+<ul>
+  <li>8 years managing Melaka Airbnbs</li>
+  <li>100+ properties under management</li>
+  <li>Multi-platform listing (5 platforms)</li>
+  <li>responsive guest communication</li>
+  <li>In-house cleaning (no markup)</li>
+  <li>60%+ average occupancy</li>
+</ul>
+
+<h2>Take Action Today</h2>
+
+<p>Flight guests into Melaka want convenient, comfortable Airbnb stays. Most owners don't optimize for this market.</p>
+
+<p>Position your condo as airport-friendly. Capture flight arrivals from Singapore, KL, international destinations. Build consistent bookings from a guest segment competitors overlook.</p>
+
+<p><strong>WhatsApp us now:</strong></p>
+
+<p>Whether you own in Batu Berendam, Melaka Raya, or nearby, we'll help you tap into the flight guest market.</p>
+
+<p>Stop losing bookings to owners with better airport positioning. Optimize for flight accessibility. Capture more guests arriving by air.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,578 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Syarikat Pengurusan Percutian: Solusi Untuk Pemilik Hartanah Sibuk";
+const description = "Panduan lengkap syarikat pengurusan percutian untuk short-term rental di Malaysia. Ketahui perkhidmatan, yuran, dan cara memilih syarikat yang betul.";
+const image = "/images/blog/syarikat-pengurusan-percutian.jpg";
+const date = "2025-01-24";
+const category = "solution";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Syarikat Pengurusan Percutian: Solusi Untuk Pemilik Hartanah Sibuk</h1>
+
+<p>Adakah anda mempunyai kondominium atau rumah percutian yang kosong sebahagian besar tahun ini? Atau mungkin anda menyewakannya, tetapi rasa pendapatan tidak optimum dan masa anda dihabiskan untuk mengurusnya?</p>
+
+<p>Syarikat pengurusan percutian atau vacation rental management company adalah penyelesaian yang semakin popular di Malaysia. Mereka menguruskan keseluruhan operasi short-term rental anda, dari penyenaraian sehingga daftar keluar.</p>
+
+<p>Artikel ini akan membimbing anda melalui segala-galanya yang perlu anda tahu tentang syarikat pengurusan percutian.</p>
+
+<h2>Apa Itu Syarikat Pengurusan Percutian?</h2>
+
+<h3>Definisi</h3>
+
+<p>Syarikat pengurusan percutian ialah syarikat profesional yang menguruskan hartanah untuk short-term rental (Airbnb, Booking.com, dll) atas nama pemilik. Mereka menguruskan keseluruhan guest lifecycle.</p>
+
+<strong>Perbezaan dengan Pengurusan Hartanah Tradisional:</strong>
+
+<h3>Jenis Hartanah yang Diuruskan</h3>
+
+<strong>Residential:</strong>
+<ul>
+<li>Kondominium</li></ul>
+
+<ul>
+<li>Apartment</li></ul>
+
+<ul>
+<li>Rumah teres</li></ul>
+
+<ul>
+<li>Semi-D</li></ul>
+
+<ul>
+<li>Bungalow</li></ul>
+
+<strong>Vacation Homes:</strong>
+<ul>
+<li>Rumah cuti</li></ul>
+
+<ul>
+<li>Chalet</li></ul>
+
+<ul>
+<li>Villa</li></ul>
+
+<ul>
+<li>Resort unit</li></ul>
+
+<strong>Specialized:</strong>
+<ul>
+<li>Homestay</li></ul>
+
+<ul>
+<li>Farmstay</li></ul>
+
+<ul>
+<li>Glamping</li></ul>
+
+<h2>Perkhidmatan Syarikat Pengurusan Percutian</h2>
+
+<h3>Perkhidmatan Standard</h3>
+
+<p>#### 1. Setup & Launch</p>
+
+<ul>
+<li><strong>Photography profesional</strong> - Gambar berkualiti tinggi</li></ul>
+
+<ul>
+<li><strong>Copywriting</strong> - Deskripsi menarik</li></ul>
+
+<ul>
+<li><strong>Multi-platform listing</strong> - Airbnb, Booking.com, Agoda, dll</li></ul>
+
+<ul>
+<li><strong>Pricing strategy</strong> - Harga asas dan dinamik</li></ul>
+
+<ul>
+<li><strong>Calendar sync</strong> - Sambungan antara platform</li></ul>
+
+<p>#### 2. Operasi Harian</p>
+
+<ul>
+<li><strong>Guest communication</strong> - Pre-arrival hingga post-stay</li></ul>
+
+<ul>
+<li><strong>Check-in coordination</strong> - Urusan ketibaan</li></ul>
+
+<ul>
+<li><strong>Check-out handling</strong> - Pengumpulan kunci</li></ul>
+
+<ul>
+<li><strong>Concierge services</strong> - Bantuan semasa penginapan</li></ul>
+
+<p>#### 3. Pembersihan & Penyelenggaraan</p>
+
+<ul>
+<li><strong>Professional cleaning</strong> - Setiap check-out</li></ul>
+
+<ul>
+<li><strong>Linen service</strong> - Basuh dan ganti</li></ul>
+
+<ul>
+<li><strong>Replenishment</strong> - Barang habis guna</li></ul>
+
+<ul>
+<li><strong>Maintenance</strong> - Repair dan servis</li></ul>
+
+<ul>
+<li><strong>Emergency response</strong> - Handle masalah</li></ul>
+
+<p>#### 4. Revenue Management</p>
+
+<ul>
+<li><strong>Dynamic pricing</strong> - Optimasi harga</li></ul>
+
+<ul>
+<li><strong>Occupancy monitoring</strong> - Tracking okupansi</li></ul>
+
+<ul>
+<li><strong>Multi-platform management</strong> - 5+ platform</li></ul>
+
+<ul>
+<li><strong>Revenue reporting</strong> - Laporan bulanan</li></ul>
+
+<h3>Perkhidmatan Premium (Ada Syarikat)</h3>
+
+<ul>
+<li><strong>Interior design</strong> - Furnishing dan styling</li></ul>
+
+<ul>
+<li><strong>Photography enhanced</strong> - Professional photoshoot</li></ul>
+
+<ul>
+<li><strong>Concierge premium</strong> - Tour booking, transport, dll</li></ul>
+
+<ul>
+<li><strong>Smart home setup</strong> - Lock automation, thermostat, dll</li></ul>
+
+<ul>
+<li><strong>Insurance</strong> - Perlindungan khusus untuk vacation rental</li></ul>
+
+<h2>Perbezaan Pengurusan Percutian vs Sendiri</h2>
+
+<h3>Cabaran Mengurus Sendiri</h3>
+
+<p>Ramai pemilik mula dengan mengurus sendiri, tetapi cepat terbeban:</p>
+
+<h3>Nilai Masa Anda</h3>
+
+<p>Jika masa anda bernilai RM50/jam:</p>
+<ul>
+<li>Kos masa: RM750-1,000/bulan</li></ul>
+
+<ul>
+<li>Kos masa setahun: RM9,000-12,000</li></ul>
+
+<p>Bayaran syarikat pengurusan mungkin lebih rendah dari nilai masa anda.</p>
+
+<h3>Kualiti & Rating</h3>
+
+<p>Pengurusan profesional = rating lebih tinggi:</p>
+
+<strong>Kesan rating kepada pendapatan:</strong>
+<ul>
+<li>4.5 bintang: Okupansi 50-60%</li></ul>
+
+<ul>
+<li>4.8 bintang: Okupansi 65-75%</li></ul>
+
+<ul>
+<li>Perbezaan okupansi 10-15% = RM2,000-4,000 tambahan setahun</li></ul>
+
+<h2>Model Perniagaan Syarikat Pengurusan</h2>
+
+<h3>Model 1: Full-Service (Paling Popular)</h3>
+
+<strong>Scope:</strong>
+<ul>
+<li>Pengurusan lengkap A ke Z</li></ul>
+
+<ul>
+<li>Pemilik zero effort</li></ul>
+
+<strong>Yuran:</strong>
+<ul>
+<li>Komisen: 15-25%</li></ul>
+
+<ul>
+<li>Flat fee: RM200-500/bulan</li></ul>
+
+<strong>Paling sesuai untuk:</strong> Pemilik sibuk atau tinggal jauh
+
+<h3>Model 2: Hybrid</h3>
+
+<strong>Scope:</strong>
+<ul>
+<li>Syarikat handle sebahagian</li></ul>
+
+<ul>
+<li>Pemilik handle sebahagian</li></ul>
+
+<strong>Contoh:</strong>
+<ul>
+<li>Syarikat: Komunikasi dan daftar masuk</li></ul>
+
+<ul>
+<li>Pemilik: Pembersihan dan penyelenggaraan</li></ul>
+
+<strong>Yuran:</strong> RM100-200/bulan atau 10-15% komisen
+
+<strong>Paling sesuai untuk:</strong> Pemilik yang tinggal berdekatan
+
+<h3>Model 3: Launch-Only</h3>
+
+<strong>Scope:</strong>
+<ul>
+<li>Setup sahaja</li></ul>
+
+<ul>
+<li>Pemilik urus selepas itu</li></ul>
+
+<strong>Yuran:</strong> RM500-2,000 (one-time)
+
+<strong>Paling sesuai untuk:</strong> Pemilik yang mahu urus sendiri tetapi perlukan bantuan permulaan
+
+<h3>Model 4: A La Carte</h3>
+
+<strong>Scope:</strong>
+<ul>
+<li>Pilih perkhidmatan yang diperlukan</li></ul>
+
+<strong>Contoh:</strong>
+<ul>
+<li>Photography: RM300-500</li></ul>
+
+<ul>
+<li>Cleaning coordination: RM50-100/set</li></ul>
+
+<ul>
+<li>Guest communication: RM100-200/bulan</li></ul>
+
+<strong>Paling sesuai untuk:</strong> Pemilik yang perlukan bantuan khusus
+
+<h2>Memilih Syarikat Pengurusan Percutian</h2>
+
+<h3>Kriteria #1: Pengalaman Tempatan</h3>
+
+<strong>Pengalaman minimum:</strong>
+<ul>
+<li>1+ tahun di lokasi yang sama</li></ul>
+
+<ul>
+<li>10+ properties dalam portfolio</li></ul>
+
+<ul>
+<li>Kekurangan: New companies belum proven</li></ul>
+
+<strong>Soalan untuk tanya:</strong>
+<ul>
+<li>Berapa lama syarikat operasi di [lokasi]?</li></ul>
+
+<ul>
+<li>Berapa unit dalam portfolio?</li></ul>
+
+<ul>
+<li>Berapa unit di kondo saya?</li></ul>
+
+<h3>Kriteria #2: Pasukan Pembersihan</h3>
+
+<p>Ini adalah faktor paling kritikal untuk rating.</p>
+
+<strong>Model Pembersihan:</strong>
+
+<strong>Soalan untuk tanya:</strong>
+<ul>
+<li>Ada pasukan pembersihan sendiri?</li></ul>
+
+<ul>
+<li>Berapa kos per set?</li></ul>
+
+<ul>
+<li>Ada quality check?</li></ul>
+
+<h3>Kriteria #3: Multi-Platform</h3>
+
+<p>Satu platform tidak cukup.</p>
+
+<strong>Data:</strong> Multi-platform = +50% tempahan
+
+<strong>Platform minimum 5:</strong>
+<ul>
+<li>Airbnb (wajib)</li></ul>
+
+<ul>
+<li>Booking.com (Europe)</li></ul>
+
+<ul>
+<li>Agoda (Asia)</li></ul>
+
+<ul>
+<li>Expedia (global)</li></ul>
+
+<ul>
+<li>VRBO (US/Canada)</li></ul>
+
+<strong>Soalan untuk tanya:</strong>
+<ul>
+<li>Berapa platform listing?</li></ul>
+
+<ul>
+<li>Bagaimana sync availability?</li></ul>
+
+<ul>
+<li>Pernah double-book?</li></ul>
+
+<h3>Kriteria #4: Masa Respons</h3>
+
+<p>Data Airbnb:</p>
+<ul>
+<li>&lt; 30 minit: 80% rating 5-bintang</li></ul>
+
+<ul>
+<li>&lt; 24 jam: 50% rating 5-bintang</li></ul>
+
+<strong>Soalan untuk tanya:</strong>
+<ul>
+<li>Berapa cepat response time?</li></ul>
+
+<ul>
+<li>Ada 24/7 service?</li></ul>
+
+<ul>
+<li>Handle check-in lewat malam?</li></ul>
+
+<h3>Kriteria #5: Pricing</h3>
+
+<strong>Dua model:</strong>
+
+<li><strong>Komisen:</strong> 15-25% dari pendapatan</li>
+<li><strong>Flat fee:</strong> RM200-500/bulan</li>
+
+<strong>Soalan untuk tanya:</strong>
+<ul>
+<li>Struktur yuran?</li></ul>
+
+<ul>
+<li>Termasuk apa?</li></ul>
+
+<ul>
+<li>Kos tersembunyi lain?</li></ul>
+
+<h3>Kriteria #6: Reporting</h3>
+
+<p>Transparansi adalah penting.</p>
+
+<strong>Report patut termasuk:</strong>
+<ul>
+<li>Pendapatan breakdown</li></ul>
+
+<ul>
+<li>Kos breakdown</li></ul>
+
+<ul>
+<li>Occupancy rate</li></ul>
+
+<ul>
+<li>Reviews summary</li></ul>
+
+<ul>
+<li>Issues bulan ini</li></ul>
+
+<strong>Soalan untuk tanya:</strong>
+<ul>
+<li>Bila report dibekalkan?</li></ul>
+
+<ul>
+<li>Format apa?</li></ul>
+
+<ul>
+<li>Boleh akses real-time?</li></ul>
+
+<h2>Syarikat Pengurusan Percutian di Melaka</h2>
+
+<h3>Pasaran Melaka</h3>
+
+<strong>Ciri Unik:</strong>
+<ul>
+<li>UNESCO World Heritage Site</li></ul>
+
+<ul>
+<li>2 jam dari KL/Singapore</li></ul>
+
+<ul>
+<li>Pelancong sepanjang tahun</li></ul>
+
+<ul>
+<li>Tarikan: Jonker Street, Kota A Famosa, dll</li></ul>
+
+<strong>Kawasan Popular:</strong>
+<ul>
+<li>Bandar Hilir/Jonker Street</li></ul>
+
+<ul>
+<li>Bandaun Hill</li></ul>
+
+<ul>
+<li>Pantai Klebang</li></ul>
+
+<ul>
+<li>Melaka Raya</li></ul>
+
+<h3>iHousing Melaka</h3>
+
+<strong>Pengalaman:</strong>
+<ul>
+<li>8+ tahun di Melaka</li></ul>
+
+<ul>
+<li>100+ properties dalam portfolio</li></ul>
+
+<ul>
+<li>10 kondominium berbeza</li></ul>
+
+<strong>Perkhidmatan:</strong>
+
+<li><strong>Setup & Launch</strong></li>
+<p>   - Photography profesional</p>
+<p>   - Multi-platform listing (5 platform)</p>
+<p>   - Pricing optimization</p>
+<p>   - Welcome pack preparation</p>
+
+<li><strong>Operasi Harian</strong></li>
+<p>   - 24/7 guest communication</p>
+<p>   - Professional cleaning (pasukan sendiri)</p>
+<p>   - Check-in/check-out coordination</p>
+<p>   - Maintenance & repairs</p>
+
+<li><strong>Revenue Management</strong></li>
+<p>   - Dynamic pricing</p>
+<p>   - Monthly detailed reports</p>
+<p>   - Occupancy optimization</p>
+<p>   - Multi-platform calendar sync</p>
+
+<li><strong>Kualiti & Standard</strong></li>
+<p>   - Guest screening</p>
+<p>   - Quality control checks</p>
+<p>   - Review management</p>
+<p>   - Continuous improvement</p>
+
+<strong>Pricing:</strong>
+
+<strong>Untuk Parkland Avenue by the Sea:</strong>
+<ul>
+<li>1 bilik: RM200/bulan</li></ul>
+
+<ul>
+<li>2 bilik: RM250/bulan</li></ul>
+
+<ul>
+<li>3 bilik: RM300/bulan</li></ul>
+
+<strong>Untuk Kondominium Lain:</strong>
+<ul>
+<li>Harga tersuai - WhatsApp kami untuk sebut harga</li></ul>
+
+<strong>Termasuk:</strong>
+<ul>
+<li>Pasukan pembersihan sendiri</li></ul>
+
+<ul>
+<li>5-platform listing</li></ul>
+
+<ul>
+<li>24/7 communication</li></ul>
+
+<ul>
+<li>Monthly reports</li></ul>
+
+<ul>
+<li>No hidden fees</li></ul>
+
+<h2>ROI: Guna Pengurusan vs Sendiri</h2>
+
+<h3>Scenario: Studio di Bandar Hilir</h3>
+
+<strong>Tanpa Pengurusan (Sendiri):</strong>
+
+<strong>Pendapatan (sendiri, tanpa optimization):</strong>
+<ul>
+<li>Okupansi: 45%</li></ul>
+
+<ul>
+<li>Pendapatan: RM8,100/tahun</li></ul>
+
+<ul>
+<li>Nett: RM6,700/tahun (lepas kos)</li></ul>
+
+<strong>Dengan Pengurusan Profesional:</strong>
+
+<strong>Pendapatan (dengan optimization):</strong>
+<ul>
+<li>Okupansi: 65% (+20%)</li></ul>
+
+<ul>
+<li>Pendapatan: RM11,700/tahun (+RM3,600)</li></ul>
+
+<ul>
+<li>Nett: RM5,700/tahun (lepas kos yuran)</li></ul>
+
+<strong>Perbandingan:</strong>
+
+<strong>Kesimpulan:</strong> Profesional management bukan sahaja menjimatkan masa anda RM9,000/tahun, tetapi juga meningkatkan pendapatan RM3,600/tahun. Total benefit: RM12,600/tahun.
+
+<h2>Tindakan Seterusnya</h2>
+
+<h3>Jika Masih Consider</h3>
+
+<li><strong>Kira nilai masa anda</strong> - RM50-100/jam?</li>
+<li><strong>Anggar okupansi sendiri</strong> - Berapa realistik?</li>
+<li><strong>Semak kemampuan</strong> - Ada masa untuk urus?</li>
+<li><strong>Consider trial</strong> - Cuba 1-3 bulan</li>
+
+<h3>Jika Sedia untuk Pengurusan Profesional</h3>
+
+<li><strong>Shortlist 3-5 syarikat</strong></li>
+<li><strong>Set up meetings</strong></li>
+<li><strong>Tanya soalan kritikal</strong></li>
+<li><strong>Request references</strong></li>
+<li><strong>Start with trial</strong></li>
+<li><strong>Review selepas 3 bulan</strong></li>
+
+<h2>Sedia Untuk Bercuti dari Pengurusan?</h2>
+
+<p>WhatsApp iHousing untuk konsultasi percuma:</p>
+
+<li>Analisis potensi pendapatan</li>
+<li>Sebut harga diperibadikan</li>
+<li>Portfolio viewing</li>
+<li>Testimoni hos sekarang</li>
+
+<p>Jangan biarkan ketakutan atau kekurangan masa menghalang anda dari menjana pendapatan optimum. Biar profesional uruskan semuanya.</p>
+
+<strong>WhatsApp Kami Sekarang</strong>
+
+<p>Masukkan nombor telefon anda, kami akan WhatsApp anda dengan analisis percuma. Tiada kewajipan, hanya teroka pilihan yang ada.</p>
+
+<h2>Artikel Berkaitan</h2>
+
+<ul>
+<li>[Perkhidmatan Pengurusan Airbnb Malaysia](/ms/blog/perkhidmatan-pengurusan-airbnb-malaysia)</li></ul>
+
+<ul>
+<li>[Cara Pilih Pengurus Airbnb yang Betul](/ms/blog/pilih-pengurus-airbnb-yang-betul)</li></ul>
+
+<ul>
+<li>[Pengurusan Sewa Pendek Melaka](/ms/blog/pengurusan-sewa-pendek-melaka)</li></ul>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

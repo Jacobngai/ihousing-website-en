@@ -1,0 +1,371 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "iHousing vs Pesaing: Perbandingan Harga Pemilik Melaka";
+const description = "Banding harga pengurusan Airbnb Melaka. iHousing telus vs model komisen pesaing. Lihat apa 100+ pemilik bayar. WhatsApp untuk sebutan tersuai.";
+const date = "2026-01-04";
+const category = "comparison";
+const language = "ms";
+const image = "/images/blog/ihousing-vs-pesaing-perbandingan-harga.jpg";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>iHousing vs Pesaing: Perbandingan Harga Pemilik Melaka</h1>
+
+<h2>Apa Yang Kebanyakan Syarikat Pengurusan Airbnb Melaka Kenakan</h2>
+
+<p>Anda sedang menyelidik pengurusan Airbnb di Melaka. Anda mahu ketelusan.</p>
+
+<p>Berikut apa yang kebanyakan pesaing kenakan:</p>
+
+<p><strong>Model Komisen (Standard):</strong></p>
+<ul>
+  <li>20-30% daripada pendapatan anda</li>
+  <li>Markup pembersihan: 30-50%</li>
+  <li>Margin penyelenggaraan: 15-25%</li>
+  <li>Markup bekalan: 15-20%</li>
+  <li>Yuran panggilan kecemasan: RM50-100</li>
+</ul>
+
+<p><strong>Kos sebenar kepada anda: 25-35% daripada pendapatan</strong></p>
+
+<p>Berikut apa yang iHousing kenakan:</p>
+
+<p><strong>Untuk Parkland Avenue by the Sea:</strong></p>
+<ul>
+  <li>1 Bilik: RM200/bulan yuran rata</li>
+  <li>2 Bilik: RM250/bulan yuran rata</li>
+  <li>3 Bilik: RM300/bulan yuran rata</li>
+</ul>
+
+<p><strong>Untuk semua kondo lain:</strong></p>
+<ul>
+  <li>Harga tersuai (WhatsApp kami)</li>
+  <li>Tiada markup tersembunyi</li>
+  <li>Kos telus</li>
+</ul>
+
+<p>Perbandingan ini merosakkan dengan tepat apa yang akan anda bayar dengan iHousing vs pesaing, berdasarkan pengalaman pemilik Melaka sebenar.</p>
+
+<h2>Struktur Harga Biasa Pesaing</h2>
+
+<h3>Yuran Komisen: 20-30%</h3>
+
+<p><strong>Cara ia berfungsi:</strong></p>
+<ul>
+  <li>Airbnb anda peroleh: RM10,000/tahun</li>
+  <li>Pesaing mengambil: RM2,000-3,000/tahun (20-30%)</li>
+  <li>Anda terima: RM7,000-8,000/tahun (sebelum yuran lain)</li>
+</ul>
+
+<p><strong>Masalah:</strong></p>
+<ul>
+  <li>Kos berubah-ubah (anda bayar lebih bila anda peroleh lebih)</li>
+  <li>Menghukum kejayaan (pendapatan lebih tinggi = yuran lebih tinggi)</li>
+  <li>Tidak boleh diramal (berubah-ubah setiap bulan)</li>
+</ul>
+
+<h3>Markup Pembersihan: 30-50%</h3>
+
+<p><strong>Cara ia berfungsi:</strong></p>
+<ul>
+  <li>Kos pembersihan sebenar: RM80/penginapan</li>
+  <li>Pesaing caj anda: RM110-120/penginapan</li>
+  <li>Markup: RM30-40/penginapan</li>
+</ul>
+
+<p><strong>Impak tahunan (40 penginapan/tahun):</strong></p>
+<ul>
+  <li>Markup kepada anda: RM1,200-1,600/tahun</li>
+  <li>Kos 3 tahun: <strong>RM3,600-4,800</strong></li>
+</ul>
+
+<h3>Margin Penyelenggaraan: 15-25%</h3>
+
+<p><strong>Cara ia berfungsi:</strong></p>
+<ul>
+  <li>Bil paip: RM300</li>
+  <li>Pesaing caj anda: RM350-375</li>
+  <li>Margin mereka: RM50-75</li>
+</ul>
+
+<p><strong>Impak tahunan:</strong></p>
+<ul>
+  <li>Penyelenggaraan purata: RM800/tahun</li>
+  <li>Margin kepada anda: RM120-200/tahun</li>
+  <li>Kos 3 tahun: <strong>RM360-600</strong></li>
+</ul>
+
+<h3>Yuran Tersembunyi Pesaing Tidak Sebut</h3>
+
+<p><strong>Yuran panggilan kecemasan:</strong></p>
+<ul>
+  <li>Tetamu panggil 10 MLm dengan isu</li>
+  <li>Pesaing caj: RM50-100/panggilan</li>
+  <li>Berlaku 5-10 kali/tahun</li>
+  <li><strong>Kos tahunan: RM250-1,000</strong></li>
+</ul>
+
+<p><strong>Yuran "pengurusan platform":</strong></p>
+<ul>
+  <li>Menyenaraikan pada pelbagai platform</li>
+  <li>Sesetengah caj tambahan: RM50-100/bulan</li>
+  <li><strong>Kos tahunan: RM600-1,200</strong></li>
+</ul>
+
+<h2>Struktur Harga iHousing</h2>
+
+<h3>Parkland Avenue by the Sea: Yuran Rata</h3>
+
+<p><strong>Harga yuran rata eksklusif (hanya untuk Parkland):</strong></p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Jenis Unit</th>
+      <th>Yuran Bulanan</th>
+      <th>Yuran Tahunan</th>
+      <th>Apa Termasuk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 Bilik</td>
+      <td>RM200</td>
+      <td>RM2,400</td>
+      <td>Semua di bawah</td>
+    </tr>
+    <tr>
+      <td>2 Bilik</td>
+      <td>RM250</td>
+      <td>RM3,000</td>
+      <td>Semua di bawah</td>
+    </tr>
+    <tr>
+      <td>3 Bilik</td>
+      <td>RM300</td>
+      <td>RM3,600</td>
+      <td>Semua di bawah</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Apa yang termasuk dalam yuran rata Parkland:</strong></p>
+<ul>
+  <li><strong>Komunikasi Tetamu 24/7</strong> - Respon dalam 30 minit, pelbagai bahasa (EN, MS, ZH)</li>
+  <li><strong>Pembersihan Profesional</strong> - Pasukan in-house, selepas setiap daftar keluar, tiada markup</li>
+  <li><strong>Koordinasi Penyelenggaraan</strong> - Kami urus, anda bayar kos sahaja</li>
+  <li><strong>Penyenaraian 5 Platform</strong> - Airbnb, Booking.com, Agoda, VRBO, Expedia dengan sync</li>
+  <li><strong>Harga Dinamik</strong> - Pengoptimuman berasaskan algoritma</li>
+  <li><strong>Fotografi Profesional</strong> - Foto resolusi tinggi dimasukkan</li>
+  <li><strong>Laporan Bulanan</strong> - Penyata pendapatan telus</li>
+  <li><strong>Sifar Yuran Tersembunyi</strong> - Tiada caj kecemasan, tiada markup</li>
+</ul>
+
+<h3>Semua Kondo Lain: Harga Tersuai</h3>
+
+<p><strong>Mengapa harga tersuai?</strong></p>
+
+<p>Setiap kondo berbeza:</p>
+<ul>
+  <li>Lokasi menjejaki potensi pendapatan</li>
+  <li>Saiz menjejaki masa pembersihan</li>
+  <li>Kondisi menjejaki keperluan penyelenggaraan</li>
+  <li>Kemudahan menjejaki jangkaan tetamu</li>
+</ul>
+
+<h2>Perbandingan Pemilik Sebenar: Kos 3 Tahun</h2>
+
+<h3>Senario: Kondo 2-Bilik, Pendapatan Tahunan RM10,000</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Metrik</th>
+      <th>Pesaing (20% + Markup)</th>
+      <th>iHousing (Contoh Harga Tersuai)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Pendapatan Kasar (3 tahun)</strong></td>
+      <td>RM30,000</td>
+      <td>RM30,000</td>
+    </tr>
+    <tr>
+      <td><strong>Yuran Pengurusan</strong></td>
+      <td>-RM6,000 (20%)</td>
+      <td>-RM8,100 (RM270/bulu anggaran)</td>
+    </tr>
+    <tr>
+      <td><strong>Markup Pembersihan</strong></td>
+      <td>-RM4,200 (30% markup)</td>
+      <td>RM0 (in-house, tiada markup)</td>
+    </tr>
+    <tr>
+      <td><strong>Margin Penyelenggaraan</strong></td>
+      <td>-RM500 (20% margin)</td>
+      <td>RM0 (anda bayar kos sahaja)</td>
+    </tr>
+    <tr>
+      <td><strong>Markup Bekalan</strong></td>
+      <td>-RM450 (20% markup)</td>
+      <td>RM0 (harga pukal, tiada markup)</td>
+    </tr>
+    <tr>
+      <td><strong>Yuran Kecemasan</strong></td>
+      <td>-RM1,500 (purata RM50/bulu)</td>
+      <td>RM0 (termasuk dalam yuran)</td>
+    </tr>
+    <tr>
+      <td><strong>Yuran Platform</strong></td>
+      <td>-RM1,500</td>
+      <td>-RM1,500</td>
+    </tr>
+    <tr>
+      <td><strong>JUMLAH POTONGAN</strong></td>
+      <td><strong>RM14,150</strong></td>
+      <td><strong>RM9,600</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Bersih kepada Pemilik (3 tahun)</strong></td>
+      <td><strong>RM15,850</strong></td>
+      <td><strong>RM20,400</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Perbezaan</strong></td>
+      <td colspan="2">+<strong>RM4,550 LEBIH dengan iHousing</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Apa Yang 100+ Pemilik Melaka Katakan</h2>
+
+<h3>Aduan Biasa Tentang Pesaing</h3>
+
+<p><strong>1. "Saya tidak tahu tentang markup pembersihan"</strong></p>
+<ul>
+  <li>Pemilik jumpa markup dalam penyata bulanan</li>
+  <li>Fikir kos pembersihan adalah "kos sebenar"</li>
+  <li>Yuran bertambah RM1,000+ setahun</li>
+</ul>
+
+<p><strong>2. "Caj kecemasan terus muncul"</strong></p>
+<ul>
+  <li>Tetamu panggil 10 MLm, dikenakan RM80</li>
+  <li>Tetamu kunci, dikenakan RM50</li>
+  <li>Pemilik tiada kawalan, bil tiba bulanan</li>
+</ul>
+
+<p><strong>3. "Margin penyelenggaraan rasa berlebihan"</strong></p>
+<ul>
+  <li>Bil paip RM300, dikenakan RM360</li>
+  <li>Baik pulih AC RM200, dikenakan RM240</li>
+  <li>Pemilik jumpa kemudian, rasa dikenakan kos kecil</li>
+</ul>
+
+<h3>Mengapa Pemilik Tukar ke iHousing</h3>
+
+<p><strong>1. "Saya tahu tepat apa yang saya bayar setiap bulan"</strong></p>
+<ul>
+  <li>Parkland: RM200-300 tetap (tiada kejutan)</li>
+  <li>Kondo lain: Harga dipersetujui, tiada markup</li>
+  <li>Kos boleh diramal = perancangan lebih baik</li>
+</ul>
+
+<p><strong>2. "Tiada lagi caj mengejut"</strong></p>
+<ul>
+  <li>Pembersihan: Pasukan in-house, tiada markup</li>
+  <li>Penyelenggaraan: Anda bayar kontraktor langsung</li>
+  <li>Kecemasan: Termasuk dalam yuran (sokongan 24/7)</li>
+</ul>
+
+<p><strong>3. "Pelaporan telus"</strong></p>
+<ul>
+  <li>Penyata bulanan menunjukkan setiap transaksi</li>
+  <li>Tiada kategori tersembunyi</li>
+  <li>Mudah difahami</li>
+</ul>
+
+<p><strong>4. "Lebih banyak tempahan, lebih banyak platform"</strong></p>
+<ul>
+  <li>Penyenaraian 5-platform vs 1-2 pesaing</li>
+  <li>60% lebih banyak tempahan</li>
+  <li>Hunian lebih baik (60%+ vs 40-50% purata pasaran)</li>
+</ul>
+
+<h2>Adakah iHousing Sesuai untuk Anda?</h2>
+
+<h3>Pilih iHousing Jika:</h3>
+<ul>
+  <li>Anda mahu harga telus (tiada yuran tersembunyi)</li>
+  <li>Anda milik Parkland Avenue (harga yuran rata)</li>
+  <li>Anda mahu penyenaraian multi-platform (5 platform)</li>
+  <li>Anda menghargai pembersihan in-house (tiada markup)</li>
+  <li>Anda mahu 60%+ hunian (rekod terbukti)</li>
+</ul>
+
+<h3>Pertimbangkan Pesaing Jika:</h3>
+<ul>
+  <li>Anda lebih suka model komisen (bayar peratusan)</li>
+  <li>Anda mahu pengurusan minimum</li>
+  <li>Anda okey dengan markup untuk kemudahan</li>
+</ul>
+
+<h2>Dapatkan Harga Tersuai Anda</h2>
+
+<h3>Untuk Parkland Avenue by the Sea:</h3>
+
+<p><strong>Daftar pra sekarang untuk kunci:</strong></p>
+<ul>
+  <li>1 Bilik: RM200/bulan yuran rata</li>
+  <li>2 Bilik: RM250/bulan yuran rata</li>
+  <li>3 Bilik: RM300/bulan yuran rata</li>
+</ul>
+
+<p><strong>Pelancaran rasmi:</strong> Ogos 2025</p>
+
+<p><strong>Kelebihan pra-pendaftaran:</strong></p>
+<ul>
+  <li>Kunci harga sebelum pelancaran</li>
+  <li>Pemilihan unit keutamaan</li>
+  <li>Konsultasi awal percuma</li>
+</ul>
+
+<h3>Untuk Semua Kondo Lain:</h3>
+
+<p><strong>WhatsApp kami untuk harga tersuai:</strong></p>
+
+<ol>
+  <li>Beritahu kami butiran kondo anda (lokasi, saiz, keadaan)</li>
+  <li>Kami akan menilai potensi Airbnb anda</li>
+  <li>Terima sebutan harga telus</li>
+  <li>Bandingkan dengan keadaan semasa anda</li>
+</ol>
+
+<p><strong>Tiada kewajipan</strong></p>
+<p><strong>Tiada tekanan</strong></p>
+<p><strong>Hanya kejelasan</strong></p>
+
+<h2>Bertindak Hari Ini</h2>
+
+<p>Berhenti membayar markup tersembunyi. Dapatkan harga telus.</p>
+
+<p>Sama ada anda di Parkland Avenue (yuran rata) atau kondo lain (harga tersuai), iHousing tawarkan tawaran yang lebih baik daripada pengurus berasaskan komisen.</p>
+
+<p><strong>WhatsApp kami sekarang:</strong></p>
+
+<p>Dapatkan sebutan harga tersuai anda. Lihat tepat apa yang akan anda bayar. Bandingkan dengan apa yang anda bayar sekarang.</p>
+
+<p>Tukar kepada pengurusan telus. Kekalkan lebih banyak pendapatan keras anda.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

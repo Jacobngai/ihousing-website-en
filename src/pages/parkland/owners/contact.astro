@@ -1,0 +1,430 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'Contact iHousing for Parkland Avenue Airbnb Management';
+const description = 'Get in touch with iHousing for professional Airbnb property management at Parkland Avenue by the Sea. Free consultation and flat RM200-300/month management fee.';
+const image = 'https://parklandgroup.my/wp-content/uploads/2022/03/08_OverallDevelopment_op1_HR-copy.jpg';
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-indigo-900 via-indigo-800 to-pink-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-pink-300 font-semibold mb-4">CONTACT US</p>
+          <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+            Start Earning More with Your Parkland Avenue Unit
+          </h1>
+          <p class="text-xl text-pink-100 max-w-4xl mx-auto mb-8">
+            Get a free consultation to learn how iHousing can help you maximize your
+            Airbnb income with our flat RM200-300/month management fee.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Owner Inquiry Form
+          </h2>
+          <p class="text-lg text-gray-600 mb-8 text-center">
+            Fill in your details and our property management consultant will contact you
+            within 24 hours to discuss how to maximize your Parkland Avenue returns.
+          </p>
+
+          <form id="ownerContactForm" class="space-y-6">
+            <!-- Name -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Name *
+              </label>
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Your full name"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Phone Number *
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                required
+                placeholder="+60 12 3456 7890"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              />
+              <p class="text-sm text-gray-500 mt-1">
+                We'll contact you with personalized information
+              </p>
+            </div>
+
+            <!-- Email (Optional) -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Email (Optional)
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+
+            <!-- Unit Type -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Unit Type at Parkland Avenue *
+              </label>
+              <select
+                name="unitType"
+                required
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              >
+                <option value="">Select unit type</option>
+                <option value="type-a">Type A - 635 sqft (1+1 BR)</option>
+                <option value="type-b">Type B - 796 sqft (2 BR)</option>
+                <option value="type-c">Type C - 972 sqft (3 BR)</option>
+                <option value="type-d">Type D - 818 sqft (2 BR Premium)</option>
+                <option value="type-e">Type E - 1,002 sqft (3 BR Luxury)</option>
+                <option value="multiple">Multiple units</option>
+              </select>
+            </div>
+
+            <!-- Current Status -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Current Status *
+              </label>
+              <select
+                name="status"
+                required
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              >
+                <option value="">Select current status</option>
+                <option value="own-unit">Own a unit at Parkland Avenue</option>
+                <option value="considering">Considering purchase at Parkland Avenue</option>
+                <option value="not-sure">Just exploring options</option>
+              </select>
+            </div>
+
+            <!-- Investment Timeline -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Investment Timeline
+              </label>
+              <select
+                name="timeline"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              >
+                <option value="">Select timeline (optional)</option>
+                <option value="immediate">Ready to start immediately</option>
+                <option value="6-months">Within 6 months</option>
+                <option value="1-year">Within 1 year</option>
+                <option value="exploring">Just exploring</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Message or Questions (Optional)
+              </label>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Any specific questions about property management, expected income, or timeline?"
+                class="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl text-xl transition-colors"
+            >
+              Submit Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Message Preview -->
+    <section class="py-16 bg-gradient-to-br from-green-50 to-green-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          What Happens After You Submit?
+        </h2>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <div class="bg-green-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-green-900 mb-4">WhatsApp Message You'll Receive</h3>
+          <p class="text-gray-700 mb-2">
+            Within 24 hours, our team will send you a personalized WhatsApp message
+            including:
+          </p>
+
+          <div class="space-y-3 text-gray-700">
+            <div class="flex items-start space-x-3 mb-2">
+              <span class="w-8 h-8 bg-green-100 rounded-full flex items-center flex-shrink-0">📋</span>
+              <div>
+                <p class="text-sm text-gray-600"><strong>Your Parkland Unit Type:</strong></p>
+                <p class="text-sm text-gray-500">Based on your selection</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 mb-2">
+              <span class="w-8 h-8 bg-blue-100 rounded-full flex items-center flex-shrink-0">💰</span>
+              <div>
+                <p class="text-sm text-gray-600"><strong>Expected Rental Income:</strong></p>
+                <p class="text-sm text-gray-500">RM[xxx]-[xxx]/month based on your unit type</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 mb-2">
+              <span class="w-8 h-8 bg-purple-100 rounded-full flex items-center flex-shrink-0">💡</span>
+              <div>
+                <p class="text-sm text-gray-600"><strong>iHousing Management Fee:</strong></p>
+                <p class="text-sm text-gray-500">RM[xxx]/month (FLAT FEE!)</p>
+                <p class="text-sm text-gray-500">Not 20% commission!</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 mb-2">
+              <span class="w-8 h-8 bg-pink-100 rounded-full flex items-center flex-shrink-0">📊</span>
+              <div>
+                <p class="text-sm text-gray-600"><strong>Annual Savings vs Traditional:</strong></p>
+                <p class="text-sm text-gray-500">RM5,000-8,400+ saved annually!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <p class="text-gray-700">
+              <strong>Follow-up:</strong> Our property management consultant will message you to
+              discuss: personalized ROI calculations, setup timeline, and answer all your questions.
+            </p>
+          </div>
+
+          <div class="text-gray-600 text-center mt-4">
+            <p class="text-sm">
+              Message template shows as example. Your actual message will be
+              personalized based on your specific unit type and situation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alternative Contact Methods -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Alternative Contact Methods
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-green-50 p-8 rounded-xl text-center">
+            <h3 class="text-2xl font-bold text-green-900 mb-4">Contact Form</h3>
+            <div class="space-y-4">
+              <p class="text-lg font-bold text-green-600 mb-2">Fill out our form</p>
+              <p class="text-gray-600">
+                Fast response time. We'll get back to you within hours.
+                Preferred for detailed inquiries.
+              </p>
+            </div>
+
+            <div class="bg-blue-50 p-8 rounded-xl text-center">
+            <h3 class="text-2xl font-bold text-blue-900 mb-4">Email</h3>
+            <div class="space-y-4">
+              <p class="text-4xl font-bold text-blue-600 mb-2">info@ihousing.com.my</p>
+              <p class="text-gray-600">
+                For detailed inquiries, document requests, or if you prefer email communication.
+                We respond within 24 hours on business days.
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-4">
+          <details class="bg-white p-6 rounded-xl">
+            <summary class="text-lg font-bold text-gray-900 cursor-pointer flex justify-between items-center">
+              <span>What's included in the RM200-300/month fee?</span>
+              <span class="text-green-600 text-2xl font-bold">+</span>
+            </summary>
+            <div class="mt-4">
+              <ul class="space-y-2 text-gray-700">
+                <li>✅ All guest communication (24/7)</li>
+                <li>✅ Professional cleaning after every stay</li>
+                <li>✅ All supplies (toilet paper, soap, linens, towels)</li>
+                <li>✅ Listing on multiple platforms (Airbnb, Booking.com, Agoda)</li>
+                <li>✅ Dynamic pricing optimization</li>
+                <li>✅ Maintenance coordination (trusted contractors)</li>
+                <li>✅ Monthly income reports and automatic payouts</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl">
+            <summary class="text-lg font-bold text-gray-900 cursor-pointer flex justify-between items-center">
+              <span>How does iHousing charge less than traditional managers?</span>
+              <span class="text-green-600 text-2xl font-bold">+</span>
+            </summary>
+            <div class="mt-4">
+              <ul class="space-y-2 text-gray-700">
+                <li>✅ We charge a <strong>flat fee</strong>, not a percentage of your income</li>
+                <li>✅ Traditional managers charge 20% commission - which means your fee
+                    <strong>increases as your income grows</strong></li>
+                <li>✅ We have volume (100+ properties) allowing us to optimize operations and reduce costs</li>
+                <li>✅ No hidden fees for supplies, platform fees, or service charges</li>
+                <li>✅ We don't mark up contractors or add premium to cleaning costs</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl">
+            <summary class="text-lg font-bold text-gray-900 cursor-pointer flex justify-between items-center">
+              <span>What if I already have a different Airbnb manager?</span>
+              <span class="text-green-600 text-2xl font-bold">+</span>
+            </summary>
+            <div class="mt-4">
+              <ul class="space-y-2 text-gray-700">
+                <li>✅ We can help you transition smoothly to iHousing</li>
+                <li>✅ We'll work with your current manager to ensure no booking conflicts</li>
+                <li>✅ We'll optimize your existing listings and improve performance</li>
+                <li>✅ You'll save money immediately (no long notice typically required)</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl">
+            <summary class="text-lg font-bold text-gray-900 cursor-pointer flex justify-between items-center">
+              <span>Do I need to provide linens and supplies?</span>
+              <span class="text-green-600 text-2xl font-bold">+</span>
+            </summary>
+            <div class="mt-4">
+              <ul class="space-y-2 text-gray-700">
+                <li>✅ <strong>No!</strong> All linens and supplies are included in our flat fee</li>
+                <li>✅ We provide everything: bedsheets, pillows, towels, toiletries, toilet paper, soap,
+                  shampoo, and kitchen essentials</li>
+                <li>✅ We restock everything after every guest stay - you never need to buy or replace
+                  items</li>
+                <li>✅ Quality linens and towels are included - premium feel at no extra cost</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl">
+            <summary class="text-lg font-bold text-gray-900 cursor-pointer flex justify-between items-center">
+              <span>How long does setup take?</span>
+              <span class="text-green-600 text-2xl font-bold">+</span>
+            </summary>
+            <div class="mt-4">
+              <ul class="space-y-2 text-gray-700">
+                <li>✅ <strong>Typically 2 weeks</strong> from consultation to first booking</li>
+                <li>✅ Week 1: Free consultation and strategy planning</li>
+                <li>✅ Week 2: Unit preparation and photography (if applicable)</li>
+                <li>✅ Week 3: Listing creation and multi-platform setup</li>
+                <li>✅ Week 4: Platform launch and first booking coordination</li>
+                <li>✅ Week 5+: Full service management with ongoing optimization</li>
+              </ul>
+              <p class="text-gray-600">
+                <strong>Note:</strong> If your unit is already furnished and in good condition,
+                we can often launch within 1 week.
+              </p>
+            </div>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl">
+            <summary class="text-lg font-bold text-gray-900 cursor-pointer flex justify-between items-center">
+              <span>What happens if my unit needs repairs or maintenance?</span>
+              <span class="text-green-600 text-2xl font-bold">+</span>
+            </summary>
+            <div class="mt-4">
+              <ul class="space-y-2 text-gray-700">
+                <li>✅ We coordinate all repairs and maintenance for you</li>
+                <li>✅ We use trusted local contractors we've vetted for quality and fair pricing</li>
+                <li>✅ We handle all scheduling, payment, and coordination</li>
+                <li>✅ Minor repairs are covered, but major repairs may need your approval
+                  based on cost</li>
+                <li>✅ You're informed before any work begins and receive documentation
+                    for your records</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-indigo-600 to-pink-600 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-6">
+          Ready to Maximize Your Parkland Avenue Returns?
+        </h2>
+        <p class="text-xl text-pink-100 mb-8">
+          Submit your inquiry now and start earning more with iHousing's
+          professional Airbnb management service.
+        </p>
+        <a href="/parkland/avenue-by-the-sea/" class="inline-block bg-white text-indigo-700 font-bold py-4 px-8 rounded-lg text-xl hover:bg-pink-100">
+          Learn About Parkland Avenue Investment
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Form Submission Script -->
+  <script is:inline>
+    document.getElementById('ownerContactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+
+      // In production, this would submit to backend API
+      // For now, show success message
+      alert('Thank you for your inquiry!\n\nOur property management consultant will contact you within 24 hours with:\n• Personalized ROI analysis for your unit type\n• Expected rental income breakdown\n• iHousing management fee: RM200-300/month (flat!)\n• Annual savings vs traditional 20% commission\n• Setup timeline and next steps');
+
+      // Reset form
+      this.reset();
+
+      // In production, uncomment to submit:
+      // fetch('/api/owner-inquiry', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify(data)
+      // })
+      // .then(response => response.json())
+      // .then(data => {
+      //   if (data.success) {
+      //     alert('Message sent successfully! We\'ll contact you within 24 hours.');
+      //     this.reset();
+      //   } else {
+      //     alert('Error: ' + data.message);
+      //   }
+      // })
+      // .catch(error => {
+      //   alert('Error submitting form. Please try again or contact us via the contact form.');
+      // });
+    });
+  </script>
+</Layout>

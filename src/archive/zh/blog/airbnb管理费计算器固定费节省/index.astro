@@ -1,0 +1,122 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Airbnb管理费计算器：查看固定费节省多少";
+const description = "计算您使用固定费管理vs 20%佣金的节省。互动示例显示RM 250/月如何击败基于佣金的定价。查看3年节省预测。";
+const image = "/images/blog/airbnb-management-fee-calculator-flat-fee.jpg";
+const date = "2025-01-09";
+const category = "pricing-comparison";
+const language = "zh";
+
+const content = `
+<h1>Airbnb管理费计算器：查看固定费节省多少</h1>
+<strong>数学不会说谎：固定费每次都赢</strong>
+<p>马来西亚大多数Airbnb管理公司收取15-25%的佣金。iHousing做法不同：每月固定RM 200-300费用。</p>
+<p>让我们准确计算这对您的底线意味着什么。</p>
+<hr class="my-8">
+<h2>传统佣金模式</h2>
+<p>这是大多数物业管理经理收取的费用：</p>
+<table>
+  <thead>
+    <tr><th>公司</th><th>佣金</th><th>额外费用</th><th>总成本</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**竞争对手A**</td><td>20%</td><td>设置：RM 1,500</td><td>20% + 一次性</td></tr>
+    <tr><td>**竞争对手B**</td><td>22%</td><td>摄影：RM 800</td><td>22% + 一次性</td></tr>
+    <tr><td>**竞争对手C**</td><td>18%</td><td>营销：RM 500/年</td><td>18% + 定期</td></tr>
+    <tr><td>**行业平均**</td><td>20%</td><td>各种附加费</td><td>22-25%实际费率</td></tr>
+  </tbody>
+</table>
+<p><strong>隐藏费用：</strong> 大多数基于佣金的公司还收取：</p>
+<ul>
+<li>设置费：RM 500-2,000</li>
+<li>专业摄影：RM 500-1,500</li>
+<li>平台列表费：RM 200-500/平台</li>
+<li>营销预算：RM 100-300/月</li>
+<li>紧急出诊费：RM 50-100/次</li>
+</ul>
+<p><strong>实际费率：</strong> 所有附加费后22-28%！</p>
+<hr class="my-8">
+<h2>iHousing固定费模式</h2>
+<p>简单、透明的定价：</p>
+<table>
+  <thead>
+    <tr><th>物业大小</th><th>月费</th><th>包含服务</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**1居室**</td><td>RM 200</td><td>一切</td></tr>
+    <tr><td>**2居室**</td><td>RM 250</td><td>一切</td></tr>
+    <tr><td>**3居室**</td><td>RM 300</td><td>一切</td></tr>
+  </tbody>
+</table>
+<p><strong>包含内容：</strong></p>
+<ul>
+<li>✅ 5个平台上的物业列表</li>
+<li>✅ 专业摄影</li>
+<li>✅ 动态定价管理</li>
+<li>✅ 24/7客人沟通</li>
+<li>✅ 清洁协调</li>
+<li>✅ 维护协调</li>
+<li>✅ 评论管理</li>
+<li>✅ 月度表现报告</li>
+</ul>
+<p><strong>无隐藏费用：</strong> RM 200-300/月。就这样。</p>
+<hr class="my-8">
+<h2>场景对比：RM 10,000/月物业</h2>
+<p>让我们比较月总收入RM 10,000的物业的实际成本：</p>
+<h3>基于佣金的公司（20%）</h3>
+<p><strong>净收入：</strong> RM 10,000 - RM 2,300 = RM 7,700/月</p>
+<p><strong>实际费率：</strong> 23%</p>
+<h3>iHousing固定费（2居室）</h3>
+<p><strong>净收入：</strong> RM 10,000 - RM 250 = RM 9,750/月</p>
+<p><strong>实际费率：</strong> 2.5%</p>
+<h3>节省：</h3>
+<ul>
+<li><strong>每月：</strong> 节省RM 2,050</li>
+<li><strong>每年：</strong> 节省RM 24,600</li>
+<li><strong>3年：</strong> 节省RM 73,800！</li>
+</ul>
+<p><em>那就是您口袋里3年额外的RM 73,800。</em></p>
+<hr class="my-8">
+<h2>互动计算器：您的节省</h2>
+<p>使用此表计算您的潜在节省：</p>
+<table>
+  <thead>
+    <tr><th>月收入</th><th>20%佣金成本</th><th>iHousing固定费</th><th>月节省</th><th>年节省</th><th>3年节省</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>RM 5,000</td><td>RM 1,000</td><td>RM 250</td><td>RM 750</td><td>RM 9,000</td><td>RM 27,000</td></tr>
+    <tr><td>RM 6,000</td><td>RM 1,200</td><td>RM 250</td><td>RM 950</td><td>RM 11,400</td><td>RM 34,200</td></tr>
+    <tr><td>RM 7,000</td><td>RM 1,400</td><td>RM 250</td><td>RM 1,150</td><td>RM 13,800</td><td>RM 41,400</td></tr>
+    <tr><td>RM 8,000</td><td>RM 1,600</td><td>RM 250</td><td>RM 1,350</td><td>RM 16,200</td><td>RM 48,600</td></tr>
+    <tr><td>RM 9,000</td><td>RM 1,800</td><td>RM 250</td><td>RM 1,550</td><td>RM 18,600</td><td>RM 55,800</td></tr>
+    <tr><td>RM 10,000</td><td>RM 2,000</td><td>RM 250</td><td>RM 1,750</td><td>RM 21,000</td><td>RM 63,000</td></tr>
+  </tbody>
+</table>
+<hr class="my-8">
+<h2>盈亏平衡点：何时固定费获胜</h2>
+<p>在什么收入水平固定费比佣金更便宜？</p>
+<p><strong>计算：</strong></p>
+<ul>
+<li>固定费（2居室）：RM 250/月</li>
+<li>盈亏平衡收入 = RM 250 ÷ 20% = RM 1,250/月</li>
+</ul>
+<p><strong>结果：</strong> 如果您的物业赚取超过RM 1,250/月（RM 15,000/年），固定费为您省钱！</p>
+<hr class="my-8">
+<h2>准备计算您的节省？</h2>
+<p>WhatsApp我们您的物业详情以获取自定义节省计算：</p>
+<a href="https://wa.me/60166996688?text=Hi%20iHousing,%20我想计算我的固定费管理节省。我的物业赚取RM%20X/月。" target="_blank" rel="noopener" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 20px 0;">+60 19-699 6688</a>
+<hr class="my-8">
+<strong>最后更新：</strong> 2025年1月 | <strong>数据来源：</strong> iHousing定价分析
+<p><em>固定费定价。透明成本。最大节省。这就是iHousing的承诺。</em></p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

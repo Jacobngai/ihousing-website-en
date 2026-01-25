@@ -1,0 +1,521 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Senarai Semak Kemudahan Airbnb Melaka: Apa yang Tetamu Mahu";
+const description = "Senarai semak lengkap kemudahan yang perlu disediakan untuk Airbnb di Melaka. Bahagikan kepada kemudahan wajib, penting, dan premium untuk memaksimumkan rating.";
+const image = "/images/blog/senarai-semak-kemudahan-airbnb-melaka.jpg";
+const date = "2025-01-24";
+const category = "setup";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Senarai Semak Kemudahan Airbnb Melaka: Apa yang Tetamu Mahu</h1>
+
+<h2>Mengapa Kemudahan Sangat Penting untuk Rating</h2>
+
+<p>Dalam dunia Airbnb, kemudahan (amenities) adalah faktor penentu antara rating 4 bintang dan 5 bintang.</p>
+
+<strong>Statistik Airbnb:</strong>
+<ul>
+<li>70% tetamu mencari kemudahan WiFi sebelum membuat tempahan</li></ul>
+
+<ul>
+<li>65% tetamu menganggap penyaman udara sebagai "wajib"</li></ul>
+
+<ul>
+<li>50% tetamu akan meninggalkan rating 1 bintang jika kemudahan asas tiada</li></ul>
+
+<ul>
+<li>Kemudahan yang lengkap boleh meningkatkan harga 20-30%</li></ul>
+
+<p>Artikel ini menyediakan senarai semak lengkap kemudahan yang perlu disediakan untuk Airbnb anda di Melaka, dibahagikan kepada tiga kategori: Wajib, Penting, dan Premium.</p>
+
+<h2>Kategori 1: Kemudahan Wajib (Harus Ada)</h2>
+
+<p>Ini adalah kemudahan yang <strong>harus ada</strong> tanpa gagal. Tanpa ini, rating anda akan menderita.</p>
+
+<h3>1. WiFi & Sambungan Internet</h3>
+
+<strong>Tips:</strong>
+<ul>
+<li>Letakkan password WiFi di tempat yang jelas (papan pintu, meja kopi)</li></ul>
+
+<ul>
+<li>Ujian kelajuan minimum 25Mbps untuk strim video</li></ul>
+
+<ul>
+<li>Sediakan juga WiFi extenders jika unit besar (80m²+)</li></ul>
+
+<h3>2. Penyaman Udara (Air Conditioning)</h3>
+
+<strong>Tips:</strong>
+<ul>
+<li>Pilih penyaman udara inverter (jimat elektrik)</li></ul>
+
+<ul>
+<li>Servis setiap 3 bulan</li></ul>
+
+<ul>
+<li>Sediakan remote control di setiap bilik</li></ul>
+
+<h3>3. Katil & Linen Berkualiti</h3>
+
+<strong>Tips:</strong>
+<ul>
+<li>Tilam terlalu lembut atau keras = aduan tetamu</li></ul>
+
+<ul>
+<li>Sediakan 2-3 set linen (untuk ganti antara tetamu)</li></ul>
+
+<ul>
+<li>Basuh linen pada suhu 60°C untuk membasmi kuman</li></ul>
+
+<h3>4. Bilik Air Lengkap</h3>
+
+<strong>Tips:</strong>
+<ul>
+<li>Sediakan sabun/shampoo berkualiti (jangan jenama termurah)</li></ul>
+
+<ul>
+<li>Handuk tebal dan lembut = 5 bintang</li></ul>
+
+<ul>
+<li>Tisu tandas mestilah berkualiti baik (lembut)</li></ul>
+
+<h3>5. Dapur Asas</h3>
+
+<strong>Tips:</strong>
+<ul>
+<li>Peralatan dapur asas cukup (jangan perlu premium)</li></ul>
+
+<ul>
+<li>Pilih peralatan stainless steel (tahan lama)</li></ul>
+
+<ul>
+<li>Sediakan minimum 4 set (untuk 4 tetamu)</li></ul>
+
+<h3>6. Keselamatan Asas</h3>
+
+<strong>Tips:</strong>
+<ul>
+<li>Pintar berkunci adalah PENTING untuk check-in sendiri</li></ul>
+
+<ul>
+<li>Letakkan arahan penggunaan pintar berkunci dengan jelas</li></ul>
+
+<h3>7. Kemudahan Dapur Asas</h3>
+
+<strong>Tips:</strong>
+<ul>
+<li>Pilih warna neutral (putih, kelabu, beige)</li></ul>
+
+<ul>
+<li>Sofa selesa = tetamu lebih suka</li></ul>
+
+<ul>
+<li>TV dengan Netflix adalah bonus (walaupun tidak wajib)</li></ul>
+
+<h2>Kategori 2: Kemudahan Penting (Disyorkan)</h2>
+
+<p>Ini adalah kemudahan yang <strong>seharusnya ada</strong> untuk meningkatkan pengalaman tetamu dan harga.</p>
+
+<h3>1. Mesin Basuh & Pengering</h3>
+
+<strong>Kelebihan:</strong>
+<ul>
+<li>Rating meningkat 0.2-0.4 bintang</li></ul>
+
+<ul>
+<li>Boleh menaikkan harga RM20-40/malam</li></ul>
+
+<ul>
+<li>Penting untuk tetamu yang menginap >3 malam</li></ul>
+
+<h3>2. Parking</h3>
+
+<strong>Kelebihan:</strong>
+<ul>
+<li>Melaka mempunyai parking terhad</li></ul>
+
+<ul>
+<li>Parking percuma = 5 bintang</li></ul>
+
+<ul>
+<li>Boleh menaikkan harga RM30-50/malam</li></ul>
+
+<h3>3. Besi & Papan Setrika</h3>
+
+<strong>Kelebihan:</strong>
+<ul>
+<li>Penting untuk tetamu perniagaan</li></ul>
+
+<ul>
+<li>Menunjukkan perhatian terhadap butiran</li></ul>
+
+<h3>4. Bekalan Tambahan</h3>
+
+<h3>5. Alat Tulis Pejabat (Untuk Tetamu Perniagaan)</h3>
+
+<strong>Kelebihan:</strong>
+<ul>
+<li>Menarik tetamu perniagaan</li></ul>
+
+<ul>
+<li>Boleh menaikkan okupansi weekdays</li></ul>
+
+<h2>Kategori 3: Kemudahan Premium (Pilihan)</h2>
+
+<p>Ini adalah kemudahan yang <strong>menambah nilai</strong> dan membezakan unit anda dari persaingan.</p>
+
+<h3>1. Hiburan Premium</h3>
+
+<h3>2. Dapur Lengkap</h3>
+
+<h3>3. Kemudahan Kanak-kanak (Jika Sasaran Keluarga)</h3>
+
+<h3>4. Keselamatan Premium</h3>
+
+<h3>5. Well-being & Keselesaan</h3>
+
+<h2>Senarai Semak Kemudahan Mengikut Bilik</h2>
+
+<h3>Ruang Tamu</h3>
+
+<ul>
+<li>[x] Sofa (2-3 duduk)</li></ul>
+
+<ul>
+<li>[x] Meja kopi</li></ul>
+
+<ul>
+<li>[x] TV pintar (40-50 inci)</li></ul>
+
+<ul>
+<li>[x] Penyaman udara (1.0 HP)</li></ul>
+
+<ul>
+<li>[x] WiFi (50+ Mbps)</li></ul>
+
+<ul>
+<li>[x] Extension cord (3-4 soket)</li></ul>
+
+<ul>
+<li>[x] Payung (2-3 pcs)</li></ul>
+
+<ul>
+<li>[x] Papan elektrik (jika perlu)</li></ul>
+
+<h3>Bilik Tidur Utama</h3>
+
+<ul>
+<li>[x] Katil queen/king</li></ul>
+
+<ul>
+<li>[x] Lentik (2-4)</li></ul>
+
+<ul>
+<li>[x] Quilt/Comforter</li></ul>
+
+<ul>
+<li>[x] 2-3 set linen</li></ul>
+
+<ul>
+<li>[x] 2-4 handuk</li></ul>
+
+<ul>
+<li>[x] Penyaman udara (1.0 HP)</li></ul>
+
+<ul>
+<li>[x] Lampu meja malam</li></ul>
+
+<ul>
+<li>[x] Langsir gelap</li></ul>
+
+<ul>
+<li>[x] Almari pakaian</li></ul>
+
+<ul>
+<li>[x] Papan elektrik</li></ul>
+
+<h3>Bilik Tidur 2 (Jika Ada)</h3>
+
+<ul>
+<li>[x] Katil queen/single</li></ul>
+
+<ul>
+<li>[x] Lentik (2)</li></ul>
+
+<ul>
+<li>[x] Quilt/Comforter</li></ul>
+
+<ul>
+<li>[x] 1-2 set linen</li></ul>
+
+<ul>
+<li>[x] 2 handuk</li></ul>
+
+<ul>
+<li>[x] Penyaman udara (0.8-1.0 HP)</li></ul>
+
+<ul>
+<li>[x] Lampu meja malam</li></ul>
+
+<ul>
+<li>[x] Langsir</li></ul>
+
+<ul>
+<li>[x] Almari</li></ul>
+
+<h3>Dapur</h3>
+
+<ul>
+<li>[x] Peti sejuk (200-300 liter)</li></ul>
+
+<ul>
+<li>[x] Cerek elektrik</li></ul>
+
+<ul>
+<li>[x] Microwave</li></ul>
+
+<ul>
+<li>[x] periuk & kuali (3-5 pcs)</li></ul>
+
+<ul>
+<li>[x] Peralatan makan (4-6 set)</li></ul>
+
+<ul>
+<li>[x] Cawan & sudu (6-8 set)</li></ul>
+
+<ul>
+<li>[x] Pisau & papan memotong</li></ul>
+
+<ul>
+<li>[x] Pembuka tin & penutup botol</li></ul>
+
+<ul>
+<li>[x] Minimum (optional)</li></ul>
+
+<h3>Bilik Air</h3>
+
+<ul>
+<li>[x] 2-4 handuk</li></ul>
+
+<ul>
+<li>[x] Sabun (saiz perlahanan)</li></ul>
+
+<ul>
+<li>[x] Syampu (saiz perlahanan)</li></ul>
+
+<ul>
+<li>[x] Kondisioner (optional)</li></ul>
+
+<ul>
+<li>[x] 2-4 roll tisu tandas</li></ul>
+
+<ul>
+<li>[x] Jebok dulang</li></ul>
+
+<ul>
+<li>[x] Pengering rambut</li></ul>
+
+<ul>
+<li>[x] Tapis berus gigi (optional)</li></ul>
+
+<h3>Kemudahan Tambahan</h3>
+
+<ul>
+<li>[x] Pintar berkunci pintu</li></ul>
+
+<ul>
+<li>[x] Pengesan asap</li></ul>
+
+<ul>
+<li>[x] Pemadam api</li></ul>
+
+<ul>
+<li>[x] Peti pertolongan cemas</li></ul>
+
+<ul>
+<li>[x] Besi & papan setrika</li></ul>
+
+<ul>
+<li>[x] Bantal tambahan</li></ul>
+
+<ul>
+<li>[x] Blanket tambahan</li></ul>
+
+<ul>
+<li>[x] Parking (jika ada)</li></ul>
+
+<h2>Kos Kemudahan: Pelaburan Awal</h2>
+
+<h3>Budget Setup (RM10,000 - RM15,000)</h3>
+
+<strong>Termasuk:</strong>
+<ul>
+<li>Katil berkualiti (tidak premium)</li></ul>
+
+<ul>
+<li>Perabot asas</li></ul>
+
+<ul>
+<li>Kemudahan dapur asas</li></ul>
+
+<ul>
+<li>Penyaman udara (standard)</li></ul>
+
+<ul>
+<li>WiFi asas</li></ul>
+
+<h3>Premium Setup (RM30,000 - RM50,000)</h3>
+
+<strong>Termasuk:</strong>
+<ul>
+<li>Katil premium (King/Queen)</li></ul>
+
+<ul>
+<li>Perabot premium</li></ul>
+
+<ul>
+<li>Kemudahan dapur lengkap</li></ul>
+
+<ul>
+<li>Penyaman udara inverter</li></ul>
+
+<ul>
+<li>WiFi berkelajuan tinggi</li></ul>
+
+<ul>
+<li>Hiburan (TV pintar besar, Netflix)</li></ul>
+
+<ul>
+<li>Mesin basuh & pengering</li></ul>
+
+<h3>ROI (Pulangan Pelaburan)</h3>
+
+<strong>Nota:</strong> Setup premium memberikan rating yang lebih tinggi dan okupansi yang lebih baik, jadi ROI sebenar mungkin lebih cepat.
+
+<h2>Isu Biasa dengan Kemudahan & Penyelesaian</h2>
+
+<h3>Isu 1: WiFi Lambat</h3>
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Guna router WiFi 6 (lebih pantas)</li></ul>
+
+<ul>
+<li>Letakkan router di lokasi pusat</li></ul>
+
+<ul>
+<li>Tambah WiFi extenders untuk unit besar</li></ul>
+
+<h3>Isu 2: Penyaman Udara Tidak Sejuk</h3>
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Servis setiap 3 bulan</li></ul>
+
+<ul>
+<li>Pilih penyaman udara inverter (lebih konsisten)</li></ul>
+
+<ul>
+<li>Pastikan saiz HP sesuai dengan saiz bilik</li></ul>
+
+<h3>Isu 3: Linen Berkedut</h3>
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Guna mesin basuh dengan fungsi steam</li></ul>
+
+<ul>
+<li>Lipat linen sejuk sebelum menyimpan</li></ul>
+
+<ul>
+<li>Simpan di tempat kering</li></ul>
+
+<h3>Isu 4: Kekurangan Bekalan</h3>
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Buat senarai semak pembersihan</li></ul>
+
+<ul>
+<li>Semak stok setiap minggu</li></ul>
+
+<ul>
+<li>Order dalam jumlah besar (lebih jimat)</li></ul>
+
+<h2>Soalan Lazim (FAQ)</h2>
+
+<h3>Q: Adakah perlu menyediakan semua kemudahan premium?</h3>
+
+<p>A: Tidak. Mulakan dengan kemudahan wajib, kemudian tambah kemudahan penting secara beransur-ansur. Premium adalah pilihan untuk unit premium.</p>
+
+<h3>Q: Berapa kos sara hidup untuk bekalan?</h3>
+
+<p>A: RM200-400/bulan untuk tisu, sabun, syampu, dan barang habis guna lain.</p>
+
+<h3>Q: Adakah perlu membeli perabot baru atau terpakai?</h3>
+
+<p>A: Terpulang. Perabot terpakai yang berkualiti boleh menjimatkan kos. Walau bagaimanapun, pastikan perabot terpakai bersih dan dalam keadaan baik.</p>
+
+<h3>Q: Bila perlu mengganti lentik dan linen?</h3>
+
+<p>A: Lentik: 1-2 tahun. Linen: 6-12 bulan (bergantung kepada kualiti dan penggunaan).</p>
+
+<h3>Q: Adakah perlu menyediakan makanan?</h3>
+
+<p>A: Tidak wajib. Walau bagaimanapun, sedia minuman (kopi, teh) dan snack (biskut) untuk "welcome touch" yang akan meningkatkan rating.</p>
+
+<h2>Dapatkan Senarai Semak Tersuai Untuk Unit Anda</h2>
+
+<p>Setiap unit adalah unik. Senarai semak yang betul bergantung pada:</p>
+<ul>
+<li>Saiz unit</li></ul>
+
+<ul>
+<li>Sasaran tetamu (keluarga, pasangan, perniagaan)</li></ul>
+
+<ul>
+<li>Bajet</li></ul>
+
+<p>WhatsApp kami untuk:</p>
+<ul>
+<li>Senarai semak kemudahan tersuai untuk unit anda</li></ul>
+
+<ul>
+<li>Anggaran kos pelaburan</li></ul>
+
+<ul>
+<li>Perundingan mengenai kemudahan yang memberikan ROI terbaik</li></ul>
+
+<ul>
+<li>Bantuan dengan pembelian dan pemasangan</li></ul>
+
+<strong>[WhatsApp Kami untuk Konsultasi Kemudahan Percuma]</strong>
+
+<p>Kami akan membantu anda memilih kemudahan yang tepat untuk memaksimumkan rating dan pendapatan Airbnb anda.</p>
+
+<p>Tunggu apa lagi? Hubungi kami hari ini untuk mula.</p>
+
+<strong>Artikel Berkaitan:</strong>
+<ul>
+<li>[Membeli Perabot untuk Airbnb: Panduan Lengkap](/ms/blog/membeli-perabot-untuk-airbnb-panduan-lengkap)</li></ul>
+
+<ul>
+<li>[Kos Renovation Airbnb Melaka](/ms/blog/kos-renovation-airbnb-melaka-panduan)</li></ul>
+
+<ul>
+<li>[Mula Airbnb di Melaka: Panduan Pemula](/ms/blog/mula-airbnb-di-melaka-panduan-pemula)</li></ul>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

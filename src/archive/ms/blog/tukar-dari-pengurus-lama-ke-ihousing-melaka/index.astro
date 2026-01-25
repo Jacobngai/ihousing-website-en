@@ -1,0 +1,847 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Tukar dari Pengurus Lama ke iHousing: Panduan Tanpa Kehilangan Tempahan";
+const description = "Panduan lengkap tukar pengurus Airbnb kepada iHousing Melaka. Proses yang mudah, tanpa kehilangan tempahan sedia ada, dan transisi yang lancar.";
+const image = "/images/blog/tukar-dari-pengurus-lama-ke-ihousing-melaka.jpg";
+const date = "2025-01-24";
+const category = "competitor-switch";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Tukar dari Pengurus Lama ke iHousing: Panduan Tanpa Kehilangan Tempahan</h1>
+
+<p>Mempunyai pengurus Airbnb semasa yang tidak memberikan hasil yang anda mahukan? Mungkin okupansi rendah, komunikasi teruk, atau yuran yang terlalu tinggi. Anda mahu tukar, tetapi bimbang tentang kehilangan tempahan sedia ada dan proses yang rumit.</p>
+
+<p>Artikel ini menunjukkan cara tukar pengurus Airbnb kepada iHousing dengan lancar, tanpa kehilangan bisnes.</p>
+
+<h2>Tanda-Tanda Anda Perlu Tukar Pengurus</h2>
+
+<h3>1. Okupansi Rendah</h3>
+
+<strong>Gejala:</strong>
+<ul>
+<li>Kalendar anda sering kosong</li></ul>
+
+<ul>
+<li>Okupansi &lt; 60% sebulan</li></ul>
+
+<ul>
+<li>Rakan-rakan lain di kawasan sama penuh</li></ul>
+
+<strong>Impak:</strong>
+<ul>
+<li>Pendapatan jauh di bawah potensi</li></ul>
+
+<ul>
+<li>Hartanah tidak digunakan sepenuhnya</li></ul>
+
+<ul>
+<li>ROI negatif</li></ul>
+
+<h3>2. Komunikasi Teruk</h3>
+
+<strong>Gejala:</strong>
+<ul>
+<li>Respon lambat kepada tetamu (lebih 24 jam)</li></ul>
+
+<ul>
+<li>Anda jarang dapat update</li></ul>
+
+<ul>
+<li>Tidak transparent tentang isu</li></ul>
+
+<ul>
+<li>Tetamu complain tentang response time</li></ul>
+
+<strong>Impak:</strong>
+<ul>
+<li>Ulasan negatif</li></ul>
+
+<ul>
+<li>Tetamu frustrasi</li></ul>
+
+<ul>
+<li>Booking rate menurun</li></ul>
+
+<h3>3. Kualiti Pembersihan Menurun</h3>
+
+<strong>Gejala:</strong>
+<ul>
+<li>Komen negatif tentang kebersihan</li></ul>
+
+<ul>
+<li>Tetamu complain tentang kotor</li></ul>
+
+<ul>
+<li>Pembersihan inconsistent</li></ul>
+
+<strong>Impak:</strong>
+<ul>
+<li>Rating menurun</li></ul>
+
+<ul>
+<li>Tetamu tak repeat</li></ul>
+
+<ul>
+<li>Akaun mungkin disekat oleh Airbnb</li></ul>
+
+<h3>4. Yuran Terlalu Tinggi</h3>
+
+<strong>Gejala:</strong>
+<ul>
+<li>Komisi > 20%</li></ul>
+
+<ul>
+<li>Kos tersembunyi yang tidak dijelaskan</li></ul>
+
+<ul>
+<li>Tidak value for money</li></ul>
+
+<ul>
+<li>Pendapatan bersih rendah</li></ul>
+
+<strong>Impak:</strong>
+<ul>
+<li>ROI rendah</li></ul>
+
+<ul>
+<li>Tidak sustainable jangka panjang</li></ul>
+
+<ul>
+<li>Frustrasi</li></ul>
+
+<h3>5. Tiada Laporan atau Transparansi</h3>
+
+<strong>Gejala:</strong>
+<ul>
+<li>Tidak dapat laporan bulanan</li></ul>
+
+<ul>
+<li>Tidak tahu berapa income sebenar</li></ul>
+
+<ul>
+<li>Akses kepada akaun Airbnb terhad</li></ul>
+
+<ul>
+<li>Tidak transparency dalam kos</li></ul>
+
+<strong>Impak:</strong>
+<ul>
+<li>Tidak boleh track performance</li></ul>
+
+<ul>
+<li>Tidak boleh buat decision</li></ul>
+
+<ul>
+<li>Rasa tidak control</li></ul>
+
+<h3>6. Strategi Harga yang Lemah</h3>
+
+<strong>Gejala:</strong>
+<ul>
+<li>Harga statik (tidak berubah mengikut musim)</li></ul>
+
+<ul>
+<li>Lebih murah dari pesaing</li></ul>
+
+<ul>
+<li>Tidak ada premium pricing untuk peak season</li></ul>
+
+<ul>
+<li>Tidak ada promosi untuk off-peak</li></ul>
+
+<strong>Impak:</strong>
+<ul>
+<li>Pendapatan tidak optimum</li></ul>
+
+<ul>
+<li>Kehilangan revenue</li></ul>
+
+<ul>
+<li>Tidak competitive</li></ul>
+
+<h2>Mengapa Tukar kepada iHousing?</h2>
+
+<h3>Kelebihan iHousing</h3>
+
+<p>#### 1. Track Record Terbukti</p>
+
+<ul>
+<li>Lebih 5 tahun pengalaman</li></ul>
+
+<ul>
+<li>Puluhan unit di Melaka</li></ul>
+
+<ul>
+<li>Okupansi purata 75-85%</li></ul>
+
+<ul>
+<li>Pendapatan pemilik meningkat 30-50%</li></ul>
+
+<p>#### 2. Komunikasi Transparent</p>
+
+<ul>
+<li>Laporan bulanan lengkap</li></ul>
+
+<ul>
+<li>Update real-time melalui WhatsApp</li></ul>
+
+<ul>
+<li>Akses penuh kepada akaun Airbnb</li></ul>
+
+<ul>
+<li>Response time &lt; 1 jam</li></ul>
+
+<p>#### 3. Yuran Berpatutan</p>
+
+<strong>Untuk Parkland Avenue by the Sea:</strong> RM200-300 sebulan
+
+<strong>Untuk kondominium lain:</strong> WhatsApp kami untuk harga tersuai
+
+<strong>Komisi:</strong> Hanya 15% dari pendapatan
+
+<p>#### 4. Pembersihan Profesional</p>
+
+<ul>
+<li>Standard hotel</li></ul>
+
+<ul>
+<li>Quality check setiap kali</li></ul>
+
+<ul>
+<li>Linen profesional</li></ul>
+
+<ul>
+<li>Consistent quality</li></ul>
+
+<p>#### 5. Harga Dinamik</p>
+
+<ul>
+<li>Pricing automatik mengikut permintaan</li></ul>
+
+<ul>
+<li>Premium untuk peak season</li></ul>
+
+<ul>
+<li>Promosi untuk off-peak</li></ul>
+
+<ul>
+<li>Optimasi berterusan</li></ul>
+
+<p>#### 6. Fokus pada ROI Anda</p>
+
+<ul>
+<li>Kejayaan kami = kejayaan anda</li></ul>
+
+<ul>
+<li>Insentif yang sejajar</li></ul>
+
+<ul>
+<li>Komitmen jangka panjang</li></ul>
+
+<ul>
+<li>Growth bersama</li></ul>
+
+<h2>Proses Tukar Pengurus: Langkah demi Langkah</h2>
+
+<h3>Langkah 1: Konsultasi Percuma</h3>
+
+<strong>Apa Kami Lakukan:</strong>
+<ul>
+<li>Review performance semasa anda</li></ul>
+
+<ul>
+<li>Analisis kenapa tidak optimum</li></ul>
+
+<ul>
+<li>Berikan anggaran potensi pendapatan</li></ul>
+
+<ul>
+<li>Cadangan strategy</li></ul>
+
+<strong>Apa Anda Bawa:</strong>
+<ul>
+<li>Akses kepada akaun Airbnb semasa (jika ada)</li></ul>
+
+<ul>
+<li>Info tentang unit (lokasi, saiz, facilities)</li></ul>
+
+<ul>
+<li>Laporan pendapatan semasa (jika ada)</li></ul>
+
+<ul>
+<li>Isu atau masalah yang anda hadapi</li></ul>
+
+<strong>Tempoh Masa:</strong> 30-60 minit
+
+<h3>Langkah 2: Penilaian Unit</h3>
+
+<strong>Apa Kami Lakukan:</strong>
+<ul>
+<li>Lawatan ke unit (jika perlu)</li></ul>
+
+<ul>
+<li>Foto profesional untuk penyenaraian baru</li></ul>
+
+<ul>
+<li>Senarai improvement yang disyorkan</li></ul>
+
+<ul>
+<li>Anggaran kos persediaan</li></ul>
+
+<strong>Apa Anda Perlu:</strong>
+<ul>
+<li>Akses kepada unit</li></ul>
+
+<ul>
+<li>Masa untuk lawatan (1-2 jam)</li></ul>
+
+<strong>Tempoh Masa:</strong> 1-2 jam
+
+<h3>Langkah 3: Perjanjian dan Setup</h3>
+
+<strong>Apa Kami Lakukan:</strong>
+<ul>
+<li>Sediakan perjanjian pengurusan</li></ul>
+
+<ul>
+<li>Setup akaun Airbnb baru (atau takeover existing)</li></ul>
+
+<ul>
+<li>Pindahkan penyenaraian</li></ul>
+
+<ul>
+<li>Update profile dan description</li></ul>
+
+<strong>Apa Anda Perlu:</strong>
+<ul>
+<li>Sign perjanjian</li></ul>
+
+<ul>
+<li>Provide maklumat yang diperlukan</li></ul>
+
+<ul>
+<li>Akses kepada unit untuk persediaan</li></ul>
+
+<strong>Tempoh Masa:</strong> 2-3 hari
+
+<h3>Langkah 4: Pelancaran</h3>
+
+<strong>Apa Kami Lakukan:</strong>
+<ul>
+<li>Publish penyenaraian baru</li></ul>
+
+<ul>
+<li>Promosi awal</li></ul>
+
+<ul>
+<li>Kumpul ulasan pertama</li></ul>
+
+<ul>
+<li>Monitor performance</li></ul>
+
+<strong>Apa Anda Perlu:</strong>
+<ul>
+<li>Bersedia untuk tempahan pertama</li></ul>
+
+<ul>
+<li>Biarkan kami uruskan semuanya</li></ul>
+
+<strong>Tempoh Masa:</strong> 1-2 minggu untuk stabil
+
+<h3>Langkah 5: Optima Berterusan</h3>
+
+<strong>Apa Kami Lakukan:</strong>
+<ul>
+<li>Monitor performance harian</li></ul>
+
+<ul>
+<li>Optima pricing mengikut demand</li></ul>
+
+<ul>
+<li>Handle semua komunikasi tetamu</li></ul>
+
+<ul>
+<li>Laporan bulanan lengkap</li></ul>
+
+<strong>Apa Anda Peroleh:</strong>
+<ul>
+<li>Pendapatan yang meningkat</li></ul>
+
+<ul>
+<li>Update berkala</li></ul>
+
+<ul>
+<li>Peace of mind</li></ul>
+
+<ul>
+<li>Passive income</li></ul>
+
+<h2>Mengelak Kehilangan Tempahan Semasa Transisi</h2>
+
+<h3>Strategi 1: Coordinate dengan Pengurus Lama</h3>
+
+<strong>Semasa Periode Notis:</strong>
+<ul>
+<li>Beri notis 30 hari (seperti dalam contract)</li></ul>
+
+<ul>
+<li>Teruskan pengurusan sementara</li></ul>
+
+<ul>
+<li>Schedule transition pada akhir bulan</li></ul>
+
+<ul>
+<li>Settle semua pembayaran</li></ul>
+
+<strong>Elakkan:</strong>
+<ul>
+<li>Berhentikan pengurus secara tiba-tiba</li></ul>
+
+<ul>
+<li>Mencetuskan konflik</li></ul>
+
+<ul>
+<li>Meninggalkan tempahan dalam status limbo</li></ul>
+
+<h3>Strategi 2: Transition Semasa Low Season</h3>
+
+<strong>Pilih Masa:</strong>
+<ul>
+<li>Minggu biasa (bukan cuti umum)</li></ul>
+
+<ul>
+<li>Bukan peak season</li></ul>
+
+<ul>
+<li>Semasa okupansi rendah</li></ul>
+
+<ul>
+<li>Elakkan bulan peak (Disember, Januari)</li></ul>
+
+<strong>Manfaat:</strong>
+<ul>
+<li>Kurang tempahan yang affected</li></ul>
+
+<ul>
+<li>Lebih masa untuk setup</li></ul>
+
+<ul>
+<li>Kurang tekanan</li></ul>
+
+<h3>Strategi 3: Keep Calendar Open</h3>
+
+<strong>Semasa Transition:</strong>
+<ul>
+<li>Biarkan calendar open</li></ul>
+
+<ul>
+<li>Teruskan terima tempahan</li></ul>
+
+<ul>
+<li>Coordinate pembersihan antara pengurus</li></ul>
+
+<ul>
+<li>Pastikan no gap dalam coverage</li></ul>
+
+<strong>Elakkan:</strong>
+<ul>
+<li>Blocking calendar</li></ul>
+
+<ul>
+<li>Menolak tempahan</li></ul>
+
+<ul>
+<li>Meninggalkan tetamu tanpa coverage</li></ul>
+
+<h3>Strategi 4: Backup Plan</h3>
+
+<strong>Sediakan:</strong>
+<ul>
+<li>Pasukan pembersihan standby</li></ul>
+
+<ul>
+<li>Kontraktor emergency</li></ul>
+
+<ul>
+<li>Protokol untuk handle issues</li></ul>
+
+<ul>
+<li>Insurance coverage</li></ul>
+
+<h2>Timeline Transisi Ideal</h2>
+
+<h3>30 Hari Sebelum: Perancangan</h3>
+
+<ul>
+<li>Hari 1-7: Konsultasi dengan iHousing</li></ul>
+
+<ul>
+<li>Hari 8-14: Lawatan dan penilaian unit</li></ul>
+
+<ul>
+<li>Hari 15-21: Perjanjian dan setup</li></ul>
+
+<ul>
+<li>Hari 22-30: Coordinate dengan pengurus lama</li></ul>
+
+<h3>15 Hari Sebelum: Persediaan</h3>
+
+<ul>
+<li>Foto profesional baru</li></ul>
+
+<ul>
+<li>Setup penyenaraian baru</li></ul>
+
+<ul>
+<li>Training pasukan</li></ul>
+
+<ul>
+<li>Pasang peralatan (smart lock, dll)</li></ul>
+
+<h3>7 Hari Sebelum: Testing</h3>
+
+<ul>
+<li>Test booking process</li></ul>
+
+<ul>
+<li>Test communication</li></ul>
+
+<ul>
+<li>Test cleaning coordination</li></ul>
+
+<ul>
+<li>Final check</li></ul>
+
+<h3>Hari Transition: Pelancaran</h3>
+
+<ul>
+<li>Switch dari penyenaraian lama ke baru</li></ul>
+
+<ul>
+<li>Deactivate penyenaraian lama</li></ul>
+
+<ul>
+<li>Activate penyenaraian baru</li></ul>
+
+<ul>
+<li>Publish dan promote</li></ul>
+
+<h3>30 Hari Selepas: Stabilisasi</h3>
+
+<ul>
+<li>Monitor performance</li></ul>
+
+<ul>
+<li>Optima pricing</li></ul>
+
+<ul>
+<li>Collect ulasan</li></ul>
+
+<ul>
+<li>Resolve isu awal</li></ul>
+
+<h2>Apa yang Berlaku kepada Tempahan Sedia Ada?</h2>
+
+<h3>Opsi 1: Complete di Pengurus Lama</h3>
+
+<ul>
+<li>Selesaikan semua tempahan yang dibuat sebelum transition</li></ul>
+
+<ul>
+<li>Pengurus lama handle hingga tamat</li></ul>
+
+<ul>
+<li>Tidak ada tempahan yang terganggu</li></ul>
+
+<ul>
+<li>Transition smooth</li></ul>
+
+<h3>Opsi 2: Gradual Transition</h3>
+
+<ul>
+<li>Tempahan baru melalui iHousing</li></ul>
+
+<ul>
+<li>Tempahan sedia ada complete di pengurus lama</li></ul>
+
+<ul>
+<li>Automasi switch selepas tempahan terakhir</li></ul>
+
+<ul>
+<li>Minimal disruption</li></ul>
+
+<h3>Opsi 3: Immediate Transition</h3>
+
+<ul>
+<li>Semua tempahan (termasuk sedia ada) pindah ke iHousing</li></ul>
+
+<ul>
+<li>Coordinate dengan pengurus lama</li></ul>
+
+<ul>
+<li>Tambah masa untuk transition</li></ul>
+
+<ul>
+<li>Lebih kerja tetapi lebih control</li></ul>
+
+<strong>Kesyorkan:</strong> Opsi 1 atau 2 untuk minimum disruption.
+
+<h2>Dokumen dan Akses yang Diperlukan</h2>
+
+<h3>Dari Pengurus Lama</h3>
+
+<strong>Minta:</strong>
+<ul>
+<li>Laporan performance 6-12 bulan terakhir</li></ul>
+
+<ul>
+<li>Data pendapatan terperinci</li></ul>
+
+<ul>
+<li>Maklumat tetamu (untuk contact)</li></ul>
+
+<ul>
+<li>Inventory senarai (perabot, barang)</li></ul>
+
+<ul>
+<li>Deposit atau balance yang perlu dipulangkan</li></ul>
+
+<h3>Untuk iHousing</h3>
+
+<strong>Sediakan:</strong>
+<ul>
+<li>Akses kepada akaun Airbnb (atau maklumat login)</li></ul>
+
+<ul>
+<li>Kunci kepada unit</li></ul>
+
+<ul>
+<li>Akses kepada parking (jika ada)</li></ul>
+
+<ul>
+<li>Maklumat pengurusan bangunan</li></ul>
+
+<ul>
+<li>Senarai kontraktor (jika ada)</li></ul>
+
+<ul>
+<li>Manual atau rules khas</li></ul>
+
+<h2>Cost Transition</h2>
+
+<h3>Kos One-Time</h3>
+
+<li><strong>Foto Profesional</strong></li>
+<p>   - RM300-800</p>
+<p>   - Untuk penyenaraian baru yang lebih menarik</p>
+
+<li><strong>Perabot Tambahan</strong></li>
+<p>   - RM500-2,000</p>
+<p>   - Jika perlu improvement</p>
+
+<li><strong>Peralatan</strong></li>
+<p>   - Smart lock: RM300-800</p>
+<p>   - Perabot tambahan: RM500-1,500</p>
+<p>   - Barang guna habis: RM200-400</p>
+
+<strong>Total One-Time:</strong> RM1,500-5,500
+
+<h3>Kos Bulanan (Berterusan)</h3>
+
+<strong>Dengan iHousing:</strong>
+
+<strong>Untuk Parkland Avenue by the Sea:</strong>
+<ul>
+<li>Yuran tetap: RM200-300/bulan</li></ul>
+
+<ul>
+<li>Komisi: 15% dari pendapatan</li></ul>
+
+<strong>Untuk Kondominium Lain:</strong>
+<ul>
+<li>WhatsApp kami untuk harga tersuai</li></ul>
+
+<ul>
+<li>Komisi: 15% dari pendapatan</li></ul>
+
+<strong>Kos Operasi (anggaran):</strong>
+<ul>
+<li>Pembersihan: RM1,600-2,400 (20x/bulan)</li></ul>
+
+<ul>
+<li>Linen: RM400-600 (20x/bulan)</li></ul>
+
+<ul>
+<li>Barang guna habis: RM400-600</li></ul>
+
+<ul>
+<li>Utiliti: RM300-500</li></ul>
+
+<ul>
+<li>Penyelenggaraan: RM200-400</li></ul>
+
+<strong>Total Bulanan:</strong> RM2,900-4,400
+
+<h2>ROI dari Menukar Pengurus</h2>
+
+<h3>Sebelum Menukar (Contoh)</h3>
+
+<strong>Unit 2-bedroom di bandar Melaka:</strong>
+<ul>
+<li>Pendapatan kasar: RM3,000/bulan</li></ul>
+
+<ul>
+<li>Komisi pengurus lama: 25% = RM750</li></ul>
+
+<ul>
+<li>Pembersihan: RM1,800</li></ul>
+
+<ul>
+<li>Linen: RM400</li></ul>
+
+<ul>
+<li>Barang guna habis: RM300</li></ul>
+
+<ul>
+<li>Utiliti: RM350</li></ul>
+
+<ul>
+<li><strong>Jumlah kos: RM3,600</strong></li></ul>
+
+<ul>
+<li><strong>Pendapatan bersih: (NEGATIF) RM-600</strong></li></ul>
+
+<h3>Selepas Menukar ke iHousing</h3>
+
+<strong>Unit yang sama:</strong>
+<ul>
+<li>Pendapatan kasar: RM4,500/bulan (okupansi lebih tinggi)</li></ul>
+
+<ul>
+<li>Komisi iHousing: 15% = RM675</li></ul>
+
+<ul>
+<li>Yuran pengurusan: RM300 (harga tersuai untuk contoh)</li></ul>
+
+<ul>
+<li>Pembersihan: RM1,800</li></ul>
+
+<ul>
+<li>Linen: RM400</li></ul>
+
+<ul>
+<li>Barang guna habis: RM400</li></ul>
+
+<ul>
+<li>Utiliti: RM400</li></ul>
+
+<ul>
+<li><strong>Jumlah kos: RM3,975</strong></li></ul>
+
+<ul>
+<li><strong>Pendapatan bersih: RM525/bulan</strong></li></ul>
+
+<strong>Peningkatan:</strong>
+<ul>
+<li>Dari negatif RM-600 ke positif RM525</li></ul>
+
+<ul>
+<li><strong>Peningkatan RM1,125/bulan</strong></li></ul>
+
+<ul>
+<li><strong>Peningkatan RM13,500/tahun</strong></li></ul>
+
+<h3>ROI dari Membayar One-Time Costs</h3>
+
+<strong>Pelaburan One-Time:</strong> RM3,000 (contoh)
+
+<strong>Peningkatan Pendapatan:</strong> RM13,500/tahun
+
+<strong>Payback Period:</strong> 2.7 bulan
+
+<strong>ROI Pertama:</strong> 450% dalam tahun pertama
+
+<h2>Soalan Lazim</h2>
+
+<h3>Adakah saya akan kehilangan tempahan sedia ada?</h3>
+
+<p>Dengan perancangan yang betul, tidak. Kami akan coordinate dengan pengurus lama untuk memastikan semua tempahan sedia ada disiapkan dengan lancar.</p>
+
+<h3>Berapa lama proses transisi?</h3>
+
+<p>Biasanya 30-45 hari dari konsultasi pertama hingga pelancaran penuh.</p>
+
+<h3>Perlukan saya beritahu pengurus lama terlebih dahulu?</h3>
+
+<p>Ya, professionally berikan notis mengikut tempoh dalam perjanjian anda (biasanya 30 hari).</p>
+
+<h3>Adakah saya akan kehilangan akses kepada data Airbnb?</h3>
+
+<p>Tidak, anda akan sentiasa mempunyai akses penuh kepada akaun anda. Kami hanya manage untuk anda.</p>
+
+<h3>Berapa kos untuk menukar?</h3>
+
+<p>Konsultasi adalah percuma. Kos one-time untuk foto, perabot tambahan, dan peralatan adalah RM1,500-5,500 bergantung kepada keperluan.</p>
+
+<h3>Bolehkah saya teruskan sendiri sebahagian?</h3>
+
+<p>Ya, kami fleksibel. Boleh discuss package yang sesuai dengan keperluan anda.</p>
+
+<h2>Testimoni Pemilik yang Telah Tukar</h2>
+
+<h3>Pemilik A - Novana Residence</h3>
+
+<p>"Sebelum ini dengan pengurus lain, okupansi saya hanya 55-60%. Selepas tukar ke iHousing, naik ke 78-85%. Pendapatan meningkat hampir 40%."</p>
+
+<h3>Pemilik B - Heng Hut Resort</h3>
+
+<p>"Pengurus lama saya jarang update. Saya tak tahu apa yang berlaku dengan unit saya. Dengan iHousing, saya dapat report setiap bulan dan boleh contact mereka bila-bila masa."</p>
+
+<h3>Pemilik C - Shore Residences</h3>
+
+<p>"Saya membayar komisi 25% tetapi okupansi rendah. Dengan iHousing, komisi hanya 15% tetapi okupansi dan pendapatan jauh lebih tinggi. Sangat berbaloi."</p>
+
+<h2>Tindakan Seterusnya</h2>
+
+<h3>Dapatkan Konsultasi Percuma Hari Ini</h3>
+
+<p>Hubungi iHousing untuk:</p>
+<ul>
+<li>Review performance semasa anda</li></ul>
+
+<ul>
+<li>Analisis kenapa tidak optimum</li></ul>
+
+<ul>
+<li>Anggaran potensi pendapatan dengan kami</li></ul>
+
+<ul>
+<li>Plan transition yang customized</li></ul>
+
+<h3>Jangan Biarkan Pendapatan Anda Terus Rendah</h3>
+
+<p>Setiap hari dengan pengurus yang tidak optimum = pendapatan hilang.</p>
+
+<p>Tukar kepada iHousing hari ini dan mula lihat improvement dalam 30-60 hari.</p>
+
+<h2>Bersedia untuk Mula?</h2>
+
+<p>Hubungi iHousing hari ini untuk konsultasi percuma tentang menukar pengurus Airbnb anda.</p>
+
+<p>[WhatsApp Kami untuk Konsultasi Percuma](https://wa.me/60123456789)</p>
+
+<p>Artikel ini disediakan oleh iHousing - Pakar Pengurusan Hartanah Airbnb Melaka. Kami membantu pemilik hartanah meningkatkan pendapatan mereka melalui pengurusan profesional yang transparent dan berpatutan.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,330 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Airbnb vs Sewa Bulanan: Mana Lebih Untung di Melaka 2025?";
+const description = "Bandingkan pendapatan Airbnb dengan sewa bulanan untuk hartanah Melaka anda. Lihat kiraan sebenar, kelebihan dan kekurangan setiap pilihan dengan data RM terperinci.";
+const image = "/images/blog/airbnb-vs-sewa-bulanan-mana-lebih-untung.jpg";
+const date = "2025-01-23";
+const category = "perbandingan";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Airbnb vs Sewa Bulanan: Mana Lebih Untung di Melaka 2025?</h1>
+        <p>Adakah anda menghadapi dilema ini: "Patutkah saya sewakan hartanah saya sebagai Airbnb atau sewa bulanan konvensional?"</p>
+        <p>Keputusan ini akan menentukan pulangan pelaburan anda untuk tahun-tahun akan datang. Artikel ini akan membantu anda membuat pilihan yang tepat dengan data sebenar dari pasaran Melaka.</p>
+        <h2>Kiraan Sebenar: Pendapatan Tahunan</h2>
+        <p>Mari kita lihat contoh sebenar untuk unit 2-bilik tidur di Melaka Raya:</p>
+        <h3>Sewa Bulanan Konvensional</h3>
+        <ul>
+        <li>Sewa bulanan: RM1,400</li>
+        <li>Pendapatan tahunan (12 bulan): <strong>RM16,800</strong></li>
+        </ul>
+        <h3>Airbnb (Berdasarkan Purata Pasaran Melaka)</h3>
+        <ul>
+        <li>Harga purata semalam: RM200</li>
+        <li>Kadar penginapan: 20% (73 malam/tahun)</li>
+        <li>Pendapatan tahunan: <strong>RM14,600</strong></li>
+        </ul>
+        <strong>Lihat seolah-olah sewa bulanan menang?</strong> Tunggu dulu.
+        <h2>Kos Sebenar: Apa yang Tidak Diceritakan</h2>
+        <h3>Sewa Bulanan: Kos Tersembunyi</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Kos Tahunan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Kekosongan (purata 1 bulan/tahun)</td><td>RM1,400</td></tr>
+            <tr><td>Kerosakan oleh penyewa (purata)</td><td>RM800</td></tr>
+            <tr><td>Penyewa tidak bayar sewa</td><td>RM500</td></tr>
+            <tr><td>Penyewa enggan keluar (kos guaman)</td><td>RM300</td></tr>
+            <tr><td>Kos tolak naik panel (renovation)</td><td>RM1,000</td></tr>
+            <tr><td>**Jumlah Kos**</td><td>**RM4,000**</td></tr>
+            <tr><td>**Pendapatan Bersih**</td><td>**RM12,800**</td></tr>
+          </tbody>
+        </table>
+        <h3>Airbnb: Kos Operasi</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Kos Tahunan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pembersihan (RM60 x 73 malam)</td><td>RM4,380</td></tr>
+            <tr><td>Utiliti tinggi (elektrik/water/internet)</td><td>RM2,400</td></tr>
+            <tr><td>Barang habis guna</td><td>RM800</td></tr>
+            <tr><td>Penyelenggaraan</td><td>RM600</td></tr>
+            <tr><td>**Jumlah Kos**</td><td>**RM8,180**</td></tr>
+            <tr><td>**Pendapatan Bersih**</td><td>**RM6,420**</td></tr>
+          </tbody>
+        </table>
+        <strong>Pada tahap ini, sewa bulanan masih menang.</strong>
+        <h2>Keputusan: Ia Bergantung kepada Kadar Penginapan</h2>
+        <p>Ini adalah fakta yang paling penting:</p>
+        <h3>Dengan Kadar Penginapan 20% (Pemula)</h3>
+        <ul>
+        <li>Sewa bulanan: RM12,800 bersih</li>
+        <li>Airbnb: RM6,420 bersih</li>
+        <li><strong>Pemenang:</strong> Sewa bulanan (+RM6,380)</li>
+        </ul>
+        <h3>Dengan Kadar Penginapan 30% (Sederhana)</h3>
+        <ul>
+        <li>Airbnb (110 malam): RM22,000 - RM9,000 = <strong>RM13,000</strong></li>
+        <li>Sewa bulanan: <strong>RM12,800</strong></li>
+        <li><strong>Pemenang:</strong> Airbnb (+RM200)</li>
+        </ul>
+        <h3>Dengan Kadar Penginapan 50% (Berjaya)</h3>
+        <ul>
+        <li>Airbnb (183 malam): RM36,600 - RM12,000 = <strong>RM24,600</strong></li>
+        <li>Sewa bulanan: <strong>RM12,800</strong></li>
+        <li><strong>Pemenang:</strong> Airbnb (+RM11,800)</li>
+        </ul>
+        <h3>Dengan Kadar Penginapan 70% (Sangat Berjaya)</h3>
+        <ul>
+        <li>Airbnb (256 malam): RM51,200 - RM16,000 = <strong>RM35,200</strong></li>
+        <li>Sewa bulanan: <strong>RM12,800</strong></li>
+        <li><strong>Pemenang:</strong> Airbnb (+RM22,400)</li>
+        </ul>
+        <h2>Apa yang Menentukan Kadar Penginapan Airbnb?</h2>
+        <p>Faktor utama yang mempengaruhi kadar penginapan:</p>
+        <h3>1. Lokasi (Penting!)</h3>
+        <strong>Lokasi Terbaik (50-70% penginapan):</strong>
+        <ul>
+        <li>Jonker Street/Bandar Hilir</li>
+        <li>Berhampiran Menara Taming Sari</li>
+        <li>Dekat Dataran Pahlawan</li>
+        <li>Melaka Raya (pusat bandar)</li>
+        </ul>
+        <strong>Lokasi Sederhana (30-50% penginapan):</strong>
+        <ul>
+        <li>Bukit Cina</li>
+        <li>Bachang</li>
+        <li>Pantai Klebang</li>
+        </ul>
+        <strong>Lokasi Kurang Strategik (15-25% penginapan):</strong>
+        <ul>
+        <li>Jasin</li>
+        <li>Alor Gajah</li>
+        <li>Jauh dari pusat bandar</li>
+        </ul>
+        <h3>2. Kualiti Senarai (Fotograf + Tajuk)</h3>
+        <ul>
+        <li>Profesional photography: +15-20% penginapan</li>
+        <li>Tajuk menarik: +5-10% penginapan</li>
+        <li>Ulasan positif: +10-15% penginapan</li>
+        </ul>
+        <h3>3. Harga</h3>
+        <ul>
+        <li>Harga terlalu tinggi: -20% penginapan</li>
+        <li>Harga kompetitif: kadar penginapan optimum</li>
+        </ul>
+        <h3>4. Platform Berbilang</h3>
+        <p>Senarai di 5 platform (Airbnb + Booking.com + Agoda + Expedia + VRBO):</p>
+        <ul>
+        <li>+40-60% lebih banyak tempahan berbanding 1 platform</li>
+        </ul>
+        <h2>Perbandingan Risiko</h2>
+        <h3>Risiko Sewa Bulanan</h3>
+        <table>
+          <thead>
+            <tr><th>Risiko</th><th>Kesan</th><th>Kebarangkalian</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Penyewa tidak bayar sewa</td><td>RM1,000-5,000 kerugian</td><td>15-20%</td></tr>
+            <tr><td>Penyewa kerosakkan harta</td><td>RM3,000-10,000</td><td>20-30%</td></tr>
+            <tr><td>Penyewa enggan keluar</td><td>RM2,000-10,000 (kos undang-undang)</td><td>5-10%</td></tr>
+            <tr><td>Kekosongan panjang</td><td>RM1,400-2,800/bulan</td><td>20-30%</td></tr>
+            <tr><td>Nilai hartanah menurun</td><td>Penurunan 10-20%</td><td>Bergantung pasaran</td></tr>
+          </tbody>
+        </table>
+        <strong>Kesimpulan:</strong> Risiko tinggi, kerugian boleh melebihi RM10,000 dalam satu tahun.
+        <h3>Risiko Airbnb</h3>
+        <table>
+          <thead>
+            <tr><th>Risiko</th><th>Kesan</th><th>Kebarangkalian</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tetamu sukar</td><td>Gangguan, kerosakan kecil</td><td>3-5%</td></tr>
+            <tr><td>Kekosongan (low season)</td><td>Pendapatan rendah</td><td>Sedia ada</td></tr>
+            <tr><td>Tetamu merosakkan harta</td><td>RM500-2,000</td><td>5-10%</td></tr>
+            <tr><td>Ulasan negatif</td><td>Kadar penginapan menurun</td><td>5%</td></tr>
+          </tbody>
+        </table>
+        <strong>Kesimpulan:</strong> Risiko lebih rendah, kerugian minimum. Perlindungan Airbnb juga melindungi hos sehingga RM1,000,000.
+        <h2>Perbandingan Masa & Usaha</h2>
+        <h3>Sewa Bulanan: "Set dan Lupakan"</h3>
+        <ul>
+        <li>Masa permulaan: 2-4 minggu (cari penyewa)</li>
+        <li>Masa bulanan: 1-2 jam (kutip sewa, masalah)</li>
+        <li><strong>Jumlah masa:</strong> 20-30 jam/tahun</li>
+        </ul>
+        <h3>Airbnb: "Aktif"</h3>
+        <ul>
+        <li>Masa permulaan: 4-6 minggu (persediaan, senarai)</li>
+        <li>Masa bulanan: 10-20 jam (komunikasi tetamu, pembersihan)</li>
+        <li><strong>Jumlah masa:</strong> 120-240 jam/tahun</li>
+        </ul>
+        <h3>Penyelesaian: Syarikat Pengurusan</h3>
+        <p>Dengan iHousing, masa yang diperlukan untuk Airbnb:</p>
+        <ul>
+        <li><strong>0-10 jam/tahun</strong> (kami urus semuanya)</li>
+        </ul>
+        <h2>Scenaria Kehidupan Sebenar</h2>
+        <h3>Scenaria 1: Pemilik Sibuk (Bekerja Full-Time)</h3>
+        <strong>Hartanah:</strong> 2-bilik tidur di Melaka Raya
+        <strong>Pilihan A - Sewa Bulanan:</strong>
+        <ul>
+        <li>Pendapatan bersih: RM12,800/tahun</li>
+        <li>Masa diperlukan: 20 jam/tahun</li>
+        <li>Tekanan: Rendah (kecuali penyewa bermasalah)</li>
+        </ul>
+        <strong>Pilihan B - Airbnb dengan iHousing:</strong>
+        <ul>
+        <li>Pendapatan bersih: RM13,000-24,600/tahun (bergantung penginapan)</li>
+        <li>Masa diperlukan: 5 jam/tahun</li>
+        <li>Tekanan: Sangat rendah</li>
+        </ul>
+        <strong>Keputusan:</strong> Airbnb dengan pengurusan profesional
+        <h3>Scenaria 2: Pelabur Pelbagai Hartanah</h3>
+        <strong>Hartanah:</strong> 3 unit di lokasi berbeza
+        <strong>Pilihan A - Sewa Bulanan:</strong>
+        <ul>
+        <li>Jumlah pendapatan: RM38,400/tahun</li>
+        <li>Risiko: Penyewa bermasalah boleh menjejaskan aliran tunai</li>
+        </ul>
+        <strong>Pilihan B - Airbnb (Diversifikasi):</strong>
+        <ul>
+        <li>Jumlah pendapatan: RM40,000-73,800/tahun (dengan kadar penginapan 30-50%)</li>
+        <li>Risiko: Lebih rendah (tetamu jangka pendek)</li>
+        </ul>
+        <strong>Keputusan:</strong> Airbnb untuk diversifikasi risiko
+        <h3>Scenaria 3: Pemilik Mencari Pendapatan Maksimum</h3>
+        <strong>Hartanah:</strong> Unit mewah di Jonker Street
+        <strong>Pilihan A - Sewa Bulanan:</strong>
+        <ul>
+        <li>Sewa maksimum: RM2,000/bulan = RM24,000/tahun</li>
+        <li>Pendapatan bersih: RM20,000 (selepas kos)</li>
+        </ul>
+        <strong>Pilihan B - Airbnb:</strong>
+        <ul>
+        <li>Harga premium: RM300-400/malam</li>
+        <li>Kadar penginapan: 60% (lokasi premium)</li>
+        <li>Pendapatan: RM65,700 - RM18,000 = <strong>RM47,700/tahun</strong></li>
+        </ul>
+        <strong>Keputusan:</strong> Airbnb (138% lebih tinggi!)
+        <h2>Bilakah Sewa Bulanan Lebih Baik?</h2>
+        <p>Pilih sewa bulanan jika:</p>
+        <ol>
+        <li>Hartanah anda jauh dari kawasan pelancong</li>
+        <li>Anda tidak mahu sebarang usaha tambahan</li>
+        <li>Anda memerlukan aliran tunai yang stabil</li>
+        <li>Hartanah anda jenis yang tidak sesuai untuk sewa harian (contoh: rumah teres di kawasan kediaman sunyi)</li>
+        </ol>
+        <h2>Bilangkan Airbnb Lebih Baik?</h2>
+        <p>Pilih Airbnb jika:</p>
+        <ol>
+        <li>Hartanah anda di kawasan pelancongan (Jonker Street, Bandar Hilir, Melaka Raya)</li>
+        <li>Anda mahu memaksimumkan pulangan</li>
+        <li>Anda sanggup melabarkan masa atau upah syarikat pengurusan</li>
+        <li>Anda mahu mengawal harta anda (boleh guna sendiri bila kosong)</li>
+        </ol>
+        <h2>Kadar Pulangan Pelaburan (ROI)</h2>
+        <h3>Contoh: Hartanah RM350,000 dengan RM30,000 Perabot</h3>
+        <strong>Sewa Bulanan:</strong>
+        <ul>
+        <li>Pelaburan total: RM380,000</li>
+        <li>Pendapatan bersih tahunan: RM12,800</li>
+        <li><strong>ROI:</strong> 3.4% setahun</li>
+        </ul>
+        <strong>Airbnb (dengan kadar penginapan 40%):</strong>
+        <ul>
+        <li>Pelaburan total: RM380,000</li>
+        <li>Pendapatan bersih tahunan: RM18,800</li>
+        <li><strong>ROI:</strong> 4.9% setahun</li>
+        </ul>
+        <strong>Airbnb (dengan kadar penginapan 60% - lokasi premium):</strong>
+        <ul>
+        <li>Pendapatan bersih tahunan: RM30,000</li>
+        <li><strong>ROI:</strong> 7.9% setahun</li>
+        </ul>
+        <h2>Cara Memulakan Transisi dari Sewa Bulanan ke Airbnb</h2>
+        <h3>Langkah 1: Beri Notis kepada Penyewa</h3>
+        <ul>
+        <li>Beri notis 2 bulan lebih awal</li>
+        <li>Jelaskan sebab (untuk penggunaan sendiri atau renovasi)</li>
+        </ul>
+        <h3>Langkah 2: Renovasi & Furnish</h3>
+        <ul>
+        <li>Kos: RM10,000-30,000</li>
+        <li>Masa: 4-6 minggu</li>
+        </ul>
+        <h3>Langkah 3: Cipta Senarai</h3>
+        <ul>
+        <li>Fotograf profesional</li>
+        <li>Tulis deskripsi menarik</li>
+        <li>Set harga</li>
+        </ul>
+        <h3>Langkah 4: Menerima Tetamu Pertama</h3>
+        <ul>
+        <li>Bersedia untuk tempahan 1-2 minggu selepas senarai aktif</li>
+        </ul>
+        <h2>Dapatkan Bantuan Profesional</h2>
+        <p>Adakah anda masih keliru dengan keputusan ini?</p>
+        <p>WhatsApp iHousing untuk:</p>
+        <ol>
+        <li>Analisis percuma hartanah anda</li>
+        <li>Anggaran pendapatan yang realistik</li>
+        <li>Panduan lengkap transisi dari sewa bulanan ke Airbnb</li>
+        </ol>
+        <h3>Untuk Parkland Avenue by the Sea</h3>
+        <ul>
+        <li><strong>Yuran tetap:</strong> RM200-300/bulan</li>
+        <li>Tiada komisen atas pendapatan</li>
+        <li>Kami urus semuanya dari A ke Z</li>
+        </ul>
+        <h3>Untuk Kondominium Lain di Melaka</h3>
+        <ul>
+        <li>WhatsApp kami untuk harga tersuai</li>
+        <li>Setiap hartanah mempunyai potensi berbeza</li>
+        </ul>
+        <hr class="my-8">
+        <h2>Jadual Ringkasan: Airbnb vs Sewa Bulanan</h2>
+        <table>
+          <thead>
+            <tr><th>Faktor</th><th>Sewa Bulanan</th><th>Airbnb (Pemula)</th><th>Airbnb (Berjaya)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pendapatan Tahunan</td><td>RM12,800</td><td>RM6,420</td><td>RM24,600+</td></tr>
+            <tr><td>Masa Diperlukan</td><td>20 jam/tahun</td><td>150 jam/tahun</td><td>0-10 jam (dengan pengurusan)</td></tr>
+            <tr><td>Risiko</td><td>Tinggi</td><td>Sederhana</td><td>Rendah</td></tr>
+            <tr><td>Kesan Kerosakan</td><td>RM3,000-10,000</td><td>RM500-2,000</td><td>RM500-2,000</td></tr>
+            <tr><td>Kawalan</td><td>Rendah</td><td>Tinggi</td><td>Tinggi</td></tr>
+            <tr><td>Fleksibiliti</td><td>Rendah</td><td>Tinggi</td><td>Tinggi</td></tr>
+            <tr><td>ROI</td><td>3.4%</td><td>1.7%</td><td>6.5%+</td></tr>
+          </tbody>
+        </table>
+        <hr class="my-8">
+        <h2>Soalan Lazim (FAQ)</h2>
+        <h3>B. Adakah Airbnb sukar untuk diuruskan?</h3>
+        <p>Ia memerlukan masa 10-20 jam seminggu jika urus sendiri. Dengan syarikat pengurusan seperti iHousing, masa diperlukan hampir sifar.</p>
+        <h3>B. Apa yang berlaku pada musim sepi?</h3>
+        <p>Melaka sibuk sepanjang tahun tetapi kadar penginapan mungkin turun kepada 15-20% pada bulan tertentu. Kawal dengan harga yang lebih rendah pada weekdays.</p>
+        <h3>B. Adakah perlu membayar cukai pendapatan?</h3>
+        <p>Ya, pendapatan dari Airbnb perlu diisytiharkan dalam cukai pendapatan. Rujuk akauntan anda untuk nasihat spesifik.</p>
+        <hr class="my-8">
+        <strong>Artikel Berkaitan:</strong>
+        <ul>
+        <li>[Mula Airbnb di Melaka: Panduan Pemula](/ms/blog/mula-airbnb-di-melaka-panduan-pemula)</li>
+        <li>[Urus Airbnb Sendiri vs Upah Syarikat](/ms/blog/urus-airbnb-sendiri-vs-upah-syarikat)</li>
+        <li>[Berapa Yuran Pengurusan Airbnb?](/ms/blog/berapa-yuran-pengurusan-airbnb)</li>
+        </ul>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

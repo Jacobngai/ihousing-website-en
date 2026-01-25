@@ -1,0 +1,505 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Cuti Cuti vs Perumahan Korporat: Pasarkan Pelancong Perniagaan Melaka";
+const description = "Bandingkan cuti cuti vs perumahan korporat dalam pasaran pelancong perniagaan Melaka. Pelajari strategi mana yang memberikan pulangan lebih tinggi untuk hartanah pelaburan Airbnb anda.";
+const image = "/images/blog/cuti-cuti-vs-perumahan-korporat-melaka.jpg";
+const date = "2026-01-03";
+const category = "comparison";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Cuti Cuti vs Perumahan Korporat: Pasarkan Pelancong Perniagaan Melaka</h1>
+
+<p>Sebagai landskap perniagaan Melaka berkembang, pelabur hartanah menghadapi pilihan menarik: <strong>menyasar pelancong rekreasi atau pelancong perniagaan?</strong></p>
+
+<p>Kedua-dua pasaran menawarkan kelebihan yang berbeza. Di iHousing Melaka, kami telah membangunkan strategi khusus untuk setiap segmen. Berikut adalah cara memutuskan pendekatan mana yang memaksimumkan potensi hartanah anda.</p>
+
+<h2>Memahami Dua Pasaran</h2>
+
+<h3>Pasaran Cuti Cuti</h3>
+
+<strong>Siapa mereka?</strong>
+<ul>
+<li>Pelancong domestik dari KL, Singapura, Johor</li></ul>
+
+<ul>
+li>Pelancong antarabangsa meneroka Malaysia</li></ul>
+
+<ul>
+li>Keluarga pada perjalanan cuti sekolah</li></ul>
+
+<ul>
+li>Pasangan meraikan majlis khas</li></ul>
+
+<ul>
+li>Kumpulan untuk pelepasan hujung minggu</li></ul>
+
+<strong>Corak tempahan:</strong>
+<ul>
+li>Puncak: Hujung minggu, cuti sekolah, cuti umum</li></ul>
+
+<ul>
+li>Purata tinggal: 2-4 malam</li></ul>
+
+<ul>
+li>Tempahan awal: 2-8 minggu</li></ul>
+
+<ul>
+li>Bermusim: Varians tinggi antara tempoh puncak/rendah</li></ul>
+
+<h3>Pasaran Perumahan Korporat</h3>
+
+<strong>Siapa mereka?</strong>
+<ul>
+li>Pelancong perniagaan pada tugasan sementara</li></ul>
+
+<ul>
+li>Penasihat dan kontraktor yang bekerja di Melaka</li></ul>
+
+<ul>
+li>Pelancong perubatan (tinggal hospital jangka panjang)</li></ul>
+
+<ul>
+li>Peserta program latihan</li></ul>
+
+<ul>
+li>Staf pemindahan korporat</li></ul>
+
+<strong>Corak tempahan:</strong>
+<ul>
+li>Puncak: Hari bekerja, permintaan sepanjang tahun</li></ul>
+
+<ul>
+li>Purata tinggal: 5 malam hingga 3+ bulan</li></ul>
+
+<ul>
+li>Tempahan awal: 1-4 minggu</li></ul>
+
+<ul>
+li>Bermusim: Varians rendah, permintaan mantap</li></ul>
+
+<h2>Perbandingan Pendapatan</h2>
+
+<h3>Prestasi Cuti Cuti</h3>
+
+<p>Cuti cuti tipikal di lokasi Melaka utama:</p>
+
+<ul>
+<li><strong>Kadar hujung minggu:</strong> RM350-500/malam</li></ul>
+
+<ul>
+<li><strong>Kadar pertengahan minggu:</strong> RM200-280/malam</li></ul>
+
+<ul>
+<li><strong>Penghunian:</strong> 65-75% setiap tahun</li></ul>
+
+<ul>
+<li><strong>Pendapatan bulanan:</strong> RM7,000-11,000</li></ul>
+
+<ul>
+<li><strong>Varians pendapatan:</strong> ±40% antara bulan puncak/rendah</li></ul>
+
+<h3>Prestasi Perumahan Korporat</h3>
+
+<p>Perumahan korporat tipikal di daerah perniagaan (Melaka Raya):</p>
+
+<ul>
+<li><strong>Kadar mingguan:</strong> RM1,800-2,800/minggu</li></ul>
+
+<ul>
+<li><strong>Kadar bulanan:</strong> RM5,000-8,000/bulan</li></ul>
+
+<ul>
+<li><strong>Penghunian:</strong> 80-90% setiap tahun</li></ul>
+
+<ul>
+<li><strong>Pendapatan bulanan:</strong> RM6,500-8,500</li></ul>
+
+<ul>
+<li><strong>Varians pendapatan:</strong> ±15% antara bulan puncak/rendah</li></ul>
+
+<h2>Perbezaan Operasi</h2>
+
+<h3>Keperluan Cuti Cuti</h3>
+
+<strong>Ciri Hartanah:</strong>
+<ul>
+<li>Reka bentuk dalaman menarik untuk foto</li></ul>
+
+<ul>
+li>Kemudahan hiburan (TV, streaming, games)</li></ul>
+
+<ul>
+li>Dapur lengkap untuk memasak keluarga</li></ul>
+
+<ul>
+li>Bilik tidur pelbagai untuk kumpulan</li></ul>
+
+<ul>
+li>Parking untuk tetamu memandu dari luar bandar</li></ul>
+
+<strong>Tuntutan Perkhidmatan:</strong>
+<ul>
+li>Pusingan kerap (pembersihan setiap 2-4 hari)</li></ul>
+
+<ul>
+li>Isyarat tinggi komunikasi (soalan dari pelancong)</li></ul>
+
+<ul>
+li>Rekomendasi tempatan diminta</li></ul>
+
+<ul>
+li>Beban kerja fokus hujung minggu</li></ul>
+
+<h3>Keperluan Perumahan Korporat</h3>
+
+<strong>Ciri Hartanah:</strong>
+<ul>
+li>Ruang kerja khusus dengan persediaan ergonomik</li></ul>
+
+<ul>
+li>WiFi kelajuan tinggi, boleh dipercayai (penting)</li></ul>
+
+<ul>
+li>Dapur lengkap dengan keperluan memasak</li></ul>
+
+<ul>
+li>Mesin basuh/pengering dalam unit</li></ul>
+
+<ul>
+li>Lokasi senyap untuk bekerja-dari-rumah</li></ul>
+
+<strong>Tuntutan Perkhidmatan:</strong>
+<ul>
+li>Pusingan kurang kerap (pembersihan mingguan)</li></ul>
+
+<ul>
+li>Isyarat komunikasi lebih rendah (pelancong perniagaan bebas)</li></ul>
+
+<ul>
+li>Koordinasi tinggal lanjutan</li></ul>
+
+<ul>
+li>Jadual yang konsisten, boleh diramalkan</li></ul>
+
+<h2>Perbandingan Kos</h2>
+
+<h3>Kos Operasi Cuti Cuti</h3>
+
+<p>Kos tahunan untuk hartanah pendapatan RM8,000/bulan:</p>
+
+<ul>
+<li><strong>Pembersihan:</strong> RM18,000-24,000 (pusingan kerap)</li></ul>
+
+<ul>
+li><strong>Bekalan:</strong> RM4,000-6,000 (sabun, produk kertas, dll.)</li></ul>
+
+<ul>
+li><strong>Utiliti:</strong> RM3,600-4,800 (corak penggunaan tetamu)</li></ul>
+
+<ul>
+li><strong>Usaha dan haus:</strong> RM3,000-5,000 (putaran tetamu lebih tinggi)</li></ul>
+
+<ul>
+li><strong>Yuran platform:</strong> RM2,400-3,600 (3% pendapatan)</li></ul>
+
+<ul>
+<li><strong><strong>Jumlah kos tahunan:</strong> RM31,000-43,400</strong></li></ul>
+
+<ul>
+<li><strong>Pendapatan bersih tahunan:</strong> RM65,000-88,600</strong></li></ul>
+
+<h3>Kos Operasi Perumahan Korporat</h3>
+
+<p>Kos tahunan untuk hartanah pendapatan RM7,500/bulan:</p>
+
+<ul>
+<li><strong>Pembersihan:</strong> RM6,000-9,000 (perkhidmatan mingguan)</li></ul>
+
+<ul>
+li><strong>Bekalan:</strong> RM2,000-3,000 (pukal, kurang kerap)</li></ul>
+
+<ul>
+li><strong>Utiliti:</strong> RM4,800-6,000 (bahagian tetamu atau termasuk)</li></ul>
+
+<ul>
+li><strong>Usaha dan haus:</strong> RM2,000-3,000 (tinggal lebih lama)</li></ul>
+
+<ul>
+<li><strong>Yuran platform:</strong> RM0-1,500 (sering tempahan langsung)</li></ul>
+
+<ul>
+<li><strong><strong>Jumlah kos tahunan:</strong> RM14,800-22,500</strong></li></ul>
+
+<ul>
+<li><strong>Pendapatan bersih tahunan:</strong> RM75,200-85,500</strong></li></ul>
+
+<h2>Pengurusan Utama dari Nombor</h2>
+
+<ol>
+<li><strong>Cuti cuti menjana pendapatan kasar lebih tinggi</strong> tetapi mempunyai kos yang jauh lebih tinggi</li></ol>
+
+<ol>
+<li><strong>Perumahan korporat menjana pendapatan kasar lebih rendah</strong> tetapi mengekalkan margin bersih yang lebih tinggi</li></ol>
+
+<ol>
+<li><strong>Perbezaan pendapatan bersih adalah minimum</strong> (RM65K-88K vs RM75K-85K)</li></ol>
+
+<ol>
+<li><strong>Perumahan korporat menawarkan aliran tunai yang lebih boleh diramalkan</strong> (varians kurang)</li></ol>
+
+<h2>Strategi Lokasi</h2>
+
+<h3>Kawasan Terbaik untuk Cuti Cuti</h3>
+
+<strong>Jonker Walk/Zon UNESCO:</strong>
+<ul>
+li>Daya tarikan warisan menarik pelancong</li></ul>
+
+<ul>
+li>Jarak berjalan ke tarikan</li></ul>
+
+<ul>
+li>Pasar malam dan pemandangan makanan</li></ul>
+
+<strong>Pantai Kundur/Tanjung Bidara:</strong>
+<ul>
+li>Daya tarikan pantai</li></ul>
+
+<ul>
+li>Destinasi weekend warrior</li></ul>
+
+<ul>
+li>Pemandangan semula jadi</li></ul>
+
+<strong>A'Famosa/Alor Gajah:</strong>
+<ul>
+li>Atraksi pelancong keluarga</li></ul>
+
+<ul>
+li>Atmosfera resort</li></ul>
+
+<ul>
+li>Pasaran hujung minggu Singapura</li></ul>
+
+<h3>Kawasan Terbaik untuk Perumahan Korporat</h3>
+
+<strong>Melaka Raya/Batu Berendam:</strong>
+<ul>
+li>Kedekatan daerah perniagaan</li></ul>
+
+<ul>
+li>Fasiliti perubatan berhampiran</li></ul>
+
+<ul>
+li>Akses hab pengangkutan</li></ul>
+
+<strong>Ayer Keroh/Kawasan Tech Park:</strong>
+<ul>
+li>Zon industri</li></ul>
+
+<ul>
+li>Fasiliti pembuatan</li></ul>
+
+<ul>
+li>Pejabat korporat</li></ul>
+
+<h2>Strategi Hibrid: Mengoptimumkan Kedua-Dua</h2>
+
+<p>Di iHousing, kami telah membangunkan pendekatan hibrid yang menangkap kedua-dua pasaran:</p>
+
+<h3>Segmentasi Kalendar</h3>
+
+<strong>Tempoh Cuti Puncak (Dis-Jan, Cuti Sekolah):</strong>
+<ul>
+li>Sasarkan pembuat cuti pada kadar premium</li></ul>
+
+<ul>
+li>Minimum 2-4 malam</li></ul>
+
+<ul>
+li>P定价 fokus hujung minggu</li></ul>
+
+<strong>Tempoh Bahu/Rendah (Feb-Nov hari bekerja):</strong>
+<ul>
+li>Sasarkan pasaran perumahan korporat</li></ul>
+
+<ul>
+li>Pakej mingguan/bulanan</li></ul>
+
+<ul>
+li>Kadar pertengahan minggu kompetitif</li></ul>
+
+<h3>Adaptibiliti Hartanah</h3>
+
+<p>Hartanah yang dioptimumkan hibrid termasuk:</p>
+
+<ul>
+li>Ruang kerja yang bertukar ke kawasan makan</li></ul>
+
+<ul>
+li>Reka bentuk profesional tetapi menyambut</li></ul>
+
+<ul>
+li>Tempat tidur fleksibel (katil raja atau katil kembar)</li></ul>
+
+<ul>
+li>WiFi pantas untuk kerja dan streaming</li></ul>
+
+<h3>Keputusan Strategi Hibrid</h3>
+
+<p>Hartanah yang diurus secara hibrid kami mencapai:</p>
+
+<ul>
+<li><strong>Penghunian:</strong> 80-88% setiap tahun (menangkap kedua-dua segmen)</li></ul>
+
+<ul>
+<li><strong>Pendapatan bulanan:</strong> RM8,500-12,000</li></ul>
+
+<ul>
+<li><strong>Pendapatan bersih tahunan:</strong> RM90,000-115,000</li></ul>
+
+<p><strong>Strategi hibrid biasanya menambah RM15,000-25,000 setahun berbanding pendekatan segmen tunggal.</strong></p>
+
+<h2>Strategi Platform</h2>
+
+<h3>Platform Cuti Cuti</h3>
+
+<ul>
+<li><strong>Airbnb:</strong> Platform utama untuk pelancong rekreasi</li></ul>
+
+<ul>
+li><strong>Booking.com:</strong> Pelancong antarabangsa</li></ul>
+
+<ul>
+<li><strong>Expedia:</strong> Pelancong pakej</li></ul>
+
+<ul>
+<li><strong>VRBO:</strong> Tempahan keluarga dan kumpulan</li></ul>
+
+<h3>Platform Perumahan Korporat</h3>
+
+<ul>
+<li><strong>Airbnb:</strong> Penapis tinggal bulanan</li></ul>
+
+<ul>
+li><strong>Agoda Homes:</strong> Tempahan tinggal lanjutan</li></ul>
+
+<ul>
+li><strong>Kontrak korporat langsung:</strong> Perkongsian syarikat</li></ul>
+
+<ul>
+<li><strong>Koordinator pelancongan perubatan:</strong> Perkongsian hospital</li></ul>
+
+<p>iHousing menyenaraikan di semua platform yang relevan untuk memaksimumkan kebolehlihatan untuk kedua-dua segmen.</p>
+
+<h2>Kerangka Keputusan</h2>
+
+<p>Tanya soalan ini untuk menentukan pendekatan terbaik:</p>
+
+<ol>
+<li><strong>Apakah lokasi hartanah saya?</strong></li>
+   <ul>
+   <li>Kawasan pelancong → Fokus cuti cuti</li>
+   <li>Daerah perniagaan → Fokus perumahan korporat</li>
+   <li>Kawasan campuran → Strategi hibrid</li>
+   </ul>
+</ol>
+
+<ol>
+<li><strong>Apakah toleransi risiko saya?</strong></li>
+   <ul>
+   <li>Selselesa dengan varians pendapatan → Cuti cuti</li>
+   <li>Lebih suka aliran tunai bulanan yang boleh diramalkan → Perumahan korporat</li>
+   </ul>
+</ol>
+
+<ol>
+<li><strong>Apakah jenis hartanah saya?</strong></li>
+   <ul>
+   <li>3+ bilik tidur → Cuti cuti (kumpulan)</li>
+   <li>1-2 bilik tidur → Perumahan korporat (solo/pasangan)</li>
+   <li>Susun atur fleksibel → Strategi hibrid</li>
+   </ul>
+</ol>
+
+<ol>
+<li><strong>Apakah keutamaan penglibatan saya?</strong></li>
+   <ul>
+   <li>Tangan-off → Pengurusan profesional untuk kedua-dua</li>
+   <li>Sedikit penglibatan → Perumahan korporat (kurang menuntut)</li>
+   </ul>
+</ol>
+
+<h2>Bagaimana iHousing Mengoptimumkan Strategi Anda</h2>
+
+<h3>Penentuan Kedudukan Pasaran Dinamik</h3>
+
+<ul>
+<li>Pemantauan pasaran masa nyata untuk pergeseran permintaan</li></ul>
+
+<ul>
+li>Optimumsi penyenaraian automatik untuk segmen sasaran</li></ul>
+
+<ul>
+li>Pelarasan strategi bermusim</li></ul>
+
+<h3>Pemasaran Multi-Saluran</h3>
+
+<ul>
+<li>Optimumsi penyenaraian khusus platform</li></ul>
+
+<ul>
+li>Pembangunan perkongsian korporat</li></ul>
+
+<ul>
+li>Optimumsi laman web tempahan langsung</li></ul>
+
+<h3>Kecemerlangan Pengalaman Tetamu</h3>
+
+<ul>
+<li>Pakej aluan khusus segmen</li></ul>
+
+<ul>
+li>Gaya komunikasi yang disesuaikan</li></ul>
+
+<ul>
+li>Panduan kawasan tempatan untuk setiap jenis tetamu</li></ul>
+
+<h2>Lakukan Langkah Seterusnya</h2>
+
+<p>Lokasi, ciri, dan pasaran sasaran hartanah anda menentukan strategi optimum. Jangan teka—dapatkan cadangan berasaskan data.</p>
+
+<strong>WhatsApp iHousing Melaka untuk:</strong>
+<ul>
+li>Penilaian hartanah percuma dan rekomendasi segmen</li></ul>
+
+<ul>
+li>Unjuran pendapatan untuk setiap strategi</li></ul>
+
+<ul>
+li>Analisis kemampuan strategi hibrid</li></ul>
+
+<ul>
+li>Peta jalan pelaksanaan</li></ul>
+
+<p>Strategi yang betul boleh menambah RM15,000-25,000 kepada pulangan tahunan anda. Biarkan iHousing membantu anda mengenal pasti dan melaksanakannya.</p>
+
+<strong>Hartanah yang diurus secara hibrid memperoleh 20-30% lebih daripada pendekatan strategi tunggal.</strong>
+
+<p>[WhatsApp iHousing Melaka untuk Penilaian Strategi Percuma]</p>
+
+<em>Diurus secara profesional. Diperoleh secara pasif. Dinikmati sepenuhnya.</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,583 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Cara Pilih Pengurus Airbnb yang Betul: 7 Perkara Mesti Semak";
+const description = "Panduan lengkap cara memilih pengurus Airbnb yang betul di Melaka. Semak yuran, perkhidmatan, pengalaman, dan tanda-tanda pengurus buruk untuk elak.";
+const image = "/images/blog/pilih-pengurus-airbnb-yang-betul.jpg";
+const date = "2025-01-24";
+const category = "decision";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Cara Pilih Pengurus Airbnb yang Betul: 7 Perkara Mesti Semak</h1>
+        <p>Memilih pengurus Airbnb untuk hartanah anda di Melaka adalah keputusan penting. Pilih yang betul, dan anda boleh menikmati pendapatan pasif dengan hampir zero effort. Pilih yang salah, dan anda mungkin menghadapi masalah seperti okupansi rendah, rating buruk, dan kos tersembunyi yang memakan keuntungan anda.</p>
+        <p>Tetapi bagaimana untuk membezakan pengurus yang baik dari yang hanya pandai bercakap?</p>
+        <p>Artikel ini akan membimbing anda melalui 7 perkara kritikal yang mesti anda semak sebelum menandatangani kontrak dengan mana-mana syarikat pengurusan Airbnb.</p>
+        <h2>Mengapa Pilihan Pengurus Airbnb Sangat Penting</h2>
+        <h3>Impak kepada Pendapatan Anda</h3>
+        <p>Data dari 100+ unit Airbnb di Melaka menunjukkan perbezaan yang besar:</p>
+        <table>
+          <thead>
+            <tr><th>Faktor</th><th>Pengurus Baik</th><th>Pengurus Buruk</th><th>Perbezaan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Okupansi purata</td><td>65-75%</td><td>40-55%</td><td>+20-30%</td></tr>
+            <tr><td>Rating purata</td><td>4.6-4.9 bintang</td><td>3.8-4.2 bintang</td><td>+0.4-1.1 bintang</td></tr>
+            <tr><td>Pendapatan tahunan</td><td>RM12,000-18,000</td><td>RM6,000-10,000</td><td>+RM6,000-8,000</td></tr>
+            <tr><td>Komplen tetamu</td><td>2-5% setahun</td><td>15-25% setahun</td><td>-13-20%</td></tr>
+            <tr><td>Kerosakan harta</td><td>1-3% setahun</td><td>8-12% setahun</td><td>-7-9%</td></tr>
+          </tbody>
+        </table>
+        <strong>Kesimpulan:</strong> Pengurus yang betul boleh menambah RM6,000-15,000 pendapatan tahunan anda.
+        <h2>Perkara #1: Struktur Yuran yang Telus</h2>
+        <h3>Yuran Komisen vs Flat Fee</h3>
+        <p>Dua model utama yuran pengurusan:</p>
+        <h4>Model 1: Komisen (Paling Biasa)</h4>
+        <table>
+          <thead>
+            <tr><th>Yuran Komisen</th><th>Biasa</th><th>Tinggi</th><th>Sangat Tinggi</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**10-15%**</td><td>Fair</td><td>Rendah</td><td>-</td></tr>
+            <tr><td>**20-25%**</td><td>Standard</td><td>-</td><td>-</td></tr>
+            <tr><td>**30%+**</td><td>Tinggi</td><td>-</td><td>Terlalu mahal</td></tr>
+          </tbody>
+        </table>
+        <strong>Caveat:</strong> Komisen ini biasanya tidak termasuk:
+        <ul>
+        <li>Yuran pembersihan (RM50-100/set)</li>
+        <li>Kos barang habis guna (tisu, sabun, dll)</li>
+        <li>Kos penyelenggaraan</li>
+        <li>Yuran platform (Airbnb, Booking.com, dll)</li>
+        </ul>
+        <strong>Contoh Pengiraan Komisen:</strong>
+        <ul>
+        <li>Pendapatan bulanan: RM2,500</li>
+        <li>Komisen 20%: RM500</li>
+        <li>Cleaning fees (4x): RM200</li>
+        <li>Barang habis guna: RM150</li>
+        <li>Penyelenggaraan: RM100</li>
+        <li><strong>Jumlah kos:</strong> RM950 (38% dari pendapatan!)</li>
+        </ul>
+        <h4>Model 2: Flat Fee (Lebih Telus)</h4>
+        <p>Yuran bulanan tetap, termasuk perkhidmatan tertentu.</p>
+        <strong>Contoh Flat Fee:</strong>
+        <ul>
+        <li>RM200-300/bulan (kecil)</li>
+        <li>RM350-500/bulan (sederhana)</li>
+        <li>RM500-800/bulan (besar)</li>
+        </ul>
+        <strong>Biasanya termasuk:</strong>
+        <ul>
+        <li>Pembersihan (pasukan dalaman)</li>
+        <li>Komunikasi tetamu</li>
+        <li>Daftar masuk/keluar</li>
+        <li>Penyenaraian multi-platform</li>
+        </ul>
+        <strong>Tidak termasuk:</strong>
+        <ul>
+        <li>Barang habis guna</li>
+        <li>Repair besar</li>
+        <li>Utiliti</li>
+        </ul>
+        <strong>Contoh Pengiraan Flat Fee:</strong>
+        <ul>
+        <li>Pendapatan bulanan: RM2,500</li>
+        <li>Yuran flat: RM250</li>
+        <li>Barang habis guna: RM150</li>
+        <li>Penyelenggaraan: RM100</li>
+        <li><strong>Jumlah kos:</strong> RM500 (20% dari pendapatan!)</li>
+        </ul>
+        <h3>Apa Yang Perlu Tanya</h3>
+        <strong>Soalan kritikal:</strong>
+        <ol>
+        <li>Berapa peratus komisen anda?</li>
+        <li>Ada kos tersembunyi lain?</li>
+        <li>Termasuk pembersihan atau tambahan?</li>
+        <li>Siapa bayar barang habis guna?</li>
+        <li>Ada minimum fee bulanan?</li>
+        <li>Bagaimana jika tiada tempahan?</li>
+        </ol>
+        <strong>Red Flags:</strong>
+        <ul>
+        <li>"Kita bincang kemudian" - tidak telus</li>
+        <li>Yuran berubah-ubah tanpa jelas</li>
+        <li>Komisen 25%+ + cleaning fees berasingan</li>
+        <li>Tidak nyatakan apa yang termasuk</li>
+        </ul>
+        <h2>Perkara #2: Pengalaman & Track Record</h2>
+        <h3>Pengalaman Yang Perlu Anda Cari</h3>
+        <h4>1. Tahun Pengalaman</h4>
+        <table>
+          <thead>
+            <tr><th>Pengalaman</th><th>Kelebihan</th><th>Risiko</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**&lt; 1 tahun**</td><td>Harga mungkin lebih murah</td><td>Belum proven, masih belajar</td></tr>
+            <tr><td>**1-3 tahun**</td><td>Ada experience, proven</td><td>OK jika portfolio bagus</td></tr>
+            <tr><td>**3-5 tahun**</td><td>Stabil, established</td><td>Biasanya harga standard</td></tr>
+            <tr><td>**5+ tahun**</td><td>Sangat experienced, trusted</td><td>Mungkin mahal, selective</td></tr>
+          </tbody>
+        </table>
+        <strong>Minimum: 1 tahun pengalaman aktif.</strong>
+        <h4>2. Saiz Portfolio</h4>
+        <table>
+          <thead>
+            <tr><th>Saiz Portfolio</th><th>Kelebihan</th><th>Risiko</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**&lt; 10 units**</td><td>Perhatian personal</td><td>Kurang resources, tiada economies of scale</td></tr>
+            <tr><td>**10-30 units**</td><td>Balance antara personal & resources</td><td>-</td></tr>
+            <tr><td>**30-100 units**</td><td>Banyak resources, professional</td><td>Mungkin kurang personal touch</td></tr>
+            <tr><td>**100+ units**</td><td>Very established, proven</td><td>Mungkin besar, less flexible</td></tr>
+          </tbody>
+        </table>
+        <strong>Sweet spot: 20-50 units untuk Melaka.</strong>
+        <h4>3. Kondominium Expertise</h4>
+        <p>Pengalaman dengan kondominium spesifik anda adalah sangat penting.</p>
+        <strong>Soalan untuk tanya:</strong>
+        <ol>
+        <li>Berapa unit anda urus di [nama kondo saya]?</li>
+        <li>Berapa lamakah anda urus di sini?</li>
+        <li>Apakah masalah biasa di sini dan bagaimana anda handle?</li>
+        </ol>
+        <strong>Green flags:</strong>
+        <ul>
+        <li>"Kami urus 5-10 unit di kondo ini"</li>
+        <li>"Kami sudah 2+ tahun di sini"</li>
+        <li>"Kami kenal management office dengan baik"</li>
+        </ul>
+        <h3>Bukti Pengalaman</h3>
+        <strong>Minta bukti:</strong>
+        <ol>
+        <li>Portfolio senarai semasa (dengan nama kondo)</li>
+        <li>Rating purata unit yang diuruskan</li>
+        <li>Testimoni dari hos sekarang</li>
+        <li>Case studies (before/after)</li>
+        </ol>
+        <strong>Red flags:</strong>
+        <ul>
+        <li>Tidak boleh beri bukti portfolio</li>
+        <li>"Kita baru mula" tapi claim expert</li>
+        <li>Tidak mempunyai hos untuk rujukan</li>
+        </ul>
+        <h2>Perkara #3: Kualiti Perkhidmatan Pembersihan</h2>
+        <h3>Pembersihan Adalah Faktor #1 Rating</h3>
+        <p>Data menunjukkan:</p>
+        <ul>
+        <li>70% komplain 3-bintang berkaitan kebersihan</li>
+        <li>5-bintang rating = 90% berkaitan kebersihan</li>
+        </ul>
+        <h3>Model Pembersihan</h3>
+        <h4>Model 1: In-House Team (Terbaik)</h4>
+        <strong>Ciri-ciri:</strong>
+        <ul>
+        <li>Syarikat ada pasukan pembersihan sendiri</li>
+        <li>Quality control langsung</li>
+        <li>Kos lebih rendah (tiada markup)</li>
+        </ul>
+        <strong>Kelebihan:</strong>
+        <ul>
+        <li>Quality consistent</li>
+        <li>Boleh arrange emergency cleaning</li>
+        <li>Kos jimat</li>
+        </ul>
+        <strong>Contoh:</strong>
+        <ul>
+        <li>Cleaning: RM50-70/set</li>
+        <li>Quality: High (trained staff)</li>
+        </ul>
+        <h4>Model 2: Outsourced (Biasa)</h4>
+        <strong>Ciri-ciri:</strong>
+        <ul>
+        <li>Syarikat upah kontraktor luar</li>
+        <li>Ada markup (20-40%)</li>
+        </ul>
+        <strong>Kelebihan:</strong>
+        <ul>
+        <li>Fleksibel</li>
+        <li>Banyak pilihan</li>
+        </ul>
+        <strong>Kelemahan:</strong>
+        <ul>
+        <li>Quality kurang consistent</li>
+        <li>Kos lebih tinggi</li>
+        <li>Kurang control</li>
+        </ul>
+        <strong>Contoh:</strong>
+        <ul>
+        <li>Cleaning: RM80-120/set</li>
+        <li>Quality: Variable</li>
+        </ul>
+        <h4>Model 3: Host Arranges Own (Terburuk)</h4>
+        <strong>Ciri-ciri:</strong>
+        <ul>
+        <li>Anda perlu cari pembersih sendiri</li>
+        <li>Pengurus hanya coordinate</li>
+        </ul>
+        <strong>Kelemahan:</strong>
+        <ul>
+        <li>Banyak kerja untuk anda</li>
+        <li>Quality tak control</li>
+        </ul>
+        <h3>Apa Yang Perlu Tanya</h3>
+        <strong>Soalan kritikal:</strong>
+        <ol>
+        <li>Ada pasukan pembersihan sendiri atau outsource?</li>
+        <li>Berapa kos per set?</li>
+        <li>Ada quality check selepas setiap cleaning?</li>
+        <li>Berapa cepat boleh datang jika emergency?</li>
+        <li>Boleh saya lihat standard cleaning checklist?</li>
+        </ol>
+        <strong>Green flags:</strong>
+        <ul>
+        <li>"Kami ada pasukan sendiri"</li>
+        <li>"RM60-70 per set"</li>
+        <li>"Kami ada QC officer"</li>
+        <li>"Boleh datang dalam 2 jam jika emergency"</li>
+        </ul>
+        <strong>Red flags:</strong>
+        <ul>
+        <li>"Kami outsource kepada cleaning company"</li>
+        <li>"RM100-120 per set" (mahal)</li>
+        <li>"Quality bergantung kepada cleaner"</li>
+        <li>"Emergency dalam 24 jam"</li>
+        </ul>
+        <h2>Perkara #4: Multi-Platform Listing Strategy</h2>
+        <h3>Kenapa Multi-Platform Sangat Penting</h3>
+        <p>Data menunjukkan:</p>
+        <ul>
+        <li>Single platform (Airbnb sahaja): 40-50 tempahan/tahun</li>
+        <li>Multi-platform (5 platform): 60-80 tempahan/tahun</li>
+        <li><strong>Perbezaan: +50% tempahan</strong></li>
+        </ul>
+        <h3>Platform yang Mereka Guna</h3>
+        <strong>Minimum 4 platform:</strong>
+        <table>
+          <thead>
+            <tr><th>Platform</th><th>Pasaran</th><th>Penting untuk Melaka</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Airbnb**</td><td>Global</td><td>Wajib</td></tr>
+            <tr><td>**Booking.com**</td><td>Europe</td><td>Penting (pelancong Eropah)</td></tr>
+            <tr><td>**Agoda**</td><td>Asia</td><td>Sangat penting (pelancong Asia)</td></tr>
+            <tr><td>**Expedia**</td><td>Global</td><td>Penting</td></tr>
+            <tr><td>**VRBO**</td><td>US/Canada</td><td>Bagus (pelancong US)</td></tr>
+          </tbody>
+        </table>
+        <h3>Soalan untuk Tanya</h3>
+        <ol>
+        <li>Berapa platform anda senaraikan hartanah saya?</li>
+        <li>Bagaimana anda sync availability antara platform?</li>
+        <li>Ada masalah double-booking sebelum ini?</li>
+        <li>Berapa kerap anda update pricing?</li>
+        <li>Boleh saya lihat contoh listing?</li>
+        </ol>
+        <strong>Green flags:</strong>
+        <ul>
+        <li>"Kita senaraikan di 5+ platform"</li>
+        <li>"Kita guna software untuk sync"</li>
+        <li>"Tiada double-booking dalam 2 tahun"</li>
+        <li>"Kita update pricing weekly"</li>
+        </ul>
+        <strong>Red flags:</strong>
+        <ul>
+        <li>"Kita hanya guna Airbnb" (kehilangan 50% pasaran)</li>
+        <li>"Kita sync manual" (risiko double-booking)</li>
+        <li>"Pricing sekali set-up je"</li>
+        </ul>
+        <h2>Perkara #5: Komunikasi Tetamu</h2>
+        <h3>Masa Respons Adalah Kritikal</h3>
+        <p>Data dari Airbnb:</p>
+        <ul>
+        <li>Host yang respons dalam 1 jam: 80% rating 5-bintang</li>
+        <li>Host yang respons dalam 24 jam: 50% rating 5-bintang</li>
+        <li>Host yang lambat respond: 30% rating 5-bintang</li>
+        </ul>
+        <h3>Standar Komunikasi</h3>
+        <table>
+          <thead>
+            <tr><th>Tahap</th><th>Masa Respons</th><th>Availability</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Excellent**</td><td>&lt; 30 minit</td><td>7 hari seminggu</td></tr>
+            <tr><td>**Bagus**</td><td>&lt; 1 jam</td><td>7 hari seminggu</td></tr>
+            <tr><td>**Biasa**</td><td>&lt; 2 jam</td><td>5-6 hari seminggu</td></tr>
+            <tr><td>**Lemah**</td><td>4-24 jam</td><td>5 hari seminggu</td></tr>
+          </tbody>
+        </table>
+        <h3>Apa Yang Perlu Tanya</h3>
+        <ol>
+        <li>Berapa cepat anda respons kepada tetamu?</li>
+        <li>Ada service 24/7 atau office hours sahaja?</li>
+        <li>Boleh anda handle check-in lewat malam?</li>
+        <li>Bagaimana anda handle emergencies (terkunci kunci, dll)?</li>
+        <li>Berapa bahasa yang anda boleh?</li>
+        </ol>
+        <strong>Green flags:</strong>
+        <ul>
+        <li>"Kita respons dalam 30 minit"</li>
+        <li>"Kita ada service 24/7"</li>
+        <li>"Kita boleh handle check-in 11pm-1am"</li>
+        <li>"Kita boleh cakap English, BM, Mandarin"</li>
+        </ul>
+        <strong>Red flags:</strong>
+        <ul>
+        <li>"Kita respons dalam 24 jam"</li>
+        <li>"Kita operate office hours 9am-6pm"</li>
+        <li>"Check-in lewat kena bayar extra"</li>
+        <li>"English only"</li>
+        </ul>
+        <h2>Perkara #6: Screening Tetamu & Perlindungan Hartanah</h2>
+        <h3>Screening Tetamu</h3>
+        <p>Pengurus yang baik akan screen tetamu untuk mengurangkan risiko.</p>
+        <strong>Proses Screening:</strong>
+        <table>
+          <thead>
+            <tr><th>Step</th><th>Tujuan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Profile review**</td><td>Check rating, verifikasi</td></tr>
+            <tr><td>**Past stay reviews**</td><td>Lihat pattern tingkah laku</td></tr>
+            <tr><td>**Purpose of stay**</td><td>Filter untuk high-risk</td></tr>
+            <tr><td>**Group size**</td><td>Sesuaikan dengan capacity</td></tr>
+            <tr><td>**Questions**</td><td>Tanya khusus jika perlu</td></tr>
+          </tbody>
+        </table>
+        <h3>Perlindungan Hartanah</h3>
+        <table>
+          <thead>
+            <tr><th>Risiko</th><th>Perlindungan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Kerosakan**</td><td>Deposit tetamu + Insurans Airbnb</td></tr>
+            <tr><td>**Tetamu bising**</td><td>House rules jelas + strict</td></tr>
+            <tr><td>**Tetamu berlebihan**</td><td>Capacity limit + strict</td></tr>
+            <tr><td>**Kehilangan**</td><td>Inventory list + deposit</td></tr>
+          </tbody>
+        </table>
+        <h3>Apa Yang Perlu Tanya</h3>
+        <ol>
+        <li>Bagaimana anda screen tetamu?</li>
+        <li>Ada deposit tetamu? Berapa?</li>
+        <li>Bagaimana handle tetamu yang bising/bermasalah?</li>
+        <li>Ada insurans harta?</li>
+        <li>Bagaimana handle jika tetamu merosakkan barang?</li>
+        </ol>
+        <strong>Green flags:</strong>
+        <ul>
+        <li>"Kita screen setiap booking"</li>
+        <li>"Kita ada house rules yang strict"</li>
+        <li>"Kita bertindak cepat jika complain tetangga"</li>
+        <li>"Kita ada dokumentasi sebelum dan selepas"</li>
+        </ul>
+        <strong>Red flags:</strong>
+        <ul>
+        <li>"Kita terima semua booking"</li>
+        <li>"Kita tidak ada house rules"</li>
+        <li>"Kita tidak pernah ada masalah" (mustahil)</li>
+        </ul>
+        <h2>Perkara #7: Transparansi Laporan & Pembayaran</h2>
+        <h3>Laporan Bulanan</h3>
+        <p>Laporan yang baik harus termasuk:</p>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Penerangan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Pendapatan**</td><td>Breakdown per booking</td></tr>
+            <tr><td>**Kos**</td><td>Cleaning, barang habis guna, repair</td></tr>
+            <tr><td>**Okupansi**</td><td>Peratusan penginapan</td></tr>
+            <tr><td>**Rating**</td><td>Latest reviews</td></tr>
+            <tr><td>**Issues**</td><td>Masalah bulan ini</td></tr>
+            <tr><td>**Next month**</td><td>Ramalan/plan</td></tr>
+          </tbody>
+        </table>
+        <h3>Kekerapan Laporan</h3>
+        <table>
+          <thead>
+            <tr><th>Ideal</th><th>Minimum</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Bulanan (detailed)</td><td>Bulanan (basic)</td></tr>
+            <tr><td>WhatsApp updates (ad-hoc)</td><td>-</td></tr>
+            <tr><td>Quarterly review</td><td>-</td></tr>
+          </tbody>
+        </table>
+        <h3>Pembayaran kepada Hos</h3>
+        <table>
+          <thead>
+            <tr><th>Kekerapan</th><th>Standard</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**Setiap bulan**</td><td>Ideal</td></tr>
+            <tr><td>**Setiap 2 bulan**</td><td>Minimum</td></tr>
+            <tr><td>**Setiap suku tahun**</td><td>Terlalu lambat</td></tr>
+          </tbody>
+        </table>
+        <h3>Apa Yang Perlu Tanya</h3>
+        <ol>
+        <li>Bila saya dapat laporan bulanan?</li>
+        <li>Laporan dalam apa format?</li>
+        <li>Bila pembayaran dibuat?</li>
+        <li>Boleh saya access real-time data?</li>
+        <li>Bagaimana nak dispute jika ada salah?</li>
+        </ol>
+        <strong>Green flags:</strong>
+        <ul>
+        <li>"Laporan dihantar pada hari 1 setiap bulan"</li>
+        <li>"Pembayaran pada hari 7 setiap bulan"</li>
+        <li>"Boleh akses dashboard sendiri"</li>
+        <li>"Call/email jika ada isu"</li>
+        </ul>
+        <strong>Red flags:</strong>
+        <ul>
+        <li>"Laporan bila-bila masa je"</li>
+        <li>"Pembayaran bila kita ingat"</li>
+        <li>"Kita yang manage, awak jangan risau"</li>
+        <li>"Tidak ada sistem online"</li>
+        </ul>
+        <h2>Tanda-Tanda Pengurus Airbnb yang Buruk</h2>
+        <h3>Red Flags #1: Promosi Terlalu Bagus</h3>
+        <p>"Jaminan 100% okupansi" - Mustahil</p>
+        <p>"RM15,000 sebulan bulan pertama" - Unrealistic</p>
+        <p>"Kita boleh dapatkan RM300/malam" - Check data pasaran</p>
+        <h3>Red Flags #2: Yuran Tidak Jelas</h3>
+        <p>"Komisen kecil je" - Tidak nyatakan berapa</p>
+        <p>"Cleaning charges ikut market rate" - Tidak jelas</p>
+        <p>"Additional fees mungkin ada" - Apa ini?</p>
+        <h3>Red Flags #3: Tiada Kontrak</h3>
+        <p>"Kita boleh start terus je" - Tiada perlindungan legal</p>
+        <p>"Tidak perlu signed agreement" - Berbahaya</p>
+        <p>"Verbal agreement sudah memadai" - Tidak boleh dipercayai</p>
+        <h3>Red Flags #4: Portfolio Kosong</h3>
+        <p>"Kita baru mula" - Untuk trial</p>
+        <p>"Kita tak boleh share portfolio lain" - Privacy is OK tapi ada limit</p>
+        <p>"Kita ada banyak client tapi tak boleh bagi nama" - Suspicious</p>
+        <h3>Red Flags #5: Respons Lambat</h3>
+        <p>Waktu anda inquiry, mereka lambat respond = masa jadi hos, lagi lambat</p>
+        <h3>Red Flags #6: Tiada Testimoni</h3>
+        <p>"Minta je testimoni dari client kami" - Tidak ada yang sanggup?</p>
+        <p>"Client kami privacy" - Valid tapi patut ada yang sanggup</p>
+        <h2>Soalan Wajib Tanya Sebelum Sign</h2>
+        <p>Senarai semak untuk temuan dengan pengurus:</p>
+        <h3>Basic Info</h3>
+        <ul>
+        <li>[ ] Berapa lama syarikat ini operasi?</li>
+        <li>[ ] Berapa unit dalam portfolio sekarang?</li>
+        <li>[ ] Berapa unit di kondominium saya?</li>
+        </ul>
+        <h3>Yuran & Kos</h3>
+        <ul>
+        <li>[ ] Berapa struktur yuran anda? (komisen/flat fee)</li>
+        <li>[ ] Termasuk apa semua?</li>
+        <li>[ ] Kos tambahan apa yang mungkin ada?</li>
+        <li>[ ] Ada minimum fee?</li>
+        </ul>
+        <h3>Perkhidmatan</h3>
+        <ul>
+        <li>[ ] Siapa yang buat cleaning? Pasukan sendiri?</li>
+        <li>[ ] Berapa kos per set cleaning?</li>
+        <li>[ ] Berapa platform listing?</li>
+        <li>[ ] Berapa cepat response time?</li>
+        </ul>
+        <h3>Communication</h3>
+        <ul>
+        <li>[ ] Macam mana saya boleh contact?</li>
+        <li>[ ] Berapa kerap report?</li>
+        <li>[ ] Bila pembayaran dibuat?</li>
+        <li>[ ] Boleh saya akses data sendiri?</li>
+        </ul>
+        <h3>Protection</h3>
+        <ul>
+        <li>[ ] Macam mana anda screen tetamu?</li>
+        <li>[ ] Ada house rules?</li>
+        <li>[ ] Bagaimana handle kerosakan?</li>
+        <li>[ ] Ada insurans?</li>
+        </ul>
+        <h3>References</h3>
+        <ul>
+        <li>[ ] Boleh saya bercakap dengan hos sekarang?</li>
+        <li>[ ] Boleh lihat contoh listing?</li>
+        <li>[ ] Boleh lihat rating purata unit yang diurus?</li>
+        </ul>
+        <h2>Template Kontrak yang Baik</h2>
+        <p>Kontrak mesti jelas tentang:</p>
+        <ol>
+        <li><strong>Scope of services</strong> - Apa yang termasuk</li>
+        <li><strong>Fees</strong> - Berapa, bila bayar</li>
+        <li><strong>Responsibilities</strong> - Siapa buat apa</li>
+        <li><strong>Term</strong> - Berapa lama kontrak</li>
+        <li><strong>Termination</strong> - Bagaimana nak terminate</li>
+        <li><strong>Liability</strong> - Siapa responsible jika apa-apa</li>
+        </ol>
+        <h2>Soalan Lazim (FAQ)</h2>
+        <h3>Q: Adakah perlu tanda kontrak bertulis?</h3>
+        <p>A: YA. Walaupun "kenalan", kontrak bertulis melindungi kedua-dua pihak. Jangan start tanpa agreement jelas.</p>
+        <h3>Q: Berapa lama tempoh trial sepatutnya?</h3>
+        <p>A: 3 bulan adalah minimum. 6-12 bulan adalah ideal untuk benar-benar assess performance.</p>
+        <h3>Q: Bila masa terbaik untuk tukar pengurus?</h3>
+        <p>A: Bila-bila jika service tidak memuaskan. Tetapi biasanya tunggu sampai tamat kontrak atau beri notice 1-2 bulan.</p>
+        <h3>Q: Adakah pengurus flat fee lebih baik dari komisen?</h3>
+        <p>A: Bergantung. Flat fee biasanya lebih telus dan jimat untuk okupansi tinggi. Komisen mungkin lebih baik jika okupansi rendah.</p>
+        <h3>Q: Berapa banyak pengurus yang patut saya interview?</h3>
+        <p>A: Minimum 3. Ideal 5. Bandingkan yuran, perkhidmatan, dan "gut feeling".</p>
+        <h2>Tindakan Seterusnya</h2>
+        <p>Jangan terburu-buru. Pilihan pengurus Airbnb akan menentukan kejayaan atau kegagalan pelaburan anda.</p>
+        <h3>Langkah Seterusnya</h3>
+        <ol>
+        <li><strong>Shortlist 3-5 pengurus</strong> - Dari research/referral</li>
+        <li><strong>Set up meetings</strong> - Jumpa secara physical/virtual</li>
+        <li><strong>Tanya soalan kritikal</strong> - Gunakan checklist di atas</li>
+        <li><strong>Request references</strong> - Bercakap dengan hos sekarang</li>
+        <li><strong>Compare proposals</strong> - Bandingkan yuran & perkhidmatan</li>
+        <li><strong>Start with trial</strong> - Jangan commit jangka panjang awal-awal</li>
+        </ol>
+        <hr class="my-8">
+        <h2>Saya Nak Bantuan Memilih Pengurus Airbnb yang Betul</h2>
+        <p>Kami di iHousing percaya pada transparency dan quality service.</p>
+        <strong>Untuk Parkland Avenue by the Sea:</strong>
+        <ul>
+        <li>Yuran tetap: RM200-300/bulan</li>
+        <li>Termasuk: Pembersihan, 5-platform listing, communication, daftar masuk/keluar</li>
+        <li>Pasukan pembersihan sendiri (tiada markup)</li>
+        <li>No hidden fees</li>
+        </ul>
+        <strong>Untuk Kondominium Lain:</strong>
+        <ul>
+        <li>Harga tersuai - WhatsApp kami untuk sebut harga</li>
+        <li>Transparent breakdown</li>
+        <li>Customized untuk unit anda</li>
+        </ul>
+        <strong>Kelebihan iHousing:</strong>
+        <ul>
+        <li>8+ years experience di Melaka</li>
+        <li>100+ properties dalam portfolio</li>
+        <li>In-house cleaning team</li>
+        <li>5-platform listing (Airbnb, Booking.com, Agoda, Expedia, VRBO)</li>
+        <li>Response time &lt; 30 minit</li>
+        <li>Monthly detailed reports</li>
+        <li>Multi-language support (BM, English, Mandarin)</li>
+        </ul>
+        <strong>Tawaran Khas:</strong>
+        <p>Free trial 1 bulan untuk unit baru (terma & syarat dikenakan)</p>
+        <strong>WhatsApp kami hari ini untuk:</strong>
+        <ol>
+        <li>Konsultasi percuma</li>
+        <li>Sebut harga diperibadikan</li>
+        <li>Portfolio viewing</li>
+        <li>Testimoni hos sekarang</li>
+        </ol>
+        <p>Jangan biarkan hartanah anda terus kosong atau diberikan kepada pengurus yang salah. Pilih pengurus yang betul, dan nikmati pendapatan pasif sebenar.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,616 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Percutian Hujung Minggu dari KL ke Melaka: Panduan Airbnb Terbaik";
+const description = "Panduan lengkap untuk percutian hujung minggu dari Kuala Lumpur ke Melaka. Ketahui tempat penginapan Airbnb terbaik, aktiviti, dan cara menerima tetamu dari KL.";
+const image = "/images/blog/percutian-hujung-minggu-dari-kl-melaka.jpg";
+const date = "2025-01-24";
+const category = "musim";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Percutian Hujung Minggu dari KL ke Melaka: Panduan Airbnb Terbaik</h1>
+
+<h2>Mengapa Melaka Adalah Destinasi Hujung Minggu #1 untuk KL Folks</h2>
+
+<p>Dengan jarak hanya 120km dari Kuala Lumpur (2 jam pemanduan), Melaka adalah destinasi hujung minggu paling popular untuk penduduk KL.</p>
+
+<strong>Statistik Percutian Hujung Minggu:</strong>
+<ul>
+<li>60% tetamu hujung minggu dari Kuala Lumpur/Selangor</li></ul>
+
+<ul>
+<li>70% tempahan dibuat 1-2 minggu sebelum</li></ul>
+
+<ul>
+<li>Purata penginapan: 2-3 malam</li></ul>
+
+<ul>
+<li>Purata perbelanjaan: RM300-600/tetamu</li></ul>
+
+<p>Bagi pemilik Airbnb di Melaka, memahami profil tetamu dari KL adalah kritikal untuk memaksimumkan pendapatan hujung minggu.</p>
+
+<p>Artikel ini membantu pemilik Airbnb memahami:</p>
+<ul>
+<li>Apa yang tetamu KL mahu</li></ul>
+
+<ul>
+<li>Bagaimana memasarkan kepada tetamu KL</li></ul>
+
+<ul>
+<li>Strategi harga hujung minggu yang berkesan</li></ul>
+
+<h2>Profil Tetamu dari KL: Apa Yang Mereka Cari?</h2>
+
+<h3>Demografi</h3>
+
+<h3>Apa Yang Tetamu KL Cari</h3>
+
+<p>#### 1. Lokasi Strategik</p>
+
+<strong>Kawasan Paling Popular Untuk Tetamu KL:</strong>
+<ul>
+<li><strong>Bandar Hilir/Jonker Walk</strong> - Paling dekat dengan tarikan pelancong</li></ul>
+
+<ul>
+<li><strong>Melaka Raya</strong> - Pusat bandar dengan akses mudah</li></ul>
+
+<ul>
+<li><strong>Bukit Cina</strong> - Pemandangan bandar, suasanana sejuk</li></ul>
+
+<ul>
+<li><strong>Pantai Klebang</strong> - Untuk tetamu yang suka suasana laut</li></ul>
+
+<p>#### 2. Akses Mudah dari KL</p>
+
+<strong>Tetamu KL suka:</strong>
+<ul>
+<li>Tempat letak kerja percuma (parking adalah premium di KL)</li></ul>
+
+<ul>
+<li>Berhampiran lebuh raya (jalan mudah dari KL)</li></ul>
+
+<ul>
+<li>Pusat membeli-belah berhampiran (untuk beli barang)</li></ul>
+
+<ul>
+<li>Restoran buka 24 jam (seperti di KL)</li></ul>
+
+<p>#### 3. WiFi & Hiburan</p>
+
+<strong>Kepentingan:</strong>
+<ul>
+<li>WiFi berkelajuan tinggi (untuk strim, bekerja dari jauh)</li></ul>
+
+<ul>
+<li>TV pintar dengan Netflix/YouTube</li></ul>
+
+<ul>
+<li>Bluetooth speaker (untuk muzik latar)</li></ul>
+
+<ul>
+<li>Soket elektrik cukup (untuk cas telefon)</li></ul>
+
+<p>#### 4. Check-in & Check-out Fleksibel</p>
+
+<strong>Tetamu KL suka:</strong>
+<ul>
+<li>Check-in selepas 3pm (kerja hingga 2pm di KL)</li></ul>
+
+<ul>
+<li>Check-out sehingga 12pm (untuk nikmati hari terakhir)</li></ul>
+
+<ul>
+<li>Self check-in (pintar berkunci)</li></ul>
+
+<p>#### 5. Value for Money</p>
+
+<strong>Tetamu KL membandingkan harga:</strong>
+<ul>
+<li>Airbnb vs Hotel di Melaka (Airbnb biasanya 30-50% lebih jimat)</li></ul>
+
+<ul>
+<li>Airbnb di Melaka vs Hotel di KL (Melaka Airbnb lebih murah)</li></ul>
+
+<h2>Strategi Harga Hujung Minggu</h2>
+
+<h3>Pola Permintaan Hujung Minggu</h3>
+
+<h3>Contoh Harga Hujung Minggu (Unit 2-Bedroom)</h3>
+
+<h3>Diskaun untuk Tempahan Lebih Lama</h3>
+
+<p>Untuk menggalakkan tempahan 3 malam atau lebih:</p>
+<ul>
+<li><strong>2 malam:</strong> Tiada diskaun</li></ul>
+
+<ul>
+<li><strong>3 malam:</strong> Diskaun 5-10%</li></ul>
+
+<ul>
+<li><strong>4+ malam:</strong> Diskaun 10-15%</li></ul>
+
+<strong>Contoh:</strong>
+<ul>
+<li>Harga asal (3 malam): RM920</li></ul>
+
+<ul>
+<li>Diskaun 10%: -RM92</li></ul>
+
+<ul>
+<li><strong>Harga akhir (3 malam): RM828</strong></li></ul>
+
+<p>Ini menggalakkan tetamu KL untuk menginap lebih lama (dan mengurangkan kos pembersihan per malam).</p>
+
+<h2>Kemudahan yang Penting untuk Tetamu KL</h2>
+
+<h3>1. Parking (Kritis)</h3>
+
+<strong>Nota:</strong> Tetamu KL terbiasa dengan parking yang mahal. Parking percuma adalah bonus besar.
+
+<h3>2. Dapur Lengkap</h3>
+
+<strong>Tetamu KL suka memasak sendiri</strong> kerana:
+<ul>
+<li>Jimat kos makanan</li></ul>
+
+<ul>
+<li>Boleh cuba resepi tempatan</li></ul>
+
+<ul>
+<li>Lebih selesa untuk keluarga</li></ul>
+
+<strong>Perlu ada:</strong>
+<ul>
+<li>Peti sejuk (200-300 liter)</li></ul>
+
+<ul>
+<li>Microwave</li></ul>
+
+<ul>
+<li>periuk & kuali</li></ul>
+
+<ul>
+<li>Peralatan makan lengkap (4-6 set)</li></ul>
+
+<ul>
+<li>Cerek elektrik</li></ul>
+
+<h3>3. Mesin Basuh (Untuk 3+ Malam)</h3>
+
+<strong>Penting untuk:</strong>
+<ul>
+<li>Keluarga dengan kanak-kanak (baju kotor)</li></ul>
+
+<ul>
+<li>Pengembara jangka panjang (kurang bawaan)</li></ul>
+
+<ul>
+<li>Jimat kos dobi</li></ul>
+
+<h3>4. Ruang Kerja Kecil</h3>
+
+<strong>Untuk tetamu KL yang WFH:</strong>
+<ul>
+<li>Meja kecil</li></ul>
+
+<ul>
+<li>Kerusi selesa</li></ul>
+
+<ul>
+<li>WiFi stabil</li></ul>
+
+<ul>
+<li>Soket elektrik berhampiran</li></ul>
+
+<h3>5. Kanak-kanak & Keluarga</h3>
+
+<strong>Jika sasaran keluarga:</strong>
+<ul>
+<li>Katil bayi/crib</li></ul>
+
+<ul>
+<li>Kerusi tinggi/high chair</li></ul>
+
+<ul>
+<li>Mainan kanak-kanak</li></ul>
+
+<ul>
+<li>Penutip soket</li></ul>
+
+<h2>Cara Memasarkan Kepada Tetamu KL</h2>
+
+<h3>1. Tajuk Senarai Berkesan</h3>
+
+<strong>Contoh tajuk yang menarik tetamu KL:</strong>
+<ul>
+<li>"2BR Condo Near Jonker - Free Parking - From KL Friendly"</li></ul>
+
+<ul>
+<li>"Modern 3BR - Family Friendly - 5 Min to UNESCO Site"</li></ul>
+
+<ul>
+<li>"Cozy Studio - Perfect for KL Couples - Netflix Included"</li></ul>
+
+<ul>
+<li>"Spacious 4BR - Groups Welcome - Self Check-in"</li></ul>
+
+<strong>Kata kunci penting:</strong>
+<ul>
+<li>"From KL Friendly"</li></ul>
+
+<ul>
+<li>"Free Parking"</li></ul>
+
+<ul>
+<li>"Self Check-in"</li></ul>
+
+<ul>
+<li>"Netflix/WiFi"</li></ul>
+
+<ul>
+<li>"Family Friendly"</li></ul>
+
+<h3>2. Keterangan yang Menekankan Kelebihan untuk KL Folks</h3>
+
+<p><code></p>
+<p>Perfect Weekend Getaway from KL!</p>
+
+<p>Looking for a quick escape from Kuala Lumpur? Our condo is:</p>
+<ul>
+<li>Only 2 hours drive from KL</li></ul>
+
+<ul>
+<li>Free parking (save RM20-40/day vs hotels)</li></ul>
+
+<ul>
+<li>Full kitchen (cook your own meals, save money)</li></ul>
+
+<ul>
+<li>Netflix & high-speed WiFi (feel like home)</li></ul>
+
+<ul>
+<li>Self check-in (check-in anytime after 3pm)</li></ul>
+
+<p>Nearby attractions (5-15 min drive):</p>
+<ul>
+<li>Jonker Walk (UNESCO heritage site)</li></ul>
+
+<ul>
+<li>A Famosa fortress</li></ul>
+
+<ul>
+<li>Dutch Square</li></ul>
+
+<ul>
+<li>Melaka River Cruise</li></ul>
+
+<ul>
+<li>Mahkota Parade (shopping mall)</li></ul>
+
+<p>Book now for best rates!</p>
+
+
+<h3>3. Foto yang Menonjolkan Kelebihan</h3>
+
+<strong>Foto penting untuk tetamu KL:</strong>
+<ul>
+<li>[x] Photo unit dengan kereta di tempat letak kerja (tunjukkan parking)</li></ul>
+
+<ul>
+<li>[x] Foto ruang tamu dengan Netflix di TV</li></ul>
+
+<ul>
+<li>[x] Foto dapur lengkap</li></ul>
+
+<ul>
+<li>[x] Foto pemandangan dari tingkap (jika ada)</li></ul>
+
+<ul>
+<li>[x] Foto kolam renang/kemudahan (jika ada)</li></ul>
+
+<h3>4. House Rules yang Jelas</h3>
+
+<strong>Untuk tetamu KL, tetapkan:</strong>
+<ul>
+<li>Check-in: Selepas 3pm (selepas kerja)</li></ul>
+
+<ul>
+<li>Check-out: Sebelum 12pm (untuk nikmati hari)</li></ul>
+
+<ul>
+<li>Minimum 2 malam untuk hujung minggu (Jumaat-Ahad)</li></ul>
+
+<ul>
+<li>Tiada parti (tetamu KL datang untuk relaks)</li></ul>
+
+<h2>Pola Tempahan Hujung Minggu</h2>
+
+<h3>1 Minggu Sebelum Hujung Minggu</h3>
+
+<h3>Strategi Pemasaran Mengikut Hari</h3>
+
+<strong>Isnin - Rabu (Pra-Hujung Minggu):</strong>
+<ul>
+<li>Promosi "Early Bird Weekend Deal" (5% diskaun)</li></ul>
+
+<ul>
+<li>Posting media sosial tentang aktiviti hujung minggu</li></ul>
+
+<strong>Khamis - Jumaat (Last Minute):</strong>
+<ul>
+<li>Promosi "Last Minute Weekend Escape" (10% diskaun jika masih kosong)</li></ul>
+
+<ul>
+<li>Respond segera kepada pertanyaan</li></ul>
+
+<h2>Aktiviti Hujung Minggu Popular di Melaka</h2>
+
+<h3>Untuk Pasangan</h3>
+
+<h3>Untuk Keluarga</h3>
+
+<h3>Untuk Kumpulan</h3>
+
+<h2>Komunikasi dengan Tetamu KL</h2>
+
+<h3>Mesej Pra-Kedatangan (1 Minggu Sebelum)</h3>
+
+
+<p>Hi [Nama],</p>
+
+<p>Excited to host you from KL for a weekend in Melaka!</p>
+
+<p>Quick tips:</p>
+<ul>
+<li>Drive from KL: ~2 hours via PLUS highway</li></ul>
+
+<ul>
+<li>Check-in: After 3pm (self check-in available)</li></ul>
+
+<ul>
+<li>Parking: Free reserved spot (we'll send location)</li></ul>
+
+<ul>
+<li>WiFi: [Password]</li></ul>
+
+<p>Must-try places nearby:</p>
+<ul>
+<li>Nancy's Kitchen (Nyonya food)</li></ul>
+
+<ul>
+<li>Capitol Satay (satay celup)</li></ul>
+
+<ul>
+<li>Jonker Street (night market on Fri-Sun)</li></ul>
+
+<p>See you soon!</p>
+
+
+<h3>Mesej Hari Check-in</h3>
+
+
+<p>Hi [Nama],</p>
+
+<p>Check-in day! Here's the info:</p>
+<ul>
+<li>Address: [Full Address]</li></ul>
+
+<ul>
+<li>Parking: [Location & how to access]</li></ul>
+
+<ul>
+<li>WiFi: [Password]</li></ul>
+
+<ul>
+<li>AC remotes: In living room & bedrooms</li></ul>
+
+<p>Enjoy your weekend getaway from KL!</p>
+
+
+<h3>Mesej Post-Check-in</h3>
+
+
+<p>Hi [Nama],</p>
+
+<p>Hope you're enjoying Melaka!</p>
+
+<p>Quick reminder:</p>
+<ul>
+<li>Check-out: Before 12pm</li></ul>
+
+<ul>
+<li>Parking: Please vacate by 12pm</li></ul>
+
+<ul>
+<li>Key return: In the lockbox</li></ul>
+
+<p>Any issues, just text us!</p>
+
+
+<h2>Kalkulator Pendapatan Hujung Minggu</h2>
+
+<h3>Unit 2-Bedroom di Bandar Hilir</h3>
+
+<strong>Anggaran:</strong>
+<ul>
+<li>Harga weekdays: RM200/malam</li></ul>
+
+<ul>
+<li>Harga hujung minggu: RM280-340/malam</li></ul>
+
+<ul>
+<li>Okupansi weekdays: 30%</li></ul>
+
+<ul>
+<li>Okupansi hujung minggu: 80%</li></ul>
+
+<strong>Pendapatan Bulanan:</strong>
+
+<strong>Pecahan Pendapatan:</strong>
+<ul>
+<li>Weekdays: 41%</li></ul>
+
+<ul>
+<li>Hujung minggu: 59%</li></ul>
+
+<strong>Kesimpulan:</strong> Hujung minggu menyumbang hampir 60% pendapatan bulanan!
+
+<h2>Tawaran Khas Hujung Minggu</h2>
+
+<h3>1. Package "3D2N Weekend Escape"</h3>
+
+<strong>Termasuk:</strong>
+<ul>
+<li>3 malam penginapan (Jumaat-Ahad)</li></ul>
+
+<ul>
+<li>Sarapan untuk 2 orang (untung/bekalan)</li></ul>
+
+<ul>
+<li>Diskaun 10% dari harga biasa</li></ul>
+
+<strong>Harga:</strong> RM828 (dari RM920)
+
+<h3>2. Package "Family Weekend Package"</h3>
+
+<strong>Termasuk:</strong>
+<ul>
+<li>3 malam penginapan</li></ul>
+
+<ul>
+<li>Aktiviti keluarga (tiket Zoo Melaka atau River Cruise)</li></ul>
+
+<ul>
+<li>Sarapan untuk 4 orang</li></ul>
+
+<strong>Harga:</strong> RM1,200 - RM1,500
+
+<h3>3. Package "Group Getaway"</h3>
+
+<strong>Termasuk:</strong>
+<ul>
+<li>3 malam penginapan (unit 4-bedroom)</li></ul>
+
+<ul>
+<li>BBQ facilities (jika ada)</li></ul>
+
+<ul>
+<li>Diskaun 15%</li></ul>
+
+<strong>Harga:</strong> RM1,500 - RM2,000
+
+<h2>Cabaran Biasa & Penyelesaian</h2>
+
+<h3>Cabaran 1: Check-in Lambat (Jumaat Petang)</h3>
+
+<strong>Isu:</strong> Tetamu KL sampai lepas 6pm (selepas kerja + trafik)
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Self check-in adalah wajib</li></ul>
+
+<ul>
+<li>Hantar arahan check-in lengkap 2 hari sebelum</li></ul>
+
+<ul>
+<li>Sediakan parking reserved (jangan biarkan mereka cari sendiri)</li></ul>
+
+<h3>Cabaran 2: Check-out Awal (Ahad Pagi)</h3>
+
+<strong>Isu:</strong> Tetamu mahu check-out lewat (untuk nikmati hari terakhir)
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Tawarkan check-out fleksibel sehingga 12pm</li></ul>
+
+<ul>
+<li>Jika tiada tetamu masuk hari itu, boleh perpanjang sehingga 2pm</li></ul>
+
+<ul>
+<li>Caj tambahan RM50 untuk check-out lewat 2pm</li></ul>
+
+<h3>Cabaran 3: trafik Jumaat Petang</h3>
+
+<strong>Isu:</strong> Tetamu terlempar dalam trafik PLUS hujung minggu
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Maklumkan masa perjalanan sebenar (2-3 jam dengan trafik)</li></ul>
+
+<ul>
+<li>Cadangkan bertolak lepas 4pm (elak puncak 5-7pm)</li></ul>
+
+<ul>
+<li>Sediakan pilihan check-in lewat (tanpa penalti)</li></ul>
+
+<h2>Soalan Lazim (FAQ)</h2>
+
+<h3>Q: Berapa awal perlu buka tempahan untuk hujung minggu?</h3>
+
+<p>A: Kebanyakan tempahan dibuat 1-2 minggu sebelum. Walau bagaimanapun, 20-30% dibuat 3-4 minggu lebih awal untuk tarikh popular (CNY, cuti sekolah).</p>
+
+<h3>Q: Adakah perlu mengenakan deposit?</h3>
+
+<p>A: Untuk hujung minggu, deposit RM200-400 adalah disyorkan (terutama untuk kumpulan besar).</p>
+
+<h3>Q: Bagaimana jika tetamu mahu extend 1 malam?</h3>
+
+<p>A: Jika unit kosong, boleh extend dengan harga biasa weekdays. Jika ada tempahan, berikan alternatif unit berdekatan.</p>
+
+<h3>Q: Adakah perlu menyediakan sarapan?</h3>
+
+<p>A: Tidak wajib. Walau bagaimanapun, bekalan sarapan (roti, jem, kopi, telur) adalah "nice touch" yang akan meningkatkan rating.</p>
+
+<h2>Dapatkan Strategi Hujung Minggu Tersuai</h2>
+
+<p>Setiap unit mempunyai kelebihan berbeza untuk tetamu KL. Strategy yang betul bergantung pada:</p>
+<ul>
+<li>Lokasi unit</li></ul>
+
+<ul>
+<li>Saiz unit</li></ul>
+
+<ul>
+<li>Kemudahan yang disediakan</li></ul>
+
+<p>WhatsApp kami untuk:</p>
+<ul>
+<li>Analisis unit anda untuk tetamu KL</li></ul>
+
+<ul>
+<li>Strategi harga hujung minggu tersuai</li></ul>
+
+<ul>
+<li>Teks promosi untuk tetamu KL</li></ul>
+
+<ul>
+<li>Optimasi senarai untuk market KL</li></ul>
+
+<strong>[WhatsApp Kami untuk Konsultasi Hujung Minggu Percuma]</strong>
+
+<p>Kami akan membantu anda memaksimumkan pendapatan hujung minggu dari tetamu KL.</p>
+
+<p>Percutian hujung minggu dari KL ke Melaka adalah trend yang akan berterusan. Sertailah sekarang.</p>
+
+<strong>Artikel Berkaitan:</strong>
+<ul>
+<li>[Strategi Harga CNY di Melaka](/ms/blog/strategi-harga-airbnb-cny-melaka)</li></ul>
+
+<ul>
+<li>[Jonker Street Pelaburan Hartanah Airbnb](/ms/blog/jonker-street-pelaburan-hartanah-airbnb-melaka)</li></ul>
+
+<ul>
+<li>[Apa yang Perlu Dilakukan dengan Rumah Kosong di Melaka](/ms/blog/apa-nak-buat-dengan-rumah-kosong-melaka)</li></ul>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

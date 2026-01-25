@@ -1,0 +1,84 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "中国新年Jonker Walk：节日季定价策略";
+const description = "通过鸡场街遗产物业在2026年中国新年期间最大化Airbnb收入。节日季定价策略、需求预测和高入住率优化。";
+const date = "2026-01-29";
+const category = "location-based";
+const language = "zh";
+const image = "/images/blog/cny-jonker-walk-chinese.jpg";
+
+const content = `
+<h1>中国新年Jonker Walk：节日季定价策略</h1>
+
+<h2>黄金月份：充分利用马六甲CNY旅游</h2>
+
+<p>中国新年代表马六甲联合国教科文组织区域Airbnb物业的<strong>最高收入机会</strong>。经过<strong>8年管理100+物业</strong>，iHousing制定了经过验证的定价策略，始终在节日期间实现<strong>40-60%的溢价</strong>，同时保持90%+的入住率。</p>
+
+<h2>CNY 2026需求预测</h2>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>日期范围</strong></th>
+<th><strong>预期入住率</strong></th>
+<th><strong>溢价潜力</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1月29日 - 2月1日</strong></td>
+<td>95-100%</td>
+<td>+50-60%涨价</td>
+</tr>
+<tr>
+<td><strong>2月2日 - 2月7日</strong></td>
+<td>85-92%</td>
+<td>+35-45%涨价</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>收入预测：</strong> 鸡场街2卧室物业在15天CNY期间可产生<strong>RM8,000-12,000</strong>。</p>
+
+<h2>定价策略：3阶段方法</h2>
+
+<h3>第一阶段：提前预订窗口（9月-12月）</h3>
+<ul>
+<li>目标：提前计划的家庭团体</li>
+<li>定价：高于标准费率40-50%</li>
+<li>最短住宿：3-4晚</li>
+</ul>
+
+<h3>第二阶段：最后一刻溢价（1月前两周）</h3>
+<ul>
+<li>目标：自发旅行者、新加坡周末客</li>
+<li>定价：高于标准费率50-60%</li>
+</ul>
+
+<h2>文化体验营销</h2>
+
+<p><strong>娘惹文化：马六甲差异化优势</strong></p>
+
+<ul>
+<li>建筑：中式庭院布局 + 葡萄牙瓷砖</li>
+<li>美食：娘惹菜肴 + 中式团圆饭</li>
+<li>语言：峇峇马来方言</li>
+</ul>
+
+<p><strong>WhatsApp +60166996688</strong>了解您的物业如何在2026年CNY期间最大化收入。</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+    <BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

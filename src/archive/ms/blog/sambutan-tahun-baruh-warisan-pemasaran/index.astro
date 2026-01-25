@@ -1,0 +1,57 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Sambutan Tahun Baruh Warisan: Pemasaran Pengalaman Budaya";
+const description = "Pasarkan hartanah warisan Melaka anda untuk Tahun Baruh Cina 2026. Strategi pemasaran pengalaman budaya, penentuanikan keaslian, dan menarik tetamu yang mencari sambutan TBC tradisional.";
+const date = "2026-01-29";
+const category = "location-based";
+const language = "ms";
+const image = "/images/blog/sambutan-tahun-baruh-warisan.jpg";
+
+const content = `
+<h1>Sambutan Tahun Baruh Warisan: Pemasaran Pengalaman Budaya</h1>
+
+<h2>Menjual Pengalaman Melaka TBC yang Autentik kepada Tetamu Airbnb</h2>
+
+<p>Dalam pasaran Airbnb 2026 yang kompetitif, <strong>keaslian budaya</strong> telah menjadi pembeza utama untuk hartanah warisan di zon UNESCO Melaka. Tetamu tidak lagi mencari penginapan semata-mata - mereka mahu <strong>pengalaman TBC yang mendalam</strong> yang menghubungkan mereka dengan warisan Peranakan Melaka yang unik.</p>
+
+<p>Hartanah yang menekankan <strong>penceritaan budaya</strong> mencapai <strong>35-45% tempahan TBC lebih tinggi</strong> daripada yang memposisikan pada kemudahan sahaja.</p>
+
+<h3>Budaya Peranakan: Pembeza Melaka</h3>
+
+<p>Sambutan TBC Melaka memadukan <strong>pengaruh Cina, Melayu, dan Eropah</strong>:</p>
+
+<ul>
+<li><strong>Seni bina:</strong> Rumah kedai dengan laman gaya Cina + jubin Portugal</li>
+<li><strong>Masakan:</strong> Hidangan Nyonya di samping makanan Cina</li>
+<li><strong>Bahasa:</strong> Dialek Baba Melayu</li>
+</ul>
+
+<p><strong>Sudut pemasaran:</strong> "Bukan sekadar Tahun Baruh Cina - <strong>Tahun Baruh Cina Peranakan Melaka</strong>"</p>
+
+<h2>Pakej Pengalaman Warisan</h2>
+
+<p>Tambah kepada penginapan TBC:</p>
+
+<ul>
+<li>Sarapan warisan: Hidangan Nyonya TBC (RM50/orang)</li>
+<li>Lawatan rumah kedai: Sejarah keluarga + seni bina (RM80/kumpulan)</li>
+<li>Lawatan pasar: Jalan Jonker snek TBC (RM120/orang)</li>
+</ul>
+
+<p><strong>WhatsApp +60166996688</strong> untuk memulakan strategi pengalaman budaya hartanah anda.</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+    <BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

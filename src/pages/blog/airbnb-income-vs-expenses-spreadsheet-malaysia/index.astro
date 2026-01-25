@@ -1,0 +1,722 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Airbnb Income vs Expenses Spreadsheet Malaysia (Free Download Template)";
+const description = "Track your Airbnb profitability with our free spreadsheet template. Calculate real ROI after expenses. Includes RM amounts for Melaka properties. Download now and optimize your rental income.";
+const image = "/images/blog/airbnb-income-vs-expenses-spreadsheet-malaysia.jpg";
+const date = "2025-01-24";
+const category = "financial-roi";
+const language = "en";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Airbnb Income vs Expenses Spreadsheet: Calculate Your Real Profitability</h1>
+
+<h2>Are You Actually Making Money on Airbnb? (Or Just THINKING You Are?)</h2>
+
+<p>Many Melaka property owners see RM10,000 in gross annual revenue and think, "Great! I'm earning money from Airbnb!"</p>
+
+<p>But then come the deductions:</p>
+<ul>
+<li>Management fees</li></ul>
+
+<ul>
+<li>Cleaning costs</li></ul>
+
+<ul>
+<li>Platform commissions</li></ul>
+
+<ul>
+<li>Maintenance expenses</li></ul>
+
+<ul>
+<li>Utility bills</li></ul>
+
+<ul>
+<li>Condo maintenance fees</li></ul>
+
+<ul>
+<li>Supplies and essentials</li></ul>
+
+<strong>The real profit? Often 40-50% less than the gross revenue.</strong>
+
+<p>Without proper tracking, you're flying blind. You don't know:</p>
+<ul>
+<li>Your true profit margin</li></ul>
+
+<ul>
+<li>Which expenses are eating your income</li></ul>
+
+<ul>
+<li>Your actual ROI on the property</li></ul>
+
+<ul>
+<li>How you compare to market benchmarks</li></ul>
+
+<ul>
+<li>Where to optimize for better returns</li></ul>
+
+<p>This article provides a complete income vs. expenses framework, plus a downloadable spreadsheet template to track your Airbnb profitability accurately.</p>
+
+<h2>The 5-Step Profitability Framework</h2>
+
+<h3>Step 1: Calculate Gross Revenue (Total Income)</h3>
+
+<strong>Gross Revenue = All Money IN Before Any Deductions</strong>
+
+<strong>Revenue Sources to Track:</strong>
+
+<strong>Common mistake:</strong> Only tracking Airbnb income and missing other platforms (20-40% of revenue).
+
+<h3>Step 2: Track Platform Deductions</h3>
+
+<strong>Platform Fees (You Pay to Booking Platforms)</strong>
+
+<strong>Key insight:</strong> Platform fees are unavoidable (this is how they make money). Build this 10% into your pricing strategy.
+
+<h3>Step 3: Calculate Operating Expenses</h3>
+
+<strong>Fixed Monthly Costs (Regardless of Occupancy)</strong>
+
+<strong>Variable Costs (Scale with Occupancy)</strong>
+
+<strong>Maintenance & Repairs (Budget 5-10% of Revenue)</strong>
+
+<strong>Management Fees (If You Hire a Manager)</strong>
+
+<strong>Important:</strong> Commission-based managers also add markups on cleaning (30-50%), maintenance (15-25%), and supplies (15-30%). These can add another RM2,000-4,000 in hidden costs.
+
+<h3>Step 4: Calculate Net Profit</h3>
+
+<strong>The Profit Formula:</strong>
+
+<p><code></p>
+<p>GROSS REVENUE</p>
+<ul>
+<li>Platform Fees</li></ul>
+
+<ul>
+<li>Fixed Costs</li></ul>
+
+<ul>
+<li>Variable Costs</li></ul>
+
+<ul>
+<li>Maintenance & Repairs</li></ul>
+
+<ul>
+<li>Management Fees</li></ul>
+
+<p>= NET PROFIT</p>
+
+<strong>Real Example: 2-Bedroom Condo in Melaka</strong>
+
+<strong>Wait, that's a loss! What happened?</strong>
+
+<p>This example shows a 15% occupancy rate (78 nights/year). At this occupancy, fixed costs eat all profit.</p>
+
+<strong>Same Property at 25% Occupancy (our average):</strong>
+
+<strong>Fixed costs are too high for this property.</strong> This is why pricing strategy matters.
+
+<strong>Same Property at 25% Occupancy with BETTER PRICING:</strong>
+
+<strong>Now it's profitable.</strong> The difference: RM50/night better pricing = RM6,500 more revenue = profitable.
+
+<h3>Step 5: Calculate ROI (Return on Investment)</h3>
+
+<strong>ROI Formula:</strong>
+
+<p>(Annual Net Profit ÷ Total Property Investment) × 100 = ROI %</p>
+
+<strong>Example:</strong>
+
+<strong>Property Investment:</strong>
+<ul>
+<li>Purchase price: RM250,000</li></ul>
+
+<ul>
+<li>Renovation/furnishing: RM40,000</li></ul>
+
+<ul>
+<li><strong>Total investment: RM290,000</strong></li></ul>
+
+<strong>ROI Calculation:</strong>
+<p>(RM2,350 net profit ÷ RM290,000 investment) × 100 = 0.8% ROI</p>
+
+<strong>That's terrible!</strong> You'd earn more in a fixed deposit.
+
+<strong>How to Improve ROI:</strong>
+
+<strong>Option 1: Increase Occupancy</strong>
+<ul>
+<li>From 25% to 35% (our top performers)</li></ul>
+
+<ul>
+<li>Revenue: RM29,900 → RM41,860</li></ul>
+
+<ul>
+<li>Net profit: RM2,350 → RM13,310</li></ul>
+
+<ul>
+<li><strong>ROI: 4.6%</strong> (better, still not great)</li></ul>
+
+<strong>Option 2: Better Pricing + Higher Occupancy</strong>
+<ul>
+<li>From RM230/night to RM260/night (dynamic pricing)</li></ul>
+
+<ul>
+<li>35% occupancy</li></ul>
+
+<ul>
+<li>Revenue: RM47,320</li></ul>
+
+<ul>
+<li>Net profit: RM18,770</li></ul>
+
+<ul>
+<li><strong>ROI: 6.5%</strong> (getting better)</li></ul>
+
+<strong>Option 3: Lower Fixed Costs</strong>
+<ul>
+<li>Choose a condo with RM200/month maintenance (vs. RM400)</li></ul>
+
+<ul>
+<li>Annual fixed costs: RM9,600 → RM6,600</li></ul>
+
+<ul>
+<li>Savings: RM3,000/year</li></ul>
+
+<ul>
+<li>With better pricing + 35% occupancy: Net profit RM21,770</li></ul>
+
+<ul>
+<li><strong>ROI: 7.5%</strong> (respectable)</li></ul>
+
+<strong>Key lesson:</strong> Property selection matters as much as management.
+
+<h2>Download Our Free Spreadsheet Template</h2>
+
+<strong>Ready to track your Airbnb profitability accurately?</strong>
+
+<p>Our spreadsheet template includes:</p>
+
+<p>✅ <strong>Multi-platform revenue tracking</strong> (Airbnb, Booking.com, Agoda, VRBO, Expedia)</p>
+<p>✅ <strong>Automatic expense categorization</strong> (fixed, variable, maintenance)</p>
+<p>✅ <strong>ROI calculator</strong> (see your true return)</p>
+<p>✅ <strong>Month-over-month comparison</strong> (track trends)</p>
+<p>✅ <strong>Market benchmarks</strong> (compare to Melaka averages)</p>
+<p>✅ <strong>Profitability indicators</strong> (green = good, yellow = warning, red = problem)</p>
+
+<strong>Get the template:</strong>
+
+<strong>Enter your phone number and we'll WhatsApp you the free spreadsheet.</strong>
+
+<h2>Expense Categories Explained</h2>
+
+<h3>Category 1: Fixed Costs (Pay Every Month, Regardless of Occupancy)</h3>
+
+<strong>Condo Maintenance Fee</strong>
+<ul>
+<li><strong>What:</strong> Building maintenance, security, common area cleaning</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM200-500/month depending on condo</li></ul>
+
+<ul>
+<li><strong>Impact:</strong> Must be paid even with zero occupancy</li></ul>
+
+<ul>
+<li><strong>Optimization:</strong> Choose condos with lower fees when purchasing</li></ul>
+
+<strong>Assessment Fees</strong>
+<ul>
+<li><strong>What:</strong> Local council assessment tax</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM50-150/month</li></ul>
+
+<ul>
+<li><strong>Impact:</strong> Fixed by local council, can't optimize</li></ul>
+
+<strong>Sinking Fund</strong>
+<ul>
+<li><strong>What:</strong> Building repairs reserve</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM50-100/month</li></ul>
+
+<ul>
+<li><strong>Impact:</strong> Required by strata, non-negotiable</li></ul>
+
+<strong>Insurance</strong>
+<ul>
+<li><strong>What:</strong> Fire insurance, property insurance</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM100-200/month</li></ul>
+
+<ul>
+<li><strong>Impact:</strong> Essential protection, don't skip</li></ul>
+
+<strong>Quit Rent & Assessment</strong>
+<ul>
+<li><strong>What:</strong> Annual land tax (semi-annual payment)</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM100-200/year</li></ul>
+
+<ul>
+<li><strong>Impact:</strong> Fixed by property size</li></ul>
+
+<strong>Internet</strong>
+<ul>
+<li><strong>What:</strong> High-speed internet for guests</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM100-200/month</li></ul>
+
+<ul>
+<li><strong>Impact:</strong> Essential amenity, guests expect it</li></ul>
+
+<h3>Category 2: Variable Costs (Scale with Number of Stays)</h3>
+
+<strong>Professional Cleaning</strong>
+<ul>
+<li><strong>What:</strong> After every guest checkout</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM80-120/stay</li></ul>
+
+<ul>
+<li><strong>Frequency:</strong> After every stay (can't skip)</li></ul>
+
+<ul>
+<li><strong>Optimization:</strong> In-house cleaning (no markup) vs. outsourced (30-50% markup)</li></ul>
+
+<strong>Supplies</strong>
+<ul>
+<li><strong>What:</strong> Toilet paper, soap, shampoo, linens, towels</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM30-50/stay</li></ul>
+
+<ul>
+<li><strong>Optimization:</strong> Bulk buying, quality balance</li></ul>
+
+<strong>Utilities</strong>
+<ul>
+<li><strong>What:</strong> Electricity, water</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM20-40/stay</li></ul>
+
+<ul>
+<li><strong>Variable:</strong> Higher in summer (AC use), lower in rainy season</li></ul>
+
+<ul>
+<li><strong>Optimization:</strong> Energy-efficient appliances, LED lights</li></ul>
+
+<strong>Wear & Tear Reserve</strong>
+<ul>
+<li><strong>What:</strong> Furniture, appliance replacement fund</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM50/stay (recommended)</li></ul>
+
+<ul>
+<li><strong>Purpose:</strong> Replace items every 2-3 years</li></ul>
+
+<ul>
+<li><strong>Impact:</strong> Prevents large unexpected expenses</li></ul>
+
+<h3>Category 3: Maintenance & Repairs (Budget Annually)</h3>
+
+<strong>Routine Maintenance</strong>
+<ul>
+<li><strong>What:</strong> AC servicing, pest control, minor repairs</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM500-1,000/year</li></ul>
+
+<ul>
+<li><strong>Frequency:</strong> Quarterly AC service, monthly pest control</li></ul>
+
+<ul>
+<li><strong>Impact:</strong> Prevents costly repairs later</li></ul>
+
+<strong>Major Repairs</strong>
+<ul>
+<li><strong>What:</strong> Appliance replacement, plumbing issues, electrical</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM500-1,500/year (varies)</li></ul>
+
+<ul>
+<li><strong>Unpredictable:</strong> Some years zero, some years RM5,000+</li></ul>
+
+<ul>
+<li><strong>Strategy:</strong> Budget RM1,000-1,500/year, carry forward surplus</li></ul>
+
+<strong>Replacements</strong>
+<ul>
+<li><strong>What:</strong> Furniture, mattress, linens, towels</li></ul>
+
+<ul>
+<li><strong>Cost:</strong> RM300-800/year</li></ul>
+
+<ul>
+<li><strong>Schedule:</strong> Mattress every 5 years, linens every 2 years</li></ul>
+
+<ul>
+<li><strong>Impact:</strong> Guest satisfaction (old mattress = bad reviews)</li></ul>
+
+<h2>Melaka Market Benchmarks (How You Should Be Performing)</h2>
+
+<strong>By Property Type:</strong>
+
+<h3>Studio Units (400-600 sqft)</h3>
+
+<h3>2-Bedroom Units (800-1,000 sqft)</h3>
+
+<h3>3-Bedroom Units (1,000+ sqft)</h3>
+
+<strong>If you're in "Poor" or below "Average" category, your property is underperforming.</strong> There's significant room for improvement.
+
+<h2>Common Profitability Mistakes (And How to Avoid Them)</h2>
+
+<h3>Mistake #1: Not Tracking All Expenses</h3>
+
+<strong>The problem:</strong> You only track big expenses (management fee, cleaning) and miss small ones (supplies, utilities, minor repairs).
+
+<strong>Impact:</strong> You think you're earning RM1,500/month, but actual profit is RM900.
+
+<strong>Solution:</strong> Use our spreadsheet template. Track EVERY expense, no matter how small.
+
+<h3>Mistake #2: Pricing Too Low</h3>
+
+<strong>The problem:</strong> You underprice to attract more guests, but occupancy doesn't increase enough to offset lower rates.
+
+<strong>Example:</strong>
+<ul>
+<li>At RM180/night: 20% occupancy = RM13,140/year revenue</li></ul>
+
+<ul>
+<li>At RM230/night: 15% occupancy = RM12,568/year revenue</li></ul>
+
+<ul>
+<li><strong>Lower occupancy at higher price = MORE revenue</strong></li></ul>
+
+<strong>Solution:</strong> Use dynamic pricing. Adjust rates based on demand, not gut feeling.
+
+<h3>Mistake #3: Choosing High-Maintenance Properties</h3>
+
+<strong>The problem:</strong> You buy a condo with RM500/month maintenance fees.
+
+<strong>Impact:</strong>
+<ul>
+<li>Annual fixed cost: RM6,000 more than low-maintenance condo</li></ul>
+
+<ul>
+<li>Must earn RM6,000 more just to break even</li></ul>
+
+<ul>
+<li>Takes 2-3 years to recover higher purchase price</li></ul>
+
+<strong>Solution:</strong> When purchasing, factor in ALL fixed costs, not just price per sqft.
+
+<h3>Mistake #4: Single-Platform Listing</h3>
+
+<strong>The problem:</strong> You're only listed on Airbnb.
+
+<strong>Impact:</strong> You're missing 40-50% of potential bookings.
+
+<strong>Solution:</strong> List on minimum 3 platforms (Airbnb, Booking.com, Agoda). Ideally 5 platforms.
+
+<h3>Mistake #5: Ignoring Seasonal Trends</h3>
+
+<strong>The problem:</strong> Same price year-round.
+
+<strong>Reality:</strong>
+<ul>
+<li>Peak seasons (school holidays, CNY, weekends): Can charge 30-50% more</li></ul>
+
+<ul>
+<li>Low seasons (some weekdays, rainy months): May need to discount 20-30%</li></ul>
+
+<strong>Solution:</strong> Dynamic pricing that adjusts for demand.
+
+<h3>Mistake #6: Skipping Preventive Maintenance</h3>
+
+<strong>The problem:</strong> Not servicing AC, not replacing worn items.
+
+<strong>Impact:</strong>
+<ul>
+<li>Poor guest reviews ("AC wasn't cold," "mattress was lumpy")</li></ul>
+
+<ul>
+<li>Lower occupancy due to bad reviews</li></ul>
+
+<ul>
+<li>Expensive emergency repairs (RM3,000+ vs. RM300 annual service)</li></ul>
+
+<strong>Solution:</strong> Budget RM1,000-1,500/year for preventive maintenance.
+
+<h2>Break-Even Analysis: When Does Airbnb Become Profitable?</h2>
+
+<strong>The Break-Even Formula:</strong>
+
+<p>Fixed Costs (annual) ÷ (Average Daily Rate × Occupancy Rate × 365 - Variable Costs per Night)</p>
+<p>= Break-Even Point (in nights)</p>
+
+<strong>Example: 2-Bedroom Condo</strong>
+
+<strong>Fixed Costs:</strong> RM9,600/year
+<strong>Variable Costs:</strong> RM180/stay
+<strong>Average Stay:</strong> 3 nights
+<strong>Variable Cost per Night:</strong> RM60 (RM180 ÷ 3)
+<strong>Average Daily Rate:</strong> RM230
+
+<strong>Calculation:</strong>
+<p>RM9,600 ÷ (RM230 - RM60) = RM9,600 ÷ RM170 = 56 nights</p>
+
+<strong>This property needs 56 booked nights per year to break even.</strong>
+
+<strong>At 25% occupancy:</strong> 91 nights = profitable
+<strong>At 15% occupancy:</strong> 55 nights = break even
+<strong>At 10% occupancy:</strong> 37 nights = loss
+
+<strong>Key insight:</strong> Low occupancy properties often lose money. 20%+ occupancy needed for profitability.
+
+<h2>How to Improve Your Profitability</h2>
+
+<h3>Strategy 1: Increase Occupancy</h3>
+
+<strong>Target:</strong> 25%+ occupancy (Melaka market average: 19-22%)
+
+<strong>How:</strong>
+<ul>
+<li>Professional photography (better listing visibility)</li></ul>
+
+<ul>
+<li>Multi-platform listing (5 platforms = 60% more bookings)</li></ul>
+
+<ul>
+<li>Dynamic pricing (adjust for demand automatically)</li></ul>
+
+<ul>
+<li>responsive guest response (better ranking)</li></ul>
+
+<ul>
+<li>Quality guest experience (better reviews = more bookings)</li></ul>
+
+<strong>Typical improvement:</strong> From 15% to 25% occupancy = +RM4,000-8,000/year revenue
+
+<h3>Strategy 2: Optimize Pricing</h3>
+
+<strong>Target:</strong> RM200-300/night depending on unit size
+
+<strong>How:</strong>
+<ul>
+<li>Use dynamic pricing tools (adjust daily based on demand)</li></ul>
+
+<ul>
+<li>Monitor competitor pricing</li></ul>
+
+<ul>
+<li>Charge premiums for peak periods (+30-50%)</li></ul>
+
+<ul>
+<li>Offer discounts for low periods (-20-30%)</li></ul>
+
+<ul>
+<li>Minimum stay requirements (2-3 nights minimum)</li></ul>
+
+<strong>Typical improvement:</strong> +15-25% average daily rate = +RM2,000-5,000/year revenue
+
+<h3>Strategy 3: Reduce Fixed Costs</h3>
+
+<strong>Target:</strong> Keep fixed costs under RM8,000/year
+
+<strong>How:</strong>
+<ul>
+<li>Choose condos with lower maintenance fees (RM200-300/month vs. RM400-500)</li></ul>
+
+<ul>
+<li>Negotiate insurance rates annually</li></ul>
+
+<ul>
+<li>Opt for cost-effective internet packages</li></ul>
+
+<ul>
+<li>Choose properties with reasonable assessment fees</li></ul>
+
+<strong>Typical improvement:</strong> Save RM1,500-3,000/year
+
+<h3>Strategy 4: Control Variable Costs</h3>
+
+<strong>Target:</strong> RM200 or less per stay
+
+<strong>How:</strong>
+<ul>
+<li>In-house cleaning (no markup)</li></ul>
+
+<ul>
+<li>Bulk buying supplies</li></ul>
+
+<ul>
+<li>Energy-efficient appliances</li></ul>
+
+<ul>
+<li>Quality furniture that lasts longer</li></ul>
+
+<strong>Typical improvement:</strong> Save RM1,000-2,000/year
+
+<h3>Strategy 5: Switch to Flat-Fee Management</h3>
+
+<strong>Target:</strong> Reduce management cost from 30%+ to 20-25% effective
+
+<strong>How:</strong>
+<ul>
+<li>Choose flat-fee manager (RM200-300/month for Parkland)</li></ul>
+
+<ul>
+<li>Or negotiate custom pricing with transparency</li></ul>
+
+<ul>
+<li>Avoid commission + markups model</li></ul>
+
+<strong>Typical improvement:</strong> Save RM1,500-4,000/year
+
+<h2>Real Example: Optimizing an Underperforming Property</h2>
+
+<strong>Before Optimization (Imperio Residence, 2-Bedroom):</strong>
+
+<strong>After Optimization (iHousing):</strong>
+
+<strong>New Performance:</strong>
+
+<strong>Wait, still a loss? What's wrong?</strong>
+
+<strong>Fixed costs are too high for this property.</strong> RM10,200/year in fixed costs (mostly condo maintenance fee of RM600/month) is the problem.
+
+<strong>The real lesson:</strong> Property selection matters more than management.
+
+<strong>Better Property Choice (Melaka Raya, lower maintenance):</strong>
+
+<strong>Even with better property selection, this unit is marginal.</strong>
+
+<strong>Best approach:</strong> Choose a different property or use for long-term rental instead.
+
+<h2>Ready to Track Your Profitability?</h2>
+
+<strong>Download our free spreadsheet template:</strong>
+
+<strong>Enter your phone number and we'll WhatsApp you the complete Excel template.</strong>
+
+<strong>What's included:</strong>
+<ul>
+<li>Multi-platform revenue tracker</li></ul>
+
+<ul>
+<li>Expense categorization (fixed, variable, maintenance)</li></ul>
+
+<ul>
+<li>Automatic ROI calculator</li></ul>
+
+<ul>
+<li>Month-over-month comparison</li></ul>
+
+<ul>
+<li>Market benchmark comparison</li></ul>
+
+<ul>
+<li>Profitability indicators (color-coded)</li></ul>
+
+<ul>
+<li>12-month projection</li></ul>
+
+<strong>How to use it:</strong>
+<li>Enter your property details</li>
+<li>Input your revenue (all platforms)</li>
+<li>Track expenses as they occur</li>
+<li>See automatic calculations</li>
+<li>Compare to benchmarks</li>
+<li>Identify optimization opportunities</li>
+
+<strong>Regular tracking helps you:</strong>
+<ul>
+<li>Spot problems early (occupancy dropping, costs rising)</li></ul>
+
+<ul>
+<li>Make informed decisions (keep or sell property)</li></ul>
+
+<ul>
+<li>Optimize pricing (are you underpriced?)</li></ul>
+
+<ul>
+<li>Plan for expenses (maintenance, replacements)</li></ul>
+
+<ul>
+<li>Calculate true ROI (not just gross revenue)</li></ul>
+
+<h2>About iHousing</h2>
+
+<p>We're Melaka's leading Airbnb property management company:</p>
+
+<ul>
+<li><strong>8 years experience</strong> in Melaka market</li></ul>
+
+<ul>
+<li><strong>100+ properties</strong> under management</li></ul>
+
+<ul>
+<li><strong>60%+ average occupancy</strong> (vs. market 19-22%)</li></ul>
+
+<ul>
+<li><strong>5-platform listing</strong> strategy</li></ul>
+
+<ul>
+<li><strong>In-house cleaning team</strong> (no markups)</li></ul>
+
+<ul>
+<li><strong>Transparent pricing</strong> (no hidden fees)</li></ul>
+
+<ul>
+<li><strong>Monthly detailed reports</strong> (track every expense)</li></ul>
+
+<p>We help property owners achieve:</p>
+<ul>
+<li><strong>25-35% occupancy</strong> (above market average)</li></ul>
+
+<ul>
+<li><strong>RM200-300/night</strong> average daily rate</li></ul>
+
+<ul>
+<li><strong>35-50% net profit margins</strong></li></ul>
+
+<ul>
+<li><strong>6-10% ROI</strong> on well-selected properties</li></ul>
+
+<strong>For Parkland Avenue by the Sea:</strong>
+<p>Exclusive flat fee pricing: RM200-300/month</p>
+
+<strong>For All Other Condos:</strong>
+<p>WhatsApp us for custom pricing quote</p>
+
+<strong>Take Action Today:</strong>
+
+<strong>Get your free profitability spreadsheet. WhatsApp us now.</strong>
+
+<p>Stop guessing about your Airbnb income. Start tracking accurately, identify problems early, and optimize for maximum profitability. Your spreadsheet is ready - just ask!</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

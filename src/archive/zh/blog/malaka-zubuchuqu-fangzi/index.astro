@@ -1,0 +1,394 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "马六甲租不出去的房子怎么办？从长期租客困扰到Airbnb自由";
+const description = "您的马六甲房产租不出去吗？了解为什么长期租赁模式在马六甲行不通，以及Airbnb短租如何解决租客不付房租、损坏房产、难以驱赶等问题。";
+const image = "/images/blog/malaka-zubuchuqu-fangzi.jpg";
+const date = "2025-01-23";
+const category = "problem-aware";
+const language = "zh";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>马六甲租不出去的房子怎么办？从长期租客困扰到Airbnb自由</h1>
+        <h2>每个房东的噩梦：为什么您的房子租不出去？</h2>
+        <p>您可能经历过这样的场景：</p>
+        <p>好不容易找到一个"看起来还不错"的租客，签了12个月的租约。前三个月相安无事，然后问题开始出现：</p>
+        <ul>
+        <li>租金开始拖延，从每月1号拖到15号，再到下个月</li>
+        <li>微信不回、电话不接</li>
+        <li>当您终于联系上时，"下个月一定付"成了永远的承诺</li>
+        <li>更糟糕的是——租客拒绝搬走，而您却无能为力</li>
+        </ul>
+        <strong>这不是您的错。</strong> 这是马来西亚房东面临的系统性问题。
+        <p>根据马来西亚房地产法庭（Tribunal for Homebuyers）的数据，2024年有超过15,000起租客纠纷案件。</p>
+        <p>平均驱逐时间：<strong>6-18个月</strong></p>
+        <p>平均法律费用：<strong>RM3,000-10,000+</strong></p>
+        <p>平均损失租金：<strong>RM10,000-30,000+</strong></p>
+        <p>而最令人沮丧的是什么？警察说这是"民事纠纷"，他们管不了。</p>
+        <h2>马六甲租房市场的7大痛点</h2>
+        <h3>痛点1：找不到租客</h3>
+        <p>马六甲长期租赁市场的现实：</p>
+        <ul>
+        <li>新公寓供应过剩</li>
+        <li>需求增长跟不上供应</li>
+        <li>平均空置时间：3-6个月</li>
+        </ul>
+        <h3>痛点2：租金拖欠（最常见）</h3>
+        <p>租客不付房租的借口：</p>
+        <ul>
+        <li>"下个月一定付"</li>
+        <li>"公司还没发薪水"</li>
+        <li>"家里有急事"</li>
+        <li>直接失联</li>
+        </ul>
+        <h3>痛点3：房产损坏</h3>
+        <ul>
+        <li>墙壁涂鸦</li>
+        <li>地板划痕</li>
+        <li>设备损坏</li>
+        <li>"自然磨损"vs 故意破坏的界限模糊</li>
+        </ul>
+        <h3>痛点4：驱逐困难</h3>
+        <p>马来西亚驱逐流程：</p>
+        <code>\`</code>
+        <ol>
+        <li>发出通知（14天）</li>
+        <li>等待回复（通常无）</li>
+        <li>向法庭申请（30-60天）</li>
+        <li>法庭听证（排队2-4个月）</li>
+        <li>判决执行（再等30天）</li>
+        <li>强制驱逐（需要法庭令）</li>
+        </ol>
+        <code>\`</code>
+        <strong>总时间：6-18个月</strong>
+        <h3>痛点5：水电费拖欠</h3>
+        <p>租客走后，您发现：</p>
+        <ul>
+        <li>水电费未缴（RM500-2,000）</li>
+        <li>需要您垫付才能过户</li>
+        <li>讨债无门</li>
+        </ul>
+        <h3>痛点6：非法转租</h3>
+        <p>您的租客：</p>
+        <ul>
+        <li>未经同意把房间转租给3-4个人</li>
+        <li>收取租金却付给您原价</li>
+        <li>超员居住损坏设施</li>
+        </ul>
+        <h3>痛点7：提前退租</h3>
+        <p>合同签了12个月：</p>
+        <ul>
+        <li>租客住3个月就搬走</li>
+        <li>押金不够抵损失</li>
+        <li>重新找人又花3个月</li>
+        </ul>
+        <h2>为什么这些问题在马六甲特别严重？</h2>
+        <h3>市场结构问题</h3>
+        <strong>1. 房地产供过于求</strong>
+        <ul>
+        <li>马六甲近年大量新公寓落成</li>
+        <li>长租市场消化不良</li>
+        <li>导致租客有更多选择权</li>
+        </ul>
+        <strong>2. 经济环境</strong>
+        <ul>
+        <li>工资增长跟不上房价</li>
+        <li>租客支付能力有限</li>
+        <li>拖欠租金可能性更高</li>
+        </ul>
+        <strong>3. 法律保护偏向租客</strong>
+        <ul>
+        <li>驱逐程序复杂</li>
+        <li>法庭积压案件</li>
+        <li>房东处于弱势地位</li>
+        </ul>
+        <h2>马六甲长期租赁 vs Airbnb短租：根本性差异</h2>
+        <h3>关键区别对比表</h3>
+        <table>
+          <thead>
+            <tr><th>方面</th><th>长期租客</th><th>Airbnb房客</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>**承诺期**</td><td>12个月以上</td><td>1-7天</td></tr>
+            <tr><td>**付款问题**</td><td>月度拖欠可能</td><td>预付全款</td></tr>
+            <tr><td>**损坏风险**</td><td>高（日常居住）</td><td>低（短期停留）</td></tr>
+            <tr><td>**驱逐困难**</td><td>法律噩梦</td><td>自动退房</td></tr>
+            <tr><td>**收入**</td><td>固定RM1,500-2,500</td><td>灵活RM2,500-4,000</td></tr>
+            <tr><td>**控制权**</td><td>被锁死</td><td>您选择可用日期</td></tr>
+          </tbody>
+        </table>
+        <h3>为什么Airbnb房客更"安全"？</h3>
+        <strong>1. 预付款保证</strong>
+        <ul>
+        <li>Airbnb平台在入住前扣款</li>
+        <li>除非入住后问题，否则自动放款</li>
+        <li>您从不需要追讨租金</li>
+        </ul>
+        <strong>2. 身份验证</strong>
+        <ul>
+        <li>所有房客需实名注册</li>
+        <li>信用卡验证</li>
+        <li>支付宝/微信支付绑定</li>
+        <li>评价系统双重保护</li>
+        </ul>
+        <strong>3. 短期性质</strong>
+        <ul>
+        <li>1-7天住宿</li>
+        <li>自动退房，无需驱赶</li>
+        <li>产生问题立即结束</li>
+        </ul>
+        <strong>4. 保险保障</strong>
+        <ul>
+        <li>Airbnb平台提供房东保障</li>
+        <li>最高RM1,000,000损坏赔偿</li>
+        <li>中国游客尤其守规矩</li>
+        </ul>
+        <h2>真实案例：从租客噩梦到Airbnb自由</h2>
+        <h3>案例A：林先生的经历</h3>
+        <strong>背景：</strong>
+        <ul>
+        <li>公寓：The Shore Residence，两房</li>
+        <li>原计划：长期出租</li>
+        </ul>
+        <strong>租客噩梦：</strong>
+        <code>\`</code>
+        <p>租客1：付了3个月租金后失联</p>
+        <p>驱逐过程：9个月</p>
+        <p>损失：RM15,000（未付租金+法律费用+维修）</p>
+        <p>租客2：提前2个月退租</p>
+        <p>损失：RM5,000（空置+重新寻找成本）</p>
+        <p>总损失：RM20,000</p>
+        <p>时间成本：14个月</p>
+        <code>\`</code>
+        <strong>转型Airbnb后：</strong>
+        <code>\`</code>
+        <p>托管给iHousing</p>
+        <p>首月收入：RM2,100</p>
+        <p>年度收入：RM9,200</p>
+        <p>入住率：19%</p>
+        <p>零租客问题</p>
+        <code>\`</code>
+        <strong>结果：</strong> 18个月后，林先生不仅追回了之前损失，还开始盈利。
+        <h3>案例B：陈女士的教训</h3>
+        <strong>背景：</strong>
+        <ul>
+        <li>公寓：Silverscape Residence，三房</li>
+        <li>自行管理长租</li>
+        </ul>
+        <strong>租客问题：</strong>
+        <ul>
+        <li>租客拖欠水电费RM1,800</li>
+        <li>房子被转租给4个人</li>
+        <li>墙壁多处涂鸦</li>
+        <li>驱逐过程：7个月</li>
+        </ul>
+        <strong>转型Airbnb：</strong>
+        <ul>
+        <li>专业托管</li>
+        <li>水电费包含在房费中</li>
+        <li>每次退房检查</li>
+        <li>年收入：RM11,500</li>
+        </ul>
+        <h2>马六甲Airbnb：为什么在这里特别有效？</h2>
+        <h3>马六甲的独特优势</h3>
+        <strong>1. 联合国教科文组织世界遗产</strong>
+        <ul>
+        <li>游客需求持续</li>
+        <li>周末度假热点</li>
+        <li>文化吸引力</li>
+        </ul>
+        <strong>2. 地理位置优势</strong>
+        <code>\`</code>
+        <p>吉隆坡 → 马六甲：2小时车程</p>
+        <p>新加坡 → 马六甲：3.5小时车程</p>
+        <p>周末客源充足</p>
+        <code>\`</code>
+        <strong>3. 低竞争，高需求</strong>
+        <ul>
+        <li>Airbnb房源相比吉隆坡少</li>
+        <li>需求稳定增长</li>
+        <li>更容易获得高入住率</li>
+        </ul>
+        <strong>4. 法规友好</strong>
+        <ul>
+        <li>马六甲尚无特定短租限制</li>
+        <li>政府支持旅游业</li>
+        <li>compared to 槟城/雪兰莪</li>
+        </ul>
+        <h3>马六甲Airbnb收入数据（2025）</h3>
+        <table>
+          <thead>
+            <tr><th>区域</th><th>平均日费率</th><th>年度收入</th><th>入住率</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>峇峇娘惹考古区</td><td>RM200-300</td><td>RM10,000-15,000</td><td>20-24%</td></tr>
+            <tr><td>马六甲市中心</td><td>RM150-250</td><td>RM8,000-12,000</td><td>19-23%</td></tr>
+            <tr><td>爱极乐（Ayer Keroh）</td><td>RM100-180</td><td>RM6,000-9,000</td><td>18-22%</td></tr>
+          </tbody>
+        </table>
+        <h2>"但我不知道怎么开始做Airbnb"</h2>
+        <p>好消息是——<strong>您不需要自己知道</strong>。</p>
+        <h3>专业托管服务（如iHousing）</h3>
+        <p>我们提供<strong>全托管</strong>Airbnb服务：</p>
+        <strong>服务流程：</strong>
+        <code>\`</code>
+        <p>第1步：免费咨询</p>
+        <ul>
+        <li>分析您的房产</li>
+        <li>收入潜力评估</li>
+        <li>定制方案建议</li>
+        </ul>
+        <p>第2步：房产准备</p>
+        <ul>
+        <li>设计建议</li>
+        <li>装修协调</li>
+        <li>家具采购</li>
+        </ul>
+        <p>第3步：上线运营</p>
+        <ul>
+        <li>专业摄影</li>
+        <li>Listing创建</li>
+        <li>多平台发布</li>
+        </ul>
+        <p>第4步：日常管理</p>
+        <ul>
+        <li>客人沟通</li>
+        <li>清洁安排</li>
+        <li>维修处理</li>
+        </ul>
+        <p>第5步：收入分配</p>
+        <ul>
+        <li>月度报告</li>
+        <li>透明结算</li>
+        <li>收入转账</li>
+        </ul>
+        <code>\`</code>
+        <h3>托管模式对比</h3>
+        <table>
+          <thead>
+            <tr><th>服务项目</th><th>其他公司</th><th>iHousing</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>管理费</td><td>20-30%佣金</td><td>WhatsApp咨询定制报价</td></tr>
+            <tr><td>清洁费</td><td>外包+30%差价</td><td>自营团队，无差价</td></tr>
+            <tr><td>维修费</td><td>外包+20%差价</td><td>透明成本</td></tr>
+            <tr><td>平台数量</td><td>仅Airbnb</td><td>5平台同时发布</td></tr>
+            <tr><td>定价</td><td>静态定价</td><td>AI动态优化</td></tr>
+          </tbody>
+        </table>
+        <p>> <strong>重要提示：</strong> 具体费用取决于您的公寓类型、位置和状况。WhatsApp联系我们获取个性化报价。</p>
+        <h2>从长期租客到Airbnb：转型步骤</h2>
+        <h3>评估您的房产适合性</h3>
+        <strong>适合Airbnb的房产特征：</strong>
+        <ul>
+        <li>✅ 位于马六甲市区或旅游区</li>
+        <li>✅ 交通便利（靠近景点或高速）</li>
+        <li>✅ 有基本设施（空调、热水、WiFi）</li>
+        <li>✅ 管理层允许短租</li>
+        </ul>
+        <strong>需要改善的方面：</strong>
+        <ul>
+        <li>家具更新</li>
+        <li>装修升级</li>
+        <li>设施完善</li>
+        </ul>
+        <h3>转型时间线</h3>
+        <table>
+          <thead>
+            <tr><th>阶段</th><th>时间</th><th>工作</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>评估咨询</td><td>1-2天</td><td>房产分析、收入预估</td></tr>
+            <tr><td>准备阶段</td><td>2-4周</td><td>装修、家具采购</td></tr>
+            <tr><td>上线运营</td><td>1周</td><td>摄影、Listing创建</td></tr>
+            <tr><td>首单入住</td><td>2-4周</td><td>平台审核、首单预订</td></tr>
+          </tbody>
+        </table>
+        <strong>总时间：1-2个月</strong>
+        <h2>停止租客噩梦的3个步骤</h2>
+        <h3>步骤1：评估现状</h3>
+        <ul>
+        <li>当前损失多少？</li>
+        <li>房产适合Airbnb吗？</li>
+        <li>目标收入是多少？</li>
+        </ul>
+        <h3>步骤2：咨询专业人士</h3>
+        <ul>
+        <li>获取免费分析</li>
+        <li>了解真实成本</li>
+        <li>比较托管方案</li>
+        </ul>
+        <h3>步骤3：采取行动</h3>
+        <ul>
+        <li>选择托管公司</li>
+        <li>准备房产</li>
+        <li>上线运营</li>
+        </ul>
+        <h2>免费咨询您的房产转型方案</h2>
+        <p>如果您正在为马六甲的租客问题困扰，我们理解您的痛苦。</p>
+        <strong>是时候换个方式了。</strong>
+        <h3>WhatsApp联系我们，获取：</h3>
+        <strong>1. 房产价值评估</strong>
+        <ul>
+        <li>位置分析</li>
+        <li>单位类型匹配</li>
+        <li>当前市场数据</li>
+        </ul>
+        <strong>2. 收入潜力预测</strong>
+        <ul>
+        <li>Airbnb收入预估</li>
+        <li>长租 vs Airbnb对比</li>
+        <li>ROI计算</li>
+        </ul>
+        <strong>3. 转型方案建议</strong>
+        <ul>
+        <li>装修建议</li>
+        <li>家具清单</li>
+        <li>时间规划</li>
+        </ul>
+        <strong>4. 透明费用说明</strong>
+        <ul>
+        <li>管理费结构</li>
+        <li>预期投资</li>
+        <li>回本周期</li>
+        </ul>
+        <h3>一键WhatsApp咨询</h3>
+        <a href="https://wa.me/60166996688?text=您好，我的马六甲房子一直租不出去，想了解转做Airbnb的方案。房产位于[填写区域]，[单房/两房/三房]。请帮我分析。" target="_blank" rel="noopener" style="display:inline-block;background-color:#25D366;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold;margin:10px 0;">WhatsApp免费咨询 →</a>
+        <strong>我们的承诺：</strong>
+        <ul>
+        <li>⏱️ 5分钟内响应</li>
+        <li>📊 免费房产分析</li>
+        <li>🤝 无义务咨询</li>
+        <li>🔒 隐私保护</li>
+        </ul>
+        <h3>别让租客噩梦继续</h3>
+        <p>每个月的犹豫，都是：</p>
+        <ul>
+        <li>更多的租金损失</li>
+        <li>更长的驱逐等待</li>
+        <li>更高的法律风险</li>
+        </ul>
+        <strong>现在就采取行动，从租客噩梦走向Airbnb自由。</strong>
+        <hr class="my-8">
+        <h2>相关阅读</h2>
+        <ul>
+        <li>[马六甲空房子怎么办？停止每月损失](/zh/blog/malaka-kong-fang-zen-me-ban)</li>
+        <li>[租客不付房租怎么办？法律指南](/zh/blog/zuke-bufu-fangzu)</li>
+        <li>[自己经营民宿还是托管公司？](/zh/blog/ziji-jingying-minsu-haishi-tuoguan)</li>
+        </ul>
+        <hr class="my-8">
+        <strong>最后更新：</strong> 2025年1月23日
+        <strong>阅读时间：</strong> 7分钟
+        <strong>分类：</strong> 问题意识 · 租客问题解决方案
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

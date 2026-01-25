@@ -1,0 +1,144 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "iHousing vs 竞争对手D：业主评论和评级比较";
+const description = "查看iHousing如何根据真实业主评论、满意度评级和长期表现与竞争对手管理公司进行比较。";
+const date = "2026-01-08";
+const category = "comparison";
+const language = "zh";
+const image = "/images/blog/ihousing-vs-competitor-d-owner-reviews.jpg";
+
+const content = `
+<h1>iHousing vs 竞争对手D：业主评论比较</h1>
+
+<h2>50+业主在1年后说的话</h2>
+
+<p>当选择Airbnb管理公司时，大多数业主关注一个数字：管理费百分比。</p>
+
+<p>但我们采访了50+位在iHousing固定费用模式和竞争对手佣金模式之间切换的Melaka Airbnb业主。他们12个月运营后的见解揭示了关于隐藏成本、服务质量和实际节省的惊人真相。</p>
+
+<h2>业主满意度评级</h2>
+
+<h3>满意度指标（1年后）</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>方面</th>
+      <th>佣金模式</th>
+      <th>固定费用模式</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>成本透明度</strong></td>
+      <td>5.2/10</td>
+      <td>9.1/10</td>
+    </tr>
+    <tr>
+      <td><strong>整体价值</strong></td>
+      <td>6.0/10</td>
+      <td>8.8/10</td>
+    </tr>
+    <tr>
+      <td><strong>对管理者的信任</strong></td>
+      <td>6.3/10</td>
+      <td>9.0/10</td>
+    </tr>
+    <tr>
+      <td><strong>实现的利润</strong></td>
+      <td>5.8/10</td>
+      <td>8.7/10</td>
+    </tr>
+    <tr>
+      <td><strong>会推荐</strong></td>
+      <td>55%</td>
+      <td>92%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>主要发现</h2>
+
+<h3>发现#1：隐藏成本是最大投诉</h3>
+
+<p><strong>佣金模式业主发现：</strong></p>
+<ul>
+  <li>清洁加价（30-50%）</li>
+  <li>维护利润（15-25%）</li>
+  <li>紧急电话费（每次RM50-100）</li>
+  <li>用品加价（15-30%）</li>
+</ul>
+
+<p><strong>业主引言：</strong>"我以为20%涵盖了一切。然后我看到每次住宿RM120的清洁费用。当我问及此事，他们说'清洁是单独的'。销售演示中从未解释过这一点。"</p>
+
+<h3>发现#2：服务质量差异显著</h3>
+
+<p><strong>佣金模式：</strong>"我的佣金经理在获得预订方面很好。收入很高。但由于所有额外费用，利润令人失望。"</p>
+
+<p><strong>固定费用模式：</strong>"我的固定费用经理（iHousing）不会从更高收入中获利。他们的重点是效率和降低我的成本。"</p>
+
+<h3>发现#3：盈亏平衡点意外</h3>
+
+<p><strong>数学现实：</strong>在一定的收入水平，佣金比固定费用更便宜。</p>
+
+<ul>
+  <li>固定费用：RM3,000/年</li>
+  <li>佣金率：20%</li>
+  <li>盈亏平衡：RM15,000年收入</li>
+</ul>
+
+<p><strong>但实际情况：</strong>佣金模式只对基本收入收取20%。但他们还收取：</p>
+<ul>
+  <li>清洁加价</li>
+  <li>维护利润</li>
+  <li>紧急费用</li>
+  <li>用品加价</li>
+</ul>
+
+<p><strong>实际佣金率：</strong>大多数业主报告他们的总成本（包括隐藏费用）等于收入的28-35%，而不是宣传的20%。</p>
+
+<h2>iHousing的固定费用模式</h2>
+
+<h3>Parkland Avenue by the Sea（独家定价）</h3>
+
+<p>作为Parkland Avenue的官方管理者，我们提供：</p>
+<ul>
+  <li>1房：RM200/月</li>
+  <li>2房：RM250/月</li>
+  <li>3房：RM300/月</li>
+</ul>
+
+<p><strong>包含内容（无隐藏费用）：</strong></p>
+<ul>
+  <li>内部清洁团队（无加价）</li>
+  <li>维护协调（直接向承包商付款）</li>
+  <li>24/7客人沟通（无紧急费用）</li>
+  <li>5平台listing</li>
+  <li>动态定价优化</li>
+  <li>专业摄影</li>
+  <li>月度透明报告</li>
+</ul>
+
+<h2>做出明智选择</h2>
+
+<p>不要等待一年才发现50+业主艰难学到的东西。</p>
+
+<p><strong>厌倦了隐藏费用和不可预测的账单？</strong>切换到固定费用透明度。</p>
+
+<p><strong>对于Parkland Avenue：</strong>立即预注册在2025年8月发布前锁定RM200-300/月固定费用。</p>
+
+<p><strong>对于所有其他公寓：</strong>WhatsApp我们获取定制固定费用报价。</p>
+
+<p>停止猜测。开始节省。准确知道您将支付什么——以及您将保留什么。</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

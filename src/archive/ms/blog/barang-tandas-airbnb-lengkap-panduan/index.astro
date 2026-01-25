@@ -1,0 +1,554 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Barang Tandas Airbnb Lengkap: Senarai, Harga & Tips 2025";
+const description = "Panduan lengkap barang tandas untuk Airbnb di Melaka. Dari barang asas hingga kemewahan, ketahui apa yang perlu disediakan untuk rating 5 bintang.";
+const image = "/images/blog/barang-tandas-airbnb-lengkap-panduan.jpg";
+const date = "2025-01-24";
+const category = "persediaan";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Barang Tandas Airbnb Lengkap: Senarai, Harga & Tips 2025</h1>
+
+<p>Tandas yang bersih dan lengkap dengan barang keperluan adalah salah satu faktor utama yang menentukan rating Airbnb anda. Berdasarkan data 100+ hartanah yang diurus oleh iHousing, kebersihan tandas menyumbang 40% kepada skor keseluruhan.</p>
+
+<p>Tandas yang kotor atau kurang barang keperluan adalah antara keluhan paling biasa dalam ulasan negatif.</p>
+
+<p>Panduan ini akan menyediakan senarai lengkap barang tandas yang perlu ada, anggaran kos, dan tips untuk menguruskan barang tandas dengan efisien.</p>
+
+<h2>Mengapa Tandas Sangat Penting?</h2>
+
+<h3>Statistik Rating Airbnb</h3>
+
+<p>Berdasarkan 10,000+ ulasan tetamu di Melaka:</p>
+
+<ul>
+<li>Bau menyegarkan | PENTING | +0.1 bintang |</li></ul>
+
+<strong>Kesimpulan:</strong> Pelaburan RM500-1,000 dalam setup tandas berkualiti boleh meningkatkan rating 0.5-1.0 bintang.
+
+<h3>Apa yang Tetamu Perhatikan?</h3>
+
+<p>Dalam ulasan negatif, tetamu sering menyebut:</p>
+<ul>
+<li>"Lantai tandas berpasir/berair"</li></ul>
+
+<ul>
+<li>"Tiada tisu cukup"</li></ul>
+
+<ul>
+<li>"Sabun habis/tiada sabun"</li></ul>
+
+<ul>
+<li>"Tuala bertukul/kotor"</li></ul>
+
+<ul>
+<li>"Bau hanyir tidak sedap"</li></ul>
+
+<ul>
+<li>"Tiada pengering rambut"</li></ul>
+
+<h2>Barang Asas: Wajib Ada</h2>
+
+<h3>1. Tuala & Kain Mandi</h3>
+
+<strong>Jumlah kos:</strong> RM240-440 (1 bilik air), RM320-560 (2 bilik air)
+
+<h3>2. Barang Keperluan Harian</h3>
+
+<strong>Jumlah kos bulanan:</strong> RM155-285
+
+<h3>3. Peralatan Guna</h3>
+
+<ul>
+<li>Pengais | 1 unit | RM15-30 | |</li></ul>
+
+<strong>Jumlah kos:</strong> RM115-265
+
+<h2>Barang Tambahan: Untuk Rating Lebih Tinggi</h2>
+
+<h3>4. Kemewahan & Keselesaan</h3>
+
+<ul>
+<li>Pemanas tuala | 1 unit | RM150-300 | +0.1 bintang |</li></ul>
+
+<strong>Jumlah kos:</strong> RM480-950
+
+<h3>5. Barangan Penjagaan Diri</h3>
+
+<ul>
+<li>Q-tips | 1 bal | RM8-15 | |</li></ul>
+
+<ul>
+<li>Deodoran | 2-3 unit | RM15-30 | Travel size |</li></ul>
+
+<ul>
+<li>Kesan serangga | 1 unit | RM10-20 | |</li></ul>
+
+<strong>Jumlah kos:</strong> RM128-255
+
+<h3>6. Barangan Kecantikan</h3>
+
+<ul>
+<li>Cotton bud | 1 bal | RM8-15 | |</li></ul>
+
+<ul>
+<li>Kipas lipat | 2-4 unit | RM10-30 | |</li></ul>
+
+<strong>Jumlah kos:</strong> RM43-95
+
+<h2>Setup Kemudahan Tandas</h2>
+
+<h3>Rak Tandas</h3>
+
+<strong>Jumlah kos:</strong> RM185-470
+
+<h3>Pencahayaan</h3>
+
+<ul>
+<li>Lampu utama | RM30-80 | LED |</li></ul>
+
+<strong>Jumlah kos:</strong> RM100-280
+
+<h2>Anggaran Kos Setup Lengkap</h2>
+
+<h3>Pakej Asas (Minimum)</h3>
+
+<h3>Pakej Standard (Disyorkan)</h3>
+
+<ul>
+<li>Kemewahan tambahan | RM480 |</li></ul>
+
+<h3>Pakej Premium (Lengkap)</h3>
+
+<ul>
+<li>Kemewahan lengkap | RM950 |</li></ul>
+
+<h2>Tips Menjimatkan Kos Tandas</h2>
+
+<h3>Tip 1: Beli Bulk</h3>
+
+<p>Jika ada 2+ unit hartanah:</p>
+<ul>
+<li>Tisu tandas: Beli 20-30 gulung sekaligus</li></ul>
+
+<ul>
+<li>Sabun travel: Beli 50-100 botol</li></ul>
+
+<ul>
+<li>Handuk: Beli 10-20 helai sekaligus</li></ul>
+
+<strong>Jimat:</strong> 20-40%
+
+<h3>Tip 2: Guna Refill Bottle</h3>
+
+<p>Daripada beli botol travel baru setiap kali:</p>
+<ul>
+<li>Beli botol premium boleh ulang guna</li></ul>
+
+<ul>
+<li>Beli sabun/syampu besar (refill)</li></ul>
+
+<ul>
+<li>Jimat 50-70% jangka panjang</li></ul>
+
+<h3>Tip 3: Jenama Kedai</h3>
+
+<p>Untuk barang keperluan:</p>
+<ul>
+<li><strong>Daiso</strong> - Barang RM5, kualiti baik</li></ul>
+
+<ul>
+<li><strong>Mr. DIY</strong> - Murah, pilihan banyak</li></ul>
+
+<ul>
+<li><strong>Miniso</strong> - Gaya, harga sederhana</li></ul>
+
+<ul>
+<li><strong>Aeon</strong> - Beli bulk lebih murah</li></ul>
+
+<h3>Tip 4: Tuala Pukal</h3>
+
+<p>Untuk handuk:</p>
+<ul>
+<li>Pembekal hotel linen</li></ul>
+
+<ul>
+<li>Jualan online dalam dozen</li></ul>
+
+<ul>
+<li>Pasar borong</li></ul>
+
+<strong>Jimat:</strong> 30-50% dari kedai runcit
+
+<h3>Tip 5: Priority untuk Rating</h3>
+
+<p>Jika bajet terhad, fokus pada:</p>
+<li>Tisu mencukupi (TIDAK boleh habis)</li>
+<li>Sabun & syampu (saiz travel)</li>
+<li>Handuk berkualiti (tidak usang)</li>
+<li>Gelas & sikat gigi</li>
+<li>Pembersih tangan</li>
+
+<h2>Susun Atur Tandas Praktikal</h2>
+
+<h3>Prinsip Susun Atur</h3>
+
+<li><strong>Zon Sinki</strong></li>
+<p>   - Sabun tangan</p>
+<p>   - Pembersih tangan</p>
+<p>   - Gelas, sikat gigi</p>
+<p>   - Tisu muka</p>
+
+<li><strong>Zon Mandi</strong></li>
+<p>   - Sabun, syampu, kondisioner</p>
+<p>   - Tikar mandi</p>
+<p>   - Pengering rambut (jika ada)</p>
+
+<li><strong>Zon Tandas</strong></li>
+<p>   - Tisu tandas</p>
+<p>   - Penutup tandas</p>
+<p>   - Rak buku/bacaan (pilihan)</p>
+
+<li><strong>Zon Simpanan</strong></li>
+<p>   - Handuk spare</p>
+<p>   - Barang keperluan spare</p>
+<p>   - Pembersihan supplies</p>
+
+<h2>Kekerapan Restock</h2>
+
+<h2>Kos Operasi Bulanan</h2>
+
+<ul>
+<li>Ganti handuk (pro-rated) | RM20 | RM35 |</li></ul>
+
+<h2>Kebersihan Tandas</h2>
+
+<h3>Senarai Semak Pembersihan</h3>
+
+<p>#### Setiap Daftar Keluar</p>
+<ul>
+<li>[x] Bersihkan mangkuk tandas</li></ul>
+
+<ul>
+<li>[x] Bersihkan sinki & paip</li></ul>
+
+<ul>
+<li>[x] Lap cermin hingga kering</li></ul>
+
+<ul>
+<li>[x] Kosongkan tong sampah</li></ul>
+
+<ul>
+<li>[x] Ganti tisu & barang keperluan</li></ul>
+
+<ul>
+<li>[x] Lap lantai hingga kering</li></ul>
+
+<ul>
+<li>[x] Semak & bersihkan grout</li></ul>
+
+<ul>
+<li>[x] Semak bau (gunakan pewangi jika perlu)</li></ul>
+
+<p>#### Mingguan</p>
+<ul>
+<li>[x] Bersihkan habuk siling</li></ul>
+
+<ul>
+<li>[x] Bersihkan lampu & kipas</li></ul>
+
+<ul>
+<li>[x] Semak paip bocor</li></ul>
+
+<ul>
+<li>[x] Bersihkan longkang</li></ul>
+
+<ul>
+<li>[x] Semak palang tuala</li></ul>
+
+<p>#### Bulanan</p>
+<ul>
+<li>[x] Pembersihan mendalam grout</li></ul>
+
+<ul>
+<li>[x] Semak sealant di sekitar tandas</li></ul>
+
+<ul>
+<li>[x] Bersihkan cabinet bawah sinki</li></ul>
+
+<ul>
+<li>[x] Semak mortar jubin</li></ul>
+
+<h2>Bau Tandas</h2>
+
+<h3>Cara Kekalkan Bau Segar</h3>
+
+<ul>
+<li>Pewangi tandas | RM15-30 | Spray selepas setiap daftar keluar |</li></ul>
+
+<strong>Tips:</strong>
+<ul>
+<li>Pastikan pengudaraan baik</li></ul>
+
+<ul>
+<li>Keringkan lantai sepenuhnya</li></ul>
+
+<ul>
+<li>Jangan biarkan tisu basah</li></ul>
+
+<ul>
+<li>Guna exhaust fan</li></ul>
+
+<h2>Peraturan Barangan Travel Size</h2>
+
+<h3>FAA & IATA Rules (Untuk Rujukan)</h3>
+
+<p>Untuk tetamu yang terbang:</p>
+<ul>
+<li>Cecair: Maksimum 100ml/botol</li></ul>
+
+<ul>
+<li>Bekas lutsinar: 1 liter maksimum</li></ul>
+
+<ul>
+<li>Beg ziplock: 20x20cm</li></ul>
+
+<strong>Tidak wajib untuk Airbnb, tetapi berguna jika tetamu tanya.</strong>
+
+<h2>Kesilapan Biasa & Cara Elak</h2>
+
+<h3>Kesilapan 1: Tisu Habis</h3>
+
+<strong>Masalah:</strong> Tetamu kehabisan tisu
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Simpan 4-6 gulung setiap bilik air</li></ul>
+
+<ul>
+<li>Simpan spare dalam cabinet</li></ul>
+
+<ul>
+<li>Check setiap daftar keluar</li></ul>
+
+<h3>Kesilapan 2: Sabun Terlalu Kecil</h3>
+
+<strong>Masalah:</strong> Sabun travel habis 1 malam
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Guna saiz 50ml minimum</li></ul>
+
+<ul>
+<li>Sediakan 2 botol per tetamu</li></ul>
+
+<ul>
+<li>Simpan spare dalam cabinet</li></ul>
+
+<h3>Kesilapan 3: Tuala Usang</h3>
+
+<strong>Masalah:</strong> Tuala sudah kusam/nipis
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Ganti selepas 1.5-2 tahun</li></ul>
+
+<ul>
+<li>Basuh dengan betul (guna pelembut)</li></ul>
+
+<ul>
+<li>Simpan di tempat kering</li></ul>
+
+<h3>Kesilapan 4: Bau Hanyir</h3>
+
+<strong>Masalah:</strong> Tandas berbau lembap/hanyir
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Pastikan pengudaraan baik</li></ul>
+
+<ul>
+<li>Guna exhaust fan</li></ul>
+
+<ul>
+<li>Keringkan sepenuhnya selepas basuh</li></ul>
+
+<ul>
+<li>Guna pewangi</li></ul>
+
+<h3>Kesilapan 5: Rak Bersepah</h3>
+
+<strong>Masalah:</strong> Terlalu banyak barang di atas sinki
+
+<strong>Penyelesaian:</strong>
+<ul>
+<li>Kurangkan kepada essentials</li></ul>
+
+<ul>
+<li>Guna rak dinding</li></ul>
+
+<ul>
+<li>Simpan spare dalam cabinet</li></ul>
+
+<h2>Perbezaan: Shared vs Ensuite</h2>
+
+<h3>Shared Bathroom</h3>
+
+<strong>Perlukan lebih banyak barang:</strong>
+<ul>
+<li>Gelas: 4-6 unit</li></ul>
+
+<ul>
+<li>Sikat gigi: 4-6 unit</li></ul>
+
+<ul>
+<li>Handuk: 6-8 helai</li></ul>
+
+<ul>
+<li>Barang keperluan: 2x kuantiti</li></ul>
+
+<h3>Ensuite (Private)</h3>
+
+<strong>Boleh kurangkan sedikit:</strong>
+<ul>
+<li>Gelas: 2 unit</li></ul>
+
+<ul>
+<li>Sikat gigi: 2 unit</li></ul>
+
+<ul>
+<li>Handuk: 4 helai</li></ul>
+
+<ul>
+<li>Barang keperluan: Standard</li></ul>
+
+<h2>Dapatkan Bantuan dari iHousing</h2>
+
+<p>Kami di iHousing mempunyai pengalaman menguruskan tandas untuk 100+ hartanah.</p>
+
+<h3>Perkhidmatan Kami:</h3>
+
+<li><strong>Konsultasi Setup Tandas</strong></li>
+<p>   - Senarai lengkap mengikut bajet</p>
+<p>   - Cadangan produk & pembekal</p>
+<p>   - Susun atur praktikal</p>
+
+<li><strong>Pembersihan Profesional</strong></li>
+<p>   - Pembersihan menyeluruh setiap daftar keluar</p>
+<p>   - Restock automatik barang keperluan</p>
+<p>   - Pastikan tandas sentiasa bersih</p>
+
+<li><strong>Pengurusan Stok</strong></li>
+<p>   - Untuk pemilik yang sibuk</p>
+<p>   - Kami urus semua restock</p>
+<p>   - Barang sentiasa mencukupi</p>
+
+<h3>Untuk Parkland Avenue by the Sea</h3>
+
+<strong>Yuran tetap: RM200-300/bulan</strong>
+
+<p>Termasuk:</p>
+<ul>
+<li>Pembersihan tandas profesional</li></ul>
+
+<ul>
+<li>Restock automatik barang keperluan</li></ul>
+
+<ul>
+<li>Penyelenggaraan kecil</li></ul>
+
+<h3>Untuk Kondominium Lain</h3>
+
+<strong>Harga tersuai</strong> - WhatsApp kami untuk sebut harga
+
+<h2>Tindakan Seterusnya</h2>
+
+<p>Adakah anda perlukan bantuan untuk setup tandas Airbnb?</p>
+
+<p>WhatsApp iHousing untuk:</p>
+<li>Senarai lengkap barang tandas</li>
+<li>Cadangan pembekal dengan diskaun</li>
+<li>Perkhidmatan pengurusan penuh</li>
+
+<h2>Ringkasan: Senarai Semak Pantas</h2>
+
+<h3>Barang Wajib (Must-Have)</h3>
+
+<ul>
+<li>[ ] Tisu mencukupi (4-6 gulung)</li></ul>
+
+<ul>
+<li>[ ] Sabun travel (10-15 botol)</li></ul>
+
+<ul>
+<li>[ ] Syampu travel (8-12 botol)</li></ul>
+
+<ul>
+<li>[ ] Handuk bersih (4-6 helai)</li></ul>
+
+<ul>
+<li>[ ] Tikar mandi (2-3 helai)</li></ul>
+
+<ul>
+<li>[ ] Gelas & sikat gigi</li></ul>
+
+<ul>
+<li>[ ] Pembersih tangan</li></ul>
+
+<ul>
+<li>[ ] Tong sampah dengan penutup</li></ul>
+
+<h3>Barang Recommended (Nice-to-Have)</h3>
+
+<ul>
+<li>[ ] Pengering rambut</li></ul>
+
+<ul>
+<li>[ ] Cermin pembesar</li></ul>
+
+<ul>
+<li>[ ] Nightlight</li></ul>
+
+<ul>
+<li>[ ] Rak kertas</li></ul>
+
+<ul>
+<li>[ ] Pemanas tuala</li></ul>
+
+<h3>Barang Premium (Luxury)</h3>
+
+<ul>
+<li>[ ] Timbangan berat</li></ul>
+
+<ul>
+<li>[ ] Kipas lipat</li></ul>
+
+<ul>
+<li>[ ] Sunblock & aloe vera</li></ul>
+
+<ul>
+<li>[ ] Minyak pati diffuser</li></ul>
+
+<strong>Artikel Berkaitan:</strong>
+<ul>
+<li>[Senarai Semak Kemudahan Airbnb Lengkap](/ms/blog/senarai-semak-kemudahan-airbnb-melaka)</li></ul>
+
+<ul>
+<li>[Perkhidmatan Pembersihan Airbnb Melaka](/ms/blog/perkhidmatan-pembersihan-airbnb-melaka)</li></ul>
+
+<ul>
+<li>[Panduan Lengkap Linen & Tuala Airbnb](/ms/blog/panduan-lengkap-linen-dan-tuala-airbnb-melaka)</li></ul>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

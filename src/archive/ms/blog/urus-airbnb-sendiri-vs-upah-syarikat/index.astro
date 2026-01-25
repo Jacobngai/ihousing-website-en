@@ -1,0 +1,501 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Urus Airbnb Sendiri vs Upah Syarikat: Mana Lebih Jimat?";
+const description = "Bandingkan urus Airbnb sendiri (10-20 jam/minggu) vs upah syarikat pengurusan (RM250/bulan). Ketahui kos sebenar, faedah, dan ROI untuk setiap pilihan.";
+const image = "/images/blog/urus-airbnb-sendiri-vs-upah-syarikat.jpg";
+const date = "2025-01-23";
+const category = "product-aware";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Urus Airbnb Sendiri vs Upah Syarikat: Pilihan Mana Lebih Jimat?</h1>
+        <h2>Menguruskan Airbnb Sendiri: Jimat Wang atau Bakar Waktu?</h2>
+        <p>Adakah anda sedang mempertimbangkan untuk menyenaraikan kondo anda di Airbnb? Atau adakah anda sudah memulakan tetapi rasa letih menguruskan semuanya sendirian?</p>
+        <p>Soalan paling penting yang perlu anda jawab adalah: <strong>Adakah anda patut menguruskan Airbnb sendiri atau upah syarikat pengurusan profesional?</strong></p>
+        <p>Kedua-dua pilihan mempunyai kelebihan dan kekurangan. Pilihan yang betul bergantung pada situasi anda - bajet, masa, dan pengalaman.</p>
+        <p>Artikel ini akan membandingkan kedua-dua pilihan dari segi kos, masa, dan pendapatan, supaya anda boleh membuat keputusan yang tepat.</p>
+        <h2>Mengurus Sendiri: Adakah Ia Berbaloi?</h2>
+        <h3>Kos Mengurus Sendiri</h3>
+        <p>Pada pandangan pertama, mengurus sendiri nampak seperti jimat RM200-RM400 sebulan (yuran pengurusan). Tetapi adakah ia benar-benar jimat?</p>
+        <p>Mari kita lihat kos sebenar:</p>
+        <h4>Kos Tersembunyi Mengurus Sendiri</h4>
+        <table>
+          <thead>
+            <tr><th>Kos</th><th>Anggaran Bulanan</th><th>Anggaran Tahunan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Masa anda (15 jam/minggu x RM50/jam)</td><td>RM3,000</td><td>RM36,000</td></tr>
+            <tr><td>Pembersihan (outsource, RM80-100/sekali)</td><td>RM320</td><td>RM3,840</td></tr>
+            <tr><td>Bekalan (tuala, sabun, toilet paper)</td><td>RM150</td><td>RM1,800</td></tr>
+            <tr><td>Perjalanan ke kondo (minyak, tol)</td><td>RM100</td><td>RM1,200</td></tr>
+            <tr><td>Platform fees (3% Airbnb)</td><td>3% pendapatan</td><td>-</td></tr>
+            <tr><td>Insurans</td><td>RM50</td><td>RM600</td></tr>
+            <tr><td>Penggantian item hilang/rosak</td><td>RM100</td><td>RM1,200</td></tr>
+            <tr><td>**Jumlah Kos Tersembunyi**</td><td>**RM3,720+/bulan**</td><td>**RM44,640+/tahun**</td></tr>
+          </tbody>
+        </table>
+        <p>Dan ini belum termasuk:</p>
+        <ul>
+        <li>Tekanan menjawab mesej 2 pagi</li>
+        <li>Kebimbangan tetamu yang bermasalah</li>
+        <li>Cuti yang terganggu untuk urusan kecemasan</li>
+        <li>Kurang tidur akibat bimbang kondo</li>
+        </ul>
+        <h3>Masa Diperlukan</h3>
+        <p>Berikut adalah jangka masa untuk menguruskan Airbnb sendiri:</p>
+        <table>
+          <thead>
+            <tr><th>Tugas</th><th>Masa Diperlukan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Komunikasi dengan tetamu (mesej, panggilan)</td><td>5-10 jam/minggu</td></tr>
+            <tr><td>Susun pembersihan antara tetamu</td><td>2-3 jam/minggu</td></tr>
+            <tr><td>Urusan masalah (paip bocor, internet rosak)</td><td>1-2 jam/minggu</td></tr>
+            <tr><td>Check-in/check-out (jika buat sendiri)</td><td>2-3 jam/minggu</td></tr>
+            <tr><td>Update kalendar & harga</td><td>1-2 jam/minggu</td></tr>
+            <tr><td>Beli bekalan</td><td>1-2 jam/minggu</td></tr>
+            <tr><td>**Jumlah Masa**</td><td>**12-22 jam/minggu**</td></tr>
+          </tbody>
+        </table>
+        <p>Itu adalah <strong> separuh masa kerja sepenuh masa</strong> untuk satu unit!</p>
+        <h3>Tantangan Mengurus Sendiri</h3>
+        <h4>1. Komunikasi 24/7</h4>
+        <p>Tetamu Airbnb boleh menghubungi anda pada bila-bila masa:</p>
+        <ul>
+        <li>Soalan arah pada 2 pagi</li>
+        <li>Masalah check-in pada 5 pagi</li>
+        <li>Keluhan WiFi pada 10 malam</li>
+        </ul>
+        <p>Jika anda tidak menjawab dalam masa 30 minit, mereka akan:</p>
+        <ul>
+        <li>Memberi rating rendah</li>
+        <li>Membatalkan tempahan</li>
+        <li>Memulangkan wang</li>
+        </ul>
+        <h4>2. Pembersihan Antara Tetamu</h4>
+        <p>Pembersihan mungkin kelihatan mudah, tetapi:</p>
+        <ul>
+        <li>Perlukan pasukan yang boleh datang pada masa singkat</li>
+        <li>Kualiti mesti konsisten untuk ulasan 5-bintang</li>
+        <li>Linen perlu dibasuh dan diganti</li>
+        <li>Kemudahan perlu diisi semula</li>
+        </ul>
+        <p>Jika kondo tidak bersih, rating akan jatuh dan okupansi akan menurun.</p>
+        <h4>3. Masalah Kecemasan</h4>
+        <p>Bila tetamu menghubungi anda dengan masalah:</p>
+        <ul>
+        <li>"Paip bocor"</li>
+        <li>"Internet tak berfungsi"</li>
+        <li>"AC tak sejuk"</li>
+        <li>"Kunci tak boleh buka"</li>
+        </ul>
+        <p>Anda perlu:</p>
+        <ul>
+        <li>Mencari kontraktor yang boleh datang dengan segera</li>
+        <li>Menjadi tuan rumah yang baik</li>
+        <li>Menyelesaikan masalah dalam masa beberapa jam</li>
+        </ul>
+        <h4>4. Penetapan Harga</h4>
+        <p>Harga Airbnb tidak statik. Anda perlu:</p>
+        <ul>
+        <li>Naikkan harga pada hujung minggu</li>
+        <li>Naikkan harga pada musim cuti</li>
+        <li>Turunkan harga pada waktu sepi</li>
+        <li>Pantau persaingan</li>
+        </ul>
+        <p>Harga yang salah = Pendapatan yang hilang.</p>
+        <h4>5. Multi-Platform Listing</h4>
+        <p>Jika anda hanya senaraikan di Airbnb, anda kehilangan 60% tempahan. Untuk mendapatkan tempahan maksimum, anda perlu senaraikan di:</p>
+        <ul>
+        <li>Airbnb</li>
+        <li>Booking.com</li>
+        <li>Agoda</li>
+        <li>VRBO</li>
+        <li>Expedia</li>
+        </ul>
+        <p>Setiap platform mempunyai:</p>
+        <ul>
+        <li>Proses pendaftaran berbeza</li>
+        <li>Sistem tempahan berbeza</li>
+        <li>Dasar pembatalan berbeza</li>
+        <li>Yuran berbeza</li>
+        </ul>
+        <p>Menguruskan 5 platform adalah kerja sepenuh masa.</p>
+        <h2>Upah Syarikat Pengurusan: Adakah Ia Berbaloi?</h2>
+        <h3>Kos Yuran Pengurusan</h3>
+        <p>Yuran pengurusan berbeza bergantung kepada:</p>
+        <ol>
+        <li><strong>Model Komisen (Industri Standard)</strong></li>
+        </ol>
+        <ul>
+        <li>20-30% dari pendapatan kotor</li>
+        <li>Contoh: Jika pendapatan RM10,000/tahun, yuran = RM2,000-3,000/tahun</li>
+        </ul>
+        <ol>
+        <li><strong>Model Yuran Tetap (iHousing untuk Parkland Avenue sahaja)</strong></li>
+        </ol>
+        <ul>
+        <li>RM200-300/bulan (bergantung bilik)</li>
+        <li>Lebih telus dan mudah diramal</li>
+        </ul>
+        <p>Walau bagaimanapun, untuk kebanyakan kondo lain, harga dibincangkan melalui WhatsApp kerana setiap unit mempunyai faktor yang berbeza (saiz, lokasi, keadaan).</p>
+        <h3>Apa yang Anda Dapat</h3>
+        <p>Dengan yuran pengurusan, syarikat profesional biasanya menawarkan:</p>
+        <h4>1. Komunikasi Tetamu 24/7</h4>
+        <ul>
+        <li>Jawab pertanyaan dalam 30 minit atau kurang</li>
+        <li>Bantu dengan check-in/check-out</li>
+        <li>Selesaikan masalah dengan segera</li>
+        <li>Profesional dan mesra</li>
+        </ul>
+        <h4>2. Pembersihan Profesional</h4>
+        <p>Syarikat seperti iHousing mempunyai:</p>
+        <ul>
+        <li>Pasukan pembersihan dalaman</li>
+        <li>Kualiti yang konsisten</li>
+        <li>Tiada markup kos pembersihan</li>
+        <li>Pembersihan antara tetamu yang pantas</li>
+        </ul>
+        <h4>3. Penyelenggaraan</h4>
+        <ul>
+        <li>Pemeriksaan berkala</li>
+        <li>Pembaikan kecil diuruskan</li>
+        <li>Keemasan 24/7</li>
+        <li>Kontraktor yang dipercayai</li>
+        </ul>
+        <h4>4. Multi-Platform Listing</h4>
+        <ul>
+        <li>Airbnb, Booking.com, Agoda, VRBO, Expedia</li>
+        <li>60% lebih banyak tempahan</li>
+        <li>Semua diuruskan untuk anda</li>
+        <li>Satu laporan bulanan</li>
+        </ul>
+        <h4>5. Pengoptimuman Harga</h4>
+        <ul>
+        <li>Harga dinamik mengikut permintaan</li>
+        <li>Peningkatan 15-20% dalam pendapatan</li>
+        <li>Pantau persaingan</li>
+        <li>Larut masa otomatis</li>
+        </ul>
+        <h4>6. Fotografi Profesional</h4>
+        <ul>
+        <li>Gambar berkualiti tinggi</li>
+        <li>20% lebih banyak tempahan</li>
+        <li>Termasuk dalam perkhidmatan</li>
+        </ul>
+        <h4>7. Laporan Bulanan</h4>
+        <ul>
+        <li>Pendapatan terperinci</li>
+        <li>Okupansi</li>
+        <li>Rating tetamu</li>
+        <li>Cadangan penambahbaikan</li>
+        </ul>
+        <h2>Perbandingan Kos: 3 Tahun</h2>
+        <p>Mari kita bandingkan kos untuk tempoh 3 tahun.</p>
+        <h3>Senario: Kondo 2-Bedroom di Melaka Raya</h3>
+        <strong>Pendapatan kotor anggaran:</strong> RM10,000/tahun = RM30,000 (3 tahun)
+        <h4>Option 1: Mengurus Sendiri</h4>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Kos 3 Tahun</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Yuran pengurusan</td><td>RM0</td></tr>
+            <tr><td>Masa anda (20 jam/minggu x RM50/jam x 156 minggu)</td><td>RM156,000</td></tr>
+            <tr><td>Pembersihan (outsource)</td><td>RM11,520</td></tr>
+            <tr><td>Bekalan</td><td>RM5,400</td></tr>
+            <tr><td>Perjalanan</td><td>RM3,600</td></tr>
+            <tr><td>Platform fees (3%)</td><td>RM900</td></tr>
+            <tr><td>Insurans & penggantian</td><td>RM5,400</td></tr>
+            <tr><td>**Jumlah Kos**</td><td>**RM182,820**</td></tr>
+            <tr><td>**Pendapatan Bersih**</td><td>**RM30,000 - RM182,820 = -RM152,820**</td></tr>
+          </tbody>
+        </table>
+        <p>Nota: Angka ini termasuk nilai masa anda. Jika masa tidak dianggap, kos adalah RM26,820.</p>
+        <h4>Option 2: Upah Syarikat Pengurusan (Model Komisen 20%)</h4>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Kos 3 Tahun</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Yuran pengurusan (20%)</td><td>RM6,000</td></tr>
+            <tr><td>Masa anda</td><td>RM0</td></tr>
+            <tr><td>Semua perkhidmatan termasuk</td><td>RM0</td></tr>
+            <tr><td>**Jumlah Kos**</td><td>**RM6,000**</td></tr>
+            <tr><td>**Pendapatan Bersih**</td><td>**RM30,000 - RM6,000 = RM24,000**</td></tr>
+          </tbody>
+        </table>
+        <h4>Option 3: Upah Syarikat Pengurusan (Model Yuran Tetap - Parkland Avenue)</h4>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Kos 3 Tahun</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Yuran pengurusan (RM250/bulan)</td><td>RM9,000</td></tr>
+            <tr><td>Masa anda</td><td>RM0</td></tr>
+            <tr><td>Semua perkhidmatan termasuk</td><td>RM0</td></tr>
+            <tr><td>**Jumlah Kos**</td><td>**RM9,000**</td></tr>
+            <tr><td>**Pendapatan Bersih**</td><td>**RM30,000 - RM9,000 = RM21,000**</td></tr>
+          </tbody>
+        </table>
+        <h3>Rumusan Perbandingan</h3>
+        <table>
+          <thead>
+            <tr><th>Metrik</th><th>Urus Sendiri</th><th>Syarikat (Komisen)</th><th>Syarikat (Yuran Tetap)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pendapatan 3 tahun</td><td>RM30,000</td><td>RM30,000</td><td>RM30,000</td></tr>
+            <tr><td>Kos</td><td>RM26,820</td><td>RM6,000</td><td>RM9,000</td></tr>
+            <tr><td>**Pendapatan Bersih**</td><td>**RM3,180**</td><td>**RM24,000**</td><td>**RM21,000**</td></tr>
+            <tr><td>Masa diperlukan</td><td>20 jam/minggu</td><td>0 jam</td><td>0 jam</td></tr>
+            <tr><td>Tekanan</td><td>Tinggi</td><td>Rendah</td><td>Rendah</td></tr>
+          </tbody>
+        </table>
+        <strong>Kesimpulan:</strong> Mengupah syarikat pengurusan menghasilkan <strong>RM17,820 - RM20,820 lebih banyak pendapatan bersih</strong> dalam tempoh 3 tahun, dengan sifar masa dan tekanan.
+        <h2>Kelebihan dan Kekurangan Setiap Pilihan</h2>
+        <h3>Mengurus Sendiri</h3>
+        <strong>Kelebihan:</strong>
+        <ul>
+        <li>Tiada yuran pengurusan (jimat RM200-400/bulan)</li>
+        <li>Kawalan penuh atas semua keputusan</li>
+        <li>Kenal setiap tetamu secara peribadi</li>
+        <li>Boleh menggunakan kondo untuk sendiri bila-bila masa</li>
+        </ul>
+        <strong>Kekurangan:</strong>
+        <ul>
+        <li>Memerlukan 12-22 jam/minggu</li>
+        <li>Tekanan 24/7</li>
+        <li>Kurang pengalaman = lebih banyak masalah</li>
+        <li>Hanya 1 platform (Airbnb) = 60% kurang tempahan</li>
+        <li>Rating mungkin lebih rendah</li>
+        <li>Burnout yang biasa</li>
+        </ul>
+        <strong>Paling Sesuai Untuk:</strong>
+        <ul>
+        <li>Pemilik yang tinggal berhampiran kondo</li>
+        <li>Mempunyai masa yang banyak</li>
+        <li>Sangat berminat dengan Airbnb</li>
+        <li>Sangat mahir teknologi</li>
+        <li>Hanya mempunyai 1 unit</li>
+        </ul>
+        <h3>Upah Syarikat Pengurusan</h3>
+        <strong>Kelebihan:</strong>
+        <ul>
+        <li>Sifar masa diperlukan</li>
+        <li>Komunikasi profesional 24/7</li>
+        <li>Multi-platform listing (5 platforms)</li>
+        <li>Pengoptimuman harga automatik</li>
+        <li>Pembersihan berkualiti konsisten</li>
+        <li>Laporan bulanan</li>
+        <li>Rating yang lebih tinggi</li>
+        <li>Okupansi yang lebih tinggi</li>
+        </ul>
+        <strong>Kekurangan:</strong>
+        <ul>
+        <li>Yuran pengurusan (RM200-400/bulan atau 20-30% komisen)</li>
+        <li>Kurang kawalan atas keputusan harian</li>
+        <li>Perlu menetapkan peraturan untuk penggunaan sendiri</li>
+        </ul>
+        <strong>Paling Sesuai Untuk:</strong>
+        <ul>
+        <li>Pemilik yang sibuk (kerja, keluarga)</li>
+        <li>Tidak tinggal berhampiran kondo</li>
+        <li>Mempunyai beberapa unit</li>
+        <li>Mahu pendapatan tanpa kerja</li>
+        <li>Mahu pendapatan yang maksimum</li>
+        </ul>
+        <h2>Model Yuran yang Berbeza</h2>
+        <h3>Model Komisen (20-30%)</h3>
+        <strong>Bagus untuk:</strong>
+        <ul>
+        <li>Kondo dengan okupansi rendah</li>
+        <li>Pemilik yang tidak mahu risiko kos tetap</li>
+        <li>Unit yang memerlukan banyak kerja</li>
+        </ul>
+        <strong>Tidak bagus untuk:</strong>
+        <ul>
+        <li>Kondo dengan okupansi tinggi</li>
+        <li>Pemilik yang mahu telus</li>
+        <li>Jangka panjang (komisen sentiasa diambil)</li>
+        </ul>
+        <h3>Model Yuran Tetap</h3>
+        <strong>Bagus untuk:</strong>
+        <ul>
+        <li>Kondo dengan okupansi tinggi (lebih jimat)</li>
+        <li>Pemilik yang mahu telus</li>
+        <li>Jangka panjang</li>
+        </ul>
+        <strong>Tidak bagus untuk:</strong>
+        <ul>
+        <li>Kondo dengan okupansi rendah (lebih mahal)</li>
+        </ul>
+        <strong>Nota:</strong> Model yuran tetap adalah eksklusif untuk <strong>Parkland Avenue by the Sea</strong>. Untuk kondo lain, harga dibincangkan melalui WhatsApp untuk memastikan adil dan sesuai dengan setiap unit.
+        <h2>Tanda Anda Perlu Mengupah Syarikat Pengurusan</h2>
+        <p>Jika anda mengalami perkara berikut, sudah tiba masanya untuk mendapatkan bantuan profesional:</p>
+        <h3>1. Burnout</h3>
+        <ul>
+        <li>Rasa letih memikirkan Airbnb</li>
+        <li>Tidak boleh tidur lena</li>
+        <li>Cuti selalu terganggu</li>
+        <li>Keluarga mengadu tiada masa</li>
+        </ul>
+        <h3>2. Rating Menurun</h3>
+        <ul>
+        <li>Rating kurang dari 4.5 bintang</li>
+        <li>Ulasan negatif meningkat</li>
+        <li>Okupansi menurun</li>
+        </ul>
+        <h3>3. Masa Terhad</h3>
+        <ul>
+        <li>Kerja sepenuh masa</li>
+        <li>Kanak-kanak kecil</li>
+        <li>Tinggal jauh dari kondo</li>
+        <li>Mempunyai beberapa unit</li>
+        </ul>
+        <h3>4. Pendapatan Tidak Maksimum</h3>
+        <ul>
+        <li>Okupansi kurang dari 15%</li>
+        <li>Kadar harga lebih rendah dari persaingan</li>
+        <li>Hanya disenaraikan di Airbnb</li>
+        <li>Tidak tahu cara menaikkan pendapatan</li>
+        </ul>
+        <h3>5. Masalah Berulang</h3>
+        <ul>
+        <li>Tetamu sering mengadu</li>
+        <li>Pembersihan tidak konsisten</li>
+        <li>Masalah keemasan kerap berlaku</li>
+        <li>Kontraktor tidak boleh dipercayai</li>
+        </ul>
+        <h2>Cara Memilih Syarikat Pengurusan</h2>
+        <p>Jika anda memutuskan untuk mengupah syarikat pengurusan, berikut adalah perkara yang perlu dicari:</p>
+        <h3>1. Pengalaman</h3>
+        <ul>
+        <li>Berapa tahun dalam perniagaan?</li>
+        <li>Berapa banyak unit diuruskan?</li>
+        <li>Adakah pakar dalam kawasan anda?</li>
+        </ul>
+        <h3>2. Yuran Telus</h3>
+        <ul>
+        <li>Adakah yuran tetap atau komisen?</li>
+        <li>Apakah yang termasuk dalam yuran?</li>
+        <li>Adakah ada kos tersembunyi?</li>
+        </ul>
+        <h3>3. Perkhidmatan Termasuk</h3>
+        <ul>
+        <li>Adakah mereka menawarkan multi-platform listing?</li>
+        <li>Adakah pembersihan dalaman atau outsource?</li>
+        <li>Adakah pengoptimuman harga automatik?</li>
+        <li>Adakah laporan bulanan disediakan?</li>
+        </ul>
+        <h3>4. Komunikasi</h3>
+        <ul>
+        <li>Berapa pantas masa respons?</li>
+        <li>Adakah ada saluran komunikasi 24/7?</li>
+        <li>Adakah mesra dan profesional?</li>
+        </ul>
+        <h3>5. Reputasi</h3>
+        <ul>
+        <li>Adakah ulasan pemilik lain positif?</li>
+        <li>Adakah portofolio unit yang berjaya?</li>
+        <li>Adakah profesional dan dipercayai?</li>
+        </ul>
+        <h3>6. Perjanjian</h3>
+        <ul>
+        <li>Berapa lama kontrak?</li>
+        <li>Adakah boleh membatalkan?</li>
+        <li>Apakah syarat-syaratnya?</li>
+        </ul>
+        <h2>Soalan Lazim (FAQ)</h2>
+        <h3>Q: Adakah model yuran tetap lebih baik daripada komisen?</h3>
+        <p>A: Bergantung. Yuran tetap lebih jimat untuk kondo dengan okupansi tinggi. Komisen mungkin lebih sesuai untuk unit yang baru bermula atau okupansi rendah.</p>
+        <h3>Q: Boleh saya tukar dari urus sendiri ke syarikat pengurusan?</h3>
+        <p>A: Ya. Prosesnya mudah dan tidak mengganggu pendapatan sedia ada. Syarikat pengurusan akan uruskan pemindahan semua platform.</p>
+        <h3>Q: Adakah saya masih boleh menggunakan kondo untuk sendiri?</h3>
+        <p>A: Ya. Anda hanya perlu memberitahu syarikat pengurusan bila anda mahu menggunakannya. Mereka akan menutup kalendar pada tarikh tersebut.</p>
+        <h3>Q: Berapa lamakah kontrak biasanya?</h3>
+        <p>A: Biasanya 6-12 bulan. Sesetengah syarikat menawarkan kontrak yang lebih pendek atau lebih panjang bergantung pada keperluan anda.</p>
+        <h3>Q: Apakah yang berlaku jika ada masalah dengan tetamu?</h3>
+        <p>A: Syarikat pengurusan akan uruskan segalanya - dari komunikasi hingga penyelesaian. Anda tidak perlu terlibat langsung.</p>
+        <h2>Langkah Seterusnya: Buat Keputusan Anda</h2>
+        <p>Sekarang anda tahu perbezaan antara mengurus sendiri dan mengupah syarikat pengurusan. Tiba masanya untuk membuat keputusan.</p>
+        <h3>Jika Anda Memilih Urus Sendiri:</h3>
+        <ol>
+        <li><strong>Rancang masa anda dengan teliti</strong></li>
+        </ol>
+        <ul>
+        <li>Sediakan 15-20 jam seminggu</li>
+        <li>Tetapkan masa khusus untuk tugas Airbnb</li>
+        </ul>
+        <ol>
+        <li><strong>Automatikan sebanyak mungkin</strong></li>
+        </ol>
+        <ul>
+        <li>Gunakan smart lock untuk check-in</li>
+        <li>Guna tools untuk harga dinamik</li>
+        <li>Sediakan template untuk respons</li>
+        </ul>
+        <ol>
+        <li><strong>Bina hubungan dengan kontraktor</strong></li>
+        </ol>
+        <ul>
+        <li>Pembersih yang boleh dipercayai</li>
+        <li>Elektrik dan paip</li>
+        <li>Perkhidmatan keemasan 24/7</li>
+        </ul>
+        <ol>
+        <li><strong>Senaraikan di pelbagai platform</strong></li>
+        </ol>
+        <ul>
+        <li>Jangan hanya bergantung pada Airbnb</li>
+        <li>Pertimbangkan Booking.com, Agoda, dll</li>
+        </ul>
+        <h3>Jika Anda Memilih Syarikat Pengurusan:</h3>
+        <ol>
+        <li><strong>Pilih syarikat yang dipercayai</strong></li>
+        </ol>
+        <ul>
+        <li>Pengalaman yang terbukti</li>
+        <li>Yuran yang telus</li>
+        <li>Perkhidmatan yang komprehensif</li>
+        </ul>
+        <ol>
+        <li><strong>Fahami perjanjian</strong></li>
+        </ol>
+        <ul>
+        <li>Baca dengan teliti</li>
+        <li>Tanya apa yang tidak jelas</li>
+        <li>Pastikan anda selesa dengan syarat</li>
+        </ul>
+        <ol>
+        <li><strong>Tetapkan jangkaan</strong></li>
+        </ol>
+        <ul>
+        <li>Komunikasi kerap</li>
+        <li>Laporan bulanan</li>
+        <li>Pendapatan sasaran</li>
+        </ul>
+        <hr class="my-8">
+        <h2>Saya Nak Nasihat Tentang Pilihan Terbaik</h2>
+        <p>Buat keputusan yang tepat untuk situasi anda. Dapatkan konsultasi percuma tentang sama ada urus sendiri atau upah syarikat adalah pilihan terbaik untuk kondo anda.</p>
+        <strong>[WhatsApp Kami untuk Konsultasi Percuma]</strong>
+        <p>Kami akan membantu anda menilai:</p>
+        <ul>
+        <li>Masa dan bajet anda</li>
+        <li>Potensi pendapatan kondo anda</li>
+        <li>Kos faedah setiap pilihan</li>
+        <li>Cadangan yang diperibadikan</li>
+        </ul>
+        <p>Tunggu apa lagi? Setiap minggu yang anda buang mengurus sendiri adalah 15-20 jam yang boleh anda gunakan untuk perkara lain. Hubungi kami hari ini.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,297 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'Hubungi iHousing | Dapatkan Konsultasi Percuma';
+const description = 'Hubungi iHousing untuk pengurusan hartanah Airbnb di Melaka. Isi borang dan kami akan WhatsApp anda dalam masa 24 jam.';
+const image = 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200';
+
+// WhatsApp number (hidden from public view, used only for redirect)
+const whatsappNumber = '60196996688';
+
+// Get referrer URL for context
+let referrer = Astro.url.href;
+let referrerTitle = 'Borang Hubungi';
+
+// Try to extract context from referrer
+if (Astro.request.headers.get('referer')) {
+  referrer = Astro.request.headers.get('referer') || referrer;
+}
+
+// Determine page context from URL
+const url = new URL(Astro.url.href);
+const utmSource = url.searchParams.get('utm_source') || '';
+const utmCampaign = url.searchParams.get('utm_campaign') || '';
+const property = url.searchParams.get('property') || '';
+const interest = url.searchParams.get('interest') || '';
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 text-white py-16 lg:py-20">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-green-300 font-semibold mb-4 text-lg">Hubungi Kami</p>
+        <h1 class="text-3xl lg:text-4xl font-bold leading-tight mb-6">
+          Mari Bercakap Tentang Hartanah Anda
+        </h1>
+        <p class="text-xl text-green-100 mb-4">
+          Isi borang di bawah dan kami akan WhatsApp anda balas dalam masa 24 jam.
+        </p>
+        <p class="text-green-200 text-sm">
+          Konsultasi percuma • Tiada kewajipan • Nasihat pakar
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-16 bg-white">
+      <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+            Hantar Mesej Kepada Kami
+          </h2>
+          <p class="text-gray-600 mb-8 text-center">
+            Kami akan WhatsApp anda balas dalam masa 24 jam dengan maklumat yang diperibadikan.
+          </p>
+
+          <form id="contact-form" class="space-y-5">
+            <!-- Name -->
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                Nama Anda *
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+                placeholder="contoh: Ahmad"
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+              <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                Nombor Telefon (WhatsApp) *
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+                placeholder="contoh: 012-345 6789"
+              />
+              <p class="text-sm text-gray-500 mt-1">
+                Kami akan WhatsApp anda di nombor ini
+              </p>
+            </div>
+
+            <!-- Email (Optional) -->
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                Alamat E-mel (Pilihan)
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+                placeholder="contoh: ahmad@email.com"
+              />
+            </div>
+
+            <!-- Property Location -->
+            <div>
+              <label for="property" class="block text-sm font-semibold text-gray-700 mb-2">
+                Lokasi Hartanah
+              </label>
+              <select
+                id="property"
+                name="property"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+              >
+                <option value="">Pilih hartanah anda</option>
+                <option value="Parkland Avenue">Parkland Avenue</option>
+                <option value="Silverscape Residence">Silverscape Residence</option>
+                <option value="The Shore Residence">The Shore Residence</option>
+                <option value="Imperio Residence">Imperio Residence</option>
+                <option value="Novo 8 Residence">Novo 8 Residence</option>
+                <option value="Century Mahkota">Century Mahkota</option>
+                <option value="Wave Residence">Wave Residence</option>
+                <option value="Quartz Residence">Quartz Residence</option>
+                <option value="Atlantis Residence">Atlantis Residence</option>
+                <option value="Other">Lain-lain / Tidak Pasti</option>
+              </select>
+            </div>
+
+            <!-- Interest -->
+            <div>
+              <label for="interest" class="block text-sm font-semibold text-gray-700 mb-2">
+                Saya berminat dengan...
+              </label>
+              <select
+                id="interest"
+                name="interest"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+              >
+                <option value="">Pilih minat anda</option>
+                <option value="New Investment">Membeli hartanah untuk Airbnb</option>
+                <option value="Conversion">Menukar hartanah sedia ada kepada Airbnb</option>
+                <option value="Management">Beralih kepada pengurusan profesional</option>
+                <option value="Pricing">Maklumat harga</option>
+                <option value="Other">Pertanyaan lain</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                Mesej Anda (Pilihan)
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+                placeholder="Beritahu kami tentang hartanah anda atau tanya kami apa-apa sahaja..."
+              ></textarea>
+            </div>
+
+            <!-- Hidden fields for tracking -->
+            <input type="hidden" name="referrer" value={referrer} />
+            <input type="hidden" name="utm_source" value={utmSource} />
+            <input type="hidden" name="utm_campaign" value={utmCampaign} />
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl text-lg transition-colors shadow-lg"
+            >
+              Hantar Melalui WhatsApp
+            </button>
+
+            <p class="text-center text-sm text-gray-500 mt-4">
+              Kami tidak akan menghantar spam kepada anda. Janji.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Happens Next -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          Apa Yang Berlaku Seterusnya?
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">📝</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">1. Anda Isi Borang</h3>
+            <p class="text-gray-600 text-sm">Isi butiran anda dan kami akan sediakan respons yang diperibadikan secara serta-merta.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">💬</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">2. Kami WhatsApp Anda</h3>
+            <p class="text-gray-600 text-sm">Dalam masa 24 jam, anda akan menerima mesej WhatsApp yang diperibadikan.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">📞</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">3. Konsultasi Percuma</h3>
+            <p class="text-gray-600 text-sm">Kami akan bincangkan hartanah anda, jawab soalan, dan berikan nasihat pakar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          Soalan Lazim
+        </h2>
+
+        <div class="space-y-4">
+          <details class="bg-gray-50 p-6 rounded-xl">
+            <summary class="font-bold text-gray-900 cursor-pointer">Berapa cepat anda memberikan respons?</summary>
+            <p class="mt-3 text-gray-600">Kami biasanya memberikan respons dalam masa 24 jam, sering lebih cepat semasa waktu bekerja.</p>
+          </details>
+
+          <details class="bg-gray-50 p-6 rounded-xl">
+            <summary class="font-bold text-gray-900 cursor-pointer">Adakah konsultasi ini dikenakan bayaran?</summary>
+            <p class="mt-3 text-gray-600">Tidak, konsultasi adalah percuma sepenuhnya. Kami akan melawat hartanah anda, menilai potensinya, dan memberikan nasihat yang jujur - tanpa kewajipan.</p>
+          </details>
+
+          <details class="bg-gray-50 p-6 rounded-xl">
+            <summary class="font-bold text-gray-900 cursor-pointer">Maklumat apa yang perlu saya sediakan?</summary>
+            <p class="mt-3 text-gray-600">Hanya sediakan lokasi hartanah dan butiran asas anda. Kami akan membimbing anda melalui semua perkara lain semasa perbualan WhatsApp kami.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script is:inline>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const property = document.getElementById('property').value;
+      const interest = document.getElementById('interest').value;
+      const message = document.getElementById('message').value;
+      const referrer = document.querySelector('input[name="referrer"]').value;
+
+      // Build WhatsApp message with context
+      let whatsappMessage = `Hi iHousing! Saya berminat untuk mendapatkan maklumat tentang perkhidmatan pengurusan Airbnb anda.\n\n`;
+      whatsappMessage += `*Nama:* ${name}\n`;
+      whatsappMessage += `*Telefon:* ${phone}\n`;
+
+      if (email) {
+        whatsappMessage += `*E-mel:* ${email}\n`;
+      }
+
+      if (property && property !== 'Other') {
+        whatsappMessage += `*Hartanah:* ${property}\n`;
+      }
+
+      if (interest) {
+        whatsappMessage += `*Minat:* ${interest}\n`;
+      }
+
+      if (message) {
+        whatsappMessage += `\n*Mesej:*\n${message}\n`;
+      }
+
+      // Add referrer context for tracking
+      if (referrer && referrer !== window.location.href) {
+        try {
+          const referrerUrl = new URL(referrer);
+          const referrerPath = referrerUrl.pathname;
+          whatsappMessage += `\n*Dari:* ${referrerPath}`;
+        } catch (e) {
+          // Invalid URL, skip
+        }
+      }
+
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      const whatsappUrl = `https://wa.me/60196996688?text=${encodedMessage}`;
+
+      // Redirect to WhatsApp
+      window.open(whatsappUrl, '_blank');
+    });
+  </script>
+</Layout>

@@ -1,0 +1,53 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "遗产新年庆祝：文化体验营销";
+const description = "为2026年中国新年营销您的马六甲遗产物业。文化体验营销策略、真实性定位和寻求传统TBC庆祝体验的客人。";
+const date = "2026-01-29";
+const category = "location-based";
+const language = "en";
+const image = "/images/blog/heritage-cny-cultural-marketing.jpg";
+
+const content = `
+<h1>Heritage New Year Celebrations: Cultural Experience Marketing</h1>
+
+<h2>Selling Authentic Melaka CNY Experiences to Airbnb Guests</h2>
+
+<p>In 2026's competitive Airbnb market, <strong>cultural authenticity</strong> has become the primary differentiator for heritage properties in Melaka's UNESCO zone. Guests seek <strong>immersive Chinese New Year experiences</strong> that connect with Melaka's unique Peranakan heritage.</p>
+
+<h3>The Peranakan Culture: The Melaka Differentiator</h3>
+
+<p>Melaka's CNY celebrations blend <strong>Chinese, Malay, and European influences</strong>:</p>
+
+<ul>
+<li><strong>Architecture:</strong> Shophouses with Chinese courtyard + Portuguese tiles</li>
+<li><strong>Cuisine:</strong> Nyonya dishes alongside Chinese reunion food</li>
+<li><strong>Customs:</strong> Unique Peranakan CNY traditions</li>
+</ul>
+
+<p><strong>Marketing angle:</strong> "Not just Chinese New Year - <strong>Melaka Peranakan Chinese New Year</strong>"</p>
+
+<h2>Cultural Content Marketing</h2>
+
+<p><strong>Video content ideas:</strong></p>
+<ul>
+<li>"5 minutes from shophouse to Jonker CNY market"</li>
+<li>"Making kueh kapit with neighbor Auntie Lim"</li>
+</ul>
+
+<p><strong>WhatsApp +60166996688</strong> to begin your heritage property's CNY 2026 cultural experience strategy.</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+    <BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

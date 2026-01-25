@@ -1,0 +1,423 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Airbnb vs Sewa Jangka Panjang Melaka: Kalkulator ROI 5 Tahun";
+const description = "Bandingkan pulangan Airbnb vs sewa jangka panjang di Melaka dengan kalkulator ROI 5 tahun kami yang terperinci. Lihat strategi mana yang memaksimumkan pulangan pelaburan hartanah anda.";
+const image = "/images/blog/airbnb-vs-sewa-jangka-panjang-melaka-kalkulator.jpg";
+const date = "2026-01-03";
+const category = "comparison";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Airbnb vs Sewa Jangka Panjang Melaka: Kalkulator ROI 5 Tahun</h1>
+
+<p>Salah satu soalan yang paling biasa dari pelabur hartanah Melaka: <strong>"Patutkah saya menyewakan hartanah saya di Airbnb atau pergi dengan sewa jangka panjang?"</strong></p>
+
+<p>Ini adalah keputusan kritikal yang memberi kesan dramatik kepada pulangan anda. Di iHousing Melaka, kami telah menguruskan hartanah menggunakan kedua-dua strategi dan mempunyai data sebenar untuk dikongsi.</p>
+
+<p>Mari kita pecahkan perbandingan kewangan 5 tahun supaya anda boleh membuat keputusan yang maklum.</p>
+
+<h2>Perbandingan Asas</h2>
+
+<h3>Persediaan Senario</h3>
+
+<p>Untuk analisis ini, kami akan menggunakan kondo Melaka tipikal:</p>
+
+<ul>
+<li><strong>Nilai hartanah:</strong> RM400,000</li></ul>
+
+<ul>
+<li><strong>Lokasi:</strong> Kawasan pelancong Melaka (kawasan Jonker Walk)</li></ul>
+
+<ul>
+<li><strong>Jenis unit:</strong> 2-bilik tidur, 900 kaki persegi</li></ul>
+
+<ul>
+<li><strong>Kos perabot:</strong> RM30,000 (Airbnb) vs RM15,000 (jangka panjang)</li></ul>
+
+<h2>Pecahan Tahun demi Tahun</h2>
+
+<h3>Tahun 1: Persediaan dan Pelancaran</h3>
+
+<strong>Sewa Jangka Panjang</strong>
+<ul>
+<li>Sewa bulanan: RM1,800-2,200</li></ul>
+
+<ul>
+<li>Pendapatan sewa tahunan: RM21,600-26,400</li></ul>
+
+<ul>
+<li>Tempoh kosong (mencari penyewa): 1 bulan</li></ul>
+
+<ul>
+<li>Pendapatan bersih Tahun 1: RM19,800-24,200</li></ul>
+
+<strong>Airbnb dengan iHousing</strong>
+<ul>
+<li>Pendapatan bulanan: RM6,000-9,000</li></ul>
+
+<ul>
+li>Yuran pengurusan: RM250-300/bulan (berbeza mengikut kondo)</li></ul>
+
+<ul>
+<li>Pendapatan kasar tahunan: RM72,000-108,000</li></ul>
+
+<ul>
+li>Kos operasi (pembersihan, bekalan): RM15,000-20,000</li></ul>
+
+<ul>
+li>Pendapatan bersih Tahun 1: RM51,000-83,000</li></ul>
+
+<strong>Pemenang Tahun 1:</strong> <em>Airbnb oleh RM31,200-58,800</em>
+
+<h3>Tahun 2: Penstabilan</h3>
+
+<strong>Sewa Jangka Panjang</strong>
+<ul>
+<li>Peningkatan sewa: 5% (pelarasan pasaran)</li></ul>
+
+<ul>
+li>Pendapatan tahunan: RM22,680-27,720</li></ul>
+
+<ul>
+li>Kos penyelenggaraan: RM2,000-3,000</li></ul>
+
+<ul>
+li>Pendapatan bersih Tahun 2: RM19,680-24,720</li></ul>
+
+<strong>Airbnb dengan iHousing</strong>
+<ul>
+<li>Optimumsi penghunian: 75-85%</li></ul>
+
+<ul>
+<li>Pendapatan tahunan: RM80,000-115,000</li></ul>
+
+<ul>
+li>Kos operasi: RM16,000-22,000</li></ul>
+
+<ul>
+<li>Pendapatan bersih Tahun 2: RM59,000-88,000</li></ul>
+
+<strong>Pemenang Tahun 2:</strong> <em>Airbnb oleh RM39,320-63,280</em>
+
+<h3>Tahun 3: Fasa Pertumbuhan</h3>
+
+<strong>Sewa Jangka Panjang</strong>
+<ul>
+<li>Peningkatan sewa: 5%</li></ul>
+
+<ul>
+<li>Pendapatan tahunan: RM23,814-29,106</li></ul>
+
+<ul>
+<li>Penyelenggaraan utama: RM3,000-5,000</li></ul>
+
+<ul>
+<li>Pendapatan bersih Tahun 3: RM18,814-24,106</li></ul>
+
+<strong>Airbnb dengan iHousing</strong>
+<ul>
+<li>Akumulasi ulasan: Status Superhost dicapai</li></ul>
+
+<ul>
+<li>Kemampuan harga premium: +15-20%</li></ul>
+
+<ul>
+<li>Pendapatan tahunan: RM90,000-130,000</li></ul>
+
+<ul>
+li>Kos operasi: RM18,000-25,000</li></ul>
+
+<ul>
+li>Pendapatan bersih Tahun 3: RM67,000-102,000</li></ul>
+
+<strong>Pemenang Tahun 3:</strong> <em>Airbnb oleh RM48,186-77,894</em>
+
+<h3>Tahun 4: Prestasi Puncak</h3>
+
+<strong>Sewa Jangka Panjang</strong>
+<ul>
+<li>Peningkatan sewa: 5%</li></ul>
+
+<ul>
+<li>Pendapatan tahunan: RM25,005-30,561</li></ul>
+
+<ul>
+<li>Penyelenggaraan biasa: RM2,500</li></ul>
+
+<ul>
+li>Pendapatan bersih Tahun 4: RM22,505-28,061</li></ul>
+
+<strong>Airbnb dengan iHousing</strong>
+<ul>
+<li>Kadar ulangan tetamu: 25-30%</li></ul>
+
+<ul>
+<li>Optimumsi tempahan langsung</li></ul>
+
+<ul>
+<li>Pendapatan tahunan: RM95,000-140,000</li></ul>
+
+<ul>
+li>Kos operasi: RM20,000-28,000</li></ul>
+
+<ul>
+li>Pendapatan bersih Tahun 4: RM72,000-108,000</li></ul>
+
+<strong>Pemenang Tahun 4:</strong> <em>Airbnb oleh RM49,495-79,939</em>
+
+<h3>Tahun 5: Prestasi Tercantum</h3>
+
+<strong>Sewa Jangka Panjang</strong>
+<ul>
+<li>Peningkatan sewa: 5%</li></ul>
+
+<ul>
+<li>Pendapatan tahunan: RM26,255-32,089</li></ul>
+
+<ul>
+li>Penyelenggaraan: RM3,000</li></ul>
+
+<ul>
+li>Pendapatan bersih Tahun 5: RM23,255-29,089</li></ul>
+
+<strong>Airbnb dengan iHousing</strong>
+<ul>
+<li>Kedudukan pasaran: 10% teratas di kawasan</li></ul>
+
+<ul>
+<li>Kuasa harga dinamik</li></ul>
+
+<ul>
+<li>Pendapatan tahunan: RM100,000-150,000</li></ul>
+
+<ul>
+li>Kos operasi: RM22,000-30,000</li></ul>
+
+<ul>
+li>Pendapatan bersih Tahun 5: RM78,000-115,000</li></ul>
+
+<strong>Pemenang Tahun 5:</strong> <em>Airbnb oleh RM54,745-85,911</em>
+
+<h2>Perbandingan Total 5 Tahun</h2>
+
+<h3>Pendapatan Bersih Terkumpul</h3>
+
+<strong>Sewa Jangka Panjang (5 Tahun):</strong>
+<ul>
+<li>Jumlah pendapatan bersih: RM104,054-130,376</li></ul>
+
+<ul>
+<li>Purata setahun: RM20,811-26,075</li></ul>
+
+<strong>Airbnb dengan iHousing (5 Tahun):</strong>
+<ul>
+<li>Jumlah pendapatan bersih: RM327,000-496,000</li></ul>
+
+<ul>
+<li>Purata setahun: RM65,400-99,200</li></ul>
+
+<strong>Pemenang 5 Tahun:</strong> <em>Airbnb oleh RM222,946-365,624</em>
+
+<p>Itu tambahan <strong>RM222,000-365,000</strong> selama 5 tahun dengan Airbnb.</p>
+
+<h2>Faktor dalam Apresiasi Hartanah</h2>
+
+<p>Kedua-dua strategi mendapat manfaat daripada apresiasi hartanah, tetapi secara berbeza:</p>
+
+<strong>Sewa Jangka Panjang:</strong>
+<ul>
+<li>Apresiasi tahunan: 3-4%</li></ul>
+
+<ul>
+<li>Apresiasi 5 tahun: RM62,000-86,000</li></ul>
+
+<ul>
+li>Usaha dan haus: Lebih tinggi (penggunaan penyewa berterusan)</li></ul>
+
+<strong>Airbnb:</strong>
+<ul>
+<li>Apresiasi tahunan: 4-6% (kawasan pelancong apresiasi lebih pantas)</li></ul>
+
+<ul>
+<li>Apresiasi 5 tahun: RM83,000-135,000</li></ul>
+
+<ul>
+li>Usaha dan haus: Dikawal (pengurusan profesional)</li></ul>
+
+<h2>Kos Tersembunyi Perbandingan</h2>
+
+<h3>Kos Tersembunyi Sewa Jangka Panjang</h3>
+
+<ul>
+<li><strong>Kerosakan penyewa:</strong> RM5,000-15,000 setiap turnover</li></ul>
+
+<ul>
+<li><strong>Arrear sewa:</strong> 10-20% sewa tahunan (tipikal)</li></ul>
+
+<ul>
+<li><strong>Kos undang-undang untuk pengusiran:</strong> RM3,000-8,000 (jika perlu)</li></ul>
+
+<ul>
+<li><strong>Tempoh kosong lanjutan:</strong> 2-3 bulan antara penyewa</li></ul>
+
+<strong>Kos Tersembunyi Airbnb</strong>
+<ul>
+<li><strong>Renovation setiap 3-4 tahun:</strong> RM8,000-15,000</li></ul>
+
+<ul>
+<li><strong>Utiliti lebih tinggi:</strong> RM2,000-3,000/tahun (corak penggunaan tetamu)</li></ul>
+
+<ul>
+<li><strong>Yuran platform:</strong> 3% pendapatan (yuran Airbnb)</li></ul>
+
+<ul>
+<li><strong>Insidentals tetamu:</strong> RM1,000-2,000/tahun</li></ul>
+
+<p>Bahkan akaun untuk kos tersembunyi, Airbnb mengekalkan kelebihan yang ketara.</p>
+
+<h2>Faktor Risiko</h2>
+
+<h3>Risiko Sewa Jangka Panjang</h3>
+
+<ul>
+<li><strong>Penyewa buruk:</strong> Sukar untuk mengusir di Malaysia</li></ul>
+
+<ul>
+<li><strong>Kawalan sewa:</strong> Peraturan masa depan yang berpotensi</li></ul>
+
+<ul>
+<li><strong>Lebihan pasaran:</strong> Lebihan kondo menjejaskan sewa</li></ul>
+
+<ul>
+<li><strong>Ketidakfleksibelan:</strong> Dikunci ke dalam kontrak 1+ tahun</li></ul>
+
+<h3>Risiko Airbnb</h3>
+
+<ul>
+<li><strong>Perubahan peraturan:</strong> Keperluan lesen perbandaran</li></ul>
+
+<ul>
+<li><strong>Fluktuasi pelancongan:</strong> Kesan ekonomi atau pandemik</li></ul>
+
+<ul>
+<li><strong>Kerumitan pengurusan lebih tinggi:</strong> Memerlukan pengendalian profesional</li></ul>
+
+<ul>
+<li><strong>Varians bermusim:</strong> Pendapatan berubah-ubah bulan-ke-bulan</li></ul>
+
+<p>Kedua-dua strategi membawa risiko, tetapi pengurusan Airbnb profesional mengurangkannya dengan ketara.</p>
+
+<h2>Faktor Kritikal: Pengurusan Profesional</h2>
+
+<p>Nombor Airbnb di atas menganggap <strong>pengurusan profesional oleh iHousing</strong>. Inilah sebabnya ini penting:</p>
+
+<h3>Prestasi Airbnb Sendiri-Urus</h3>
+
+<p>Data kami menunjukkan Airbnb sendiri-urus biasanya memperoleh:</p>
+
+<ul>
+<li>20-30% kurang pendapatan (harga buruk, respons perlahan)</li></ul>
+
+<ul>
+<li>15-25% kos operasi lebih tinggi (ketidakcekapan)</li></ul>
+
+<ul>
+<li>Penarafan tetamu lebih rendah (perkhidmatan tidak konsisten)</li></ul>
+
+<p>Pendapatan bersih 5 tahun sendiri-urus: RM240,000-350,000</p>
+
+<h3>Prestasi Diurus-iHousing</h3>
+
+<p>Pengurusan profesional kami menyampaikan:</p>
+
+<ul>
+li>Penyenaraian multi-platform (60% tempahan lebih)</li></ul>
+
+<ul>
+<li>Algoritma harga dinamik (kadar 15-25% lebih tinggi)</li></ul>
+
+<ul>
+li>Pengalaman tetamu 5-bintang (tempahan ulangan)</li></ul>
+
+<ul>
+li>Operasi cekap (kos lebih rendah)</li></ul>
+
+<p>Pendapatan bersih 5 tahun yang diurus secara profesional: RM327,000-496,000</p>
+
+<p><strong>Pengurusan profesional menambah RM87,000-146,000 selama 5 tahun.</strong></p>
+
+<h2>Bila Sewa Jangka Panjang Masuk Akal</h2>
+
+<p>Sewa jangka panjang mungkin lebih baik jika:</p>
+
+<ul>
+<li>Hartanah di kawasan perumahan bukan pelancong</li></ul>
+
+<ul>
+<li>Anda mahu penglibatan sifar dalam pengurusan</li></ul>
+
+<ul>
+<li>Anda lebih suka pendapatan bulanan yang stabil, boleh diramalkan</li></ul>
+
+<ul>
+li>Jenis hartanah tidak sesuai untuk sewa jangka pendek (studio, lantai rendah)</li></ul>
+
+<h2>Bila Airbnb Jelas Lebih Baik</h2>
+
+<p>Airbnb menang apabila:</p>
+
+<ul>
+<li>Hartanah di kawasan pelancong (Jonker Walk, pantai, Melaka Raya)</li></ul>
+
+<ul>
+<li>Anda mahu pulangan 2-3x lebih tinggi</li></ul>
+
+<ul>
+<li>Anda mahu fleksibiliti untuk kegunaan peribadi</li></ul>
+
+<ul>
+<li>Hartanah mempunyai ciri yang dicari tetamu (pemandangan, parking, ruang)</li></ul>
+
+<h2>Keputusan</h2>
+
+<p>Untuk kebanyakan hartanah Melaka di kawasan pelancong, <strong>Airbnb menjana 200-250% pulangan lebih tinggi daripada sewa jangka panjang selama 5 tahun.</strong></p>
+
+<p>Kunci untuk menangkap premium ini adalah pengurusan profesional. Tanpa itu, jurang menyempit dengan ketara.</p>
+
+<h2>Dapatkan Analisis Tersuai Anda</h2>
+
+<p>Setiap hartanah adalah unik. Dapatkan unjuran 5 tahun yang diperibadikan untuk situasi anda.</p>
+
+<strong>WhatsApp iHousing Melaka untuk:</strong>
+<ul>
+<li>Analisis ROI khusus hartanah percuma</li></ul>
+
+<ul>
+<li>Perbandingan untuk jenis unit dan lokasi tepat anda</li></ul>
+
+<ul>
+li>Pecahan kos pengurusan</li></ul>
+
+<ul>
+<li>Penilaian risiko untuk hartanah anda</li></ul>
+
+<p>Jangan terlepas pulangan sewa jangka panjang apabila hartanah anda boleh menjana 2-3x lebih dengan pengurusan Airbnb profesional.</p>
+
+<strong>Kebanyakan hartanah yang kami nilai menunjukkan pulangan tahunan RM40,000-70,000 lebih tinggi dengan Airbnb.</strong>
+
+<p>[WhatsApp iHousing Melaka untuk Analisis ROI 5 Tahun Percuma]</p>
+
+<em>Diurus secara profesional. Diperoleh secara pasif. Dinikmati sepenuhnya.</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

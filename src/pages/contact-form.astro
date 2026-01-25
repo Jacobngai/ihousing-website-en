@@ -1,0 +1,297 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'Contact iHousing | Get Free Consultation';
+const description = 'Get in touch with iHousing for Airbnb property management in Melaka. Fill out the form and we\'ll WhatsApp you back within 24 hours.';
+const image = 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200';
+
+// WhatsApp number (hidden from public view, used only for redirect)
+const whatsappNumber = '60196996688';
+
+// Get referrer URL for context
+let referrer = Astro.url.href;
+let referrerTitle = 'Contact Form';
+
+// Try to extract context from referrer
+if (Astro.request.headers.get('referer')) {
+  referrer = Astro.request.headers.get('referer') || referrer;
+}
+
+// Determine page context from URL
+const url = new URL(Astro.url.href);
+const utmSource = url.searchParams.get('utm_source') || '';
+const utmCampaign = url.searchParams.get('utm_campaign') || '';
+const property = url.searchParams.get('property') || '';
+const interest = url.searchParams.get('interest') || '';
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 text-white py-16 lg:py-20">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-green-300 font-semibold mb-4 text-lg">Get In Touch</p>
+        <h1 class="text-3xl lg:text-4xl font-bold leading-tight mb-6">
+          Let's Chat About Your Property
+        </h1>
+        <p class="text-xl text-green-100 mb-4">
+          Fill out the form below and we'll WhatsApp you back within 24 hours.
+        </p>
+        <p class="text-green-200 text-sm">
+          Free consultation • No obligations • Expert advice
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-16 bg-white">
+      <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+            Send Us a Message
+          </h2>
+          <p class="text-gray-600 mb-8 text-center">
+            We'll get back to you via WhatsApp within 24 hours with personalized information.
+          </p>
+
+          <form id="contact-form" class="space-y-5">
+            <!-- Name -->
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                Your Name *
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+                placeholder="e.g. Ahmad"
+              />
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+              <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                Phone Number (WhatsApp) *
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+                placeholder="e.g. 012-345 6789"
+              />
+              <p class="text-sm text-gray-500 mt-1">
+                We'll WhatsApp you on this number
+              </p>
+            </div>
+
+            <!-- Email (Optional) -->
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                Email Address (Optional)
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+                placeholder="e.g. ahmad@email.com"
+              />
+            </div>
+
+            <!-- Property Location -->
+            <div>
+              <label for="property" class="block text-sm font-semibold text-gray-700 mb-2">
+                Property Location
+              </label>
+              <select
+                id="property"
+                name="property"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+              >
+                <option value="">Select your property</option>
+                <option value="Parkland Avenue">Parkland Avenue</option>
+                <option value="Silverscape Residence">Silverscape Residence</option>
+                <option value="The Shore Residence">The Shore Residence</option>
+                <option value="Imperio Residence">Imperio Residence</option>
+                <option value="Novo 8 Residence">Novo 8 Residence</option>
+                <option value="Century Mahkota">Century Mahkota</option>
+                <option value="Wave Residence">Wave Residence</option>
+                <option value="Quartz Residence">Quartz Residence</option>
+                <option value="Atlantis Residence">Atlantis Residence</option>
+                <option value="Other">Other / Not Sure</option>
+              </select>
+            </div>
+
+            <!-- Interest -->
+            <div>
+              <label for="interest" class="block text-sm font-semibold text-gray-700 mb-2">
+                I'm interested in...
+              </label>
+              <select
+                id="interest"
+                name="interest"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+              >
+                <option value="">Select your interest</option>
+                <option value="New Investment">Buying property for Airbnb</option>
+                <option value="Conversion">Converting existing property to Airbnb</option>
+                <option value="Management">Switching to professional management</option>
+                <option value="Pricing">Pricing information</option>
+                <option value="Other">Other inquiry</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                Your Message (Optional)
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-green-500 focus:outline-none transition-colors"
+                placeholder="Tell us about your property or ask us anything..."
+              ></textarea>
+            </div>
+
+            <!-- Hidden fields for tracking -->
+            <input type="hidden" name="referrer" value={referrer} />
+            <input type="hidden" name="utm_source" value={utmSource} />
+            <input type="hidden" name="utm_campaign" value={utmCampaign} />
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl text-lg transition-colors shadow-lg"
+            >
+              Send via WhatsApp
+            </button>
+
+            <p class="text-center text-sm text-gray-500 mt-4">
+              We'll never spam you. Promise.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Happens Next -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          What Happens Next?
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">📝</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">1. You Submit Form</h3>
+            <p class="text-gray-600 text-sm">Fill in your details and we'll instantly prepare a personalized response.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">💬</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">2. We WhatsApp You</h3>
+            <p class="text-gray-600 text-sm">Within 24 hours, you'll receive a personalized WhatsApp message.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl">📞</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">3. Free Consultation</h3>
+            <p class="text-gray-600 text-sm">We'll discuss your property, answer questions, and provide expert advice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-4">
+          <details class="bg-gray-50 p-6 rounded-xl">
+            <summary class="font-bold text-gray-900 cursor-pointer">How quickly do you respond?</summary>
+            <p class="mt-3 text-gray-600">We typically respond within 24 hours, often much faster during business hours.</p>
+          </details>
+
+          <details class="bg-gray-50 p-6 rounded-xl">
+            <summary class="font-bold text-gray-900 cursor-pointer">Do you charge for consultation?</summary>
+            <p class="mt-3 text-gray-600">No, consultation is completely free. We'll visit your property, assess its potential, and give you honest advice - no obligations.</p>
+          </details>
+
+          <details class="bg-gray-50 p-6 rounded-xl">
+            <summary class="font-bold text-gray-900 cursor-pointer">What information should I prepare?</summary>
+            <p class="mt-3 text-gray-600">Just have your property location and basic details ready. We'll guide you through everything else during our WhatsApp conversation.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script is:inline>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const property = document.getElementById('property').value;
+      const interest = document.getElementById('interest').value;
+      const message = document.getElementById('message').value;
+      const referrer = document.querySelector('input[name="referrer"]').value;
+
+      // Build WhatsApp message with context
+      let whatsappMessage = `Hi iHousing! I'd like to inquire about your Airbnb management services.\n\n`;
+      whatsappMessage += `*Name:* ${name}\n`;
+      whatsappMessage += `*Phone:* ${phone}\n`;
+
+      if (email) {
+        whatsappMessage += `*Email:* ${email}\n`;
+      }
+
+      if (property && property !== 'Other') {
+        whatsappMessage += `*Property:* ${property}\n`;
+      }
+
+      if (interest) {
+        whatsappMessage += `*Interest:* ${interest}\n`;
+      }
+
+      if (message) {
+        whatsappMessage += `\n*Message:*\n${message}\n`;
+      }
+
+      // Add referrer context for tracking
+      if (referrer && referrer !== window.location.href) {
+        try {
+          const referrerUrl = new URL(referrer);
+          const referrerPath = referrerUrl.pathname;
+          whatsappMessage += `\n*From:* ${referrerPath}`;
+        } catch (e) {
+          // Invalid URL, skip
+        }
+      }
+
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      const whatsappUrl = `https://wa.me/60196996688?text=${encodedMessage}`;
+
+      // Redirect to WhatsApp
+      window.open(whatsappUrl, '_blank');
+    });
+  </script>
+</Layout>

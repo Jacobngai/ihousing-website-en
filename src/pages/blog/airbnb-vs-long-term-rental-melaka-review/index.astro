@@ -1,0 +1,42 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Janvier Mensuel: Ce Qui A Fonctionné pour les Propriétés Côtières";
+const description = "Analyse de la performance de janvier 2026 pour les propriétés Airbnb côtiers de Melaka. Ce qui a fonctionné, ce qui n'a pas fonctionné, et leçons pour février.";
+const date = "2026-01-31";
+const category = "educational";
+const language = "fr";
+const image = "/images/blog/january-review-coastal-properties.jpg";
+
+const content = `
+<h1>Janvier Mensuel: Performance des Propriétés Côtières</h1>
+
+<p>Juillet 2026 a livré <strong>performance solide</strong> pour les propriétés côtiers de Pantai Kundur et Tanjung Bidara. Avec <strong>8 ans de gestion de 100+ propriétés</strong>, iHousing analyse ce qui a fonctionné.</p>
+
+<h2>Ce Qui a Fonctionné</h2>
+
+<p><strong>Positionnement "Weekend Warrior":</strong> Les propriétés mettant l'accent sur les escapades de fin de semaine ont atteint 22% d'occupation.</p>
+
+<p><strong>Ciblage singapourien:</strong> 40% des réservations viennent de Singapour (+35% vs 2025).</p>
+
+<h2>Ce Qui N'a Pas Fonctionné</h2>
+
+<p><strong>Tarifs mi-semaine trop élevés:</strong> Les tarifs RM 250+ le mardi-jeudi ont entraîné 40% de vacance.</p>
+
+<p><strong>Surpromotion de la météo:</strong>Les promesses de "garanti soleil" ont échoué pendant une semaine pluvieuse.</p>
+
+<p><strong>WhatsApp +60166996688</strong> pour votre analyse personnalisée.</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+<BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

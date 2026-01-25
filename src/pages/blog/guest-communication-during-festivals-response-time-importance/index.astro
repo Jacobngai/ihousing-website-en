@@ -1,0 +1,68 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Guest Communication During Festivals: Why Response Time Matters";
+const description = "During CNY and peak festival seasons, guest communication becomes critical. Learn why 15-minute response times can make or break your Airbnb reputation and revenue.";
+const date = "2026-01-30";
+const category = "educational";
+const language = "en";
+const image = "/images/blog/guest-communication-festivals.jpg";
+
+const content = `
+<h1>Guest Communication During Festivals: Why Response Time Matters</h1>
+
+<p>During Chinese New Year and other peak festival seasons, <strong>guest communication expectations increase dramatically</strong>. With 8 years managing 100+ properties, iHousing has learned that response time is the #1 factor affecting guest satisfaction and reviews.</p>
+
+<h2>Peak Season Communication Challenges</h2>
+
+<p><strong>Why communication matters more during festivals:</strong></p>
+
+<ul>
+<li><strong>Higher stakes:</strong> Guests are paying premium rates (50-60% above normal)</li>
+<li><strong>Less flexibility:</strong> Limited alternative accommodation options during holidays</li>
+<li><strong>Family pressure:</strong> Multi-generational groups with urgent needs</li>
+<li><strong>Event timing:</strong> Tied to specific dates (reunions, dinners, celebrations)</li>
+<li><strong>Review impact:</strong> Bad experiences during festivals = permanent reputation damage</li>
+</ul>
+
+<h3>iHousing's Communication Standards</h3>
+
+<p><strong>quick response during business hours commitment:</strong></p>
+
+<ul>
+<li><strong>Inquiries:</strong> Response within 15 minutes (not hours)</li>
+<li><strong>Issues:</strong> On-site team dispatched within 30 minutes</li>
+<li><strong>Resolution:</strong> 90% of issues resolved same day</li>
+<li><strong>Multilingual:</strong> EN, BM, Mandarin, dialects spoken</li>
+</ul>
+
+<p><strong>Result:</strong> 4.8-star rating average during peak vs 4.2 industry average.</p>
+
+<h2>Common CNY Guest Issues</h2>
+
+<p><strong>Top 5 festival season problems requiring rapid response:</strong></p>
+
+<ol>
+<li><strong>AC breakdown:</strong> Critical during hot Malaysian weather (emergency technician within 60 min)</li>
+<li><strong>WiFi problems:</strong> Remote workers need connectivity (backup router within 2 hours)</li>
+<li><strong>Cleaning oversights:</strong> Extra attention needed for multi-generational groups (re-clean within 3 hours)</li>
+<li><strong>Appliances malfunction:</strong> Cooking equipment crucial for CNY meals (replacement within 24 hours)</li>
+<li><strong>Noise complaints:</strong> Thin walls during festive celebrations (mediation + white noise machines)</li>
+</ol>
+
+<p><strong>WhatsApp +60166996688</strong> for festival-ready communication management.</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+<BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

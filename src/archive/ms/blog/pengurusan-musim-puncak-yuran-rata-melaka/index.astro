@@ -1,0 +1,76 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Pengurusan Musim Puncak: Yuran Rata Jimat Anda Semasa Kadar Tinggi";
+const description = "Ketahui bagaimana struktur yuran rata iHousing memaksimumkan pendapatan anda semasa musim puncak seperti Tahun Baruh Cina. Tiada peratusan komisen bermakna anda mengekalkan lebih banyak pendapatan.";
+const date = "2026-01-29";
+const category = "pricing";
+const language = "ms";
+const image = "/images/blog/musim-puncak-yuran-rata.jpg";
+
+const content = `
+<h1>Pengurusan Musim Puncak: Bagaimana Yuran Rata Jimat Anda</h1>
+
+<h2>Perangkap Komisen: Mengapa Musim Puncak Membebankan Pemilik</h2>
+
+<p>Semasa Tahun Baruh Cina, cuti sekolah, dan musim puncak lain, kadar Airbnb di Melaka boleh meningkat <strong>40-60%</strong>. Untuk syarikat pengurusan berasaskan komisen, ini bermakna <strong>yuran mereka juga meningkat 40-60%</strong> - menghukum anda untuk kejayaan.</p>
+
+<p>Model yuran rata iHousing (RM200-300/bulan) beroperasi berbeza: <strong>kos anda kekal sama</strong> sama ada anda mengenakan RM150 atau RM450 setiap malam.</p>
+
+<h3>Kelebihan Yuran Rata Semasa Musim Puncak</h3>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>Musim</strong></th>
+<th><strong>Purata Kadar Harian</strong></th>
+<th><strong>Komisen 20%</strong></th>
+<th><strong>Yuran Rata</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Luar puncak</td>
+<td>RM 150</td>
+<td>RM 900</td>
+<td>RM 250</td>
+</tr>
+<tr>
+<td><strong>Musim Puncak (TBC)</strong></td>
+<td><strong>RM 350</strong></td>
+<td><strong>RM 2,100</strong></td>
+<td><strong>RM 250</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Dengan 20% komisen:</strong> Bila kadar anda tiga kali ganda, anda bayar <strong>tiga kali ganda yuran pengurusan</strong>.</p>
+
+<h2>Parkland Avenue: Contoh Yuran Rata Terbaik</h2>
+
+<p>Untuk Parkland Avenue, iHousing menawarkan <strong>harga yuran rata eksklusif</strong>:</p>
+
+<ul>
+<li><strong>1 bilik:</strong> RM 200/bulan</li>
+<li><strong>2 bilik:</strong> RM 250/bulan</li>
+<li><strong>3 bilik:</strong> RM 300/bulan</li>
+</ul>
+
+<p><strong>Simpanan TBC:</strong> Seunit 2-bedroom menjana RM7,200 semasa TBC. Komisen 20% = RM1,440. iHousing = RM125.</p>
+
+<p><strong>WhatsApp +60166996688</strong> untuk kiraan simpanan anda dan bertukar sebelum TBC 2026.</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+    <BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

@@ -1,0 +1,77 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const condoName = 'The Quartz Residence';
+const title = `${condoName} Airbnb Management | Switch to iHousing`;
+const description = `Not happy with your current Airbnb manager at ${condoName}? Switch to iHousing. 8 years experience. 100+ properties in Melaka. Contact us for custom pricing.`;
+
+const contactFormLink = '/zh/contact-form/';
+---
+
+<Layout title={title} description={description}>
+  <main>
+    <section class="relative bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 text-white py-20 lg:py-28">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-green-300 font-semibold mb-4 text-lg">Unhappy With Your Current Airbnb Manager?</p>
+        <h1 class="text-3xl lg:text-5xl font-bold leading-tight mb-6">{condoName} owners are switching to iHousing</h1>
+        <p class="text-xl lg:text-2xl text-green-100 mb-8 max-w-3xl mx-auto">Stop paying 20% commission. <span class="text-yellow-400 font-bold">Contact us for custom pricing</span> that saves you money.</p>
+        <a href={contactFormLink} id="hero-cta" class="inline-block bg-yellow-500 hover:bg-yellow-400 text-green-900 font-bold py-4 px-10 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg">Contact Us Now</a>
+        <p class="mt-4 text-green-200 text-sm">No obligations. Just a friendly chat.</p>
+      </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">Is your current manager giving you headaches?</h2>
+        <div class="grid md:grid-cols-3 gap-6 text-left">
+          <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500"><p class="text-gray-700"><span class="font-bold text-red-600">Paying 20% commission?</span> That's RM400-800/month on a RM2,000-4,000 earning unit...</p></div>
+          <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500"><p class="text-gray-700"><span class="font-bold text-red-600">Poor communication?</span> Never knowing when your unit is booked or how much you earned...</p></div>
+          <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500"><p class="text-gray-700"><span class="font-bold text-red-600">Low occupancy?</span> Unit sitting empty while you pay maintenance fees...</p></div>
+        </div>
+        <p class="mt-8 text-lg text-gray-600">We manage 100+ units in Melaka. We know how to fill your calendar.</p>
+        <p class="mt-4 text-xl font-semibold text-green-700">Switch to us and keep more of your rental income.</p>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-center">Why {condoName} Owners Choose iHousing</h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">We already manage units in your building.</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gradient-to-br from-yellow-50 to-amber-50 p-6 rounded-xl border-2 border-yellow-200"><div class="w-14 h-14 bg-yellow-500 rounded-full flex items-center justify-center mb-4"><span class="text-2xl text-white">$</span></div><h3 class="text-xl font-bold text-yellow-900 mb-2">Cheapest in Market</h3><p class="text-gray-700">Others charge 20% of your revenue. We charge a flat fee. <span class="font-semibold">You keep more money.</span></p></div>
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border-2 border-blue-200"><div class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center mb-4"><span class="text-2xl text-white">8</span></div><h3 class="text-xl font-bold text-blue-900 mb-2">8 Years Experience</h3><p class="text-gray-700">We've been doing Airbnb management in Melaka since the beginning. We know this market inside out.</p></div>
+          <div class="bg-gradient-to-br from-purple-50 to-violet-50 p-6 rounded-xl border-2 border-purple-200"><div class="w-14 h-14 bg-purple-600 rounded-full flex items-center justify-center mb-4"><span class="text-2xl text-white">&#128722;</span></div><h3 class="text-xl font-bold text-purple-900 mb-2">In-House Cleaning Team</h3><p class="text-gray-700">Our own cleaners, not expensive outsourcing. No hidden fees, no markup. Quality we control.</p></div>
+          <div class="bg-gradient-to-br from-pink-50 to-rose-50 p-6 rounded-xl border-2 border-pink-200"><div class="w-14 h-14 bg-pink-600 rounded-full flex items-center justify-center mb-4"><span class="text-2xl text-white">100+</span></div><h3 class="text-xl font-bold text-pink-900 mb-2">100+ Properties Managed</h3><p class="text-gray-700">We're not experimenting with your investment. We manage over 100 properties across Melaka right now.</p></div>
+          <div class="bg-gradient-to-br from-gray-50 to-slate-100 p-6 rounded-xl border-2 border-gray-200"><div class="w-14 h-14 bg-gray-700 rounded-full flex items-center justify-center mb-4"><span class="text-2xl text-white">5</span></div><h3 class="text-xl font-bold text-gray-900 mb-2">5 Booking Platforms</h3><p class="text-gray-700">Not just Airbnb. We list on 5 platforms to maximize your occupancy and income.</p></div>
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl border-2 border-green-200"><div class="w-14 h-14 bg-green-600 rounded-full flex items-center justify-center mb-4"><span class="text-2xl text-white">&#10003;</span></div><h3 class="text-xl font-bold text-green-900 mb-2">Easy Switching</h3><p class="text-gray-700">We handle the transition. Just give us access and we take care of everything.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-gray-900 text-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-4">We List Your Property on 5 Platforms</h2>
+        <p class="text-gray-300 mb-8 text-lg">Other managers only use Airbnb. That's leaving money on the table.</p>
+        <div class="flex flex-wrap justify-center items-center gap-8 mb-10">
+          <div class="bg-white text-gray-900 px-6 py-4 rounded-lg font-bold text-lg shadow-lg"><span class="text-[#FF5A5F]">Airbnb</span></div>
+          <div class="bg-white text-gray-900 px-6 py-4 rounded-lg font-bold text-lg shadow-lg"><span class="text-[#003580]">Booking.com</span></div>
+          <div class="bg-white text-gray-900 px-6 py-4 rounded-lg font-bold text-lg shadow-lg"><span class="text-[#5392f9]">Agoda</span></div>
+          <div class="bg-white text-gray-900 px-6 py-4 rounded-lg font-bold text-lg shadow-lg"><span class="text-[#1a1a56]">Expedia</span></div>
+          <div class="bg-white text-gray-900 px-6 py-4 rounded-lg font-bold text-lg shadow-lg"><span class="text-[#5392f9]">Agoda Homes</span></div>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl max-w-2xl mx-auto">
+          <p class="text-lg"><span class="text-red-400 font-semibold">Other managers:</span> List on 1 platform, miss 60% of travelers</p>
+          <p class="text-lg mt-2"><span class="text-green-400 font-semibold">iHousing:</span> List on 5 platforms, capture every booking opportunity</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-900 text-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Ready to Switch to iHousing?</h2>
+        <p class="text-xl text-gray-300 mb-8">Let's have a quick chat. No pressure, no obligations. Tell us about your current situation and we'll explain how we can help.</p>
+        <a href={contactFormLink} id="final-cta" class="inline-block bg-green-500 hover:bg-green-400 text-white font-bold py-4 px-12 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg">Contact Us Now</a>
+      </div>
+    </section>
+  </main></Layout>

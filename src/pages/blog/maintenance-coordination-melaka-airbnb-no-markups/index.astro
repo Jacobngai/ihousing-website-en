@@ -1,0 +1,688 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Maintenance Coordination: How We Handle Repairs Without Markups";
+const description = "How iHousing handles Melaka Airbnb maintenance and repairs without charging markups. Direct contractor pricing, transparent coordination, and owner control. WhatsApp for custom pricing.";
+const date = "2025-01-10";
+const category = "operational";
+const language = "en";
+const image = "/images/blog/maintenance-coordination-melaka-airbnb-no-markups.jpg";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Maintenance Coordination: How We Handle Repairs Without Markups</h2>
+
+<h2>No Markups, No Hidden Fees, No Surprises on Your Monthly Statement</h2>
+
+<p>Most Airbnb management companies have a dirty secret: They profit from your repairs and maintenance.</p>
+
+<p>Here's how it typically works:</p>
+
+<ul>
+  <li>Plumber charges RM 300 for a repair</li>
+  <li>Manager charges you RM 350-375</li>
+  <li><strong>They keep RM 50-75 as their "margin"</strong></li>
+</ul>
+
+<p>Do this 20 times per year, and that's <strong>RM 1,000-1,500</strong> of extra profit for them - paid by you.</p>
+
+<p>At iHousing, we do things differently. We coordinate repairs, but <strong>you pay the contractor directly</strong>. No markup, no margin, no hidden fees.</p>
+
+<p>This article explains our transparent maintenance coordination system and how it saves you money.</p>
+
+<h2>The Traditional Management Model: Built-In Markups</h2>
+
+<p>Before showing you our approach, let's expose what most managers do:</p>
+
+<h3>Hidden Markup Areas</h3>
+
+<p><strong>1. Maintenance Margin (15-25%)</strong></p>
+
+<ul>
+  <li>Contractor bill: RM 300</li>
+  <li>Manager charges: RM 350-375</li>
+  <li>Markup: RM 50-75</li>
+</ul>
+
+<p><strong>2. Emergency Service Fees</strong></p>
+
+<ul>
+  <li>Weekend/evening call: RM 50-100</li>
+  <li>Happens 5-10 times/year</li>
+  <li>Annual cost: RM 250-1,000</li>
+</ul>
+
+<p><strong>3. Supply Markups (15-30%)</strong></p>
+
+<ul>
+  <li>Light bulb, screws, parts: RM 50</li>
+  <li>Manager charges: RM 60-70</li>
+  <li>Annual cost: RM 100-200</li>
+</ul>
+
+<p><strong>4. "Coordination Fees"</strong></p>
+
+<ul>
+  <li>Some managers charge RM 30-50 per repair just for "coordinating"</li>
+  <li>20 repairs/year = RM 600-1,000 in fees</li>
+</ul>
+
+<p><strong>Total hidden annual cost:</strong> RM 1,000-2,700 above what contractors actually charge.</p>
+
+<h2>The iHousing Approach: No Markup Maintenance</h2>
+
+<h3>Our Philosophy</h3>
+
+<p><strong>Management fee covers coordination.</strong> You shouldn't pay extra for us to arrange repairs.</p>
+
+<p><strong>You own the property.</strong> You should control repair decisions and costs.</p>
+
+<p><strong>Transparency builds trust.</strong> When you see the actual contractor bill, you know we're not padding costs.</p>
+
+<h3>How It Works</h3>
+
+<h4>Step 1: Issue Identified</h4>
+
+<p>We discover maintenance issues through:</p>
+
+<ul>
+  <li>Guest reports ("AC is making strange noise")</li>
+  <li>Cleaning team observations ("Washing machine not draining")</li>
+  <li>Pre-stay inspections ("Remote battery needs replacement")</li>
+  <li>Owner reports ("I noticed ceiling leak during last visit")</li>
+</ul>
+
+<h4>Step 2: Assessment & Documentation</h4>
+
+<p>We document the issue:</p>
+
+<ul>
+  <li>Photos taken</li>
+  <li>Problem described</li>
+  <li>Urgency assessed (emergency, urgent, routine)</li>
+  <li>Impact on guests evaluated</li>
+</ul>
+
+<h4>Step 3: Owner Notification</h4>
+
+<p>We notify you via WhatsApp/email:</p>
+
+<ul>
+  <li><strong>Issue:</strong> "AC unit in master bedroom not cooling properly"</li>
+  <li><strong>Evidence:</strong> Photos and guest report attached</li>
+  <li><strong>Urgency:</strong> Urgent (affecting current guest)</li>
+  <li><strong>Contractor quote:</strong> RM 280 for diagnostic and repair</li>
+  <li><strong>Recommendation:</strong> Proceed with repair (yes/no)</li>
+</ul>
+
+<h4>Step 4: Owner Decision</h4>
+
+<p><strong>Your options:</strong></p>
+
+<ul>
+  <li><strong>Approve:</strong> "Yes, proceed with repair" - We schedule contractor</li>
+  <li><strong>Decline:</strong> "Not worth it" - We note for future consideration</li>
+  <li><strong>Alternate:</strong> "I know someone cheaper" - You coordinate, we handle guest communication</li>
+  <li><strong>Defer:</strong> "Wait until booking gap" - We schedule for vacant period</li>
+</ul>
+
+<h4>Step 5: Coordination & Execution</h4>
+
+<p>If you approve:</p>
+
+<ul>
+  <li>We schedule contractor at convenient time</li>
+  <li>We provide property access (digital lock or meet contractor)</li>
+  <li>We supervise the work (ensure quality)</li>
+  <li>We test repairs after completion</li>
+  <li>We document with before/after photos</li>
+</ul>
+
+<h4>Step 6: Payment</h4>
+
+<p><strong>You pay contractor directly:</strong></p>
+
+<ul>
+  <li>Contractor invoices you directly (not us)</li>
+  <li>You pay contractor via bank transfer/e-wallet</li>
+  <li>You send us payment confirmation</li>
+  <li>We update property records</li>
+</ul>
+
+<p><strong>Result:</strong> You see exactly what the repair costs. No padding, no markup.</p>
+
+<h2>Trusted Contractor Network</h2>
+
+<p>Over 8 years in Melaka, we've built relationships with <strong>reliable, reasonably-priced contractors</strong>:</p>
+
+<h3>Our Network Includes</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Service Type</th>
+      <th>Contractors</th>
+      <th>Average Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Air Conditioning</strong></td>
+      <td>3 trusted companies</td>
+      <td>Same day / next day</td>
+    </tr>
+    <tr>
+      <td><strong>Plumbing</strong></td>
+      <td>2 licensed plumbers</td>
+      <td>2-4 hours</td>
+    </tr>
+    <tr>
+      <td><strong>Electrical</strong></td>
+      <td>2 electricians</td>
+      <td>Same day / next day</td>
+    </tr>
+    <tr>
+      <td><strong>Appliances</strong></td>
+      <td>3 repair shops</td>
+      <td>1-2 days</td>
+    </tr>
+    <tr>
+      <td><strong>General Repairs</strong></td>
+      <td>4 handymen</td>
+      <td>24-48 hours</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>How We Vet Contractors</h3>
+
+<p>We only work with contractors who meet our standards:</p>
+
+<ul>
+  <li><strong>Licensed and insured</strong> (where applicable)</li>
+  <li><strong>Reasonable pricing</strong> (we compare multiple quotes)</li>
+  <li><strong>Reliable availability</strong> (respond quickly to emergencies)</li>
+  <li><strong>Quality workmanship</strong> (repairs last, don't fail again)</li>
+  <li><strong>Guest-friendly</strong> (professional, clean, respectful)</li>
+</ul>
+
+<p><strong>If a contractor fails our standards:</strong> We stop using them and find alternatives.</p>
+
+<h2>Emergency vs Routine Maintenance</h2>
+
+<p>Not all repairs need immediate action. We categorize and prioritize:</p>
+
+<h3>Emergencies (Immediate Action)</h3>
+
+<p><strong>Definition:</strong> Issues affecting guest safety or comfort.</p>
+
+<p><strong>Examples:</strong></p>
+
+<ul>
+  <li>Flooding or water leak</li>
+  <li>Complete AC failure (especially in hot weather)</li>
+  <li>Power outage</li>
+  <li>Lock malfunction (guest can't access property)</li>
+  <li>Safety hazards (broken glass, exposed wiring)</li>
+</ul>
+
+<p><strong>Our response:</strong></p>
+
+<ul>
+  <li>Contact you immediately with situation</li>
+  <li>Provide contractor quote and recommendation</li>
+  <li>If urgent and under RM 500, we proceed immediately (per our agreement)</li>
+  <li>If over RM 500, we await your approval but push for fastest response</li>
+  <li>Temporary solutions provided if needed (fans, heaters, etc.)</li>
+</ul>
+
+<h3>Urgent (Within 24-48 Hours)</h3>
+
+<p><strong>Definition:</strong> Issues that don't affect safety but impact guest experience.</p>
+
+<p><strong>Examples:</strong></p>
+
+<ul>
+  <li>AC not cooling properly (but still working)</li>
+  <li>Washing machine not spinning</li>
+  <li>WiFi intermittent (not completely down)</li>
+  <li>Minor appliance malfunctions</li>
+</ul>
+
+<p><strong>Our response:</strong></p>
+
+<ul>
+  <li>Notify you with details and quote</li>
+  <li>Recommend timing (around guest bookings)</li>
+  <li>Schedule repair at earliest convenient opportunity</li>
+  <li>Provide temporary workarounds to guests</li>
+</ul>
+
+<h3>Routine (Scheduled During Vacancies)</h3>
+
+<p><strong>Definition:</strong> Preventive maintenance or non-urgent issues.</p>
+
+<p><strong>Examples:</strong></p>
+
+<ul>
+  <li>Annual AC servicing</li>
+  <li>Paint touch-ups</li>
+  <li>Furniture tightening</li>
+  <li>Fixture replacements</li>
+</ul>
+
+<p><strong>Our response:</strong></p>
+
+<ul>
+  <li>Add to maintenance calendar</li>
+  <li>Schedule during booking gaps</li>
+  <li>Bundle multiple routine tasks for efficiency</li>
+  <li>Present recommendations during slower months</li>
+</ul>
+
+<h2>Cost Comparison: With Markups vs Without</h2>
+
+<p>Let's show you the savings over a year:</p>
+
+<h3>Scenario: Typical Annual Maintenance</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Repair</th>
+      <th>Contractor Cost</th>
+      <th>Typical Manager (with 20% markup)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AC servicing (2 units)</td>
+      <td>RM 300</td>
+      <td>RM 360</td>
+    </tr>
+    <tr>
+      <td>Plumbing repair (toilet)</td>
+      <td>RM 250</td>
+      <td>RM 300</td>
+    </tr>
+    <tr>
+      <td>Electrical fix (power point)</td>
+      <td>RM 150</td>
+      <td>RM 180</td>
+    </tr>
+    <tr>
+      <td>Washing machine repair</td>
+      <td>RM 280</td>
+      <td>RM 336</td>
+    </tr>
+    <tr>
+      <td>Door lock replacement</td>
+      <td>RM 200</td>
+      <td>RM 240</td>
+    </tr>
+    <tr>
+      <td>WiFi router replacement</td>
+      <td>RM 180</td>
+      <td>RM 216</td>
+    </tr>
+    <tr>
+      <td>Minor touch-ups (paint, etc.)</td>
+      <td>RM 300</td>
+      <td>RM 360</td>
+    </tr>
+    <tr>
+      <td><strong>TOTAL</strong></td>
+      <td><strong>RM 1,660</strong></td>
+      <td><strong>RM 1,992</strong></td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Annual savings with iHousing</strong></td>
+      <td><strong>RM 332</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Over 3 years:</strong></p>
+
+<ul>
+  <li>Your savings: <strong>RM 996</strong> (almost RM 1,000)</li>
+  <li>For multiple properties: Multiply accordingly</li>
+</ul>
+
+<p>And this doesn't include <strong>emergency fees</strong> that other managers charge...</p>
+
+<h2>Emergency Fee Comparison</h2>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Fee Type</th>
+      <th>Typical Manager</th>
+      <th>iHousing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>After-hours coordination</td>
+      <td>RM 50-100/call</td>
+      <td><strong>Included</strong></td>
+    </tr>
+    <tr>
+      <td>Weekend scheduling</td>
+      <td>RM 30-50</td>
+      <td><strong>Included</strong></td>
+    </tr>
+    <tr>
+      <td>"Emergency" response</td>
+      <td>RM 75-150</td>
+      <td><strong>Included</strong></td>
+    </tr>
+    <tr>
+      <td>Coordination fee</td>
+      <td>RM 30-50/repair</td>
+      <td><strong>Included</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>If you have 5 emergency situations per year</strong> (not uncommon for Airbnb properties):</p>
+
+<ul>
+  <li>Other manager charges: RM 250-750 in emergency fees</li>
+  <li><strong>iHousing charges: RM 0</strong> (included in management fee)</li>
+</ul>
+
+<h2>Preventive Maintenance: Saving Money Through Proactive Care</h2>
+
+<p>We don't just fix problems. We <strong>prevent them</strong>:</p>
+
+<h3>Annual Preventive Maintenance Checklist</h3>
+
+<p>For every property we manage, we schedule:</p>
+
+<p><strong>Before monsoon season (October-November):</strong></p>
+
+<ul>
+  <li>Check roof for leaks</li>
+  <li>Clean gutters and drains</li>
+  <li>Test windows and doors for proper sealing</li>
+  <li>Inspect exterior for weather damage</li>
+</ul>
+
+<p><strong>Before peak summer (February-March):</strong></p>
+
+<ul>
+  <li>Full AC servicing (all units)</li>
+  <li>Clean AC filters and coils</li>
+  <li>Test cooling performance</li>
+  <li>Check thermostats and remotes</li>
+</ul>
+
+<p><strong>Quarterly (every 3 months):</strong></p>
+
+<ul>
+  <li>Test all smoke detectors</li>
+  <li>Check plumbing for slow leaks</li>
+  <li>Inspect electrical points and switches</li>
+  <li>Test safety equipment</li>
+</ul>
+
+<p><strong>Monthly:</strong></p>
+
+<ul>
+  <li>Check for pest activity</li>
+  <li>Test water heater performance</li>
+  <li>Inspect grout and caulking in bathrooms</li>
+  <li>Check door and window hardware</li>
+</ul>
+
+<h3>Value of Preventive Maintenance</h3>
+
+<p><strong>Example: AC Preventive Care</strong></p>
+
+<ul>
+  <li>Annual servicing: RM 150/unit</li>
+  <li>Prevents major breakdown: RM 800-1,500 repair</li>
+  <li><strong>ROI:</strong> Spend RM 150, save RM 800+ = RM 650+ saved</li>
+</ul>
+
+<p><strong>Example: Leak Detection</strong></p>
+
+<ul>
+  <li>Early detection (paint discoloration): Fix for RM 200</li>
+  <td>Late detection (water damage, mold): Fix for RM 2,000+</li>
+  <li><strong>ROI:</strong> Spend RM 200, save RM 1,800+ = RM 1,800+ saved</li>
+</ul>
+
+<h2>Owner Control: You Decide, We Coordinate</h2>
+
+<p>Our system gives you <strong>full control</strong> while eliminating coordination hassle:</p>
+
+<h3>Decision Thresholds</h3>
+
+<p><strong>Default agreements</strong> (can be customized per owner):</p>
+
+<ul>
+  <li><strong>Under RM 500, urgent:</strong> We proceed immediately, notify you afterward</li>
+  <li><strong>Under RM 500, non-urgent:</strong> We notify you, await approval</li>
+  <li><strong>Over RM 500:</strong> Always notify you first, await approval</li>
+  <li><strong>Your custom threshold:</strong> You set any limit you prefer</li>
+</ul>
+
+<h3>Example Scenarios</h3>
+
+<p><strong>Scenario A: RM 350 AC Repair (Urgent)</strong></p>
+
+<ul>
+  <li>Guest is checking in tomorrow</li>
+  <li>AC not cooling in master bedroom</li>
+  <li>Contractor quote: RM 350 for repair</li>
+  <li><strong>Our action:</strong> Proceed immediately (under RM 500 threshold)</li>
+  <li>We notify you same day with summary</li>
+  <li>You pay contractor RM 350 directly</li>
+</ul>
+
+<p><strong>Scenario B: RM 800 Water Heater Replacement (Non-Urgent)</strong></p>
+
+<ul>
+  <li>Guests don't use it much (Melaka is hot)</li>
+  <li>There's a 5-day gap before next booking</li>
+  <li>Contractor quote: RM 800 for replacement</li>
+  <li><strong>Our action:</strong> Notify you with details and quote</li>
+  <li><strong>Your decision:</strong> Approve, defer, or decline</li>
+  <li>You pay contractor directly if approved</li>
+</ul>
+
+<p><strong>Scenario C: RM 200 Ceiling Stain (Cosmetic)</strong></p>
+
+<ul>
+  <li>Guest mentioned minor ceiling stain in guest book</li>
+  <li>Doesn't affect stay</li>
+  <li>Contractor quote: RM 200 to paint and seal</li>
+  <li><strong>Our action:</strong> Notify you with photo</li>
+  <li><strong>Your decision:</strong> "Not urgent, schedule for next vacancy period"</li>
+  <li>We calendar it and remind you when gap appears</li>
+</ul>
+
+<h2>Documentation & Transparency</h2>
+
+<p>Every maintenance activity is documented:</p>
+
+<h3>Maintenance Log</h3>
+
+<p>For each property, we maintain:</p>
+
+<ul>
+  <li><strong>Date:</strong> When issue was reported</li>
+  <li><strong>Description:</strong> What the problem was</li>
+  <li><strong>Action taken:</strong> How it was resolved</li>
+  <li><strong>Contractor:</strong> Who performed the work</li>
+  <li><strong>Cost:</strong> What was charged (with receipt)</li>
+  <li><strong>Photos:</strong> Before and after</li>
+  <li><strong>Warranty:</strong> Any guarantees on work performed</li>
+</ul>
+
+<h3>Monthly Report Includes</h3>
+
+<ul>
+  <li>All maintenance performed that month</li>
+  <li>Total maintenance costs</li>
+  <li>Contractor receipts attached</li>
+  <li>Upcoming recommended maintenance</li>
+  <li>Preventive maintenance schedule</li>
+</ul>
+
+<h3>Owner Dashboard Access</h3>
+
+<ul>
+  <li>View complete maintenance history</li>
+  <li>Track repair costs over time</li>
+  <li>Download contractor receipts</li>
+  <li>See upcoming scheduled maintenance</li>
+</ul>
+
+<h2>Special Situations: How We Handle Complex Repairs</h2>
+
+<h3>Major Renovations</h3>
+
+<p>When significant work is needed:</p>
+
+<ul>
+  <li>Multiple contractor quotes obtained</li>
+  <li>We present comparison table</li>
+  <li>You choose contractor and pricing</li>
+  <li>We coordinate schedule around bookings</li>
+  <li>We supervise work completion</li>
+  <li>Final walk-through with photos</li>
+</ul>
+
+<h3>Insurance Claims</h3>
+
+<p>If damage is covered by insurance:</p>
+
+<ul>
+  <li>We document damage thoroughly</li>
+  <li>Provide photos and evidence</li>
+  <li>Assist with insurance claim process</li>
+  <li>Coordinate with adjuster if needed</li>
+  <li>Help you find approved contractors</li>
+</ul>
+
+<h3>Warranty Claims</h3>
+
+<p>If item is under manufacturer warranty:</p>
+
+<ul>
+  <li>We identify warranty status</li>
+  <li>Contact manufacturer for warranty service</li>
+  <li>Coordinate repair at no cost to you</li>
+  <li>Document claim for your records</li>
+</ul>
+
+<h2>Comparing Management Options</h2>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Commission-Based Manager</th>
+      <th>iHousing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Maintenance markup</strong></td>
+      <td>15-25% on all repairs</td>
+      <td><strong>None</strong> - you pay contractor directly</td>
+    </tr>
+    <tr>
+      <td><strong>Emergency fees</strong></td>
+      <td>RM 50-150 per incident</td>
+      <td><strong>Included</strong> in management fee</td>
+    </tr>
+    <tr>
+      <td><strong>Coordination fees</strong></td>
+      <td>RM 30-50 per repair</td>
+      <td><strong>Included</strong> in management fee</td>
+    </tr>
+    <tr>
+      <td><strong>Contractor choice</strong></td>
+      <td>Their preferred contractors</td>
+      <td>Your choice or our trusted network</td>
+    </tr>
+    <tr>
+      <td><strong>Payment</strong></td>
+      <td>Paid to manager (they pay contractor)</td>
+      <td>Paid directly to contractor</td>
+    </tr>
+    <tr>
+      <td><strong>Transparency</strong></td>
+      <td>Lump sum on statement</td>
+      <td>Detailed receipts provided</td>
+    </tr>
+    <tr>
+      <td><strong>Owner control</strong></td>
+      <td>Limited - manager decides</td>
+      <td>Full - you approve all major repairs</td>
+    </tr>
+    <tr>
+      <td><strong>Annual extra cost</strong></td>
+      <td>RM 1,000-2,700</td>
+      <td><strong>RM 0</strong> (all included)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Taking Action: Transparent Maintenance for Your Property</h2>
+
+<p>Stop paying hidden markups on maintenance and repairs.</p>
+
+<h3>For Parkland Avenue by the Sea:</h3>
+
+<p>Our flat fee (<strong>RM 200-300/month</strong>) includes:</p>
+
+<ul>
+  <li><strong>Zero markup maintenance coordination</strong></li>
+  <li>responsive emergency response</li>
+  <li>Trusted contractor network access</li>
+  <li>Preventive maintenance scheduling</li>
+  <li>Full documentation and receipts</li>
+  <li>Owner approval required for major expenses</li>
+</ul>
+
+<p><strong>Pre-register now:</strong> WhatsApp to lock in transparent pricing.</p>
+
+<h3>For Other Condos:</h3>
+
+<p><strong>WhatsApp us for custom pricing</strong> that includes markup-free maintenance coordination.</p>
+
+<h2>The Bottom Line: What You Save</h2>
+
+<p>With iHousing's transparent maintenance coordination:</p>
+
+<ul>
+  <li>No markups on repairs (save 15-25%)</li>
+  <li>No emergency fees (save RM 250-1,000/year)</li>
+  <li>No coordination charges (included in management fee)</li>
+  <li>Full control over repair decisions</li>
+  <li>Complete transparency with receipts and documentation</li>
+</ul>
+
+<p><strong>Annual savings:</strong> RM 1,000-2,700 compared to typical managers.</p>
+
+<p><strong>5-year savings:</strong> RM 5,000-13,500.</p>
+
+<p>That's money back in your pocket, not in your manager's markup.</p>
+
+<p><strong>WhatsApp iHousing today:</strong> Experience transparent, no-markup maintenance coordination.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

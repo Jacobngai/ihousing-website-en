@@ -1,0 +1,249 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'About iHousing | Melaka Airbnb Property Management Company';
+const description = 'Learn about iHousing - Melaka\'s trusted Airbnb management company since 2017. 100+ properties, custom pricing, 8 years experience, multi-platform listing.';
+const image = 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200';
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 text-white py-20 lg:py-28">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-green-300 font-semibold mb-4 text-lg">About iHousing</p>
+        <h1 class="text-3xl lg:text-5xl font-bold leading-tight mb-6">
+          Melaka's Trusted Airbnb Management Partner
+        </h1>
+        <p class="text-xl lg:text-2xl text-green-100 mb-8 max-w-3xl mx-auto">
+          8 years of experience. 100+ properties managed. Custom flat fee pricing.
+          <br class="hidden sm:block">
+          We help property owners earn more while paying less.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">
+          Our Story
+        </h2>
+        <div class="prose prose-lg max-w-none text-gray-700">
+          <p class="text-lg mb-6">
+            iHousing was founded in 2017 with a simple mission: <strong>help Melaka property owners earn more from Airbnb while paying less in management fees.</strong>
+          </p>
+          <p class="text-lg mb-6">
+            We noticed that most Airbnb management companies in Malaysia charged 20-25% commission - eating up a huge chunk of our clients' hard-earned income. We knew there had to be a better way.
+          </p>
+          <p class="text-lg mb-6">
+            Instead of percentage-based fees, we introduced <strong>flat monthly pricing</strong> that saves you money compared to traditional 20% commission. This means our clients keep more of their income, especially when their properties are performing well.
+          </p>
+          <p class="text-lg mb-6">
+            Today, we manage <strong>over 100 properties</strong> across Melaka's most popular condominiums. We're the official Airbnb management partner for Parkland Avenue by the Sea, and we've helped hundreds of owners maximize their rental income.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Flat Fee -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-center">
+          Why We Charge Flat Fee
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          Traditional managers take 20% of your income. We believe you should keep what you earn.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-red-50 p-8 rounded-xl border-2 border-red-200">
+            <h3 class="text-xl font-bold text-red-700 mb-4">Traditional 20% Commission</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">Your property earns:</span>
+                <span class="font-bold">RM4,000</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">Manager takes 20%:</span>
+                <span class="font-bold text-red-600">-RM800</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">You receive:</span>
+                <span class="font-bold">RM3,200</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-4">RM9,600/year in fees</p>
+            </div>
+          </div>
+
+          <div class="bg-green-50 p-8 rounded-xl border-2 border-green-300">
+            <h3 class="text-xl font-bold text-green-700 mb-4">iHousing Flat Fee</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">Your property earns:</span>
+                <span class="font-bold">RM4,000</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">Traditional manager takes:</span>
+                <span class="font-bold text-red-600">-RM800</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-700">You receive:</span>
+                <span class="font-bold">RM3,200</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-4">RM9,600/year in fees</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-100 p-8 rounded-xl text-center border-2 border-yellow-400">
+          <p class="text-lg text-gray-700 mb-2">Save thousands per year</strong> with our flat fee model.</p>
+          <p class="text-gray-600">WhatsApp us to calculate your exact savings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Stats -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">
+          Our Numbers Speak for Themselves
+        </h2>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <p class="text-5xl lg:text-6xl font-bold text-green-600 mb-2">100+</p>
+            <p class="text-gray-600">Properties Managed</p>
+          </div>
+          <div class="text-center">
+            <p class="text-5xl lg:text-6xl font-bold text-green-600 mb-2">8</p>
+            <p class="text-gray-600">Years Experience</p>
+          </div>
+          <div class="text-center">
+            <p class="text-5xl lg:text-6xl font-bold text-green-600 mb-2">5</p>
+            <p class="text-gray-600">Booking Platforms</p>
+          </div>
+          <div class="text-center">
+            <p class="text-5xl lg:text-6xl font-bold text-green-600 mb-2">24/7</p>
+            <p class="text-gray-600">Guest Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Makes Us Different -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">
+          What Makes Us Different
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4">
+              <span class="text-xl text-white font-bold">$</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Flat Fee Pricing</h3>
+            <p class="text-gray-600">No percentage cuts. You know exactly what you'll pay every month, regardless of your income.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+              <span class="text-xl text-white font-bold">5</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">5 Platform Listing</h3>
+            <p class="text-gray-600">We list on Airbnb, Booking.com, Agoda, Expedia, and Agoda Homes. 60% more booking opportunities.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
+              <span class="text-xl text-white font-bold">★</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">In-House Team</h3>
+            <p class="text-gray-600">Our own cleaning and maintenance team. Quality control, no outsourcing markups.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mb-4">
+              <span class="text-xl text-white font-bold">⏱</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Quick Setup</h3>
+            <p class="text-gray-600">From empty unit to first booking in as little as 2-3 weeks with our streamlined process.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center mb-4">
+              <span class="text-xl text-white font-bold">☎</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Direct Access</h3>
+            <p class="text-gray-600">WhatsApp direct access to our team. No call centers, no waiting on hold.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Properties We Manage -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">
+          Properties We Manage
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          We manage properties across Melaka's most popular condominiums and residences.
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <a href="/en/switch-to-us/silverscape-residence/" class="block p-4 bg-gray-50 rounded-lg hover:bg-green-50 hover:border-green-500 border-2 border-transparent transition-all text-center">
+            <p class="text-gray-800 font-semibold">Silverscape Residence</p>
+          </a>
+          <a href="/en/switch-to-us/the-shore-residence/" class="block p-4 bg-gray-50 rounded-lg hover:bg-green-50 hover:border-green-500 border-2 border-transparent transition-all text-center">
+            <p class="text-gray-800 font-semibold">The Shore Residence</p>
+          </a>
+          <a href="/en/switch-to-us/imperio-residence/" class="block p-4 bg-gray-50 rounded-lg hover:bg-green-50 hover:border-green-500 border-2 border-transparent transition-all text-center">
+            <p class="text-gray-800 font-semibold">Imperio Residence</p>
+          </a>
+          <a href="/en/switch-to-us/novo-8-residence/" class="block p-4 bg-gray-50 rounded-lg hover:bg-green-50 hover:border-green-500 border-2 border-transparent transition-all text-center">
+            <p class="text-gray-800 font-semibold">Novo 8 Residence</p>
+          </a>
+          <a href="/en/switch-to-us/century-mahkota/" class="block p-4 bg-gray-50 rounded-lg hover:bg-green-50 hover:border-green-500 border-2 border-transparent transition-all text-center">
+            <p class="text-gray-800 font-semibold">Century Mahkota</p>
+          </a>
+          <a href="/en/switch-to-us/wave-residence/" class="block p-4 bg-gray-50 rounded-lg hover:bg-green-50 hover:border-green-500 border-2 border-transparent transition-all text-center">
+            <p class="text-gray-800 font-semibold">Wave Residence</p>
+          </a>
+          <a href="/en/switch-to-us/quartz-residence/" class="block p-4 bg-gray-50 rounded-lg hover:bg-green-50 hover:border-green-500 border-2 border-transparent transition-all text-center">
+            <p class="text-gray-800 font-semibold">Quartz Residence</p>
+          </a>
+          <a href="/en/switch-to-us/atlantis-residence/" class="block p-4 bg-gray-50 rounded-lg hover:bg-green-50 hover:border-green-500 border-2 border-transparent transition-all text-center">
+            <p class="text-gray-800 font-semibold">Atlantis Residence</p>
+          </a>
+          <a href="/en/parkland/avenue-by-the-sea/" class="block p-4 bg-yellow-50 rounded-lg hover:bg-yellow-100 border-2 border-yellow-400 transition-all text-center">
+            <p class="text-yellow-800 font-semibold">⭐ Parkland Avenue</p>
+          </a>
+          <a href="/en/properties/" class="block p-4 bg-green-100 rounded-lg hover:bg-green-200 border-2 border-green-500 transition-all text-center">
+            <p class="text-green-800 font-semibold">View All →</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-green-700 text-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+          Ready to Work Together?
+        </h2>
+        <p class="text-xl text-green-100 mb-8">
+          Let's have a friendly chat about your property. No obligations, just good advice.
+        </p>
+        <a
+          href="https://wa.me/60196996688"
+          class="inline-block bg-yellow-500 hover:bg-yellow-400 text-green-900 font-bold py-4 px-12 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg"
+        >
+          WhatsApp Us Now
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

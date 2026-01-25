@@ -1,0 +1,58 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { zhBlogPosts } from '@/data/blog-posts';
+
+const title = "博客 - 马六甲民宿管理指南与房产投资技巧";
+const description = "专家见解：民宿管理、马六甲房产投资、定价策略和短期出租成功案例。";
+const image = "/images/blog/blog-index.jpg";
+
+const blogPosts = zhBlogPosts;
+---
+
+<Layout title={title} description={description} image={image}>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <header class="text-center mb-12">
+      <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">博客</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        专家见解：民宿管理、马六甲房产投资、定价策略和短期出租成功案例。
+      </p>
+    </header>
+
+    {blogPosts.length === 0 ? (
+      <div class="text-center py-12">
+        <p class="text-gray-600">博客文章即将推出！</p>
+      </div>
+    ) : (
+      <>
+        <div class="mb-8 text-sm text-gray-600">
+          显示 {blogPosts.length} 篇文章
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogPosts.map(({ title, description, date, slug }) => (
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <a href={`/zh/blog/${slug}`} class="block">
+                <div class="p-6">
+                  <span class="inline-block px-3 py-1 text-xs font-semibold text-green-700 bg-green-100 rounded-full mb-3">
+                    文章
+                  </span>
+                  <h2 class="text-xl font-bold text-gray-900 mb-2 line-clamp-2">
+                    {title}
+                  </h2>
+                  <p class="text-gray-600 text-sm mb-4 line-clamp-3">
+                    {description}
+                  </p>
+                  <div class="flex items-center text-sm text-gray-500">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    {new Date(date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  </div>
+                </div>
+              </a>
+            </article>
+          ))}
+        </div>
+      </>
+    )}
+  </main>
+</Layout>

@@ -1,0 +1,153 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "January Monthly Review: What Worked for Coastal Properties";
+const description = "Analyze January 2026 performance for Melaka coastal Airbnb properties. What worked, what didn't, and lessons learned for optimizing February and beyond.";
+const date = "2026-01-31";
+const category = "educational";
+const language = "en";
+const image = "/images/blog/january-review-coastal-properties.jpg";
+
+const content = `
+<h1>January Monthly Review: What Worked for Coastal Properties</h1>
+
+<p>January 2026 delivered <strong>strong performance</strong> for Pantai Kundur and Tanjung Bidara coastal properties. With <strong>8 years managing 100+ properties</strong>, iHousing analyzes what drove success and what didn't for beachfront investments.</p>
+
+<h2>January 2026 Coastal Performance Summary</h2>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>Metric</strong></th>
+<th><strong>Pantai Kundur</strong></th>
+<th><strong>Tanjung Bidara</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average daily rate</td>
+<td>RM 185-245</td>
+<td>RM 175-235</td>
+</tr>
+<tr>
+<td>Occupancy rate</td>
+<td>68-74%</td>
+<td>65-72%</td>
+</tr>
+<tr>
+<td>Annualized revenue</td>
+<td>RM 44,000-58,000</td>
+<td>RM 41,000-55,000</td>
+</tr>
+<tr>
+<td>CNY impact (Jan 29-31)</td>
+<td>+35% rate premium</td>
+<td>+30% rate premium</td>
+</tr>
+</tbody>
+</table>
+
+<h2>What Worked: Success Factors</h2>
+
+<h3>1. Weekend Warrior Positioning</h3>
+
+<p>Properties emphasizing <strong>weekend escape themes</strong> achieved 22% higher occupancy:</p>
+
+<ul>
+<li><strong>Messaging:</strong> "90-minute KL escape," "Coastal retreat from city routine"</li>
+<li><strong>Photography:</strong> Sunrise/sunset beach shots, fishing village charm</li>
+<li><strong>Pricing:</strong> Friday-Sunday 20-25% premium, Monday-Thursday competitive</li>
+</ul>
+
+<h3>2. Singaporean Targeting</h3>
+
+<p><strong>Result:</strong> 40% of bookings from Singapore (up from 25% in 2025)</p>
+
+<ul>
+<li><strong>Exchange rate messaging:</strong> "Ringgit advantage stretches your budget"</li>
+<li><strong>Drive-time emphasis:</strong> "4-hour journey vs expensive flights"</li>
+<li><strong>Family packages:</strong> 3BR units marketed to multi-generational families</li>
+</ul>
+
+<h3>3. Early CNY Booking Push</h3>
+
+<p>Properties listed for CNY in October captured early bookings:</p>
+
+<ul>
+<li><strong>Occupancy:</strong> 85% of CNY period booked by December</li>
+<li><strong>Rates:</strong> Locked in 40-50% premiums vs last-minute discounts</li>
+<li><strong>Revenue:</strong> +RM 2,800 per property vs waiting until January</li>
+</ul>
+
+<h2>What Didn't Work: Lessons Learned</h2>
+
+<h3>1. Mid-Week Pricing Resistance</h3>
+
+<p>Properties with high mid-week rates saw <strong>40% vacancy</strong> Jan 3-7:</p>
+
+<ul>
+<li><strong>Issue:</strong> RM 250+/night on Tuesday-Thursday unrealistic</li>
+<li><strong>Correction:</strong> Reduced to RM 180-200, occupancy jumped to 65%</li>
+<li><strong>Learning:</strong> Coastal demand is <strong>weekend-focused</strong>, not weekday-focused</li>
+</ul>
+
+<h3>2. Over-Reliance on Weather</h3>
+
+<p>Some properties over-emphasized weather in marketing:</p>
+
+<ul>
+<li><strong>Issue:</strong> "Guaranteed sunshine" messaging backfired during rainy week</li>
+<li><strong>Correction:</strong> Promote year-round coastal appeal (views, food, culture)</li>
+<li><strong>Learning:</strong> Don't overpromise on weather in tropical climate</li>
+</ul>
+
+<h2>February Planning: Valentine's Day Strategy</h2>
+
+<p>January insights inform February strategy:</p>
+
+<ul>
+<li><strong>Valentine's Day (Feb 14):</strong> Target couples getaways, offer romantic packages</li>
+<li><strong>School holiday (Feb 14-18):</strong> Family-focused packages, kid-friendly activities</li>
+<li><strong>Post-CNY (Feb 15-28):</strong> Maintain 10-15% premium vs regular rates</li>
+</ul>
+
+<p><strong>Coastal advantage:</strong> Valentine's couples seek beachfront privacy - premium pricing opportunity.</p>
+
+<h2>January Top Performers: Property Analysis</h2>
+
+<p><strong>Highest revenue property (Pantai Kundur):</strong></p>
+
+<ul>
+<li>3-bedroom beach house, RM 550,000 value</li>
+<li>January revenue: RM 18,400</li>
+<li>Secret to success: Heritage storytelling + coastal views + Singaporean targeting</li>
+<li>Key differentiator: "Traditional Malay fishing village experience"</li>
+</ul>
+
+<h3>Actions for February Improvement</h3>
+
+<p><strong>Optimization priorities:</strong></p>
+
+<ol>
+<li>Reduce mid-week rates by 15-20% to fill gaps</li>
+<li>Add weather-protected activities (indoor options) to listings</li>
+<li>Enhance couple-focused amenities (romantic dining setups)</li>
+<li>Develop partnerships with local restaurants for guest packages</li>
+</ol>
+
+<p><strong>WhatsApp +60166996688</strong> for your custom property analysis and February strategy.</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+<BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

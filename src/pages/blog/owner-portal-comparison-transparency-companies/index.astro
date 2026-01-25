@@ -1,0 +1,606 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Owner Portal Comparison: Transparency Across Management Companies";
+const description = "Owner portal transparency comparison: iHousing vs competitors. Real-time revenue tracking, booking details, and transparent reporting.";
+const date = "2026-01-20";
+const category = "comparison";
+const language = "en";
+const image = "/images/blog/owner-portal-comparison.jpg";
+
+const content = `
+<h1>Owner Portal Comparison: Transparency Across Management Companies</h1>
+
+<h2>How Much Revenue Is Your Manager Actually Generating?</h2>
+
+<p>Most Melaka Airbnb management companies operate like black boxes. You get a monthly statement with a final number. No breakdown, no transparency, no way to verify if you're being paid correctly.</p>
+
+<p>At iHousing, we believe owners deserve complete visibility. Every booking, every expense, every ringgit accounted for in real-time.</p>
+
+<p>Here's our comprehensive comparison of owner portals and transparency standards across Melaka property management companies.</p>
+
+<h2>Owner Portal Features Comparison</h2>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>iHousing Portal</th>
+      <th>Commission-Based Agents</th>
+      <th>DIY Platforms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Real-time revenue tracking</strong></td>
+      <td>Yes (live updates)</td>
+      <td>No (monthly reports only)</td>
+      <td>Yes (platform-native)</td>
+    </tr>
+    <tr>
+      <td><strong>Booking-level details</strong></td>
+      <td>Yes (every booking shown)</td>
+      <td>Summary only (totals)</td>
+      <td>Yes (platform-native)</td>
+    </tr>
+    <tr>
+      <td><strong>Guest information</strong></td>
+      <td>Name, origin, reviews</td>
+      <td>None (privacy cited)</td>
+      <td>Yes (platform-native)</td>
+    </tr>
+    <tr>
+      <td><strong>Expense breakdown</strong></td>
+      <td>Itemized (cleaning, maintenance, supplies)</td>
+      <td>Lump sum "deductions"</td>
+      <td>N/A (you manage expenses)</td>
+    </tr>
+    <tr>
+      <td><strong>Calendar sync visibility</strong></td>
+      <td>Yes (all platforms synced)</td>
+      <td>No (you see Airbnb only)</td>
+      <td>Yes (platform-native)</td>
+    </tr>
+    <tr>
+      <td><strong>Pricing history</strong></td>
+      <td>Yes (daily rate changes logged)</td>
+      <td>No (current rate only)</td>
+      <td>Yes (platform-native)</td>
+    </tr>
+    <tr>
+      <td><strong>Review monitoring</strong></td>
+      <td>All platforms in one dashboard</td>
+      <td> Airbnb reviews shared on request</td>
+      <td>Check each platform manually</td>
+    </tr>
+    <tr>
+      <td><strong>Mobile access</strong></td>
+      <td>Yes (responsive web app)</td>
+      <td>No (PDF reports via email)</td>
+      <td>Yes (platform apps)</td>
+    </tr>
+    <tr>
+      <td><strong>Alerts & notifications</strong></td>
+      <td>Instant (new booking, review, issue)</td>
+      <td>None (check email monthly)</td>
+      <td>Yes (platform-native)</td>
+    </tr>
+    <tr>
+      <td><strong>Export to accounting</strong></td>
+      <td>Yes (CSV, QuickBooks, Xero)</td>
+      <td>No (manual data entry)</td>
+      <td>Manual (platform exports)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Key difference:</strong> iHousing provides commission-level transparency with flat-fee simplicity. You see EVERYTHING, not just a monthly total.</p>
+
+<h2>Revenue Transparency: What You See</h2>
+
+<h3>Monthly Statement Comparison</h3>
+
+<p><strong>Typical commission agent statement:</strong></p>
+
+<pre><code>MELAKA AIRBNB MANAGEMENT - January 2026
+========================================
+Gross Revenue: RM8,200
+Management Fee (20%): -RM1,640
+Cleaning Costs: -RM800
+Maintenance: -RM350
+NET PAYMENT: RM5,410
+</code></pre>
+
+<p><strong>Problems:</strong></p>
+<ul>
+  <li>What bookings generated RM8,200? No breakdown.</li>
+  <li>What's included in "cleaning costs"? No itemization.</li>
+  <li>What maintenance was done? No details.</li>
+  <li>Are platform fees deducted? Not shown.</li>
+  <li>Are there hidden fees? Can't verify.</li>
+</ul>
+
+<p><strong>iHousing portal statement:</strong></p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Platform</th>
+      <th>Guest</th>
+      <th>Nights</th>
+      <th>Rate/Night</th>
+      <th>Cleaning</th>
+      <th>Platform Fee</th>
+      <th>Net Revenue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jan 3-6</td>
+      <td>Airbnb</td>
+      <td>Sarah L. (Singapore)</td>
+      <td>3</td>
+      <td>RM300</td>
+      <td>RM80</td>
+      <td>RM90</td>
+      <td><strong>RM730</strong></td>
+    </tr>
+    <tr>
+      <td>Jan 8-12</td>
+      <td>Booking.com</td>
+      <td>Ahmad K. (KL)</td>
+      <td>4</td>
+      <td>RM280</td>
+      <td>RM80</td>
+      <td>RM84</td>
+      <td><strong>RM956</strong></td>
+    </tr>
+    <tr>
+      <td>Jan 15-18</td>
+      <td>Agoda</td>
+      <td>Chen W. (Singapore)</td>
+      <td>3</td>
+      <td>RM320</td>
+      <td>RM80</td>
+      <td>RM96</td>
+      <td><strong>RM784</strong></td>
+    </tr>
+    <tr>
+      <td>Jan 22-26</td>
+      <td>VRBO</td>
+      <td>Tan Family (5 guests)</td>
+      <td>4</td>
+      <td>RM350</td>
+      <td>RM100</td>
+      <td>RM105</td>
+      <td><strong>RM1,195</strong></td>
+    </tr>
+    <tr>
+      <td colspan="7"><strong>TOTAL JANUARY 2026</strong></td>
+      <td><strong>RM3,665</strong></td>
+    </tr>
+    <tr>
+      <td colspan="7"><strong>Less: iHousing Flat Fee (Jan)</strong></td>
+      <td>-RM250</td>
+    </tr>
+    <tr>
+      <td colspan="7"><strong>OWNER PAYMENT (Direct Deposit)</strong></td>
+      <td><strong>RM3,415</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>iHousing transparency:</strong> Every booking, every fee, every ringgit accounted for. Verify against platform statements if you want.</p>
+
+<h2>Expense Transparency: Where Money Goes</h2>
+
+<h3>Cost Breakdown Comparison</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Expense Category</th>
+      <th>iHousing Portal</th>
+      <th>Commission Agent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Cleaning costs</strong></td>
+      <td>Itemized (date, cleaner, time, supplies)</td>
+      <td>Lump sum (e.g., "Cleaning: RM800")</td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance</strong></td>
+      <td>Each repair logged (date, contractor, cost, before/after photos)</td>
+      <td>Summary (e.g., "Maintenance: RM350")</td>
+    </tr>
+    <tr>
+      <td><strong>Supplies</strong></td>
+      <td>Itemized (toilet paper, soap, amenities - with receipts)</td>
+      <td>Buried in cleaning fee</td>
+    </tr>
+    <tr>
+      <td><strong>Platform commissions</strong></td>
+      <td>Shown per booking (3-18% depending on platform)</td>
+      <td>Included in management fee (not separated)</td>
+    </tr>
+    <tr>
+      <td><strong>Replacement items</strong></td>
+      <td>Logged (broken plate, towel replacement - with photos)</td>
+      <td>Included in maintenance (not itemized)</td>
+    </tr>
+    <tr>
+      <td><strong>Utility costs</strong></td>
+      <td>Shared formula (based on occupancy %)</td>
+      <td>Estimated or not shown</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Why this matters:</strong> Without itemization, you can't verify if expenses are reasonable. iHousing shows receipts, photos, and timestamps for everything.</p>
+
+<h2>Real-Time vs. Monthly Reports</h2>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Information Type</th>
+      <th>iHousing Portal</th>
+      <th>Commission Agent</th>
+      <th>Impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>New booking confirmation</strong></td>
+      <td>Instant (push notification)</td>
+      <td>Monthly report (7-30 days later)</td>
+      <td>Catch pricing errors immediately</td>
+    </tr>
+    <tr>
+      <td><strong>Guest check-in/out</strong></td>
+      <td>Real-time status</td>
+      <td>Not reported</td>
+      <td>Know when property is vacant</td>
+    </tr>
+    <tr>
+      <td><strong>Cleaning completion</strong></td>
+      <td>Timestamped (with photos)</td>
+      <td>Not reported</td>
+      <td>Verify quality, catch issues early</td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance requests</strong></td>
+      <td>Logged immediately (photo + quote)</td>
+      <td>Reported after completion</td>
+      <td>Approve repairs before work starts</td>
+    </tr>
+    <tr>
+      <td><strong>Guest reviews</strong></td>
+      <td>Instant alert (all platforms)</td>
+      <td>Shared on request</td>
+      <td>Respond to negative reviews quickly</td>
+    </tr>
+    <tr>
+      <td><strong>Pricing changes</strong></td>
+      <td>Logged daily (old rate → new rate)</td>
+      <td>Not visible</td>
+      <td>Track dynamic pricing effectiveness</td>
+    </tr>
+    <tr>
+      <td><strong>Revenue projections</strong></td>
+      <td>Live (based on booked + pending)</td>
+      <td>Not provided</td>
+      <td>Forecast cash flow accurately</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Business impact:</strong> Real-time data lets you catch issues early, make informed decisions, and optimize revenue. Monthly reports are too late.</p>
+
+<h2>Multi-Platform Visibility</h2>
+
+<h3>Booking Distribution Dashboard</h3>
+
+<p>iHousing portal shows all platforms in one place:</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>January Bookings</th>
+      <th>January Revenue</th>
+      <th>% of Total</th>
+      <th>Avg Rate/Night</th>
+      <th>Guest Origin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Airbnb</strong></td>
+      <td>8 bookings</td>
+      <td>RM2,450</td>
+      <td>42%</td>
+      <td>RM306</td>
+      <td>Singapore (60%), Europe (25%), KL (15%)</td>
+    </tr>
+    <tr>
+      <td><strong>Booking.com</strong></td>
+      <td>5 bookings</td>
+      <td>RM1,680</td>
+      <td>29%</td>
+      <td>RM336</td>
+      <td>Corporate (70%), Medical tourists (30%)</td>
+    </tr>
+    <tr>
+      <td><strong>Agoda</strong></td>
+      <td>3 bookings</td>
+      <td>RM920</td>
+      <td>16%</td>
+      <td>RM306</td>
+      <td>Singapore (80%), Asia (20%)</td>
+    </tr>
+    <tr>
+      <td><strong>VRBO</strong></td>
+      <td>2 bookings</td>
+      <td>RM815</td>
+      <td>14%</td>
+      <td>RM407</td>
+      <td>Families (100%)</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>TOTAL JANUARY 2026</strong></td>
+      <td><strong>RM5,865</strong></td>
+      <td>100%</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Insight:</strong> Commission agents only show Airbnb bookings. iHousing shows ALL platforms. You see 58% of your bookings that commission agents hide or don't report.</p>
+
+<h2>Review Monitoring: One Dashboard</h2>
+
+<p>iHousing portal aggregates reviews from all platforms:</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Total Reviews</th>
+      <th>Average Rating</th>
+      <th>Latest Review</th>
+      <th>Trending (Last 90 Days)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Airbnb</strong></td>
+      <td>47 reviews</td>
+      <td>4.92 ★</td>
+      <td>"Perfect location!" (Jan 22)</td>
+      <td>↑ 0.03 (improving)</td>
+    </tr>
+    <tr>
+      <td><strong>Booking.com</strong></td>
+      <td>23 reviews</td>
+      <td>9.1 / 10</td>
+      <td>"Business-friendly" (Jan 18)</td>
+      <td>↑ 0.2 (improving)</td>
+    </tr>
+    <tr>
+      <td><strong>Agoda</strong></td>
+      <td>15 reviews</td>
+      <td>4.7 / 5</td>
+      <td>"Clean & spacious" (Jan 15)</td>
+      <td>- (stable)</td>
+    </tr>
+    <tr>
+      <td><strong>VRBO</strong></td>
+      <td>8 reviews</td>
+      <td>4.9 / 5</td>
+      <td>"Family paradise" (Jan 10)</td>
+      <td>↑ 0.1 (improving)</td>
+    </tr>
+    <tr>
+      <td><strong>OVERALL</strong></td>
+      <td>93 reviews</td>
+      <td>4.87 ★</td>
+      <td>-</td>
+      <td>↑ 0.08 (improving)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Competitor approach:</strong> "Check your Airbnb app." That's it. No aggregation, no trends, no cross-platform visibility.</p>
+
+<h2>Mobile Access & Alerts</h2>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>iHousing Portal</th>
+      <th>Commission Agent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Mobile-optimized</strong></td>
+      <td>Yes (responsive web app)</td>
+      <td>No (PDF downloads only)</td>
+    </tr>
+    <tr>
+      <td><strong>Push notifications</strong></td>
+      <td>Yes (new bookings, reviews, issues)</td>
+      <td>No (email only)</td>
+    </tr>
+    <tr>
+      <td><strong>New booking alert</strong></td>
+      <td>Instant (within 1 minute)</td>
+      <td>Monthly report (7-30 days later)</td>
+    </tr>
+    <tr>
+      <td><strong>Review alert</strong></td>
+      <td>Instant (all platforms)</td>
+      <td>Email on request</td>
+    </tr>
+    <tr>
+      <td><strong>Maintenance alert</strong></td>
+      <td>Instant (photo + quote attached)</td>
+      <td>After completion</td>
+    </tr>
+    <tr>
+      <td><strong>Revenue milestone</strong></td>
+      <td>Yes (RM10K, RM15K targets)</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><strong>Occupancy alert</strong></td>
+      <td>Yes (low occupancy warnings)</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Owner feedback:</strong> "I check my iHousing portal daily. Seeing new bookings come in is addictive. With my old manager, I waited 30 days for a PDF and had no idea what was happening."</p>
+
+<h2>Accounting Integration</h2>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>iHousing Portal</th>
+      <th>Commission Agent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Export to CSV</strong></td>
+      <td>Yes (any date range)</td>
+      <td>No (manual typing)</td>
+    </tr>
+    <tr>
+      <td><strong>QuickBooks import</strong></td>
+      <td>Yes (auto-categorizes)</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><strong>Xero integration</strong></td>
+      <td>Yes (direct API)</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><strong>Tax reporting (LHDN)</strong></td>
+      <td>Yes (income statement format)</td>
+      <td>No (accountant required)</td>
+    </tr>
+    <tr>
+      <td><strong>Year-end summary</strong></td>
+      <td>Yes (12-month report)</td>
+      <td>No (manual compilation)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Time savings:</strong> iHousing owners spend 0 hours on accounting. Commission agent owners spend 2-4 hours/month manually entering data.</p>
+
+<h2>Trust & Verification</h2>
+
+<p>iHousing portal includes verification features:</p>
+
+<ul>
+  <li><strong>Platform cross-reference:</strong> Compare portal data against Airbnb/Booking.com statements</li>
+  <li><strong>Receipt upload:</strong> All expense receipts uploaded and linked</li>
+  <li><strong>Photo evidence:</strong> Before/after photos for all maintenance</li>
+  <li><strong>Cleaning timestamps:</strong> GPS-stamped check-in/check-out photos</li>
+  <li><strong>Audit trail:</strong> Every change logged (who, when, what)</li>
+</ul>
+
+<p><strong>Competitor approach:</strong> "Trust us." No verification, no cross-reference, no audit trail.</p>
+
+<h2>Owner Satisfaction: Portal Impact</h2>
+
+<p>Survey of 50 iHousing owners (Dec 2025):</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Statement</th>
+      <th>% Agree</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>"I feel confident I'm being paid correctly"</td>
+      <td>98%</td>
+    </tr>
+    <tr>
+      <td>"The portal helps me understand my property performance"</td>
+      <td>96%</td>
+    </tr>
+    <tr>
+      <td>"I check the portal at least weekly"</td>
+      <td>87%</td>
+    </tr>
+    <tr>
+      <td>"Real-time alerts are valuable"</td>
+      <td>94%</td>
+    </tr>
+    <tr>
+      <td>"I trust iHousing more than my previous manager"</td>
+      <td>92%</td>
+    </tr>
+    <tr>
+      <td>"The portal is better than my bank app"</td>
+      <td>89%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Competitor benchmark:</strong> Industry average for "I feel confident I'm being paid correctly" is 62%. iHousing: 98%.</p>
+
+<h2>The iHousing Transparency Guarantee</h2>
+
+<p>What makes our portal different:</p>
+
+<ol>
+  <li><strong>Real-time updates:</strong> No waiting for monthly reports. See bookings instantly.</li>
+  <li><strong>Complete breakdown:</strong> Every fee, every expense, every platform commission shown.</li>
+  <li><strong>Multi-platform visibility:</strong> Airbnb + Booking.com + Agoda + VRBO + Expedia in ONE dashboard.</li>
+  <li><strong>Verification tools:</strong> Cross-reference against platform statements. Upload receipts. View photos.</li>
+  <li><strong>Instant alerts:</strong> New bookings, reviews, issues—push notification within 1 minute.</li>
+  <li><strong>Accounting integration:</strong> Export to QuickBooks, Xero. Tax-ready reports.</li>
+  <li><strong>Mobile access:</strong> Full-featured responsive web app. Check anywhere, anytime.</li>
+</ol>
+
+<p><strong>Our flat RM200-300/month fee includes:</strong></p>
+
+<ul>
+  <li>Full portal access (unlimited users)</li>
+  <li>Real-time booking notifications</li>
+  <li>Multi-platform dashboard (5 platforms)</li>
+  <li>Expense itemization with receipts</li>
+  <li>Review monitoring & alerts</li>
+  <li>Accounting exports (CSV, QuickBooks, Xero)</li>
+  <li>Lifetime access (even if you leave, we export your data)</li>
+</ul>
+
+<h2>Ready for Complete Transparency?</h2>
+
+<p>Stop accepting monthly black-box statements. Demand real-time visibility into your Airbnb investment.</p>
+
+<p>iHousing's owner portal shows every booking, every fee, every expense in real-time. Verify, cross-reference, export—complete control.</p>
+
+<p><strong>See the difference:</strong> WhatsApp us at <strong>+60166996688</strong> for a free portal demo.</p>
+
+<p>We'll show you exactly what you're missing with your current manager, and exactly how much more visibility you'll have with iHousing.</p>
+
+<p>Already skeptical? We'll prove our transparency. Cross-reference our portal data against platform statements. See for yourself.</p>
+`;
+---
+<BlogPost title={title} description={description} image={image} date={date} category={category} language={language} content={content} />

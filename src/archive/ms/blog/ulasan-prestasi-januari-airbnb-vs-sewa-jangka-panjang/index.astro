@@ -1,0 +1,98 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Ulasan Prestasi Januari: Airbnb vs Sewa Jangka Panjang";
+const description = "Bandingkan pendapatan Januari 2026 antara Airbnb dan sewa jangka panjang untuk hartanah Melaka. Yang mana yang lebih menguntungkan dan bila Airbnb menang.";
+const date = "2026-01-31";
+const category = "comparison";
+const language = "ms";
+const image = "/images/blog/airbnb-vs-long-term-rental-comparison.jpg";
+
+const content = `
+<h1>Ulasan Prestasi Januari: Airbnb vs Sewa Jangka Panjang</h1>
+
+<p>Januari 2026 menunjukkan <strong>perbezaan pendapatan yang ketara</strong> antara Airbnb dan sewa jangka panjang untuk hartanah di kawasan pelancong Melaka. Dengan 8 tahun data, iHousing mendedahkan bila Airbnb menang.</p>
+
+<h2>Perbandingan Pendapatan Januari 2026</h2>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>Jenis Hartanah</strong></th>
+<th><strong>Sewa Jangka Panjang</strong></th>
+<th><strong>Airbnb (Jan 2026)</strong></th>
+<th><strong>Perbezaan</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2BR pangsapuri bandar</td>
+<td>RM 1,800/bulan</td>
+<td>RM 3,200 (Januari)</td>
+<td><strong>+RM 1,400</strong></td>
+</tr>
+<tr>
+<td>3BR rumah warisan</td>
+<td>RM 2,200/bulan</td>
+<td>RM 5,800 (Januari)</td>
+<td><strong>+RM 3,600</strong></td>
+</tr>
+<tr>
+<td>4BR villa pantai</td>
+<td>RM 2,800/bulan</td>
+<td>RM 7,500 (Januari)</td>
+<td><strong>+RM 4,700</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Keputusan:</strong> Airbnb menjana 2-3x lebih banyak pendapatan pada bulan puncak.</p>
+
+<h2>Bila Airbnb Menang</h2>
+
+<p><strong>Kelebihan Airbnb:</strong></p>
+
+<ul>
+<li><strong>Pendapatan puncak:</strong> CNY, cuti sekolah, hujung minggu = kadar premium</li>
+<li><strong>Fleksibiliti:</strong> Gunakan hartanah anda bila diperlukan</li>
+<li><strong>Kawalan:</strong> Pilih tetamu, tetapan harga, peraturan rumah</li>
+<li><strong>Penghargaan:</strong> Pendapatan tinggi + modal apresiasi</li>
+</ul>
+
+<h3>Faktor Kunci</h3>
+
+<p><strong>Locasi menentukan pemenang:</strong></p>
+
+<ul>
+<li><strong>Kawasan pelancong:</strong> Airbnb menang besar (Jonker Walk, pantai)</li>
+<li><strong>Kawasan tempatan:</strong> Sewa jangka panjang mungkin lebih baik</li>
+<li><strong>Corak permintaan:</strong> Puncak hujung minggu + musim cuti = Airbnb</li>
+<li><strong>Nilai hartanah:</strong> Hartanah premium menuntut Airbnb untuk ROI maksimum</li>
+</ul>
+
+<h2>Kos Yang Dilupakan</h2>
+
+<p><strong>Sewa jangka panjang mempunyai kos tersembunyi:</strong></p>
+
+<ul>
+<li><strong>Kosong:</strong> 1-2 bulan kosong antara penyewa = kehilangan pendapatan</li>
+<li><strong>Kerosakan:</strong> Penyewa jangka panjang = lebih haus & rosak</li>
+<li><strong>Kawalan:</strong> Kurang kawalan atas siapa yang tinggal di hartanah anda</li>
+<li><strong>Penghargaan:</strong> Nilai jualan kurang tanpa sejarah Airbnb</li>
+</ul>
+
+<p><strong>WhatsApp +60166996688</strong> untuk analisis perbandingan hartanah anda.</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+<BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

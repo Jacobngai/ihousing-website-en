@@ -1,0 +1,426 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Kos Tersembunyi Pengurusan Airbnb: Apa yang Tidak Diceritakan";
+const description = "Ketahui kos tersembunyi sebenar ketika menguruskan Airbnb di Melaka. Dari utiliti tinggi kepada kerosakan tetamu, lihat anggaran kos sebenar untuk pengiraan yang lebih tepat.";
+const image = "/images/blog/kos-tersembunyi-pengurusan-airbnb-melaka.jpg";
+const date = "2025-01-23";
+const category = "kewangan";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Kos Tersembunyi Pengurusan Airbnb: Apa yang Tidak Diceritakan</h1>
+        <p>Ramai pemilik hartanah tertarik dengan Airbnb setelah melihat angka pendapatan yang menarik. Tetapi berapa ramai yang benar-benar mengira kos tersembunyi yang mungkin memakan keuntungan anda?</p>
+        <p>Kos tersembunyi ini boleh menjadikan perbezaan antara perniagaan Airbnb yang menguntungkan dan satu yang menjejaskan wang anda.</p>
+        <h2>Kos Tersembunyi #1: Utiliti Lebih Tinggi</h2>
+        <p>Tetamu Airbnb menggunakan lebih banyak utiliti berbanding penyewa bulanan.</p>
+        <h3>Elektrik</h3>
+        <table>
+          <thead>
+            <tr><th>Penggunaan</th><th>Sewa Bulanan</th><th>Airbnb</th><th>Perbezaan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Penyaman udara</td><td>RM80-120/bulan</td><td>RM150-300/bulan</td><td>+RM70-180</td></tr>
+            <tr><td>Lampu</td><td>RM30-50/bulan</td><td>RM40-70/bulan</td><td>+RM10-20</td></tr>
+            <tr><td>Perkakas</td><td>RM20-40/bulan</td><td>RM50-100/bulan</td><td>+RM30-60</td></tr>
+            <tr><td>**Jumlah**</td><td>**RM130-210/bulan**</td><td>**RM240-470/bulan**</td><td>**+RM110-260**</td></tr>
+          </tbody>
+        </table>
+        <strong>Faktor meningkat:</strong>
+        <ul>
+        <li>Tetamu guna AC sepanjang hari (bukan waktu malam sahaja)</li>
+        <li>Tetamu lupakan matikan lampu/AC</li>
+        <li>AC dihidupkan walaupun tiada tetamu di dalam</li>
+        <li>Tetamu guna water heater berlebihan</li>
+        </ul>
+        <h3>Air</h3>
+        <table>
+          <thead>
+            <tr><th>Penggunaan</th><th>Sewa Bulanan</th><th>Airbnb</th><th>Perbezaan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Bilik air</td><td>RM15-25/bulan</td><td>RM40-80/bulan</td><td>+RM25-55</td></tr>
+            <tr><td>Dapur</td><td>RM5-10/bulan</td><td>RM15-30/bulan</td><td>+RM10-20</td></tr>
+            <tr><td>**Jumlah**</td><td>**RM20-35/bulan**</td><td>**RM55-110/bulan**</td><td>**+RM35-75**</td></tr>
+          </tbody>
+        </table>
+        <strong>Faktor meningkat:</strong>
+        <ul>
+        <li>Tetamu mandi lebih lama (2-3 kali sehari)</li>
+        <li>Tetamu guna mesin basuh (jika ada)</li>
+        <li>Bilik mandi dibersihkan lebih kerap</li>
+        </ul>
+        <h3>Internet</h3>
+        <table>
+          <thead>
+            <tr><th>Pakej</th><th>Kos Bulanan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Basic (30Mbps)</td><td>RM100-130</td></tr>
+            <tr><td>Standard (100Mbps)</td><td>RM150-200</td></tr>
+            <tr><td>Premium (500Mbps+)</td><td>RM250-400</td></tr>
+          </tbody>
+        </table>
+        <strong>Tips:</strong> Airbnb memerlukan internet stabil untuk ulasan positif. Jangan jimat pada internet.
+        <strong>Jumlah Kos Utiliti Tambahan:</strong> RM145-395/bulan
+        <h2>Kos Tersembunyi #2: Barang Habis Guna</h2>
+        <p>Barang habis guna adalah kos yang sering dilupakan pemilik.</p>
+        <h3>Item & Kos Bulanan</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Kuantiti</th><th>Kos Bulanan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tisu tandas</td><td>10-15 gulung</td><td>RM20-35</td></tr>
+            <tr><td>Sabun</td><td>20-30 botol kecil</td><td>RM30-50</td></tr>
+            <tr><td>Syampu</td><td>15-20 botol kecil</td><td>RM25-40</td></tr>
+            <tr><td>Kondisioner</td><td>10-15 botol kecil</td><td>RM20-35</td></tr>
+            <tr><td>Dish soap</td><td>2-3 botol</td><td>RM10-20</td></tr>
+            <tr><td>Tuala dapur</td><td>2-3 helai</td><td>RM10-20</td></tr>
+            <tr><td>Spons dapur</td><td>2-3 unit</td><td>RM5-10</td></tr>
+            <tr><td>Kopi/teh</td><td>20-30 sachet</td><td>RM10-20</td></tr>
+            <tr><td>Gula/creamer</td><td>10-15 sachet</td><td>RM5-10</td></tr>
+            <tr><td>Air mineral</td><td>10-15 botol</td><td>RM15-25</td></tr>
+            <tr><td>Plastik sampah</td><td>10-15 unit</td><td>RM5-10</td></tr>
+            <tr><td>**JUMLAH**</td><td>**RM155-275**</td></tr>
+          </tbody>
+        </table>
+        <strong>Faktor meningkat:</strong>
+        <ul>
+        <li>Tetamu guna lebih banyak daripada diperlukan</li>
+        <li>Barang hilang/dicuri</li>
+        <li>Kerosakan bukan sengaja</li>
+        </ul>
+        <h2>Kos Tersembunyi #3: Pembersihan Profesional</h2>
+        <p>Jika anda upah pembersih profesional:</p>
+        <table>
+          <thead>
+            <tr><th>Servis</th><th>Kekerapan</th><th>Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pembersihan asas</td><td>Setiap daftar keluar</td><td>RM60-100</td></tr>
+            <tr><td>Pembersihan mendalam</td><td>Bulanan</td><td>RM150-250</td></tr>
+            <tr><td>Pembersihan langsir</td><td>3-6 bulan</td><td>RM80-150</td></tr>
+            <tr><td>Pembersihan upholsteri</td><td>6-12 bulan</td><td>RM150-300</td></tr>
+          </tbody>
+        </table>
+        <strong>Anggaran dengan 8 daftar masuk sebulan:</strong>
+        <ul>
+        <li>Pembersihan asas: RM80 x 8 = RM640</li>
+        <li>Pembersihan mendalam: RM200 x 1 = RM200</li>
+        <li><strong>Jumlah:</strong> RM840/bulan</li>
+        </ul>
+        <strong>Pembersihan sendiri (kos bahan):</strong>
+        <ul>
+        <li>Bahan pembersihan: RM100-150/bulan</li>
+        <li>Masa anda: 8-12 jam/bulan</li>
+        </ul>
+        <h2>Kos Tersembunyi #4: Penyelenggaraan & Pembaikan</h2>
+        <h3>Penyelenggaraan Berkala</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Kekerapan</th><th>Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Servis AC</td><td>3-6 bulan</td><td>RM80-150</td></tr>
+            <tr><td>Pembersihan tangki air</td><td>6-12 bulan</td><td>RM100-200</td></tr>
+            <tr><td>Pemeriksaan elektrik</td><td>Tahunan</td><td>RM50-100</td></tr>
+            <tr><td>Pemeriksaan paip</td><td>Tahunan</td><td>RM50-100</td></tr>
+            <tr><td>Pest control</td><td>3-6 bulan</td><td>RM80-150</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah:</strong> RM360-700/tahun atau RM30-58/bulan
+        <h3>Pembaikan Tidak Dirancang</h3>
+        <table>
+          <thead>
+            <tr><th>Kerosakan</th><th>Kebarangkalian</th><th>Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Kerusi pecah</td><td>10-15%</td><td>RM100-300</td></tr>
+            <tr><td>Meja rosak</td><td>5-10%</td><td>RM150-400</td></tr>
+          </tbody>
+        </table>
+        <ul>
+        <li>TV rosak | 3-5% | RM500-1,500 |</li>
+        </ul>
+        <p>| AC rosak | 5-10% | RM200-800 |</p>
+        <p>| Paip bocor | 5-10% | RM100-400 |</p>
+        <p>| Kunci rosak | 5-10% | RM80-200 |</p>
+        <p>| Ganti tingkap | 2-5% | RM200-600 |</p>
+        <strong>Anggaran tahunan:</strong> RM1,350-4,200 atau RM113-350/bulan
+        <h2>Kos Tersembunyi #5: Kerosakan Tetamu</h2>
+        <p>Walaupun jarang berlaku, tetamu boleh menyebabkan kerosakan.</p>
+        <h3>Contoh Kerosakan & Kos</h3>
+        <table>
+          <thead>
+            <tr><th>Jenis Kerosakan</th><th>Kebarangkalian</th><th>Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Kotoran dinding (makanan/tinta)</td><td>5-8%</td><td>RM100-400</td></tr>
+            <tr><td>Karpet rosak</td><td>3-5%</td><td>RM200-600</td></tr>
+            <tr><td>Lentik kotor/rosak</td><td>5-10%</td><td>RM200-500</td></tr>
+            <tr><td>Peralatan pecah</td><td>5-8%</td><td>RM100-500</td></tr>
+            <tr><td>Pintar berkunci rosak</td><td>2-3%</td><td>RM200-600</td></tr>
+            <tr><td>Kunci hilang</td><td>5-8%</td><td>RM80-200</td></tr>
+          </tbody>
+        </table>
+        <strong>Perlindungan:</strong> Airbnb menawarkan Host Guarantee sehingga RM1,000,000 tetapi ada deductible dan proses tuntutan.
+        <strong>Anggaran tahunan (selepas perlindungan):</strong> RM500-1,500 atau RM42-125/bulan
+        <h2>Kos Tersembunyi #6: Masa & Usaha Anda</h2>
+        <p>Walaupun bukan kos wang, masa anda bernilai.</p>
+        <h3>Jam Diperlukan Setiap Bulan</h3>
+        <table>
+          <thead>
+            <tr><th>Aktiviti</th><th>Jam/Bulan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Komunikasi dengan tetamu</td><td>5-10</td></tr>
+            <tr><td>Daftar masuk/keluar</td><td>3-6</td></tr>
+            <tr><td>Urusan pembersih</td><td>2-4</td></tr>
+            <tr><td>Pemeriksaan unit</td><td>2-4</td></tr>
+            <tr><td>Urusan masalah</td><td>2-5</td></tr>
+            <tr><td>Pembayaran bil</td><td>1-2</td></tr>
+            <tr><td>Kemas kini senarai</td><td>1-2</td></tr>
+            <tr><td>**JUMLAH**</td><td>**16-33 jam/bulan**</td></tr>
+          </tbody>
+        </table>
+        <strong>Nilai masa:</strong> Jika masa anda bernilai RM50/jam, ini bersamaan RM800-1,650/bulan!
+        <h2>Kos Tersembunyi #7: Yuran & Lesen</h2>
+        <h3>Yuran Bulanan/Tahunan</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Yuran penyelenggaraan kondominium</td><td>RM200-400/bulan</td></tr>
+            <tr><td>Cukai pintu</td><td>RM100-300/tahun</td></tr>
+            <tr><td>Cukai tanah</td><td>RM50-200/tahun</td></tr>
+            <tr><td>Insurans harta</td><td>RM300-800/tahun</td></tr>
+            <tr><td>Lesen perniagaan (jika diperlukan)</td><td>RM50-200/tahun</td></tr>
+          </tbody>
+        </table>
+        <strong>Jumlah bulanan:</strong> RM230-433
+        <h2>Kos Tersembunyi #8: Kekosongan</h2>
+        <p>Bulan-bulan yang kurang penginapan akan menjejaskan aliran tunai.</p>
+        <h3>Kadar Kekosongan</h3>
+        <table>
+          <thead>
+            <tr><th>Musim</th><th>Kadar Kekosongan</th><th>Kesan Kewangan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Puncak (Dis, Jan, Mac)</td><td>10-20%</td><td>Pendapatan optimum</td></tr>
+          </tbody>
+        </table>
+        <ul>
+        <li>Biasa (Feb, Apr, Mei) | 25-35% | Pendapatan sederhana |</li>
+        </ul>
+        <p>| Sejuk (Jun, Jul, Ogos) | 40-50% | Pendapatan rendah |</p>
+        <strong>Kekosongan purata tahunan:</strong> 25-30%
+        <strong>Kesan:</strong> Jika bajet anda berdasarkan 50% penginapan, tetapi sebenarnya hanya 30%, anda akan kehilangan RM3,000-5,000 pendapatan setahun.
+        <h2>Kos Tersembunyi #9: Bayaran Platform</h2>
+        <p>Airbnb mengenakan bayaran perkhidmatan:</p>
+        <h3>Bayaran Airbnb</h3>
+        <table>
+          <thead>
+            <tr><th>Jenis</th><th>Kos</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Bayaran hos</td><td>3% setiap tempahan</td></tr>
+            <tr><td>Bayaran tetamu</td><td>0-20% (tetamu bayar)</td></tr>
+            <tr><td>Bayaran pembersihan</td><td>RM50-100 (anda tetapkan)</td></tr>
+            <tr><td>Bayaran tetamu tambahan</td><td>RM20-50/tetamu/tahun</td></tr>
+          </tbody>
+        </table>
+        <strong>Contoh:</strong>
+        <ul>
+        <li>Tempahan RM200 x 2 malam = RM400</li>
+        <li>Bayaran hos: RM12 (3%)</li>
+        <li>Bayaran pembersihan: RM60</li>
+        <li><strong>Jumlah potongan:</strong> RM72</li>
+        </ul>
+        <h2>Pengiraan Sebenar: Contoh Hartanah 2-Bilik Tidur</h2>
+        <h3>Pendapatan Projek (dengan 30% penginapan)</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Bulanan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pendapatan kotor (9 malam x RM200)</td><td>RM1,800</td></tr>
+          </tbody>
+        </table>
+        <h3>Kos Sebenar</h3>
+        <table>
+          <thead>
+            <tr><th>Kategori</th><th>Bulanan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Utiliti (electric + water + internet)</td><td>RM400</td></tr>
+            <tr><td>Barang habis guna</td><td>RM200</td></tr>
+            <tr><td>Pembersihan profesional</td><td>RM640</td></tr>
+            <tr><td>Penyelenggaraan</td><td>RM50</td></tr>
+            <tr><td>Pembaikan tidak dirancang</td><td>RM150</td></tr>
+            <tr><td>Kerosakan tetamu (purata)</td><td>RM50</td></tr>
+          </tbody>
+        </table>
+        <ul>
+        <li>Yuran kondominium | RM300 |</li>
+        </ul>
+        <p>| Insurans (purata) | RM50 |</p>
+        <p>| Bayaran platform | RM54 |</p>
+        <p>| <strong>JUMLAH KOS</strong> | <strong>RM1,894</strong> |</p>
+        <p>| <strong>KEUNTUNGAN/KERUGIAN</strong> | <strong>-RM94</strong> |</p>
+        <strong>Keputusan:</strong> Dengan 30% penginapan, anda mungkin kerugian!
+        <h3>Pendapatan Projek (dengan 50% penginapan)</h3>
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Bulanan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pendapatan kotor (15 malam x RM200)</td><td>RM3,000</td></tr>
+            <tr><td>Kos (sama seperti di atas)</td><td>RM1,894</td></tr>
+            <tr><td>**KEUNTUNGAN**</td><td>**RM1,106**</td></tr>
+          </tbody>
+        </table>
+        <strong>Keputusan:</strong> Dengan 50% penginapan, anda mula untung.
+        <h2>Cara Mengurangkan Kos Tersembunyi</h2>
+        <h3>Tip 1: Guna Pintar Pintar Berkunci</h3>
+        <ul>
+        <li>Jimat kos daftar masuk/keluar</li>
+        <li>Kurangkan masa komunikasi</li>
+        <li>Elakkan hilang kunci (kerugian RM80-200)</li>
+        </ul>
+        <h3>Tip 2: Tetapkan House Rules yang Jelas</h3>
+        <ul>
+        <li>Kurangkan kerosakan tetamu</li>
+        <li>Kurangkan penggunaan utiliti berlebihan</li>
+        <li>Kurangkan masa menangani masalah</li>
+        </ul>
+        <h3>Tip 3: Upah Syarikat Pengurusan</h3>
+        <p>Walaupun nampak seperti kos tambahan, syarikat pengurusan boleh:</p>
+        <ul>
+        <li>Mengurangkan masa anda hampir sifar</li>
+        <li>Mendapatkan diskaun pembersihan (pasukan dalaman)</li>
+        <li>Mengurangkan kerosakan (profesional screening tetamu)</li>
+        <li>Meningkatkan kadar penginapan (senarai dioptimumkan)</li>
+        </ul>
+        <h3>Tip 4: Beli Barang Berkualiti</h3>
+        <ul>
+        <li>Barang murah = rosak cepat = kos ganti tinggi</li>
+        <li>Tilam berkualiti = tahan 5-7 tahun</li>
+        <li>Perabot baik = tahan 10+ tahun</li>
+        </ul>
+        <h3>Tip 5: Monitoring Utiliti</h3>
+        <ul>
+        <li>Guna thermostat pintar untuk AC</li>
+        <li>Putaran lampu LED</li>
+        <li>Pilih mesin basuh yang efisien</li>
+        </ul>
+        <h2>Penyelesaian: Syarikat Pengurusan Airbnb</h2>
+        <h3>Untuk Parkland Avenue by the Sea</h3>
+        <strong>Yuran tetap:</strong> RM200-300/bulan
+        <p>Termasuk:</p>
+        <ul>
+        <li>Pembersihan dalaman (tiada markup)</li>
+        <li>Penyenaraian di 5 platform</li>
+        <li>Komunikasi tetamu</li>
+        <li>Penyelenggaraan ringkas</li>
+        <li>Daftar masuk/keluar</li>
+        </ul>
+        <strong>Kos jimat:</strong>
+        <ul>
+        <li>Pembersihan profesional: Jimat RM400-600/bulan</li>
+        <li>Masa anda: Jimat 16-33 jam/bulan</li>
+        <li>Diskaun pembersihan: Jimat 20-30%</li>
+        </ul>
+        <h3>Untuk Kondominium Lain</h3>
+        <strong>Harga tersuai</strong> - WhatsApp kami untuk sebut harga
+        <p>Kelebihan:</p>
+        <ul>
+        <li>Kos yang telus</li>
+        <li>Tiada komisen tersembunyi</li>
+        <li>Pasukan dalaman (tiada markup)</li>
+        <li>Pengurusan penuh</li>
+        </ul>
+        <h2>Pengiraan Pulangan Sebenar</h2>
+        <h3>Contoh: Hartanah RM350,000</h3>
+        <h3>Scenaria 1: Urus Sendiri (30% penginapan)</h3>
+        <ul>
+        <li>Pelaburan: RM350,000 + RM25,000 (perabot) = RM375,000</li>
+        <li>Pendapatan bersih: -RM94/bulan (kerugian!)</li>
+        <li>ROI: Negatif</li>
+        </ul>
+        <h3>Scenaria 2: Urus Sendiri (50% penginapan)</h3>
+        <ul>
+        <li>Pendapatan bersih: RM1,106/bulan</li>
+        <li>Pendapatan tahunan: RM13,272</li>
+        <li>ROI: 3.5%</li>
+        </ul>
+        <h3>Scenaria 3: Dengan iHousing (50% penginapan)</h3>
+        <ul>
+        <li>Yuran pengurusan: RM250/bulan (Parkland)</li>
+        <li>Pendapatan bersih: RM856/bulan</li>
+        <li>Pendapatan tahunan: RM10,272</li>
+        <li>ROI: 2.7%</li>
+        </ul>
+        <strong>Tetapi:</strong> Masa anda = 0 jam/bulan!
+        <h3>Scenaria 4: Dengan iHousing (60% penginapan - optimasi)</h3>
+        <ul>
+        <li>Pendapatan kotor: RM2,160/bulan</li>
+        <li>Kos operasi: RM1,894</li>
+        <li>Yuran pengurusan: RM250</li>
+        <li>Pendapatan bersih: RM1,272/bulan</li>
+        <li>Pendapatan tahunan: RM15,264</li>
+        <li>ROI: 4.1%</li>
+        </ul>
+        <strong>Kelebihan tambahan:</strong>
+        <ul>
+        <li>Masa anda untuk kerja lain/hiburan</li>
+        <li>Tekanan yang jauh lebih rendah</li>
+        <li>Potensi penginapan lebih tinggi (optimasi profesional)</li>
+        </ul>
+        <h2>Tindakan Seterusnya</h2>
+        <p>Adakah anda terkejut dengan kos tersembunyi ini?</p>
+        <p>Jangan risau. Dengan perancangan yang betul, Airbnb masih boleh menjadi pelaburan yang menguntungkan.</p>
+        <p>WhatsApp iHousing untuk:</p>
+        <ol>
+        <li>Analisis kos sebenar untuk hartanah anda</li>
+        <li>Anggaran pendapatan yang realistik</li>
+        <li>Cadangan untuk mengurangkan kos tersembunyi</li>
+        </ol>
+        <hr class="my-8">
+        <h2>Ringkasan: Kos Tersembunyi Bulanan</h2>
+        <table>
+          <thead>
+            <tr><th>Kategori</th><th>Kos Minimum</th><th>Kos Sederhana</th><th>Kos Tinggi</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Utiliti tambahan</td><td>RM145</td><td>RM270</td><td>RM395</td></tr>
+            <tr><td>Barang habis guna</td><td>RM155</td><td>RM215</td><td>RM275</td></tr>
+            <tr><td>Pembersihan</td><td>RM100</td><td>RM400</td><td>RM840</td></tr>
+            <tr><td>Penyelenggaraan</td><td>RM30</td><td>RM44</td><td>RM58</td></tr>
+            <tr><td>Pembaikan tidak dirancang</td><td>RM113</td><td>RM232</td><td>RM350</td></tr>
+            <tr><td>Kerosakan tetamu</td><td>RM42</td><td>RM84</td><td>RM125</td></tr>
+            <tr><td>Yuran & lesen</td><td>RM230</td><td>%332</td><td>RM433</td></tr>
+            <tr><td>Bayaran platform</td><td>RM54</td><td>RM90</td><td>RM150</td></tr>
+            <tr><td>**JUMLAH**</td><td>**RM869**</td><td>**RM1,667**</td><td>**RM2,626**</td></tr>
+          </tbody>
+        </table>
+        <hr class="my-8">
+        <strong>Artikel Berkaitan:</strong>
+        <ul>
+        <li>[Airbnb vs Sewa Bulanan: Mana Lebih Untung?](/ms/blog/airbnb-vs-sewa-bulanan-mana-lebih-untung)</li>
+        <li>[Berapa Yuran Pengurusan Airbnb?](/ms/blog/berapa-yuran-pengurusan-airbnb)</li>
+        <li>[Bajet Pengubahsuaian Airbnb](/ms/blog/bajet-pengubahsuaian-airbnb)</li>
+        </ul>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

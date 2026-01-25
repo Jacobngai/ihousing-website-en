@@ -1,0 +1,47 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Apartmen Seluruh vs Bilik: Perbandingan Pendapatan Hos Melaka";
+const description = "Perbandingan kewangan antara menyewa apartmen seluruh vs bilik individu dalam Airbnb Melaka. Termasuk kadar okupansi, strategi harga, dan analisis pendapatan bersih.";
+const image = "/images/blog/apartmen-seluruh-vs-bilik.jpg";
+const date = "2026-01-23";
+const category = "rental-types";
+const language = "ms";
+
+const content = `
+<h1>Apartmen Seluruh vs Bilik: Perbandingan Pendapatan untuk Hos Melaka</h1>
+
+<p>Adakah anda harus menyewa keseluruhan apartmen Melaka anda atau menawarkan bilik individu? Keputusan ini memberi kesan kepada pendapatan bulanan anda sebanyak <strong>beribu ringgit</strong>. Mari bandingkan kedua-dua model dengan data sebenar dari hartanah yang diurus oleh iHousing.</p>
+
+<h2>Perbandingan Kewangan: Contoh Kondo 2-Bilik Tidur</h2>
+
+<p><strong>Model A: Sewan Apartmen Seluruh</strong></p>
+<ul>
+<li><strong>Kadar harian purata:</strong> RM300</li>
+<li><strong>Kadar okupansi:</strong> 70%</li>
+<li><strong>Pendapatan bulan kasar:</strong> RM6,300</li>
+<li><strong>Kos operasi:</strong> RM800</li>
+<li><strong>Pendapatan bulan bersih:</strong> <strong>RM5,500</strong></li>
+</ul>
+
+<p><strong>Model B: 2 Bilik Peribadi</strong></p>
+<ul>
+<li><strong>Kadar gabungan:</strong> RM300/malam (ketika kedua-dua diisi)</li>
+<li><strong>Kadar okupansi:</strong> 55% setiap bilik</li>
+<li><strong>Pendapatan bulan kasar:</strong> RM4,800-5,100</li>
+<li><strong>Kos operasi:</strong> RM600</li>
+<li><strong>Pendapatan bulan bersih:</strong> <strong>RM4,200-4,500</strong></li>
+</ul>
+
+<p><strong>Pemenang:</strong> Apartmen seluruh menjana <strong>RM1,000-1,300 lebih bulanan</strong>.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

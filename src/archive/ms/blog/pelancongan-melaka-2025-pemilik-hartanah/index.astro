@@ -1,0 +1,437 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Pelancongan Melaka 2025: Apa Yang Perlu Tahu Pemilik Hartanah";
+const description = "Ramalan pelancongan Melaka 2025 untuk pemilik hartanah Airbnb. Fahami trend pelancongan, unjuran penghunian, dan peluang pelaburan dalam pasaran sewa jangka pendek Melaka.";
+const image = "/images/blog/pelancongan-melaka-2025-pemilik-hartanah.jpg";
+const date = "2026-01-03";
+const category = "educational";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Pelancongan Melaka 2025: Apa Yang Perlu Tahu Pemilik Hartanah</h1>
+
+<p>Sebagai kita memasuki 2025, landskap pelancongan Melaka berkembang dengan pesat. Untuk pemilik dan pelabur hartanah Airbnb, memahami trend ini adalah kritikal untuk memaksimumkan pulangan dan membuat keputusan pelaburan yang pintar.</p>
+
+<p>Di iHousing Melaka, kami menganalisis data pelancongan secara berterusan untuk mengoptimumkan prestasi hartanah kami. Berikut adalah ramalan 2025 kami dan apa yang ia maksudkan untuk pelaburan anda.</p>
+
+<h2>Semakan Prestasi 2024</h2>
+
+<h3>Metrik Kunci dari 2024</h3>
+
+<p>Sebelum melihat ke depan, mari kita semak di mana kita berdiri:</p>
+
+<strong>Kadar Penghunian:</strong>
+<ul>
+<li>Jonker Walk/Zon UNESCO: 78-85% setiap tahun</li></ul>
+
+<ul>
+<li>Hartanah pantai (Klebang, Pantai Kundur): 72-80%</li></ul>
+
+<ul>
+<li>Melaka Raya/Daerah perniagaan: 68-76%</li></ul>
+
+<ul>
+<li>Alor Gajah/Kawasan resort: 70-78%</li></ul>
+
+<strong>Kadar Harian Purata (ADR):</strong>
+<ul>
+<li>Kawasan pelancong utama: RM320-450/malam</li></ul>
+
+<ul>
+<li>Daerah perniagaan: RM250-350/malam</li></ul>
+
+<ul>
+li>Hartanah pantai: RM350-500/malam</li></ul>
+
+<strong>Pertumbuhan Pendapatan:</strong>
+<ul>
+<li>Peningkatan tahun-ke-tahun: 12-18%</li></ul>
+
+<ul>
+li>Pemulihan pasca-pandemik: Lengkap dan berkembang</li></ul>
+
+<h2>Ramalan Pelancongan 2025</h2>
+
+<h3>Pertumbuhan Pelancongan Domestik</h3>
+
+<strong>Pasaran Kuala Lumpur:</strong>
+<ul>
+<li>Pertumbuhan dijangka: 8-12%</li></ul>
+
+<ul>
+li>Pemandu: Permintaan pelepasan hujung minggu kekal kuat</li></ul>
+
+<ul>
+li>Keutamaan: Hartanah pantai dan warisan</li></ul>
+
+<ul>
+li>Perbelanjaan: RM500-800 setiap perjalanan (2-3 malam)</li></ul>
+
+<strong>Pasaran Singapura:</strong>
+<ul>
+<li>Pertumbuhan dijangka: 15-20%</li></ul>
+
+<ul>
+li>Pemandu: Kelebihan kadar tukaran Ringgit</li></ul>
+
+<ul>
+li>Keutamaan: Kondo dengan kemudahan lengkap</li></ul>
+
+<ul>
+li>Perbelanjaan: RM800-1,200 setiap perjalanan (3-4 malam)</li></ul>
+
+<strong>Negeri Malaysia Lain:</strong>
+<ul>
+<li>Pertumbuhan dijangka: 5-8%</li></ul>
+
+<ul>
+li>Pemandu: Perjalanan keluarga cuti sekolah</li></ul>
+
+<ul>
+li>Keutamaan: Hartanah mesra keluarga berhampiran tarikan</li></ul>
+
+<h3>Pemulihan Pelancongan Antarabangsa</h3>
+
+<strong>Pasaran Sumber Utama:</strong>
+<ul>
+li>China: Pemulihan beransur-ansur, pertumbuhan 20-25% dijangka</li></ul>
+
+<ul>
+li>Indonesia: Pertumbuhan kuat, peningkatan 15-18%</li></ul>
+
+<ul>
+li>Eropah: Pertumbuhan sederhana, peningkatan 8-12%</li></ul>
+
+<ul>
+li>Australia/New Zealand: Pertumbuhan 10-15%</li></ul>
+
+<p><strong>Kesan:</strong> Tetamu antarabangsa biasanya tinggal lebih lama (4-7 malam) dan membelanjakan 30-50% lebih setiap perjalanan.</p>
+
+<h2>Ramalan Bermusim 2025</h2>
+
+<h3>Tempoh Puncak</h3>
+
+<strong>Tahun Baharu Cina (Januari-Februari):</strong>
+<ul>
+li>Penghunian dijangka: 85-95%</li></ul>
+
+<ul>
+li>Premium kadar: +40-60%</li></ul>
+
+<ul>
+li>Tingkap tempahan: 3-6 minggu lebih awal</li></ul>
+
+<strong>Cuti Sekolah (Mac, Jun, September):</strong>
+<ul>
+li>Penghunian dijangka: 80-90%</li></ul>
+
+<ul>
+li>Premium kadar: +25-40%</li></ul>
+
+<ul>
+li>Tempoh: 3-5 malam tinggal tipikal</li></ul>
+
+<strong>Cuti Akhir Tahun (Disember):</strong>
+<ul>
+li>Penghunian dijangka: 90-98%</li></ul>
+
+<ul>
+li>Premium kadar: +50-80%</li></ul>
+
+<ul>
+li>Permintaan tinggi untuk hartanah warisan dan pantai</li></ul>
+
+<h3>Tempoh Bahu</h3>
+
+<strong>April-Mei:</strong>
+<ul>
+li>Penghunian dijangka: 70-78%</li></ul>
+
+<ul>
+li>Strategi: Sasarkan pasaran perumahan korporat</li></ul>
+
+<strong>Oktober-November:</strong>
+<ul>
+li>Penghunian dijangka: 72-80%</li></ul>
+
+<ul>
+li>Strategi: Pakej mingguan dan tinggal lanjutan</li></ul>
+
+<h3>Musim Rendah</h3>
+
+<strong>Tempoh Monsun (November-Januari hari bekerja):</strong>
+<ul>
+li>Penghunian dijangka: 55-65%</li></ul>
+
+<ul>
+li>Diskaun kadar: 20-30% dari puncak</li></ul>
+
+<ul>
+li>Strategi: Digital nomad jangka panjang</li></ul>
+
+<h2>Trend Muncul untuk 2025</h2>
+
+<h3>Trend 1: Pertumbuhan Perjalanan Bleisure</h3>
+
+<p>Menggabungkan perjalanan perniagaan dan rekreasi menjadi arus perdana:</p>
+
+<ul>
+<li><strong>Peningkatan dijangka:</strong> 25-30% dalam perumahan korporat</li></ul>
+
+<ul>
+<li><strong>Profil tetamu:</strong> Pelancong perniagaan melanjutkan tinggal untuk rekreasi</li></ul>
+
+<ul>
+<li><strong>Hartanah lebih disukai:</strong> Daerah perniagaan + berhampiran tarikan</li></ul>
+
+<ul>
+<li><strong>Purata tinggal:</strong> 5-7 malam (3 kerja + 2-4 rekreasi)</li></ul>
+
+<p><strong>Implikasi pelaburan:</strong> Hartanah di Melaka Raya dengan konektiviti baik semakin berharga.</p>
+
+<h3>Trend 2: Destinasi Digital Nomad</h3>
+
+<p>Melaka muncul sebagai hab digital nomad:</p>
+
+<ul>
+<li><strong>Peningkatan dijangka:</strong> 40-50% dalam tempahan jangka panjang</li></ul>
+
+<ul>
+<li><strong>Profil tetamu:</strong> Pekerja jauh mencari kehidupan pantai yang mampu milik</li></ul>
+
+<ul>
+<li><strong>Tempoh tinggal:</strong> 2-12 minggu</li></ul>
+
+<ul>
+<li><strong>Kemudahan mesti ada:</strong> WiFi kelajuan tinggi, ruang kerja</li></ul>
+
+<p><strong>Implikasi pelaburan:</strong> Hartanah dengan ciri kerja-dari-rumah mengenakan premium 15-20% untuk tinggal lama.</p>
+
+<h3>Trend 3: Perjalanan Berfokus Pengalaman</h3>
+
+<p>Tetamu semakin mencari pengalaman autentik berbanding tinggal generik:</p>
+
+<ul>
+<li><strong>Hartanah warisan:</strong> 20-25% premium untuk rumah kedai warisan autentik</li></ul>
+
+<ul>
+<li><strong>Pengalaman tempatan:</strong> Perkongsian dengan pengendali lawatan meningkatkan tempahan</li></ul>
+
+<ul>
+<li><strong>Pencelupan budaya:</strong> Kelas memasak, lawatan warisan menambah nilai</li></ul>
+
+<p><strong>Implikasi pelaburan:</strong> Hartanah warisan Jonker Walk akan melihat apresiasi berterusan.</p>
+
+<h3>Trend 4: Pelancongan Mampan</h3>
+
+<p>Pelancong berfikir alam sekitar mendapat momentum:</p>
+
+<ul>
+<li><strong>Sijil hijau:</strong> Menjadi pembezah</li></ul>
+
+<ul>
+<li><strong>Kemudahan mesra alam:</strong> Dijangka oleh 35% tetamu</li></ul>
+
+<ul>
+li><strong>Pengurangan sisa:</strong> Tetamu lebih suka plastik sekali guna yang minimum</li></ul>
+
+<p><strong>Implikasi pelaburan:</strong> Pelaburan hijau kecil (penapis air, kitar semula) meningkatkan kepuasan tetamu.</p>
+
+<h2>Peluang Pelaburan untuk 2025</h2>
+
+<h3>Kawasan Potensi Tinggi</h3>
+
+<strong>1. Pantai Kundur/Tanjung Bidara Coast</strong>
+<ul>
+<li><strong>Potensi pertumbuhan:</strong> 20-25% peningkatan pendapatan</li></ul>
+
+<ul>
+li><strong>Pemandu:</strong> Permintaan weekend warrior dari KL/Singapura</li></ul>
+
+<ul>
+<li><strong>Jenis hartanah terbaik:</strong> Kondo pantai dengan pemandangan laut</li></ul>
+
+<strong>2. Daerah Perniagaan Melaka Raya</strong>
+<ul>
+li><strong>Potensi pertumbuhan:</strong> 18-22% peningkatan pendapatan</li></ul>
+
+<ul>
+li><strong>Pemandu:</strong> Perjalanan bleisure dan perumahan korporat</li></ul>
+
+<ul>
+li><strong>Jenis hartanah terbaik:</strong> Unit 1-2BR dengan ruang kerja</li></ul>
+
+<strong>3. Kawasan Resort Alor Gajah</strong>
+<ul>
+li><strong>Potensi pertumbuhan:</strong> 22-28% peningkatan pendapatan</li></ul>
+
+<ul>
+li><strong>Pemandu:</strong> Pelancongan keluarga Singapura dan pelawat A'Famosa</li></ul>
+
+<ul>
+li><strong>Jenis hartanah terbaik:</strong> Unit 3BR mesra keluarga</li></ul>
+
+<h3>Cabaran Potensi</h3>
+
+<strong>Persekitaran Peraturan:</strong>
+<ul>
+li>Penguatkuasaan lesen MOTAC mungkin meningkat</li></ul>
+
+<ul>
+li>Peraturan strata pada sewa jangka pendek mungkin menguat</li></ul>
+
+<ul>
+li>Panduan perbandaran berkembang</li></ul>
+
+<p><strong>Penyahlepasan:</strong> Pengurus profesional seperti iHousing memastikan pematuhan dan mengesan perubahan peraturan.</p>
+
+<strong>Penepuan Pasaran di Beberapa Kawasan:</strong>
+<ul>
+li>Risiko lebihan dalam pembangunan kondo tertentu</li></ul>
+
+<ul>
+li>Persaingan harga antara hartanah baharu</li></ul>
+
+<p><strong>Penyahlepasan:</strong> Fokus pada penentuan kedudukan unik, pengalaman tetamu premium, dan pengurusan profesional.</p>
+
+<h2>Unjuran Pendapatan 2025</h2>
+
+<h3>Mengikut Jenis Hartanah</h3>
+
+<strong>Rumah Kedai Warisan (Jonker Walk):</strong>
+<ul>
+li>Pendapatan bulanan: RM12,000-18,000</li></ul>
+
+<ul>
+li>Ramalan pertumbuhan: +12-18%</li></ul>
+
+<strong>Kondo Pantai (Pantai Kundur):</strong>
+<ul>
+li>Pendapatan bulanan: RM8,000-12,000</li></ul>
+
+<ul>
+li>Ramalan pertumbuhan: +15-22%</li></ul>
+
+<strong>Kondo Daerah Perniagaan (Melaka Raya):</strong>
+<ul>
+li>Pendapatan bulanan: RM6,500-9,500</li></ul>
+
+<ul>
+li>Ramalan pertumbuhan: +10-15%</li></ul>
+
+<strong>Kondo Kawasan Resort (Alor Gajah):</strong>
+<ul>
+li>Pendapatan bulanan: RM7,000-10,500</li></ul>
+
+<ul>
+li>Ramalan pertumbuhan: +18-25%</li></ul>
+
+<h2>Item Tindakan untuk Pemilik Hartanah</h2>
+
+<h3>Jika Anda Hos Sedia Ada</h3>
+
+<ol>
+<li><strong>Semak strategi harga anda</strong>—adakah anda menangkap premium musim puncak?</li>
+</ol>
+
+<ol>
+<li><strong>Nilai kualiti penyenaraian anda</strong>—foto profesional dan penerangan lebih penting daripada sebelumnya</li>
+</ol>
+
+<ol>
+<li><strong>Pertimbangkan penyenaraian multi-platform</strong>—hartanah platform tunggal kehilangan 40-60% tempahan berpotensi</li>
+</ol>
+
+<ol>
+<li><strong>Nilai pengurusan profesional</strong>—hartanah sendiri-urus biasanya memperoleh 20-30% kurang</li>
+</ol>
+
+<ol>
+<li><strong>Rancang penambahbaikan 2025</strong>—naik taraf WiFi, persediaan ruang kerja, kemudahan mampan</li>
+</ol>
+
+<h3>Jika Anda Mempertimbangkan Pelaburan</h3>
+
+<ol>
+<li><strong>Fokus pada kawasan pertumbuhan tinggi</strong>—hartanah pantai dan daerah perniagaan menunjukkan potensi terkuat</li>
+</ol>
+
+<ol>
+<li><strong>Sasarkan segmen tetamu khusus</strong>—weekend warriors, perumahan korporat, atau digital nomad</li>
+</ol>
+
+<ol>
+<li><strong>Partner dengan pengurusan profesional dari hari pertama</strong>—ramp-up lebih pantas ke penghunian optimum</li>
+</ol>
+
+<ol>
+<li><strong>Pilih hartanah dengan ciri fleksibel</strong>—boleh menyesuaikan dengan permintaan pasaran yang berubah</li>
+</ol>
+
+<h2>Bagaimana iHousing Bersedia untuk 2025</h2>
+
+<h3>Peningkatan Strategi</h3>
+
+<ul>
+<li><strong>Algoritma harga dinamik:</strong> Keresponsif pasaran masa nyata</li></ul>
+
+<ul>
+li><strong>Perkongsian korporat:</strong> Tempahan perjalanan perniagaan langsung</li></ul>
+
+<ul>
+li><strong> Outreach digital nomad:</strong> Pemasaran tinggal lanjutan</li></ul>
+
+<ul>
+li><strong>Perkongsian pengalaman:</strong> Kolaborasi lawatan dan aktiviti tempatan</li></ul>
+
+<h3>Pelaburan dalam Pengalaman Tetamu</h3>
+
+<ul>
+li>Naik taraf WiFi kelajuan tinggi merentasi semua hartanah</li></ul>
+
+<ul>
+li>Optimumsi ruang kerja untuk pelancong bleisure</li></ul>
+
+<ul>
+li>Pelaksanaan kemudahan mampan</li></ul>
+
+<ul>
+li>Pengembangan sokongan tetamu 24/7</li></ul>
+
+<h2>Manfaatkan Peluang 2025</h2>
+
+<p>2025 menjanjikan menjadi tahun yang kuat untuk pasaran sewa jangka pendek Melaka. Soalannya: adakah hartanah anda menangkap potensi penuhnya?</p>
+
+<strong>WhatsApp iHousing Melaka untuk:</strong>
+<ul>
+li>Unjuran pendapatan 2025 percuma untuk hartanah anda</li></ul>
+
+<ul>
+li>Analisis kompetitif di kawasan anda</li></ul>
+
+<ul>
+li>Rekomendasi optimumsi</li></ul>
+
+<ul>
+li>Penilaian pengurusan profesional</li></ul>
+
+<p>Jangan biarkan 20-30% pulangan berpotensi terbuang. Biarkan iHousing membantu anda memaksimumkan prestasi 2025 anda.</p>
+
+<strong>Hartanah yang diurus oleh iHousing biasanya mencapai 15-25% pulangan lebih tinggi daripada purata pasaran.</strong>
+
+<p>[WhatsApp iHousing Melaka untuk Penilaian Hartanah 2025 Percuma]</p>
+
+<em>Diurus secara profesional. Diperoleh secara pasif. Dinikmati sepenuhnya.</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

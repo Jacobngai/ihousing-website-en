@@ -1,0 +1,58 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "旺季管理：固定费如何在高价时为您省钱";
+const description = "发现iHousing的固定费定价结构如何在春节等旺季期间最大化您的收益。无佣金百分比意味着当费率最高时您保留更多收入。";
+const date = "2026-01-29";
+const category = "pricing";
+const language = "zh";
+const image = "/images/blog/peak-season-flat-fee-chinese.jpg";
+
+const content = `
+<h1>旺季管理：固定费如何在高价时为您省钱</h1>
+
+<h2>佣金陷阱：为什么旺季让业主花费更多</h2>
+
+<p>在中国新年、学校假期和其他旺季期间，马六甲的Airbnb费率可能上涨<strong>40-60%</strong>。对于基于佣金的管理公司，这意味着<strong>他们的费用也增加40-60%</strong> - 实际上因成功而惩罚您。</p>
+
+<p>iHousing的<strong>固定费模式</strong>（RM200-300/月）运作方式不同：<strong>您的成本保持不变</strong>，无论您每晚收费RM150还是RM450。</p>
+
+<h3>CNY期间固定费优势</h3>
+
+<p>对于鸡场街2卧室物业在CNY 2026（15个高峰日）：</p>
+
+<ul>
+<li><strong>CNY期间收入：</strong> RM 6,300（15晚，RM420/晚）</li>
+<li><strong>佣金公司将收取：</strong> RM 1,260（20%）</li>
+<li><strong>iHousing收取：</strong> RM 125（按比例RM250/月）</li>
+<li><strong>您节省：</strong> RM 1,135</li>
+</ul>
+
+<p><strong>年度节省：</strong> 与典型佣金结构相比，<strong>每年节省RM12,000+</strong>。</p>
+
+<h2>Parkland Avenue：终极固定费案例</h2>
+
+<p>对于Parkland Avenue物业，iHousing提供<strong>独家固定费定价</strong>：</p>
+
+<ul>
+<li><strong>1卧室：</strong> RM 200/月</li>
+<li><strong>2卧室：</strong> RM 250/月</li>
+<li><strong>3卧室：</strong> RM 300/月</li>
+</ul>
+
+<p><strong>WhatsApp +60166996688</strong>计算您的节省并在CNY 2026之前转换。</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+    <BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

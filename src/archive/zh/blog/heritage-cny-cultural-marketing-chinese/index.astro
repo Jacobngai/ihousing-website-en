@@ -1,0 +1,55 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "遗产新年庆祝：文化体验营销";
+const description = "为2026年中国新年营销您的马六甲遗产物业。文化体验营销策略、真实性定位和寻求传统CNY庆祝体验的客人。";
+const date = "2026-01-29";
+const category = "location-based";
+const language = "zh";
+const image = "/images/blog/heritage-cny-chinese.jpg";
+
+const content = `
+<h1>遗产新年庆祝：文化体验营销</h1>
+
+<h2>向Airbnb客人销售真正的马六甲CNY体验</h2>
+
+<p>在2026年竞争激烈的Airbnb市场中，<strong>文化真实性</strong>已成为马六甲联合国教科文组织区域遗产物业的主要差异化因素。客人寻求<strong>沉浸式中国新年体验</strong>，与马六甲独特的娘惹遗产建立联系。</p>
+
+<h3>娘惹文化：马六甲差异化优势</h3>
+
+<p>马六甲的CNY庆祝活动融合了<strong>中国、马来和欧洲影响</strong>：</p>
+
+<ul>
+<li><strong>建筑：</strong> 中式庭院 + 葡萄牙瓷砖的店屋</li>
+<li><strong>美食：</strong> 娘惹菜 + 中式团圆饭</li>
+<li><strong>习俗：</strong> 独特的娘惹CNY传统</li>
+</ul>
+
+<p><strong>营销角度：</strong> "不仅仅是春节 - <strong>马六甲娘惹春节</strong>"</p>
+
+<h2>遗产体验套餐</h2>
+
+<p>为CNY客人提供的附加体验：</p>
+
+<ul>
+<li>遗产早餐：传统CNY娘惹自助餐（RM50/人）</li>
+<li>店屋之旅：建筑 + 家族历史（45分钟）</li>
+<li>市场美食之旅：鸡场街CNY小吃之旅（2小时）</li>
+</ul>
+
+<p><strong>WhatsApp +60166996688</strong>开始您的遗产物业CNY 2026文化体验策略。</p>
+`;
+---
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+    <BlogPost {title} {description} {image} {date} {category} {language} {content} />
+</body>
+</html>

@@ -1,0 +1,87 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Proses Penapisan Tetamu: Perlindungan Hartanah Airbnb Melaka";
+const description = "Bagaimana iHousing menapis tetamu untuk keselamatan hartanah di Melaka. Proses penapisan tetamu komprehensif, strategi pengurangan risiko, dan bagaimana kami melindungi pelaburan Airbnb anda.";
+const image = "/images/blog/proses-penapisan-tetamu-perlindungan-hartanah.jpg";
+const date = "2026-01-18";
+const category = "pengurusan-tetamu";
+const language = "ms";
+
+const content = `
+<h1>Proses Penapisan Tetamu: Perlindungan Hartanah untuk Hos Melaka</h1>
+<strong>Bagaimana iHousing Menapis Tetamu untuk Melindungi Pelaburan Anda</strong>
+<p>Setiap hos Airbnb takut senario malang: <strong>tetamu bermasalah</strong> yang merosakkan hartanah, melanggar peraturan, atau menyebabkan gangguan.</p>
+<p>Di iHousing, kami telah mengurus 100+ hartanah selama 8 tahun tanpa insiden besar. Kenapa? Kerana kami mengambil penapisan tetamu dengan serius.</p>
+<hr class="my-8">
+<h2>Proses Penapisan Berlapis Kami</h2>
+<h3>Skrining Pra-Tempahan</h3>
+<p><strong>Sebelum kami menerima tempahan, tetamu mesti lulus pelbagai semakan:</strong></p>
+<table>
+  <thead>
+    <tr><th>Semakan</th><th>Apa Yang Kami Sahkan</th><th>Bendera Merah</th><th>Tindakan</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**Kes completeness profil**</td><td>ID tersahkan, foto, email</td><td>Profil tidak lengkap</td><td>Minta lengkapkan</td></tr>
+    <tr><td>**Sejarah tempahan**</td><td>Ulasan lalu, penilaian hos</td><td>Ulasan buruk dari hos</td><td>Tolak atau minta deposit</td></tr>
+    <tr><td>**Umur akaun**</td><td>Bila akaun dibuat</td><td>Akaun baru (<3 bulan)</td><td>Pengesahan tambahan</td></tr>
+    <tr><td>**Tujuan tinggal**</td><td>Pelancongan, perniagaan, lokal</td><td>Alasan mengesyaki</td><td>Pertanyaan langsung</td></tr>
+  </tbody>
+</table>
+<hr class="my-8">
+<h2>Strategi Deposit: Perlindungan Kewangan</h2>
+<h3>Deposit Keselamatan mengikut Jenis Tetamu</h3>
+<table>
+  <thead>
+    <tr><th>Jenis Tempahan</th><th>Jumlah Deposit</th><th>Keadaan</th><th>Timeline Pulangan</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**Tempahan standard**</td><td>RM 300-500</td><td>Tetamu tersahkan, ulasan baik</td><td>48 jam selepas checkout</td></tr>
+    <tr><td>**Tetamu baru**</td><td>RM 500-800</td><td>Tiada ulasan, akaun baru</td><td>7 hari selepas checkout</td></tr>
+    <tr><td>**Kumpulan besar**</td><td>RM 800-1,500</td><td>6+ tetamu, acara</td><td>14 hari selepas checkout</td></tr>
+  </tbody>
+</table>
+<hr class="my-8">
+<h2>Peraturan Rumah sebagai Alat Penapisan</h2>
+<h3>Peraturan yang Menapis Tetamu Bermasalah</h3>
+<table>
+  <thead>
+    <tr><th>Peraturan</th><th>Tujuan</th><th>Tetamu yang Difilter</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**Tiada parti/acara**</td><td>Mencegah gangguan</td><td>Tempahan fokus parti</td></tr>
+    <tr><td>**Tiada merokok di dalam**</td><td>Melindungi hartanah</td><td>Perokok tidak patuh</td></tr>
+    <tr><td>**Jam senyap 10ptg-7pg</td><td>Menghormati jiran</td><td>Pembuat bunyi bising malam</td></tr>
+  </tbody>
+</table>
+<hr class="my-8">
+<h2>Hasil Penapisan: Rekod Kami</h2>
+<h3>Ringkasan Prestasi 8 Tahun</h3>
+<table>
+  <thead>
+    <tr><th>Metrik</th><td>Hasil iHousing</th><th>Purata Industri</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>**Insiden kerosakan**</td><td>0.8% tempahan</td><td>3-5%</td></tr>
+    <tr><td>**Pengusiran tetamu**</td><td>0.3% tempahan</td><td>2-3%</td></tr>
+    <tr><td>**Kadar ulangan**</td><td>22% tetamu</td><td>15-18%</td></tr>
+  </tbody>
+</table>
+<hr class="my-8">
+<h2>Lindungi Pelaburan Anda dengan Penapisan Profesional</h2>
+<p><strong>Jangan biarkan hartanah anda kepada nasib.</strong></p>
+<p>Proses penapisan tetamu kami telah melindungi 100+ hartanah selama 8 tahun. Masalah minimum. Ketenangan fikiran maksimum.</p>
+<a href="https://wa.me/60166996688?text=Hi%20iHousing,%20saya%20berminat%20dengan%20proses%20penapisan%20tetamu%20anda." target="_blank" rel="noopener" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 20px 0;">+60 19-699 6688</a>
+<hr class="my-8">
+<strong>Dikemas Kini:</strong> Januari 2026 | <strong>Sumber Data:</strong> Analisis Portfolio 100+ Hartanah iHousing
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

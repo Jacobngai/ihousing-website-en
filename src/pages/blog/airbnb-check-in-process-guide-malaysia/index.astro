@@ -1,0 +1,851 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Airbnb Check-In Process Guide Malaysia - Seamless Guest Welcome System";
+const description = "Complete guide to Airbnb check-in process for Malaysia hosts. Includes self check-in setup, smart lock installation, guest communication templates, and Melaka-specific considerations. Ensure 5-star welcome experience.";
+const image = "/images/blog/airbnb-check-in-process-guide-malaysia.jpg";
+const date = "2025-01-24";
+const category = "operational-guide";
+const language = "en";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Airbnb Check-In Process Guide Malaysia - Seamless Guest Welcome System</h1>
+
+<h2>The Check-In Experience Makes or Breaks Reviews</h2>
+
+<p>Your guest has driven 2 hours from KL or flown in from Singapore. They're tired, hungry, and maybe unfamiliar with Melaka's streets. Their check-in experience sets the tone for their entire stay.</p>
+
+<strong>The reality:</strong>
+<ul>
+<li>40% of guest complaints relate to check-in issues</li></ul>
+
+<ul>
+<li>Reviews mentioning "easy check-in" directly correlate with higher ratings</li></ul>
+
+<ul>
+<li>Professional check-in process justifies premium pricing (RM20-40/night more)</li></ul>
+
+<ul>
+<li>Self check-in is now guest expectation, not luxury</li></ul>
+
+<strong>By the end of this guide, you'll have a complete check-in system that delights guests, eliminates 2am key handoffs, and earns you 5-star reviews consistently.</strong>
+
+<h2>Quick Overview: Check-In Options</h2>
+
+<h3>The Four Check-In Methods</h3>
+
+<strong>Recommendation:</strong> Smart lock for primary access + lockbox as backup. Best balance of convenience and security.
+
+<h2>The Self Check-In System (Recommended)</h2>
+
+<h3>Why Self Check-In is Now Standard</h3>
+
+<strong>Guest Expectations in 2025:</strong>
+
+<strong>Host Benefits:</strong>
+<ul>
+<li>No more late-night drives to property</li></ul>
+
+<ul>
+<li>No key handoff coordination</li></ul>
+
+<ul>
+<li>Multiple properties manageable from anywhere</li></ul>
+
+<ul>
+<li>Perceived as "modern" and "professional" by guests</li></ul>
+
+<h2>Smart Lock Setup Complete Guide</h2>
+
+<h3>Step 1: Choose the Right Smart Lock</h3>
+
+<strong>Malaysian Condo Considerations:</strong>
+
+<strong>Top Smart Locks for Malaysian Condos:</strong>
+
+<strong>Key Features for Airbnb:</strong>
+<ul>
+<li><strong>Temporary PIN codes:</strong> Generate codes that expire after checkout</li></ul>
+
+<ul>
+<li><strong>Access logs:</strong> Track when guests enter/exit</li></ul>
+
+<ul>
+<li><strong>Remote management:</strong> Change codes without visiting property</li></ul>
+
+<ul>
+<li><strong>Backup power:</strong> Battery + USB emergency power</li></ul>
+
+<h3>Step 2: Installation Process</h3>
+
+<strong>Professional Installation (Recommended):</strong>
+
+<strong>DIY Installation (If Handy):</strong>
+
+<strong>Tools Needed:</strong>
+<ul>
+<li>Screwdriver (usually included)</li></ul>
+
+<ul>
+<li>Drill (may need for some models)</li></ul>
+
+<ul>
+<li>Measuring tape</li></ul>
+
+<ul>
+<li>Smartphone (for app setup)</li></ul>
+
+<strong>Time:</strong> 1-3 hours first installation
+<strong>Difficulty:</strong> Medium (follow manufacturer videos)
+
+<strong>Important:</strong> Check with condo management if smart locks are allowed (most modern condos approve, some older buildings may not).
+
+<h3>Step 3: Access Code Management</h3>
+
+<strong>Create Your Code System:</strong>
+
+<strong>Strategy 1: Building-Based Codes</strong>
+
+<p><code></p>
+<p>Format: [Building Abbreviation] + [Floor] + [Unit] + [Month] + [Day]</p>
+
+<p>Example for The Shore, 12th Floor, Unit 12, checking in March 15:</p>
+<p>Code: SH12120315</p>
+
+<p>Benefits: Easy to remember, easy to troubleshoot</p>
+
+
+<strong>Strategy 2: Random 4-6 Digit Codes</strong>
+
+
+<p>Format: 4-6 random numbers</p>
+
+<p>Example: 847291</p>
+
+<p>Benefits: More secure, no property info in code</p>
+
+
+<strong>Code Change Protocol:</strong>
+<li><strong>Generate new code</strong> 24 hours before check-in</li>
+<li><strong>Send code to guest</strong> via Airbnb message (not publicly)</li>
+<li><strong>Activate code</strong> in smart lock app</li>
+<li><strong>Set auto-expire</strong> for checkout time (11AM on checkout day)</li>
+<li><strong>Deactivate old code</strong> after checkout</li>
+
+<strong>Backup Codes:</strong>
+<ul>
+<li>Always maintain 1 backup physical key (in lockbox or with building security)</li></ul>
+
+<ul>
+<li>Test backup access weekly</li></ul>
+
+<ul>
+<li>Inform guest of backup option</li></ul>
+
+<h2>The Complete Check-In Workflow</h2>
+
+<h3>Timeline: Guest Booking to Check-In</h3>
+
+<strong>24 Hours After Booking:</strong>
+<ul>
+<li>Send welcome message</li></ul>
+
+<ul>
+<li>Confirm check-in time (even if self check-in, helps coordinate)</li></ul>
+
+<ul>
+<li>Provide general area info</li></ul>
+
+<strong>24 Hours Before Check-In:</strong>
+<ul>
+<li>Send access code</li></ul>
+
+<ul>
+<li>Provide WiFi password</li></ul>
+
+<ul>
+<li>Share parking location + pass (if applicable)</li></ul>
+
+<ul>
+<li>Send directions/guide</li></ul>
+
+<strong>Check-In Day:</strong>
+<ul>
+<li>Monitor for guest messages</li></ul>
+
+<ul>
+<li>Be available for questions</li></ul>
+
+<ul>
+<li>Send "excited to host you" reminder</li></ul>
+
+<strong>After Check-In:</strong>
+<ul>
+<li>Confirm guest arrived safely</li></ul>
+
+<ul>
+<li>Ask if everything is okay</li></ul>
+
+<ul>
+<li>Offer assistance for recommendations</li></ul>
+
+<h3>Welcome Message Templates</h3>
+
+<strong>Template 1: Initial Booking Confirmation (Send within 24 hours)</strong>
+
+
+<p>Hi [Guest Name]! 👋</p>
+
+<p>Thanks for booking my place in Melaka! We're excited to host you.</p>
+
+<p>📍 PROPERTY: [Unit Name, Building Name]</p>
+<p>📅 CHECK-IN: [Date] from 3:00 PM</p>
+<p>📅 CHECK-OUT: [Date] by 11:00 AM</p>
+<p>👥 GUESTS: [Number] guests</p>
+
+<p>Next Steps:</p>
+<li>I'll send the access code and WiFi password 24 hours before check-in</li>
+<li>Please share your estimated arrival time (helps us prepare)</li>
+<li>Any questions? Just message us here anytime!</li>
+
+<p>See you soon! 🎉</p>
+
+
+<strong>Template 2: Pre-Arrival Message (Send 24 hours before)</strong>
+
+
+<p>Hi [Guest Name]! 👋</p>
+
+<p>Can't wait to welcome you tomorrow! Here's everything you need:</p>
+
+<p>🔑 ACCESS CODE: [Code]</p>
+<p>Active from: 3:00 PM tomorrow</p>
+<p>Expires: 11:00 AM on checkout day</p>
+
+<p>📶 WIFI:</p>
+<p>Network: [Network Name]</p>
+<p>Password: [Password]</p>
+
+<p>🚗 PARKING:</p>
+<p>Location: [Level, Bay Number]</p>
+<p>Pass code: [If applicable]</p>
+
+<p>📍 DIRECTIONS:</p>
+<p>[Google Maps link or brief directions]</p>
+
+<p>🏠 UNIT:</p>
+<p>[Building Name], Unit [Unit Number], Floor [Floor]</p>
+
+<p>What to Bring:</p>
+<ul>
+<li>Towels and toiletries provided ✅</li></ul>
+
+<ul>
+<li>Kitchen fully equipped ✅</li></ul>
+
+<ul>
+<li>Netflix ready ✅</li></ul>
+
+<ul>
+<li>Just bring yourself and luggage! 🧳</li></ul>
+
+<p>Any questions? We're just a message away. See you tomorrow! 🎉</p>
+
+
+<strong>Template 3: Check-In Day Reminder (Send morning of check-in)</strong>
+
+
+<p>Hi [Guest Name]! 👋</p>
+
+<p>Big day! Here's a quick reminder:</p>
+
+<p>🔑 ACCESS CODE: [Code]</p>
+<p>📍 LOCATION: [Full address with unit number]</p>
+
+<p>Need help finding us? Call or WhatsApp: [Your Number]</p>
+
+<p>Safe travels! See you soon! 🎉</p>
+
+
+<strong>Template 4: Post Check-In Follow-Up (Send 1-2 hours after check-in)</strong>
+
+
+<p>Hi [Guest Name]! 👋</p>
+
+<p>Hope you've settled in okay! ✅</p>
+
+<p>Everything going well with the unit? Let us know if you need anything - we're here to help!</p>
+
+<p>If everything's good, no reply needed. Enjoy Melaka! 🎉</p>
+
+<p>Quick Tip: [One local recommendation - restaurant/attraction]</p>
+
+
+<h2>Physical Welcome Materials</h2>
+
+<h3>Welcome Guide (Digital + Physical)</h3>
+
+<strong>Digital Welcome Guide (Send via Airbnb Message):</strong>
+
+<strong>Format:</strong> 2-3 page PDF or well-structured message
+
+<strong>Contents:</strong>
+
+<strong>1. Essential Information</strong>
+<ul>
+<li>WiFi network + password</li></ul>
+
+<ul>
+<li>Access code (remind if they forget)</li></ul>
+
+<ul>
+<li>Emergency contact (host, building security)</li></ul>
+
+<strong>2. Unit Guide</strong>
+<ul>
+<li>Air conditioning remote instructions</li></ul>
+
+<ul>
+<li>Water heater usage</li></ul>
+
+<ul>
+<li>Washing machine (if provided)</li></ul>
+
+<ul>
+<li>TV/Streaming setup (Netflix, etc.)</li></ul>
+
+<ul>
+<li>Smart lock troubleshooting</li></ul>
+
+<strong>3. Building Facilities</strong>
+<ul>
+<li>Pool location + hours</li></ul>
+
+<ul>
+<li>Gym access</li></ul>
+
+<ul>
+<li>BBQ pit booking (if applicable)</li></ul>
+
+<ul>
+<li>Parking details</li></ul>
+
+<strong>4. House Rules Recap</strong>
+<ul>
+<li>Check-out time (11:00 AM)</li></ul>
+
+<ul>
+<li>No smoking</li></ul>
+
+<ul>
+<li>Quiet hours (10 PM - 8 AM)</li></ul>
+
+<ul>
+<li>Trash disposal</li></ul>
+
+<strong>5. Local Recommendations</strong>
+<ul>
+<li>5 nearby restaurants (walking distance)</li></ul>
+
+<ul>
+<li>3 attractions within 5 minutes</li></ul>
+
+<ul>
+<li>Convenience store location</li></ul>
+
+<ul>
+<li>Best local coffee spot</li></ul>
+
+<strong>6. Transportation</strong>
+<ul>
+<li>Grab/Maxim availability</li></ul>
+
+<ul>
+<li>Nearest LRT/transit (if applicable)</li></ul>
+
+<ul>
+<li>Walking routes to attractions</li></ul>
+
+<strong>Physical Welcome Binder (Keep in Unit):</strong>
+
+<strong>Format:</strong> Printed binder or laminated sheets
+
+<strong>Contents:</strong>
+<ul>
+<li>Same as digital guide (printed)</li></ul>
+
+<ul>
+<li>Maps (Melaka tourist area)</li></ul>
+
+<ul>
+<li>Emergency contacts (prominently displayed)</li></ul>
+
+<ul>
+<li>Appliance instruction manuals (if complex)</li></ul>
+
+<strong>Why Physical?:</strong>
+<ul>
+<li>Elderly guests prefer printed materials</li></ul>
+
+<ul>
+<li>No need to reference digital messages</li></ul>
+
+<ul>
+<li>Professional appearance</li></ul>
+
+<ul>
+<li>Backup if guest's phone dies</li></ul>
+
+<h3>Visible Information Cards</h3>
+
+<strong>WiFi Card (Display in Living Room):</strong>
+
+
+<p>================================</p>
+<p>     FREE HIGH-SPEED WIFI</p>
+<p>================================</p>
+
+<p>Network: [Network Name]</p>
+<p>Password: [Password]</p>
+
+<p>Need help? WhatsApp: [Your Number]</p>
+<p>================================</p>
+
+
+<strong>Emergency Contact Card (Display Near Door):</strong>
+
+
+<p>================================</p>
+<p>    EMERGENCY CONTACTS</p>
+<p>================================</p>
+
+<p>Host/Manager: Available during business hours</p>
+<p>Building Security: [Security Number]</p>
+<p>Emergency Services: 999</p>
+
+<p>Nearest Hospital: [Hospital Name]</p>
+<p>Address: [Hospital Address]</p>
+
+<p>Fire Extinguisher: [Location]</p>
+<p>First Aid Kit: [Location]</p>
+<p>================================</p>
+
+
+<h2>Backup Access Systems</h2>
+
+<h3>Why You Need a Backup</h3>
+
+<strong>Scenarios Requiring Backup:</strong>
+<li>Smart lock battery dies (even with warnings, happens)</li>
+<li>Guest forgets code</li>
+<li>Smart lock malfunctions (rare, but possible)</li>
+<li>Power outage affects smart lock</li>
+
+<h3>Backup Option 1: Key Lockbox</h3>
+
+<strong>Setup:</strong>
+
+<strong>Lockbox Code Management:</strong>
+<ul>
+<li>Use different code than smart lock</li></ul>
+
+<ul>
+<li>Share with guest ONLY when smart lock fails</li></ul>
+
+<ul>
+<li>Change code monthly for security</li></ul>
+
+<ul>
+<li>Test access weekly</li></ul>
+
+<strong>Guest Communication:</strong>
+
+<p>"In the unlikely event the smart lock doesn't work, there's a key lockbox to the left of the door. Code: [Backup Code]. Please only use this if the smart lock fails - let us know immediately if you need to use it!"</p>
+
+
+<h3>Backup Option 2: Building Security</h3>
+
+<strong>Setup:</strong>
+
+<li><strong>Provide spare key</strong> to building security</li>
+<li><strong>Label clearly:</strong> "Unit [X] - Airbnb Backup Key - Host: [Your Name]"</li>
+<li><strong>Inform security:</strong> "Only release to verified guests who call me"</li>
+
+<strong>Guest Process:</strong>
+<ul>
+<li>Guest calls you (or security)</li></ul>
+
+<ul>
+<li>You verify guest identity</li></ul>
+
+<ul>
+<li>Security releases spare key</li></ul>
+
+<ul>
+<li>Guest returns key to security after checkout</li></ul>
+
+<strong>Pros:</strong> No lockbox cost, secure
+<strong>Cons:</strong> Dependent on security availability, coordination needed
+
+<h3>Backup Option 3: Remote Access (Digital Locks Only)</h3>
+
+<strong>For Smart Locks with App Control:</strong>
+
+<ul>
+<li><strong>Unlock remotely</strong> via app</li></ul>
+
+<ul>
+<li><strong>Generate emergency code</strong> remotely</li></ul>
+
+<ul>
+<li><strong>Monitor access logs</strong> to troubleshoot</li></ul>
+
+<strong>Limitations:</strong>
+<ul>
+<li>Requires internet connection</li></ul>
+
+<ul>
+<li>Doesn't work if lock battery completely dead</li></ul>
+
+<ul>
+<li>Still need physical backup for total failures</li></ul>
+
+<h2>Melaka-Specific Check-In Considerations</h2>
+
+<h3>Local Guest Patterns</h3>
+
+<strong>KL/Singapore Weekend Guests:</strong>
+<ul>
+<li><strong>Arrival time:</strong> Friday 8-11 PM (after work + drive)</li></ul>
+
+<ul>
+<li><strong>Challenge:</strong> Late arrival, tired guests</li></ul>
+
+<ul>
+<li><strong>Solution:</strong> Self check-in essential, clear directions, pre-arrival parking info</li></ul>
+
+<strong>School Holiday Families:</strong>
+<ul>
+<li><strong>Arrival time:</strong> Saturday 2-6 PM (daylight travel)</li></ul>
+
+<ul>
+<li><strong>Challenge:</strong> Multiple cars, lots of luggage</li></ul>
+
+<ul>
+<li><strong>Solution:</strong> Early check-in when possible, parking for 2 cars</li></ul>
+
+<strong>International Tourists:</strong>
+<ul>
+<li><strong>Arrival time:</strong> Variable (flight dependent)</li></ul>
+
+<ul>
+<li><strong>Challenge:</strong> Unfamiliar with area, no local SIM</li></ul>
+
+<ul>
+<li><strong>Solution:</strong> Detailed directions, offline map, emergency contact clearly visible</li></ul>
+
+<h3>Parking Instructions</h3>
+
+<strong>Sample Parking Communication:</strong>
+
+
+<p>🚗 PARKING INSTRUCTIONS:</p>
+
+<p>Location: Level B2, Bay 27</p>
+
+<p>How to find it:</p>
+<li>Enter via [Main Entrance]</li>
+<li>Turn left at [Landmark]</li>
+<li>Take elevator to Level B2</li>
+<li>Bay 27 is near elevator (look for [Color] pillar)</li>
+
+<p>Access Key: [If gate card needed - leave in unit]</p>
+
+<p>Parking is FREE for guests. Please don't park in reserved bays.</p>
+
+<p>Need help? WhatsApp us! 🚗</p>
+
+
+<h3>Directions Guide</h3>
+
+<strong>Sample Directions (From KL North-South Expressway):</strong>
+
+
+<p>📍 FROM KUALA LUMPUR (2 hours):</p>
+
+<li>Exit at Ayer Keroh Toll (Exit 231)</li>
+<li>Follow signs to Melaka City Center</li>
+<li>Turn LEFT at [Major Landmark]</li>
+<li>Straight for 2km, pass [Landmark]</li>
+<li>Turn RIGHT into [Street Name]</li>
+<li>Building is on your LEFT, after [Landmark]</li>
+
+<p>Google Maps: [Link]</p>
+
+<p>Estimated time: 2 hours (without traffic)</p>
+<p>Best departure time: Before 10 AM or after 3 PM (avoid traffic)</p>
+
+<p>Call if lost: [Your Number] 📱</p>
+
+
+<h2>Handling Check-In Issues</h2>
+
+<h3>Issue 1: Guest Can't Find Smart Lock Code</h3>
+
+<strong>Guest Message:</strong> "I can't find the access code you sent!"
+
+<strong>Response (Immediate):</strong>
+
+<p>Hi [Guest Name]! No worries!</p>
+
+<p>The access code is: [CODE]</p>
+
+<p>Instructions:</p>
+<li>The smart lock is on the main door</li>
+<li>Enter code: [CODE]</li>
+<li>Press the checkmark/enter button</li>
+<li>Door unlocks within 2 seconds</li>
+
+<p>Still having trouble? I'm on my way / I'll call you now. 🚗</p>
+
+
+<strong>Follow-Up:</strong> Call guest if they don't respond in 5 minutes.
+
+<h3>Issue 2: Smart Lock Not Working</h3>
+
+<strong>Guest Message:</strong> "The code isn't working!"
+
+<strong>Diagnosis Steps:</strong>
+<li><strong>Verify code:</strong> Did guest enter correctly?</li>
+<li><strong>Check app:</strong> Is code active? Did it expire?</li>
+<li><strong>Check battery:</strong> Low battery warning in app?</li>
+
+<strong>Immediate Solutions:</strong>
+<li><strong>Generate new code</strong> in app, send to guest</li>
+<li><strong>Unlock remotely</strong> via app (if available)</li>
+<li><strong>Send backup access</strong> (lockbox code or security key)</li>
+<li><strong>Go to property</strong> if all else fails (last resort)</li>
+
+<h3>Issue 3: Late Arrival (After Midnight)</h3>
+
+<strong>Guest Message:</strong> "Running late, arriving at 2 AM. Is that okay?"
+
+<strong>Response:</strong>
+
+<p>Hi [Guest Name]!</p>
+
+<p>Yes, 2 AM is perfectly fine! That's the beauty of self check-in - arrive anytime after 3 PM.</p>
+
+<p>Access code remains: [CODE]</p>
+<p>Parking: [Location]</p>
+
+<p>Quiet hours are 10 PM - 8 AM (just be mindful of neighbors).</p>
+
+<p>Safe travels! Text when you arrive so we know you made it safely! 🌙</p>
+
+
+<strong>Important:</strong> Never discourage late arrivals with self check-in. It's your competitive advantage.
+
+<h2>Check-Out Process</h2>
+
+<h3>Check-Out Instructions</h3>
+
+<strong>Send 24 Hours Before Checkout:</strong>
+
+
+<p>Hi [Guest Name]! 👋</p>
+
+<p>Hope you had a wonderful stay! Check-out details:</p>
+
+<p>⏰ TIME: By 11:00 AM</p>
+<p>🔑 LEAVE: Key in unit (or lockbox if provided)</p>
+<p>🗑️ TRASH: Bag and leave near door</p>
+<p>🧺 TOWELS: Leave in bathroom (used towels in hamper if provided)</p>
+
+<p>Check-Out Checklist:</p>
+<p>✅ Turn off air conditioning</p>
+<p>✅ Close windows</p>
+<p>✅ Turn off all lights</p>
+<p>✅ Lock door when leaving (enter code + lock symbol)</p>
+
+<p>Did everything go well? We'd love a review! 🌟</p>
+
+<p>Safe travels! Come back soon! 🎉</p>
+
+
+<h3>Post-Check-Out Follow-Up</h3>
+
+<strong>Send After Checkout:</strong>
+
+
+<p>Hi [Guest Name]! 👋</p>
+
+<p>Thanks for staying with us! Hope you had a great time in Melaka.</p>
+
+<p>⭐ Did you enjoy your stay? We'd love a 5-star review if you did!</p>
+
+<p>[Link to your Airbnb listing]</p>
+
+<p>Any feedback? Let us know how we can make your next stay even better.</p>
+
+<p>Safe travels home! Come back soon! 🎉</p>
+
+
+<h2>Common Check-In Mistakes</h2>
+
+<h3>Mistake #1: Sending Access Code Too Early</h3>
+
+<strong>Problem:</strong> Sending code 1 week before check-in.
+
+<strong>Risk:</strong> Code gets lost in message history, guest forgets, security risk.
+
+<strong>Fix:</strong> Send code 24 hours before check-in maximum.
+
+<h3>Mistake #2: No Backup Access</h3>
+
+<strong>Problem:</strong> "Smart lock won't fail, I don't need backup."
+
+<strong>Reality:</strong> Batteries die, technology fails, guests forget codes.
+
+<strong>Fix:</strong> ALWAYS have backup access (lockbox, security key, or both).
+
+<h3>Mistake #3: Unclear Directions</h3>
+
+<strong>Problem:</strong> "It's easy to find, I don't need detailed directions."
+
+<strong>Result:</strong> Guest drives in circles, arrives frustrated, leaves negative review about "hard to find."
+
+<strong>Fix:</strong> Provide detailed directions + Google Maps link + landmarks.
+
+<h3>Mistake #4: Not Testing Smart Lock Regularly</h3>
+
+<strong>Problem:</strong> "I installed it 6 months ago, it must still work."
+
+<strong>Reality:</strong> Batteries die, firmware updates needed, mechanical issues develop.
+
+<strong>Fix:</strong> Test smart lock weekly, replace batteries annually, update firmware as released.
+
+<h3>Mistake #5: Late Check-In Fees</h3>
+
+<strong>Problem:</strong> "Arriving after 10 PM? That's RM50 extra fee."
+
+<strong>Result:</strong> Negative reviews, guests book elsewhere next time.
+
+<strong>Fix:</strong> Self check-in enables ANY arrival time. No late fees. This is your advantage.
+
+<h2>Professional Check-In Management</h2>
+
+<h3>How iHousing Handles Check-Ins</h3>
+
+<strong>Our System:</strong>
+
+<li><strong>Smart locks on all managed properties</strong></li>
+<li><strong>Automated messaging</strong> (welcome, access code, check-out)</li>
+<li><strong>responsive support line</strong> (guests always reach a human)</li>
+<li><strong>Backup systems</strong> (lockbox + security coordination)</li>
+<li><strong>Post-check-in follow-up</strong> (ensure guest satisfaction)</li>
+<li><strong>Check-out coordination</strong> (cleaning scheduling)</li>
+
+<strong>Owner Benefits:</strong>
+<ul>
+<li>Zero check-in coordination required</li></ul>
+
+<ul>
+<li>No late-night drives to property</li></ul>
+
+<ul>
+<li>Guest issues resolved immediately</li></ul>
+
+<ul>
+<li>Professional first impression = better reviews</li></ul>
+
+<h3>Parkland Avenue by the Sea: Enhanced Check-In</h3>
+
+<strong>Pre-Launch August 2025</strong>
+
+<strong>Our Check-In System for Parkland:</strong>
+<ul>
+<li>Smart lock with unique access codes</li></ul>
+
+<ul>
+<li>Digital welcome guide (customized for Parkland)</li></ul>
+
+<ul>
+<li>Beach equipment included (umbrellas, chairs)</li></ul>
+
+<ul>
+<li>Local Klebang area recommendations</li></ul>
+
+<ul>
+<li>Parking for 2 cars (included)</li></ul>
+
+<strong>Flat Fee Management:</strong>
+<ul>
+<li>1 Bedroom: RM200/month (includes ALL check-in management)</li></ul>
+
+<ul>
+<li>2 Bedrooms: RM250/month</li></ul>
+
+<ul>
+<li>3 Bedrooms: RM300/month</li></ul>
+
+<strong>No additional check-in fees.</strong> Ever.
+
+<h2>Get Your Check-In System Set Up</h2>
+
+<p>Ready to implement professional check-in for your Airbnb?</p>
+
+<strong>Enter your phone number and we'll WhatsApp you with:</strong>
+
+<ul>
+<li>Smart lock recommendations for YOUR condo</li></ul>
+
+<ul>
+<li>Access code system setup</li></ul>
+
+<ul>
+<li>Welcome message templates (customized for your property)</li></ul>
+
+<ul>
+<li>Backup access recommendations</li></ul>
+
+<ul>
+<li>Full check-in workflow documentation</li></ul>
+
+<h2>About iHousing</h2>
+
+<p>We're Melaka's leading Airbnb property management company:</p>
+
+<ul>
+<li><strong>8 years experience</strong> managing guest check-ins</li></ul>
+
+<ul>
+<li><strong>100+ properties</strong> with smart lock systems</li></ul>
+
+<ul>
+<li><strong>60%+ average occupancy</strong> (seamless experience = repeat bookings)</li></ul>
+
+<ul>
+<li><strong>4.8+ average rating</strong> across platforms</li></ul>
+
+<ul>
+<li><strong>responsive guest support</strong> (check-in issues resolved immediately)</li></ul>
+
+<ul>
+<li><strong>Transparent pricing</strong> (Parkland: flat RM200-300/month)</li></ul>
+
+<p>We don't just manage your property - we ensure every guest arrival is smooth, professional, and memorable (in the best way).</p>
+
+<em>Setting up your Airbnb check-in system? Let's talk. We'll help you implement self check-in, create welcome templates, and ensure your guests have a 5-star arrival experience. WhatsApp us for a free consultation.</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

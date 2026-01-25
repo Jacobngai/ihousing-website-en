@@ -1,0 +1,402 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'iHousing Flat Fee vs Traditional Airbnb Management - Parkland Avenue';
+const description = 'Compare iHousing flat RM200-300/month fee with traditional 20% commission management. Save RM5,000-8,400 annually on Parkland Avenue Airbnb management.';
+const image = 'https://parklandgroup.my/wp-content/uploads/2022/03/08_OverallDevelopment_op1_HR-copy.jpg';
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-red-900 via-red-800 to-pink-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-red-300 font-semibold mb-4">SERVICE COMPARISON</p>
+          <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+            Flat RM200-300/Month vs 20% Commission
+          </h1>
+          <p class="text-xl text-red-100 max-w-4xl mx-auto mb-8">
+            Why pay more when you can get premium service for less?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Comparison Table -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Complete Breakdown: Flat Fee vs Traditional 20% Commission
+        </h2>
+
+        <div class="overflow-x-auto">
+          <table class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+            <thead class="bg-gray-800 text-white">
+              <tr>
+                <th class="px-4 py-3 text-left">Service Category</th>
+                <th class="px-4 py-3 text-center">Traditional Manager (20%)</th>
+                <th class="px-4 py-3 text-center">iHousing (Flat Fee)</th>
+                <th class="px-4 py-3 text-center">Annual Savings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Guest Communication -->
+              <tr class="border-b">
+                <td class="px-4 py-3">
+                  <div class="flex items-start space-x-2">
+                    <span class="text-2xl">💬</span>
+                    <strong class="text-gray-900">Guest Communication</strong>
+                  </div>
+                </td>
+                <td class="px-4 py-3 text-center">
+                  <p class="text-gray-600 mb-2">24/7 response</p>
+                  <p class="text-gray-600 mb-2">Pre-stay info</p>
+                  <p class="text-gray-600">Check-in coordination</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-50">
+                  <p class="text-green-900 font-bold mb-2">INCLUDED</p>
+                  <p class="text-sm text-green-700">24/7 response</p>
+                  <p class="text-sm text-green-700">Pre-stay info</p>
+                  <p class="text-sm text-green-700">Check-in coordination</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-100">
+                  <p class="text-green-700 font-bold">INCLUDED</p>
+                </td>
+              </tr>
+
+              <!-- Cleaning -->
+              <tr class="border-b bg-gray-50">
+                <td class="px-4 py-3">
+                  <div class="flex items-start space-x-2">
+                    <span class="text-2xl">🧹</span>
+                    <strong class="text-gray-900">Professional Cleaning</strong>
+                  </div>
+                </td>
+                <td class="px-4 py-3 text-center">
+                  <p class="text-gray-600 mb-2">Hotel-standard</p>
+                  <p class="text-gray-600 mb-2">RM100-200/turnover</p>
+                  <p class="text-gray-600 mb-2">Linen included</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-50">
+                  <p class="text-green-900 font-bold mb-2">INCLUDED</p>
+                  <p class="text-sm text-green-700">Hotel-standard</p>
+                  <p class="text-sm text-green-700">All turnovers</p>
+                  <p class="text-sm text-green-700">Linen included</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-100">
+                  <p class="text-green-700 font-bold">INCLUDED</p>
+                </td>
+              </tr>
+
+              <!-- Supplies -->
+              <tr class="border-b">
+                <td class="px-4 py-3">
+                  <div class="flex items-start space-x-2">
+                    <span class="text-2xl">📸</span>
+                    <strong class="text-gray-900">Supply Management</strong>
+                  </div>
+                </td>
+                <td class="px-4 py-3 text-center">
+                  <p class="text-gray-600 mb-2">Basic amenities</p>
+                  <p class="text-gray-600 mb-2">RM50-100/turnover</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-50">
+                  <p class="text-green-900 font-bold mb-2">INCLUDED</p>
+                  <p class="text-sm text-green-700">Full amenities</p>
+                  <p class="text-sm text-green-700">No extra charge</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-100">
+                  <p class="text-green-700 font-bold">INCLUDED</p>
+                </td>
+              </tr>
+
+              <!-- Listing Services -->
+              <tr class="border-b bg-gray-50">
+                <td class="px-4 py-3">
+                  <div class="flex items-start space-x-2">
+                    <span class="text-2xl">📷</span>
+                    <strong class="text-gray-900">Listing Optimization</strong>
+                  </div>
+                </td>
+                <td class="px-4 py-3 text-center">
+                  <p class="text-gray-600 mb-2">Professional photos</p>
+                  <p class="text-gray-600 mb-2">RM500-1,000 one-time</p>
+                  <p class="text-gray-600 mb-2">Dynamic pricing</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-50">
+                  <p class="text-green-900 font-bold mb-2">INCLUDED</p>
+                  <p class="text-sm text-green-700">Professional photos</p>
+                  <p class="text-sm text-green-700">Dynamic pricing</p>
+                  <p class="text-sm text-green-700">Optimization</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-100">
+                  <p class="text-green-700 font-bold">INCLUDED</p>
+                </td>
+              </tr>
+
+              <!-- Platform Fees -->
+              <tr class="border-b">
+                <td class="px-4 py-3">
+                  <div class="flex items-start space-x-2">
+                    <span class="text-2xl">📱</span>
+                    <strong class="text-gray-900">Platform Fees</strong>
+                  </div>
+                </td>
+                <td class="px-4 py-3 text-center">
+                  <p class="text-gray-600 mb-2">Airbnb fee</p>
+                  <p class="text-gray-600 mb-2">Booking.com fee</p>
+                  <p class="text-gray-600 mb-2">RM50-100/month</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-50">
+                  <p class="text-green-900 font-bold mb-2">INCLUDED</p>
+                  <p class="text-sm text-green-700">All platforms</p>
+                  <p class="text-sm text-green-700">No extra fees</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-100">
+                  <p class="text-green-700 font-bold">INCLUDED</p>
+                </td>
+              </tr>
+
+              <!-- Maintenance -->
+              <tr class="border-b bg-gray-50">
+                <td class="px-4 py-3">
+                  <div class="flex items-start space-x-2">
+                    <span class="text-2xl">🔧</span>
+                    <strong class="text-gray-900">Maintenance Coordination</strong>
+                  </div>
+                </td>
+                <td class="px-4 py-3 text-center">
+                  <p class="text-gray-600 mb-2">Per repair</p>
+                  <p class="text-gray-600 mb-2">Coordination included</p>
+                  <p class="text-gray-600 mb-2">You pay for parts</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-50">
+                  <p class="text-green-900 font-bold mb-2">INCLUDED</p>
+                  <p class="text-sm text-green-700">Coordination</p>
+                  <p class="text-sm text-green-700">No markup</p>
+                  <p class="text-sm text-green-700">Trusted contractors</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-100">
+                  <p class="text-green-700 font-bold">INCLUDED</p>
+                </td>
+              </tr>
+
+              <!-- Monthly Management Fee -->
+              <tr class="border-b bg-red-50">
+                <td class="px-4 py-3">
+                  <div class="flex items-start space-x-2">
+                    <span class="text-2xl">💰</span>
+                    <strong class="text-gray-900">Monthly Management Fee</strong>
+                  </div>
+                </td>
+                <td class="px-4 py-3 text-center">
+                  <p class="text-red-600 font-bold text-2xl mb-2">20% OF RENTAL INCOME</p>
+                  <p class="text-gray-600 mb-2">Scales with your earnings</p>
+                  <p class="text-sm text-red-500">Unpredictable monthly costs</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-600">
+                  <p class="text-green-900 font-bold text-2xl mb-2">FLAT FEE</p>
+                  <p class="text-green-700 mb-2">RM200-300/month</p>
+                  <p class="text-sm text-green-500">Guaranteed price</p>
+                  <p class="text-sm text-green-500">Scales with your earnings</p>
+                </td>
+                <td class="px-4 py-3 text-center bg-green-100">
+                  <p class="text-green-700 font-bold">SAVINGS</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Income-Based Savings Examples -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Real Savings Examples Based on Your Monthly Income
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <!-- RM4,000/month -->
+          <div class="bg-white p-6 rounded-xl border-l-4 border-red-500">
+            <h3 class="text-2xl font-bold text-red-900 mb-4 text-center">Earning RM4,000/month</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-600">Traditional (20%):</span>
+                <span class="text-red-600 font-bold">RM800/month</span>
+              </div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-600">iHousing (Flat):</span>
+                <span class="text-green-600 font-bold">RM200/month</span>
+              </div>
+              <div class="pt-4 border-t border-red-300">
+                <span class="font-bold text-green-700">Save RM600/month = RM7,200/year!</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RM5,000/month -->
+          <div class="bg-white p-6 rounded-xl border-l-4 border-red-500">
+            <h3 class="text-2xl font-bold text-red-900 mb-4 text-center">Earning RM5,000/month</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-600">Traditional (20%):</span>
+                <span class="text-red-600 font-bold">RM1,000/month</span>
+              </div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-600">iHousing (Flat):</span>
+                <span class="text-green-600 font-bold">RM250/month</span>
+              </div>
+              <div class="pt-4 border-t border-red-300">
+                <span class="font-bold text-green-700">Save RM750/month = RM9,000/year!</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RM6,000/month -->
+          <div class="bg-white p-6 rounded-xl border-l-4 border-red-500">
+            <h3 class="text-2xl font-bold text-red-900 mb-4 text-center">Earning RM6,000/month</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-600">Traditional (20%):</span>
+                <span class="text-red-600 font-bold">RM1,200/month</span>
+              </div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-600">iHousing (Flat):</span>
+                <span class="text-green-600 font-bold">RM300/month</span>
+              </div>
+              <div class="pt-4 border-t border-red-300">
+                <span class="font-bold text-green-700">Save RM900/month = RM10,800/year!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-6 rounded-xl mt-8 text-center">
+          <p class="text-lg text-gray-700">
+            <strong>Important:</strong> With traditional management, your monthly fee
+            <strong>DOUBLES</strong> as your income grows. With iHousing, your fee remains
+            the same regardless of how successful your listing becomes. Your savings
+            <strong>INCREASE</strong> as your income increases!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hidden Costs Warning -->
+    <section class="py-16 bg-red-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-6 rounded-xl border-2 border-red-300">
+          <h3 class="text-2xl font-bold text-red-900 mb-4">
+            ⚠️ Watch Out for Hidden Costs with Traditional Managers
+          </h3>
+          <ul class="space-y-4 text-gray-700">
+            <li><strong>Photography Markup:</strong> Traditional managers may charge RM500+ more for "professional photography" but use mediocre photographers</li>
+            <li><strong>Cleaning Inflation:</strong> RM100/turnover can quickly become RM150+ with "additional services" requested</li>
+            <li><strong>Supply Premium:</strong> Basic supplies cost RM50, but "premium" supplies add RM50+ per turnover</li>
+            <li><strong>Markup on Repairs:</strong> Traditional managers may add 20-30% markup on contractor costs</li>
+            <li><strong>Platform Fee Confusion:</strong> Some traditional managers charge platform fees but don't mention them upfront</li>
+            <li><strong>Dynamic "Service Fees":</strong> Extra charges for "guest emergencies", "last-minute bookings", or "special requests"</li>
+          </ul>
+          <p class="text-red-600 font-semibold mt-6">
+            With iHousing, everything is included in our flat RM200-300/month fee.
+            No hidden costs, no surprises, complete transparency.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality Comparison -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Same or Better Service for Less Money
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <div class="bg-blue-50 p-8 rounded-xl">
+            <h3 class="text-xl font-bold text-blue-900 mb-4">Traditional Manager Claims</h3>
+            <ul class="space-y-3 text-gray-600">
+              <li>✓ "Premium" service</li>
+              <li>✓ "Professional" cleaning</li>
+              <li>✓ "Expert" listings</li>
+              <li>✓ "24/7" support</li>
+              <li>✓ "Full service" management</li>
+              <li>✓ But charges RM800-1,200/month (20%)</li>
+            </ul>
+          </div>
+
+          <div class="bg-green-50 p-8 rounded-xl">
+            <h3 class="text-xl font-bold text-green-900 mb-4">iHousing Delivers</h3>
+            <ul class="space-y-3 text-gray-600">
+              <li>✓ Professional photography</li>
+              <li>✓ Hotel-standard cleaning</li>
+              <li>✓ Expert listing optimization</li>
+              <li>✓ 24/7 communication</li>
+              <li>✓ Maintenance coordination</li>
+              <li>✓ Monthly reporting</li>
+              <li>✓ <strong>For RM200-300/month (flat)</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-green-100 p-6 rounded-xl text-center mt-8">
+          <p class="text-lg text-green-800">
+            <strong>We deliver premium service at a flat fee that traditional managers can't compete with.</strong><br/>
+            <span class="text-green-700">No hidden costs, no surprises, guaranteed savings.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-gradient-to-r from-green-600 to-blue-600 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-6">
+          Ready to Switch and Save Money?
+        </h2>
+        <p class="text-xl mb-8">
+          Stop overpaying for property management. Switch to iHousing and save
+          <strong>thousands annually</strong> while getting better service.
+        </p>
+        <a href="/en/contact-form/" class="inline-block bg-white text-green-700 font-bold py-4 px-8 rounded-lg text-xl hover:bg-gray-100">
+          Contact Us to Discuss
+        </a>
+      </div>
+    </section>
+
+    <!-- Already Considering Other Managers? -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          Already Considering Other Property Managers?
+        </h2>
+        <p class="text-lg text-gray-600 mb-6">
+          Before committing, ask them these 5 questions:
+        </p>
+
+        <div class="bg-yellow-50 p-6 rounded-xl text-left">
+          <ol class="space-y-3 text-gray-700 list-decimal">
+            <li class="mb-2"><strong>What's your EXACT monthly management fee?</strong>
+              <br/><span class="text-sm text-gray-600">Not "20% commission" - get the actual RM amount</span></li>
+            <li class="mb-2"><strong>What's included in your cleaning fee?</strong>
+              <br/><span class="text-sm text-gray-600">All linens? Toiletries? Deep cleaning?</span></li>
+            <li class="mb-2"><strong>Are platform fees included?</strong>
+              <br/><span class="text-sm text-gray-600">Airbnb, Booking.com, Agoda fees - who pays?</span></li>
+            <li class="mb-2"><strong>Do you mark up on supplies or is it extra?</strong>
+              <br/><span class="text-sm text-gray-600">Basic vs premium supplies pricing?</span></li>
+            <li class="mb-2"><strong>How are repairs and maintenance handled?</strong>
+              <br/><span class="text-sm text-gray-600">Do you add markup on contractor invoices?</span></li>
+          </ol>
+
+          <p class="text-gray-700 mt-6 font-semibold">
+            Most traditional managers can't clearly answer these questions.
+            <strong class="text-green-900">With iHousing, everything is included in one flat fee.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

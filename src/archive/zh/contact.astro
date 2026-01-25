@@ -1,0 +1,140 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const title = '联系iHousing | 马六甲Airbnb管理';
+const description = '联系iHousing了解马六甲Airbnb物业管理。填写我们的联系表单获取免费咨询。';
+const image = 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200';
+---
+
+<Layout title={title} description={description} image={image}>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 text-white py-20 lg:py-28">
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-green-300 font-semibold mb-4 text-lg">联系我们</p>
+        <h1 class="text-3xl lg:text-5xl font-bold leading-tight mb-6">
+          让我们聊聊您的房产
+        </h1>
+        <p class="text-xl lg:text-2xl text-green-100 mb-8 max-w-3xl mx-auto">
+          有问题？想要免费咨询？我们在这里帮助您。
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">
+          选择联系方式
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <!-- Contact Form -->
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border-2 border-green-200 text-center">
+            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl text-white">&#9993;</span>
+            </div>
+            <h3 class="text-xl font-bold text-green-900 mb-2">联系表单</h3>
+            <p class="text-gray-700 mb-4">填写表单，我们会在24小时内通过WhatsApp回复您。</p>
+            <a
+              href="/zh/contact-form/"
+              class="inline-block bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+            >
+              打开联系表单
+            </a>
+            <p class="mt-4 text-sm text-gray-600">24小时内回复</p>
+          </div>
+
+          <!-- Request Call -->
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border-2 border-blue-200 text-center">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl text-white">&#128222;</span>
+            </div>
+            <h3 class="text-xl font-bold text-blue-900 mb-2">请求回电</h3>
+            <p class="text-gray-700 mb-4">更喜欢通话？在联系表单中留下您的号码，我们会给您打电话。</p>
+            <a
+              href="/zh/contact-form/"
+              class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+            >
+              请求回电
+            </a>
+            <p class="mt-4 text-sm text-gray-600">周一至周六，9am-6pm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8 text-center">
+          常见问题
+        </h2>
+
+        <div class="space-y-4">
+          <details class="bg-white p-6 rounded-xl shadow-sm">
+            <summary class="font-bold text-gray-900 cursor-pointer">您回复有多快？</summary>
+            <p class="mt-3 text-gray-600">我们通常在工作时间（周一至周六，9am-6pm）的10分钟内回复联系表单提交。</p>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl shadow-sm">
+            <summary class="font-bold text-gray-900 cursor-pointer">咨询收费吗？</summary>
+            <p class="mt-3 text-gray-600">不，咨询完全免费。我们会访问您的房产，评估其潜力，并给出诚实建议 - 无义务。</p>
+          </details>
+
+          <details class="bg-white p-6 rounded-xl shadow-sm">
+            <summary class="font-bold text-gray-900 cursor-pointer">我应该准备什么信息？</summary>
+            <p class="mt-3 text-gray-600">只需准备好您的房产位置和基本信息即可。在我们的对话中，我们会引导您完成其他所有事项。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+          寻找特定信息？
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <a href="/zh/services/pricing/" class="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+            <h3 class="font-bold text-gray-900 mb-2">查看我们的价格</h3>
+            <p class="text-gray-600">透明的固定费用结构</p>
+          </a>
+          <a href="/zh/services/how-it-works/" class="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+            <h3 class="font-bold text-gray-900 mb-2">工作流程</h3>
+            <p class="text-gray-600">分步流程指南</p>
+          </a>
+          <a href="/zh/properties/" class="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+            <h3 class="font-bold text-gray-900 mb-2">我们管理的房产</h3>
+            <p class="text-gray-600">查看我们的位置和公寓</p>
+          </a>
+          <a href="/zh/about/" class="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+            <h3 class="font-bold text-gray-900 mb-2">关于iHousing</h3>
+            <p class="text-gray-600">了解更多关于我们的公司</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-green-700 text-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+          还有问题？
+        </h2>
+        <p class="text-xl text-green-100 mb-8">
+          不要犹豫，随时联系我们。我们很乐意帮助解答有关Airbnb管理的任何问题。
+        </p>
+        <a
+          href="/zh/contact-form/"
+          class="inline-block bg-yellow-500 hover:bg-yellow-400 text-green-900 font-bold py-4 px-12 rounded-lg text-xl transition-all transform hover:scale-105 shadow-lg"
+        >
+          立即联系我们
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

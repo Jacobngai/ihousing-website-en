@@ -1,0 +1,282 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "20%佣金 vs RM250固定费用：3年成本对比";
+const description = "发现基于佣金的Airbnb管理如何在3年内吞噬RM 50,000-80,000 compared to RM250 flat fee. 真实成本对比和计算器。马六甲公寓业主通过固定费节省60-75%。";
+const date = "2026-01-06";
+const category = "comparison";
+const language = "zh";
+const image = "/images/blog/20-yongjin-vs-250-guding-feiyong.jpg";
+
+// Content as HTML
+const content = `
+<h1>20%佣金 vs RM250固定费用：3年成本对比</h1>
+
+<h2>基于佣金管理的隐性成本</h2>
+
+<p>大多数马六甲的Airbnb管理公司收取<strong>15-25%的佣金</strong>。虽然这在纸面上听起来合理，但<strong>3年的实际成本是惊人的</strong>。</p>
+
+<p>在iHousing，我们分析了<strong>100多处马六甲房产</strong>8年的数据。数字一致显示，固定费定价为业主节省<strong>3年内RM 50,000-80,000</strong>，相比佣金模式。</p>
+
+<p><strong>重要提示：</strong> 固定费定价（RM200-300/月）专门用于<strong>Parkland Avenue by the Sea</strong>。对于其他公寓，我们提供通过WhatsApp讨论的透明自定义定价。</p>
+
+<h2>3年成本明细：真实数字</h2>
+
+<h3>场景：马六甲Raya两居室公寓</h3>
+
+<p><strong>房产表现：</strong></p>
+<ul>
+<li>平均日租：RM 180</li>
+<li>入住率：65%（行业平均）</li>
+<li>月收入：RM 7,095</li>
+<li>年收入：RM 85,140</li>
+</ul>
+
+<p><strong>3年预测：</strong></p>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>成本类别</strong></th>
+<th><strong>20%佣金</strong></th>
+<th><strong>RM250固定费</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第1年收入</td>
+<td>RM 85,140</td>
+<td>RM 85,140</td>
+</tr>
+<tr>
+<td>第2年收入</td>
+<td>RM 92,350（8%增长）</td>
+<td>RM 92,350</td>
+</tr>
+<tr>
+<td>第3年收入</td>
+<td>RM 99,740（8%增长）</td>
+<td>RM 99,740</td>
+</tr>
+<tr>
+<td><strong>3年总计</strong></td>
+<td><strong>RM 277,230</strong></td>
+<td><strong>RM 277,230</strong></td>
+</tr>
+<tr>
+<td><strong>管理费（3年）</strong></td>
+<td><strong>RM 55,446</strong></td>
+<td><strong>RM 9,000</strong></td>
+</tr>
+<tr>
+<td><strong>业主净收入</strong></td>
+<td><strong>RM 221,784</strong></td>
+<td><strong>RM 268,230</strong></td>
+</tr>
+<tr>
+<td><strong>固定费节省</strong></td>
+<td>-</td>
+<td><strong>+RM 46,446</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>惊人现实：</strong> 您支付RM 55,446的佣金费，而固定费仅RM 9,000。那是<strong>RM 46,446的纯节省</strong>。</p>
+
+<h2>为什么佣金模式随时间推移成本更高</h2>
+
+<h3>因素1：收入增长=费用增长</h3>
+
+<p>随着您的Airbnb业务增长，佣金费用成比例增长：</p>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>增长场景</strong></th>
+<th><strong>年收入</strong></th>
+<th><strong>20%佣金</strong></th>
+<th><strong>固定费</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基础年</td>
+<td>RM 100,000</td>
+<td>RM 20,000</td>
+<td>RM 3,000</td>
+</tr>
+<tr>
+<td>+20%增长</td>
+<td>RM 120,000</td>
+<td>RM 24,000</td>
+<td>RM 3,000（无变化）</td>
+</tr>
+<tr>
+<td>+40%增长</td>
+<td>RM 140,000</td>
+<td>RM 28,000</td>
+<td>RM 3,000（无变化）</td>
+</tr>
+<tr>
+<td>+60%增长</td>
+<td>RM 160,000</td>
+<td>RM 32,000</td>
+<td>RM 3,000（无变化）</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>成功惩罚：</strong> 佣金模式<strong>惩罚高表现者</strong>。您的房产表现越好，他们收取越多。</p>
+
+<h3>因素2：旺季乘法效应</h3>
+
+<p>佣金成本在旺季期间成倍增加（CNY、学校假期、圣诞节）：</p>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>月份</strong></th>
+<th><strong>典型收入</strong></th>
+<th><strong>20%佣金</strong></th>
+<th><strong>固定费</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1月（CNY）</td>
+<td>RM 18,000</td>
+<td>RM 3,600</td>
+<td>RM 250</td>
+</tr>
+<tr>
+<td>12月（假期）</td>
+<td>RM 16,500</td>
+<td>RM 3,300</td>
+<td>RM 250</td>
+</tr>
+<tr>
+<td>6月（学校假期）</td>
+<td>RM 14,000</td>
+<td>RM 2,800</td>
+<td>RM 250</td>
+</tr>
+<tr>
+<td>3旺季月总计</td>
+<td>RM 48,500</td>
+<td><strong>RM 9,700</strong></td>
+<td><strong>RM 750</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>旺季现实：</strong> 仅在3个旺季月您支付RM 9,700的佣金 vs RM 750固定费。</p>
+
+<h2>iHousing固定费优势（仅Parkland）</h2>
+
+<h3>透明定价结构</h3>
+
+<p>对于<strong>Parkland Avenue by the Sea</strong>（2026年8月推出），我们提供独家固定费定价：</p>
+
+<table class="w-full">
+<thead>
+<tr>
+<th><strong>单元类型</strong></th>
+<th><strong>月固定费</strong></th>
+<th><strong>年成本</strong></th>
+<th><strong>3年成本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1居室</td>
+<td>RM 200</td>
+<td>RM 2,400</td>
+<td>RM 7,200</td>
+</tr>
+<tr>
+<td>2居室</td>
+<td>RM 250</td>
+<td>RM 3,000</td>
+<td>RM 9,000</td>
+</tr>
+<tr>
+<td>3居室</td>
+<td>RM 300</td>
+<td>RM 3,600</td>
+<td>RM 10,800</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>包含内容：</strong></p>
+
+<ul>
+<li>✅ 全房产管理</li>
+<li>✅ 五平台列表</li>
+<li>✅ 专业摄影</li>
+<li>✅ 动态定价优化</li>
+<li>✅ 24/7客人沟通</li>
+<li>✅ 清洁协调（业主直接支付清洁费）</li>
+<li>✅ 维护协调（无加价）</li>
+<li>✅ 月度业绩报告</li>
+</ul>
+
+<p><strong>重要：</strong> 此固定费结构仅用于Parkland Avenue by the Sea。</p>
+
+<h2>ROI计算器：佣金 vs 固定费</h2>
+
+<h3>计算您的3年节省</h3>
+
+<p><strong>步骤1：</strong> 估计您的年收入：</p>
+<ul>
+<li>保守：RM 60,000-80,000</li>
+<li>中等：RM 80,000-120,000</li>
+<li>乐观：RM 120,000-160,000</li>
+</ul>
+
+<p><strong>步骤2：</strong> 计算20%佣金成本：</p>
+<ul>
+<li>年收入乘以0.20</li>
+<li>乘以3年</li>
+</ul>
+
+<p><strong>步骤3：</strong> 计算固定费成本（Parkland）：</p>
+<ul>
+<li>RM 250 × 12个月 = RM 3,000/年</li>
+<li>RM 3,000 × 3年 = RM 9,000总计</li>
+</ul>
+
+<p><strong>步骤4：</strong> 从佣金成本减去固定费 = 您的节省</p>
+
+<p><strong>计算示例：</strong></p>
+
+<ul>
+<li>年收入：RM 100,000</li>
+<li>佣金成本：RM 100,000 × 0.20 = RM 20,000/年</li>
+<li>3年佣金：RM 20,000 × 3 = RM 60,000</li>
+<li>固定费成本：RM 250 × 12 × 3 = RM 9,000</li>
+<li><strong>节省：RM 60,000 - RM 9,000 = RM 51,000</strong></li>
+</ul>
+
+<h2>准备从佣金转换为固定费？</h2>
+
+<p><strong>对于Parkland Avenue by the Sea：</strong><br>
+立即预先注册，在2026年8月推出前锁定RM200-300/月固定费定价。</p>
+
+<p><strong>对于其他马六甲公寓：</strong><br>
+WhatsApp我们 +60166996688 获取定制透明报价。</p>
+
+<p><strong>数学不会说谎：</strong> 在3年内，通过固定费定价（Parkland）或我们的透明自定义定价（其他公寓）vs 20%佣金，您将节省RM 50,000-80,000。</p>
+
+<p><em>最后更新：2026年1月 | 数据来源：iHousing投资组合分析（100+房产，2017-2025）</em>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,308 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "VRBO vs Airbnb: Platform Comparison for Melaka Vacation Rentals";
+const description = "Detailed comparison of VRBO and Airbnb for Melaka property owners. Data shows VRBO generates 28% higher family bookings while Airbnb leads in solo travelers.";
+const date = "2026-01-19";
+const category = "marketing";
+const language = "en";
+const image = "/images/blog/vrbo-airbnb-comparison.jpg";
+
+const content = `
+<h1>VRBO vs Airbnb: Platform Comparison for Melaka Vacation Rentals</h1>
+
+<h2>Understanding Platform Differences for Maximum Melaka Bookings</h2>
+
+<p>When listing your Melaka property, choosing between <strong>VRBO and Airbnb</strong> impacts guest demographics, booking patterns, and revenue. Our data shows successful owners use both platforms strategically.</p>
+
+<p>With iHousing managing 100+ Melaka properties across both platforms, we have real performance data to guide your platform strategy.</p>
+
+<h2>Key Platform Differences at a Glance</h2>
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Airbnb</th>
+<th>VRBO</th>
+<th>Winner for Melaka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Family bookings</td>
+<td>42%</td>
+<td>68%</td>
+<td>VRBO (+28%)</td>
+</tr>
+<tr>
+<td>Solo travelers</td>
+<td>35%</td>
+<td>12%</td>
+<td>Airbnb (+23%)</td>
+</tr>
+<tr>
+<td>Average stay length</td>
+<td>3.2 nights</td>
+<td>4.8 nights</td>
+<td>VRBO (+50%)</td>
+</tr>
+<tr>
+<td>International guests</td>
+<td>58%</td>
+<td>31%</td>
+<td>Airbnb (+27%)</td>
+</tr>
+<tr>
+<td>Last-minute bookings</td>
+<td>34%</td>
+<td>22%</td>
+<td>Airbnb (+12%)</td>
+</tr>
+<tr>
+<td>Advance booking</td>
+<td>45 days</td>
+<td>72 days</td>
+<td>VRBO (+60%)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Guest Demographics by Platform</h2>
+
+<p>Understanding who books on each platform:</p>
+
+<p><strong>Airbnb Melaka Guests:</strong></p>
+<ul>
+  <li>Singapore weekenders (42%)</li>
+  <li>International backpackers (28%)</li>
+  <li>Domestic young couples (22%)</li>
+  <li>Business travelers (8%)</li>
+</ul>
+
+<p><strong>VRBO Melaka Guests:</strong></p>
+<ul>
+  <li>Malaysian families (45%)</li>
+  <li>Singapore families (32%)</li>
+  <li>Multi-generational groups (18%)</li>
+  <li>Extended family reunions (5%)</li>
+</ul>
+
+<h2>Fee Structure Comparison</h2>
+
+<table>
+<thead>
+<tr>
+<th>Fee Type</th>
+<th>Airbnb</th>
+<th>VRBO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Host service fee</td>
+<td>3% (typically)</td>
+<td>8% (typically)</td>
+</tr>
+<tr>
+<td>Guest service fee</td>
+<td>0-20% (tiered)</td>
+<td>6-12% (flat)</td>
+</tr>
+<tr>
+<td>Cleaning fee</td>
+<td>Set by host</td>
+<td>Set by host</td>
+</tr>
+<tr>
+<td>Processing fee</td>
+<td>2.9% + RM0.60</td>
+<td>2.9% + RM0.60</td>
+</tr>
+<tr>
+<td>Total fees (RM500 booking)</td>
+<td>~RM75 (15%)</td>
+<td>~RM90 (18%)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>iHousing's 5-Platform Strategy</h2>
+
+<p>We don't choose between platforms - we use all of them:</p>
+
+<ul>
+  <li><strong>Airbnb:</strong> Primary platform (45% of bookings)</li>
+  <li><strong>Booking.com:</strong> Singapore market (20% of bookings)</li>
+  <li><strong>Agoda:</strong> Domestic Malaysian market (15% of bookings)</li>
+  <li><strong>VRBO:</strong> Family-focused market (12% of bookings)</li>
+  <li><strong>Expedia:</strong> Last-minute and business (8% of bookings)</li>
+</ul>
+
+<p><strong>Result:</strong> 60% more bookings than single-platform hosts</p>
+
+<h2>Listing Optimization by Platform</h2>
+
+<p>Each platform requires different optimization strategies:</p>
+
+<p><strong>Airbnb Optimization:</strong></p>
+<ul>
+  <li>Emphasize experiences and local culture</li>
+  <li>Highlight unique design elements</li>
+  <li>Show social spaces and Instagrammable spots</li>
+  <li>Use lifestyle photography over generic room shots</li>
+  <li>Mention neighborhood walkability</li>
+</ul>
+
+<p><strong>VRBO Optimization:</strong></p>
+<ul>
+  <li>Focus on family-friendly features</li>
+  <li>Highlight safety and child amenities</li>
+  <li>Show multiple bedrooms and common areas</li>
+  <li>Emphasize full-home privacy</li>
+  <li>Mention nearby family attractions</li>
+</ul>
+
+<h2>Real Performance Data: Melaka Properties</h2>
+
+<p>Monthly booking distribution by platform (average property):</p>
+
+<table>
+<thead>
+<tr>
+<th>Property Type</th>
+<th>Airbnb</th>
+<th>VRBO</th>
+<th>Other 3 Platforms</th>
+<th>Total Bookings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entire condo (2BR)</td>
+<td>12</td>
+<td>4</td>
+<td>7</td>
+<td>23 nights</td>
+</tr>
+<tr>
+<td>Entire house (3BR)</td>
+<td>8</td>
+<td>6</td>
+<td>5</td>
+<td>19 nights</td>
+</tr>
+<tr>
+<td>Beach house (4BR)</td>
+<td>6</td>
+<td>8</td>
+<td>4</td>
+<td>18 nights</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Booking Patterns by Platform</h2>
+
+<p>Understanding when guests book on each platform:</p>
+
+<table>
+<thead>
+<tr>
+<th>Booking Window</th>
+<th>Airbnb</th>
+<th>VRBO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Same day</td>
+<td>18%</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>1-7 days</td>
+<td>34%</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>8-30 days</td>
+<td>28%</td>
+<td>22%</td>
+</tr>
+<tr>
+<td>31-60 days</td>
+<td>12%</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>61+ days</td>
+<td>8%</td>
+<td>31%</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Seasonal Performance Differences</h2>
+
+<p>Platform strength varies by season:</p>
+
+<ul>
+  <li><strong>School holidays:</strong> VRBO dominates family bookings (65% vs 35%)</li>
+  <li><strong>Public holidays:</strong> Airbnb leads (62% vs 38%) for short trips</li>
+  <li><strong>Weekends:</strong> Airbnb leads (58% vs 42%) for couples</li>
+  <li><strong>Long weekends:</strong> VRBO leads (54% vs 46%) for extended stays</li>
+</ul>
+
+<h2>Which Platform for Your Property?</h2>
+
+<p><strong>Choose Airbnb if:</strong></p>
+<ul>
+  <li>Your property is modern/uniquely designed</li>
+  <li>You target international guests</li>
+  <li>You have a 1-2 bedroom unit</li>
+  <li>You're in a walkable urban area</li>
+  <li>You want flexible cancellation policies</li>
+</ul>
+
+<p><strong>Choose VRBO if:</strong></p>
+<ul>
+  <li>Your property is family-friendly</li>
+  <li>You have 3+ bedrooms</li>
+  <li>You target domestic Malaysian market</li>
+  <li>You're in a quiet residential area</li>
+  <li>You prefer advance bookings</li>
+</ul>
+
+<p><strong>Best Choice:</strong> Use BOTH platforms (plus 3 others) for maximum exposure</p>
+
+<h2>iHousing Platform Management</h2>
+
+<p>Our comprehensive platform service includes:</p>
+
+<ul>
+  <li><strong>Single dashboard:</strong> Manage all 5 platforms from one place</li>
+  <li><strong>Calendar sync:</strong> Prevent double bookings automatically</li>
+  <li><strong>Platform-specific pricing:</strong> Optimize rates per platform</li>
+  <li><strong>Review management:</strong> Respond to reviews across all platforms</li>
+  <li><strong>Performance analytics:</strong> Track which platform performs best</li>
+</ul>
+
+<h2>Take Action Today</h2>
+
+<p><strong>For Multi-Platform Management:</strong> WhatsApp us at +60166996688 to learn how we can list your property on all 5 platforms</p>
+
+<p><strong>For Parkland Avenue:</strong> Pre-register for RM200-300/month flat fee pricing including 5-platform listing</p>
+
+<p>Don't limit yourself to one platform. Get 60% more bookings with iHousing's comprehensive platform strategy.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

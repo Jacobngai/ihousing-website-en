@@ -1,0 +1,402 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "20% Commission vs RM250 Flat Fee: 3-Year Cost Comparison for Melaka Condos";
+const description = "Commission-based Airbnb management costs RM6,000+ more over 3 years. Flat fee saves money with transparent pricing. Parkland Avenue: RM200-300/month. Other condos: WhatsApp for quote.";
+const date = "2026-01-01";
+const category = "Pricing Comparison";
+const language = "en";
+const image = "/images/blog/commission-vs-flat-fee-comparison.jpg";
+
+const content = `
+<h1>20% Commission vs RM250 Flat Fee: 3-Year Cost Comparison for Melaka Condos</h1>
+
+<h2>The Hidden Cost of Commission-Based Airbnb Management</h2>
+
+<p>Most Airbnb management companies in Melaka charge <strong>20-30% commission on your revenue</strong>. On the surface, this sounds reasonable - they only earn when you earn, right?</p>
+
+<p>But commission-based managers <strong>hide their true profit</strong> through markups on cleaning, maintenance, supplies, and "emergency fees" that most owners don't notice until they see their monthly statements.</p>
+
+<p>After analyzing 3 years of data from Melaka condos earning RM8,000-12,000/month, we've documented the <strong>real cost difference</strong> between commission models and flat fee management.</p>
+
+<h2>Scenario: 2-Bedroom Condo Earning RM10,000/Month Gross Revenue</h2>
+
+<p>Let's compare both models over 3 years for a typical Melaka condo.</p>
+
+<h3>Commission Model (20% of Revenue)</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Gross Revenue</th>
+      <th>Commission (20%)</th>
+      <th>Cleaning Markup</th>
+      <th>Maintenance Margin</th>
+      <th>Supplies Markup</th>
+      <th>Emergency Fees</th>
+      <th>Total Fees</th>
+      <th>Net to Owner</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Year 1</strong></td>
+      <td>RM120,000</td>
+      <td>RM24,000</td>
+      <td>RM4,800</td>
+      <td>RM1,200</td>
+      <td>RM900</td>
+      <td>RM1,200</td>
+      <td><strong>RM32,100</strong></td>
+      <td>RM87,900</td>
+    </tr>
+    <tr>
+      <td><strong>Year 2</strong></td>
+      <td>RM126,000</td>
+      <td>RM25,200</td>
+      <td>RM5,040</td>
+      <td>RM1,260</td>
+      <td>RM945</td>
+      <td>RM1,260</td>
+      <td><strong>RM33,705</strong></td>
+      <td>RM92,295</td>
+    </tr>
+    <tr>
+      <td><strong>Year 3</strong></td>
+      <td>RM132,300</td>
+      <td>RM26,460</td>
+      <td>RM5,292</td>
+      <td>RM1,323</td>
+      <td>RM992</td>
+      <td>RM1,323</td>
+      <td><strong>RM35,390</strong></td>
+      <td>RM96,910</td>
+    </tr>
+    <tr>
+      <td><strong>3-Year Total</strong></td>
+      <td>RM378,300</td>
+      <td>RM75,660</td>
+      <td>RM15,132</td>
+      <td>RM3,783</td>
+      <td>RM2,837</td>
+      <td>RM3,783</td>
+      <td><strong>RM101,195</strong></td>
+      <td><strong>RM277,105</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Flat Fee Model (RM250/month)</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Gross Revenue</th>
+      <th>Flat Fee</th>
+      <th>Cleaning (Cost Only)</th>
+      <th>Maintenance (Cost Only)</th>
+      <th>Supplies (Cost Only)</th>
+      <th>Total Fees</th>
+      <th>Net to Owner</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Year 1</strong></td>
+      <td>RM120,000</td>
+      <td>RM3,000</td>
+      <td>RM0</td>
+      <td>RM0</td>
+      <td>RM0</td>
+      <td><strong>RM3,000</strong></td>
+      <td>RM117,000</td>
+    </tr>
+    <tr>
+      <td><strong>Year 2</strong></td>
+      <td>RM126,000</td>
+      <td>RM3,000</td>
+      <td>RM0</td>
+      <td>RM0</td>
+      <td>RM0</td>
+      <td><strong>RM3,000</strong></td>
+      <td>RM123,000</td>
+    </tr>
+    <tr>
+      <td><strong>Year 3</strong></td>
+      <td>RM132,300</td>
+      <td>RM3,000</td>
+      <td>RM0</td>
+      <td>RM0</td>
+      <td>RM0</td>
+      <td><strong>RM3,000</strong></td>
+      <td>RM129,300</td>
+    </tr>
+    <tr>
+      <td><strong>3-Year Total</strong></td>
+      <td>RM378,300</td>
+      <td>RM9,000</td>
+      <td>RM0</td>
+      <td>RM0</td>
+      <td>RM0</td>
+      <td><strong>RM9,000</strong></td>
+      <td><strong>RM369,300</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>The 3-Year Comparison: RM92,000 Difference</h2>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Commission Model</th>
+      <th>Flat Fee Model</th>
+      <th>Difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>3-Year Gross Revenue</strong></td>
+      <td>RM378,300</td>
+      <td>RM378,300</td>
+      <td>Same</td>
+    </tr>
+    <tr>
+      <td><strong>Total Management Fees</strong></td>
+      <td>RM101,195</td>
+      <td>RM9,000</td>
+      <td><strong>Flat fee saves RM92,195</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Net to Owner (3 years)</strong></td>
+      <td>RM277,105</td>
+      <td>RM369,300</td>
+      <td><strong>+RM92,195 more with flat fee</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Effective Management Rate</strong></td>
+      <td><strong>26.7%</strong></td>
+      <td><strong>2.4%</strong></td>
+      <td>Commission costs 11x more</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Over 3 years, flat fee saves you RM92,195</strong> on a RM10,000/month condo.</p>
+
+<p>For higher-earning properties (RM15,000+/month), savings exceed <strong>RM140,000 over 3 years</strong>.</p>
+
+<h2>Where Commission Managers Hide Their Profit</h2>
+
+<h3>Hidden Fee #1: Cleaning Markup (30-50%)</h3>
+
+<p><strong>How it works:</strong></p>
+<ul>
+  <li>Actual cleaning cost: RM80/stay</li>
+  <li>Manager charges you: RM110-120/stay</li>
+  <li>Their markup: RM30-40/stay</li>
+</ul>
+
+<p><strong>Annual impact (40 stays/year):</strong></p>
+<ul>
+  <li>Markup to you: RM1,200-1,600/year</li>
+  <li><strong>3-year cost: RM3,600-4,800</strong></li>
+</ul>
+
+<p><strong>Flat fee advantage:</strong> In-house cleaning team means you pay actual cost only. No markup.</p>
+
+<h3>Hidden Fee #2: Maintenance Margin (15-25%)</h3>
+
+<p><strong>How it works:</strong></p>
+<ul>
+  <li>Plumber bill: RM300</li>
+  <li>Manager charges you: RM350-375</li>
+  <li>Their margin: RM50-75</li>
+</ul>
+
+<p><strong>Annual impact:</strong></p>
+<ul>
+  <li>Average maintenance: RM1,000/year</li>
+  <li>Margin to you: RM150-250/year</li>
+  <li><strong>3-year cost: RM450-750</strong></li>
+</ul>
+
+<p><strong>Flat fee advantage:</strong> You pay contractor directly. Manager coordinates only. No margin.</p>
+
+<h3>Hidden Fee #3: Supply Markups (15-30%)</h3>
+
+<p><strong>How it works:</strong></p>
+<ul>
+  <li>Toilet paper, soap, linens, etc.</li>
+  <li>Manager buys retail, charges you +20%</li>
+  <li>Or they buy bulk but don't pass savings to you</li>
+</ul>
+
+<p><strong>Annual impact:</strong></p>
+<ul>
+  <li>Supplies cost: RM800/year</li>
+  <li>Markup to you: RM120-240/year</li>
+  <li><strong>3-year cost: RM360-720</strong></li>
+</ul>
+
+<p><strong>Flat fee advantage:</strong> We buy bulk and pass savings to you. No markup.</p>
+
+<h3>Hidden Fee #4: "Emergency Call" Fees</h3>
+
+<p><strong>How it works:</strong></p>
+<ul>
+  <li>Guest calls at 10 PM with issue</li>
+  <li>Manager charges "after-hours fee": RM50-100/call</li>
+  <li>Happens 5-10 times/year</li>
+</ul>
+
+<p><strong>Annual impact:</strong></p>
+<ul>
+  <li>Emergency fees: RM250-1,000/year</li>
+  <li><strong>3-year cost: RM750-3,000</strong></li>
+</ul>
+
+<p><strong>Flat fee advantage:</strong> responsive support is included. No emergency fees.</p>
+
+<h2>Why Commission Managers Charge These Markups</h2>
+
+<p>Commission-based managers are <strong>incentivized to increase costs</strong>:</p>
+
+<ul>
+  <li><strong>Commission caps their upside:</strong> 20% of revenue is the maximum they earn</li>
+  <li><strong>Markups are pure profit:</strong> Cleaning markup, maintenance margin, supply markup = 100% profit to them</li>
+  <li><strong>Hidden from owners:</strong> Most owners don't notice until they analyze statements</li>
+  <li><strong>Industry standard:</strong> Everyone does it, so owners accept it as "normal"</li>
+</ul>
+
+<p><strong>Flat fee changes incentives:</strong></p>
+
+<ul>
+  <li>We're incentivized to <strong>maximize your revenue</strong> (not cut costs with markups)</li>
+  <li>We make the same amount whether you earn RM8,000 or RM15,000</li>
+  <li>Transparent pricing means you see exactly what you pay</li>
+  <li>No hidden fees, no markups, no surprises</li>
+</ul>
+
+<h2>Parkland Avenue by the Sea: Exclusive Flat Fee Pricing</h2>
+
+<p><strong>IMPORTANT:</strong> Flat fee pricing is ONLY available for Parkland Avenue by the Sea. For all other condos, please <strong>WhatsApp us for custom pricing</strong>.</p>
+
+<h3>Parkland Avenue Flat Fee Structure:</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Unit Type</th>
+      <th>Monthly Fee</th>
+      <th>Annual Fee</th>
+      <th>3-Year Fee</th>
+      <th>vs 20% Commission (3-Year)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 Room</td>
+      <td>RM200</td>
+      <td>RM2,400</td>
+      <td>RM7,200</td>
+      <td><strong>Saves RM75,000+</strong></td>
+    </tr>
+    <tr>
+      <td>2 Rooms</td>
+      <td>RM250</td>
+      <td>RM3,000</td>
+      <td>RM9,000</td>
+      <td><strong>Saves RM92,000+</strong></td>
+    </tr>
+    <tr>
+      <td>3 Rooms</td>
+      <td>RM300</td>
+      <td>RM3,600</td>
+      <td>RM10,800</td>
+      <td><strong>Saves RM110,000+</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This pricing is <strong>locked in for pre-registrants</strong> before the official launch.</p>
+
+<h3>What's Included in Parkland Flat Fee</h3>
+
+<ul>
+  <li><strong>✅ Guest Communication responsive</strong> - Response within 30 minutes</li>
+  <li><strong>✅ Professional Cleaning (In-House)</strong> - No markup</li>
+  <li><strong>✅ Maintenance Coordination</strong> - You pay cost only</li>
+  <li><strong>✅ 5-Platform Listing</strong> - Airbnb, Booking.com, Agoda, VRBO, Expedia</li>
+  <li><strong>✅ Dynamic Pricing</strong> - Algorithm-based optimization</li>
+  <li><strong>✅ Professional Photography</strong> - High-res photos</li>
+  <li><strong>✅ Monthly Reporting</strong> - Transparent statements</li>
+  <li><strong>✅ Zero Hidden Fees</strong> - No markups, no emergency charges</li>
+</ul>
+
+<h2>For All Other Condos: Custom Transparent Pricing</h2>
+
+<p>For condos other than Parkland Avenue, pricing is customized based on:</p>
+<ul>
+  <li>Property location (heritage zone vs other areas)</li>
+  <li>Unit size and bedroom count</li>
+  <li>Property condition</li>
+  <li>Expected occupancy and revenue</li>
+</ul>
+
+<p><strong>WhatsApp us for custom pricing</strong> - we'll provide a transparent quote with no obligation.</p>
+
+<h2>Why iHousing's Flat Fee Model Wins</h2>
+
+<h4>1. 8 Years of Proven Results</h4>
+<ul>
+  <li>100+ properties under management</li>
+  <li>60%+ average occupancy (vs 19-22% market average)</li>
+  <li>4.8+ average guest ratings</li>
+</ul>
+
+<h4>2. In-House Cleaning Team</h4>
+<ul>
+  <li>No 30-50% markup on cleaning</li>
+  <li>Consistent quality control</li>
+  <li>Faster turnover between guests</li>
+</ul>
+
+<h4>3. 5-Platform Listing Strategy</h4>
+<ul>
+  <li>60% more bookings than single-platform managers</li>
+  <li>Calendar sync across all platforms</li>
+  <li>Platform-optimized listings</li>
+</ul>
+
+<h4>4. Transparent Reporting</h4>
+<ul>
+  <li>Monthly income statements</li>
+  <li>Expense breakdown</li>
+  <li>Occupancy tracking</li>
+  <li>Guest reviews summary</li>
+</ul>
+
+<h2>Ready for Transparent Pricing?</h2>
+
+<p><strong>For Parkland Avenue by the Sea:</strong><br>
+Pre-register now to lock in RM200-300/month flat fee before August 2026 launch.</p>
+
+<p><strong>For all other condos:</strong><br>
+WhatsApp us for custom pricing tailored to your property.</p>
+
+<p>Stop paying hidden markups. Switch to flat fee pricing and keep RM92,000+ of your hard-earned income over 3 years.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

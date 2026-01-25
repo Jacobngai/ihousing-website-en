@@ -1,0 +1,601 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Hotel vs Airbnb di Melaka: Perbandingan Kos & Pengalaman 2025";
+const description = "Hotel vs Airbnb di Melaka - mana lebih untung untuk pelancong dan pelabur? Ketahui perbezaan kos, ruang, privasi, dan pengalaman. Panduan lengkap untuk pemilik hartanah.";
+const image = "/images/blog/hotel-vs-airbnb-melaka-perbandingan.jpg";
+const date = "2025-01-24";
+const category = "decision-pricing";
+const language = "ms";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>Hotel vs Airbnb di Melaka: Perbandingan Kos & Pengalaman 2025</h1>
+        <h2>Dilema Pelancong: Hotel atau Airbnb?</h2>
+        <p>Setiap pelancong yang melancong ke Melaka menghadapi soalan yang sama: "Adakah saya patut menginap di hotel atau Airbnb?"</p>
+        <p>Sebagai pelabur hartanah, memahami dilema ini adalah kunci kepada kejayaan Airbnb anda. Apabila anda tahu apa yang pelancong mahukan - dan apa yang mereka benci - anda boleh mencipta pengalaman Airbnb yang menang.</p>
+        <p>Dalam artikel ini, kami bandingkan hotel vs Airbnb di Melaka dari segi kos, ruang, privasi, kemudahan, dan nilai. Kami juga terokai mengapa lebih ramai pelancong memilih Airbnb - dan bagaimana anda boleh memanfaatkan trend ini.</p>
+
+        <h2>Perbandingan Kos: Siapa Lebih Jimat?</h2>
+
+        <h3>Kos Penginapan Semalam (Melaka 2025)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Penginapan</th>
+              <th>Budget</th>
+              <th>Mid-Range</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Hotel (3 bintang)</strong></td>
+              <td>RM120-RM180</td>
+              <td>RM200-RM300</td>
+              <td>RM400-RM600</td>
+            </tr>
+            <tr>
+              <td><strong>Hotel (4-5 bintang)</strong></td>
+              <td>RM250-RM350</td>
+              <td>RM400-RM600</td>
+              <td>RM800-RM1,200</td>
+            </tr>
+            <tr>
+              <td><strong>Airbnb (Studio/1BR)</strong></td>
+              <td>RM100-RM150</td>
+              <td>RM160-RM250</td>
+              <td>RM300-RM450</td>
+            </tr>
+            <tr>
+              <td><strong>Airbnb (2-3BR)</strong></td>
+              <td>RM150-RM200</td>
+              <td>RM250-RM350</td>
+              <td>RM400-RM600</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>Kesimpulan:</strong> Airbnb boleh menjimatkan 20-40% berbanding hotel untuk kumpulan dan keluarga.</p>
+
+        <h3>Kos Tambahan Yang Perlu Dipertimbangkan</h3>
+        <p><strong>Hotel:</strong></p>
+        <ul>
+          <li>Parking: RM10-RM20/night (kadang-kadang percuma)</li>
+          <li>Internet: Biasanya percuma</li>
+          <li>Breakfast: Termasuk (untuk hotel 3+ bintang)</li>
+          <li>Cleaning: Termasuk</li>
+          <li>Extra bed: RM50-RM100/night</li>
+        </ul>
+
+        <p><strong>Airbnb:</strong></p>
+        <ul>
+          <li>Parking: Biasanya percuma</li>
+          <li>Internet: Percuma</li>
+          <li>Breakfast: Tidak termasuk (kecuali specified)</li>
+          <li>Cleaning fee: RM50-RM100/stay</li>
+          <li>Extra guest: RM30-RM50/night</li>
+        </ul>
+
+        <h3>Perbandingan Kos Sebenar: Contoh Real</h3>
+        <p><strong>Keluarga 4 orang (2 dewasa, 2 kanak-kanak) - 3 malam:</strong></p>
+        <table>
+          <thead>
+            <tr>
+              <th>Perbelanjaan</th>
+              <th>Hotel (1 room)</th>
+              <th>Hotel (2 rooms)</th>
+              <th>Airbnb (2BR)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Room rate</td>
+              <td>RM750</td>
+              <td>RM1,200</td>
+              <td>RM600</td>
+            </tr>
+            <tr>
+              <td>Breakfast (termasuk)</td>
+              <td>RM0</td>
+              <td>RM0</td>
+              <td>RM150</td>
+            </tr>
+            <tr>
+              <td>Parking</td>
+              <td>RM30</td>
+              <td>RM30</td>
+              <td>RM0</td>
+            </tr>
+            <tr>
+              <td>Cleaning fee</td>
+              <td>RM0</td>
+              <td>RM0</td>
+              <td>RM80</td>
+            </tr>
+            <tr>
+              <td><strong>Jumlah</strong></td>
+              <td><strong>RM780</strong></td>
+              <td><strong>RM1,230</strong></td>
+              <td><strong>RM830</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>Simpanan Airbnb vs 2 hotel rooms:</strong> RM400 (35% jimat)</p>
+
+        <p><strong>Kumpulan 6 orang (3 pasangan) - 2 malam:</strong></p>
+        <table>
+          <thead>
+            <tr>
+              <th>Perbelanjaan</th>
+              <th>Hotel (3 rooms)</th>
+              <th>Airbnb (3BR)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Room rate</td>
+              <td>RM1,200</td>
+              <td>RM800</td>
+            </tr>
+            <tr>
+              <td>Breakfast</td>
+              <td>RM0</td>
+              <td>RM300</td>
+            </tr>
+            <tr>
+              <td>Parking</td>
+              <td>RM40</td>
+              <td>RM0</td>
+            </tr>
+            <tr>
+              <td>Cleaning fee</td>
+              <td>RM0</td>
+              <td>RM80</td>
+            </tr>
+            <tr>
+              <td><strong>Jumlah</strong></td>
+              <td><strong>RM1,240</strong></td>
+              <td><strong>RM1,180</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>Simpanan Airbnb:</strong> RM60 (5% jimat) + lebih ruang & privasi</p>
+
+        <hr>
+
+        <h2>Perbandingan Ruang: Privasi vs Kemudahan</h2>
+
+        <h3>Hotel: Kompres Tetapi Lengkap</h3>
+        <p><strong>Kelebihan:</strong></p>
+        <ul>
+          <li>Bilik bersiap sedia</li>
+          <li>Housekeeping harian</li>
+          <li>Facilities on-site (pool, gym, restaurant)</li>
+          <li>Front desk 24/7</li>
+          <li>Security dan concierge</li>
+        </ul>
+
+        <p><strong>Kekurangan:</strong></p>
+        <ul>
+          <li>Satu bilik untuk semua (privacy terhad)</li>
+          <li>Ruang tamu terhad</li>
+          <li>Tidak ada dapur</li>
+          <li>Tidak dapat masak sendiri</li>
+          <td>Jarang ada ruang makan</li>
+        </ul>
+
+        <h3>Airbnb: Luas, Fleksibel, Rumah Sendiri</h3>
+        <p><strong>Kelebihan:</strong></p>
+        <ul>
+          <li>Ruang tamu berasingan</li>
+          <li>Dapur penuh (masak sendiri)</li>
+          <li>Dining area untuk kumpulan</li>
+          <li>Multiple bedrooms (privacy)</li>
+          <li>Living room untuk bersantai</li>
+          <li>Sometimes: Washer, balcony, private pool</li>
+        </ul>
+
+        <p><strong>Kekurangan:</strong></p>
+        <ul>
+          <li>Perlu sediakan sendiri (cleaning not daily)</li>
+          <li>Facilities limited (share dengan lain-lain)</li>
+          <li>Self check-in (kadang-kadang confusing)</li>
+          <li>Tiada front desk untuk bantuan segera</li>
+        </ul>
+
+        <hr>
+
+        <h2>Pengalaman: Local Feel vs Standardized Service</h2>
+
+        <h3>Hotel: Konsisten, Profesional, Tetapi Impersonal</h3>
+        <p><strong>Apa anda dapat:</strong></p>
+        <ul>
+          <li>Standardized experience (sama di mana-mana)</li>
+          <li>Professional service</li>
+          <li>Consistent quality</li>
+          <li>Problem resolution mudah (front desk)</li>
+          <li>Tourist location biasa</li>
+        </ul>
+
+        <p><strong>Apa anda TIDAK dapat:</strong></p>
+        <ul>
+          <li>Local neighborhood feel</li>
+          <li>Interaction dengan locals</li>
+          <li>Authentic cultural experience</li>
+          <li>Hidden gems knowledge</li>
+          <td>"Living like a local"</li>
+        </ul>
+
+        <h3>Airbnb: Authentic, Unik, Local Experience</h3>
+        <p><strong>Apa anda dapat:</strong></p>
+        <ul>
+          <li>Stay di residential neighborhood</li>
+          <li>Local recommendations dari hos</li>
+          <li>Authentic cultural experience</li>
+          <li>Unique decorations dan character</li>
+          <li>Living area real rumah</li>
+        </ul>
+
+        <p><strong>Apa anda TIDAK dapat:</strong></p>
+        <ul>
+          <li>Standardized quality (bergerak dengan setiap hos)</li>
+          <li>Professional service (bergantung hos)</li>
+          <li>Consistent facilities</li>
+          <li>Problem resolution segera</li>
+          <td>Tourist location convenience</li>
+        </ul>
+
+        <hr>
+
+        <h2>Why Pelancong Memilih Airbnb di Melaka</h2>
+
+        <h3>Sebab #1: Kos Untuk Kumpulan & Keluarga</h3>
+        <p><strong>Fakta:</strong> 65% tetamu Airbnb Melaka adalah kumpulan 3+ orang.</p>
+        <p>Airbnb jelas menang untuk:</p>
+        <ul>
+          <li>Families (ruang untuk kanak-kanak bermain)</li>
+          <li>Groups of friends (share kos)</li>
+          <li>Extended families (need multiple bedrooms)</li>
+          <li>Long stays (dapur = jimat makanan)</li>
+        </ul>
+
+        <h3>Sebab #2: Dapur = Jimat Makanan</h3>
+        <p><strong>Fakta:</strong> Pelancong boleh jimat RM100-RM200/hari dengan masak sendiri.</p>
+        <p><strong>Breakdown kos makan:</strong></p>
+        <ul>
+          <li>Makan di restaurant: RM150-RM250/day/family</li>
+          <li>Masak sendiri: RM50-RM100/day/family</li>
+          <li>Simpanan: RM100-RM150/hari</li>
+        </ul>
+        <p>Untuk stay 5 hari, simpanan RM500-RM750 - yang menutup kos Airbnb!</p>
+
+        <h3>Sebab #3: Ruang Tamu & Privacy</h3>
+        <p><strong>Keluarga dengan anak kecil:</strong></p>
+        <ul>
+          <li>Hotel: Satu bilik, anak tidur, parents duduk dalam gelap</li>
+          <li>Airbnb: Living room, anak tidur di bedroom, parents masih boleh bersantai</li>
+        </ul>
+
+        <p><strong>Kumpulan friends:</strong></p>
+        <ul>
+          <li>Hotel: Bilik berasingan, jumpa di lobby</li>
+          <li>Airbnb: Living room bersama, quality time</li>
+        </ul>
+
+        <h3>Sebab #4: Lokasi Residential</h3>
+        <p><strong>Hotel location:</strong> Biasanya di tourist area atau bandar</p>
+        <p><strong>Airbnb location:</strong> Boleh di residential neighborhood</p>
+        <ul>
+          <li>Lebih tenang</li>
+          <li>Local eateries dekat</li>
+          <li>Feel authentic "local living"</li>
+          <td>Lebih murah (biasanya)</li>
+        </ul>
+
+        <h3>Sebab #5: Uniqe Experience & Character</h3>
+        <p><strong>Hotel:</strong> Bilik standard sama seperti di Kuala Lumpur, Singapore, atau mana-mana</p>
+        <p><strong>Airbnb:</strong></p>
+        <ul>
+          <li>Decor unik (vintage, modern, Baba Nyonya theme)</li>
+          <li>Local artwork</li>
+          <li>Character dan personality</li>
+          <li>Instagrammable spots</li>
+        </ul>
+
+        <hr>
+
+        <h2>Data Pasaran Airbnb Melaka 2024-2025</h2>
+
+        <h3>Purata Kadar & Okupansi</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Unit Type</th>
+              <th>Purata Kadar</th>
+              <th>Okupansi</th>
+              <th>Pendapatan Tahunan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Studio</td>
+              <td>RM150-RM180</td>
+              <td>22%</td>
+              <td>RM8,400-RM10,800</td>
+            </tr>
+            <tr>
+              <td>1 Bedroom</td>
+              <td>RM160-RM220</td>
+              <td>20%</td>
+              <td>RM8,800-RM12,100</td>
+            </tr>
+            <tr>
+              <td>2 Bedroom</td>
+              <td>RM200-RM280</td>
+              <td>18%</td>
+              <td>RM9,500-RM13,500</td>
+            </tr>
+            <tr>
+              <td>3 Bedroom</td>
+              <td>RM250-RM350</td>
+              <td>16%</td>
+              <td>RM9,800-RM14,000</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Purata Kadar Hotel Melaka 2024-2025</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Hotel Class</th>
+              <th>Purata Kadar</th>
+              <th>Okupansi</th>
+              <th>Revenue/Room</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3 Bintang</td>
+              <td>RM180-RM250</td>
+              <td>65-75%</td>
+              <td>RM42,500-RM59,000</td>
+            </tr>
+            <tr>
+              <td>4 Bintang</td>
+              <td>RM300-RM450</td>
+              <td>70-80%</td>
+              <td>RM76,500-RM115,000</td>
+            </tr>
+            <tr>
+              <td>5 Bintang</td>
+              <td>RM600-RM900</td>
+              <td>65-75%</td>
+              <td>RM142,000-RM214,000</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Advantages Pelaburan Airbnb vs Hotel</h2>
+
+        <h3>Sebagai Pelabur Hartanah</h3>
+        <p><strong>Airbnb Investment:</strong></p>
+        <ul>
+          <li>Kos permulaan lebih rendah (RM280k-RM600k untuk kondo)</li>
+          <li>Kawalan penuh atas property</li>
+          <li>Boleh guna sendiri bila kosong</li>
+          <td>Fleksibiliti pricing</li>
+          <td>Boleh sell bila nak</li>
+        </ul>
+
+        <p><strong>Hotel Ownership:</strong></p>
+        <ul>
+          <li>Kos pelaburan sangat tinggi (RM5 million-RM50 million)</li>
+          <li>Perlu professional management team</li>
+          <li>Regulatory requirements kompleks</li>
+          <li>Brand dependencies</li>
+          <td>Exit lebih susah</li>
+        </ul>
+
+        <h3>Pulangan Pelaburan</h3>
+        <p><strong>Airbnb (Kondo Melaka):</strong></p>
+        <ul>
+          <li>Pelaburan: RM350,000</li>
+          <td>Pendapatan tahunan: RM10,000-RM14,000</li>
+          <td>ROI: 8-12% (termasuk appreciation)</li>
+        </ul>
+
+        <p><strong>Hotel (Room ownership):</strong></p>
+        <ul>
+          <li>Pelaburan: RM500,000-RM1,000,000/room</li>
+          <td>Bahagian revenue: 30-50% ( selepas management fee)</li>
+          <td>ROI: 5-8% (sebelum costs)</li>
+        </ul>
+
+        <hr>
+
+        <h2>Strategi Menjadikan Airbnb Lebih Menarik Daripada Hotel</h2>
+
+        <h3>Differentiation Strategy #1: Hotel-Like Amenities</h3>
+        <p><strong>Add hotel-style amenities:</strong></p>
+        <ul>
+          <li>Premium linen dan towels</li>
+          <li>Toiletries berkualiti</li>
+          <td>Coffee maker dengan kopi/teh</li>
+          <td>Hair dryer, iron, ironing board</li>
+          <td>Netflix/Smart TV</li>
+          <li>High-speed WiFi</li>
+        </ul>
+        <p><strong>Hasil:</strong> Tetamu rasa seperti hotel premium, tapi dengan ruang rumah.</p>
+
+        <h3>Differentiation Strategy #2: Local Experience</h3>
+        <p><strong>Offer what hotels cannot:</strong></p>
+        <ul>
+          <li>Local breakfast recommendations</li>
+          <td>Hidden spots guide (jonker street hidden gems)</li>
+          <td>Cultural experience tips (Baba Nyonya food)</li>
+          <td>Local transport advice</li>
+          <td>Emergency contacts</li>
+        </ul>
+        <p><strong>Hasil:</strong> Authentic local experience yang hotels cannot provide.</p>
+
+        <h3>Differentiation Strategy #3: Space & Comfort</h3>
+        <p><strong>Emphasize space advantage:</strong></p>
+        <ul>
+          <li>Living room untuk relax</li>
+          <li>Full kitchen untuk cook</li>
+          <td>Multiple bedrooms untuk privacy</li>
+          <td>Dining area untuk family meals</li>
+          <td>Balcony dengan views</li>
+        </ul>
+        <p><strong>Hasil:</strong> Value proposition yang jelas berbanding hotel rooms.</p>
+
+        <hr>
+
+        <h2>Target Market: Siapa Patut Anda Fokus?</h2>
+
+        <h3>Market Segment yang Lebih Suka Airbnb</h3>
+        <p><strong>1. Families with Children</strong></p>
+        <ul>
+          <li>Need space untuk kids</li>
+          <td>Kitchen untuk prepare meals</li>
+          <td>Laundry facilities</li>
+          <td>Multiple bedrooms</li>
+        </ul>
+
+        <p><strong>2. Groups of Friends</strong></p>
+        <ul>
+          <li>Share cost</li>
+          <li>Quality time bersama</li>
+          <td>Common area untuk socialize</li>
+          <td>Flexibility meal times</li>
+        </ul>
+
+        <p><strong>3. Long-Term Travelers (1-4 weeks)</strong></p>
+        <ul>
+          <li>Kitchen untuk jimat makanan</li>
+          <td>Living space seperti rumah</li>
+          <td>Washer/dryer</li>
+          <td>Residential neighborhood feel</li>
+        </ul>
+
+        <p><strong>4. Digital Nomads</strong></p>
+        <ul>
+          <li>Work space</li>
+          <td>High-speed WiFi</td>
+          <td>Kitchen</li>
+          <td>Longer stays = better rates</li>
+        </ul>
+
+        <h3>Market Segment yang Lebih Suka Hotel</h3>
+        <p><strong>1. Business Travelers (1-3 nights)</strong></p>
+        <ul>
+          <li>Need convenience</li>
+          <li>Tidak need kitchen</li>
+          <td>Value services</li>
+          <td>Location penting</li>
+        </ul>
+
+        <p><strong>2. Solo Travelers</strong></p>
+        <ul>
+          <li>Safety concerns</li>
+          <li>Tidak need extra space</li>
+          <td>Value services</li>
+          <td>Social aspect (hotel bar/restaurant)</li>
+        </ul>
+
+        <p><strong>3. Luxury Travelers</strong></p>
+        <ul>
+          <li>Expect hotel services</li>
+          <td>Value consistency</li>
+          <td>Want pampering</li>
+          <td>Room service importante</li>
+        </ul>
+
+        <hr>
+
+        <h2>Pricing Strategy: Compete atau Complement?</h2>
+
+        <h3>Strategy A: Compete Directly dengan Hotel</h3>
+        <p><strong>Positioning:</strong> "Better than hotel, same price or less"</p>
+        <p><strong>Tactics:</strong></p>
+        <ul>
+          <li>Price RM20-RM50 di bawah hotel equivalent</li>
+          <li>Emphasize space advantage</li>
+          <td>Highlight kitchen savings</li>
+          <td>Mention parking percuma</li>
+          <td>Showcase local experience</li>
+        </ul>
+        <p><strong>Best for:</strong> 2-3BR units targeting families/groups</p>
+
+        <h3>Strategy B: Complement Hotel Offering</h3>
+        <p><strong>Positioning:</strong> "Premium residential experience"</p>
+        <p><strong>Tactics:</strong></p>
+        <ul>
+          <li>Price 10-20% premium atas hotel mid-range</li>
+          <li>Focus on unique design</li>
+          <td>Emphasize privacy dan exclusivity</li>
+          <td>Offer premium amenities</li>
+          <td>Target higher-end market</li>
+        </ul>
+        <p><strong>Best for:</strong> Luxury units dengan unique character</p>
+
+        <h3>Strategy C: Hybrid: Mid-Range Alternative</h3>
+        <p><strong>Positioning:</strong> "Value for money alternative"</p>
+        <p><strong>Tactics:</strong></p>
+        <ul>
+          <li>Price sama dengan hotel 3-star</li>
+          <td>Offer more space</li>
+          <td>Provide hotel-like amenities</li>
+          <td>Highlight local experience</li>
+          <td>Target budget-conscious families</li>
+        </ul>
+        <p><strong>Best for:</strong> Standard units targeting value market</p>
+
+        <hr>
+
+        <h2>Kesimpulan: Airbnb Menang untuk Kumpulan & Keluarga</h2>
+
+        <p>Data menunjukkan bahawa Airbnb jelas menang berbanding hotel untuk:</p>
+
+        <ol>
+          <li><strong>Kumpulan 3+ orang</strong> - Jimat 20-40%</li>
+          <li><strong>Keluarga dengan anak</strong> - Ruang dan dapur critical</li>
+          <li><strong>Stay 4+ nights</strong> - Dapur = jimat signifikan</li>
+          <li><strong>Experience seekers</strong> - Authentic local feel</li>
+          <li><strong>Budget-conscious travelers</strong> - More value untuk money</li>
+        </ol>
+
+        <p>Sebagai pelabur hartanah, fokus kepada market ini. Jangan cuba compete dengan luxury hotels - itu bukan strength anda. Sebaliknya, position Airbnb anda sebagai "rumah kedua" untuk travelers yang value space, privacy, dan authentic experience.</p>
+
+        <hr>
+
+        <h2>Sedia Untuk Jadikan Kondo Anda Lebih Menarik Daripada Hotel?</h2>
+
+        <p>Jangan biarkan kondo anda kosong atau kurang okupansi. Ketahui bagaimana untuk membuat Airbnb anda menonjol dari competition.</p>
+
+        <strong>[WhatsApp Kami Sekarang]</strong>
+
+        <p>Kami akan membantu anda:</p>
+        <ul>
+          <li>Pilih positioning strategy yang tepat</li>
+          <li>Optimize amenities untuk menandingi hotel</li>
+          <td>Set competitive pricing</li>
+          <td>Create listing yang menonjol</li>
+          <td>Maximize okupansi dan income</li>
+        </ul>
+
+        <p>Tunggu apa lagi? Setiap malam kondo anda kosong adalah pendapatan RM150-RM350 yang hilang. Hubungi kami hari ini untuk konsultasi percuma.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

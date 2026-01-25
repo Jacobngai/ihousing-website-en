@@ -1,0 +1,306 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Weekend vs Midweek Pricing: Coastal Property Revenue Optimization";
+const description = "Learn how to optimize pricing for coastal Airbnb properties in Melaka. Weekend premium pricing strategies for Pantai Kundur and Tanjung Bidara beachfront locations. Maximize revenue with dynamic pricing.";
+const date = "2026-01-15";
+const category = "pricing";
+const language = "en";
+const image = "/images/blog/weekend-midweek-pricing-coastal-property.jpg";
+
+const content = `
+<h1>Weekend vs Midweek Pricing: How to Maximize Coastal Property Revenue in Melaka</h1>
+
+<h2>The Coastal Property Pricing Challenge</h2>
+
+<p>Owning a beachfront Airbnb in Melaka's coastal areas like Pantai Kundur or Tanjung Bidara comes with unique pricing opportunities. Unlike city-center properties that see consistent weekday demand, coastal properties experience dramatic demand swings between weekends and midweek days.</p>
+
+<p>This guide shows you exactly how to structure your weekend vs midweek pricing to maximize revenue while maintaining healthy occupancy rates throughout the week.</p>
+
+<h2>Understanding Coastal Demand Patterns</h2>
+
+<h3>Weekend Surge (Friday-Sunday)</h3>
+
+<p>Coastal properties see 3-5x higher demand during weekends due to:</p>
+<ul>
+  <li><strong>Singaporean weekenders:</strong> Friday evening arrivals, Sunday departures</li>
+  <li><strong>KL families:</strong> Saturday-Sunday getaways</li>
+  <li><strong>Local tourists:</strong> Day trips and weekend retreats</li>
+  <li><strong>Event-driven stays:</strong> Festivals, weddings, celebrations</li>
+</ul>
+
+<p><strong>Average weekend occupancy:</strong> 70-85% for well-managed properties</p>
+
+<h3>Midweek Lull (Monday-Thursday)</h3>
+
+<p>Weekday demand drops significantly because:</p>
+<ul>
+  <li>Most guests work Monday-Friday</li>
+  <li>Travel distance (2-4 hours from major cities) discourages short stays</li>
+  <li>Limited business tourism in coastal areas</li>
+</ul>
+
+<p><strong>Average midweek occupancy:</strong> 20-40% without strategic pricing</p>
+
+<h2>Optimal Pricing Structure</h2>
+
+<h3>Weekend Premium Strategy</h3>
+
+<p>Charge 40-80% more on weekend nights. Here's the formula:</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>Unit Type</th>
+      <th>Base Rate (weeknight)</th>
+      <th>Weekend Rate</th>
+      <th>Weekend Premium</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2BR Beach House</td>
+      <td>RM250</td>
+      <td>RM400-450</td>
+      <td>+60-80%</td>
+    </tr>
+    <tr>
+      <td>3BR Coastal Villa</td>
+      <td>RM350</td>
+      <td>RM500-600</td>
+      <td>+43-71%</td>
+    </tr>
+    <tr>
+      <td>1BR Apartment</td>
+      <td>RM150</td>
+      <td>RM220-250</td>
+      <td>+47-67%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Midweek Discount Strategy</h3>
+
+<p>Reduce midweek rates by 30-50% to attract:</p>
+<ul>
+  <li><strong>Remote workers:</strong> 3-4 day "work from beach" stays</li>
+  <li><strong>Retirees:</strong> Flexible midweek travel</li>
+  <li><strong>Staycationers:</strong> Local residents seeking midweek escapes</li>
+  <li><strong>Extended families:</strong> Multi-generational trips</li>
+</ul>
+
+<p><strong>Example pricing:</strong></p>
+<ul>
+  <li>Weekend (Fri-Sun): RM400/night</li>
+  <li>Midweek (Mon-Thu): RM200-250/night</li>
+</ul>
+
+<h2>Dynamic Pricing Implementation</h2>
+
+<h3>Seasonal Adjustments</h3>
+
+<p>Adjust your weekend premiums based on season:</p>
+
+<ul>
+  <li><strong>School holidays (March, June, December):</strong> Increase weekend rates by additional 20-30%</li>
+  <li><strong>Public holidays:</strong> Apply weekend rates to entire long weekend</li>
+  <li><strong>Monsoon season (Nov-Jan):</strong> Reduce weekend premium to 30-40% due to weather risk</li>
+  <li><strong>Festive periods:</strong> CNY, Hari Raya - maximum pricing (80-100% premium)</li>
+</ul>
+
+<h3>Length-of-Stay Discounts</h3>
+
+<p>Encourage longer midweek stays:</p>
+
+<ul>
+  <li><strong>2+ midweek nights:</strong> 15% discount</li>
+  <li><strong>3+ midweek nights:</strong> 25% discount</li>
+  <li><strong>4+ nights (any days):</strong> 20% discount on entire stay</li>
+</ul>
+
+<p>This strategy fills your Monday-Thursday gap without sacrificing weekend revenue.</p>
+
+<h2>Real Numbers: Revenue Comparison</h2>
+
+<h3>Scenario A: Flat Pricing (No Strategy)</h3>
+
+<p>RM300/night every day</p>
+<ul>
+  <li>Weekend occupancy: 70% (6 weekend nights/month)</li>
+  <li>Midweek occupancy: 25% (8 midweek nights/month)</li>
+</ul>
+
+<p><strong>Monthly revenue:</strong> RM300 × (6×0.7 + 8×0.25) × 4 = RM7,560</p>
+
+<h3>Scenario B: Optimized Weekend/Midweek Pricing</h3>
+
+<ul>
+  <li>Weekend rate: RM450 (70% occupancy)</li>
+  <li>Midweek rate: RM220 (50% occupancy with discounts)</li>
+</ul>
+
+<p><strong>Monthly revenue:</strong> (RM450×6×0.7 + RM220×8×0.5) × 4 = RM11,080</p>
+
+<p><strong>Result:</strong> +46% revenue increase with optimized pricing</p>
+
+<h2>How iHousing Implements This Strategy</h2>
+
+<h3>Algorithm-Based Dynamic Pricing</h3>
+
+<p>Our system automatically:</p>
+<ul>
+  <li>Adjusts rates daily based on demand</li>
+  <li>Applies weekend premiums automatically</li>
+  <li>Activates midweek discounts during low-demand periods</li>
+  <li>Responds to competitor pricing changes</li>
+  <li>Incorporates seasonal factors</li>
+</ul>
+
+<h3>Multi-Platform Price Sync</h3>
+
+<p>We ensure consistent pricing across:</p>
+<ul>
+  <li>Airbnb (primary platform)</li>
+  <li>Booking.com</li>
+  <li>Agoda</li>
+  <li>VRBO</li>
+  <li>Expedia</li>
+</ul>
+
+<p>Prevent price gaps that cause guests to book elsewhere.</p>
+
+<h3>Occupancy Monitoring</h3>
+
+<p>Our team:</p>
+<ul>
+  <li>Tracks booking patterns weekly</li>
+  <li>Identifies demand shifts</li>
+  <li>Adjusts minimum stay requirements</li>
+  <li>Tests different price points</li>
+</ul>
+
+<h2>Special Tactics for Coastal Properties</h2>
+
+<h3>Event-Based Pricing</h3>
+
+<p>Monitor local events and adjust:</p>
+<ul>
+  <li><strong>Jonker Walk Night Market:</strong> Apply weekend rates to adjacent Fridays</li>
+  <li><strong>School holidays:</strong> Extend weekend pricing to Thursday-Sunday</li>
+  <li><strong>Public holidays:</strong> Treat entire long weekend as premium period</li>
+</ul>
+
+<h3>Last-Minute Discounts</h3>
+
+<p>Fill empty midweek nights:</p>
+<ul>
+  <li>7 days before: 10% discount</li>
+  <li>3 days before: 20% discount</li>
+  <li>24 hours before: 30% discount (same-day bookings)</li>
+</ul>
+
+<p>This captures spontaneous travelers and last-minute planners.</p>
+
+<h3>Minimum Stay Requirements</h3>
+
+<p>Protect high-demand weekends:</p>
+<ul>
+  <li><strong>School holidays:</strong> 3-night minimum (Fri-Sun)</li>
+  <li><strong>Public holidays:</strong> 2-night minimum</li>
+  <li><strong>Regular weekends:</strong> 2-night minimum preferred, 1-night accepted at premium</li>
+</ul>
+
+<h2>Tracking Your Performance</h2>
+
+<h3>Key Metrics to Monitor</h3>
+
+<p>Every month, review:</p>
+<ul>
+  <li><strong>Weekend occupancy rate:</strong> Target 70%+</li>
+  <li><strong>Midweek occupancy rate:</strong> Target 45%+</li>
+  <li><strong>RevPAR (Revenue Per Available Room):</strong> Track overall efficiency</li>
+  <li><strong>Average Daily Rate (ADR):</strong> Monitor if rates align with strategy</li>
+  <li><strong>Booking lead time:</strong> Understanding demand patterns</li>
+</ul>
+
+<h3>iHousing Monthly Reports</h3>
+
+<p>Every owner receives:</p>
+<ul>
+  <li>Revenue breakdown (weekend vs midweek)</li>
+  <li>Occupancy analysis by day of week</li>
+  <li>Rate adjustment recommendations</li>
+  <li>Competitor pricing comparison</li>
+  <li>Next month's demand forecast</li>
+</ul>
+
+<h2>Common Pricing Mistakes to Avoid</h2>
+
+<h3>Mistake #1: Flat Pricing Year-Round</h3>
+
+<p>Problem: Leaving money on the table during high-demand weekends</p>
+
+<p>Solution: Implement weekend premium pricing (minimum 40%)</p>
+
+<h3>Mistake #2: Ignoring Midweek Potential</h3>
+
+<p>Problem: Empty units Monday-Thursday = zero revenue</p>
+
+<p>Solution: Offer midweek discounts to attract remote workers and retirees</p>
+
+<h3>Mistake #3: Not Adjusting for Seasonality</h3>
+
+<p>Problem: Same pricing in monsoon season as peak season</p>
+
+<p>Solution: Reduce weekend premium during low-demand months, maximize during peak</p>
+
+<h3>Mistake #4: Minimum Stay Too Rigid</h3>
+
+<p>Problem: Rejecting 1-night weekend bookings that fill gaps</p>
+
+<p>Solution: Accept 1-night stays at 20-30% premium over standard weekend rate</p>
+
+<h2>Ready to Optimize Your Coastal Property Pricing?</h2>
+
+<p>Whether you own a beachfront property in Pantai Kundur, Tanjung Bidara, or other coastal areas in Melaka, implementing the right pricing strategy can increase your revenue by 40-50%.</p>
+
+<p>At iHousing, we:</p>
+<ul>
+  <li>Use dynamic pricing algorithms</li>
+  <li>Monitor market conditions daily</li>
+  <li>Adjust rates based on demand</li>
+  <li>Fill midweek gaps strategically</li>
+  <li>Maximize weekend revenue</li>
+</ul>
+
+<h3>For Parkland Avenue by the Sea:</h3>
+
+<p><strong>Flat fee management:</strong> RM200-300/month (special pre-launch pricing)</p>
+
+<p>Includes dynamic pricing optimization across all 5 platforms.</p>
+
+<h3>For Other Coastal Properties:</h3>
+
+<p><strong>WhatsApp us for custom pricing:</strong></p>
+<ul>
+  <li>Tell us your location (Pantai Kundur, Tanjung Bidara, etc.)</li>
+  <li>We'll analyze your specific market</li>
+  <li>Receive personalized pricing strategy</li>
+</ul>
+
+<h2>Take Action Today</h2>
+
+<p>Stop leaving money on the table with flat pricing. Let iHousing implement optimized weekend/midweek pricing for your coastal property.</p>
+
+<p>WhatsApp us now to discuss your property's revenue potential.</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

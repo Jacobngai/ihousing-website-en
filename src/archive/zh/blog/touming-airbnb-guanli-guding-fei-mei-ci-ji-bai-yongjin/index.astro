@@ -1,0 +1,388 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "透明Airbnb管理：为何固定费每次击败佣金";
+const description = "20%佣金隐藏了真实成本。Airbnb固定费管理意味着您确切知道支付什么。比较价格模型，看看为何透明度对马六甲房产业主很重要。Parkland Avenue：RM200-300/月。";
+const date = "2026-01-05";
+const category = "decision-stage";
+const language = "zh";
+const image = "/images/blog/touming-airbnb-guanli-guding-fei-mei-ci-ji-bai-yongjin.jpg";
+
+// Content as HTML directly - simpler and more reliable
+const content = `
+<h1>透明Airbnb管理：为何固定费每次都击败佣金</h1>
+
+<h2>20%佣金看起来很简单。但您实际上在支付什么？</h2>
+
+<p>您正在比较马六甲的Airbnb管理公司。大多数收取您收入的<strong>15-25%佣金</strong>。看起来很简单 - 他们拿一个百分比，您保留其余部分。</p>
+
+<p><strong>这是他们不会告诉您的：</strong></p>
+
+<ul>
+  <li>佣金模型在清洁、维护和用品上收取<strong>隐藏的加价</strong></li>
+  <li>您的实际成本通常是<strong>收入的25-35%</strong>，而不是声明的20%</li>
+  <li>收入越高 = 您为<strong>相同服务</strong>支付更多</li>
+  <li>淡季折扣？他们仍然收取全额佣金</li>
+</ul>
+
+<p>固定费管理则不同：<strong>您每月支付相同的金额</strong>，无论您获得多少预订。没有隐藏费用。没有加价。没有惊喜。</p>
+
+<p>本文将向您展示为什么透明的固定费价格可以为您的业主省钱并提供更好的服务。</p>
+
+<h2>佣金模型：隐藏成本</h2>
+
+<h3>20%佣金实际上看起来像什么</h3>
+
+<p>让我们分解在马六甲每年产生RM12,000毛利的公寓上<strong>实际成本</strong>：</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>费用类别</th>
+      <th>佣金模型（20%）</th>
+      <th>您的实际成本</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>基本佣金</strong></td>
+      <td>收入的20%</td>
+      <td>RM2,400/年</td>
+    </tr>
+    <tr>
+      <td><strong>清洁加价</strong></td>
+      <td>服务加价30-50%</td>
+      <td>RM1,800-3,000/年</td>
+    </tr>
+    <tr>
+      <td><strong>维护利润率</strong></td>
+      <td>维修加价15-25%</td>
+      <td>RM300-600/年</td>
+    </tr>
+    <tr>
+      <td><strong>用品加价</strong></td>
+      <td>用品加价20%</td>
+      <td>RM150-300/年</td>
+    </tr>
+    <tr>
+      <td><strong>"紧急"费用</strong></td>
+      <td>每次事件RM50-100</td>
+      <td>RM300-1,200/年</td>
+    </tr>
+    <tr>
+      <td><strong><strong>年度总成本</strong></strong></td>
+      <td><strong>宣传：20%</strong></td>
+      <td><strong>实际：27-35%</strong></td>
+    </tr>
+    <tr>
+      <td><strong>您的净收入</strong></td>
+      <td></td>
+      <td>RM7,000-8,200/年</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>现实：</strong> 您的"20%佣金"实际上花费<strong>RM4,950-5,800/年</strong>，而不是RM2,400。</p>
+
+<h3>为什么佣金模型隐藏费用</h3>
+
+<p>基于佣金的管理者通过<strong>多个收入流</strong>赚钱：</p>
+
+<ol>
+  <li><strong>基本佣金：</strong> 他们声明的百分比</li>
+  <li><strong>清洁加价：</strong> 他们向您收取RM110的清洁费是RM80</li>
+  <li><strong>维护利润率：</strong> 他们在承包商账单上增加20%</li>
+  <li><strong>用品加价：</strong> 他们收取零售价，保留批发差价</li>
+  <li><strong>费用和罚款：</strong> 迟到退房费、换钥匙费等</li>
+</ol>
+
+<p>每次您的房产需要什么，他们都能获利。<strong>没有省钱动力。</strong></p>
+
+<h2>固定费模型：完全透明</h2>
+
+<h3>您支付的（确切）</h3>
+
+<p>通过固定费管理，您确切知道<strong>每月</strong>将支付什么：</p>
+
+<h4>Parkland Avenue by the Sea（独家价格）</h4>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>单元大小</th>
+      <th>月费</th>
+      <th>年费</th>
+      <th>包括内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1卧室</td>
+      <td>RM200</td>
+      <td>RM2,400</td>
+      <td rowspan="3" style="vertical-align: middle;">全部（见下文）</td>
+    </tr>
+    <tr>
+      <td>2卧室</td>
+      <td>RM250</td>
+      <td>RM3,000</td>
+    </tr>
+    <tr>
+      <td>3卧室</td>
+      <td>RM300</td>
+      <td>RM3,600</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>就是这样。</strong> 没有额外费用。没有加价。没有百分比扣除。</p>
+
+<h3>固定费包括什么</h3>
+
+<p>对于您的RM200-300/月，您收到：</p>
+
+<ul>
+  <li><strong>✅ 24/7客人沟通</strong> - 30分钟内响应，多语言（中文、英文、马来语）</li>
+  <li><strong>✅ 专业清洁</strong> - 每次退房后，内部团队，<strong>无加价</strong></li>
+  <li><strong>✅ 维护协调</strong> - 可信承包商，您支付成本价，<strong>无利润率</strong></li>
+  <li><strong>✅ 5平台列表</strong> - Airbnb、Booking.com、Agoda、VRBO、Expedia，日历同步</li>
+  <li><strong>✅ 动态定价</strong> - 基于算法的定价，自动调整</li>
+  <li><strong>✅ 专业摄影</strong> - 为每个平台优化的高分辨率照片</li>
+  <li><strong>✅ 月度报告</strong>-> 透明的收入声明、入住率、客人评论</li>
+  <li><strong>✅ 零隐藏费用</strong> - 没有紧急收费、没有清洁加价、没有维护利润率</li>
+</ul>
+
+<p><strong>与佣金相比：</strong> 您将支付RM2,400-3,600用于基本管理，<strong>加上</strong> RM2,000-5,000的加价和隐藏费用。</p>
+
+<h2>比较：3年成本比较</h2>
+
+<h3>相同房产，不同定价模式</h3>
+
+<p>2卧室公寓，年收入RM12,000：</p>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>年份</th>
+      <th>佣金（20% + 隐藏费用）</th>
+      <th>固定费（RM250/月）</th>
+      <th>固定费节省</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>第1年</strong></td>
+      <td>RM4,950（收入的41%）</td>
+      <td>RM3,000（收入的25%）</td>
+      <td><strong>节省RM1,950</strong></td>
+    </tr>
+    <tr>
+      <td><strong>第2年</strong></td>
+      <td>RM5,200（收入的43%）</td>
+      <td>RM3,000（收入的21%）</td>
+      <td><strong>节省RM2,200</strong></td>
+    </tr>
+    <tr>
+      <td><strong>第3年</strong></td>
+      <td>RM5,500（收入的46%）</td>
+      <td>RM3,000（收入的19%）</td>
+      <td><strong>节省RM2,500</strong></td>
+    </tr>
+    <tr>
+      <td><strong>3年总计</strong></td>
+      <td><strong>RM15,650</strong></td>
+      <td><strong>RM9,000</strong></td>
+      <td><strong>节省RM6,650</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>关键点：</strong> 当您的收入增长时，佣金成本上升。固定费保持不变。</p>
+
+<h2>"您赚得越多，支付越多"的问题</h2>
+
+<h3>佣金模型降低性能</h3>
+
+<p>通过佣金定价：</p>
+
+<ul>
+  <li><strong>您的房产每年产生RM10,000：</strong> 他们赚RM2,000</li>
+  <li><strong>您的房产每年产生RM15,000：</strong> 他们赚RM3,000</li>
+  <li><strong>您的房产每年产生RM20,000：</strong> 他们赚RM4,000</li>
+</ul>
+
+<p><strong>问题：</strong> 您更努力工作（或您的房产位置更好），您为<strong>相同服务</strong>支付更多。</p>
+
+<h3>固定费鼓励性能</h3>
+
+<p>通过固定费定价：</p>
+
+<ul>
+  <li><strong>您的房产每年产生RM10,000：</strong> 您支付RM3,000，保留RM7,000</li>
+  <li><strong>您的房产每年产生RM15,000：</strong> 您支付RM3,000，保留RM12,000</li>
+  <li><strong>您的房产每年产生RM20,000：</strong> 您支付RM3,000，保留RM17,000</li>
+</ul>
+
+<p><strong>优势：</strong> 您的管理者有动力<strong>最大化</strong>您的收入。您的利润 = 他们的利润（更好的评论，更多推荐）。</p>
+
+<h2>透明带来：您可以看到什么</h2>
+
+<h3>佣金声明 vs 固定费报告</h3>
+
+<p><strong>基于佣金的声明（典型）：</strong></p>
+
+<pre>毛收入：RM1,000
+管理费：RM200
+清洁：RM120
+维护：RM85
+用品：RM45
+平台费：RM100
+<strong>业主净得：RM450</strong></pre>
+
+<p><strong>您看不到的：</strong></p>
+<ul>
+  <li>实际清洁成本：RM80（收取RM120）</li>
+  <li>实际维修成本：RM65（收取RM85）</li>
+  <li>实际用品成本：RM30（收取RM45）</li>
+  <li><strong>隐藏加价：RM45</strong></li>
+</ul>
+
+<p><strong>固定费报告（iHousing）：</strong></p>
+
+<pre>毛收入：RM1,000
+<strong>月管理费：RM250</strong>
+清洁（实际成本）：RM80
+维护（实际成本）：RM65
+用品（实际成本）：RM30
+平台费：RM100
+<strong>业主净得：RM475</strong></pre>
+
+<p><strong>您看到的：</strong> 每件东西的确切成本。没有隐藏利润率。</p>
+
+<h2>为什么大多数管理者不提供固定费</h2>
+
+<h3>佣金对他们更有利可图</h3>
+
+<table class="w-full">
+  <thead>
+    <tr>
+      <th>模式</th>
+      <th>他们赚取</th>
+      <th>您保留</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>佣金（20% + 隐藏费用）</strong></td>
+      <td>RM4,950-5,500/年</td>
+      <td>RM7,000-8,200/年</td>
+    </tr>
+
+    <tr>
+      <td><strong>固定费（RM250/月）</strong></td>
+      <td>RM3,000/年</td>
+      <td>RM9,000/年</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>简单数学：</strong> 佣金模型比固定费每个房产多产生RM2,000-2,500。</p>
+
+<p><strong>为什么我们选择固定费：</strong></p>
+
+<ul>
+  <li>透明度建立信任</li>
+  <li>业主保留更长时间（流失率更低）</li>
+  <li>来自满意业主的推荐</li>
+  <li>我们晚上睡得更安稳</li>
+</ul>
+
+<h2>Parkland Avenue：独家固定费访问</h2>
+
+<h3>为什么这个项目有特殊定价</h3>
+
+<p>iHousing是<strong>Parkland Avenue by the Sea</strong>的官方Airbnb管理者，这是一个新的高级海滨开发项目，将于2026年8月推出。</p>
+
+<p><strong>独家合作伙伴关系优势：</strong></p>
+
+<ul>
+  <li>透明的固定费价格（RM200-300/月）</li>
+  <li>推出前定价注册</li>
+  <li>预注册者优先</li>
+  <li>永远没有基于百分比的佣金</li>
+</ul>
+
+<h3>对于其他公寓：定制的透明价格</h3>
+
+<p>对于Parkland Avenue以外的房产，我们提供<strong>定制的固定费提案</strong>，基于：</p>
+
+<ul>
+  <li>单元大小和配置</li>
+  <li>位置和可达性</li>
+  <li>状况和家具水平</li>
+  <li>预期入住范围</li>
+</ul>
+
+<p><strong>仍然透明：</strong> 没有隐藏费用，没有加价，明确的价格。</p>
+
+<h2>准备好接受透明定价吗？</h2>
+
+<p>停止猜测您实际支付什么。停止看着您辛苦赚来的收入流向加价和隐藏费用。</p>
+
+<h3>对于Parkland Avenue by the Sea：</h3>
+
+<p><strong>立即预注册以锁定：</strong></p>
+
+<ul>
+  <li>1卧室：RM200/月固定费</li>
+  <li>2卧室：RM250/月固定费</li>
+  <li>3卧室：RM300/月固定费</li>
+</ul>
+
+<p><strong>正式发布：</strong> 2026年8月</p>
+
+<p><strong>优势：</strong></p>
+
+<ul>
+  <li>发布前锁定价格</li>
+  <li>优先选择单元</li>
+  <li>免费初步咨询</li>
+  <li>设置帮助</li>
+</ul>
+
+<h3>对于所有其他公寓：</h3>
+
+<p><strong>WhatsApp我们获取定制的固定费价格：</strong></p>
+
+<ol>
+  <li>告诉我们您的公寓详情</li>
+  <li>我们将分析您的具体情况</li>
+  <li>收到个性化的价格报价</li>
+</ol>
+
+<p>没有义务。没有压力。合理的透明价格。</p>
+
+<h2>今天就采取行动</h2>
+
+<p>基于佣金的管理旨在不透明。他们从您看不到的东西中获利。</p>
+
+<p>固定费管理旨在透明。您确切知道每月支付什么。</p>
+
+<p><strong>选择透明度。</strong></p>
+
+<p><strong>选择可预测性。</strong></p>
+
+<p><strong>选择固定费。</strong></p>
+
+<p>现在WhatsApp iHousing，让我们讨论透明、固定费管理如何帮助您保留更多Airbnb收入。</p>
+`;
+---
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>
