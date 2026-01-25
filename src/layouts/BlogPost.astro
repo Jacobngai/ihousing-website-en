@@ -59,8 +59,7 @@ const labels = {
 };
 
 const t = labels[language as keyof typeof labels] || labels.en;
-const langPath = language === 'en' ? 'en' : language === 'ms' ? 'ms' : 'zh';
-const contactFormLink = `/${langPath}/contact-form/`;
+const contactFormLink = '/contact-form/';
 ---
 
 <!DOCTYPE html>
@@ -107,8 +106,8 @@ const contactFormLink = `/${langPath}/contact-form/`;
           <a href={`/${langPath}/`} class="text-2xl font-bold text-green-800">iHousing</a>
 
           <nav class="hidden md:flex items-center space-x-6">
-            <a href={`/${langPath}/`} class="text-gray-700 hover:text-green-700 font-medium">{t.home}</a>
-            <a href={`/${langPath}/blog/`} class="text-gray-700 hover:text-green-700 font-medium">{t.blog}</a>
+            <a href="/" class="text-gray-700 hover:text-green-700 font-medium">{t.home}</a>
+            <a href="/blog/" class="text-gray-700 hover:text-green-700 font-medium">{t.blog}</a>
             <a href={contactFormLink} class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors">
               {t.contactUs}
             </a>
@@ -125,8 +124,8 @@ const contactFormLink = `/${langPath}/contact-form/`;
 
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden md:hidden px-4 py-4 bg-white border-t border-gray-200">
-        <a href={`/${langPath}/`} class="block py-2 text-gray-700 hover:text-green-700 font-medium">{t.home}</a>
-        <a href={`/${langPath}/blog/`} class="block py-2 text-gray-700 hover:text-green-700 font-medium">{t.blog}</a>
+        <a href="/" class="block py-2 text-gray-700 hover:text-green-700 font-medium">{t.home}</a>
+        <a href="/blog/" class="block py-2 text-gray-700 hover:text-green-700 font-medium">{t.blog}</a>
         <a href={contactFormLink} class="block mt-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold text-center">
           {t.contactUs}
         </a>
@@ -146,7 +145,7 @@ const contactFormLink = `/${langPath}/contact-form/`;
     <!-- Hero Section -->
     <div class="bg-gradient-to-br from-green-800 to-green-900 text-white py-16 md:py-24">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <a href={`/${langPath}/blog/`} class="inline-flex items-center text-green-200 hover:text-white mb-6 transition-colors">
+        <a href="/blog/" class="inline-flex items-center text-green-200 hover:text-white mb-6 transition-colors">
           <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
           </svg>
@@ -222,17 +221,17 @@ const contactFormLink = `/${langPath}/contact-form/`;
           <div>
             <h4 class="font-semibold mb-4">Services</h4>
             <ul class="space-y-2 text-gray-400">
-              <li><a href={`/${langPath}/services/full-management/`} class="hover:text-white">Full Management</a></li>
-              <li><a href={`/${langPath}/services/renovation/`} class="hover:text-white">Renovation</a></li>
+              <li><a href="/services/full-management/" class="hover:text-white">Full Management</a></li>
+              <li><a href="/services/renovation/" class="hover:text-white">Renovation</a></li>
             </ul>
           </div>
           <div>
             <h4 class="font-semibold mb-4">Properties</h4>
             <ul class="space-y-2 text-gray-400">
-              <li><a href={`/${langPath}/parkland/avenue-by-the-sea/`} class="hover:text-white">Parkland Avenue</a></li>
-              <li><a href={`/${langPath}/properties/`} class="hover:text-white">All Properties</a></li>
-              <li><a href={`/${langPath}/blog/`} class="hover:text-white">Blog</a></li>
-              <li><a href={`/${langPath}/about/`} class="hover:text-white">About Us</a></li>
+              <li><a href="/parkland/avenue-by-the-sea/" class="hover:text-white">Parkland Avenue</a></li>
+              <li><a href="/properties/" class="hover:text-white">All Properties</a></li>
+              <li><a href="/blog/" class="hover:text-white">Blog</a></li>
+              <li><a href="/about/" class="hover:text-white">About Us</a></li>
             </ul>
           </div>
           <div>
@@ -246,7 +245,7 @@ const contactFormLink = `/${langPath}/contact-form/`;
         <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
           <p>&copy; {new Date().getFullYear()} iHousing. All rights reserved.</p>
           <p class="mt-2 text-sm">
-            <a href={`/${langPath}/privacy/`} class="hover:text-white">Privacy Policy</a> | <a href={`/${langPath}/terms/`} class="hover:text-white">Terms of Service</a>
+            <a href="/privacy/" class="hover:text-white">Privacy Policy</a> | <a href="/terms/" class="hover:text-white">Terms of Service</a>
           </p>
         </div>
       </div>
