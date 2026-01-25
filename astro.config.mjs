@@ -48,7 +48,7 @@ export default defineConfig({
       },
       serialize: (item) => {
         // Extract actual publish date from blog post URLs
-        // Pattern: /en/blog/2026-01-25-post-title/ or /en/blog/post-title/
+        // Pattern: /blog/2026-01-25-post-title/ or /blog/post-title/
         const blogDateMatch = item.url.match(/\/blog\/(\d{4}-\d{2}-\d{2})-/);
         if (blogDateMatch) {
           // Use actual publish date from URL
