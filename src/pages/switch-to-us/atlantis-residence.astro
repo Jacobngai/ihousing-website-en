@@ -6,9 +6,43 @@ const title = `${condoName} Airbnb Management | Switch to iHousing`;
 const description = `Not happy with your current Airbnb manager at ${condoName}? Switch to iHousing. 8 years experience. 100+ properties in Melaka. Contact us for custom pricing.`;
 
 const contactFormLink = '/en/contact-form/';
+
+// FAQ Data for Schema
+const faqs = [
+  {
+    question: "Why should I switch my Atlantis Residence management to iHousing?",
+    answer: "Most managers at Atlantis Residence charge a 20-25% commission on your gross revenue. iHousing offers a flat fee model that can save you RM500-RM1,000 per month. Additionally, we list on 5 platforms (Airbnb, Booking, Agoda, Expedia, Agoda Homes) whereas many independent managers only use Airbnb."
+  },
+  {
+    question: "How long does it take to switch managers?",
+    answer: "The transition is usually seamless. Once you decide to switch, we can have your new professional photography and listings live within 3-5 working days. We also handle the coordination if you have existing future bookings."
+  },
+  {
+    question: "Do you have an in-house cleaning team for Atlantis Residence?",
+    answer: "Yes, iHousing has its own dedicated in-house cleaning team. We do not outsource to third-party cleaners, ensuring consistent quality and lower costs for Atlantis Residence owners."
+  },
+  {
+    question: "What is the average ROI for Atlantis Residence units?",
+    answer: "While ROI varies by unit type and interior design, Atlantis Residence is one of the top-performing condos in Melaka due to its facilities and location. With our dynamic pricing and 5-platform strategy, our managed units consistently outperform the building average."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
 ---
 
 <Layout title={title} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <main>
     <section class="relative bg-gradient-to-br from-green-900 via-green-800 to-emerald-900 text-white py-20 lg:py-28">
       <div class="absolute inset-0 bg-black/30"></div>
@@ -63,6 +97,21 @@ const contactFormLink = '/en/contact-form/';
         <div class="bg-gray-800 p-6 rounded-xl max-w-2xl mx-auto">
           <p class="text-lg"><span class="text-red-400 font-semibold">Other managers:</span> List on 1 platform, miss 60% of travelers</p>
           <p class="text-lg mt-2"><span class="text-green-400 font-semibold">iHousing:</span> List on 5 platforms, capture every booking opportunity</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visible FAQ Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+          {faqs.map(faq => (
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+              <h3 class="text-lg font-bold text-gray-900 mb-2">{faq.question}</h3>
+              <p class="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

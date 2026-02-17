@@ -1,16 +1,75 @@
 ---
 import BlogPost from '@/layouts/BlogPost.astro';
 
-const title = "Is Airbnb Legal in Melaka 2025? Complete Guide for Property Owners";
-const description = "YES - Airbnb is legal in Melaka (no restrictions yet). Unlike Selangor's 6-month rule, Melaka welcomes short-term rentals. Learn regulations, condo rules, and how to start legally in 2025.";
+const title = "Is Airbnb Legal in Melaka 2026? YES — MOTAC Rules, STR Laws & Condo Guide";
+const description = "YES — Airbnb is legal in Melaka in 2026. No minimum stay, no state ban, no tourism license required yet. Learn MOTAC rules, condo regulations, and how to start legally. Updated for 2026.";
 const image = "/images/blog/is-airbnb-legal-in-melaka-2025.jpg";
-const date = "2025-01-23";
+const date = "2026-01-23";
 const category = "legal-regulatory";
 const language = "en";
 
+const faqSchemaHtml = `
+<script type="application/ld+json" is:inline>
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Airbnb legal in Melaka in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "YES. Airbnb is legal in Melaka in 2026. Unlike Selangor (6-month minimum stay rule), Melaka has no state-level ban on short-term rentals. You can accept 1-night bookings freely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a license to run Airbnb in Melaka?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not currently. No tourism license is required for short-term rentals in Melaka as of 2026. MOTAC has discussed requiring registration but it has not been implemented yet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can my condo committee stop me from doing Airbnb?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if your condo's Joint Management Body (JMB) or Management Corporation (MC) has rules prohibiting short-term rentals. Always check before buying. Airbnb-friendly condos in Melaka include Silverscape Residence, The Shore Residence, Imperio Residence, Ong Kim Wee Residence, and Novo 8 Residence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if Melaka Airbnb regulations change in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Existing hosts will likely be grandfathered if regulations change. The expected regulatory direction is registration-based (not prohibition). Starting now gives you first-mover advantage and potentially better protection under future rules."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Airbnb more profitable than long-term rental in Melaka?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typically yes — 2-3x higher income with professional management. Average iHousing-managed properties earn RM 7,000-15,000/month net vs RM 2,000-3,500/month for long-term rental."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to pay tax on Airbnb income in Malaysia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, declare it as rental income to LHDN (Malaysia's tax authority). You can deduct expenses like furniture depreciation, utilities, internet, and management fees to reduce your taxable amount."
+      }
+    }
+  ]
+}
+<\/script>
+`;
+
 // Content as HTML directly - simpler and more reliable
 const content = `
-<h1>Is Airbnb Legal in Melaka 2025? Complete Guide for Property Owners</h1>
+<h1>Is Airbnb Legal in Melaka 2026? YES — MOTAC Rules, STR Laws & Condo Guide</h1>
         <strong>Short Answer: YES, Airbnb is legal in Melaka in 2025.</strong>
         <p>Unlike Selangor's restrictive 6-month rule, Melaka has <strong>no specific laws prohibiting short-term rentals</strong>. This makes Melaka one of the most Airbnb-friendly states in Malaysia.</p>
         <hr class="my-8">
@@ -30,7 +89,7 @@ const content = `
         <hr class="my-8">
         <h2>Understanding Melaka's Regulatory Status (2025)</h2>
         <h3>Current Legal Status</h3>
-        <p>As of January 2025:</p>
+        <p>As of February 2026:</p>
         <ol>
         <li><strong>No State-Level Ban</strong>: Melaka state government has not enacted laws prohibiting short-term rentals</li>
         <li><strong>No Licensing Required</strong>: Unlike hotels, Airbnb condos don't need tourism licenses (yet)</li>
@@ -40,7 +99,7 @@ const content = `
         <h3>What's Coming? (Future Regulations)</h3>
         <p>The Ministry of Tourism, Arts and Culture (MOTAC) has <strong>discussed</strong> requiring STR licenses, but:</p>
         <ul>
-        <li><strong>Not yet implemented</strong> as of 2025</li>
+        <li><strong>Not yet implemented</strong> as of 2026</li>
         <li>Would apply nationwide, not Melaka-specific</li>
         <li>Likely to focus on <strong>registration</strong> rather than prohibition</li>
         <li>Grandfathering expected for existing hosts</li>
@@ -251,8 +310,8 @@ const content = `
         <li>[Parkland Avenue Investment](/parkland-avenue-by-the-sea)</li>
         </ul>
         <hr class="my-8">
-        <strong>Last Updated:</strong> January 2025 | <strong>Source:</strong> [Melaka Airbnb Legal Research](https://airbtics.com/airbnb-rules-in-melaka-malaysia)
-        <em>Note: Regulations can change. This article reflects the legal status as of January 2025. Consult legal professionals for specific advice.</em>
+        <strong>Last Updated:</strong> February 2026 | <strong>Source:</strong> [Melaka Airbnb Legal Research](https://airbtics.com/airbnb-rules-in-melaka-malaysia)
+        <em>Note: Regulations can change. This article reflects the legal status as of February 2026. Consult legal professionals for specific advice.</em>
 `;
 ---
 <BlogPost
@@ -262,5 +321,5 @@ const content = `
   date={date}
   category={category}
   language={language}
-  content={content}
+  content={content + faqSchemaHtml}
 />

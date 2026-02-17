@@ -1,0 +1,111 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "How to Prevent Parties and Bad Guests in Your Melaka Airbnb (2026)";
+const description = "Worried about your condo being trashed? Learn the 2026 guide to screening guests, setting house rules, and preventing parties before they start.";
+const image = "/images/blog/party-prevention-melaka-2026.jpg";
+const date = "2026-02-08";
+const category = "management";
+const language = "en";
+
+const content = `
+<div class="bg-blue-50 p-6 rounded-lg mb-8">
+<h3 class="text-lg font-bold text-blue-800 mb-2">How Do You Stop Airbnb Parties?</h3>
+<p class="text-blue-700"><strong>Screening is your first defense. Ask for MyKad/Passport pre-arrival. Set a 2-night minimum stay on weekends (filters out impulsive party groups). Install a noise monitoring device.</strong> In Melaka, the biggest risk is local youth renting a condo for a "birthday bash." Once they are in, it's too late. You must stop them at the booking stage.</p>
+</div>
+
+<p>A trashed unit is every host's nightmare. Broken furniture, angry neighbors, and a fine from the JMB. But it is preventable. 90% of bad guests display warning signs before they check in.</p>
+
+<p>At iHousing, we have hosted thousands of guests with near-zero major incidents. Here is our security protocol.</p>
+
+<h2>The Red Flags: Spotting Trouble Early</h2>
+
+<p>Watch out for these questions in the pre-booking chat:</p>
+<ul class="list-disc pl-5 mb-6">
+    <li>"Is the pool open 24 hours?" (They plan to swim drunk at 3 AM).</li>
+    <li>"Can I bring my own sound system/karaoke?" (Instant reject).</li>
+    <li>"We are just a few friends hanging out." (Code for a party).</li>
+    <li>Booking a 3-bedroom unit for 2 people on a Saturday night. (Suspicious).</li>
+</ul>
+
+<h2>The 3-Step Defense System</h2>
+
+<h3>1. The "2-Night Minimum" Filter</h3>
+<p>Party groups usually want a place for one night of chaos. By setting a 2-night minimum on weekends, you eliminate 80% of them. Serious travelers (families/couples) usually stay Friday to Sunday anyway.</p>
+
+<h3>2. The ID Verification Gate</h3>
+<p>We require a photo of the lead guest's MyKad or Passport <em>before</em> sending the check-in guide.
+<br><strong>Why it works:</strong> People who plan to break rules hate giving their ID. If they refuse, we cancel the booking penalty-free.</p>
+
+<h3>3. The Security Deposit</h3>
+<p>We collect a <strong>RM 200 - RM 500 security deposit</strong> (via bank transfer or credit card hold).
+<br><strong>Psychology:</strong> When their own money is on the line, guests behave significantly better.</p>
+
+<h2>Technology: The Silent Watchdog</h2>
+
+<p>We install <strong>NoiseAware</strong> (or similar decibel monitors) in our units. It doesn't record conversations, but it alerts our team if noise levels exceed 70 decibels for more than 10 minutes.</p>
+
+<p><strong>Scenario:</strong>
+<br><strong>10:00 PM:</strong> Noise alert triggers.
+<br><strong>10:05 PM:</strong> We text the guest: "Hi, our noise sensor detected high volume. Please keep it down to avoid a fine."
+<br><strong>10:15 PM:</strong> Noise usually stops. Problem solved without a confrontation.</p>
+
+<h2>Data: Risk Profile of Stays</h2>
+
+<div class="overflow-x-auto my-8">
+<table class="w-full text-left border-collapse border border-gray-200">
+<thead>
+<tr class="bg-gray-100">
+<th class="p-4 border border-gray-200 font-bold">Booking Type</th>
+<th class="p-4 border border-gray-200 font-bold">Risk Level</th>
+<th class="p-4 border border-gray-200 font-bold">Mitigation Strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="p-4 border border-gray-200"><strong>1 Night (Saturday)</strong></td>
+<td class="p-4 border border-gray-200"><span class="text-red-600 font-bold">High</span></td>
+<td class="p-4 border border-gray-200">Avoid unless filling a gap. Strict ID check.</td>
+</tr>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Last Minute (Same Day)</strong></td>
+<td class="p-4 border border-gray-200"><span class="text-orange-500 font-bold">Medium</span></td>
+<td class="p-4 border border-gray-200">Call them first. Verify intent.</td>
+</tr>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Locals (Melaka ID)</strong></td>
+<td class="p-4 border border-gray-200"><span class="text-orange-500 font-bold">Medium</span></td>
+<td class="p-4 border border-gray-200">Ask purpose of stay. ("My house is renovating" vs "Birthday").</td>
+</tr>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Families (with Kids)</strong></td>
+<td class="p-4 border border-gray-200"><span class="text-green-600 font-bold">Low</span></td>
+<td class="p-4 border border-gray-200">Best guests. Provide a baby cot to lock them in.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>iHousing's 24/7 Enforcement Team</h2>
+
+<p>Self-managing hosts often dread the 2 AM call from security. "Your unit is loud."</p>
+
+<p>iHousing has a response team on the ground. If a party starts, we go there, shut it down, and evict the guests if necessary. We handle the police, the JMB, and the cleanup.</p>
+
+<p><strong>Don't risk your property.</strong> Let us protect it.</p>
+
+<a href="https://wa.me/60123456789?text=Hi%20iHousing,%20I'm%20worried%20about%20bad%20guests" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+    <i class="fab fa-whatsapp mr-2"></i> Get Professional Guest Screening
+</a>
+`;
+---
+
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

@@ -1,0 +1,105 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Self-Manage vs. Property Manager in Melaka: The Real Cost Calculator (2026)";
+const description = "Is paying 20% to an Airbnb management company worth it? We calculate the hidden costs of self-managing in Melaka, from gas money to midnight emergencies.";
+const image = "/images/blog/self-manage-vs-manager-melaka-2026.jpg";
+const date = "2026-02-08";
+const category = "investment";
+const language = "en";
+
+const content = `
+<div class="bg-blue-50 p-6 rounded-lg mb-8">
+<h3 class="text-lg font-bold text-blue-800 mb-2">Should You Self-Manage Your Melaka Airbnb?</h3>
+<p class="text-blue-700"><strong>Only if your time is worth less than RM30/hour.</strong> Managing a single unit takes roughly 25 hours per month (messaging, cleaning coordination, maintenance). A management fee of 20% buys you freedom and typically results in 15% higher revenue due to professional pricing strategies.</p>
+</div>
+
+<p>It's the classic investor trap: "I'll just manage it myself to save the commission."</p>
+
+<p>Three months later, you are driving from KL to Melaka at 11 PM because the digital lock battery died, and your guest is screaming on the phone. Is that savings?</p>
+
+<p>At iHousing, we believe transparency is key. Here is the mathematical breakdown of what self-management actually costs you in 2026.</p>
+
+<h2>The Hidden Costs of "Free" Management</h2>
+
+<p>Let's assume your unit generates <strong>RM 5,000/month</strong> in revenue.</p>
+
+<div class="overflow-x-auto my-8">
+<table class="w-full text-left border-collapse border border-gray-200">
+<thead>
+<tr class="bg-gray-100">
+<th class="p-4 border border-gray-200 font-bold">Activity</th>
+<th class="p-4 border border-gray-200 font-bold">Time Spent (Monthly)</th>
+<th class="p-4 border border-gray-200 font-bold">Cost (Your Time @ RM50/hr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Guest Messaging</strong></td>
+<td class="p-4 border border-gray-200">10 Hours (Pre, During, Post stay)</td>
+<td class="p-4 border border-gray-200">RM 500</td>
+</tr>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Cleaning Coordination</strong></td>
+<td class="p-4 border border-gray-200">4 Hours (Finding/Checking cleaners)</td>
+<td class="p-4 border border-gray-200">RM 200</td>
+</tr>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Maintenance Trips</strong></td>
+<td class="p-4 border border-gray-200">6 Hours (Driving KL-Melaka)</td>
+<td class="p-4 border border-gray-200">RM 300 + Gas/Toll (RM 150)</td>
+</tr>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Price Optimization</strong></td>
+<td class="p-4 border border-gray-200">5 Hours (Researching competitors)</td>
+<td class="p-4 border border-gray-200">RM 250</td>
+</tr>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Total "Hidden" Cost</strong></td>
+<td class="p-4 border border-gray-200"><strong>25 Hours</strong></td>
+<td class="p-4 border border-gray-200"><strong>RM 1,400 / Month</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Compare:</strong> iHousing's fee on RM 5,000 revenue is roughly <strong>RM 1,000</strong> (20%). You are technically <em>losing</em> money by self-managing if you value your time.</p>
+
+<h2>The "Revenue Gap"</h2>
+
+<p>It's not just about costs; it's about income.</p>
+<ul class="list-disc pl-5 mb-6">
+    <li><strong>Dynamic Pricing:</strong> We use algorithms to adjust prices daily. Self-managers usually set a flat rate and miss out on peak demand surges (e.g., concert weekends).</li>
+    <li><strong>Response Time:</strong> We reply in <5 minutes. This boosts search ranking. Self-managers reply when they are free (often hours later), losing the booking.</li>
+    <li><strong>Multi-Platform:</strong> We list on Agoda, Booking.com, Expedia. Self-managers usually stick to just Airbnb.</li>
+</ul>
+
+<p><strong>Result:</strong> Managed properties typically see <strong>15-20% higher revenue</strong> than self-managed ones. This often covers the management fee entirely.</p>
+
+<h2>The "Midnight Call" Factor</h2>
+
+<p>A pipe bursts at 3 AM. The WiFi goes down during a guest's Zoom meeting. The neighbor complains about noise.</p>
+<p>If you self-manage, <strong>you are the on-call staff</strong>. If you hire iHousing, we are.</p>
+
+<h2>Conclusion</h2>
+
+<p>Self-management makes sense if you are retired, live within 10 minutes of the property, and enjoy hospitality.</p>
+<p>If you are an investor looking for passive income, hiring a professional manager is mathematically the smarter choice.</p>
+
+<p><strong>Want to reclaim your freedom?</strong></p>
+
+<a href="https://wa.me/60123456789?text=Hi%20iHousing,%20I'm%20tired%20of%20self-managing" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+    <i class="fab fa-whatsapp mr-2"></i> Get a Management Proposal
+</a>
+`;
+---
+
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

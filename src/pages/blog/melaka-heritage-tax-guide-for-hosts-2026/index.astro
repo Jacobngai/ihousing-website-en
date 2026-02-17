@@ -1,0 +1,119 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Melaka Heritage Tax Guide for Airbnb Hosts (2026)";
+const description = "Confused about the Heritage Charge and Tourism Tax? Here is the complete 2026 guide for Melaka Airbnb hosts on what to collect, how to file, and the penalties for non-compliance.";
+const image = "/images/blog/melaka-heritage-tax-2026.jpg";
+const date = "2026-02-08";
+const category = "regulations";
+const language = "en";
+
+const content = `
+<div class="bg-blue-50 p-6 rounded-lg mb-8">
+<h3 class="text-lg font-bold text-blue-800 mb-2">Do I Need to Pay Heritage Tax for My Melaka Airbnb?</h3>
+<p class="text-blue-700"><strong>Yes. In 2026, all short-term rentals in Melaka are subject to the RM2/night Heritage Charge per room.</strong> This is separate from the Federal Tourism Tax (TTx) of RM10/night for foreign guests. Ignoring this can result in hefty fines from the Melaka Historic City Council (MBMB).</p>
+</div>
+
+<p>Taxes are boring, but fines are painful. As Melaka's tourism sector matures, the state government is strictly enforcing tax collection to fund heritage preservation.</p>
+
+<p>At iHousing, we automate tax collection and remittance for our owners. If you are self-managing, here is what you need to know to stay out of trouble.</p>
+
+<h2>1. The Heritage Charge (Cukai Warisan)</h2>
+
+<p>This is a state-level tax applicable to hotels, homestays, and Airbnbs.</p>
+<ul class="list-disc pl-5 mb-6">
+    <li><strong>Rate:</strong> RM 2.00 per room, per night.</li>
+    <li><strong>Who Pays:</strong> All guests (Malaysian and Foreigner).</li>
+    <li><strong>Collection Method:</strong> You must collect this from the guest and remit it to the Melaka State Government bi-monthly.</li>
+</ul>
+
+<h2>2. The Federal Tourism Tax (TTx)</h2>
+
+<p>This is a national tax enforced by the Royal Malaysian Customs Department.</p>
+<ul class="list-disc pl-5 mb-6">
+    <li><strong>Rate:</strong> RM 10.00 per room, per night.</li>
+    <li><strong>Who Pays:</strong> Foreign passport holders only. (Malaysians and PRs are exempt).</li>
+    <li><strong>Exemption:</strong> If you have fewer than 5 rooms registered under one owner, you <em>might</em> be exempt, but you must register to claim this.</li>
+</ul>
+
+<h2>How to Collect Taxes Without Annoying Guests</h2>
+
+<p>Asking for cash at the door is awkward. Here are the best practices:</p>
+
+<h3>Option A: Include it in the Nightly Rate</h3>
+<p>Mark up your listing price by RM12-15 to cover the taxes.
+<br><strong>Pros:</strong> Seamless guest experience. No cash handling.
+<br><strong>Cons:</strong> Makes your listing look more expensive on search results.</p>
+
+<h3>Option B: The "Resolution Center" Request</h3>
+<p>After booking, send a request via Airbnb Resolution Center for the tax amount.
+<br><strong>Pros:</strong> Keeps the base price low.
+<br><strong>Cons:</strong> Guests might refuse or forget to pay.</p>
+
+<h3>Option C: Cash on Arrival</h3>
+<p><strong>Pros:</strong> Immediate cash flow.
+<br><strong>Cons:</strong> Guests hate this. It feels like a scam. They often don't have small change.</p>
+
+<h2>The Cost of Non-Compliance</h2>
+
+<p>The penalty for evading Heritage Tax can be up to <strong>RM 5,000</strong> or revocation of your business license. MBMB officers conduct random audits, often posing as guests to check receipts.</p>
+
+<h2>Sample Calculation (2-Bedroom Condo)</h2>
+
+<p>Let's say you host a family of 4 (Foreigners) for 3 nights at <strong>The Shore</strong>.</p>
+
+<div class="overflow-x-auto my-8">
+<table class="w-full text-left border-collapse border border-gray-200">
+<thead>
+<tr class="bg-gray-100">
+<th class="p-4 border border-gray-200 font-bold">Item</th>
+<th class="p-4 border border-gray-200 font-bold">Calculation</th>
+<th class="p-4 border border-gray-200 font-bold">Total to Collect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Heritage Charge</strong></td>
+<td class="p-4 border border-gray-200">RM 2 x 2 Rooms x 3 Nights</td>
+<td class="p-4 border border-gray-200">RM 12.00</td>
+</tr>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Tourism Tax (TTx)</strong></td>
+<td class="p-4 border border-gray-200">RM 10 x 2 Rooms x 3 Nights</td>
+<td class="p-4 border border-gray-200">RM 60.00</td>
+</tr>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Total Tax Due</strong></td>
+<td class="p-4 border border-gray-200"></td>
+<td class="p-4 border border-gray-200"><strong>RM 72.00</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>iHousing's Automated Solution</h2>
+
+<p>Managing tax filings is a headache. iHousing simplifies this:</p>
+<ul class="list-disc pl-5 mb-6">
+    <li><strong>Automated Collection:</strong> We configure the platforms to collect taxes automatically where possible.</li>
+    <li><strong>Monthly Reporting:</strong> We generate a tax report for you.</li>
+    <li><strong>Filing Assistance:</strong> We guide you on how to submit payments to the local council.</li>
+</ul>
+
+<p><strong>Don't let tax compliance ruin your investment.</strong> Let us handle the paperwork.</p>
+
+<a href="https://wa.me/60123456789?text=Hi%20iHousing,%20I%20need%20help%20with%20Melaka%20Heritage%20Tax" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+    <i class="fab fa-whatsapp mr-2"></i> Get Tax Compliance Help
+</a>
+`;
+---
+
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>

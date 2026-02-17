@@ -1,0 +1,105 @@
+---
+import BlogPost from '@/layouts/BlogPost.astro';
+
+const title = "Case Study: Increasing Melaka Airbnb Occupancy from 40% to 85%";
+const description = "See how iHousing transformed a struggling unit at The Wave Residence. Learn the exact steps we took to double revenue in just 3 months.";
+const image = "/images/blog/case-study-occupancy-melaka.jpg";
+const date = "2026-02-08";
+const category = "case-study";
+const language = "en";
+
+const content = `
+<div class="bg-blue-50 p-6 rounded-lg mb-8">
+<h3 class="text-lg font-bold text-blue-800 mb-2">How Did We Double This Airbnb's Revenue?</h3>
+<p class="text-blue-700"><strong>The secret sauce was: 1. Professional Photography (bright, wide-angle), 2. Dynamic Pricing (capturing peak demand), and 3. Multi-Platform Listing (adding Booking.com + Agoda).</strong> This unit at <em>The Wave Residence</em> went from a struggling 40% occupancy to a sold-out 85% within 90 days of joining iHousing.</p>
+</div>
+
+<p>Every host dreams of a fully booked calendar. But hope is not a strategy. Execution is.</p>
+
+<p>This case study details the turnaround of "Unit 23-XX" at The Wave, Melaka. The owner, Mr. Tan, was self-managing but losing money.</p>
+
+<h2>The "Before" Situation (Month 0)</h2>
+
+<ul class="list-disc pl-5 mb-6">
+    <li><strong>Occupancy:</strong> 40% (Mostly weekends).</li>
+    <li><strong>Avg Rate:</strong> RM 180 (Fixed).</li>
+    <li><strong>Revenue:</strong> ~RM 2,100 / Month.</li>
+    <li><strong>Problem:</strong> Dark photos taken with an iPhone 6. Listed only on Airbnb. Slow replies (Owner works full-time).</li>
+</ul>
+
+<h2>The "iHousing Fix" (Month 1-3)</h2>
+
+<h3>Step 1: The Visual Upgrade</h3>
+<p>We hired a professional interior photographer (Cost: RM 300).
+<br><strong>Change:</strong> Bright, airy photos showing the pool view. Added a "Welcome Snack Basket" photo.
+<br><strong>Result:</strong> Click-through rate increased by 200%.</p>
+
+<h3>Step 2: The Platform Expansion</h3>
+<p>We listed the unit on <strong>Agoda, Booking.com, Expedia, and Ctrip</strong>.
+<br><strong>Change:</strong> Instant visibility to millions of non-Airbnb users.
+<br><strong>Result:</strong> Mid-week bookings flooded in from Agoda (Singaporeans).</p>
+
+<h3>Step 3: Dynamic Pricing</h3>
+<p>We stopped charging RM 180 flat.
+<br><strong>Change:</strong>
+<br>- Weekdays: RM 150 (to fill occupancy).
+<br>- Weekends: RM 280 (to capture demand).
+<br>- Holidays: RM 450 (Maximize revenue).
+<br><strong>Result:</strong> Higher occupancy AND higher average rate.</p>
+
+<h2>The "After" Results (Month 3)</h2>
+
+<div class="overflow-x-auto my-8">
+<table class="w-full text-left border-collapse border border-gray-200">
+<thead>
+<tr class="bg-gray-100">
+<th class="p-4 border border-gray-200 font-bold">Metric</th>
+<th class="p-4 border border-gray-200 font-bold">Before iHousing</th>
+<th class="p-4 border border-gray-200 font-bold">After iHousing</th>
+<th class="p-4 border border-gray-200 font-bold">Improvement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Occupancy Rate</strong></td>
+<td class="p-4 border border-gray-200">40%</td>
+<td class="p-4 border border-gray-200"><strong>85%</strong></td>
+<td class="p-4 border border-gray-200">+112%</td>
+</tr>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Avg Nightly Rate</strong></td>
+<td class="p-4 border border-gray-200">RM 180</td>
+<td class="p-4 border border-gray-200">RM 235</td>
+<td class="p-4 border border-gray-200">+30%</td>
+</tr>
+<tr>
+<td class="p-4 border border-gray-200"><strong>Monthly Revenue</strong></td>
+<td class="p-4 border border-gray-200">RM 2,160</td>
+<td class="p-4 border border-gray-200"><strong>RM 5,990</strong></td>
+<td class="p-4 border border-gray-200"><strong>+177%</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>Conclusion</h2>
+
+<p>Mr. Tan now earns <strong>RM 3,800 more per month</strong>, even after paying our management fee. He does zero work.</p>
+
+<p><strong>Is your unit underperforming?</strong> We can replicate this success for you.</p>
+
+<a href="https://wa.me/60123456789?text=Hi%20iHousing,%20I%20want%20results%20like%20Unit%2023-XX" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+    <i class="fab fa-whatsapp mr-2"></i> Get a Free Revenue Projection
+</a>
+`;
+---
+
+<BlogPost
+  title={title}
+  description={description}
+  image={image}
+  date={date}
+  category={category}
+  language={language}
+  content={content}
+/>
