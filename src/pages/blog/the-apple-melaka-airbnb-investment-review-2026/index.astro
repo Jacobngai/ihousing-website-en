@@ -1,7 +1,7 @@
 ---
-import BlogPost from '../../../../layouts/BlogPost.astro';
+import BlogPost from '@/layouts/BlogPost.astro';
 
-export const frontmatter = {
+const frontmatter = {
 	title: "The Apple Melaka Review 2026: Is It a Good Airbnb Investment?",
 	description: "An honest review of The Apple Melaka for Airbnb investors. We analyze occupancy rates, ROI, and how it compares to Atlantis and Silverscape in 2026.",
 	date: "2026-02-12",
@@ -9,6 +9,7 @@ export const frontmatter = {
 	image: "/images/blog/the-apple-melaka-airbnb-review-2026.jpg",
 	author: "iHousing Team"
 };
+---
 
 <BlogPost {...frontmatter}>
 	<div class="bg-blue-50 p-6 rounded-lg mb-8">
